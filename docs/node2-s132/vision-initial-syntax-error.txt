@@ -1,0 +1,4 @@
+  File "/opt/g-harness/workspace/G12/node_2_step_132/repo/docs/node2-s132/review_frames.py", line 17
+    (root/"docs/node2-s132/capability.json").write_text(json.dumps(meta,indent=2)+"
+                                                                                  ^
+SyntaxError: unterminated string literal (detected at line 17)

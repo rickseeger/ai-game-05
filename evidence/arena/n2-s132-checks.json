@@ -1,0 +1,215 @@
+{
+  "runs": [
+    {
+      "directory": "evidence/arena/n2-s132-720p",
+      "assertions": 337,
+      "camera_position": [
+        0.0,
+        26.4101524353027,
+        21.9691371917725
+      ],
+      "resized_camera_position": [
+        0.0,
+        28.6639976501465,
+        23.9975967407227
+      ],
+      "minimum_frame_margin": 0.0832377672195435,
+      "minimum_cube_pixels": 6.047119140625,
+      "frames": [
+        {
+          "file": "overview.png",
+          "width": 1280,
+          "height": 720,
+          "distinct_colors": 1077,
+          "sha256": "bd2759ef09d9fef639f1f9aa32c81f9aebcd2472ef0b72842b8e4a3bab06b4ba",
+          "gold_pixels": 62
+        },
+        {
+          "file": "southwest.png",
+          "width": 1280,
+          "height": 720,
+          "distinct_colors": 1102,
+          "sha256": "bcb886ef950e84fbdec85d687707f088d6880f25d49d6fcaae5b3d28d26beff2",
+          "gold_pixels": 71
+        },
+        {
+          "file": "northwest.png",
+          "width": 1280,
+          "height": 720,
+          "distinct_colors": 1067,
+          "sha256": "697fec2256911dd3e1e91b4b7d2f48c52c05c239467f75a9bf9d5411f24d1b91",
+          "gold_pixels": 56
+        },
+        {
+          "file": "northeast.png",
+          "width": 1280,
+          "height": 720,
+          "distinct_colors": 1074,
+          "sha256": "6377a47806d9865d9f82038778e9f5da8f3870131f05899ce44d65e0f77ff6ab",
+          "gold_pixels": 51
+        },
+        {
+          "file": "southeast.png",
+          "width": 1280,
+          "height": 720,
+          "distinct_colors": 1069,
+          "sha256": "5a161409527bb8b66e74ecb1fa8d780188931d2ab51b9cc266f89b2a39501b04",
+          "gold_pixels": 75
+        },
+        {
+          "file": "airborne.png",
+          "width": 1280,
+          "height": 720,
+          "distinct_colors": 1049,
+          "sha256": "3831eae81bf9fa2b0b59666a4b524ecd145de230ad843dd6af1f18326672e489",
+          "gold_pixels": 94
+        },
+        {
+          "file": "resized.png",
+          "width": 960,
+          "height": 720,
+          "distinct_colors": 1025,
+          "sha256": "79fb33654073a37d8f6bff9105896dfc45319429a2ad92ad959d30a36c7284a7"
+        }
+      ]
+    },
+    {
+      "directory": "evidence/arena/n2-s132-4x3",
+      "assertions": 337,
+      "camera_position": [
+        0.0,
+        28.6639976501465,
+        23.9975967407227
+      ],
+      "resized_camera_position": [
+        0.0,
+        26.4101524353027,
+        21.9691371917725
+      ],
+      "minimum_frame_margin": 0.0803557634353638,
+      "minimum_cube_pixels": 5.63543701171875,
+      "frames": [
+        {
+          "file": "overview.png",
+          "width": 960,
+          "height": 720,
+          "distinct_colors": 1038,
+          "sha256": "38cc53d256db01c76e2b9d9107f34cf7911d44e91114e6817ae4e7c8ecac4578",
+          "gold_pixels": 60
+        },
+        {
+          "file": "southwest.png",
+          "width": 960,
+          "height": 720,
+          "distinct_colors": 1079,
+          "sha256": "b26ce181992d0faa54d7b910e5ab305603990c2142b3596e7a05eeabf3ebc01e",
+          "gold_pixels": 64
+        },
+        {
+          "file": "northwest.png",
+          "width": 960,
+          "height": 720,
+          "distinct_colors": 1048,
+          "sha256": "40a93dcd96225918b4ba96e0e119016f86977e8dcc3d9fb747f5b12674346fd4",
+          "gold_pixels": 59
+        },
+        {
+          "file": "northeast.png",
+          "width": 960,
+          "height": 720,
+          "distinct_colors": 1045,
+          "sha256": "4c09d63c6aed82a1ac64a8783b3ac4fcfc45f08c7119b89fb636d6671be78c21",
+          "gold_pixels": 48
+        },
+        {
+          "file": "southeast.png",
+          "width": 960,
+          "height": 720,
+          "distinct_colors": 1047,
+          "sha256": "a72c6686ecb329dd0c8e80eb5969e6e02dfcf2dccdc30cd536578a5b705446a4",
+          "gold_pixels": 62
+        },
+        {
+          "file": "airborne.png",
+          "width": 960,
+          "height": 720,
+          "distinct_colors": 1025,
+          "sha256": "79fb33654073a37d8f6bff9105896dfc45319429a2ad92ad959d30a36c7284a7",
+          "gold_pixels": 82
+        },
+        {
+          "file": "resized.png",
+          "width": 1280,
+          "height": 720,
+          "distinct_colors": 1049,
+          "sha256": "3831eae81bf9fa2b0b59666a4b524ecd145de230ad843dd6af1f18326672e489"
+        }
+      ]
+    }
+  ],
+  "negative_camera": {
+    "directory": "evidence/arena/n2-s132-negative",
+    "rejected": true,
+    "failures": 162
+  },
+  "tour": {
+    "frames": 720,
+    "elapsed_engine_seconds": 15.7047619047619,
+    "median_frame_ms_after_warmup": 21.36483333333345,
+    "p95_frame_ms_after_warmup": 24.736,
+    "peak_fixture_height": 8.0,
+    "images": [
+      {
+        "file": "tour_0001.png",
+        "width": 1280,
+        "height": 720,
+        "distinct_colors": 1040,
+        "sha256": "2da6f55ece38a1ea534cc6fdfd6332280e2d2bb7df58e8069df3b44668b8b9f4"
+      },
+      {
+        "file": "tour_0120.png",
+        "width": 1280,
+        "height": 720,
+        "distinct_colors": 1060,
+        "sha256": "54d1baa33bee2c713804f4a973cd079088ed10adb2439f354b958fbe443443d7"
+      },
+      {
+        "file": "tour_0240.png",
+        "width": 1280,
+        "height": 720,
+        "distinct_colors": 1036,
+        "sha256": "4de2fb402a0ae4c7a827f211856666ee031feb07dac5462087bb88a242b7cd74"
+      },
+      {
+        "file": "tour_0360.png",
+        "width": 1280,
+        "height": 720,
+        "distinct_colors": 1046,
+        "sha256": "27819ad2d8d9244775a5987fe00505ed95b48ac224e24773e1eb8adbaed30473"
+      },
+      {
+        "file": "tour_0480.png",
+        "width": 1280,
+        "height": 720,
+        "distinct_colors": 1039,
+        "sha256": "4687a3ca01660f1c9bf90ecf1f2d0d4cf055e0e787dbf3617e6c32154bf45553"
+      },
+      {
+        "file": "tour_0600.png",
+        "width": 1280,
+        "height": 720,
+        "distinct_colors": 1101,
+        "sha256": "fe14b8058e0ea510506c0ff0b9a0f4f5995b4a002213845b13d4f60308f92fbd"
+      }
+    ],
+    "limit": "Preview only, seven nonphysical cubes. NOT the 192-body benchmark or laptop FPS."
+  },
+  "checker_negative_controls_rejected": [
+    "missing_assertion",
+    "duplicate_assertion",
+    "failed_assertion",
+    "clipped_frustum",
+    "headless"
+  ],
+  "passed": true
+}

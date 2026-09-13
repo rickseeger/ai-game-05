@@ -1,0 +1,12 @@
+{
+  "configured_vision": {
+    "provider": "auto",
+    "model": "",
+    "timeout": 120
+  },
+  "default_requirements": false,
+  "runtime_requirements": true,
+  "runtime_route": "openai",
+  "runtime_model": "gpt-6-astra",
+  "client_available": true
+}

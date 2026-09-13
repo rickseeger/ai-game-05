@@ -1,0 +1,39 @@
+{
+  "command": [
+    "xvfb-run",
+    "-a",
+    "-s",
+    "-screen 0 1280x1024x24",
+    "/opt/g-harness/workspace/G12/node_1_step_112/tools/Godot_v4.5.1-stable_linux.x86_64",
+    "--path",
+    "/opt/g-harness/workspace/G12/node_2_step_132/repo/game",
+    "res://arena_preview.tscn",
+    "--rendering-method",
+    "gl_compatibility",
+    "--audio-driver",
+    "Dummy",
+    "--resolution",
+    "960x720",
+    "--disable-vsync",
+    "--max-fps",
+    "60",
+    "--",
+    "--arena-test"
+  ],
+  "environment": {
+    "ARENA_OUT": "/opt/g-harness/workspace/G12/node_2_step_132/repo/evidence/arena/n2-s132-4x3",
+    "GODOT_SILENCE_ROOT_WARNING": "1",
+    "LIBGL_ALWAYS_SOFTWARE": "1"
+  },
+  "returncode": 0,
+  "wall_seconds": 2.673104866000358,
+  "uname": [
+    "Linux",
+    "g",
+    "7.0.0-31-generic",
+    "#31-Ubuntu SMP PREEMPT_DYNAMIC Sat Aug  1 04:26:38 UTC 2026",
+    "x86_64"
+  ],
+  "python": "3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]",
+  "observation": "Offscreen Xvfb software OpenGL, explicit Dummy audio; no human desktop or audio observation."
+}
