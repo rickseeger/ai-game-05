@@ -25,7 +25,9 @@ func refit() -> void:
     if size.y <= 0 or not is_instance_valid(arena):
         return
     var focus: Vector3 = arena.to_global(FOCUS)
-    var direction: Vector3 = arena.global_basis * Vector3(0, 1, 0.9).normalized()
+    # Slightly shallower than the former 0.9 Z/Y ratio: rendered ID/clean-pass
+    # tests show more airborne surface and less cyan overlap. No yaw/follow/zoom.
+    var direction: Vector3 = arena.global_basis * Vector3(0, 1, 1.2).normalized()
     global_position = focus + direction
     look_at(focus, arena.global_basis.y)
     var tan_y := tan(deg_to_rad(fov * 0.5)) * FRAME_FILL
