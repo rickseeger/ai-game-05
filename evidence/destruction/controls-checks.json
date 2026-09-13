@@ -1,0 +1,61 @@
+{
+  "runs": [
+    {
+      "ticks": 2085,
+      "injected_events": 438,
+      "emitted_shots": 8,
+      "fire_tick_intervals": [
+        21,
+        21,
+        21
+      ],
+      "generations": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "maximum_actor_extent_m": 11.5997943878174,
+      "directory": "evidence/controls/node4-regression",
+      "assertions": 99,
+      "frames": [
+        {
+          "file": "initial.png",
+          "width": 1280,
+          "height": 720,
+          "distinct_colors": 893,
+          "sha256": "0957d03082963ffacb0a781971e0a8ed6e62538132a5a6312eda0572bdcc7e63"
+        },
+        {
+          "file": "aim_cover.png",
+          "width": 1280,
+          "height": 720,
+          "distinct_colors": 893,
+          "sha256": "8151c416a83a7fa1b99330a29d6cd67438aa6273f5fcaa5deaffc8773bcab0af"
+        },
+        {
+          "file": "resized_target.png",
+          "width": 960,
+          "height": 720,
+          "distinct_colors": 871,
+          "sha256": "10c096e466cf32797e709e09c7a03fa829780b1601cc2b8b6edf9251f793d764"
+        },
+        {
+          "file": "paused_controls.png",
+          "width": 960,
+          "height": 720,
+          "distinct_colors": 1706,
+          "sha256": "0499c910b58e5bd2bab3072434d1a03e91fc1f387a2aa58e2664bc17fd0fab58"
+        },
+        {
+          "file": "final_restart.png",
+          "width": 960,
+          "height": 720,
+          "distinct_colors": 871,
+          "sha256": "820171530d6d949b07dee2248a6d9b5aa27d867f85c653dda184d17388de4cd1"
+        }
+      ]
+    }
+  ],
+  "passed": true
+}

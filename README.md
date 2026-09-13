@@ -60,3 +60,17 @@ unperformed; automated runtime input checks do not establish playability.
 
     python3 scripts/run_controls.py local-controls
     python3 scripts/check_controls.py evidence/controls/local-controls --self-test
+
+## Destruction slice (node 4)
+
+    .tools/Godot_v4.5.1-stable_linux.x86_64 --path game res://destruction_demo.tscn --rendering-method gl_compatibility
+
+Explicit fixture: B ruptures targets; N resets them. Uses unchanged player controls,
+real independent rigid-body blocks, a hard 192-body cap and eight-second cleanup.
+Not full Combat, opposition, audio or run objectives. See docs/destruction-validation.md
+for source interfaces, exact executed tests, captures, performance and limitations.
+Visual assessment is BLOCKED; the software-renderer benchmark also misses its p95
+target. Neither is relabelled a pass on the strength of automated physics tests.
+
+    python3 scripts/run_destruction.py local-destruction
+    python3 scripts/check_destruction.py evidence/destruction/local-destruction --self-test

@@ -99,3 +99,25 @@ PASS means observed by the specified measurement; PENDING means not done.
 - PENDING: physical-desktop/visual comfort assessment, full Combat, pylon collider
   integration, natural win/loss, complete restart cleanup and exact-release play.
   No playability claim is inferred from these automated tests.
+
+## Node 4: destruction technical evidence (NOT durable completion)
+
+- PASS: fresh rendered arena prerequisite, 337 checks; unchanged arena/camera/player
+  source. Controls regression, 99 checks, independent trace/image checkers pass.
+- PASS: actual 32/16 independent RigidBody3D boxes, seeded varied upward/spin launch,
+  gravity/contact/rebound/tumbling/natural sleep. Render batching copies real poses.
+- PASS: same-tick once-only target mesh/collider removal before burst notification;
+  bounded 192 bodies, sleeping-first/oldest eviction, final-second shrink, TTL,
+  explicit clear, three session restarts and pause freezing.
+- PASS: four positive rendered launches, 34 engine assertions each; three full
+  220256-sample traces, independent physics checks, 32 timestamped renderer PNGs,
+  eight rejected checker mutations and two rejected actual broken-physics runs.
+- FAIL reference performance: capture-free lightweight 192-body p95 35.114ms exceeds
+  33.3ms on the documented four-vCPU llvmpipe VM. No laptop/GPU result claimed.
+- BLOCKED: visual perception/reviewer unavailable; convincing appearance/weight and
+  frame-specific launch/impact/rest observations remain unassessed. Node 2 unchanged.
+- PENDING: independent observing validator rerun, Combat/opposition/run integration,
+  Sound implementation/audible tuning, root fun and exact-release play validation.
+
+See docs/destruction-validation.md and evidence/destruction/checks.json. Earlier
+pending release-wide gates remain pending; this feature evidence is not root signoff.

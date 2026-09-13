@@ -1,0 +1,7 @@
+{
+  "first_arc_identical_excluding_wall_timestamps": true,
+  "same_seed": 1201,
+  "different_seed_changes_initial_conditions": true,
+  "other_seed": 2207,
+  "scope": "same engine and VM only; not cross-platform deterministic guarantee"
+}

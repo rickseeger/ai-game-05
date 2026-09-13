@@ -1,0 +1,580 @@
+{
+  "runs": [
+    {
+      "directory": "development-01",
+      "returncode": 0,
+      "utc_started": "2026-09-13T21:43:26.033592+00:00",
+      "source_sha256": {
+        "game/arena.gd": "2091e3ca0fecb55eab9b1222691fcaaf927bec57e2be48294b29dd1d2945629c",
+        "game/arena_camera.gd": "4c14110e377afeeea1f83c0b297a2ceb893c9fff56410e31b8bbee8fb7857c90",
+        "game/arena_preview.gd": "163f01b678fdd07cd19c5f1496f8596cfab222dbd9855adc298b746547f71f62",
+        "game/arena_preview.tscn": "ab8b68a873e2328c55872ba0a5cfb16ad8a4c3cb2b2e644d3ebaba6e3b24c6f2",
+        "game/controls.tscn": "2fbdf146211eb7a353d40ea5b57679f4e8e0bdb44a1205bf8c1bd330a80973e2",
+        "game/controls_session.gd": "4ba53c15a423253301ec209d41dd4a4280fc6c0f1740be5acffc333d711191a3",
+        "game/debris_block.gd": "84437d0a6da3e89d136d1290c094d809f1b387a3fa00cc58b2900c02db08a8eb",
+        "game/destructible_target.gd": "60cd8225c794e1310ff8b273981270ca3e4831e1b5b7a02557b71775059b52d3",
+        "game/destruction.gd": "e7c6d4730da294c8e6c458d53abe968d964e7cd5d5606a3c3dd282b250cd0123",
+        "game/destruction_demo.gd": "56c5271fded872a91b8a9a2e169668c758611ab4a828e212bb530838d89f3584",
+        "game/destruction_demo.tscn": "a34bc6ae8e50e1f4559771495e07bcc37dfe2131a3d0f3fedd3d77d02fa7238e",
+        "game/player.gd": "dd434275fc326f24a60613cfd34c74bf02d6b7f131cc1dbc106ad9024095991e",
+        "game/player_input.gd": "0942be81f55a8d17c8871d2887ce93556ad24e15067ea494500967fbd001c86b",
+        "game/project.godot": "82d739979cb7d9672540edfce8299a257b969ba4d95307857136276c7dbe9fa8",
+        "game/tests/arena_tests.gd": "659b7e5f2741a867c38f564be12a65380f8aef75ea1a41bbea38f0080a2ddbd9",
+        "game/tests/controls_tests.gd": "e0e1ccc03104a921bc25d7d157536e17b781e588e75e1da938f2b5919d1cd4a7",
+        "game/tests/destruction_tests.gd": "ead1af22ecb6b2409e8d0851118921833a24e87f7c534ea25809eeac71f878a4"
+      },
+      "files": [
+        {
+          "path": "development-01/engine.log",
+          "sha256": "8994c656080c1cc8e5d70649f752de7b294dd613587d4a5027faaccb2ec9c559"
+        },
+        {
+          "path": "development-01/frame_0001.png",
+          "sha256": "ab1f4e047de11beab3995dc2dc0bd3d1c3682bbe8300cd4c921eff5f5ba3a44e"
+        },
+        {
+          "path": "development-01/frame_0010.png",
+          "sha256": "bb50e42f7c77f43b06e6fcf84372aa1b3b05a8d793bc17088c3f07ce074e8adc"
+        },
+        {
+          "path": "development-01/frame_0030.png",
+          "sha256": "f9e415090c76fdb8604b9c6b719463ce884d5b146fdae3d51fbb24659624ea5c"
+        },
+        {
+          "path": "development-01/frame_0060.png",
+          "sha256": "a16be0893bdb7c624087e320efc983aed5b99b14945d6176b1f319246f0517d7"
+        },
+        {
+          "path": "development-01/frame_0090.png",
+          "sha256": "9e37f1260d9fc4e385b188f20321c4480f0b9b00e1b256d7e7cdb2ed1404e13e"
+        },
+        {
+          "path": "development-01/frame_0096.png",
+          "sha256": "bd3824a6d5dbac7fe699dbf7eef426ce8d29a5ae1f22916ba5b03ec1a5c3ee6a"
+        },
+        {
+          "path": "development-01/frame_0102.png",
+          "sha256": "98112c1a7ac0d5d1e88a14a6b14adaf7973919518173bbbf7dd754968384ec92"
+        },
+        {
+          "path": "development-01/frame_0108.png",
+          "sha256": "2239776b6b989ed620795767fa454b61d092a4602d0cea2cbd1dca79bc91ddb0"
+        },
+        {
+          "path": "development-01/frame_0114.png",
+          "sha256": "58e7428b6f9c4eea7e086a158cc3a799b6ffe02eee5aa4feff132253b6db71f6"
+        },
+        {
+          "path": "development-01/frame_0120.png",
+          "sha256": "683ae145cf36bffcf135e80b83db57110101933940987638d50e05ab886c662d"
+        },
+        {
+          "path": "development-01/frame_0126.png",
+          "sha256": "705b43be7fac5c63e3c64a0404c3b64e8e9046e9bb99054d68e6dcf624d02e13"
+        },
+        {
+          "path": "development-01/frame_0132.png",
+          "sha256": "858a1ad9cb686247a9346de7533d2efb2ee3cdb733ca809f9d37e6ab4d8c250f"
+        },
+        {
+          "path": "development-01/frame_0138.png",
+          "sha256": "6fe9dd778350709696a3e3d4b8747621c00c7ebf39b15b52404174f209ffb47e"
+        },
+        {
+          "path": "development-01/frame_0144.png",
+          "sha256": "b0157faadb83891ec0f1b7fa92caf7c887a0099a3a189a38bb04997d2317b0e2"
+        },
+        {
+          "path": "development-01/frame_0150.png",
+          "sha256": "ba96a4d9ec77bde40c17c99bc8af4ac2c34b51b74122ef5716bba6be119e02ca"
+        },
+        {
+          "path": "development-01/frame_0210.png",
+          "sha256": "266cea91b149ab1d2d67966e777e9564784b6662f4c95a0649fb74fd406a2c35"
+        },
+        {
+          "path": "development-01/frame_0300.png",
+          "sha256": "52e35a8e7ba380f9e8ed3c8ee81d3b07af30df9af97a4f90f261535446b86a4d"
+        },
+        {
+          "path": "development-01/frame_0390.png",
+          "sha256": "52e35a8e7ba380f9e8ed3c8ee81d3b07af30df9af97a4f90f261535446b86a4d"
+        },
+        {
+          "path": "development-01/frame_0450.png",
+          "sha256": "045ea4bb4915babacd2e3349e136177baf0937303117b0635eb8813aa8b55427"
+        },
+        {
+          "path": "development-01/frame_0479.png",
+          "sha256": "efd5121f7d24a49b3477ae7ff8e818c95c52f123754d1ac4235df6a563b6f36f"
+        },
+        {
+          "path": "development-01/frame_0490.png",
+          "sha256": "efd5121f7d24a49b3477ae7ff8e818c95c52f123754d1ac4235df6a563b6f36f"
+        },
+        {
+          "path": "development-01/frame_0511.png",
+          "sha256": "e931c7d134563253e12d13f404fa5919a0c098639308ea33ab47636f069c4101"
+        },
+        {
+          "path": "development-01/frame_0540.png",
+          "sha256": "84767dc4d1d8ce6940c58198de55a343d773e25e4771d74c3805ad047cdb68fc"
+        },
+        {
+          "path": "development-01/frame_0600.png",
+          "sha256": "f0c61f376b2b4d68b3dc04e3a0df990ef330933ac7b9fc27b985ea0ac416bc14"
+        },
+        {
+          "path": "development-01/frame_0631.png",
+          "sha256": "f97894b4f58b601a300e37c56e5989ddcb37e7334ddbd62fb141f6a02ec1118a"
+        },
+        {
+          "path": "development-01/frame_0660.png",
+          "sha256": "bc45ac33a9fb4c0ab2724bea715e69a724cffcd7a9476f8ca28abaf15b831e64"
+        },
+        {
+          "path": "development-01/frame_0720.png",
+          "sha256": "b75a5c6c30fd948db9e5212dbc167d506c71670d3f1468d70a49ddfe78b6aad9"
+        },
+        {
+          "path": "development-01/frame_0900.png",
+          "sha256": "8c34dc5872cdda800213f8c4a694a643470fe93237c936fbd891e0df39f24f6b"
+        },
+        {
+          "path": "development-01/frame_0930.png",
+          "sha256": "d0b98bc9010aa784204180dadb0daba550d422d5085e6ff80630f86dc0a07a1c"
+        },
+        {
+          "path": "development-01/frame_1020.png",
+          "sha256": "7ea106c26a67a3cf234f0c6bcf734d6eb49abc001b414d2ef7d9fcbabcfe575e"
+        },
+        {
+          "path": "development-01/frame_1190.png",
+          "sha256": "808ec16c0593aa53ac62f8418fcbfab42d042abe9c652f651cfd804c3838155f"
+        },
+        {
+          "path": "development-01/frame_1385.png",
+          "sha256": "46c8a46709f6cc700e4571a97f7c81531edc0b4bccf63ac404d214583b22aa70"
+        },
+        {
+          "path": "development-01/frames.csv",
+          "sha256": "83601f0d21553a005023ba086b8636e8caf634079f6905d762fd8e1840b574eb"
+        },
+        {
+          "path": "development-01/launch.json",
+          "sha256": "4fb0d20f0eb8450546f087da477673a6af1b0a4e32b575b873da8db06bc10b6f"
+        },
+        {
+          "path": "development-01/physics.csv.gz",
+          "sha256": "0d5d895e79a42b0c8b4209afdcebe6c863776dd0bd064288121f00f038bc9598"
+        },
+        {
+          "path": "development-01/results.json",
+          "sha256": "d12ffcd4af7971946efae5cd6fd9fcbf9423c16cdf8aa4a2aa146977be12f29c"
+        }
+      ]
+    },
+    {
+      "directory": "development-02",
+      "returncode": 0,
+      "utc_started": "2026-09-13T21:44:23.263063+00:00",
+      "source_sha256": {
+        "game/arena.gd": "2091e3ca0fecb55eab9b1222691fcaaf927bec57e2be48294b29dd1d2945629c",
+        "game/arena_camera.gd": "4c14110e377afeeea1f83c0b297a2ceb893c9fff56410e31b8bbee8fb7857c90",
+        "game/arena_preview.gd": "163f01b678fdd07cd19c5f1496f8596cfab222dbd9855adc298b746547f71f62",
+        "game/arena_preview.tscn": "ab8b68a873e2328c55872ba0a5cfb16ad8a4c3cb2b2e644d3ebaba6e3b24c6f2",
+        "game/controls.tscn": "2fbdf146211eb7a353d40ea5b57679f4e8e0bdb44a1205bf8c1bd330a80973e2",
+        "game/controls_session.gd": "4ba53c15a423253301ec209d41dd4a4280fc6c0f1740be5acffc333d711191a3",
+        "game/debris_block.gd": "eed370e566148d7f8c532d6b70e92ffc06889a21dfabd52a3824d3b7a8c2965a",
+        "game/destructible_target.gd": "60cd8225c794e1310ff8b273981270ca3e4831e1b5b7a02557b71775059b52d3",
+        "game/destruction.gd": "c19a15e32e8d2125311d963b8ef4b649cbe019897cc0076f65933b2e036f7844",
+        "game/destruction_demo.gd": "56c5271fded872a91b8a9a2e169668c758611ab4a828e212bb530838d89f3584",
+        "game/destruction_demo.tscn": "a34bc6ae8e50e1f4559771495e07bcc37dfe2131a3d0f3fedd3d77d02fa7238e",
+        "game/player.gd": "dd434275fc326f24a60613cfd34c74bf02d6b7f131cc1dbc106ad9024095991e",
+        "game/player_input.gd": "0942be81f55a8d17c8871d2887ce93556ad24e15067ea494500967fbd001c86b",
+        "game/project.godot": "82d739979cb7d9672540edfce8299a257b969ba4d95307857136276c7dbe9fa8",
+        "game/tests/arena_tests.gd": "659b7e5f2741a867c38f564be12a65380f8aef75ea1a41bbea38f0080a2ddbd9",
+        "game/tests/controls_tests.gd": "e0e1ccc03104a921bc25d7d157536e17b781e588e75e1da938f2b5919d1cd4a7",
+        "game/tests/destruction_tests.gd": "de46c67d823d4776d0b4075f0efa85dca0b89ffbad565998f3dddf59847ed736"
+      },
+      "files": [
+        {
+          "path": "development-02/engine.log",
+          "sha256": "8994c656080c1cc8e5d70649f752de7b294dd613587d4a5027faaccb2ec9c559"
+        },
+        {
+          "path": "development-02/frames.csv",
+          "sha256": "d003f550f4fc582a50b882874a21ffd47ddc4a73182d47435f181e1c99258221"
+        },
+        {
+          "path": "development-02/launch.json",
+          "sha256": "35bd8541638219c7dc33504591abfa9ad07e6231ba697c538c1e1b703ba16dcd"
+        },
+        {
+          "path": "development-02/physics.csv.gz",
+          "sha256": "dc305c38a511ae2accf0a6513a688f17715d892a9436d65b03bbba8324546544"
+        },
+        {
+          "path": "development-02/results.json",
+          "sha256": "1c067231b4cb0f0152d315fe13fd4d574782efbc9d186ebd398b85f1d27bd8d5"
+        }
+      ]
+    },
+    {
+      "directory": "development-03",
+      "returncode": 0,
+      "utc_started": "2026-09-13T21:45:27.609751+00:00",
+      "source_sha256": {
+        "game/arena.gd": "2091e3ca0fecb55eab9b1222691fcaaf927bec57e2be48294b29dd1d2945629c",
+        "game/arena_camera.gd": "4c14110e377afeeea1f83c0b297a2ceb893c9fff56410e31b8bbee8fb7857c90",
+        "game/arena_preview.gd": "163f01b678fdd07cd19c5f1496f8596cfab222dbd9855adc298b746547f71f62",
+        "game/arena_preview.tscn": "ab8b68a873e2328c55872ba0a5cfb16ad8a4c3cb2b2e644d3ebaba6e3b24c6f2",
+        "game/controls.tscn": "2fbdf146211eb7a353d40ea5b57679f4e8e0bdb44a1205bf8c1bd330a80973e2",
+        "game/controls_session.gd": "4ba53c15a423253301ec209d41dd4a4280fc6c0f1740be5acffc333d711191a3",
+        "game/debris_block.gd": "eed370e566148d7f8c532d6b70e92ffc06889a21dfabd52a3824d3b7a8c2965a",
+        "game/destructible_target.gd": "60cd8225c794e1310ff8b273981270ca3e4831e1b5b7a02557b71775059b52d3",
+        "game/destruction.gd": "c19a15e32e8d2125311d963b8ef4b649cbe019897cc0076f65933b2e036f7844",
+        "game/destruction_demo.gd": "56c5271fded872a91b8a9a2e169668c758611ab4a828e212bb530838d89f3584",
+        "game/destruction_demo.tscn": "a34bc6ae8e50e1f4559771495e07bcc37dfe2131a3d0f3fedd3d77d02fa7238e",
+        "game/player.gd": "dd434275fc326f24a60613cfd34c74bf02d6b7f131cc1dbc106ad9024095991e",
+        "game/player_input.gd": "0942be81f55a8d17c8871d2887ce93556ad24e15067ea494500967fbd001c86b",
+        "game/project.godot": "82d739979cb7d9672540edfce8299a257b969ba4d95307857136276c7dbe9fa8",
+        "game/tests/arena_tests.gd": "659b7e5f2741a867c38f564be12a65380f8aef75ea1a41bbea38f0080a2ddbd9",
+        "game/tests/controls_tests.gd": "e0e1ccc03104a921bc25d7d157536e17b781e588e75e1da938f2b5919d1cd4a7",
+        "game/tests/destruction_tests.gd": "9ba1d942785cae7cacf147adc696e35d24570b0d7cc949a95de5dd1a8b75e6a0"
+      },
+      "files": [
+        {
+          "path": "development-03/engine.log",
+          "sha256": "873354346a35dfc3e954581d1d539498dac27576c91219223f06efee02edd79f"
+        },
+        {
+          "path": "development-03/frames.csv",
+          "sha256": "399cfabf657d9926cf99daf7e94d832f6744f8e5405ebd84a6e8c1ea2bc5c7d9"
+        },
+        {
+          "path": "development-03/launch.json",
+          "sha256": "1ef2ff05ba188d378e1d3eaf065547d5fca086490f721e5bd9ce9f91dde916bb"
+        },
+        {
+          "path": "development-03/physics.csv.gz",
+          "sha256": "8a5fde487fd8a53879bba3e76a2fdfcd4265d29675434ec424ac2d792ee39f52"
+        },
+        {
+          "path": "development-03/results.json",
+          "sha256": "a152fbb7a294c69f8e0479443768c747ef0ff6e01b7ec90286255fa29be4bae6"
+        }
+      ]
+    },
+    {
+      "directory": "development-04-parse-error",
+      "returncode": 124,
+      "utc_started": "2026-09-13T21:46:17.362411+00:00",
+      "source_sha256": {
+        "game/arena.gd": "2091e3ca0fecb55eab9b1222691fcaaf927bec57e2be48294b29dd1d2945629c",
+        "game/arena_camera.gd": "4c14110e377afeeea1f83c0b297a2ceb893c9fff56410e31b8bbee8fb7857c90",
+        "game/arena_preview.gd": "163f01b678fdd07cd19c5f1496f8596cfab222dbd9855adc298b746547f71f62",
+        "game/arena_preview.tscn": "ab8b68a873e2328c55872ba0a5cfb16ad8a4c3cb2b2e644d3ebaba6e3b24c6f2",
+        "game/controls.tscn": "2fbdf146211eb7a353d40ea5b57679f4e8e0bdb44a1205bf8c1bd330a80973e2",
+        "game/controls_session.gd": "4ba53c15a423253301ec209d41dd4a4280fc6c0f1740be5acffc333d711191a3",
+        "game/debris_block.gd": "eed370e566148d7f8c532d6b70e92ffc06889a21dfabd52a3824d3b7a8c2965a",
+        "game/destructible_target.gd": "60cd8225c794e1310ff8b273981270ca3e4831e1b5b7a02557b71775059b52d3",
+        "game/destruction.gd": "fc87d4923107f05cf5a773c67ad7d2342cc1b0ca57044bcd5167331996c5c709",
+        "game/destruction_demo.gd": "56c5271fded872a91b8a9a2e169668c758611ab4a828e212bb530838d89f3584",
+        "game/destruction_demo.tscn": "a34bc6ae8e50e1f4559771495e07bcc37dfe2131a3d0f3fedd3d77d02fa7238e",
+        "game/player.gd": "dd434275fc326f24a60613cfd34c74bf02d6b7f131cc1dbc106ad9024095991e",
+        "game/player_input.gd": "0942be81f55a8d17c8871d2887ce93556ad24e15067ea494500967fbd001c86b",
+        "game/project.godot": "82d739979cb7d9672540edfce8299a257b969ba4d95307857136276c7dbe9fa8",
+        "game/tests/arena_tests.gd": "659b7e5f2741a867c38f564be12a65380f8aef75ea1a41bbea38f0080a2ddbd9",
+        "game/tests/controls_tests.gd": "e0e1ccc03104a921bc25d7d157536e17b781e588e75e1da938f2b5919d1cd4a7",
+        "game/tests/destruction_tests.gd": "d0b95a204f02a7bbb7799a568e8af4d8e378dc33e9d1a92ae72abeaa2e9e6cd1"
+      },
+      "files": [
+        {
+          "path": "development-04-parse-error/engine.log",
+          "sha256": "53d8f13634cf05e022fa02f972ee9863bc55391b99e4d30d2981a07ad84d22dd"
+        },
+        {
+          "path": "development-04-parse-error/launch.json",
+          "sha256": "7f47d96bfe1a177f223d8863d8908f42b0224487b2e7bf77e640981071495f6b"
+        }
+      ]
+    },
+    {
+      "directory": "development-05-capture",
+      "returncode": 0,
+      "utc_started": "2026-09-13T21:48:52.554805+00:00",
+      "source_sha256": {
+        "game/arena.gd": "2091e3ca0fecb55eab9b1222691fcaaf927bec57e2be48294b29dd1d2945629c",
+        "game/arena_camera.gd": "4c14110e377afeeea1f83c0b297a2ceb893c9fff56410e31b8bbee8fb7857c90",
+        "game/arena_preview.gd": "163f01b678fdd07cd19c5f1496f8596cfab222dbd9855adc298b746547f71f62",
+        "game/arena_preview.tscn": "ab8b68a873e2328c55872ba0a5cfb16ad8a4c3cb2b2e644d3ebaba6e3b24c6f2",
+        "game/controls.tscn": "2fbdf146211eb7a353d40ea5b57679f4e8e0bdb44a1205bf8c1bd330a80973e2",
+        "game/controls_session.gd": "4ba53c15a423253301ec209d41dd4a4280fc6c0f1740be5acffc333d711191a3",
+        "game/debris_block.gd": "eed370e566148d7f8c532d6b70e92ffc06889a21dfabd52a3824d3b7a8c2965a",
+        "game/destructible_target.gd": "60cd8225c794e1310ff8b273981270ca3e4831e1b5b7a02557b71775059b52d3",
+        "game/destruction.gd": "fc87d4923107f05cf5a773c67ad7d2342cc1b0ca57044bcd5167331996c5c709",
+        "game/destruction_demo.gd": "56c5271fded872a91b8a9a2e169668c758611ab4a828e212bb530838d89f3584",
+        "game/destruction_demo.tscn": "a34bc6ae8e50e1f4559771495e07bcc37dfe2131a3d0f3fedd3d77d02fa7238e",
+        "game/player.gd": "dd434275fc326f24a60613cfd34c74bf02d6b7f131cc1dbc106ad9024095991e",
+        "game/player_input.gd": "0942be81f55a8d17c8871d2887ce93556ad24e15067ea494500967fbd001c86b",
+        "game/project.godot": "82d739979cb7d9672540edfce8299a257b969ba4d95307857136276c7dbe9fa8",
+        "game/tests/arena_tests.gd": "659b7e5f2741a867c38f564be12a65380f8aef75ea1a41bbea38f0080a2ddbd9",
+        "game/tests/controls_tests.gd": "e0e1ccc03104a921bc25d7d157536e17b781e588e75e1da938f2b5919d1cd4a7",
+        "game/tests/destruction_tests.gd": "990a3594eeeb9d5b4483e66a1fade7420d7d387923a42f0d467f21263e626e46"
+      },
+      "files": [
+        {
+          "path": "development-05-capture/engine.log",
+          "sha256": "6f629fc34662870b1bb810c9d57c30d19a569082ccceef04e06358679b59706b"
+        },
+        {
+          "path": "development-05-capture/frame_0001.png",
+          "sha256": "efd5121f7d24a49b3477ae7ff8e818c95c52f123754d1ac4235df6a563b6f36f"
+        },
+        {
+          "path": "development-05-capture/frame_0010.png",
+          "sha256": "3e31572e7d3d41e550b0cb93d47a7d6ed1c3e39cd6e0565c794701cdccb00fed"
+        },
+        {
+          "path": "development-05-capture/frame_0030.png",
+          "sha256": "c8465a4670d33fe346c0925569af9c16986e19fd197bfca36fcf21110ffb55f3"
+        },
+        {
+          "path": "development-05-capture/frame_0060.png",
+          "sha256": "18ff024e209e3953a92764f87c0f90808cb7bf7ea941cac9c3fce7474ce5787d"
+        },
+        {
+          "path": "development-05-capture/frame_0090.png",
+          "sha256": "32923cf9708a3fcb847d41213bd98dcac6d28ce952f2dd72a3953bba62c22de0"
+        },
+        {
+          "path": "development-05-capture/frame_0096.png",
+          "sha256": "92fe7a1816cdfeb9d2d1660bb8fa5587a151c3d2c4c7f60dfd1b19883e06a43c"
+        },
+        {
+          "path": "development-05-capture/frame_0102.png",
+          "sha256": "d290ab6404b4cf5de546105dac75ca987281efcebc38054689402574eb766c17"
+        },
+        {
+          "path": "development-05-capture/frame_0108.png",
+          "sha256": "fb082de75e343fd4aec9b0b5eaf2b791664d9cef128f279ca874633234880946"
+        },
+        {
+          "path": "development-05-capture/frame_0114.png",
+          "sha256": "e17f3edba56a5c14a97b73a962cb6908b13f8677ed9dbdfd8705af59a4ed0a0c"
+        },
+        {
+          "path": "development-05-capture/frame_0120.png",
+          "sha256": "0a11d701c9120f12678cbfad581b63d663b2660316b2a657c18bc6f9a775d507"
+        },
+        {
+          "path": "development-05-capture/frame_0126.png",
+          "sha256": "eca054bb60a96a33d2c9c21a482d9a62695777c558e17a2b82bc98aa347b5fbe"
+        },
+        {
+          "path": "development-05-capture/frame_0132.png",
+          "sha256": "3cb9af402c8896a8b9e378acd7540fe8a32d7d714606d5699317ebc840c7d43b"
+        },
+        {
+          "path": "development-05-capture/frame_0138.png",
+          "sha256": "f7a72b8b04ff593a5830b844e5c7fb93760c7e21c44ab79c8f7668825a31955e"
+        },
+        {
+          "path": "development-05-capture/frame_0144.png",
+          "sha256": "a6f1e692d149e764a08694820b7c386ab1685450aa53d0e6452ed28c041d2a16"
+        },
+        {
+          "path": "development-05-capture/frame_0150.png",
+          "sha256": "23c3ef98aee2b55607e213622b149c7f4a40bace43a6c7fe229f0ca15b3166db"
+        },
+        {
+          "path": "development-05-capture/frame_0210.png",
+          "sha256": "fb08c077e338ee7e8c775df5a5d1614be88f1e9a42e638beff7f4c364c6c9270"
+        },
+        {
+          "path": "development-05-capture/frame_0300.png",
+          "sha256": "b054a383b57c26b809bcab0853b2824efd64782354c1184128eb12d37fd358b3"
+        },
+        {
+          "path": "development-05-capture/frame_0390.png",
+          "sha256": "b054a383b57c26b809bcab0853b2824efd64782354c1184128eb12d37fd358b3"
+        },
+        {
+          "path": "development-05-capture/frame_0450.png",
+          "sha256": "f2ac16357c809bed711575e1d8b1119f17b5d57474673e3400b10bd59a7c7a92"
+        },
+        {
+          "path": "development-05-capture/frame_0479.png",
+          "sha256": "efd5121f7d24a49b3477ae7ff8e818c95c52f123754d1ac4235df6a563b6f36f"
+        },
+        {
+          "path": "development-05-capture/frame_0490.png",
+          "sha256": "efd5121f7d24a49b3477ae7ff8e818c95c52f123754d1ac4235df6a563b6f36f"
+        },
+        {
+          "path": "development-05-capture/frame_0511.png",
+          "sha256": "c89d4b839db4c33a5c9a82d0d8cc4303593346c396870bad305d978476fbae7a"
+        },
+        {
+          "path": "development-05-capture/frame_0540.png",
+          "sha256": "43ed00ad2c3b1e2174e302de794dcb7b1c8f8482b3eaf995609551c5c4e1c1bd"
+        },
+        {
+          "path": "development-05-capture/frame_0600.png",
+          "sha256": "e3cccf3f34b3b0ad1c8334a8934b5ae31bdadf7209b0c8974f76dd0e2ff22070"
+        },
+        {
+          "path": "development-05-capture/frame_0631.png",
+          "sha256": "318dc3cd345a5b5b26f15f2da8bf8d991e00772390cf37fb3d2d4220cd480221"
+        },
+        {
+          "path": "development-05-capture/frame_0660.png",
+          "sha256": "0011f367642220a2675d574fd55c15ecef17e3135c6afdce8e4a9026b756936f"
+        },
+        {
+          "path": "development-05-capture/frame_0720.png",
+          "sha256": "c8971d637a8684afb3cfa060abd983f39f458b49070511f790776fa942a440a2"
+        },
+        {
+          "path": "development-05-capture/frame_0900.png",
+          "sha256": "fe74063f9d9b4e2af1301c5cb89f5008a187245f4501d1fdc8459c3c37b14d46"
+        },
+        {
+          "path": "development-05-capture/frame_0930.png",
+          "sha256": "3ae22167e5f10587c356b27542520eafdf92d0f137dcd672ac11a230ea18079e"
+        },
+        {
+          "path": "development-05-capture/frame_1020.png",
+          "sha256": "217949e64b36e5e4191b839e9e4264d0b93e1d7fd92448596a260f9acf8e02e6"
+        },
+        {
+          "path": "development-05-capture/frame_1190.png",
+          "sha256": "488c360ad5d8f7d056b7a0be64e1f0e405d6cd2467d1a926ae9d548170d8ecc3"
+        },
+        {
+          "path": "development-05-capture/frame_1385.png",
+          "sha256": "46c8a46709f6cc700e4571a97f7c81531edc0b4bccf63ac404d214583b22aa70"
+        },
+        {
+          "path": "development-05-capture/frames.csv",
+          "sha256": "6e9487325e94ea13232ca1c83a3a97c7c7c724ecb4496481cacc686b5ba7c084"
+        },
+        {
+          "path": "development-05-capture/launch.json",
+          "sha256": "a749215e0997a3d1e0e7262e933f4f201b31777a1413e19780b06acfd4c491e9"
+        },
+        {
+          "path": "development-05-capture/physics.csv.gz",
+          "sha256": "12fe63c02e420cf4eb772da73db21f44f88baaf5f66f5ac7808604d667e854e6"
+        },
+        {
+          "path": "development-05-capture/results.json",
+          "sha256": "88402e977f62975051e28bd78b3956dd022de86c2cc30d9319227c4dd1793c61"
+        }
+      ]
+    },
+    {
+      "directory": "development-06-rerun",
+      "returncode": 0,
+      "utc_started": "2026-09-13T21:49:34.992158+00:00",
+      "source_sha256": {
+        "game/arena.gd": "2091e3ca0fecb55eab9b1222691fcaaf927bec57e2be48294b29dd1d2945629c",
+        "game/arena_camera.gd": "4c14110e377afeeea1f83c0b297a2ceb893c9fff56410e31b8bbee8fb7857c90",
+        "game/arena_preview.gd": "163f01b678fdd07cd19c5f1496f8596cfab222dbd9855adc298b746547f71f62",
+        "game/arena_preview.tscn": "ab8b68a873e2328c55872ba0a5cfb16ad8a4c3cb2b2e644d3ebaba6e3b24c6f2",
+        "game/controls.tscn": "2fbdf146211eb7a353d40ea5b57679f4e8e0bdb44a1205bf8c1bd330a80973e2",
+        "game/controls_session.gd": "4ba53c15a423253301ec209d41dd4a4280fc6c0f1740be5acffc333d711191a3",
+        "game/debris_block.gd": "eed370e566148d7f8c532d6b70e92ffc06889a21dfabd52a3824d3b7a8c2965a",
+        "game/destructible_target.gd": "60cd8225c794e1310ff8b273981270ca3e4831e1b5b7a02557b71775059b52d3",
+        "game/destruction.gd": "fc87d4923107f05cf5a773c67ad7d2342cc1b0ca57044bcd5167331996c5c709",
+        "game/destruction_demo.gd": "56c5271fded872a91b8a9a2e169668c758611ab4a828e212bb530838d89f3584",
+        "game/destruction_demo.tscn": "a34bc6ae8e50e1f4559771495e07bcc37dfe2131a3d0f3fedd3d77d02fa7238e",
+        "game/player.gd": "dd434275fc326f24a60613cfd34c74bf02d6b7f131cc1dbc106ad9024095991e",
+        "game/player_input.gd": "0942be81f55a8d17c8871d2887ce93556ad24e15067ea494500967fbd001c86b",
+        "game/project.godot": "82d739979cb7d9672540edfce8299a257b969ba4d95307857136276c7dbe9fa8",
+        "game/tests/arena_tests.gd": "659b7e5f2741a867c38f564be12a65380f8aef75ea1a41bbea38f0080a2ddbd9",
+        "game/tests/controls_tests.gd": "e0e1ccc03104a921bc25d7d157536e17b781e588e75e1da938f2b5919d1cd4a7",
+        "game/tests/destruction_tests.gd": "990a3594eeeb9d5b4483e66a1fade7420d7d387923a42f0d467f21263e626e46"
+      },
+      "files": [
+        {
+          "path": "development-06-rerun/engine.log",
+          "sha256": "6f629fc34662870b1bb810c9d57c30d19a569082ccceef04e06358679b59706b"
+        },
+        {
+          "path": "development-06-rerun/frames.csv",
+          "sha256": "fd4651c5e3c0e93cc431c3d6322a3b2570cd51a4c9f83f05fe65947620950ffd"
+        },
+        {
+          "path": "development-06-rerun/launch.json",
+          "sha256": "0de8c9e0d2ee5190c25c0916c45b51aa3b3b1b863f962ac6a6cb009eaf57f0e7"
+        },
+        {
+          "path": "development-06-rerun/physics.csv.gz",
+          "sha256": "6b8f14cb49994385b095499f588784b685fe5abc58e169ef7cccba1ae61d635d"
+        },
+        {
+          "path": "development-06-rerun/results.json",
+          "sha256": "d8ae3f370fb955a6fff4c6f7163a4f66e22df54f41535239143f70a46ba8d79f"
+        }
+      ]
+    },
+    {
+      "directory": "development-07-stale-sleep-pose",
+      "returncode": 1,
+      "utc_started": "2026-09-13T21:50:09.727898+00:00",
+      "source_sha256": {
+        "game/arena.gd": "2091e3ca0fecb55eab9b1222691fcaaf927bec57e2be48294b29dd1d2945629c",
+        "game/arena_camera.gd": "4c14110e377afeeea1f83c0b297a2ceb893c9fff56410e31b8bbee8fb7857c90",
+        "game/arena_preview.gd": "163f01b678fdd07cd19c5f1496f8596cfab222dbd9855adc298b746547f71f62",
+        "game/arena_preview.tscn": "ab8b68a873e2328c55872ba0a5cfb16ad8a4c3cb2b2e644d3ebaba6e3b24c6f2",
+        "game/controls.tscn": "2fbdf146211eb7a353d40ea5b57679f4e8e0bdb44a1205bf8c1bd330a80973e2",
+        "game/controls_session.gd": "4ba53c15a423253301ec209d41dd4a4280fc6c0f1740be5acffc333d711191a3",
+        "game/debris_block.gd": "eed370e566148d7f8c532d6b70e92ffc06889a21dfabd52a3824d3b7a8c2965a",
+        "game/destructible_target.gd": "60cd8225c794e1310ff8b273981270ca3e4831e1b5b7a02557b71775059b52d3",
+        "game/destruction.gd": "fc87d4923107f05cf5a773c67ad7d2342cc1b0ca57044bcd5167331996c5c709",
+        "game/destruction_demo.gd": "56c5271fded872a91b8a9a2e169668c758611ab4a828e212bb530838d89f3584",
+        "game/destruction_demo.tscn": "a34bc6ae8e50e1f4559771495e07bcc37dfe2131a3d0f3fedd3d77d02fa7238e",
+        "game/player.gd": "dd434275fc326f24a60613cfd34c74bf02d6b7f131cc1dbc106ad9024095991e",
+        "game/player_input.gd": "0942be81f55a8d17c8871d2887ce93556ad24e15067ea494500967fbd001c86b",
+        "game/project.godot": "82d739979cb7d9672540edfce8299a257b969ba4d95307857136276c7dbe9fa8",
+        "game/tests/arena_tests.gd": "659b7e5f2741a867c38f564be12a65380f8aef75ea1a41bbea38f0080a2ddbd9",
+        "game/tests/controls_tests.gd": "e0e1ccc03104a921bc25d7d157536e17b781e588e75e1da938f2b5919d1cd4a7",
+        "game/tests/destruction_tests.gd": "990a3594eeeb9d5b4483e66a1fade7420d7d387923a42f0d467f21263e626e46"
+      },
+      "files": [
+        {
+          "path": "development-07-stale-sleep-pose/engine.log",
+          "sha256": "0c37b2f9277d37d4923ccb6c3df86163a4f06d54484007c9e254626f70671925"
+        },
+        {
+          "path": "development-07-stale-sleep-pose/frames.csv",
+          "sha256": "06d8fb96730a92a9bfa8fbcdece04ca12a0698c07ba644e1f27583fc92443e66"
+        },
+        {
+          "path": "development-07-stale-sleep-pose/launch.json",
+          "sha256": "877164ebd5964006f5132c189d032cf1a8659674376e28388ebff8c744cb9c61"
+        },
+        {
+          "path": "development-07-stale-sleep-pose/physics.csv.gz",
+          "sha256": "9096d3bde4335bba200d5e2815879bc0f82210ebc078522e9936808381871259"
+        },
+        {
+          "path": "development-07-stale-sleep-pose/results.json",
+          "sha256": "29436719f0c9744a8706f9e974a4d49bb7b802ae77848b76c3d5487c9e70021c"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "01: unbatched render/full telemetry; physics passed, performance slow.",
+    "02: MultiMesh render batching; physics passed.",
+    "03: natural mixed sleep/active eviction test and lightweight benchmark added.",
+    "04: GDScript inferred Variant bool parse error; real timeout preserved.",
+    "05/06: passes before stale sleeping-pose defect found by another fresh launch.",
+    "07: stale sleeping render pose assertion failed; directory originally misnamed varied-2207 but actual seed remained 1201, as launch metadata states. No evidence is relabelled as another seed.",
+    "Final source always copies engine poses, including final sleep transform. All final positive runs use the repaired source; true varied seed run explicitly uses --seed 2207.",
+    "Moved directories retain original absolute launch paths in metadata. Archive preserves all original evidence bytes, including successful superseded captures and failures."
+  ]
+}
