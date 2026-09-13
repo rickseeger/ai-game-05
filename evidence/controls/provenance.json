@@ -1,0 +1,18 @@
+{
+  "baseline": "4ab50bf71af221da7b8fa4342a9053d93aa19e39",
+  "independently_tested_arena_revision_from_packet": "d649df50a96cccb200226bb7886f65abd0e42082",
+  "arena_revision_is_ancestor": true,
+  "unchanged_interfaces_and_design_sha256": {
+    "game/arena.gd": "2091e3ca0fecb55eab9b1222691fcaaf927bec57e2be48294b29dd1d2945629c",
+    "game/arena_camera.gd": "4c14110e377afeeea1f83c0b297a2ceb893c9fff56410e31b8bbee8fb7857c90",
+    "game/arena_preview.gd": "163f01b678fdd07cd19c5f1496f8596cfab222dbd9855adc298b746547f71f62",
+    "game/arena_preview.tscn": "ab8b68a873e2328c55872ba0a5cfb16ad8a4c3cb2b2e644d3ebaba6e3b24c6f2",
+    "game/tests/arena_tests.gd": "659b7e5f2741a867c38f564be12a65380f8aef75ea1a41bbea38f0080a2ddbd9",
+    "docs/design.md": "a8ef8211d9062bf0211ef632c21fdcf0359a8c0334b8162922a1fdd08013472d",
+    "docs/validation.md": "2f8326d12fe660af4bba68b912940ca3aefb5d786ceb1fa04881e1a15ce489e2"
+  },
+  "scope": "G12 node 3 execution only; no mission state changes",
+  "visual_gate": "Node 2 remains blocked solely on unperformed visual assessment",
+  "input_path": "Input.parse_input_event to production InputMap/_input/physics, not OS hardware injection",
+  "source_binding": "Positive launch.json source_sha256 maps bind all tested game files to this checkout; source_commit records pre-commit HEAD, not a claim that the dirty code was already committed."
+}

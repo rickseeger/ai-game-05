@@ -1,0 +1,19 @@
+{
+  "command": [
+    "xvfb-run",
+    "-a",
+    "/opt/g-harness/workspace/G12/node_1_step_112/tools/Godot_v4.5.1-stable_linux.x86_64",
+    "--path",
+    "/opt/g-harness/workspace/G12/node_3_step_123/repo/game",
+    "--rendering-method",
+    "gl_compatibility",
+    "--audio-driver",
+    "Dummy",
+    "--max-fps",
+    "60",
+    "--quit-after",
+    "120"
+  ],
+  "returncode": 0,
+  "mode": "normal default main scene, no controls test flag; bounded startup smoke only, no input injected"
+}

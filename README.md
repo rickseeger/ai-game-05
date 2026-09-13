@@ -1,6 +1,7 @@
 # G12: Breakwater — design and Linux technology probe
 
-This repository contains a node-1 technology probe and node-2 arena/camera slice,
+This repository contains a node-1 technology probe, node-2 arena/camera slice,
+and node-3 player controls slice,
 NOT a playable game or a completed mission.
 The repository was empty when cloned from the persisted G12 configuration.
 
@@ -35,7 +36,7 @@ human visual/audible validation. No claim of fun or satisfaction has been made.
 See docs/arena-validation.md for interface, automated results and exact reruns.
 The original probe and its evidence are unchanged.
 
-    .tools/Godot_v4.5.1-stable_linux.x86_64 --path game --rendering-method gl_compatibility
+    .tools/Godot_v4.5.1-stable_linux.x86_64 --path game res://arena_preview.tscn --rendering-method gl_compatibility
 
 This launches a looping scripted stand-in tour, not player controls or combat.
 On an offscreen Linux server:
@@ -45,3 +46,17 @@ On an offscreen Linux server:
 
 Use a new output name each time. Seven PNGs, engine log, launch metadata and
 337 focused assertions are produced per suite. No headless rendering substitute.
+
+## Player controls slice (node 3)
+
+    .tools/Godot_v4.5.1-stable_linux.x86_64 --path game --rendering-method gl_compatibility
+
+WASD moves, mouse aims, hold LMB emits fire commands, Space dashes, Esc pauses.
+R restarts only after terminal state (natural win/loss rules are not implemented).
+No projectiles/damage, destruction, sound or opposition are presented as complete.
+See docs/controls-validation.md for interfaces, actual input-driven tests/traces,
+exact reproduction commands and limitations. Node 2 visual assessment remains
+unperformed; automated runtime input checks do not establish playability.
+
+    python3 scripts/run_controls.py local-controls
+    python3 scripts/check_controls.py evidence/controls/local-controls --self-test

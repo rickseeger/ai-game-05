@@ -1,0 +1,2281 @@
+{
+  "camera_fov": 52.0,
+  "camera_position": [
+    0.0,
+    28.6639976501465,
+    23.9975967407227
+  ],
+  "captures": [
+    {
+      "airborne_height": 4.0,
+      "file": "overview.png",
+      "gold_pixels": 60,
+      "pawn_ground": [
+        0.0,
+        0.0,
+        10.0
+      ],
+      "projected_cube": [
+        462.677551269531,
+        522.431457519531
+      ]
+    },
+    {
+      "airborne_height": 4.0,
+      "file": "southwest.png",
+      "gold_pixels": 64,
+      "pawn_ground": [
+        -11.0,
+        0.0,
+        11.0
+      ],
+      "projected_cube": [
+        161.843978881836,
+        546.750854492188
+      ]
+    },
+    {
+      "airborne_height": 4.0,
+      "file": "northwest.png",
+      "gold_pixels": 59,
+      "pawn_ground": [
+        -11.0,
+        0.0,
+        -11.0
+      ],
+      "projected_cube": [
+        274.010681152344,
+        191.775344848633
+      ]
+    },
+    {
+      "airborne_height": 4.0,
+      "file": "northeast.png",
+      "gold_pixels": 48,
+      "pawn_ground": [
+        11.0,
+        0.0,
+        -11.0
+      ],
+      "projected_cube": [
+        663.00341796875,
+        191.775344848633
+      ]
+    },
+    {
+      "airborne_height": 4.0,
+      "file": "southeast.png",
+      "gold_pixels": 62,
+      "pawn_ground": [
+        11.0,
+        0.0,
+        11.0
+      ],
+      "projected_cube": [
+        762.653625488281,
+        546.750854492188
+      ]
+    },
+    {
+      "airborne_height": 8.0,
+      "file": "airborne.png",
+      "gold_pixels": 82,
+      "pawn_ground": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "projected_cube": [
+        464.726989746094,
+        265.688110351562
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "details": null,
+      "name": "compatibility_renderer",
+      "pass": true
+    },
+    {
+      "details": "X11",
+      "name": "rendering_enabled",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "true_perspective_Camera3D",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "physics_stack",
+      "pass": true
+    },
+    {
+      "details": [
+        "player_spawn",
+        "pylon_spawns",
+        "enemy_spawn_points",
+        "exit_transform"
+      ],
+      "name": "arena_interface_fields",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "three_pylon_locations",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "six_enemy_spawn_locations",
+      "pass": true
+    },
+    {
+      "details": 8,
+      "name": "idempotent_world_rebuild_eight_bodies",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "world_layer_Ground",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "world_layer_WestWall",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "world_layer_EastWall",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "world_layer_NorthWall",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "world_layer_SouthWall",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "world_layer_CoverWest",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "world_layer_CoverEast",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "world_layer_CoverNorth",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "exact_24m_ground",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "ground_contact_-11.9_-11.9",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "ground_contact_-11.9_0.0",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "ground_contact_-11.9_11.9",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "ground_contact_0.0_-11.9",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "ground_contact_0.0_0.0",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "ground_contact_0.0_11.9",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "ground_contact_11.9_-11.9",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "ground_contact_11.9_0.0",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "ground_contact_11.9_11.9",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "wall_inner_face_(-1.0, 0.0, 0.0)",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "wall_inner_face_(1.0, 0.0, 0.0)",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "wall_inner_face_(0.0, 0.0, -1.0)",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "wall_inner_face_(0.0, 0.0, 1.0)",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "solid_cover_CoverWest",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "solid_cover_CoverEast",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "solid_cover_CoverNorth",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "spawn_clear_0",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "spawn_clear_1",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "spawn_clear_2",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "spawn_clear_3",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "spawn_clear_4",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "spawn_clear_5",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "spawn_clear_6",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "spawn_clear_7",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "spawn_clear_8",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "spawn_clear_9",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "spawn_clear_10",
+      "pass": true
+    },
+    {
+      "details": [
+        0.265625,
+        0.26953125
+      ],
+      "name": "swept_world_boundary_(-1.0, 0.0, 0.0)",
+      "pass": true
+    },
+    {
+      "details": [
+        0.265625,
+        0.26953125
+      ],
+      "name": "swept_world_boundary_(1.0, 0.0, 0.0)",
+      "pass": true
+    },
+    {
+      "details": [
+        0.265625,
+        0.26953125
+      ],
+      "name": "swept_world_boundary_(0.0, 0.0, -1.0)",
+      "pass": true
+    },
+    {
+      "details": [
+        0.265625,
+        0.26953125
+      ],
+      "name": "swept_world_boundary_(0.0, 0.0, 1.0)",
+      "pass": true
+    },
+    {
+      "details": {
+        "far_px": 13.5193176269531,
+        "near_px": 19.4892883300781
+      },
+      "name": "perspective_depth_scale",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "locked_camera_0_0",
+      "pass": true
+    },
+    {
+      "details": [
+        0.289110720157623,
+        0.318083018064499
+      ],
+      "name": "frustum_0_0_-12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.166853964328766,
+        0.872956871986389
+      ],
+      "name": "frustum_0_0_-12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.710889279842377,
+        0.318083018064499
+      ],
+      "name": "frustum_0_0_12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.833146035671234,
+        0.872956871986389
+      ],
+      "name": "frustum_0_0_12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": 6.7509765625,
+      "name": "cube_min_pixels_0_0",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "ground_aim_roundtrip_0_0",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "locked_camera_0_2",
+      "pass": true
+    },
+    {
+      "details": [
+        0.281999498605728,
+        0.280837386846542
+      ],
+      "name": "frustum_0_2_-12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.14875403046608,
+        0.843092501163483
+      ],
+      "name": "frustum_0_2_-12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.718000471591949,
+        0.280837386846542
+      ],
+      "name": "frustum_0_2_12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.851245939731598,
+        0.843092501163483
+      ],
+      "name": "frustum_0_2_12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": 6.99578857421875,
+      "name": "cube_min_pixels_0_2",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "ground_aim_roundtrip_0_2",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "locked_camera_0_4",
+      "pass": true
+    },
+    {
+      "details": [
+        0.274391978979111,
+        0.240992248058319
+      ],
+      "name": "frustum_0_4_-12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.128574371337891,
+        0.809796750545502
+      ],
+      "name": "frustum_0_4_-12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.725607991218567,
+        0.240992248058319
+      ],
+      "name": "frustum_0_4_12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.871425628662109,
+        0.809796750545502
+      ],
+      "name": "frustum_0_4_12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": 7.2982177734375,
+      "name": "cube_min_pixels_0_4",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "ground_aim_roundtrip_0_4",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "locked_camera_0_8",
+      "pass": true
+    },
+    {
+      "details": [
+        0.257464557886124,
+        0.15233314037323
+      ],
+      "name": "frustum_0_8_-12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.0803557634353638,
+        0.730237722396851
+      ],
+      "name": "frustum_0_8_-12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.742535471916199,
+        0.15233314037323
+      ],
+      "name": "frustum_0_8_12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.919644236564636,
+        0.730237722396851
+      ],
+      "name": "frustum_0_8_12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": 7.98895263671875,
+      "name": "cube_min_pixels_0_8",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "ground_aim_roundtrip_0_8",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "locked_camera_1_0",
+      "pass": true
+    },
+    {
+      "details": [
+        0.289110720157623,
+        0.318083018064499
+      ],
+      "name": "frustum_1_0_-12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.166853964328766,
+        0.872956871986389
+      ],
+      "name": "frustum_1_0_-12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.710889279842377,
+        0.318083018064499
+      ],
+      "name": "frustum_1_0_12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.833146035671234,
+        0.872956871986389
+      ],
+      "name": "frustum_1_0_12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": 8.41720581054688,
+      "name": "cube_min_pixels_1_0",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "ground_aim_roundtrip_1_0",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "locked_camera_1_2",
+      "pass": true
+    },
+    {
+      "details": [
+        0.281999498605728,
+        0.280837386846542
+      ],
+      "name": "frustum_1_2_-12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.14875403046608,
+        0.843092501163483
+      ],
+      "name": "frustum_1_2_-12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.718000471591949,
+        0.280837386846542
+      ],
+      "name": "frustum_1_2_12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.851245939731598,
+        0.843092501163483
+      ],
+      "name": "frustum_1_2_12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": 8.80119323730469,
+      "name": "cube_min_pixels_1_2",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "ground_aim_roundtrip_1_2",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "locked_camera_1_4",
+      "pass": true
+    },
+    {
+      "details": [
+        0.274391978979111,
+        0.240992248058319
+      ],
+      "name": "frustum_1_4_-12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.128574371337891,
+        0.809796750545502
+      ],
+      "name": "frustum_1_4_-12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.725607991218567,
+        0.240992248058319
+      ],
+      "name": "frustum_1_4_12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.871425628662109,
+        0.809796750545502
+      ],
+      "name": "frustum_1_4_12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": 9.28524780273438,
+      "name": "cube_min_pixels_1_4",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "ground_aim_roundtrip_1_4",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "locked_camera_1_8",
+      "pass": true
+    },
+    {
+      "details": [
+        0.257464557886124,
+        0.15233314037323
+      ],
+      "name": "frustum_1_8_-12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.0803557634353638,
+        0.730237722396851
+      ],
+      "name": "frustum_1_8_-12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.742535471916199,
+        0.15233314037323
+      ],
+      "name": "frustum_1_8_12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.919644236564636,
+        0.730237722396851
+      ],
+      "name": "frustum_1_8_12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": 10.4329376220703,
+      "name": "cube_min_pixels_1_8",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "ground_aim_roundtrip_1_8",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "locked_camera_2_0",
+      "pass": true
+    },
+    {
+      "details": [
+        0.289110720157623,
+        0.318083018064499
+      ],
+      "name": "frustum_2_0_-12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.166853964328766,
+        0.872956871986389
+      ],
+      "name": "frustum_2_0_-12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.710889279842377,
+        0.318083018064499
+      ],
+      "name": "frustum_2_0_12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.833146035671234,
+        0.872956871986389
+      ],
+      "name": "frustum_2_0_12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": 5.63543701171875,
+      "name": "cube_min_pixels_2_0",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "ground_aim_roundtrip_2_0",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "locked_camera_2_2",
+      "pass": true
+    },
+    {
+      "details": [
+        0.281999498605728,
+        0.280837386846542
+      ],
+      "name": "frustum_2_2_-12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.14875403046608,
+        0.843092501163483
+      ],
+      "name": "frustum_2_2_-12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.718000471591949,
+        0.280837386846542
+      ],
+      "name": "frustum_2_2_12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.851245939731598,
+        0.843092501163483
+      ],
+      "name": "frustum_2_2_12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": 5.80502319335938,
+      "name": "cube_min_pixels_2_2",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "ground_aim_roundtrip_2_2",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "locked_camera_2_4",
+      "pass": true
+    },
+    {
+      "details": [
+        0.274391978979111,
+        0.240992248058319
+      ],
+      "name": "frustum_2_4_-12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.128574371337891,
+        0.809796750545502
+      ],
+      "name": "frustum_2_4_-12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.725607991218567,
+        0.240992248058319
+      ],
+      "name": "frustum_2_4_12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.871425628662109,
+        0.809796750545502
+      ],
+      "name": "frustum_2_4_12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": 6.01171875,
+      "name": "cube_min_pixels_2_4",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "ground_aim_roundtrip_2_4",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "locked_camera_2_8",
+      "pass": true
+    },
+    {
+      "details": [
+        0.257464557886124,
+        0.15233314037323
+      ],
+      "name": "frustum_2_8_-12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.0803557634353638,
+        0.730237722396851
+      ],
+      "name": "frustum_2_8_-12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.742535471916199,
+        0.15233314037323
+      ],
+      "name": "frustum_2_8_12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.919644236564636,
+        0.730237722396851
+      ],
+      "name": "frustum_2_8_12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": 6.47271728515625,
+      "name": "cube_min_pixels_2_8",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "ground_aim_roundtrip_2_8",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "locked_camera_3_0",
+      "pass": true
+    },
+    {
+      "details": [
+        0.289110720157623,
+        0.318083018064499
+      ],
+      "name": "frustum_3_0_-12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.166853964328766,
+        0.872956871986389
+      ],
+      "name": "frustum_3_0_-12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.710889279842377,
+        0.318083018064499
+      ],
+      "name": "frustum_3_0_12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.833146035671234,
+        0.872956871986389
+      ],
+      "name": "frustum_3_0_12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": 5.635498046875,
+      "name": "cube_min_pixels_3_0",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "ground_aim_roundtrip_3_0",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "locked_camera_3_2",
+      "pass": true
+    },
+    {
+      "details": [
+        0.281999498605728,
+        0.280837386846542
+      ],
+      "name": "frustum_3_2_-12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.14875403046608,
+        0.843092501163483
+      ],
+      "name": "frustum_3_2_-12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.718000471591949,
+        0.280837386846542
+      ],
+      "name": "frustum_3_2_12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.851245939731598,
+        0.843092501163483
+      ],
+      "name": "frustum_3_2_12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": 5.80499267578125,
+      "name": "cube_min_pixels_3_2",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "ground_aim_roundtrip_3_2",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "locked_camera_3_4",
+      "pass": true
+    },
+    {
+      "details": [
+        0.274391978979111,
+        0.240992248058319
+      ],
+      "name": "frustum_3_4_-12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.128574371337891,
+        0.809796750545502
+      ],
+      "name": "frustum_3_4_-12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.725607991218567,
+        0.240992248058319
+      ],
+      "name": "frustum_3_4_12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.871425628662109,
+        0.809796750545502
+      ],
+      "name": "frustum_3_4_12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": 6.01171875,
+      "name": "cube_min_pixels_3_4",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "ground_aim_roundtrip_3_4",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "locked_camera_3_8",
+      "pass": true
+    },
+    {
+      "details": [
+        0.257464557886124,
+        0.15233314037323
+      ],
+      "name": "frustum_3_8_-12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.0803557634353638,
+        0.730237722396851
+      ],
+      "name": "frustum_3_8_-12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.742535471916199,
+        0.15233314037323
+      ],
+      "name": "frustum_3_8_12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.919644236564636,
+        0.730237722396851
+      ],
+      "name": "frustum_3_8_12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": 6.4727783203125,
+      "name": "cube_min_pixels_3_8",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "ground_aim_roundtrip_3_8",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "locked_camera_4_0",
+      "pass": true
+    },
+    {
+      "details": [
+        0.289110720157623,
+        0.318083018064499
+      ],
+      "name": "frustum_4_0_-12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.166853964328766,
+        0.872956871986389
+      ],
+      "name": "frustum_4_0_-12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.710889279842377,
+        0.318083018064499
+      ],
+      "name": "frustum_4_0_12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.833146035671234,
+        0.872956871986389
+      ],
+      "name": "frustum_4_0_12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": 8.417236328125,
+      "name": "cube_min_pixels_4_0",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "ground_aim_roundtrip_4_0",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "locked_camera_4_2",
+      "pass": true
+    },
+    {
+      "details": [
+        0.281999498605728,
+        0.280837386846542
+      ],
+      "name": "frustum_4_2_-12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.14875403046608,
+        0.843092501163483
+      ],
+      "name": "frustum_4_2_-12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.718000471591949,
+        0.280837386846542
+      ],
+      "name": "frustum_4_2_12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.851245939731598,
+        0.843092501163483
+      ],
+      "name": "frustum_4_2_12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": 8.8011474609375,
+      "name": "cube_min_pixels_4_2",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "ground_aim_roundtrip_4_2",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "locked_camera_4_4",
+      "pass": true
+    },
+    {
+      "details": [
+        0.274391978979111,
+        0.240992248058319
+      ],
+      "name": "frustum_4_4_-12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.128574371337891,
+        0.809796750545502
+      ],
+      "name": "frustum_4_4_-12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.725607991218567,
+        0.240992248058319
+      ],
+      "name": "frustum_4_4_12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.871425628662109,
+        0.809796750545502
+      ],
+      "name": "frustum_4_4_12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": 9.2852783203125,
+      "name": "cube_min_pixels_4_4",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "ground_aim_roundtrip_4_4",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "locked_camera_4_8",
+      "pass": true
+    },
+    {
+      "details": [
+        0.257464557886124,
+        0.15233314037323
+      ],
+      "name": "frustum_4_8_-12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.0803557634353638,
+        0.730237722396851
+      ],
+      "name": "frustum_4_8_-12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.742535471916199,
+        0.15233314037323
+      ],
+      "name": "frustum_4_8_12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.919644236564636,
+        0.730237722396851
+      ],
+      "name": "frustum_4_8_12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": 10.4329833984375,
+      "name": "cube_min_pixels_4_8",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "ground_aim_roundtrip_4_8",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "locked_camera_5_0",
+      "pass": true
+    },
+    {
+      "details": [
+        0.289110720157623,
+        0.318083018064499
+      ],
+      "name": "frustum_5_0_-12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.166853964328766,
+        0.872956871986389
+      ],
+      "name": "frustum_5_0_-12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.710889279842377,
+        0.318083018064499
+      ],
+      "name": "frustum_5_0_12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.833146035671234,
+        0.872956871986389
+      ],
+      "name": "frustum_5_0_12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": 6.75100708007812,
+      "name": "cube_min_pixels_5_0",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "ground_aim_roundtrip_5_0",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "locked_camera_5_2",
+      "pass": true
+    },
+    {
+      "details": [
+        0.281999498605728,
+        0.280837386846542
+      ],
+      "name": "frustum_5_2_-12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.14875403046608,
+        0.843092501163483
+      ],
+      "name": "frustum_5_2_-12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.718000471591949,
+        0.280837386846542
+      ],
+      "name": "frustum_5_2_12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.851245939731598,
+        0.843092501163483
+      ],
+      "name": "frustum_5_2_12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": 6.99577331542969,
+      "name": "cube_min_pixels_5_2",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "ground_aim_roundtrip_5_2",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "locked_camera_5_4",
+      "pass": true
+    },
+    {
+      "details": [
+        0.274391978979111,
+        0.240992248058319
+      ],
+      "name": "frustum_5_4_-12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.128574371337891,
+        0.809796750545502
+      ],
+      "name": "frustum_5_4_-12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.725607991218567,
+        0.240992248058319
+      ],
+      "name": "frustum_5_4_12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.871425628662109,
+        0.809796750545502
+      ],
+      "name": "frustum_5_4_12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": 7.29823303222656,
+      "name": "cube_min_pixels_5_4",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "ground_aim_roundtrip_5_4",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "locked_camera_5_8",
+      "pass": true
+    },
+    {
+      "details": [
+        0.257464557886124,
+        0.15233314037323
+      ],
+      "name": "frustum_5_8_-12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.0803557634353638,
+        0.730237722396851
+      ],
+      "name": "frustum_5_8_-12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.742535471916199,
+        0.15233314037323
+      ],
+      "name": "frustum_5_8_12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.919644236564636,
+        0.730237722396851
+      ],
+      "name": "frustum_5_8_12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": 7.98898315429688,
+      "name": "cube_min_pixels_5_8",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "ground_aim_roundtrip_5_8",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "locked_camera_6_0",
+      "pass": true
+    },
+    {
+      "details": [
+        0.289110720157623,
+        0.318083018064499
+      ],
+      "name": "frustum_6_0_-12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.166853964328766,
+        0.872956871986389
+      ],
+      "name": "frustum_6_0_-12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.710889279842377,
+        0.318083018064499
+      ],
+      "name": "frustum_6_0_12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.833146035671234,
+        0.872956871986389
+      ],
+      "name": "frustum_6_0_12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": 6.75103759765625,
+      "name": "cube_min_pixels_6_0",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "ground_aim_roundtrip_6_0",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "locked_camera_6_2",
+      "pass": true
+    },
+    {
+      "details": [
+        0.281999498605728,
+        0.280837386846542
+      ],
+      "name": "frustum_6_2_-12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.14875403046608,
+        0.843092501163483
+      ],
+      "name": "frustum_6_2_-12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.718000471591949,
+        0.280837386846542
+      ],
+      "name": "frustum_6_2_12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.851245939731598,
+        0.843092501163483
+      ],
+      "name": "frustum_6_2_12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": 6.99578857421875,
+      "name": "cube_min_pixels_6_2",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "ground_aim_roundtrip_6_2",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "locked_camera_6_4",
+      "pass": true
+    },
+    {
+      "details": [
+        0.274391978979111,
+        0.240992248058319
+      ],
+      "name": "frustum_6_4_-12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.128574371337891,
+        0.809796750545502
+      ],
+      "name": "frustum_6_4_-12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.725607991218567,
+        0.240992248058319
+      ],
+      "name": "frustum_6_4_12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.871425628662109,
+        0.809796750545502
+      ],
+      "name": "frustum_6_4_12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": 7.2982177734375,
+      "name": "cube_min_pixels_6_4",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "ground_aim_roundtrip_6_4",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "locked_camera_6_8",
+      "pass": true
+    },
+    {
+      "details": [
+        0.257464557886124,
+        0.15233314037323
+      ],
+      "name": "frustum_6_8_-12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.0803557634353638,
+        0.730237722396851
+      ],
+      "name": "frustum_6_8_-12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.742535471916199,
+        0.15233314037323
+      ],
+      "name": "frustum_6_8_12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.919644236564636,
+        0.730237722396851
+      ],
+      "name": "frustum_6_8_12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": 7.98895263671875,
+      "name": "cube_min_pixels_6_8",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "ground_aim_roundtrip_6_8",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "locked_camera_7_0",
+      "pass": true
+    },
+    {
+      "details": [
+        0.289110720157623,
+        0.318083018064499
+      ],
+      "name": "frustum_7_0_-12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.166853964328766,
+        0.872956871986389
+      ],
+      "name": "frustum_7_0_-12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.710889279842377,
+        0.318083018064499
+      ],
+      "name": "frustum_7_0_12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.833146035671234,
+        0.872956871986389
+      ],
+      "name": "frustum_7_0_12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": 5.63543701171875,
+      "name": "cube_min_pixels_7_0",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "ground_aim_roundtrip_7_0",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "locked_camera_7_2",
+      "pass": true
+    },
+    {
+      "details": [
+        0.281999498605728,
+        0.280837386846542
+      ],
+      "name": "frustum_7_2_-12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.14875403046608,
+        0.843092501163483
+      ],
+      "name": "frustum_7_2_-12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.718000471591949,
+        0.280837386846542
+      ],
+      "name": "frustum_7_2_12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.851245939731598,
+        0.843092501163483
+      ],
+      "name": "frustum_7_2_12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": 5.80499267578125,
+      "name": "cube_min_pixels_7_2",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "ground_aim_roundtrip_7_2",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "locked_camera_7_4",
+      "pass": true
+    },
+    {
+      "details": [
+        0.274391978979111,
+        0.240992248058319
+      ],
+      "name": "frustum_7_4_-12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.128574371337891,
+        0.809796750545502
+      ],
+      "name": "frustum_7_4_-12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.725607991218567,
+        0.240992248058319
+      ],
+      "name": "frustum_7_4_12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.871425628662109,
+        0.809796750545502
+      ],
+      "name": "frustum_7_4_12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": 6.01171875,
+      "name": "cube_min_pixels_7_4",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "ground_aim_roundtrip_7_4",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "locked_camera_7_8",
+      "pass": true
+    },
+    {
+      "details": [
+        0.257464557886124,
+        0.15233314037323
+      ],
+      "name": "frustum_7_8_-12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.0803557634353638,
+        0.730237722396851
+      ],
+      "name": "frustum_7_8_-12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.742535471916199,
+        0.15233314037323
+      ],
+      "name": "frustum_7_8_12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.919644236564636,
+        0.730237722396851
+      ],
+      "name": "frustum_7_8_12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": 6.47271728515625,
+      "name": "cube_min_pixels_7_8",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "ground_aim_roundtrip_7_8",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "locked_camera_8_0",
+      "pass": true
+    },
+    {
+      "details": [
+        0.289110720157623,
+        0.318083018064499
+      ],
+      "name": "frustum_8_0_-12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.166853964328766,
+        0.872956871986389
+      ],
+      "name": "frustum_8_0_-12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.710889279842377,
+        0.318083018064499
+      ],
+      "name": "frustum_8_0_12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.833146035671234,
+        0.872956871986389
+      ],
+      "name": "frustum_8_0_12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": 8.41717529296875,
+      "name": "cube_min_pixels_8_0",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "ground_aim_roundtrip_8_0",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "locked_camera_8_2",
+      "pass": true
+    },
+    {
+      "details": [
+        0.281999498605728,
+        0.280837386846542
+      ],
+      "name": "frustum_8_2_-12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.14875403046608,
+        0.843092501163483
+      ],
+      "name": "frustum_8_2_-12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.718000471591949,
+        0.280837386846542
+      ],
+      "name": "frustum_8_2_12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.851245939731598,
+        0.843092501163483
+      ],
+      "name": "frustum_8_2_12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": 8.8011474609375,
+      "name": "cube_min_pixels_8_2",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "ground_aim_roundtrip_8_2",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "locked_camera_8_4",
+      "pass": true
+    },
+    {
+      "details": [
+        0.274391978979111,
+        0.240992248058319
+      ],
+      "name": "frustum_8_4_-12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.128574371337891,
+        0.809796750545502
+      ],
+      "name": "frustum_8_4_-12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.725607991218567,
+        0.240992248058319
+      ],
+      "name": "frustum_8_4_12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.871425628662109,
+        0.809796750545502
+      ],
+      "name": "frustum_8_4_12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": 9.28521728515625,
+      "name": "cube_min_pixels_8_4",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "ground_aim_roundtrip_8_4",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "locked_camera_8_8",
+      "pass": true
+    },
+    {
+      "details": [
+        0.257464557886124,
+        0.15233314037323
+      ],
+      "name": "frustum_8_8_-12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.0803557634353638,
+        0.730237722396851
+      ],
+      "name": "frustum_8_8_-12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.742535471916199,
+        0.15233314037323
+      ],
+      "name": "frustum_8_8_12.5_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.919644236564636,
+        0.730237722396851
+      ],
+      "name": "frustum_8_8_12.5_12.5",
+      "pass": true
+    },
+    {
+      "details": 10.4329223632812,
+      "name": "cube_min_pixels_8_8",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "ground_aim_roundtrip_8_8",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "off_arena_aim_is_null",
+      "pass": true
+    },
+    {
+      "details": 120.745300292969,
+      "name": "upward_height_screen_separation",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "gameplay_location_in_frustum_(0.0, 0.0, 10.0)",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "gameplay_location_in_frustum_(0.0, 0.0, -10.0)",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "gameplay_location_in_frustum_(-10.0, 0.0, -10.0)",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "gameplay_location_in_frustum_(10.0, 0.0, -10.0)",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "gameplay_location_in_frustum_(-10.0, 0.0, 10.0)",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "gameplay_location_in_frustum_(10.0, 0.0, 10.0)",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "gameplay_location_in_frustum_(-10.0, 0.0, 0.0)",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "gameplay_location_in_frustum_(10.0, 0.0, 0.0)",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "gameplay_location_in_frustum_(-8.0, 0.0, -7.0)",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "gameplay_location_in_frustum_(8.0, 0.0, -6.0)",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "gameplay_location_in_frustum_(0.0, 0.0, 6.0)",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "capture_overview",
+      "pass": true
+    },
+    {
+      "details": 60,
+      "name": "rendered_airborne_gold_pixels_overview",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "capture_southwest",
+      "pass": true
+    },
+    {
+      "details": 64,
+      "name": "rendered_airborne_gold_pixels_southwest",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "capture_northwest",
+      "pass": true
+    },
+    {
+      "details": 59,
+      "name": "rendered_airborne_gold_pixels_northwest",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "capture_northeast",
+      "pass": true
+    },
+    {
+      "details": 48,
+      "name": "rendered_airborne_gold_pixels_northeast",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "capture_southeast",
+      "pass": true
+    },
+    {
+      "details": 62,
+      "name": "rendered_airborne_gold_pixels_southeast",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "capture_airborne",
+      "pass": true
+    },
+    {
+      "details": 82,
+      "name": "rendered_airborne_gold_pixels_airborne",
+      "pass": true
+    },
+    {
+      "details": [
+        1280.0,
+        720.0
+      ],
+      "name": "live_resize_dimensions",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "live_resize_refits_camera",
+      "pass": true
+    },
+    {
+      "details": [
+        0.331149131059647,
+        0.309007793664932
+      ],
+      "name": "live_resize_frustum_-12.5_0.0_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.222392037510872,
+        0.919658482074738
+      ],
+      "name": "live_resize_frustum_-12.5_0.0_12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.303025811910629,
+        0.123525023460388
+      ],
+      "name": "live_resize_frustum_-12.5_8.2_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.137237370014191,
+        0.7653728723526
+      ],
+      "name": "live_resize_frustum_-12.5_8.2_12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.668850839138031,
+        0.309007793664932
+      ],
+      "name": "live_resize_frustum_12.5_0.0_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.777607977390289,
+        0.919658482074738
+      ],
+      "name": "live_resize_frustum_12.5_0.0_12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.696974158287048,
+        0.123525023460388
+      ],
+      "name": "live_resize_frustum_12.5_8.2_-12.5",
+      "pass": true
+    },
+    {
+      "details": [
+        0.862762629985809,
+        0.7653728723526
+      ],
+      "name": "live_resize_frustum_12.5_8.2_12.5",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "capture_resized",
+      "pass": true
+    }
+  ],
+  "display": "X11",
+  "engine": "4.5.1-stable (official)",
+  "evidence_mode": "real-time offscreen OpenGL viewport, not MovieWriter or human observation",
+  "failures": [],
+  "minimum_cube_pixels": 5.63543701171875,
+  "minimum_frame_margin": 0.0803557634353638,
+  "passed": true,
+  "renderer": "gl_compatibility",
+  "resized_camera_position": [
+    0.0,
+    26.4101524353027,
+    21.9691371917725
+  ],
+  "resized_viewport": [
+    1280.0,
+    720.0
+  ],
+  "viewport": [
+    960.0,
+    720.0
+  ]
+}

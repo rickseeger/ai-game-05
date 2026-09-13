@@ -1,0 +1,16 @@
+{
+  "development-01": {
+    "files_sha256": {
+      "trace.json": "6d69fb281e374651101a4c5fbd1209a02a494e4b4a686c4b62949b0d12d63d31",
+      "aim_cover.png": "8151c416a83a7fa1b99330a29d6cd67438aa6273f5fcaa5deaffc8773bcab0af",
+      "final_restart.png": "820171530d6d949b07dee2248a6d9b5aa27d867f85c653dda184d17388de4cd1",
+      "launch.json": "e7736122439d4d56fc36608685195f1fc66d519810bcf2530af26f895d7f7c54",
+      "resized_target.png": "10c096e466cf32797e709e09c7a03fa829780b1601cc2b8b6edf9251f793d764",
+      "results.json": "f5607a897ad4a81dd97b48d3ea92a8fc01b3ad8e4c28f81eeb611d55a3fb7646",
+      "engine.log": "8fc9f61ef6654d88622bf468e4e4fa972a34fb1a14743d31a793f7f49b6f41e7",
+      "initial.png": "0957d03082963ffacb0a781971e0a8ed6e62538132a5a6312eda0572bdcc7e63",
+      "paused_controls.png": "5efc53e35712bdf7d7f9e8dbb84a499206570d7961c2a3f2e33092c5a9f1531b"
+    },
+    "result": "99 checks not yet present: original 95 assertions failed 3 strict dash-contact tolerances; conservative stopping 8.85mm before cover. Full original evidence archived unmodified."
+  }
+}

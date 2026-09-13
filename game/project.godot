@@ -1,7 +1,7 @@
 config_version=5
 [application]
-config/name="Breakwater — Arena / Camera"
-run/main_scene="res://arena_preview.tscn"
+config/name="Breakwater — Controls"
+run/main_scene="res://controls.tscn"
 [display]
 window/size/viewport_width=1280
 window/size/viewport_height=720

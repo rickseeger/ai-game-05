@@ -78,3 +78,24 @@ PASS means observed by the specified measurement; PENDING means not done.
 - PENDING: independent controller rerun and visual readability judgment. This
   terminal worker did not observe a desktop, hear audio, or play a game. These
   checks do not validate input, combat, destruction, fun or root satisfaction.
+
+
+## Node 3: controls execution evidence (not durable acceptance)
+
+- PASS: fresh arena baseline at both sizes, 337 assertions each plus independent
+  PNG checks; unchanged Arena/Camera/preview interfaces and geometry.
+- PASS: production physical WASD/LMB/Space/Esc/R; real 5m/s CharacterBody movement,
+  normalized diagonals, bounded world collision, swept 3m dash/cooldown, all
+  walls/covers, sliding/corners and aiming through actual mouse events/resize.
+- PASS: actual fire-command press/hold/release/cadence/targeting (not Combat).
+- PASS: actual Esc pause/resume with frozen active cooldowns, no stuck input;
+  R after injected terminal state, fresh player/controls, repeated restarts;
+  focus clearing via an explicitly labelled notification fixture.
+- PASS: two rendered input-driven launches with 99 assertions each; independent
+  trace/source/image checking, six rejected trace mutations, real disabled-world
+  collision negative rejected. evidence/controls/checks.json.
+- PENDING: node 2 independent visual assessment, unchanged. Programmatic arena
+  reruns do not satisfy that remaining visual gate.
+- PENDING: physical-desktop/visual comfort assessment, full Combat, pylon collider
+  integration, natural win/loss, complete restart cleanup and exact-release play.
+  No playability claim is inferred from these automated tests.
