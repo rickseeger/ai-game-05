@@ -1,0 +1,102 @@
+{
+  "passed": true,
+  "runs": [
+    {
+      "directory": "evidence/destruction/n4s136-perf1",
+      "passed": true,
+      "result": {
+        "directory": "evidence/destruction/n4s136-perf1",
+        "seed": 1201,
+        "assertions": 34,
+        "performance": {
+          "frame_samples": 379,
+          "window_ticks": [
+            510,
+            1109
+          ],
+          "frame_ms": {
+            "median": 26.278,
+            "p95": 30.52,
+            "max": 39.598
+          },
+          "physics_process_ms": {
+            "median": 1.573,
+            "p95": 4.723,
+            "max": 4.723
+          },
+          "p95_target_ms": 33.3,
+          "meets_p95_target": true,
+          "capture_overlap_frames": 0,
+          "limit": "Offscreen CPU llvmpipe reference VM; not laptop or subjective smoothness acceptance."
+        },
+        "images": [],
+        "visual_assessment": "UNASSESSED"
+      }
+    },
+    {
+      "directory": "evidence/destruction/n4s136-perf2",
+      "passed": true,
+      "result": {
+        "directory": "evidence/destruction/n4s136-perf2",
+        "seed": 1201,
+        "assertions": 34,
+        "performance": {
+          "frame_samples": 388,
+          "window_ticks": [
+            510,
+            1109
+          ],
+          "frame_ms": {
+            "median": 25.7525,
+            "p95": 29.43,
+            "max": 32.548
+          },
+          "physics_process_ms": {
+            "median": 1.642,
+            "p95": 4.73,
+            "max": 4.73
+          },
+          "p95_target_ms": 33.3,
+          "meets_p95_target": true,
+          "capture_overlap_frames": 0,
+          "limit": "Offscreen CPU llvmpipe reference VM; not laptop or subjective smoothness acceptance."
+        },
+        "images": [],
+        "visual_assessment": "UNASSESSED"
+      }
+    },
+    {
+      "directory": "evidence/destruction/n4s136-perf3",
+      "passed": true,
+      "result": {
+        "directory": "evidence/destruction/n4s136-perf3",
+        "seed": 1201,
+        "assertions": 34,
+        "performance": {
+          "frame_samples": 400,
+          "window_ticks": [
+            510,
+            1109
+          ],
+          "frame_ms": {
+            "median": 25.0745,
+            "p95": 29.495,
+            "max": 34.191
+          },
+          "physics_process_ms": {
+            "median": 1.487,
+            "p95": 6.635,
+            "max": 6.635
+          },
+          "p95_target_ms": 33.3,
+          "meets_p95_target": true,
+          "capture_overlap_frames": 0,
+          "limit": "Offscreen CPU llvmpipe reference VM; not laptop or subjective smoothness acceptance."
+        },
+        "images": [],
+        "visual_assessment": "UNASSESSED"
+      }
+    }
+  ],
+  "visual_assessment": "UNASSESSED"
+}

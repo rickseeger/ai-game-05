@@ -1,0 +1,66 @@
+{
+  "source_commit": "8f311f7643d493e7fa5be11d88feb97c93261ff4",
+  "node10_source_commit": "f6631e436e3caedc33f705bec65a5a646db609da",
+  "unchanged_files": {
+    "game/debris_block.gd": {
+      "sha256": "eed370e566148d7f8c532d6b70e92ffc06889a21dfabd52a3824d3b7a8c2965a",
+      "identical_to_node10": true
+    },
+    "game/tests/destruction_tests.gd": {
+      "sha256": "990a3594eeeb9d5b4483e66a1fade7420d7d387923a42f0d467f21263e626e46",
+      "identical_to_node10": true
+    },
+    "game/destructible_target.gd": {
+      "sha256": "60cd8225c794e1310ff8b273981270ca3e4831e1b5b7a02557b71775059b52d3",
+      "identical_to_node10": true
+    },
+    "game/destruction_demo.gd": {
+      "sha256": "56c5271fded872a91b8a9a2e169668c758611ab4a828e212bb530838d89f3584",
+      "identical_to_node10": true
+    },
+    "game/destruction_demo.tscn": {
+      "sha256": "a34bc6ae8e50e1f4559771495e07bcc37dfe2131a3d0f3fedd3d77d02fa7238e",
+      "identical_to_node10": true
+    },
+    "scripts/run_destruction.py": {
+      "sha256": "f4acecfd3d0b39bcd5b1649dbf691e43c82135edd96f544a235603fa14b80e76",
+      "identical_to_node10": true
+    },
+    "scripts/check_destruction.py": {
+      "sha256": "3383a918cfdfb178d1dffb09dd1e10648af58453b30f2b27b6ce0c1ca798f70b",
+      "identical_to_node10": true
+    },
+    "scripts/check_frame_target.py": {
+      "sha256": "c1d2f9b54d465ac692beccd4bd272cf9a7d0b72bf52ecfb53154f2a0080d0606",
+      "identical_to_node10": true
+    }
+  },
+  "ring_function_identical_to_node10": true,
+  "destruction_diff_only_existing_render_material": true,
+  "game_source_matches_launch_hashes": true,
+  "historical_node10_fixed_step_hash_matches": true,
+  "fixed_step_hash": "ea0f0c88c5b0ea62ff3833464b6ee5d16ca42ebd80e5202c59ccb950bf55692a",
+  "frame_count": 32,
+  "distinct_capture_hashes": 29,
+  "renderer": "llvmpipe (LLVM 21.1.8, 256 bits)",
+  "engine": {
+    "build": "official",
+    "hash": "f62fdbde15035c5576dad93e586201f4d41ef0cb",
+    "hex": 263425,
+    "major": 4,
+    "minor": 5,
+    "patch": 1,
+    "status": "stable",
+    "string": "4.5.1-stable (official)",
+    "timestamp": 0
+  },
+  "logical_cpus": 4,
+  "cpuinfo": "processor\t: 0\nvendor_id\t: AuthenticAMD\ncpu family\t: 25\nmodel\t\t: 17\nmodel name\t: AMD EPYC 9354P 32-Core Processor\nstepping\t: 1\nmicrocode\t: 0xa101158\ncpu MHz\t\t: 3249.956\ncache size\t: 512 KB\nphysical id\t: 0\nsiblings\t: 4\ncore id\t\t: 0\ncpu cores\t: 4\napicid\t\t: 0\ninitial apicid\t: 0\nfpu\t\t: yes\nfpu_exception\t: yes\ncpuid level\t: 16\nwp\t\t: yes\nflags\t\t: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl xtopology cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw perfctr_core ssbd perfmon_v2 ibrs ibpb stibp ibrs_enhanced vmmcall fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves user_shstk avx512_bf16 clzero xsaveerptr wbnoinvd arat avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq la57 rdpid overflow_recov succor fsrm flush_l1d\nbugs\t\t: sysret_ss_attrs spectre_v1 spectre_v2 spec_store_bypass srso ibpb_no_ret spectre_v2_user tsa\nbogomips\t: 6499.91\nTLB size\t: 1024 4K pages\nclflush size\t: 64\ncache_alignment\t: 64\naddress sizes\t: 52 bits physical, 57 bits virtual\npower management:",
+  "uname": [
+    "Linux",
+    "g",
+    "7.0.0-31-generic",
+    "#31-Ubuntu SMP PREEMPT_DYNAMIC Sat Aug  1 04:26:38 UTC 2026",
+    "x86_64"
+  ]
+}

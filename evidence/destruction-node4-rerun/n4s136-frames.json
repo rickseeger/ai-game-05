@@ -1,0 +1,607 @@
+{
+  "frames": [
+    {
+      "error": 0,
+      "file": "frame_0001.png",
+      "observed_tick": 1,
+      "tick": 1,
+      "unix_seconds": 1789343499.7375,
+      "width": 1280,
+      "height": 720,
+      "distinct_colors": 1016,
+      "sha256": "44247ee847494614820a0629c3ea03850d3e940166c986992d33160c2b594f81",
+      "changed_pixels_from_previous": null,
+      "bodies_at_observed_tick": 32,
+      "solver_contact_bodies": 0,
+      "sleeping_bodies": 0,
+      "height_range_m": [
+        0.25,
+        0.61
+      ]
+    },
+    {
+      "error": 0,
+      "file": "frame_0010.png",
+      "observed_tick": 14,
+      "tick": 10,
+      "unix_seconds": 1789343499.87249,
+      "width": 1280,
+      "height": 720,
+      "distinct_colors": 2390,
+      "sha256": "827245128b8b9a80857239a138f6a200a18c59a15ea76c08931740a706901847",
+      "changed_pixels_from_previous": 3222,
+      "bodies_at_observed_tick": 32,
+      "solver_contact_bodies": 0,
+      "sleeping_bodies": 0,
+      "height_range_m": [
+        0.976439,
+        1.938371
+      ]
+    },
+    {
+      "error": 0,
+      "file": "frame_0030.png",
+      "observed_tick": 31,
+      "tick": 30,
+      "unix_seconds": 1789343500.16286,
+      "width": 1280,
+      "height": 720,
+      "distinct_colors": 3169,
+      "sha256": "de54a5ebc12018b0848808a79e803b32799a00b5c27bb2df056c96f07c627e80",
+      "changed_pixels_from_previous": 6437,
+      "bodies_at_observed_tick": 32,
+      "solver_contact_bodies": 0,
+      "sleeping_bodies": 0,
+      "height_range_m": [
+        1.214231,
+        2.940032
+      ]
+    },
+    {
+      "error": 0,
+      "file": "frame_0060.png",
+      "observed_tick": 60,
+      "tick": 60,
+      "unix_seconds": 1789343500.6312,
+      "width": 1280,
+      "height": 720,
+      "distinct_colors": 3505,
+      "sha256": "9e000f3915c274ed055950131b7cb2e4da39d36cf865c28a68c9ffd7162b98cd",
+      "changed_pixels_from_previous": 12037,
+      "bodies_at_observed_tick": 32,
+      "solver_contact_bodies": 2,
+      "sleeping_bodies": 0,
+      "height_range_m": [
+        0.190021,
+        2.799149
+      ]
+    },
+    {
+      "error": 0,
+      "file": "frame_0090.png",
+      "observed_tick": 90,
+      "tick": 90,
+      "unix_seconds": 1789343501.14082,
+      "width": 1280,
+      "height": 720,
+      "distinct_colors": 3442,
+      "sha256": "bdfd1c223cc1f153d7b04b1fb576f60c7d9695c29f71ebcada8db2da631186cb",
+      "changed_pixels_from_previous": 13483,
+      "bodies_at_observed_tick": 32,
+      "solver_contact_bodies": 2,
+      "sleeping_bodies": 0,
+      "height_range_m": [
+        0.218024,
+        0.670968
+      ]
+    },
+    {
+      "error": 0,
+      "file": "frame_0096.png",
+      "observed_tick": 97,
+      "tick": 96,
+      "unix_seconds": 1789343501.25209,
+      "width": 1280,
+      "height": 720,
+      "distinct_colors": 3375,
+      "sha256": "6ed97155b7d41f2fade91f05b1657f026082be07282269fa5a50e72841931bad",
+      "changed_pixels_from_previous": 9906,
+      "bodies_at_observed_tick": 32,
+      "solver_contact_bodies": 4,
+      "sleeping_bodies": 0,
+      "height_range_m": [
+        0.184302,
+        0.686393
+      ]
+    },
+    {
+      "error": 0,
+      "file": "frame_0102.png",
+      "observed_tick": 103,
+      "tick": 102,
+      "unix_seconds": 1789343501.37092,
+      "width": 1280,
+      "height": 720,
+      "distinct_colors": 3552,
+      "sha256": "4f2f11dac535c4228d47c97a9f45d9027526a3c83d2ab75fb90bd00d1947d110",
+      "changed_pixels_from_previous": 9731,
+      "bodies_at_observed_tick": 32,
+      "solver_contact_bodies": 5,
+      "sleeping_bodies": 0,
+      "height_range_m": [
+        0.171576,
+        0.800506
+      ]
+    },
+    {
+      "error": 0,
+      "file": "frame_0108.png",
+      "observed_tick": 109,
+      "tick": 108,
+      "unix_seconds": 1789343501.46043,
+      "width": 1280,
+      "height": 720,
+      "distinct_colors": 3478,
+      "sha256": "5437098b43ad7db94835ef7110b177f7aae431364ac94fcb31d078f223c8575d",
+      "changed_pixels_from_previous": 9221,
+      "bodies_at_observed_tick": 32,
+      "solver_contact_bodies": 6,
+      "sleeping_bodies": 0,
+      "height_range_m": [
+        0.149726,
+        0.851052
+      ]
+    },
+    {
+      "error": 0,
+      "file": "frame_0114.png",
+      "observed_tick": 115,
+      "tick": 114,
+      "unix_seconds": 1789343501.55131,
+      "width": 1280,
+      "height": 720,
+      "distinct_colors": 3496,
+      "sha256": "40ec40204ef840fffe69b50c15209d2a09baa4ef7d3339e0f1c54320c55d17c8",
+      "changed_pixels_from_previous": 8932,
+      "bodies_at_observed_tick": 32,
+      "solver_contact_bodies": 10,
+      "sleeping_bodies": 0,
+      "height_range_m": [
+        0.164682,
+        0.803483
+      ]
+    },
+    {
+      "error": 0,
+      "file": "frame_0120.png",
+      "observed_tick": 120,
+      "tick": 120,
+      "unix_seconds": 1789343501.64272,
+      "width": 1280,
+      "height": 720,
+      "distinct_colors": 3573,
+      "sha256": "a14719a3c053b756bfdcc01af9579c69b8fbd413bd891b268537b65825238937",
+      "changed_pixels_from_previous": 8141,
+      "bodies_at_observed_tick": 32,
+      "solver_contact_bodies": 12,
+      "sleeping_bodies": 0,
+      "height_range_m": [
+        0.165182,
+        0.689739
+      ]
+    },
+    {
+      "error": 0,
+      "file": "frame_0126.png",
+      "observed_tick": 127,
+      "tick": 126,
+      "unix_seconds": 1789343501.7573,
+      "width": 1280,
+      "height": 720,
+      "distinct_colors": 3539,
+      "sha256": "dd278a68b595d1351ff8007bf750c98064f24832504fe0168e78c329dd63b3b6",
+      "changed_pixels_from_previous": 8307,
+      "bodies_at_observed_tick": 32,
+      "solver_contact_bodies": 13,
+      "sleeping_bodies": 0,
+      "height_range_m": [
+        0.161583,
+        0.471748
+      ]
+    },
+    {
+      "error": 0,
+      "file": "frame_0132.png",
+      "observed_tick": 132,
+      "tick": 132,
+      "unix_seconds": 1789343501.84269,
+      "width": 1280,
+      "height": 720,
+      "distinct_colors": 3504,
+      "sha256": "82a52e757c9ada6601f97cfab6ecdb99ef17abce3aa72bc2df1670ae1ac93073",
+      "changed_pixels_from_previous": 7148,
+      "bodies_at_observed_tick": 32,
+      "solver_contact_bodies": 11,
+      "sleeping_bodies": 0,
+      "height_range_m": [
+        0.165173,
+        0.485121
+      ]
+    },
+    {
+      "error": 0,
+      "file": "frame_0138.png",
+      "observed_tick": 139,
+      "tick": 138,
+      "unix_seconds": 1789343501.95512,
+      "width": 1280,
+      "height": 720,
+      "distinct_colors": 3499,
+      "sha256": "4a3712893a04269269ad3add1250a367b4cfeb43ff46d07c467826e7c80daa41",
+      "changed_pixels_from_previous": 7353,
+      "bodies_at_observed_tick": 32,
+      "solver_contact_bodies": 16,
+      "sleeping_bodies": 1,
+      "height_range_m": [
+        0.164803,
+        0.421726
+      ]
+    },
+    {
+      "error": 0,
+      "file": "frame_0144.png",
+      "observed_tick": 144,
+      "tick": 144,
+      "unix_seconds": 1789343502.04308,
+      "width": 1280,
+      "height": 720,
+      "distinct_colors": 3487,
+      "sha256": "1b40e61a260d1203af525811c26357c28ef49dbfe4028065140317c51a93ea81",
+      "changed_pixels_from_previous": 6359,
+      "bodies_at_observed_tick": 32,
+      "solver_contact_bodies": 20,
+      "sleeping_bodies": 1,
+      "height_range_m": [
+        0.16263,
+        0.34792
+      ]
+    },
+    {
+      "error": 0,
+      "file": "frame_0150.png",
+      "observed_tick": 151,
+      "tick": 150,
+      "unix_seconds": 1789343502.15447,
+      "width": 1280,
+      "height": 720,
+      "distinct_colors": 3359,
+      "sha256": "afe0a162bb89886677994ce8a65c60810227565eeb447cdac2eef1335bb67859",
+      "changed_pixels_from_previous": 6307,
+      "bodies_at_observed_tick": 32,
+      "solver_contact_bodies": 20,
+      "sleeping_bodies": 2,
+      "height_range_m": [
+        0.156302,
+        0.392336
+      ]
+    },
+    {
+      "error": 0,
+      "file": "frame_0210.png",
+      "observed_tick": 211,
+      "tick": 210,
+      "unix_seconds": 1789343503.16385,
+      "width": 1280,
+      "height": 720,
+      "distinct_colors": 3374,
+      "sha256": "3e31fa279da04336c6037f4434f5d2940691025fb8a2b2bc761ab7ab59efaf48",
+      "changed_pixels_from_previous": 6224,
+      "bodies_at_observed_tick": 32,
+      "solver_contact_bodies": 32,
+      "sleeping_bodies": 18,
+      "height_range_m": [
+        0.162598,
+        0.23975
+      ]
+    },
+    {
+      "error": 0,
+      "file": "frame_0300.png",
+      "observed_tick": 300,
+      "tick": 300,
+      "unix_seconds": 1789343504.63918,
+      "width": 1280,
+      "height": 720,
+      "distinct_colors": 3353,
+      "sha256": "3495012289df3d78a1eecf134c601ddedff2c4dd9614c1d6997a2ef53922a196",
+      "changed_pixels_from_previous": 1037,
+      "bodies_at_observed_tick": 32,
+      "solver_contact_bodies": 32,
+      "sleeping_bodies": 32,
+      "height_range_m": [
+        0.162598,
+        0.169405
+      ]
+    },
+    {
+      "error": 0,
+      "file": "frame_0390.png",
+      "observed_tick": 391,
+      "tick": 390,
+      "unix_seconds": 1789343506.16927,
+      "width": 1280,
+      "height": 720,
+      "distinct_colors": 3353,
+      "sha256": "3495012289df3d78a1eecf134c601ddedff2c4dd9614c1d6997a2ef53922a196",
+      "changed_pixels_from_previous": 0,
+      "bodies_at_observed_tick": 32,
+      "solver_contact_bodies": 32,
+      "sleeping_bodies": 32,
+      "height_range_m": [
+        0.162598,
+        0.169405
+      ]
+    },
+    {
+      "error": 0,
+      "file": "frame_0450.png",
+      "observed_tick": 450,
+      "tick": 450,
+      "unix_seconds": 1789343507.14176,
+      "width": 1280,
+      "height": 720,
+      "distinct_colors": 1911,
+      "sha256": "4a55225c6c960f76e2dc9597dbd1c342da114ab92591339861e09960e5687e61",
+      "changed_pixels_from_previous": 5467,
+      "bodies_at_observed_tick": 32,
+      "solver_contact_bodies": 32,
+      "sleeping_bodies": 32,
+      "height_range_m": [
+        0.162598,
+        0.169405
+      ]
+    },
+    {
+      "error": 0,
+      "file": "frame_0479.png",
+      "observed_tick": 480,
+      "tick": 479,
+      "unix_seconds": 1789343507.65184,
+      "width": 1280,
+      "height": 720,
+      "distinct_colors": 1016,
+      "sha256": "44247ee847494614820a0629c3ea03850d3e940166c986992d33160c2b594f81",
+      "changed_pixels_from_previous": 2176,
+      "bodies_at_observed_tick": 32,
+      "solver_contact_bodies": 32,
+      "sleeping_bodies": 32,
+      "height_range_m": [
+        0.162598,
+        0.169405
+      ]
+    },
+    {
+      "error": 0,
+      "file": "frame_0490.png",
+      "observed_tick": 490,
+      "tick": 490,
+      "unix_seconds": 1789343507.81879,
+      "width": 1280,
+      "height": 720,
+      "distinct_colors": 1016,
+      "sha256": "44247ee847494614820a0629c3ea03850d3e940166c986992d33160c2b594f81",
+      "changed_pixels_from_previous": 0,
+      "bodies_at_observed_tick": 0,
+      "solver_contact_bodies": 0,
+      "sleeping_bodies": 0,
+      "height_range_m": null
+    },
+    {
+      "error": 0,
+      "file": "frame_0511.png",
+      "observed_tick": 511,
+      "tick": 511,
+      "unix_seconds": 1789343508.1698,
+      "width": 1280,
+      "height": 720,
+      "distinct_colors": 5427,
+      "sha256": "f31aadf2543d19c78b6827e46e0d42450585bb68cc5343d677d2b964403534fa",
+      "changed_pixels_from_previous": 10402,
+      "bodies_at_observed_tick": 192,
+      "solver_contact_bodies": 0,
+      "sleeping_bodies": 0,
+      "height_range_m": [
+        0.322219,
+        0.731703
+      ]
+    },
+    {
+      "error": 0,
+      "file": "frame_0540.png",
+      "observed_tick": 541,
+      "tick": 540,
+      "unix_seconds": 1789343508.65972,
+      "width": 1280,
+      "height": 720,
+      "distinct_colors": 10174,
+      "sha256": "9aafa9fe30992b44235b6dafd4b4c4e379f0f06f630d6211337aa2284001585f",
+      "changed_pixels_from_previous": 33978,
+      "bodies_at_observed_tick": 192,
+      "solver_contact_bodies": 0,
+      "sleeping_bodies": 0,
+      "height_range_m": [
+        1.181215,
+        3.030063
+      ]
+    },
+    {
+      "error": 0,
+      "file": "frame_0600.png",
+      "observed_tick": 600,
+      "tick": 600,
+      "unix_seconds": 1789343509.66687,
+      "width": 1280,
+      "height": 720,
+      "distinct_colors": 10212,
+      "sha256": "903e9674ded2dfdd039b39917747a35c52489a35da2b0fe93b9ebba167695294",
+      "changed_pixels_from_previous": 54730,
+      "bodies_at_observed_tick": 192,
+      "solver_contact_bodies": 23,
+      "sleeping_bodies": 0,
+      "height_range_m": [
+        0.134782,
+        1.757377
+      ]
+    },
+    {
+      "error": 0,
+      "file": "frame_0631.png",
+      "observed_tick": 631,
+      "tick": 631,
+      "unix_seconds": 1789343510.1683,
+      "width": 1280,
+      "height": 720,
+      "distinct_colors": 8802,
+      "sha256": "99b9f62a2bb97abe6384a74435844cdad10e864f8f13d07fb3a6d87df2710dfd",
+      "changed_pixels_from_previous": 47106,
+      "bodies_at_observed_tick": 192,
+      "solver_contact_bodies": 36,
+      "sleeping_bodies": 0,
+      "height_range_m": [
+        0.160864,
+        1.035127
+      ]
+    },
+    {
+      "error": 0,
+      "file": "frame_0660.png",
+      "observed_tick": 660,
+      "tick": 660,
+      "unix_seconds": 1789343510.64572,
+      "width": 1280,
+      "height": 720,
+      "distinct_colors": 10563,
+      "sha256": "77c6e7cbe4336cf56962f10dab4e482d3634529262a7d8fc3114e1de72098a83",
+      "changed_pixels_from_previous": 39806,
+      "bodies_at_observed_tick": 192,
+      "solver_contact_bodies": 64,
+      "sleeping_bodies": 2,
+      "height_range_m": [
+        0.162422,
+        2.975971
+      ]
+    },
+    {
+      "error": 0,
+      "file": "frame_0720.png",
+      "observed_tick": 720,
+      "tick": 720,
+      "unix_seconds": 1789343511.67036,
+      "width": 1280,
+      "height": 720,
+      "distinct_colors": 10727,
+      "sha256": "e9f12089dec50c13efe089260629ac57f510eb070169ed97868c23626fa001f1",
+      "changed_pixels_from_previous": 39353,
+      "bodies_at_observed_tick": 192,
+      "solver_contact_bodies": 106,
+      "sleeping_bodies": 57,
+      "height_range_m": [
+        0.043019,
+        1.211985
+      ]
+    },
+    {
+      "error": 0,
+      "file": "frame_0900.png",
+      "observed_tick": 900,
+      "tick": 900,
+      "unix_seconds": 1789343514.66319,
+      "width": 1280,
+      "height": 720,
+      "distinct_colors": 7377,
+      "sha256": "03dbf3b3bfa8bd23ec8ccad9ac1713c7dcbc79aed6d2690dbeefa5e67115ad0e",
+      "changed_pixels_from_previous": 40220,
+      "bodies_at_observed_tick": 192,
+      "solver_contact_bodies": 95,
+      "sleeping_bodies": 91,
+      "height_range_m": [
+        -38.699055,
+        0.61
+      ]
+    },
+    {
+      "error": 0,
+      "file": "frame_0930.png",
+      "observed_tick": 931,
+      "tick": 930,
+      "unix_seconds": 1789343515.16271,
+      "width": 1280,
+      "height": 720,
+      "distinct_colors": 9777,
+      "sha256": "b7fbf349fcc179303cb0930dae2f53892b7da1d144a061cfa17037a975b736ba",
+      "changed_pixels_from_previous": 15367,
+      "bodies_at_observed_tick": 192,
+      "solver_contact_bodies": 95,
+      "sleeping_bodies": 94,
+      "height_range_m": [
+        -52.422009,
+        3.015507
+      ]
+    },
+    {
+      "error": 0,
+      "file": "frame_1020.png",
+      "observed_tick": 1021,
+      "tick": 1020,
+      "unix_seconds": 1789343516.68402,
+      "width": 1280,
+      "height": 720,
+      "distinct_colors": 9778,
+      "sha256": "9e9782034e876e5b9b7f90567852c758fe019ed62f7a825f4a9b1db05d11ac14",
+      "changed_pixels_from_previous": 24601,
+      "bodies_at_observed_tick": 192,
+      "solver_contact_bodies": 131,
+      "sleeping_bodies": 95,
+      "height_range_m": [
+        -101.604836,
+        0.688193
+      ]
+    },
+    {
+      "error": 0,
+      "file": "frame_1190.png",
+      "observed_tick": 1191,
+      "tick": 1190,
+      "unix_seconds": 1789343519.49127,
+      "width": 1280,
+      "height": 720,
+      "distinct_colors": 6155,
+      "sha256": "6613f8bd86ace58d006a19d31220c6b7cb4cb13b3d436299b96f93307be25416",
+      "changed_pixels_from_previous": 27604,
+      "bodies_at_observed_tick": 96,
+      "solver_contact_bodies": 96,
+      "sleeping_bodies": 96,
+      "height_range_m": [
+        0.162465,
+        0.169462
+      ]
+    },
+    {
+      "error": 0,
+      "file": "frame_1385.png",
+      "observed_tick": 1386,
+      "tick": 1385,
+      "unix_seconds": 1789343522.74568,
+      "width": 1280,
+      "height": 720,
+      "distinct_colors": 992,
+      "sha256": "c0ed2948da98518590c22400532bc3bd8877135a7aae9388c50cae2e89ecaa9f",
+      "changed_pixels_from_previous": 11155,
+      "bodies_at_observed_tick": 0,
+      "solver_contact_bodies": 0,
+      "sleeping_bodies": 0,
+      "height_range_m": null
+    }
+  ],
+  "limitation": "Pixel differences establish changed renderer output, not subjective weight, independent visibility of every block, or crowded-scene readability. Contact counts come from physics, not image interpretation."
+}

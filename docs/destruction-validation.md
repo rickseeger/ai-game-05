@@ -1,6 +1,12 @@
 # Node 4 destruction execution and validation handoff
 
-## Status: technical implementation delivered; contract validation BLOCKED
+## Historical status: technical implementation delivered; contract validation BLOCKED
+
+Current execution update: see [fresh node 4 rerun](destruction-node4-rerun.md).
+Step 136 independently validates the latest source, unchanged physics and passing
+reference performance. Subjective destruction quality/readability is explicitly
+carried to node 9; lack of worker perception is not an execution blocker. The
+measurements and original status below are preserved as historical evidence.
 
 Read the persisted G12 node 4 contract and nodes 1/2/3 through read-only SQLite;
 see evidence/destruction/prerequisites.json. Baseline source was

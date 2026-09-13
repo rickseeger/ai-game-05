@@ -1,0 +1,80 @@
+{
+  "baseline": {
+    "directory": "evidence/destruction/n4s136-capture",
+    "samples_before_tick_1390": 156704,
+    "physics_sha256_without_wall_time": "ea0f0c88c5b0ea62ff3833464b6ee5d16ca42ebd80e5202c59ccb950bf55692a",
+    "stress_bursts": {
+      "510": {
+        "bodies": 192,
+        "up": 192,
+        "down": 192,
+        "contact": 192,
+        "bounce": 188,
+        "spin": 192,
+        "tumble": 192,
+        "sleep": 96
+      },
+      "630": {
+        "bodies": 96,
+        "up": 96,
+        "down": 96,
+        "contact": 96,
+        "bounce": 96,
+        "spin": 96,
+        "tumble": 96,
+        "sleep": 95
+      },
+      "900": {
+        "bodies": 96,
+        "up": 96,
+        "down": 96,
+        "contact": 96,
+        "bounce": 95,
+        "spin": 96,
+        "tumble": 96,
+        "sleep": 96
+      }
+    },
+    "limitation": "Cap retires some active bodies early; natural sleep not required of those retired at age 2s."
+  },
+  "corrected": {
+    "directory": "evidence/destruction/n4s136-rerun",
+    "samples_before_tick_1390": 156704,
+    "physics_sha256_without_wall_time": "ea0f0c88c5b0ea62ff3833464b6ee5d16ca42ebd80e5202c59ccb950bf55692a",
+    "stress_bursts": {
+      "510": {
+        "bodies": 192,
+        "up": 192,
+        "down": 192,
+        "contact": 192,
+        "bounce": 188,
+        "spin": 192,
+        "tumble": 192,
+        "sleep": 96
+      },
+      "630": {
+        "bodies": 96,
+        "up": 96,
+        "down": 96,
+        "contact": 96,
+        "bounce": 96,
+        "spin": 96,
+        "tumble": 96,
+        "sleep": 95
+      },
+      "900": {
+        "bodies": 96,
+        "up": 96,
+        "down": 96,
+        "contact": 96,
+        "bounce": 95,
+        "spin": 96,
+        "tumble": 96,
+        "sleep": 96
+      }
+    },
+    "limitation": "Cap retires some active bodies early; natural sleep not required of those retired at age 2s."
+  },
+  "identical_fixed_step_physics": true,
+  "visual_assessment": "UNASSESSED"
+}
