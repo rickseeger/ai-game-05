@@ -85,13 +85,23 @@ static func box(parent: Node3D, size: Vector3, at: Vector3, color: Color) -> Mes
     return instance
 
 static func ring(parent: Node3D, at: Vector3, radius: float, color: Color) -> void:
+    # Keep every marker and its exact geometry/material; batch only submission.
+    # Hundreds of tiny separate draws dominate this scene on software OpenGL.
+    var mesh := BoxMesh.new()
+    mesh.size = Vector3(0.11, 0.02, radius * 0.16)
+    var multi := MultiMesh.new()
+    multi.transform_format = MultiMesh.TRANSFORM_3D
+    multi.mesh = mesh
+    multi.instance_count = 40
     for i in 40:
         var angle := TAU * float(i) / 40.0
-        var marker := box(parent, Vector3(0.11, 0.02, radius * 0.16),
-            at + Vector3(cos(angle), 0, sin(angle)) * radius, color)
-        marker.rotation.y = -angle
-        marker.material_override = material(color, true)
-        marker.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
+        multi.set_instance_transform(i, Transform3D(Basis(Vector3.UP, -angle),
+            at + Vector3(cos(angle), 0, sin(angle)) * radius))
+    var markers := MultiMeshInstance3D.new()
+    markers.multimesh = multi
+    markers.material_override = material(color, true)
+    markers.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
+    parent.add_child(markers)
 
 static func label(parent: Node3D, text: String, at: Vector3, color: Color) -> void:
     var node := Label3D.new()
