@@ -1,0 +1,61 @@
+{
+  "runs": [
+    {
+      "ticks": 2089,
+      "injected_events": 438,
+      "emitted_shots": 8,
+      "fire_tick_intervals": [
+        21,
+        21,
+        21
+      ],
+      "generations": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "maximum_actor_extent_m": 11.5997943878174,
+      "directory": "evidence/controls/n2-s135-controls",
+      "assertions": 99,
+      "frames": [
+        {
+          "file": "initial.png",
+          "width": 1280,
+          "height": 720,
+          "distinct_colors": 990,
+          "sha256": "823be680a8fd7363058a14106989042f08ac7e550942e107cdc9cc384e7b6dbb"
+        },
+        {
+          "file": "aim_cover.png",
+          "width": 1280,
+          "height": 720,
+          "distinct_colors": 990,
+          "sha256": "486d9d02804d6a2b2d64b902b844226fcabfe79883b085a5bca73101e32ef6c0"
+        },
+        {
+          "file": "resized_target.png",
+          "width": 960,
+          "height": 720,
+          "distinct_colors": 875,
+          "sha256": "38db8eab98a7bca7d120de077be69c77e572ae4b4251ccbb5285bcb89358088b"
+        },
+        {
+          "file": "paused_controls.png",
+          "width": 960,
+          "height": 720,
+          "distinct_colors": 1652,
+          "sha256": "44b6d86e89ec2a073dc302164661b054974d842627ddab8e41d130afc51c3cc6"
+        },
+        {
+          "file": "final_restart.png",
+          "width": 960,
+          "height": 720,
+          "distinct_colors": 878,
+          "sha256": "491ccc97ba128716332ae2b8a89bb6a2c04764c0034055d155a82e13ba58d0ad"
+        }
+      ]
+    }
+  ],
+  "passed": true
+}

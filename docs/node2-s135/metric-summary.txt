@@ -1,0 +1,22 @@
+720p:
+  actor: 55.62% -> 65.90%
+  contact: 72.65% -> 83.67%
+  exit: 86.46% -> 83.53%
+  label: 100.00% -> 100.00%
+  Mean cube visible/solo fraction: 68.17% -> 70.62%
+4x3:
+  actor: 55.85% -> 63.40%
+  contact: 72.63% -> 73.15%
+  exit: 87.57% -> 78.00%
+  label: 100.00% -> 100.00%
+  Mean cube visible/solo fraction: 68.40% -> 71.11%
+evidence/arena/n2-s135-verified-v2-dense-720p
+  actual near/far area ratio: 2.563
+  visible pieces: [136, 171, 191, 192, 191, 183]
+  minimum retained cyan-region pixels: 125
+  shadow nondebris pixels: [2976, 5157, 7622, 8571, 5622, 4797]
+evidence/arena/n2-s135-verified-v2-dense-4x3
+  actual near/far area ratio: 2.244
+  visible pieces: [133, 168, 191, 192, 191, 185]
+  minimum retained cyan-region pixels: 153
+  shadow nondebris pixels: [2367, 4052, 5947, 6731, 4481, 3895]

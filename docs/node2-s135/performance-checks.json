@@ -1,0 +1,70 @@
+{
+  "passed": true,
+  "runs": [
+    {
+      "directory": "evidence/destruction/n2-s135-performance-1",
+      "passed": true,
+      "result": {
+        "directory": "evidence/destruction/n2-s135-performance-1",
+        "seed": 1201,
+        "assertions": 34,
+        "performance": {
+          "frame_samples": 390,
+          "window_ticks": [
+            510,
+            1109
+          ],
+          "frame_ms": {
+            "median": 25.7845,
+            "p95": 29.595,
+            "max": 34.115
+          },
+          "physics_process_ms": {
+            "median": 1.614,
+            "p95": 5.192,
+            "max": 5.192
+          },
+          "p95_target_ms": 33.3,
+          "meets_p95_target": true,
+          "capture_overlap_frames": 0,
+          "limit": "Offscreen CPU llvmpipe reference VM; not laptop or subjective smoothness acceptance."
+        },
+        "images": [],
+        "visual_assessment": "UNASSESSED"
+      }
+    },
+    {
+      "directory": "evidence/destruction/n2-s135-performance-2",
+      "passed": true,
+      "result": {
+        "directory": "evidence/destruction/n2-s135-performance-2",
+        "seed": 1201,
+        "assertions": 34,
+        "performance": {
+          "frame_samples": 411,
+          "window_ticks": [
+            510,
+            1109
+          ],
+          "frame_ms": {
+            "median": 24.235,
+            "p95": 28.091,
+            "max": 30.34
+          },
+          "physics_process_ms": {
+            "median": 1.483,
+            "p95": 5.065,
+            "max": 5.065
+          },
+          "p95_target_ms": 33.3,
+          "meets_p95_target": true,
+          "capture_overlap_frames": 0,
+          "limit": "Offscreen CPU llvmpipe reference VM; not laptop or subjective smoothness acceptance."
+        },
+        "images": [],
+        "visual_assessment": "UNASSESSED"
+      }
+    }
+  ],
+  "visual_assessment": "UNASSESSED"
+}
