@@ -62,7 +62,11 @@ def validate(directory):
         for px in range(max(0, x-6), min(width, x+7)):
             for py in range(max(0, y-6), min(height, y+7)):
                 r, g, b = raw[(py*width+px)*3:(py*width+px)*3+3]
-                gold += r > .4*255 and r > g*1.08 and g > b*1.15
+                # Image.get_pixel exposes float32 channels, then GDScript compares doubles.
+                # Match that boundary behavior (e.g. byte 102 -> 0.40000000596),
+                # rather than incorrectly moving the threshold during byte scaling.
+                r, g, b = [struct.unpack("f", struct.pack("f", v / 255.0))[0] for v in (r, g, b)]
+                gold += r > .4 and r > g*1.08 and g > b*1.15
         assert gold >= 3 and gold == capture["gold_pixels"], "projected airborne cube pixels missing"
         frame["gold_pixels"] = gold
         frames.append(frame)

@@ -28,7 +28,7 @@ func run() -> void:
         check(pad.cast_shadow == GeometryInstance3D.SHADOW_CASTING_SETTING_OFF, "contact_pad_no_false_shadow")
         var ring: MultiMeshInstance3D = scene.contact.get_child(1)
         check(ring.multimesh.instance_count == 40, "contact_ring_still_batched_forty_markers")
-        var labels := scene.arena.geometry.find_children("*", "Label3D", true, false)
+        var labels: Array[Node] = scene.arena.geometry.find_children("*", "Label3D", true, false)
         check(labels.size() == 4, "four_location_labels")
         for label in labels:
             check(label.billboard == BaseMaterial3D.BILLBOARD_ENABLED and not label.no_depth_test, "world_depth_tested_billboard_" + label.text)
