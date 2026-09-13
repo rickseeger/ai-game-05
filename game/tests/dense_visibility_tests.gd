@@ -6,7 +6,10 @@ var records: Array = []
 func _initialize() -> void:
     run.call_deferred()
 func capture(name: String) -> void:
-    await process_frame
+    # Flush pending material/MultiMesh changes through two full render cycles.
+    for settle in 2:
+        await process_frame
+        await RenderingServer.frame_post_draw
     await RenderingServer.frame_post_draw
     assert(root.get_texture().get_image().save_png(out.path_join(name + ".png")) == OK)
 func poses() -> Array:
