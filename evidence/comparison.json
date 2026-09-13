@@ -1,0 +1,34 @@
+{
+  "both_passed": true,
+  "physics_identical": true,
+  "events_identical": true,
+  "audio_identical": true,
+  "run2_summary": {
+    "checks": {
+      "32_bodies": true,
+      "all_rose_fell_rotated_contacted_settled": true,
+      "all_bounced": true,
+      "ground_tumbling_observed": true,
+      "rendered_nonuniform_frames": true,
+      "distinct_frames": true,
+      "captured_destruction_and_impacts": true,
+      "audio_not_clipped": true,
+      "completed": true,
+      "no_engine_errors": true
+    },
+    "passed": true,
+    "physics_samples": 12512,
+    "ground_contact_events": 250,
+    "impact_sound_events": 51,
+    "audio": {
+      "sample_rate": 48000,
+      "channels": 2,
+      "duration_seconds": 7.0,
+      "peak_s16": 1564,
+      "rms_s16": 173.35689979160662,
+      "destruction_window_rms": 418.90874333565245,
+      "max_impact_window_rms": 462.5326293857848,
+      "path": "Godot MovieWriter mixed output; not hardware or audible validation"
+    }
+  }
+}

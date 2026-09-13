@@ -1,0 +1,23 @@
+{
+  "recorded_baseline": {
+    "expected_pass": true,
+    "actual_pass": true,
+    "failed_checks": []
+  },
+  "reject_silence": {
+    "expected_pass": false,
+    "actual_pass": false,
+    "failed_checks": [
+      "captured_destruction_and_impacts"
+    ]
+  },
+  "reject_static_physics": {
+    "expected_pass": false,
+    "actual_pass": false,
+    "failed_checks": [
+      "all_rose_fell_rotated_contacted_settled",
+      "all_bounced",
+      "ground_tumbling_observed"
+    ]
+  }
+}

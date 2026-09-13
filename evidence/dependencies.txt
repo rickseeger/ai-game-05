@@ -1,0 +1,13 @@
+curl	8.18.0-1ubuntu2.5
+ffmpeg	7:8.0.1-3ubuntu2
+libgl1:amd64	1.7.0-3
+libgl1-mesa-dri:amd64	26.0.8-1ubuntu0.3
+unzip	6.0-29ubuntu1
+xauth	1:1.1.2-1.1build1
+xvfb	2:21.1.22-1ubuntu1
+
+Godot 4.5.1.stable.official.f62fdbde1
+Godot archive SHA256 02ec53d1cc7dbb9cc6355393c61b9ab43d1244751a124f10248a4802830788cd (matches GitHub release API digest)
+Python 3.14.4
+Xvfb -version is unsupported; version above from dpkg-query.
+SHA256-SUMS.txt release URL returned HTTP 404; used GitHub API digest instead.
