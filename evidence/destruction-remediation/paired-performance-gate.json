@@ -1,0 +1,70 @@
+{
+  "passed": true,
+  "runs": [
+    {
+      "directory": "evidence/destruction/n10-paired-corrected-1",
+      "passed": true,
+      "result": {
+        "directory": "evidence/destruction/n10-paired-corrected-1",
+        "seed": 1201,
+        "assertions": 34,
+        "performance": {
+          "frame_samples": 397,
+          "window_ticks": [
+            510,
+            1109
+          ],
+          "frame_ms": {
+            "median": 24.8,
+            "p95": 29.115,
+            "max": 32.257
+          },
+          "physics_process_ms": {
+            "median": 1.578,
+            "p95": 4.621,
+            "max": 4.621
+          },
+          "p95_target_ms": 33.3,
+          "meets_p95_target": true,
+          "capture_overlap_frames": 0,
+          "limit": "Offscreen CPU llvmpipe reference VM; not laptop or subjective smoothness acceptance."
+        },
+        "images": [],
+        "visual_assessment": "UNASSESSED"
+      }
+    },
+    {
+      "directory": "evidence/destruction/n10-paired-corrected-2",
+      "passed": true,
+      "result": {
+        "directory": "evidence/destruction/n10-paired-corrected-2",
+        "seed": 1201,
+        "assertions": 34,
+        "performance": {
+          "frame_samples": 395,
+          "window_ticks": [
+            510,
+            1109
+          ],
+          "frame_ms": {
+            "median": 25.05,
+            "p95": 29.958,
+            "max": 35.451
+          },
+          "physics_process_ms": {
+            "median": 1.508,
+            "p95": 4.397,
+            "max": 4.397
+          },
+          "p95_target_ms": 33.3,
+          "meets_p95_target": true,
+          "capture_overlap_frames": 0,
+          "limit": "Offscreen CPU llvmpipe reference VM; not laptop or subjective smoothness acceptance."
+        },
+        "images": [],
+        "visual_assessment": "UNASSESSED"
+      }
+    }
+  ],
+  "visual_assessment": "UNASSESSED"
+}

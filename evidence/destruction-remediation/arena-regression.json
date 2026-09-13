@@ -1,0 +1,78 @@
+{
+  "runs": [
+    {
+      "directory": "evidence/arena/n10-regression",
+      "assertions": 337,
+      "camera_position": [
+        0.0,
+        26.4101524353027,
+        21.9691371917725
+      ],
+      "resized_camera_position": [
+        0.0,
+        28.6639976501465,
+        23.9975967407227
+      ],
+      "minimum_frame_margin": 0.0832377672195435,
+      "minimum_cube_pixels": 6.047119140625,
+      "frames": [
+        {
+          "file": "overview.png",
+          "width": 1280,
+          "height": 720,
+          "distinct_colors": 1077,
+          "sha256": "bd2759ef09d9fef639f1f9aa32c81f9aebcd2472ef0b72842b8e4a3bab06b4ba",
+          "gold_pixels": 62
+        },
+        {
+          "file": "southwest.png",
+          "width": 1280,
+          "height": 720,
+          "distinct_colors": 1102,
+          "sha256": "bcb886ef950e84fbdec85d687707f088d6880f25d49d6fcaae5b3d28d26beff2",
+          "gold_pixels": 71
+        },
+        {
+          "file": "northwest.png",
+          "width": 1280,
+          "height": 720,
+          "distinct_colors": 1067,
+          "sha256": "697fec2256911dd3e1e91b4b7d2f48c52c05c239467f75a9bf9d5411f24d1b91",
+          "gold_pixels": 56
+        },
+        {
+          "file": "northeast.png",
+          "width": 1280,
+          "height": 720,
+          "distinct_colors": 1074,
+          "sha256": "6377a47806d9865d9f82038778e9f5da8f3870131f05899ce44d65e0f77ff6ab",
+          "gold_pixels": 51
+        },
+        {
+          "file": "southeast.png",
+          "width": 1280,
+          "height": 720,
+          "distinct_colors": 1069,
+          "sha256": "5a161409527bb8b66e74ecb1fa8d780188931d2ab51b9cc266f89b2a39501b04",
+          "gold_pixels": 75
+        },
+        {
+          "file": "airborne.png",
+          "width": 1280,
+          "height": 720,
+          "distinct_colors": 1049,
+          "sha256": "3831eae81bf9fa2b0b59666a4b524ecd145de230ad843dd6af1f18326672e489",
+          "gold_pixels": 94
+        },
+        {
+          "file": "resized.png",
+          "width": 960,
+          "height": 720,
+          "distinct_colors": 1025,
+          "sha256": "79fb33654073a37d8f6bff9105896dfc45319429a2ad92ad959d30a36c7284a7"
+        }
+      ]
+    }
+  ],
+  "passed": true
+}

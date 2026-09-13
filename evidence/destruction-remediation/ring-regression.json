@@ -1,0 +1,1429 @@
+{
+  "checks": [
+    {
+      "name": "rendered_x11",
+      "pass": true
+    },
+    {
+      "name": "one_batch_0.28",
+      "pass": true
+    },
+    {
+      "name": "all_40_0.28",
+      "pass": true
+    },
+    {
+      "name": "same_material_0.28",
+      "pass": true
+    },
+    {
+      "name": "pose_0.28_0",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.28_0",
+      "pass": true
+    },
+    {
+      "name": "pose_0.28_1",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.28_1",
+      "pass": true
+    },
+    {
+      "name": "pose_0.28_2",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.28_2",
+      "pass": true
+    },
+    {
+      "name": "pose_0.28_3",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.28_3",
+      "pass": true
+    },
+    {
+      "name": "pose_0.28_4",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.28_4",
+      "pass": true
+    },
+    {
+      "name": "pose_0.28_5",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.28_5",
+      "pass": true
+    },
+    {
+      "name": "pose_0.28_6",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.28_6",
+      "pass": true
+    },
+    {
+      "name": "pose_0.28_7",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.28_7",
+      "pass": true
+    },
+    {
+      "name": "pose_0.28_8",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.28_8",
+      "pass": true
+    },
+    {
+      "name": "pose_0.28_9",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.28_9",
+      "pass": true
+    },
+    {
+      "name": "pose_0.28_10",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.28_10",
+      "pass": true
+    },
+    {
+      "name": "pose_0.28_11",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.28_11",
+      "pass": true
+    },
+    {
+      "name": "pose_0.28_12",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.28_12",
+      "pass": true
+    },
+    {
+      "name": "pose_0.28_13",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.28_13",
+      "pass": true
+    },
+    {
+      "name": "pose_0.28_14",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.28_14",
+      "pass": true
+    },
+    {
+      "name": "pose_0.28_15",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.28_15",
+      "pass": true
+    },
+    {
+      "name": "pose_0.28_16",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.28_16",
+      "pass": true
+    },
+    {
+      "name": "pose_0.28_17",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.28_17",
+      "pass": true
+    },
+    {
+      "name": "pose_0.28_18",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.28_18",
+      "pass": true
+    },
+    {
+      "name": "pose_0.28_19",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.28_19",
+      "pass": true
+    },
+    {
+      "name": "pose_0.28_20",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.28_20",
+      "pass": true
+    },
+    {
+      "name": "pose_0.28_21",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.28_21",
+      "pass": true
+    },
+    {
+      "name": "pose_0.28_22",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.28_22",
+      "pass": true
+    },
+    {
+      "name": "pose_0.28_23",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.28_23",
+      "pass": true
+    },
+    {
+      "name": "pose_0.28_24",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.28_24",
+      "pass": true
+    },
+    {
+      "name": "pose_0.28_25",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.28_25",
+      "pass": true
+    },
+    {
+      "name": "pose_0.28_26",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.28_26",
+      "pass": true
+    },
+    {
+      "name": "pose_0.28_27",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.28_27",
+      "pass": true
+    },
+    {
+      "name": "pose_0.28_28",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.28_28",
+      "pass": true
+    },
+    {
+      "name": "pose_0.28_29",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.28_29",
+      "pass": true
+    },
+    {
+      "name": "pose_0.28_30",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.28_30",
+      "pass": true
+    },
+    {
+      "name": "pose_0.28_31",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.28_31",
+      "pass": true
+    },
+    {
+      "name": "pose_0.28_32",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.28_32",
+      "pass": true
+    },
+    {
+      "name": "pose_0.28_33",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.28_33",
+      "pass": true
+    },
+    {
+      "name": "pose_0.28_34",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.28_34",
+      "pass": true
+    },
+    {
+      "name": "pose_0.28_35",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.28_35",
+      "pass": true
+    },
+    {
+      "name": "pose_0.28_36",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.28_36",
+      "pass": true
+    },
+    {
+      "name": "pose_0.28_37",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.28_37",
+      "pass": true
+    },
+    {
+      "name": "pose_0.28_38",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.28_38",
+      "pass": true
+    },
+    {
+      "name": "pose_0.28_39",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.28_39",
+      "pass": true
+    },
+    {
+      "name": "save_original_0.28.png",
+      "pass": true
+    },
+    {
+      "name": "save_batched_0.28.png",
+      "pass": true
+    },
+    {
+      "name": "pixel_equivalence_0.28",
+      "pass": true
+    },
+    {
+      "name": "parent_visibility_0.28",
+      "pass": true
+    },
+    {
+      "name": "one_batch_0.48",
+      "pass": true
+    },
+    {
+      "name": "all_40_0.48",
+      "pass": true
+    },
+    {
+      "name": "same_material_0.48",
+      "pass": true
+    },
+    {
+      "name": "pose_0.48_0",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.48_0",
+      "pass": true
+    },
+    {
+      "name": "pose_0.48_1",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.48_1",
+      "pass": true
+    },
+    {
+      "name": "pose_0.48_2",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.48_2",
+      "pass": true
+    },
+    {
+      "name": "pose_0.48_3",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.48_3",
+      "pass": true
+    },
+    {
+      "name": "pose_0.48_4",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.48_4",
+      "pass": true
+    },
+    {
+      "name": "pose_0.48_5",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.48_5",
+      "pass": true
+    },
+    {
+      "name": "pose_0.48_6",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.48_6",
+      "pass": true
+    },
+    {
+      "name": "pose_0.48_7",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.48_7",
+      "pass": true
+    },
+    {
+      "name": "pose_0.48_8",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.48_8",
+      "pass": true
+    },
+    {
+      "name": "pose_0.48_9",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.48_9",
+      "pass": true
+    },
+    {
+      "name": "pose_0.48_10",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.48_10",
+      "pass": true
+    },
+    {
+      "name": "pose_0.48_11",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.48_11",
+      "pass": true
+    },
+    {
+      "name": "pose_0.48_12",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.48_12",
+      "pass": true
+    },
+    {
+      "name": "pose_0.48_13",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.48_13",
+      "pass": true
+    },
+    {
+      "name": "pose_0.48_14",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.48_14",
+      "pass": true
+    },
+    {
+      "name": "pose_0.48_15",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.48_15",
+      "pass": true
+    },
+    {
+      "name": "pose_0.48_16",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.48_16",
+      "pass": true
+    },
+    {
+      "name": "pose_0.48_17",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.48_17",
+      "pass": true
+    },
+    {
+      "name": "pose_0.48_18",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.48_18",
+      "pass": true
+    },
+    {
+      "name": "pose_0.48_19",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.48_19",
+      "pass": true
+    },
+    {
+      "name": "pose_0.48_20",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.48_20",
+      "pass": true
+    },
+    {
+      "name": "pose_0.48_21",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.48_21",
+      "pass": true
+    },
+    {
+      "name": "pose_0.48_22",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.48_22",
+      "pass": true
+    },
+    {
+      "name": "pose_0.48_23",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.48_23",
+      "pass": true
+    },
+    {
+      "name": "pose_0.48_24",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.48_24",
+      "pass": true
+    },
+    {
+      "name": "pose_0.48_25",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.48_25",
+      "pass": true
+    },
+    {
+      "name": "pose_0.48_26",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.48_26",
+      "pass": true
+    },
+    {
+      "name": "pose_0.48_27",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.48_27",
+      "pass": true
+    },
+    {
+      "name": "pose_0.48_28",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.48_28",
+      "pass": true
+    },
+    {
+      "name": "pose_0.48_29",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.48_29",
+      "pass": true
+    },
+    {
+      "name": "pose_0.48_30",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.48_30",
+      "pass": true
+    },
+    {
+      "name": "pose_0.48_31",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.48_31",
+      "pass": true
+    },
+    {
+      "name": "pose_0.48_32",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.48_32",
+      "pass": true
+    },
+    {
+      "name": "pose_0.48_33",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.48_33",
+      "pass": true
+    },
+    {
+      "name": "pose_0.48_34",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.48_34",
+      "pass": true
+    },
+    {
+      "name": "pose_0.48_35",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.48_35",
+      "pass": true
+    },
+    {
+      "name": "pose_0.48_36",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.48_36",
+      "pass": true
+    },
+    {
+      "name": "pose_0.48_37",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.48_37",
+      "pass": true
+    },
+    {
+      "name": "pose_0.48_38",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.48_38",
+      "pass": true
+    },
+    {
+      "name": "pose_0.48_39",
+      "pass": true
+    },
+    {
+      "name": "geometry_0.48_39",
+      "pass": true
+    },
+    {
+      "name": "save_original_0.48.png",
+      "pass": true
+    },
+    {
+      "name": "save_batched_0.48.png",
+      "pass": true
+    },
+    {
+      "name": "pixel_equivalence_0.48",
+      "pass": true
+    },
+    {
+      "name": "parent_visibility_0.48",
+      "pass": true
+    },
+    {
+      "name": "one_batch_1.35",
+      "pass": true
+    },
+    {
+      "name": "all_40_1.35",
+      "pass": true
+    },
+    {
+      "name": "same_material_1.35",
+      "pass": true
+    },
+    {
+      "name": "pose_1.35_0",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.35_0",
+      "pass": true
+    },
+    {
+      "name": "pose_1.35_1",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.35_1",
+      "pass": true
+    },
+    {
+      "name": "pose_1.35_2",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.35_2",
+      "pass": true
+    },
+    {
+      "name": "pose_1.35_3",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.35_3",
+      "pass": true
+    },
+    {
+      "name": "pose_1.35_4",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.35_4",
+      "pass": true
+    },
+    {
+      "name": "pose_1.35_5",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.35_5",
+      "pass": true
+    },
+    {
+      "name": "pose_1.35_6",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.35_6",
+      "pass": true
+    },
+    {
+      "name": "pose_1.35_7",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.35_7",
+      "pass": true
+    },
+    {
+      "name": "pose_1.35_8",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.35_8",
+      "pass": true
+    },
+    {
+      "name": "pose_1.35_9",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.35_9",
+      "pass": true
+    },
+    {
+      "name": "pose_1.35_10",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.35_10",
+      "pass": true
+    },
+    {
+      "name": "pose_1.35_11",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.35_11",
+      "pass": true
+    },
+    {
+      "name": "pose_1.35_12",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.35_12",
+      "pass": true
+    },
+    {
+      "name": "pose_1.35_13",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.35_13",
+      "pass": true
+    },
+    {
+      "name": "pose_1.35_14",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.35_14",
+      "pass": true
+    },
+    {
+      "name": "pose_1.35_15",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.35_15",
+      "pass": true
+    },
+    {
+      "name": "pose_1.35_16",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.35_16",
+      "pass": true
+    },
+    {
+      "name": "pose_1.35_17",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.35_17",
+      "pass": true
+    },
+    {
+      "name": "pose_1.35_18",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.35_18",
+      "pass": true
+    },
+    {
+      "name": "pose_1.35_19",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.35_19",
+      "pass": true
+    },
+    {
+      "name": "pose_1.35_20",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.35_20",
+      "pass": true
+    },
+    {
+      "name": "pose_1.35_21",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.35_21",
+      "pass": true
+    },
+    {
+      "name": "pose_1.35_22",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.35_22",
+      "pass": true
+    },
+    {
+      "name": "pose_1.35_23",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.35_23",
+      "pass": true
+    },
+    {
+      "name": "pose_1.35_24",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.35_24",
+      "pass": true
+    },
+    {
+      "name": "pose_1.35_25",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.35_25",
+      "pass": true
+    },
+    {
+      "name": "pose_1.35_26",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.35_26",
+      "pass": true
+    },
+    {
+      "name": "pose_1.35_27",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.35_27",
+      "pass": true
+    },
+    {
+      "name": "pose_1.35_28",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.35_28",
+      "pass": true
+    },
+    {
+      "name": "pose_1.35_29",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.35_29",
+      "pass": true
+    },
+    {
+      "name": "pose_1.35_30",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.35_30",
+      "pass": true
+    },
+    {
+      "name": "pose_1.35_31",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.35_31",
+      "pass": true
+    },
+    {
+      "name": "pose_1.35_32",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.35_32",
+      "pass": true
+    },
+    {
+      "name": "pose_1.35_33",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.35_33",
+      "pass": true
+    },
+    {
+      "name": "pose_1.35_34",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.35_34",
+      "pass": true
+    },
+    {
+      "name": "pose_1.35_35",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.35_35",
+      "pass": true
+    },
+    {
+      "name": "pose_1.35_36",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.35_36",
+      "pass": true
+    },
+    {
+      "name": "pose_1.35_37",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.35_37",
+      "pass": true
+    },
+    {
+      "name": "pose_1.35_38",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.35_38",
+      "pass": true
+    },
+    {
+      "name": "pose_1.35_39",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.35_39",
+      "pass": true
+    },
+    {
+      "name": "save_original_1.35.png",
+      "pass": true
+    },
+    {
+      "name": "save_batched_1.35.png",
+      "pass": true
+    },
+    {
+      "name": "pixel_equivalence_1.35",
+      "pass": true
+    },
+    {
+      "name": "parent_visibility_1.35",
+      "pass": true
+    },
+    {
+      "name": "one_batch_1.5",
+      "pass": true
+    },
+    {
+      "name": "all_40_1.5",
+      "pass": true
+    },
+    {
+      "name": "same_material_1.5",
+      "pass": true
+    },
+    {
+      "name": "pose_1.5_0",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.5_0",
+      "pass": true
+    },
+    {
+      "name": "pose_1.5_1",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.5_1",
+      "pass": true
+    },
+    {
+      "name": "pose_1.5_2",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.5_2",
+      "pass": true
+    },
+    {
+      "name": "pose_1.5_3",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.5_3",
+      "pass": true
+    },
+    {
+      "name": "pose_1.5_4",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.5_4",
+      "pass": true
+    },
+    {
+      "name": "pose_1.5_5",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.5_5",
+      "pass": true
+    },
+    {
+      "name": "pose_1.5_6",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.5_6",
+      "pass": true
+    },
+    {
+      "name": "pose_1.5_7",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.5_7",
+      "pass": true
+    },
+    {
+      "name": "pose_1.5_8",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.5_8",
+      "pass": true
+    },
+    {
+      "name": "pose_1.5_9",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.5_9",
+      "pass": true
+    },
+    {
+      "name": "pose_1.5_10",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.5_10",
+      "pass": true
+    },
+    {
+      "name": "pose_1.5_11",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.5_11",
+      "pass": true
+    },
+    {
+      "name": "pose_1.5_12",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.5_12",
+      "pass": true
+    },
+    {
+      "name": "pose_1.5_13",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.5_13",
+      "pass": true
+    },
+    {
+      "name": "pose_1.5_14",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.5_14",
+      "pass": true
+    },
+    {
+      "name": "pose_1.5_15",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.5_15",
+      "pass": true
+    },
+    {
+      "name": "pose_1.5_16",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.5_16",
+      "pass": true
+    },
+    {
+      "name": "pose_1.5_17",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.5_17",
+      "pass": true
+    },
+    {
+      "name": "pose_1.5_18",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.5_18",
+      "pass": true
+    },
+    {
+      "name": "pose_1.5_19",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.5_19",
+      "pass": true
+    },
+    {
+      "name": "pose_1.5_20",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.5_20",
+      "pass": true
+    },
+    {
+      "name": "pose_1.5_21",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.5_21",
+      "pass": true
+    },
+    {
+      "name": "pose_1.5_22",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.5_22",
+      "pass": true
+    },
+    {
+      "name": "pose_1.5_23",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.5_23",
+      "pass": true
+    },
+    {
+      "name": "pose_1.5_24",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.5_24",
+      "pass": true
+    },
+    {
+      "name": "pose_1.5_25",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.5_25",
+      "pass": true
+    },
+    {
+      "name": "pose_1.5_26",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.5_26",
+      "pass": true
+    },
+    {
+      "name": "pose_1.5_27",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.5_27",
+      "pass": true
+    },
+    {
+      "name": "pose_1.5_28",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.5_28",
+      "pass": true
+    },
+    {
+      "name": "pose_1.5_29",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.5_29",
+      "pass": true
+    },
+    {
+      "name": "pose_1.5_30",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.5_30",
+      "pass": true
+    },
+    {
+      "name": "pose_1.5_31",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.5_31",
+      "pass": true
+    },
+    {
+      "name": "pose_1.5_32",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.5_32",
+      "pass": true
+    },
+    {
+      "name": "pose_1.5_33",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.5_33",
+      "pass": true
+    },
+    {
+      "name": "pose_1.5_34",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.5_34",
+      "pass": true
+    },
+    {
+      "name": "pose_1.5_35",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.5_35",
+      "pass": true
+    },
+    {
+      "name": "pose_1.5_36",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.5_36",
+      "pass": true
+    },
+    {
+      "name": "pose_1.5_37",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.5_37",
+      "pass": true
+    },
+    {
+      "name": "pose_1.5_38",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.5_38",
+      "pass": true
+    },
+    {
+      "name": "pose_1.5_39",
+      "pass": true
+    },
+    {
+      "name": "geometry_1.5_39",
+      "pass": true
+    },
+    {
+      "name": "save_original_1.5.png",
+      "pass": true
+    },
+    {
+      "name": "save_batched_1.5.png",
+      "pass": true
+    },
+    {
+      "name": "pixel_equivalence_1.5",
+      "pass": true
+    },
+    {
+      "name": "parent_visibility_1.5",
+      "pass": true
+    }
+  ],
+  "comparisons": [
+    {
+      "bytes": 3686400,
+      "changed_bytes": 0,
+      "max_channel_delta": 0,
+      "radius": 0.28
+    },
+    {
+      "bytes": 3686400,
+      "changed_bytes": 0,
+      "max_channel_delta": 0,
+      "radius": 0.48
+    },
+    {
+      "bytes": 3686400,
+      "changed_bytes": 0,
+      "max_channel_delta": 0,
+      "radius": 1.35
+    },
+    {
+      "bytes": 3686400,
+      "changed_bytes": 0,
+      "max_channel_delta": 0,
+      "radius": 1.5
+    }
+  ],
+  "passed": true,
+  "renderer": "llvmpipe (LLVM 21.1.8, 256 bits)",
+  "visual_assessment": "UNASSESSED"
+}

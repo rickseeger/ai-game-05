@@ -1,0 +1,102 @@
+{
+  "passed": true,
+  "runs": [
+    {
+      "directory": "evidence/destruction/n10-corrected-1",
+      "passed": true,
+      "result": {
+        "directory": "evidence/destruction/n10-corrected-1",
+        "seed": 1201,
+        "assertions": 34,
+        "performance": {
+          "frame_samples": 416,
+          "window_ticks": [
+            510,
+            1109
+          ],
+          "frame_ms": {
+            "median": 24.032,
+            "p95": 27.532,
+            "max": 30.713
+          },
+          "physics_process_ms": {
+            "median": 1.617,
+            "p95": 5.226,
+            "max": 5.226
+          },
+          "p95_target_ms": 33.3,
+          "meets_p95_target": true,
+          "capture_overlap_frames": 0,
+          "limit": "Offscreen CPU llvmpipe reference VM; not laptop or subjective smoothness acceptance."
+        },
+        "images": [],
+        "visual_assessment": "UNASSESSED"
+      }
+    },
+    {
+      "directory": "evidence/destruction/n10-corrected-2",
+      "passed": true,
+      "result": {
+        "directory": "evidence/destruction/n10-corrected-2",
+        "seed": 1201,
+        "assertions": 34,
+        "performance": {
+          "frame_samples": 408,
+          "window_ticks": [
+            510,
+            1109
+          ],
+          "frame_ms": {
+            "median": 24.2675,
+            "p95": 28.717,
+            "max": 33.571
+          },
+          "physics_process_ms": {
+            "median": 1.521,
+            "p95": 4.475,
+            "max": 4.475
+          },
+          "p95_target_ms": 33.3,
+          "meets_p95_target": true,
+          "capture_overlap_frames": 0,
+          "limit": "Offscreen CPU llvmpipe reference VM; not laptop or subjective smoothness acceptance."
+        },
+        "images": [],
+        "visual_assessment": "UNASSESSED"
+      }
+    },
+    {
+      "directory": "evidence/destruction/n10-corrected-3",
+      "passed": true,
+      "result": {
+        "directory": "evidence/destruction/n10-corrected-3",
+        "seed": 1201,
+        "assertions": 34,
+        "performance": {
+          "frame_samples": 413,
+          "window_ticks": [
+            510,
+            1109
+          ],
+          "frame_ms": {
+            "median": 24.085,
+            "p95": 28.229,
+            "max": 31.035
+          },
+          "physics_process_ms": {
+            "median": 1.469,
+            "p95": 4.819,
+            "max": 4.819
+          },
+          "p95_target_ms": 33.3,
+          "meets_p95_target": true,
+          "capture_overlap_frames": 0,
+          "limit": "Offscreen CPU llvmpipe reference VM; not laptop or subjective smoothness acceptance."
+        },
+        "images": [],
+        "visual_assessment": "UNASSESSED"
+      }
+    }
+  ],
+  "visual_assessment": "UNASSESSED"
+}

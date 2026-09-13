@@ -1,0 +1,58 @@
+{
+  "passed": false,
+  "runs": [
+    {
+      "directory": "evidence/destruction/n10-paired-baseline-1",
+      "passed": false,
+      "error": "p95 36.625ms exceeds original 33.3ms target",
+      "performance": {
+        "frame_samples": 315,
+        "window_ticks": [
+          510,
+          1109
+        ],
+        "frame_ms": {
+          "median": 31.527,
+          "p95": 36.625,
+          "max": 43.931
+        },
+        "physics_process_ms": {
+          "median": 1.746,
+          "p95": 4.239,
+          "max": 4.239
+        },
+        "p95_target_ms": 33.3,
+        "meets_p95_target": false,
+        "capture_overlap_frames": 0,
+        "limit": "Offscreen CPU llvmpipe reference VM; not laptop or subjective smoothness acceptance."
+      }
+    },
+    {
+      "directory": "evidence/destruction/n10-paired-baseline-2",
+      "passed": false,
+      "error": "p95 36.625ms exceeds original 33.3ms target",
+      "performance": {
+        "frame_samples": 316,
+        "window_ticks": [
+          510,
+          1109
+        ],
+        "frame_ms": {
+          "median": 31.667,
+          "p95": 36.625,
+          "max": 40.703
+        },
+        "physics_process_ms": {
+          "median": 1.555,
+          "p95": 5.961,
+          "max": 5.961
+        },
+        "p95_target_ms": 33.3,
+        "meets_p95_target": false,
+        "capture_overlap_frames": 0,
+        "limit": "Offscreen CPU llvmpipe reference VM; not laptop or subjective smoothness acceptance."
+      }
+    }
+  ],
+  "visual_assessment": "UNASSESSED"
+}

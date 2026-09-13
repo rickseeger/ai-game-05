@@ -1,0 +1,208 @@
+diff --git a/game/arena.gd b/game/arena.gd
+index 566887d..515a4e3 100644
+--- a/game/arena.gd
++++ b/game/arena.gd
+@@ -85,13 +85,23 @@ static func box(parent: Node3D, size: Vector3, at: Vector3, color: Color) -> Mes
+     return instance
+ 
+ static func ring(parent: Node3D, at: Vector3, radius: float, color: Color) -> void:
++    # Keep every marker and its exact geometry/material; batch only submission.
++    # Hundreds of tiny separate draws dominate this scene on software OpenGL.
++    var mesh := BoxMesh.new()
++    mesh.size = Vector3(0.11, 0.02, radius * 0.16)
++    var multi := MultiMesh.new()
++    multi.transform_format = MultiMesh.TRANSFORM_3D
++    multi.mesh = mesh
++    multi.instance_count = 40
+     for i in 40:
+         var angle := TAU * float(i) / 40.0
+-        var marker := box(parent, Vector3(0.11, 0.02, radius * 0.16),
+-            at + Vector3(cos(angle), 0, sin(angle)) * radius, color)
+-        marker.rotation.y = -angle
+-        marker.material_override = material(color, true)
+-        marker.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
++        multi.set_instance_transform(i, Transform3D(Basis(Vector3.UP, -angle),
++            at + Vector3(cos(angle), 0, sin(angle)) * radius))
++    var markers := MultiMeshInstance3D.new()
++    markers.multimesh = multi
++    markers.material_override = material(color, true)
++    markers.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
++    parent.add_child(markers)
+ 
+ static func label(parent: Node3D, text: String, at: Vector3, color: Color) -> void:
+     var node := Label3D.new()
+diff --git a/game/tests/ring_batch_tests.gd b/game/tests/ring_batch_tests.gd
+new file mode 100644
+index 0000000..3c6d4ba
+--- /dev/null
++++ b/game/tests/ring_batch_tests.gd
+@@ -0,0 +1,89 @@
++extends SceneTree
++# Regression for drawing-only batching: reconstruct the pre-change ring as oracle.
++# Pixel agreement is not a perceptual-quality assessment.
++const Arena = preload("res://arena.gd")
++var checks: Array[Dictionary] = []
++var comparisons: Array[Dictionary] = []
++var out := OS.get_environment("RING_TEST_OUT")
++
++func _initialize() -> void:
++    call_deferred("run")
++
++func check(name_value: String, ok: bool) -> void:
++    checks.append({"name": name_value, "pass": ok})
++    if not ok:
++        push_error("RING_ASSERT " + name_value)
++
++func capture(parent: Node3D, other: Node3D, filename: String) -> Image:
++    parent.visible = true
++    other.visible = false
++    await process_frame
++    await process_frame
++    await RenderingServer.frame_post_draw
++    var image := root.get_texture().get_image()
++    check("save_" + filename, image.save_png(out.path_join(filename)) == OK)
++    return image
++
++func run() -> void:
++    check("rendered_x11", DisplayServer.get_name() == "X11")
++    var world := Node3D.new()
++    root.add_child(world)
++    var camera := Camera3D.new()
++    world.add_child(camera)
++    camera.position = Vector3(0, 5, 6)
++    camera.look_at(Vector3.ZERO)
++    camera.current = true
++    for radius in [0.28, 0.48, 1.35, 1.5]:
++        var old := Node3D.new()
++        var batched := Node3D.new()
++        world.add_child(old)
++        world.add_child(batched)
++        var at := Vector3(0.2, 0.035, -0.1)
++        var color := Color("eeb358")
++        for i in 40:
++            var angle := TAU * float(i) / 40.0
++            var marker := Arena.box(old, Vector3(0.11, 0.02, radius * 0.16),
++                at + Vector3(cos(angle), 0, sin(angle)) * radius, color)
++            marker.rotation.y = -angle
++            marker.material_override = Arena.material(color, true)
++            marker.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
++        Arena.ring(batched, at, radius, color)
++        check("one_batch_%s" % radius, batched.get_child_count() == 1 and batched.get_child(0) is MultiMeshInstance3D)
++        var batch: MultiMeshInstance3D = batched.get_child(0)
++        check("all_40_%s" % radius, batch.multimesh.instance_count == 40 and batch.multimesh.visible_instance_count == -1)
++        check("same_material_%s" % radius, batch.material_override.albedo_color == color and
++            batch.material_override.shading_mode == BaseMaterial3D.SHADING_MODE_UNSHADED and
++            is_equal_approx(batch.material_override.roughness, 0.86) and
++            batch.cast_shadow == GeometryInstance3D.SHADOW_CASTING_SETTING_OFF)
++        # Nontrivial inherited transform also covers moving player/reticle parents.
++        old.transform = Transform3D(Basis.from_euler(Vector3(0.1, 0.37, -0.05)).scaled(Vector3(1.1, 0.9, 1.2)), Vector3(-0.2, 0.1, 0.2))
++        batched.transform = old.transform
++        for i in 40:
++            var marker: MeshInstance3D = old.get_child(i)
++            check("pose_%s_%d" % [radius, i], (batch.global_transform * batch.multimesh.get_instance_transform(i)).is_equal_approx(marker.global_transform))
++            check("geometry_%s_%d" % [radius, i], batch.multimesh.mesh.size == marker.mesh.size and
++                batch.multimesh.mesh.get_faces() == marker.mesh.get_faces())
++        var a := await capture(old, batched, "original_%s.png" % radius)
++        var b := await capture(batched, old, "batched_%s.png" % radius)
++        var ad := a.get_data()
++        var bd := b.get_data()
++        var changed := 0
++        var max_delta := 0
++        for i in ad.size():
++            var delta := absi(int(ad[i]) - int(bd[i]))
++            changed += int(delta > 0)
++            max_delta = maxi(max_delta, delta)
++        comparisons.append({"radius": radius, "bytes": ad.size(), "changed_bytes": changed, "max_channel_delta": max_delta})
++        check("pixel_equivalence_%s" % radius, changed <= ad.size() * 0.001 and max_delta <= 3)
++        batched.visible = false
++        check("parent_visibility_%s" % radius, not batch.is_visible_in_tree())
++        old.free()
++        batched.free()
++    var passed := true
++    for item in checks:
++        passed = passed and item["pass"]
++    FileAccess.open(out.path_join("results.json"), FileAccess.WRITE).store_string(JSON.stringify({
++        "passed": passed, "checks": checks, "comparisons": comparisons,
++        "renderer": RenderingServer.get_video_adapter_name(), "visual_assessment": "UNASSESSED"}, "  "))
++    print("RING_TEST_DONE checks=", checks.size(), " passed=", passed)
++    quit(0 if passed else 1)
+diff --git a/scripts/check_frame_target.py b/scripts/check_frame_target.py
+new file mode 100644
+index 0000000..b6bfa30
+--- /dev/null
++++ b/scripts/check_frame_target.py
+@@ -0,0 +1,39 @@
++#!/usr/bin/env python3
++"""Hard gate for the EXISTING destruction workload, window and 33.3ms target.
++The legacy checker reports this target but does not fail its process on a miss.
++This adds enforcement without modifying that checker or the measured workload.
++"""
++import argparse
++import json
++from pathlib import Path
++from check_destruction import performance, validate
++
++
++def check_target(directory):
++    report = json.loads((Path(directory) / "results.json").read_text())
++    assert report["performance_only"] and report["no_captures"], "use original lightweight performance mode"
++    result = validate(directory)
++    stats = result["performance"]
++    assert stats["p95_target_ms"] == 33.3 and stats["window_ticks"] == [510, 1109]
++    assert stats["capture_overlap_frames"] == 0
++    assert stats["meets_p95_target"], f"p95 {stats["frame_ms"]["p95"]}ms exceeds original 33.3ms target"
++    return result
++
++
++if __name__ == "__main__":
++    p = argparse.ArgumentParser()
++    p.add_argument("directories", nargs="+")
++    p.add_argument("--output", type=Path, required=True)
++    args = p.parse_args()
++    runs = []
++    for directory in args.directories:
++        try:
++            result = check_target(directory)
++            runs.append({"directory": directory, "passed": True, "result": result})
++        except AssertionError as error:
++            runs.append({"directory": directory, "passed": False, "error": str(error),
++                         "performance": performance(directory)})
++    output = {"passed": all(run["passed"] for run in runs), "runs": runs, "visual_assessment": "UNASSESSED"}
++    args.output.write_text(json.dumps(output, indent=2) + "\n")
++    print(json.dumps(output, indent=2))
++    raise SystemExit(0 if output["passed"] else 1)
+diff --git a/scripts/run_ring_batch.py b/scripts/run_ring_batch.py
+new file mode 100644
+index 0000000..7094b72
+--- /dev/null
++++ b/scripts/run_ring_batch.py
+@@ -0,0 +1,29 @@
++#!/usr/bin/env python3
++"""Render original and batched rings; never headless or fabricated screenshots."""
++import json
++import os
++from pathlib import Path
++import signal
++import subprocess
++import sys
++ROOT = Path(__file__).resolve().parents[1]
++out = ROOT / "evidence/destruction" / sys.argv[1]
++out.mkdir(parents=True, exist_ok=False)
++cmd = ["xvfb-run", "-a", "-s", "-screen 0 1280x1024x24", os.environ["GODOT_BIN"],
++       "--path", str(ROOT / "game"), "--script", "res://tests/ring_batch_tests.gd",
++       "--rendering-method", "gl_compatibility", "--audio-driver", "Dummy",
++       "--resolution", "1280x720", "--disable-vsync", "--max-fps", "60"]
++env = dict(os.environ, RING_TEST_OUT=str(out), LIBGL_ALWAYS_SOFTWARE="1", GODOT_SILENCE_ROOT_WARNING="1")
++with (out / "engine.log").open("w") as log:
++    p = subprocess.Popen(cmd, env=env, stdout=log, stderr=subprocess.STDOUT, start_new_session=True)
++    try:
++        code = p.wait(timeout=120)
++    except subprocess.TimeoutExpired:
++        os.killpg(p.pid, signal.SIGTERM)
++        p.wait()
++        code = 124
++(out / "launch.json").write_text(json.dumps({"command": cmd, "returncode": code,
++    "source_commit": subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip(),
++    "environment": {k: env[k] for k in ["RING_TEST_OUT", "LIBGL_ALWAYS_SOFTWARE", "GODOT_SILENCE_ROOT_WARNING"]}}, indent=2))
++print((out / "engine.log").read_text())
++sys.exit(code)

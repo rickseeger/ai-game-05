@@ -1,0 +1,758 @@
+{
+  "baseline_commit": "e954f4861733832c6f405950f6add657e4e69dd1",
+  "corrected_commit": "f6631e436e3caedc33f705bec65a5a646db609da",
+  "performance_runs": [
+    {
+      "run": "n10-baseline-1",
+      "workspace": ".",
+      "source_commit": "e954f4861733832c6f405950f6add657e4e69dd1",
+      "engine_passed": true,
+      "failures": [],
+      "assertions": 34,
+      "performance_only": true,
+      "no_captures": true,
+      "statistics": {
+        "frame_samples": 335,
+        "window_ticks": [
+          510,
+          1109
+        ],
+        "frame_ms": {
+          "median": 29.721,
+          "p95": 34.069,
+          "max": 37.715
+        },
+        "physics_process_ms": {
+          "median": 1.661,
+          "p95": 5.176,
+          "max": 5.176
+        },
+        "p95_target_ms": 33.3,
+        "meets_p95_target": false,
+        "capture_overlap_frames": 0,
+        "limit": "Offscreen CPU llvmpipe reference VM; not laptop or subjective smoothness acceptance."
+      },
+      "acceptance_eligible": true
+    },
+    {
+      "run": "n10-baseline-2",
+      "workspace": ".",
+      "source_commit": "e954f4861733832c6f405950f6add657e4e69dd1",
+      "engine_passed": true,
+      "failures": [],
+      "assertions": 34,
+      "performance_only": true,
+      "no_captures": true,
+      "statistics": {
+        "frame_samples": 335,
+        "window_ticks": [
+          510,
+          1109
+        ],
+        "frame_ms": {
+          "median": 29.436,
+          "p95": 37.114,
+          "max": 44.481
+        },
+        "physics_process_ms": {
+          "median": 1.572,
+          "p95": 7.104,
+          "max": 7.104
+        },
+        "p95_target_ms": 33.3,
+        "meets_p95_target": false,
+        "capture_overlap_frames": 0,
+        "limit": "Offscreen CPU llvmpipe reference VM; not laptop or subjective smoothness acceptance."
+      },
+      "acceptance_eligible": true
+    },
+    {
+      "run": "n10-baseline-apitrace-2",
+      "workspace": ".",
+      "source_commit": null,
+      "engine_passed": true,
+      "failures": [],
+      "assertions": 34,
+      "performance_only": true,
+      "no_captures": true,
+      "statistics": {
+        "frame_samples": 293,
+        "window_ticks": [
+          510,
+          1109
+        ],
+        "frame_ms": {
+          "median": 34.053,
+          "p95": 38.395,
+          "max": 43.552
+        },
+        "physics_process_ms": {
+          "median": 1.486,
+          "p95": 4.713,
+          "max": 4.713
+        },
+        "p95_target_ms": 33.3,
+        "meets_p95_target": false,
+        "capture_overlap_frames": 0,
+        "limit": "Offscreen CPU llvmpipe reference VM; not laptop or subjective smoothness acceptance."
+      },
+      "acceptance_eligible": false
+    },
+    {
+      "run": "n10-baseline-capture",
+      "workspace": ".",
+      "source_commit": "e954f4861733832c6f405950f6add657e4e69dd1",
+      "engine_passed": true,
+      "failures": [],
+      "assertions": 34,
+      "performance_only": false,
+      "no_captures": false,
+      "statistics": {
+        "frame_samples": 295,
+        "window_ticks": [
+          510,
+          1109
+        ],
+        "frame_ms": {
+          "median": 32.143,
+          "p95": 42.306,
+          "max": 91.245
+        },
+        "physics_process_ms": {
+          "median": 3.618,
+          "p95": 5.868,
+          "max": 5.868
+        },
+        "p95_target_ms": 33.3,
+        "meets_p95_target": false,
+        "capture_overlap_frames": 12,
+        "limit": "Offscreen CPU llvmpipe reference VM; not laptop or subjective smoothness acceptance."
+      },
+      "acceptance_eligible": false
+    },
+    {
+      "run": "n10-baseline-profile",
+      "workspace": ".",
+      "source_commit": "e954f4861733832c6f405950f6add657e4e69dd1",
+      "engine_passed": true,
+      "failures": [],
+      "assertions": 34,
+      "performance_only": true,
+      "no_captures": true,
+      "statistics": {
+        "frame_samples": 324,
+        "window_ticks": [
+          510,
+          1109
+        ],
+        "frame_ms": {
+          "median": 30.807000000000002,
+          "p95": 34.73,
+          "max": 39.45
+        },
+        "physics_process_ms": {
+          "median": 1.746,
+          "p95": 4.83,
+          "max": 4.83
+        },
+        "p95_target_ms": 33.3,
+        "meets_p95_target": false,
+        "capture_overlap_frames": 0,
+        "limit": "Offscreen CPU llvmpipe reference VM; not laptop or subjective smoothness acceptance."
+      },
+      "acceptance_eligible": false
+    },
+    {
+      "run": "n10-batched-trial-1",
+      "workspace": ".",
+      "source_commit": "e954f4861733832c6f405950f6add657e4e69dd1",
+      "engine_passed": true,
+      "failures": [],
+      "assertions": 34,
+      "performance_only": true,
+      "no_captures": true,
+      "statistics": {
+        "frame_samples": 385,
+        "window_ticks": [
+          510,
+          1109
+        ],
+        "frame_ms": {
+          "median": 25.848,
+          "p95": 30.221,
+          "max": 37.49
+        },
+        "physics_process_ms": {
+          "median": 1.718,
+          "p95": 6.289,
+          "max": 6.289
+        },
+        "p95_target_ms": 33.3,
+        "meets_p95_target": true,
+        "capture_overlap_frames": 0,
+        "limit": "Offscreen CPU llvmpipe reference VM; not laptop or subjective smoothness acceptance."
+      },
+      "acceptance_eligible": true
+    },
+    {
+      "run": "n10-corrected-apitrace",
+      "workspace": ".",
+      "source_commit": null,
+      "engine_passed": true,
+      "failures": [],
+      "assertions": 34,
+      "performance_only": true,
+      "no_captures": true,
+      "statistics": {
+        "frame_samples": 374,
+        "window_ticks": [
+          510,
+          1109
+        ],
+        "frame_ms": {
+          "median": 26.692500000000003,
+          "p95": 30.986,
+          "max": 35.097
+        },
+        "physics_process_ms": {
+          "median": 1.571,
+          "p95": 6.537,
+          "max": 6.537
+        },
+        "p95_target_ms": 33.3,
+        "meets_p95_target": true,
+        "capture_overlap_frames": 0,
+        "limit": "Offscreen CPU llvmpipe reference VM; not laptop or subjective smoothness acceptance."
+      },
+      "acceptance_eligible": false
+    },
+    {
+      "run": "n10-corrected-profile",
+      "workspace": ".",
+      "source_commit": "f6631e436e3caedc33f705bec65a5a646db609da",
+      "engine_passed": true,
+      "failures": [],
+      "assertions": 34,
+      "performance_only": true,
+      "no_captures": true,
+      "statistics": {
+        "frame_samples": 384,
+        "window_ticks": [
+          510,
+          1109
+        ],
+        "frame_ms": {
+          "median": 25.9025,
+          "p95": 29.783,
+          "max": 32.329
+        },
+        "physics_process_ms": {
+          "median": 1.732,
+          "p95": 4.629,
+          "max": 4.629
+        },
+        "p95_target_ms": 33.3,
+        "meets_p95_target": true,
+        "capture_overlap_frames": 0,
+        "limit": "Offscreen CPU llvmpipe reference VM; not laptop or subjective smoothness acceptance."
+      },
+      "acceptance_eligible": false
+    },
+    {
+      "run": "n10-recording-baseline",
+      "workspace": ".",
+      "source_commit": null,
+      "engine_passed": true,
+      "failures": [],
+      "assertions": 34,
+      "performance_only": true,
+      "no_captures": true,
+      "statistics": {
+        "frame_samples": 328,
+        "window_ticks": [
+          510,
+          1109
+        ],
+        "frame_ms": {
+          "median": 30.54,
+          "p95": 35.224,
+          "max": 38.1
+        },
+        "physics_process_ms": {
+          "median": 1.819,
+          "p95": 6.333,
+          "max": 6.333
+        },
+        "p95_target_ms": 33.3,
+        "meets_p95_target": false,
+        "capture_overlap_frames": 0,
+        "limit": "Offscreen CPU llvmpipe reference VM; not laptop or subjective smoothness acceptance."
+      },
+      "acceptance_eligible": false
+    },
+    {
+      "run": "n10-recording-corrected",
+      "workspace": ".",
+      "source_commit": null,
+      "engine_passed": true,
+      "failures": [],
+      "assertions": 34,
+      "performance_only": true,
+      "no_captures": true,
+      "statistics": {
+        "frame_samples": 375,
+        "window_ticks": [
+          510,
+          1109
+        ],
+        "frame_ms": {
+          "median": 26.552,
+          "p95": 30.774,
+          "max": 34.422
+        },
+        "physics_process_ms": {
+          "median": 1.706,
+          "p95": 4.435,
+          "max": 4.435
+        },
+        "p95_target_ms": 33.3,
+        "meets_p95_target": true,
+        "capture_overlap_frames": 0,
+        "limit": "Offscreen CPU llvmpipe reference VM; not laptop or subjective smoothness acceptance."
+      },
+      "acceptance_eligible": false
+    },
+    {
+      "run": "n10-corrected-1",
+      "workspace": "../validation",
+      "source_commit": "f6631e436e3caedc33f705bec65a5a646db609da",
+      "engine_passed": true,
+      "failures": [],
+      "assertions": 34,
+      "performance_only": true,
+      "no_captures": true,
+      "statistics": {
+        "frame_samples": 416,
+        "window_ticks": [
+          510,
+          1109
+        ],
+        "frame_ms": {
+          "median": 24.032,
+          "p95": 27.532,
+          "max": 30.713
+        },
+        "physics_process_ms": {
+          "median": 1.617,
+          "p95": 5.226,
+          "max": 5.226
+        },
+        "p95_target_ms": 33.3,
+        "meets_p95_target": true,
+        "capture_overlap_frames": 0,
+        "limit": "Offscreen CPU llvmpipe reference VM; not laptop or subjective smoothness acceptance."
+      },
+      "acceptance_eligible": true
+    },
+    {
+      "run": "n10-corrected-2",
+      "workspace": "../validation",
+      "source_commit": "f6631e436e3caedc33f705bec65a5a646db609da",
+      "engine_passed": true,
+      "failures": [],
+      "assertions": 34,
+      "performance_only": true,
+      "no_captures": true,
+      "statistics": {
+        "frame_samples": 408,
+        "window_ticks": [
+          510,
+          1109
+        ],
+        "frame_ms": {
+          "median": 24.2675,
+          "p95": 28.717,
+          "max": 33.571
+        },
+        "physics_process_ms": {
+          "median": 1.521,
+          "p95": 4.475,
+          "max": 4.475
+        },
+        "p95_target_ms": 33.3,
+        "meets_p95_target": true,
+        "capture_overlap_frames": 0,
+        "limit": "Offscreen CPU llvmpipe reference VM; not laptop or subjective smoothness acceptance."
+      },
+      "acceptance_eligible": true
+    },
+    {
+      "run": "n10-corrected-2207",
+      "workspace": "../validation",
+      "source_commit": "f6631e436e3caedc33f705bec65a5a646db609da",
+      "engine_passed": true,
+      "failures": [],
+      "assertions": 34,
+      "performance_only": false,
+      "no_captures": true,
+      "statistics": {
+        "frame_samples": 377,
+        "window_ticks": [
+          510,
+          1109
+        ],
+        "frame_ms": {
+          "median": 26.42,
+          "p95": 32.067,
+          "max": 38.392
+        },
+        "physics_process_ms": {
+          "median": 3.844,
+          "p95": 5.754,
+          "max": 5.754
+        },
+        "p95_target_ms": 33.3,
+        "meets_p95_target": true,
+        "capture_overlap_frames": 0,
+        "limit": "Offscreen CPU llvmpipe reference VM; not laptop or subjective smoothness acceptance."
+      },
+      "acceptance_eligible": false
+    },
+    {
+      "run": "n10-corrected-3",
+      "workspace": "../validation",
+      "source_commit": "f6631e436e3caedc33f705bec65a5a646db609da",
+      "engine_passed": true,
+      "failures": [],
+      "assertions": 34,
+      "performance_only": true,
+      "no_captures": true,
+      "statistics": {
+        "frame_samples": 413,
+        "window_ticks": [
+          510,
+          1109
+        ],
+        "frame_ms": {
+          "median": 24.085,
+          "p95": 28.229,
+          "max": 31.035
+        },
+        "physics_process_ms": {
+          "median": 1.469,
+          "p95": 4.819,
+          "max": 4.819
+        },
+        "p95_target_ms": 33.3,
+        "meets_p95_target": true,
+        "capture_overlap_frames": 0,
+        "limit": "Offscreen CPU llvmpipe reference VM; not laptop or subjective smoothness acceptance."
+      },
+      "acceptance_eligible": true
+    },
+    {
+      "run": "n10-corrected-capture",
+      "workspace": "../validation",
+      "source_commit": "f6631e436e3caedc33f705bec65a5a646db609da",
+      "engine_passed": true,
+      "failures": [],
+      "assertions": 34,
+      "performance_only": false,
+      "no_captures": false,
+      "statistics": {
+        "frame_samples": 349,
+        "window_ticks": [
+          510,
+          1109
+        ],
+        "frame_ms": {
+          "median": 27.671,
+          "p95": 32.321,
+          "max": 84.51
+        },
+        "physics_process_ms": {
+          "median": 3.319,
+          "p95": 6.667,
+          "max": 6.667
+        },
+        "p95_target_ms": 33.3,
+        "meets_p95_target": true,
+        "capture_overlap_frames": 11,
+        "limit": "Offscreen CPU llvmpipe reference VM; not laptop or subjective smoothness acceptance."
+      },
+      "acceptance_eligible": false
+    },
+    {
+      "run": "n10-corrected-rerun",
+      "workspace": "../validation",
+      "source_commit": "f6631e436e3caedc33f705bec65a5a646db609da",
+      "engine_passed": true,
+      "failures": [],
+      "assertions": 34,
+      "performance_only": false,
+      "no_captures": true,
+      "statistics": {
+        "frame_samples": 367,
+        "window_ticks": [
+          510,
+          1109
+        ],
+        "frame_ms": {
+          "median": 27.29,
+          "p95": 30.928,
+          "max": 37.405
+        },
+        "physics_process_ms": {
+          "median": 3.461,
+          "p95": 6.909,
+          "max": 6.909
+        },
+        "p95_target_ms": 33.3,
+        "meets_p95_target": true,
+        "capture_overlap_frames": 0,
+        "limit": "Offscreen CPU llvmpipe reference VM; not laptop or subjective smoothness acceptance."
+      },
+      "acceptance_eligible": false
+    },
+    {
+      "run": "n10-negative-gravity",
+      "workspace": "../validation",
+      "source_commit": "f6631e436e3caedc33f705bec65a5a646db609da",
+      "engine_passed": false,
+      "failures": [
+        "all_32_down",
+        "all_32_contact",
+        "all_32_bounce",
+        "all_32_tumble",
+        "all_32_sleep",
+        "render_batch_matches_sleeping_rigid_poses"
+      ],
+      "assertions": 34,
+      "performance_only": false,
+      "no_captures": true,
+      "statistics": {
+        "frame_samples": 363,
+        "window_ticks": [
+          510,
+          1109
+        ],
+        "frame_ms": {
+          "median": 27.565,
+          "p95": 31.344,
+          "max": 38.122
+        },
+        "physics_process_ms": {
+          "median": 3.525,
+          "p95": 9.351,
+          "max": 9.351
+        },
+        "p95_target_ms": 33.3,
+        "meets_p95_target": true,
+        "capture_overlap_frames": 0,
+        "limit": "Offscreen CPU llvmpipe reference VM; not laptop or subjective smoothness acceptance."
+      },
+      "acceptance_eligible": false
+    },
+    {
+      "run": "n10-negative-ground",
+      "workspace": "../validation",
+      "source_commit": "f6631e436e3caedc33f705bec65a5a646db609da",
+      "engine_passed": false,
+      "failures": [
+        "all_32_contact",
+        "all_32_bounce",
+        "all_32_tumble",
+        "all_32_sleep",
+        "render_batch_matches_sleeping_rigid_poses"
+      ],
+      "assertions": 34,
+      "performance_only": false,
+      "no_captures": true,
+      "statistics": {
+        "frame_samples": 379,
+        "window_ticks": [
+          510,
+          1109
+        ],
+        "frame_ms": {
+          "median": 26.426,
+          "p95": 30.219,
+          "max": 33.471
+        },
+        "physics_process_ms": {
+          "median": 3.378,
+          "p95": 5.412,
+          "max": 5.412
+        },
+        "p95_target_ms": 33.3,
+        "meets_p95_target": true,
+        "capture_overlap_frames": 0,
+        "limit": "Offscreen CPU llvmpipe reference VM; not laptop or subjective smoothness acceptance."
+      },
+      "acceptance_eligible": false
+    },
+    {
+      "run": "n10-paired-corrected-1",
+      "workspace": "../validation",
+      "source_commit": "f6631e436e3caedc33f705bec65a5a646db609da",
+      "engine_passed": true,
+      "failures": [],
+      "assertions": 34,
+      "performance_only": true,
+      "no_captures": true,
+      "statistics": {
+        "frame_samples": 397,
+        "window_ticks": [
+          510,
+          1109
+        ],
+        "frame_ms": {
+          "median": 24.8,
+          "p95": 29.115,
+          "max": 32.257
+        },
+        "physics_process_ms": {
+          "median": 1.578,
+          "p95": 4.621,
+          "max": 4.621
+        },
+        "p95_target_ms": 33.3,
+        "meets_p95_target": true,
+        "capture_overlap_frames": 0,
+        "limit": "Offscreen CPU llvmpipe reference VM; not laptop or subjective smoothness acceptance."
+      },
+      "acceptance_eligible": true
+    },
+    {
+      "run": "n10-paired-corrected-2",
+      "workspace": "../validation",
+      "source_commit": "f6631e436e3caedc33f705bec65a5a646db609da",
+      "engine_passed": true,
+      "failures": [],
+      "assertions": 34,
+      "performance_only": true,
+      "no_captures": true,
+      "statistics": {
+        "frame_samples": 395,
+        "window_ticks": [
+          510,
+          1109
+        ],
+        "frame_ms": {
+          "median": 25.05,
+          "p95": 29.958,
+          "max": 35.451
+        },
+        "physics_process_ms": {
+          "median": 1.508,
+          "p95": 4.397,
+          "max": 4.397
+        },
+        "p95_target_ms": 33.3,
+        "meets_p95_target": true,
+        "capture_overlap_frames": 0,
+        "limit": "Offscreen CPU llvmpipe reference VM; not laptop or subjective smoothness acceptance."
+      },
+      "acceptance_eligible": true
+    },
+    {
+      "run": "n10-baseline-return",
+      "workspace": "../baseline-verify",
+      "source_commit": "e954f4861733832c6f405950f6add657e4e69dd1",
+      "engine_passed": true,
+      "failures": [],
+      "assertions": 34,
+      "performance_only": true,
+      "no_captures": true,
+      "statistics": {
+        "frame_samples": 368,
+        "window_ticks": [
+          510,
+          1109
+        ],
+        "frame_ms": {
+          "median": 26.892000000000003,
+          "p95": 31.416,
+          "max": 33.821
+        },
+        "physics_process_ms": {
+          "median": 1.609,
+          "p95": 4.912,
+          "max": 4.912
+        },
+        "p95_target_ms": 33.3,
+        "meets_p95_target": true,
+        "capture_overlap_frames": 0,
+        "limit": "Offscreen CPU llvmpipe reference VM; not laptop or subjective smoothness acceptance."
+      },
+      "acceptance_eligible": true
+    },
+    {
+      "run": "n10-paired-baseline-1",
+      "workspace": "../baseline-verify",
+      "source_commit": "e954f4861733832c6f405950f6add657e4e69dd1",
+      "engine_passed": true,
+      "failures": [],
+      "assertions": 34,
+      "performance_only": true,
+      "no_captures": true,
+      "statistics": {
+        "frame_samples": 315,
+        "window_ticks": [
+          510,
+          1109
+        ],
+        "frame_ms": {
+          "median": 31.527,
+          "p95": 36.625,
+          "max": 43.931
+        },
+        "physics_process_ms": {
+          "median": 1.746,
+          "p95": 4.239,
+          "max": 4.239
+        },
+        "p95_target_ms": 33.3,
+        "meets_p95_target": false,
+        "capture_overlap_frames": 0,
+        "limit": "Offscreen CPU llvmpipe reference VM; not laptop or subjective smoothness acceptance."
+      },
+      "acceptance_eligible": true
+    },
+    {
+      "run": "n10-paired-baseline-2",
+      "workspace": "../baseline-verify",
+      "source_commit": "e954f4861733832c6f405950f6add657e4e69dd1",
+      "engine_passed": true,
+      "failures": [],
+      "assertions": 34,
+      "performance_only": true,
+      "no_captures": true,
+      "statistics": {
+        "frame_samples": 316,
+        "window_ticks": [
+          510,
+          1109
+        ],
+        "frame_ms": {
+          "median": 31.667,
+          "p95": 36.625,
+          "max": 40.703
+        },
+        "physics_process_ms": {
+          "median": 1.555,
+          "p95": 5.961,
+          "max": 5.961
+        },
+        "p95_target_ms": 33.3,
+        "meets_p95_target": false,
+        "capture_overlap_frames": 0,
+        "limit": "Offscreen CPU llvmpipe reference VM; not laptop or subjective smoothness acceptance."
+      },
+      "acceptance_eligible": true
+    }
+  ],
+  "independent_validation_checkout": "validation/ (detached corrected commit, separate fresh engine invocations)",
+  "visual_assessment": "UNASSESSED; nodes 2, 4, and 6 visual gates unchanged",
+  "all_intervals_retained": true
+}
