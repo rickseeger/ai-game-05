@@ -56,3 +56,25 @@ PASS means observed by the specified measurement; PENDING means not done.
   addresses any real tension/fun failures. Rick's feedback is useful but must not
   be relabeled as G's own play. Enable missing GUI/audio capabilities first.
 - Root subjective validation and human approval remain unfulfilled, unchanged.
+
+## Node 2: arena/camera execution evidence (not controller signoff)
+
+- PASS: prerequisite node 1 recorded as independently contract-validated; baseline
+  commit and read-only persisted acceptance snapshot in evidence/arena/.
+- PASS: 24 x 24m world floor, exact +/-12m inner boundaries, three solid cover
+  objects, three pylon sites, six enemy spawn points, player spawn and exit marker.
+  Pylon/actor meshes in the preview are noncolliding stand-ins, not gameplay.
+- PASS: actual perspective Camera3D and MeshInstance3D rendering through the pinned
+  Compatibility renderer; directional lighting/shadows, ground grid/contact ring.
+- PASS: two fresh engine launches, 337 assertions each at 1280x720 and 960x720;
+  boundary ray/shape queries, spawn clearance, idempotent rebuild, ground aiming,
+  perspective scaling, full-envelope framing and live window resize/refit.
+- PASS: actual rendered airborne-cube pixels located at projected 3D coordinates;
+  seven PNGs per suite decoded and checked independently of engine assertions.
+- PASS: 720-frame ordinary real-time animated fixture tour, six more PNGs and
+  per-frame position/camera/interval trace. No MovieWriter timing substitution.
+- PASS: narrowed-frustum engine negative control rejected; five checker mutations
+  rejected. Earlier failed development attempts retained separately, not hidden.
+- PENDING: independent controller rerun and visual readability judgment. This
+  terminal worker did not observe a desktop, hear audio, or play a game. These
+  checks do not validate input, combat, destruction, fun or root satisfaction.

@@ -1,0 +1,15 @@
+{
+  "archive": "development-history.tar.gz",
+  "verified_files": 56,
+  "sha256": "251812b7febe3f3d5311c1c4c3d7651501f5710a7b7aba3baab6596e0a9302be",
+  "runs": {
+    "development-01": "Initial test-script type inference parse errors; timed out; exact spawned Godot/Xvfb PIDs terminated. No successful results claimed.",
+    "development-02": "326 checks, three gold-pixel failures. Inspection found clipped lit amber channels; reduced sun/ambient intensities.",
+    "development-03": "326 checks passed after lighting adjustment, before caption/resize improvements.",
+    "run-720p": "326 checks passed; before live-resize tests.",
+    "run-4x3": "Six image-coordinate failures under canvas_items scaling; removed virtual UI scaling to use physical viewport coordinates.",
+    "negative-camera": "Intentional FOV=12 negative control, 162 failures.",
+    "final-720p": "Two live-resize failures: direct DisplayServer call was overridden by Window; fixed by setting Window.size."
+  },
+  "preservation": "All original development logs, reports and images archived byte-for-byte before removing loose copies. Accepted captures are in verified-* and realtime-tour only."
+}

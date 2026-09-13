@@ -1,6 +1,7 @@
 # G12: Breakwater — design and Linux technology probe
 
-This repository is a node-1 work product, NOT the game or a completed mission.
+This repository contains a node-1 technology probe and node-2 arena/camera slice,
+NOT a playable game or a completed mission.
 The repository was empty when cloned from the persisted G12 configuration.
 
 - docs/design.md: bounded loop, destruction/audio specification, interfaces and order.
@@ -28,3 +29,19 @@ The probe auto-exits after seven simulated seconds. It has no player controls.
 MovieWriter captures the engine's mixed audio offline; it does not prove that a
 speaker made sound. Read docs/validation.md before interpreting any check as
 human visual/audible validation. No claim of fun or satisfaction has been made.
+
+## Arena / camera slice (node 2)
+
+See docs/arena-validation.md for interface, automated results and exact reruns.
+The original probe and its evidence are unchanged.
+
+    .tools/Godot_v4.5.1-stable_linux.x86_64 --path game --rendering-method gl_compatibility
+
+This launches a looping scripted stand-in tour, not player controls or combat.
+On an offscreen Linux server:
+
+    python3 scripts/run_arena.py local-arena
+    python3 scripts/check_arena.py evidence/arena/local-arena
+
+Use a new output name each time. Seven PNGs, engine log, launch metadata and
+337 focused assertions are produced per suite. No headless rendering substitute.

@@ -1,0 +1,13 @@
+{
+  "commit": "6cc761438b8ddfd369d79f084dd8b56b454e8e75",
+  "remote_main": "6cc761438b8ddfd369d79f084dd8b56b454e8e75",
+  "repository": "git@github.com:rickseeger/ai-game-05.git",
+  "author": "the gardener <root@g.seeger.net>",
+  "working_tree_clean": true,
+  "verified_manifest_entries": 44,
+  "both_recorded_runs_rechecked": true,
+  "authored_text_whitespace_check": true,
+  "raw_logs_note": "Raw ffmpeg/unzip logs retain original trailing whitespace; not edited to cosmetically pass git whitespace checks.",
+  "node_state_changes": "none",
+  "capability_limits": "No visible desktop or PCM playback device; ALSA failure and Dummy fallback saved. Audio signal captured via Godot MovieWriter, not heard. Interactive visual/audio/fun judgment remains a later gate."
+}

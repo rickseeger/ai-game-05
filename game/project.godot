@@ -1,0 +1,15 @@
+config_version=5
+[application]
+config/name="Breakwater — Arena / Camera"
+run/main_scene="res://arena_preview.tscn"
+[display]
+window/size/viewport_width=1280
+window/size/viewport_height=720
+[rendering]
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+environment/defaults/default_clear_color=Color(0.025, 0.04, 0.065, 1)
+[physics]
+3d/physics_engine="GodotPhysics3D"
+3d/default_gravity=9.8
+common/physics_ticks_per_second=60
