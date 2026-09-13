@@ -1,0 +1,106 @@
+{
+  "source_revision": "d649df50a96cccb200226bb7886f65abd0e42082",
+  "note": "Existing controller captures, not newly generated or visually inspected. Hashes identify handoff files only, not visual acceptance.",
+  "captures": [
+    {
+      "path": "/opt/g-harness/workspace/G12/controller_node2_validation/evidence/arena/controller-720p/overview.png",
+      "sha256": "bd2759ef09d9fef639f1f9aa32c81f9aebcd2472ef0b72842b8e4a3bab06b4ba",
+      "visual_review": "pending"
+    },
+    {
+      "path": "/opt/g-harness/workspace/G12/controller_node2_validation/evidence/arena/controller-720p/northwest.png",
+      "sha256": "697fec2256911dd3e1e91b4b7d2f48c52c05c239467f75a9bf9d5411f24d1b91",
+      "visual_review": "pending"
+    },
+    {
+      "path": "/opt/g-harness/workspace/G12/controller_node2_validation/evidence/arena/controller-720p/northeast.png",
+      "sha256": "6377a47806d9865d9f82038778e9f5da8f3870131f05899ce44d65e0f77ff6ab",
+      "visual_review": "pending"
+    },
+    {
+      "path": "/opt/g-harness/workspace/G12/controller_node2_validation/evidence/arena/controller-720p/southwest.png",
+      "sha256": "bcb886ef950e84fbdec85d687707f088d6880f25d49d6fcaae5b3d28d26beff2",
+      "visual_review": "pending"
+    },
+    {
+      "path": "/opt/g-harness/workspace/G12/controller_node2_validation/evidence/arena/controller-720p/southeast.png",
+      "sha256": "5a161409527bb8b66e74ecb1fa8d780188931d2ab51b9cc266f89b2a39501b04",
+      "visual_review": "pending"
+    },
+    {
+      "path": "/opt/g-harness/workspace/G12/controller_node2_validation/evidence/arena/controller-720p/airborne.png",
+      "sha256": "3831eae81bf9fa2b0b59666a4b524ecd145de230ad843dd6af1f18326672e489",
+      "visual_review": "pending"
+    },
+    {
+      "path": "/opt/g-harness/workspace/G12/controller_node2_validation/evidence/arena/controller-720p/resized.png",
+      "sha256": "79fb33654073a37d8f6bff9105896dfc45319429a2ad92ad959d30a36c7284a7",
+      "visual_review": "pending"
+    },
+    {
+      "path": "/opt/g-harness/workspace/G12/controller_node2_validation/evidence/arena/controller-4x3/overview.png",
+      "sha256": "38cc53d256db01c76e2b9d9107f34cf7911d44e91114e6817ae4e7c8ecac4578",
+      "visual_review": "pending"
+    },
+    {
+      "path": "/opt/g-harness/workspace/G12/controller_node2_validation/evidence/arena/controller-4x3/northwest.png",
+      "sha256": "40a93dcd96225918b4ba96e0e119016f86977e8dcc3d9fb747f5b12674346fd4",
+      "visual_review": "pending"
+    },
+    {
+      "path": "/opt/g-harness/workspace/G12/controller_node2_validation/evidence/arena/controller-4x3/northeast.png",
+      "sha256": "4c09d63c6aed82a1ac64a8783b3ac4fcfc45f08c7119b89fb636d6671be78c21",
+      "visual_review": "pending"
+    },
+    {
+      "path": "/opt/g-harness/workspace/G12/controller_node2_validation/evidence/arena/controller-4x3/southwest.png",
+      "sha256": "b26ce181992d0faa54d7b910e5ab305603990c2142b3596e7a05eeabf3ebc01e",
+      "visual_review": "pending"
+    },
+    {
+      "path": "/opt/g-harness/workspace/G12/controller_node2_validation/evidence/arena/controller-4x3/southeast.png",
+      "sha256": "a72c6686ecb329dd0c8e80eb5969e6e02dfcf2dccdc30cd536578a5b705446a4",
+      "visual_review": "pending"
+    },
+    {
+      "path": "/opt/g-harness/workspace/G12/controller_node2_validation/evidence/arena/controller-4x3/airborne.png",
+      "sha256": "79fb33654073a37d8f6bff9105896dfc45319429a2ad92ad959d30a36c7284a7",
+      "visual_review": "pending"
+    },
+    {
+      "path": "/opt/g-harness/workspace/G12/controller_node2_validation/evidence/arena/controller-4x3/resized.png",
+      "sha256": "3831eae81bf9fa2b0b59666a4b524ecd145de230ad843dd6af1f18326672e489",
+      "visual_review": "pending"
+    },
+    {
+      "path": "/opt/g-harness/workspace/G12/controller_node2_validation/evidence/arena/controller-tour/tour_0001.png",
+      "sha256": "c3e48601529a921bcd6b46e404992537f72f5c5e131f8072e9ea17c0ba199040",
+      "visual_review": "pending"
+    },
+    {
+      "path": "/opt/g-harness/workspace/G12/controller_node2_validation/evidence/arena/controller-tour/tour_0120.png",
+      "sha256": "83bdb1a70117be3467214c6875ceac55317a93f5ca5470cec992b0c3c8bfb649",
+      "visual_review": "pending"
+    },
+    {
+      "path": "/opt/g-harness/workspace/G12/controller_node2_validation/evidence/arena/controller-tour/tour_0240.png",
+      "sha256": "fb441524646e5c3ea87a622506228a607979d94daff48c64f70184542d57d4da",
+      "visual_review": "pending"
+    },
+    {
+      "path": "/opt/g-harness/workspace/G12/controller_node2_validation/evidence/arena/controller-tour/tour_0360.png",
+      "sha256": "30792083ae9c29093af69611ce79b7524277bfd72356de6a1edf9d4050f34545",
+      "visual_review": "pending"
+    },
+    {
+      "path": "/opt/g-harness/workspace/G12/controller_node2_validation/evidence/arena/controller-tour/tour_0480.png",
+      "sha256": "8037bb5738f324f4bf1e242776de61f4b57dff0352dfc4fdba363e31ab3f75ae",
+      "visual_review": "pending"
+    },
+    {
+      "path": "/opt/g-harness/workspace/G12/controller_node2_validation/evidence/arena/controller-tour/tour_0600.png",
+      "sha256": "00d027756a4eb42e87978f47d56a20b4ba35cc2d1951850828c27b67f8ade6c0",
+      "visual_review": "pending"
+    }
+  ]
+}
