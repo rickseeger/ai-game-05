@@ -39,8 +39,8 @@ func _ready() -> void:
     collider.shape = shape
     collider.position.y = 0.4
     add_child(collider)
-    ArenaScript.box(self, Vector3(0.65, 0.6, 0.65), Vector3.UP * 0.5, Color("63d6ff"))
-    ArenaScript.ring(self, Vector3.UP * 0.035, 0.48, Color("58a5b7"))
+    ArenaScript.box(self, Vector3(0.65, 0.6, 0.65), Vector3.UP * 0.5, Color("249ec9"))
+    ArenaScript.actor_contact(self, 0.64)
     gun = Node3D.new()
     add_child(gun)
     ArenaScript.box(gun, Vector3(0.16, 0.16, 0.65), Vector3(0, 0.65, -0.45), Color("b8efff"))

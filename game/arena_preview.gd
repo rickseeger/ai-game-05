@@ -52,13 +52,17 @@ func _ready() -> void:
     pawn = Node3D.new()
     pawn.name = "ScriptedPawnStandIn"
     add_child(pawn)
-    ArenaScript.box(pawn, Vector3(0.8, 0.7, 0.95), Vector3.UP * 0.55, Color("63d6ff"))
+    ArenaScript.box(pawn, Vector3(0.8, 0.7, 0.95), Vector3.UP * 0.55, Color("249ec9"))
     ArenaScript.box(pawn, Vector3(0.18, 0.2, 0.65), Vector3(0, 0.8, -0.6), Color("b8efff"))
     contact = Node3D.new()
     add_child(contact)
-    ArenaScript.ring(contact, Vector3(0, 0.035, 0), 0.56, Color("58a5b7"))
+    ArenaScript.actor_contact(contact, 0.72)
     for i in 7:
         var cube := ArenaScript.box(self, Vector3.ONE * 0.34, Vector3.ZERO, Color("ffce70"))
+        var surface := ShaderMaterial.new()
+        surface.shader = preload("res://debris_surface.gdshader")
+        surface.set_shader_parameter("tint", Color("ffce70"))
+        cube.material_override = surface
         debris.append(cube)
     var canvas := CanvasLayer.new()
     add_child(canvas)

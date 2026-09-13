@@ -43,11 +43,11 @@ func build(_seed: int = 1201) -> Dictionary:
     for i in pylon_spawns.size():
         var p := pylon_spawns[i].origin
         ring(geometry, p + Vector3.UP * 0.025, 1.35, Color("eeb358"))
-        label(geometry, "P%d" % (i + 1), p + Vector3(0, 0.035, 1.8), Color("ffd88b"))
+        label(geometry, "P%d" % (i + 1), p + Vector3(2.0, 0.15, 0), Color("ffd88b"))
     ring(geometry, exit_transform.origin + Vector3.UP * 0.025, 1.5, Color("55e0b5"))
     box(geometry, Vector3(1.6, 0.025, 0.18), Vector3(0, 0.03, -10), Color("55e0b5"))
     box(geometry, Vector3(0.18, 0.025, 1.6), Vector3(0, 0.03, -10), Color("55e0b5"))
-    label(geometry, "EXTRACT", Vector3(0, 0.04, -8.1), Color("86ffe0"))
+    label(geometry, "EXTRACT", Vector3(-3.6, 0.15, -10), Color("86ffe0"))
     return {"player_spawn": player_spawn, "pylon_spawns": pylon_spawns.duplicate(),
         "enemy_spawn_points": enemy_spawn_points.duplicate(), "exit_transform": exit_transform}
 
@@ -112,4 +112,20 @@ static func label(parent: Node3D, text: String, at: Vector3, color: Color) -> vo
     node.outline_size = 8
     parent.add_child(node)
     node.position = at
-    node.rotation_degrees.x = -90
+    node.billboard = BaseMaterial3D.BILLBOARD_ENABLED
+    # Upright text is a location label, not painted floor geometry. Keep depth tests.
+    node.pixel_size = 0.016
+
+static func actor_contact(parent: Node3D, radius: float) -> void:
+    var pad := MeshInstance3D.new()
+    var mesh := CylinderMesh.new()
+    mesh.top_radius = radius
+    mesh.bottom_radius = radius
+    mesh.height = 0.012
+    mesh.radial_segments = 32
+    pad.mesh = mesh
+    pad.material_override = material(Color("102632"), true)
+    pad.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
+    parent.add_child(pad)
+    pad.position.y = 0.014
+    ring(parent, Vector3.UP * 0.035, radius, Color("79e5fa"))

@@ -29,9 +29,9 @@ func _ready() -> void:
     multi.instance_count = CAP
     multi.visible_instance_count = 0
     batch.multimesh = multi
-    var material := StandardMaterial3D.new()
-    material.vertex_color_use_as_albedo = true
-    material.roughness = 0.86
+    var material := ShaderMaterial.new()
+    material.shader = preload("res://debris_surface.gdshader")
+    material.set_shader_parameter("instance_colors", true)
     batch.material_override = material
     add_child(batch)
 
