@@ -1,0 +1,18 @@
+Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 22:12:39.
+Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 22:12:39.
+resolve_provider_client: nous requested but Nous Portal not configured (run: hermes auth)
+Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 22:12:39.
+Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 22:12:39.
+resolve_provider_client: nous requested but Nous Portal not configured (run: hermes auth)
+{
+  "vision_requirements": false,
+  "vision_config": {
+    "provider": "auto",
+    "model": "",
+    "timeout": 120
+  },
+  "main_model": "deepseek-v4-pro",
+  "main_provider": "deepseek"
+}

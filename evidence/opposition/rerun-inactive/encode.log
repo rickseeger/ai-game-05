@@ -1,0 +1,37 @@
+Input #0, image2, from '/opt/g-harness/workspace/G12/node_6_step_127/repo/evidence/opposition/rerun-inactive/frame_%05d.png':
+  Duration: 00:00:09.10, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: png, rgba(pc, gbr/bt709/iec61966-2-1), 1280x720, 30 fps, 30 tbr, 30 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[libx264 @ 0x5de4a790dd00] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2 AVX512
+[libx264 @ 0x5de4a790dd00] profile High, level 3.1, 4:2:0, 8-bit
+[libx264 @ 0x5de4a790dd00] 264 - core 165 - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=2 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=6 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=6 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=1 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=30 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to '/opt/g-harness/workspace/G12/node_6_step_127/repo/evidence/opposition/rerun-inactive/runtime.mp4':
+  Metadata:
+    encoder         : Lavf62.3.100
+  Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(tv, unknown/bt709/iec61966-2-1, progressive), 1280x720, q=2-31, 30 fps, 15360 tbn
+    Metadata:
+      encoder         : Lavc62.11.100 libx264
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+frame=   50 fps=0.0 q=29.0 size=       0KiB time=00:00:01.60 bitrate=   0.2kbits/s speed=3.19x elapsed=0:00:00.50    frame=  168 fps=167 q=29.0 size=       0KiB time=00:00:05.53 bitrate=   0.1kbits/s speed=5.52x elapsed=0:00:01.00    [out#0/mp4 @ 0x5de4a790c540] video:127KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 3.186953%
+frame=  273 fps=201 q=-1.0 Lsize=     131KiB time=00:00:09.03 bitrate= 118.5kbits/s speed=6.65x elapsed=0:00:01.35    
+[libx264 @ 0x5de4a790dd00] frame I:2     Avg QP:18.51  size: 31366
+[libx264 @ 0x5de4a790dd00] frame P:69    Avg QP:16.05  size:   527
+[libx264 @ 0x5de4a790dd00] frame B:202   Avg QP:17.21  size:   148
+[libx264 @ 0x5de4a790dd00] consecutive B-frames:  0.7%  1.5%  1.1% 96.7%
+[libx264 @ 0x5de4a790dd00] mb I  I16..4:  9.5% 70.2% 20.3%
+[libx264 @ 0x5de4a790dd00] mb P  I16..4:  0.1%  0.1%  0.2%  P16..4:  0.2%  0.1%  0.1%  0.0%  0.0%    skip:99.3%
+[libx264 @ 0x5de4a790dd00] mb B  I16..4:  0.0%  0.0%  0.0%  B16..8:  0.2%  0.1%  0.0%  direct: 0.0%  skip:99.6%  L0:45.8% L1:48.5% BI: 5.7%
+[libx264 @ 0x5de4a790dd00] 8x8 transform intra:63.5% inter:5.0%
+[libx264 @ 0x5de4a790dd00] coded y,uvDC,uvAC intra: 15.2% 12.0% 8.4% inter: 0.1% 0.1% 0.1%
+[libx264 @ 0x5de4a790dd00] i16 v,h,dc,p: 24% 59% 17%  0%
+[libx264 @ 0x5de4a790dd00] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 81% 13%  5%  0%  0%  0%  0%  0%  0%
+[libx264 @ 0x5de4a790dd00] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 46% 23% 12%  2%  3%  5%  2%  5%  2%
+[libx264 @ 0x5de4a790dd00] i8c dc,h,v,p: 82% 13%  4%  1%
+[libx264 @ 0x5de4a790dd00] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 0x5de4a790dd00] ref P L0: 72.9% 27.1%
+[libx264 @ 0x5de4a790dd00] ref B L0: 81.3% 18.7%
+[libx264 @ 0x5de4a790dd00] ref B L1: 90.6%  9.4%
+[libx264 @ 0x5de4a790dd00] kb/s:113.42

@@ -1,0 +1,11 @@
+{
+  "queries": [
+    "view image screenshot visual perception",
+    "terminal image viewer",
+    "browser screenshot"
+  ],
+  "catalog": "Only process_manage is deferred; no image perception or browser tool matches.",
+  "auxiliary_probe": "/usr/local/lib/hermes-agent/venv/bin/python docs/node2-visual-followup/capability_probe.py",
+  "auxiliary_result": "vision_requirements=false; OpenRouter payment/credit error, Nous authentication unavailable. See visual-capability.txt. No configuration changed.",
+  "assessment": "No frame visually perceived; decoding and telemetry are not visual inspection."
+}

@@ -1,0 +1,7 @@
+{
+  "baseline_commit": "52d48fa7c8b7589e5e43d18ca72a33c1f7abdcf4",
+  "authority": "Task packet: node 1 design and node 3 controls accepted. Node 2 and node 4 remain blocked; no mission state read or written in this session.",
+  "interfaces": "Unmodified destruction.burst(transform, sentinel, seed), Target.apply_damage and Player.fired exercised by fresh rendered focused suite. Tests verify 16/32 real service bodies and removal of intact mesh/collider before burst; usable integration is not global prerequisite signoff.",
+  "scope": "Combat, sentry, spawning, player damage, opposition scene and tests only. Objectives/exit/countdown/audio/full run integration stay outside node 6.",
+  "unresolved": "Threat visual readability unassessed. Node 2/node 4 visual gates unchanged. Previously reported node 4 p95 35.114ms vs 33.3ms target not remeasured or remediated."
+}

@@ -1,0 +1,82 @@
+{
+  "prior_directory": "/opt/g-harness/workspace/G12/node_6_step_126/repo",
+  "prior_head": "52d48fa7c8b7589e5e43d18ca72a33c1f7abdcf4",
+  "recovery": "Recovered uncommitted implementation, player damage extension and focused/natural tests without duplicating opposition. Previous interrupted capture is not evidence for this rerun.",
+  "imported_files": {
+    "game/player.gd": {
+      "prior_sha256": "a4ae6b2e120b4d18fe94ecc53316207899dcd8e00fd57884f649f18f29bd82d3",
+      "current_sha256": "a4ae6b2e120b4d18fe94ecc53316207899dcd8e00fd57884f649f18f29bd82d3"
+    },
+    "game/combat.gd": {
+      "prior_sha256": "0d4b073ce5c4291675b44c5697b6a840fe1f47033382b9913d586be51a8b57b1",
+      "current_sha256": "0d4b073ce5c4291675b44c5697b6a840fe1f47033382b9913d586be51a8b57b1"
+    },
+    "game/sentry.gd": {
+      "prior_sha256": "666b66971991122479434529cdd644d072e806311537b8335a9130e33d9e4226",
+      "current_sha256": "666b66971991122479434529cdd644d072e806311537b8335a9130e33d9e4226"
+    },
+    "game/opposition.gd": {
+      "prior_sha256": "50b9657ec3c4a80571fde2afa66054b3d5275ee2cf5618c669fb36f6aac6115e",
+      "current_sha256": "50b9657ec3c4a80571fde2afa66054b3d5275ee2cf5618c669fb36f6aac6115e"
+    },
+    "game/opposition_session.gd": {
+      "prior_sha256": "3840b0f99a6e484740c05f4001b93a47a65475f3df9a5718fee2f1c459917758",
+      "current_sha256": "3840b0f99a6e484740c05f4001b93a47a65475f3df9a5718fee2f1c459917758"
+    },
+    "game/opposition.tscn": {
+      "prior_sha256": "573a008b5cfba0184e5bebce10f27ba515b84a037236480e569c49152ab93054",
+      "current_sha256": "573a008b5cfba0184e5bebce10f27ba515b84a037236480e569c49152ab93054"
+    },
+    "game/tests/opposition_tests.gd": {
+      "prior_sha256": "b89dafb8ac9c25ef36e6cf1d1bb2e968731caf01aecfe293a69415300d3a68a7",
+      "current_sha256": "b89dafb8ac9c25ef36e6cf1d1bb2e968731caf01aecfe293a69415300d3a68a7"
+    },
+    "scripts/run_opposition.py": {
+      "prior_sha256": "3d5f30e1b1780f4d2fd737803586bcb336de9a85b002d41cc1b10fa5d3dddc86",
+      "current_sha256": "3d5f30e1b1780f4d2fd737803586bcb336de9a85b002d41cc1b10fa5d3dddc86"
+    }
+  },
+  "previous_runs": {
+    "captured-inactive": {
+      "files": 89,
+      "results_present": false,
+      "launch_present": false
+    },
+    "development-active-01": {
+      "files": 4,
+      "results_present": true,
+      "launch_present": true,
+      "passed": true,
+      "checks": 7,
+      "ticks": 1800,
+      "health": 70
+    },
+    "development-focused-01": {
+      "files": 4,
+      "results_present": true,
+      "launch_present": true,
+      "passed": true,
+      "checks": 33,
+      "ticks": 1067,
+      "health": 100
+    },
+    "development-inactive-01": {
+      "files": 4,
+      "results_present": true,
+      "launch_present": true,
+      "passed": true,
+      "checks": 5,
+      "ticks": 543,
+      "health": 0
+    },
+    "verified-focused": {
+      "files": 4,
+      "results_present": true,
+      "launch_present": true,
+      "passed": true,
+      "checks": 38,
+      "ticks": 1253,
+      "health": 100
+    }
+  }
+}

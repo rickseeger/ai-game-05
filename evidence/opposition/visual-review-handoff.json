@@ -1,0 +1,151 @@
+{
+  "status": "BLOCKED visual assessment",
+  "review_required": "Observe actual recordings: identify pawn, warning marker, approaching sentry, 0.6s locked red aim, outgoing bolt, directional damage and two-hit shatter. Assess cues at normal speed and during debris, not just stills. Inactive must visibly lose; active must visibly counter and survive. Return frame/time-specific observations, not this telemetry as visual findings.",
+  "runs": {
+    "rerun-inactive": {
+      "movie": "evidence/opposition/rerun-inactive/runtime.mp4",
+      "stills": [
+        "evidence/opposition/rerun-inactive/frame_00001.png",
+        "evidence/opposition/rerun-inactive/frame_00002.png",
+        "evidence/opposition/rerun-inactive/frame_00072.png",
+        "evidence/opposition/rerun-inactive/frame_00111.png",
+        "evidence/opposition/rerun-inactive/frame_00273.png"
+      ],
+      "moments": [
+        {
+          "kind": "spawn_warning",
+          "engine_tick": 1,
+          "scenario_tick": 0,
+          "nearest_video_seconds": 0.0,
+          "nearest_frame_index": 1,
+          "note": "telemetry index only, not visually verified"
+        },
+        {
+          "kind": "spawn",
+          "engine_tick": 61,
+          "scenario_tick": 60,
+          "nearest_video_seconds": 1.0,
+          "nearest_frame_index": 31,
+          "note": "telemetry index only, not visually verified"
+        },
+        {
+          "kind": "aim",
+          "engine_tick": 142,
+          "scenario_tick": 141,
+          "nearest_video_seconds": 2.3333333333333335,
+          "nearest_frame_index": 71,
+          "note": "telemetry index only, not visually verified"
+        },
+        {
+          "kind": "attack",
+          "engine_tick": 178,
+          "scenario_tick": 177,
+          "nearest_video_seconds": 2.933333333333333,
+          "nearest_frame_index": 89,
+          "note": "telemetry index only, not visually verified"
+        },
+        {
+          "kind": "player_damage",
+          "engine_tick": 219,
+          "scenario_tick": 218,
+          "nearest_video_seconds": 3.6333333333333333,
+          "nearest_frame_index": 110,
+          "note": "telemetry index only, not visually verified"
+        },
+        {
+          "kind": "player_died",
+          "engine_tick": 543,
+          "scenario_tick": 542,
+          "nearest_video_seconds": 9.033333333333333,
+          "nearest_frame_index": 272,
+          "note": "telemetry index only, not visually verified"
+        }
+      ]
+    },
+    "rerun-active": {
+      "movie": "evidence/opposition/rerun-active/runtime.mp4",
+      "stills": [
+        "evidence/opposition/rerun-active/frame_00001.png",
+        "evidence/opposition/rerun-active/frame_00002.png",
+        "evidence/opposition/rerun-active/frame_00072.png",
+        "evidence/opposition/rerun-active/frame_00111.png",
+        "evidence/opposition/rerun-active/frame_00130.png",
+        "evidence/opposition/rerun-active/frame_00901.png"
+      ],
+      "moments": [
+        {
+          "kind": "spawn_warning",
+          "engine_tick": 1,
+          "scenario_tick": 0,
+          "nearest_video_seconds": 0.0,
+          "nearest_frame_index": 1,
+          "note": "telemetry index only, not visually verified"
+        },
+        {
+          "kind": "spawn",
+          "engine_tick": 61,
+          "scenario_tick": 60,
+          "nearest_video_seconds": 1.0,
+          "nearest_frame_index": 31,
+          "note": "telemetry index only, not visually verified"
+        },
+        {
+          "kind": "aim",
+          "engine_tick": 142,
+          "scenario_tick": 141,
+          "nearest_video_seconds": 2.3333333333333335,
+          "nearest_frame_index": 71,
+          "note": "telemetry index only, not visually verified"
+        },
+        {
+          "kind": "attack",
+          "engine_tick": 178,
+          "scenario_tick": 177,
+          "nearest_video_seconds": 2.933333333333333,
+          "nearest_frame_index": 89,
+          "note": "telemetry index only, not visually verified"
+        },
+        {
+          "kind": "player_damage",
+          "engine_tick": 219,
+          "scenario_tick": 218,
+          "nearest_video_seconds": 3.6333333333333333,
+          "nearest_frame_index": 110,
+          "note": "telemetry index only, not visually verified"
+        },
+        {
+          "kind": "player_dash",
+          "engine_tick": 220,
+          "scenario_tick": 219,
+          "nearest_video_seconds": 3.6333333333333333,
+          "nearest_frame_index": 110,
+          "note": "telemetry index only, not visually verified"
+        },
+        {
+          "kind": "destroyed",
+          "engine_tick": 257,
+          "scenario_tick": 256,
+          "nearest_video_seconds": 4.266666666666667,
+          "nearest_frame_index": 129,
+          "note": "telemetry index only, not visually verified"
+        },
+        {
+          "kind": "destroyed",
+          "engine_tick": 292,
+          "scenario_tick": 291,
+          "nearest_video_seconds": 4.833333333333333,
+          "nearest_frame_index": 146,
+          "note": "telemetry index only, not visually verified"
+        },
+        {
+          "kind": "destroyed",
+          "engine_tick": 1015,
+          "scenario_tick": 1014,
+          "nearest_video_seconds": 16.9,
+          "nearest_frame_index": 508,
+          "note": "telemetry index only, not visually verified"
+        }
+      ]
+    }
+  }
+}

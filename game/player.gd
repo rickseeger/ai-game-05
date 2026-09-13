@@ -2,6 +2,12 @@ extends CharacterBody3D
 ## Upright unscaled arena, fixed 60Hz. Combat consumes fired; no fake projectiles.
 signal fired(origin: Vector3, direction: Vector3)
 signal dashed(distance: float)
+signal health_changed(value: int)
+signal damaged(amount: int, source: Vector3)
+signal died
+var health := 100
+var hit_flash := 0.0
+var hit_indicator: Node3D
 const ArenaScript = preload("res://arena.gd")
 const SPEED := 5.0
 const RADIUS := 0.4
@@ -38,6 +44,10 @@ func _ready() -> void:
     gun = Node3D.new()
     add_child(gun)
     ArenaScript.box(gun, Vector3(0.16, 0.16, 0.65), Vector3(0, 0.65, -0.45), Color("b8efff"))
+    hit_indicator = Node3D.new()
+    add_child(hit_indicator)
+    ArenaScript.box(hit_indicator, Vector3(0.18, 0.08, 0.65), Vector3(0, 0.12, -0.95), Color("ff4433"))
+    hit_indicator.visible = false
     reticle = Node3D.new()
     add_child(reticle)
     reticle.top_level = true
@@ -47,6 +57,10 @@ func _physics_process(dt: float) -> void:
     fixed_step(dt)
 
 func fixed_step(dt: float) -> void:
+    hit_flash = maxf(0, hit_flash - dt)
+    hit_indicator.visible = hit_flash > 0
+    if health <= 0:
+        return
     var command: Dictionary = controls.read_input()
     var axes: Vector2 = command.movement
     var right := camera.global_basis.x
@@ -91,3 +105,16 @@ func update_aim(command: Dictionary) -> void:
             gun.rotation.y = atan2(-aim_direction.x, -aim_direction.z)
             reticle.global_position = aim_point
     reticle.visible = aim_valid
+
+func apply_damage(amount: int, source: Vector3, _impulse_direction: Vector3 = Vector3.ZERO) -> void:
+    if health <= 0 or amount <= 0:
+        return
+    health = maxi(0, health - amount)
+    hit_flash = 0.35
+    var direction := source - global_position
+    hit_indicator.rotation.y = atan2(-direction.x, -direction.z)
+    hit_indicator.visible = true
+    damaged.emit(amount, source)
+    health_changed.emit(health)
+    if health == 0:
+        died.emit()

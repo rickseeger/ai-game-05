@@ -1,0 +1,43 @@
+{
+  "runs": [
+    {
+      "directory": "evidence/opposition/rerun-focused",
+      "engine_assertions": 38
+    },
+    {
+      "directory": "evidence/opposition/rerun-inactive",
+      "engine_assertions": 5,
+      "scenario": "inactive",
+      "ticks": 543,
+      "seconds": 9.05,
+      "health": 0,
+      "attacks": 7,
+      "damage_hits": 7,
+      "destroyed": 0,
+      "decoded_frames": 273
+    },
+    {
+      "directory": "evidence/opposition/rerun-active",
+      "engine_assertions": 7,
+      "scenario": "active",
+      "ticks": 1800,
+      "seconds": 30.0,
+      "health": 70,
+      "attacks": 2,
+      "damage_hits": 2,
+      "destroyed": 3,
+      "decoded_frames": 901
+    }
+  ],
+  "visual_assessment": "UNASSESSED; decoding is not perception",
+  "rejected_mutations": [
+    "short_telegraph",
+    "no_damage",
+    "no_destruction",
+    "no_burst",
+    "duplicate_hit",
+    "inactive_fires",
+    "healing"
+  ],
+  "passed": true
+}

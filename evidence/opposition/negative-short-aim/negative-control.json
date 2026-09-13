@@ -1,0 +1,11 @@
+{
+  "rejected": true,
+  "mutation": "sentry AIM_TIME 0.6 -> 0.2",
+  "failed_checks": [
+    "aim_36_ticks",
+    "counterfire_interrupts_telegraphed_attack",
+    "counterfire_preserves_health"
+  ],
+  "runner_returncode": 1,
+  "source_restored": true
+}

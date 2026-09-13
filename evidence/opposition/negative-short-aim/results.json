@@ -1,0 +1,1864 @@
+{
+  "checks": [
+    {
+      "name": "real_rendered_x11",
+      "pass": true,
+      "tick": 0
+    },
+    {
+      "name": "physics_60hz",
+      "pass": true,
+      "tick": 0
+    },
+    {
+      "name": "pursues_to_six_meter_range",
+      "pass": true,
+      "tick": 119
+    },
+    {
+      "name": "attacks_exist",
+      "pass": true,
+      "tick": 299
+    },
+    {
+      "name": "aim_36_ticks",
+      "pass": false,
+      "tick": 299
+    },
+    {
+      "name": "cycle_108_ticks",
+      "pass": true,
+      "tick": 299
+    },
+    {
+      "name": "projectile_damage_15",
+      "pass": true,
+      "tick": 299
+    },
+    {
+      "name": "cover_stops_enemy_bolt",
+      "pass": true,
+      "tick": 381
+    },
+    {
+      "name": "cover_blocks_sight",
+      "pass": true,
+      "tick": 381
+    },
+    {
+      "name": "obstacle_avoidance_reaches_attack",
+      "pass": true,
+      "tick": 741
+    },
+    {
+      "name": "intact_pylon_is_cover",
+      "pass": true,
+      "tick": 813
+    },
+    {
+      "name": "three_player_bolts_leave_pylon",
+      "pass": true,
+      "tick": 876
+    },
+    {
+      "name": "fourth_player_bolt_removes_cover",
+      "pass": true,
+      "tick": 897
+    },
+    {
+      "name": "destroyed_cover_exposes_player",
+      "pass": true,
+      "tick": 967
+    },
+    {
+      "name": "debris_does_not_block_bolts",
+      "pass": true,
+      "tick": 967
+    },
+    {
+      "name": "first_player_bolt_sentry_25",
+      "pass": true,
+      "tick": 990
+    },
+    {
+      "name": "second_bolt_once_only_death",
+      "pass": true,
+      "tick": 1011
+    },
+    {
+      "name": "sixteen_service_fragments",
+      "pass": true,
+      "tick": 1011
+    },
+    {
+      "name": "collider_and_mesh_removed_before_burst",
+      "pass": true,
+      "tick": 1011
+    },
+    {
+      "name": "dead_sentry_cannot_attack",
+      "pass": true,
+      "tick": 1011
+    },
+    {
+      "name": "red_aim_visible_before_attack",
+      "pass": true,
+      "tick": 1019
+    },
+    {
+      "name": "locked_aim_dodge_avoids_damage",
+      "pass": true,
+      "tick": 1101
+    },
+    {
+      "name": "counterfire_interrupts_telegraphed_attack",
+      "pass": false,
+      "tick": 1176
+    },
+    {
+      "name": "counterfire_preserves_health",
+      "pass": false,
+      "tick": 1176
+    },
+    {
+      "name": "static_cover_stops_player_bolt",
+      "pass": true,
+      "tick": 1208
+    },
+    {
+      "name": "two_initial_warnings",
+      "pass": true,
+      "tick": 1208
+    },
+    {
+      "name": "no_spawn_before_one_second",
+      "pass": true,
+      "tick": 1208
+    },
+    {
+      "name": "two_spawn_after_one_second",
+      "pass": true,
+      "tick": 1208
+    },
+    {
+      "name": "next_warning_at_15_seconds",
+      "pass": true,
+      "tick": 1208
+    },
+    {
+      "name": "spawn_cap_six",
+      "pass": true,
+      "tick": 1208
+    },
+    {
+      "name": "all_spawns_eight_meters",
+      "pass": true,
+      "tick": 1208
+    },
+    {
+      "name": "approached_warning_cancelled",
+      "pass": true,
+      "tick": 1208
+    },
+    {
+      "name": "replacement_warned_not_instant",
+      "pass": true,
+      "tick": 1208
+    },
+    {
+      "name": "pause_freezes_spawn_clock",
+      "pass": true,
+      "tick": 1238
+    },
+    {
+      "name": "pause_freezes_aim_and_bolt",
+      "pass": true,
+      "tick": 1262
+    },
+    {
+      "name": "negative_player_damage_ignored",
+      "pass": true,
+      "tick": 1262
+    },
+    {
+      "name": "lethal_idempotent",
+      "pass": true,
+      "tick": 1262
+    },
+    {
+      "name": "input_restart_cleans_threats",
+      "pass": true,
+      "tick": 1264
+    }
+  ],
+  "engine": {
+    "build": "official",
+    "hash": "f62fdbde15035c5576dad93e586201f4d41ef0cb",
+    "hex": 263425,
+    "major": 4,
+    "minor": 5,
+    "patch": 1,
+    "status": "stable",
+    "string": "4.5.1-stable (official)",
+    "timestamp": 0
+  },
+  "events": [
+    {
+      "engine_tick": 1,
+      "kind": "state",
+      "state": 0,
+      "tick": 0
+    },
+    {
+      "distance": 10.0,
+      "engine_tick": 1,
+      "entity": 102,
+      "kind": "spawn_warning",
+      "position": [
+        10.0,
+        0.0,
+        10.0
+      ],
+      "tick": 0
+    },
+    {
+      "distance": 14.1421356201172,
+      "engine_tick": 1,
+      "entity": 103,
+      "kind": "spawn_warning",
+      "position": [
+        -10.0,
+        0.0,
+        0.0
+      ],
+      "tick": 0
+    },
+    {
+      "engine_tick": 1,
+      "kind": "state",
+      "state": 0,
+      "tick": 0
+    },
+    {
+      "distance": 10.0,
+      "engine_tick": 1,
+      "entity": 104,
+      "kind": "spawn_warning",
+      "position": [
+        10.0,
+        0.0,
+        10.0
+      ],
+      "tick": 0
+    },
+    {
+      "distance": 14.1421356201172,
+      "engine_tick": 1,
+      "entity": 105,
+      "kind": "spawn_warning",
+      "position": [
+        -10.0,
+        0.0,
+        0.0
+      ],
+      "tick": 0
+    },
+    {
+      "engine_tick": 82,
+      "entity": 900,
+      "kind": "aim",
+      "position": [
+        -6.00000047683716,
+        0.000943947990890592,
+        10.0
+      ],
+      "target": [
+        0.0,
+        0.0,
+        10.0
+      ],
+      "tick": 81
+    },
+    {
+      "damage": 15,
+      "direction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "engine_tick": 94,
+      "friendly": false,
+      "id": 1,
+      "kind": "bolt",
+      "position": [
+        -6.00000047683716,
+        0.65094393491745,
+        10.0
+      ],
+      "speed": 8.0,
+      "tick": 93
+    },
+    {
+      "engine_tick": 94,
+      "entity": 900,
+      "kind": "attack",
+      "position": [
+        -6.00000047683716,
+        0.000943947990890592,
+        10.0
+      ],
+      "tick": 93
+    },
+    {
+      "collider": "@CharacterBody3D@588",
+      "damage": 15,
+      "engine_tick": 136,
+      "friendly": false,
+      "id": 1,
+      "kind": "hit",
+      "position": [
+        -0.400000005960464,
+        0.65094393491745,
+        10.0
+      ],
+      "target": 0,
+      "tick": 135
+    },
+    {
+      "amount": 15,
+      "engine_tick": 136,
+      "health": 85,
+      "kind": "player_damage",
+      "source": [
+        -6.00000047683716,
+        0.000943947990890592,
+        10.0
+      ],
+      "tick": 135
+    },
+    {
+      "engine_tick": 190,
+      "entity": 900,
+      "kind": "aim",
+      "position": [
+        -6.00000047683716,
+        0.000943947990890592,
+        10.0
+      ],
+      "target": [
+        0.0,
+        0.0,
+        10.0
+      ],
+      "tick": 189
+    },
+    {
+      "damage": 15,
+      "direction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "engine_tick": 202,
+      "friendly": false,
+      "id": 2,
+      "kind": "bolt",
+      "position": [
+        -6.00000047683716,
+        0.65094393491745,
+        10.0
+      ],
+      "speed": 8.0,
+      "tick": 201
+    },
+    {
+      "engine_tick": 202,
+      "entity": 900,
+      "kind": "attack",
+      "position": [
+        -6.00000047683716,
+        0.000943947990890592,
+        10.0
+      ],
+      "tick": 201
+    },
+    {
+      "collider": "@CharacterBody3D@588",
+      "damage": 15,
+      "engine_tick": 244,
+      "friendly": false,
+      "id": 2,
+      "kind": "hit",
+      "position": [
+        -0.400000005960464,
+        0.65094393491745,
+        10.0
+      ],
+      "target": 0,
+      "tick": 243
+    },
+    {
+      "amount": 15,
+      "engine_tick": 244,
+      "health": 70,
+      "kind": "player_damage",
+      "source": [
+        -6.00000047683716,
+        0.000943947990890592,
+        10.0
+      ],
+      "tick": 243
+    },
+    {
+      "engine_tick": 298,
+      "entity": 900,
+      "kind": "aim",
+      "position": [
+        -6.00000047683716,
+        0.000943947990890592,
+        10.0
+      ],
+      "target": [
+        0.0,
+        0.0,
+        10.0
+      ],
+      "tick": 297
+    },
+    {
+      "engine_tick": 301,
+      "kind": "state",
+      "state": 0,
+      "tick": 299
+    },
+    {
+      "distance": 10.0,
+      "engine_tick": 301,
+      "entity": 106,
+      "kind": "spawn_warning",
+      "position": [
+        10.0,
+        0.0,
+        10.0
+      ],
+      "tick": 299
+    },
+    {
+      "distance": 14.1421356201172,
+      "engine_tick": 301,
+      "entity": 107,
+      "kind": "spawn_warning",
+      "position": [
+        -10.0,
+        0.0,
+        0.0
+      ],
+      "tick": 299
+    },
+    {
+      "damage": 15,
+      "direction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "engine_tick": 303,
+      "friendly": false,
+      "id": 3,
+      "kind": "bolt",
+      "position": [
+        -8.0,
+        0.649999976158142,
+        2.0
+      ],
+      "speed": 8.0,
+      "tick": 301
+    },
+    {
+      "collider": "CoverWest",
+      "damage": 0,
+      "engine_tick": 321,
+      "friendly": false,
+      "id": 3,
+      "kind": "hit",
+      "position": [
+        -5.5,
+        0.649999976158142,
+        2.0
+      ],
+      "target": 0,
+      "tick": 320
+    },
+    {
+      "engine_tick": 441,
+      "entity": 1199,
+      "kind": "aim",
+      "position": [
+        -5.50441789627075,
+        0.000941808626521379,
+        0.885621547698975
+      ],
+      "target": [
+        0.0,
+        0.0,
+        2.0
+      ],
+      "tick": 440
+    },
+    {
+      "damage": 15,
+      "direction": [
+        0.98011589050293,
+        0.0,
+        0.198426067829132
+      ],
+      "engine_tick": 453,
+      "friendly": false,
+      "id": 4,
+      "kind": "bolt",
+      "position": [
+        -5.50441789627075,
+        0.650941789150238,
+        0.885621547698975
+      ],
+      "speed": 8.0,
+      "tick": 452
+    },
+    {
+      "engine_tick": 453,
+      "entity": 1199,
+      "kind": "attack",
+      "position": [
+        -5.50441789627075,
+        0.000941808626521379,
+        0.885621547698975
+      ],
+      "tick": 452
+    },
+    {
+      "collider": "@CharacterBody3D@782",
+      "damage": 15,
+      "engine_tick": 492,
+      "friendly": false,
+      "id": 4,
+      "kind": "hit",
+      "position": [
+        -0.392046511173248,
+        0.650941789150238,
+        1.92063045501709
+      ],
+      "target": 0,
+      "tick": 491
+    },
+    {
+      "amount": 15,
+      "engine_tick": 492,
+      "health": 85,
+      "kind": "player_damage",
+      "source": [
+        -5.50441789627075,
+        0.000941808626521379,
+        0.885621547698975
+      ],
+      "tick": 491
+    },
+    {
+      "engine_tick": 549,
+      "entity": 1199,
+      "kind": "aim",
+      "position": [
+        -5.50441789627075,
+        0.000941808626521379,
+        0.885621547698975
+      ],
+      "target": [
+        0.0,
+        0.0,
+        2.0
+      ],
+      "tick": 548
+    },
+    {
+      "damage": 15,
+      "direction": [
+        0.98011589050293,
+        0.0,
+        0.198426067829132
+      ],
+      "engine_tick": 561,
+      "friendly": false,
+      "id": 5,
+      "kind": "bolt",
+      "position": [
+        -5.50441789627075,
+        0.650941789150238,
+        0.885621547698975
+      ],
+      "speed": 8.0,
+      "tick": 560
+    },
+    {
+      "engine_tick": 561,
+      "entity": 1199,
+      "kind": "attack",
+      "position": [
+        -5.50441789627075,
+        0.000941808626521379,
+        0.885621547698975
+      ],
+      "tick": 560
+    },
+    {
+      "collider": "@CharacterBody3D@782",
+      "damage": 15,
+      "engine_tick": 600,
+      "friendly": false,
+      "id": 5,
+      "kind": "hit",
+      "position": [
+        -0.392046511173248,
+        0.650941789150238,
+        1.92063045501709
+      ],
+      "target": 0,
+      "tick": 599
+    },
+    {
+      "amount": 15,
+      "engine_tick": 600,
+      "health": 70,
+      "kind": "player_damage",
+      "source": [
+        -5.50441789627075,
+        0.000941808626521379,
+        0.885621547698975
+      ],
+      "tick": 599
+    },
+    {
+      "engine_tick": 657,
+      "entity": 1199,
+      "kind": "aim",
+      "position": [
+        -5.50441789627075,
+        0.000941808626521379,
+        0.885621547698975
+      ],
+      "target": [
+        0.0,
+        0.0,
+        2.0
+      ],
+      "tick": 656
+    },
+    {
+      "damage": 15,
+      "direction": [
+        0.98011589050293,
+        0.0,
+        0.198426067829132
+      ],
+      "engine_tick": 669,
+      "friendly": false,
+      "id": 6,
+      "kind": "bolt",
+      "position": [
+        -5.50441789627075,
+        0.650941789150238,
+        0.885621547698975
+      ],
+      "speed": 8.0,
+      "tick": 668
+    },
+    {
+      "engine_tick": 669,
+      "entity": 1199,
+      "kind": "attack",
+      "position": [
+        -5.50441789627075,
+        0.000941808626521379,
+        0.885621547698975
+      ],
+      "tick": 668
+    },
+    {
+      "collider": "@CharacterBody3D@782",
+      "damage": 15,
+      "engine_tick": 708,
+      "friendly": false,
+      "id": 6,
+      "kind": "hit",
+      "position": [
+        -0.392046511173248,
+        0.650941789150238,
+        1.92063045501709
+      ],
+      "target": 0,
+      "tick": 707
+    },
+    {
+      "amount": 15,
+      "engine_tick": 708,
+      "health": 55,
+      "kind": "player_damage",
+      "source": [
+        -5.50441789627075,
+        0.000941808626521379,
+        0.885621547698975
+      ],
+      "tick": 707
+    },
+    {
+      "engine_tick": 743,
+      "kind": "state",
+      "state": 0,
+      "tick": 741
+    },
+    {
+      "distance": 10.0,
+      "engine_tick": 743,
+      "entity": 108,
+      "kind": "spawn_warning",
+      "position": [
+        10.0,
+        0.0,
+        10.0
+      ],
+      "tick": 741
+    },
+    {
+      "distance": 14.1421356201172,
+      "engine_tick": 743,
+      "entity": 109,
+      "kind": "spawn_warning",
+      "position": [
+        -10.0,
+        0.0,
+        0.0
+      ],
+      "tick": 741
+    },
+    {
+      "damage": 15,
+      "direction": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "engine_tick": 745,
+      "friendly": false,
+      "id": 7,
+      "kind": "bolt",
+      "position": [
+        0.0,
+        0.649999976158142,
+        3.0
+      ],
+      "speed": 8.0,
+      "tick": 743
+    },
+    {
+      "collider": "@StaticBody3D@1077",
+      "damage": 0,
+      "engine_tick": 762,
+      "friendly": false,
+      "id": 7,
+      "kind": "hit",
+      "position": [
+        0.0,
+        0.649999976158142,
+        5.28999996185303
+      ],
+      "target": 3,
+      "tick": 761
+    },
+    {
+      "damage": 25,
+      "direction": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "engine_tick": 815,
+      "friendly": true,
+      "id": 8,
+      "kind": "bolt",
+      "position": [
+        0.0,
+        0.649999976158142,
+        9.75
+      ],
+      "speed": 24.0,
+      "tick": 813
+    },
+    {
+      "collider": "@StaticBody3D@1077",
+      "damage": 25,
+      "engine_tick": 822,
+      "friendly": true,
+      "id": 8,
+      "kind": "hit",
+      "position": [
+        0.0,
+        0.649999976158142,
+        6.71000003814697
+      ],
+      "target": 3,
+      "tick": 821
+    },
+    {
+      "damage": 25,
+      "direction": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "engine_tick": 836,
+      "friendly": true,
+      "id": 9,
+      "kind": "bolt",
+      "position": [
+        0.0,
+        0.649999976158142,
+        9.75
+      ],
+      "speed": 24.0,
+      "tick": 834
+    },
+    {
+      "collider": "@StaticBody3D@1077",
+      "damage": 25,
+      "engine_tick": 843,
+      "friendly": true,
+      "id": 9,
+      "kind": "hit",
+      "position": [
+        0.0,
+        0.649999976158142,
+        6.71000003814697
+      ],
+      "target": 3,
+      "tick": 842
+    },
+    {
+      "damage": 25,
+      "direction": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "engine_tick": 857,
+      "friendly": true,
+      "id": 10,
+      "kind": "bolt",
+      "position": [
+        0.0,
+        0.649999976158142,
+        9.75
+      ],
+      "speed": 24.0,
+      "tick": 855
+    },
+    {
+      "collider": "@StaticBody3D@1077",
+      "damage": 25,
+      "engine_tick": 864,
+      "friendly": true,
+      "id": 10,
+      "kind": "hit",
+      "position": [
+        0.0,
+        0.649999976158142,
+        6.71000003814697
+      ],
+      "target": 3,
+      "tick": 863
+    },
+    {
+      "damage": 25,
+      "direction": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "engine_tick": 878,
+      "friendly": true,
+      "id": 11,
+      "kind": "bolt",
+      "position": [
+        0.0,
+        0.649999976158142,
+        9.75
+      ],
+      "speed": 24.0,
+      "tick": 876
+    },
+    {
+      "collider": "@StaticBody3D@1077",
+      "damage": 25,
+      "engine_tick": 885,
+      "friendly": true,
+      "id": 11,
+      "kind": "hit",
+      "position": [
+        0.0,
+        0.649999976158142,
+        6.71000003814697
+      ],
+      "target": 3,
+      "tick": 884
+    },
+    {
+      "bodies": 32,
+      "engine_tick": 885,
+      "id": 1,
+      "kind": "burst",
+      "position": [
+        0.0,
+        0.0,
+        6.0
+      ],
+      "tick": 884
+    },
+    {
+      "damage": 15,
+      "direction": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "engine_tick": 899,
+      "friendly": false,
+      "id": 12,
+      "kind": "bolt",
+      "position": [
+        0.0,
+        0.649999976158142,
+        3.0
+      ],
+      "speed": 8.0,
+      "tick": 897
+    },
+    {
+      "collider": "@CharacterBody3D@980",
+      "damage": 15,
+      "engine_tick": 948,
+      "friendly": false,
+      "id": 12,
+      "kind": "hit",
+      "position": [
+        0.0,
+        0.649999976158142,
+        9.60000038146973
+      ],
+      "target": 0,
+      "tick": 947
+    },
+    {
+      "amount": 15,
+      "engine_tick": 948,
+      "health": 85,
+      "kind": "player_damage",
+      "source": [
+        0.0,
+        0.0,
+        3.0
+      ],
+      "tick": 947
+    },
+    {
+      "engine_tick": 969,
+      "kind": "state",
+      "state": 0,
+      "tick": 967
+    },
+    {
+      "distance": 10.0,
+      "engine_tick": 969,
+      "entity": 110,
+      "kind": "spawn_warning",
+      "position": [
+        10.0,
+        0.0,
+        10.0
+      ],
+      "tick": 967
+    },
+    {
+      "distance": 14.1421356201172,
+      "engine_tick": 969,
+      "entity": 111,
+      "kind": "spawn_warning",
+      "position": [
+        -10.0,
+        0.0,
+        0.0
+      ],
+      "tick": 967
+    },
+    {
+      "damage": 25,
+      "direction": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "engine_tick": 971,
+      "friendly": true,
+      "id": 13,
+      "kind": "bolt",
+      "position": [
+        -0.25,
+        0.649999976158142,
+        10.0
+      ],
+      "speed": 24.0,
+      "tick": 969
+    },
+    {
+      "collider": "@CharacterBody3D@1430",
+      "damage": 25,
+      "engine_tick": 984,
+      "friendly": true,
+      "id": 13,
+      "kind": "hit",
+      "position": [
+        -5.55000019073486,
+        0.649999976158142,
+        10.0
+      ],
+      "target": 1867,
+      "tick": 983
+    },
+    {
+      "amount": 25,
+      "engine_tick": 984,
+      "entity": 1867,
+      "health": 25,
+      "kind": "sentry_damage",
+      "tick": 983
+    },
+    {
+      "damage": 25,
+      "direction": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "engine_tick": 992,
+      "friendly": true,
+      "id": 14,
+      "kind": "bolt",
+      "position": [
+        -0.25,
+        0.649999976158142,
+        10.0
+      ],
+      "speed": 24.0,
+      "tick": 990
+    },
+    {
+      "collider": "@CharacterBody3D@1430",
+      "damage": 25,
+      "engine_tick": 1005,
+      "friendly": true,
+      "id": 14,
+      "kind": "hit",
+      "position": [
+        -5.55000019073486,
+        0.649999976158142,
+        10.0
+      ],
+      "target": 1867,
+      "tick": 1004
+    },
+    {
+      "amount": 25,
+      "engine_tick": 1005,
+      "entity": 1867,
+      "health": 0,
+      "kind": "sentry_damage",
+      "tick": 1004
+    },
+    {
+      "bodies": 16,
+      "engine_tick": 1005,
+      "id": 2,
+      "kind": "burst",
+      "position": [
+        -6.0,
+        0.0,
+        10.0
+      ],
+      "tick": 1004
+    },
+    {
+      "engine_tick": 1013,
+      "kind": "state",
+      "state": 0,
+      "tick": 1011
+    },
+    {
+      "distance": 10.0,
+      "engine_tick": 1013,
+      "entity": 112,
+      "kind": "spawn_warning",
+      "position": [
+        10.0,
+        0.0,
+        10.0
+      ],
+      "tick": 1011
+    },
+    {
+      "distance": 14.1421356201172,
+      "engine_tick": 1013,
+      "entity": 113,
+      "kind": "spawn_warning",
+      "position": [
+        -10.0,
+        0.0,
+        0.0
+      ],
+      "tick": 1011
+    },
+    {
+      "engine_tick": 1013,
+      "entity": 1911,
+      "kind": "aim",
+      "position": [
+        -6.0,
+        0.0,
+        10.0
+      ],
+      "target": [
+        0.0,
+        0.0,
+        10.0
+      ],
+      "tick": 1012
+    },
+    {
+      "damage": 15,
+      "direction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "engine_tick": 1025,
+      "friendly": false,
+      "id": 15,
+      "kind": "bolt",
+      "position": [
+        -6.0,
+        0.649999976158142,
+        10.0
+      ],
+      "speed": 8.0,
+      "tick": 1024
+    },
+    {
+      "engine_tick": 1025,
+      "entity": 1911,
+      "kind": "attack",
+      "position": [
+        -6.0,
+        0.0,
+        10.0
+      ],
+      "tick": 1024
+    },
+    {
+      "engine_tick": 1103,
+      "kind": "state",
+      "state": 0,
+      "tick": 1101
+    },
+    {
+      "distance": 10.0,
+      "engine_tick": 1103,
+      "entity": 114,
+      "kind": "spawn_warning",
+      "position": [
+        10.0,
+        0.0,
+        10.0
+      ],
+      "tick": 1101
+    },
+    {
+      "distance": 14.1421356201172,
+      "engine_tick": 1103,
+      "entity": 115,
+      "kind": "spawn_warning",
+      "position": [
+        -10.0,
+        0.0,
+        0.0
+      ],
+      "tick": 1101
+    },
+    {
+      "engine_tick": 1103,
+      "entity": 2001,
+      "kind": "aim",
+      "position": [
+        -3.0,
+        0.0,
+        10.0
+      ],
+      "target": [
+        0.0,
+        0.0,
+        10.0
+      ],
+      "tick": 1102
+    },
+    {
+      "damage": 25,
+      "direction": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "engine_tick": 1107,
+      "friendly": true,
+      "id": 16,
+      "kind": "bolt",
+      "position": [
+        -0.25,
+        0.649999976158142,
+        10.0
+      ],
+      "speed": 24.0,
+      "tick": 1105
+    },
+    {
+      "collider": "@CharacterBody3D@1848",
+      "damage": 25,
+      "engine_tick": 1112,
+      "friendly": true,
+      "id": 16,
+      "kind": "hit",
+      "position": [
+        -2.54999995231628,
+        0.649999976158142,
+        10.0
+      ],
+      "target": 2001,
+      "tick": 1111
+    },
+    {
+      "amount": 25,
+      "engine_tick": 1112,
+      "entity": 2001,
+      "health": 25,
+      "kind": "sentry_damage",
+      "tick": 1111
+    },
+    {
+      "damage": 15,
+      "direction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "engine_tick": 1115,
+      "friendly": false,
+      "id": 17,
+      "kind": "bolt",
+      "position": [
+        -3.0,
+        0.649999976158142,
+        10.0
+      ],
+      "speed": 8.0,
+      "tick": 1114
+    },
+    {
+      "engine_tick": 1115,
+      "entity": 2001,
+      "kind": "attack",
+      "position": [
+        -3.0,
+        0.0,
+        10.0
+      ],
+      "tick": 1114
+    },
+    {
+      "damage": 25,
+      "direction": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "engine_tick": 1128,
+      "friendly": true,
+      "id": 18,
+      "kind": "bolt",
+      "position": [
+        -0.25,
+        0.649999976158142,
+        10.0
+      ],
+      "speed": 24.0,
+      "tick": 1126
+    },
+    {
+      "collider": "@CharacterBody3D@1848",
+      "damage": 25,
+      "engine_tick": 1133,
+      "friendly": true,
+      "id": 18,
+      "kind": "hit",
+      "position": [
+        -2.54999995231628,
+        0.649999976158142,
+        10.0
+      ],
+      "target": 2001,
+      "tick": 1132
+    },
+    {
+      "amount": 25,
+      "engine_tick": 1133,
+      "entity": 2001,
+      "health": 0,
+      "kind": "sentry_damage",
+      "tick": 1132
+    },
+    {
+      "bodies": 16,
+      "engine_tick": 1133,
+      "id": 3,
+      "kind": "burst",
+      "position": [
+        -3.0,
+        0.0,
+        10.0
+      ],
+      "tick": 1132
+    },
+    {
+      "collider": "@CharacterBody3D@1664",
+      "damage": 15,
+      "engine_tick": 1134,
+      "friendly": false,
+      "id": 17,
+      "kind": "hit",
+      "position": [
+        -0.400000005960464,
+        0.649999976158142,
+        10.0
+      ],
+      "target": 0,
+      "tick": 1133
+    },
+    {
+      "amount": 15,
+      "engine_tick": 1134,
+      "health": 85,
+      "kind": "player_damage",
+      "source": [
+        -3.0,
+        0.0,
+        10.0
+      ],
+      "tick": 1133
+    },
+    {
+      "engine_tick": 1178,
+      "kind": "state",
+      "state": 0,
+      "tick": 1176
+    },
+    {
+      "distance": 10.0,
+      "engine_tick": 1178,
+      "entity": 116,
+      "kind": "spawn_warning",
+      "position": [
+        10.0,
+        0.0,
+        10.0
+      ],
+      "tick": 1176
+    },
+    {
+      "distance": 14.1421356201172,
+      "engine_tick": 1178,
+      "entity": 117,
+      "kind": "spawn_warning",
+      "position": [
+        -10.0,
+        0.0,
+        0.0
+      ],
+      "tick": 1176
+    },
+    {
+      "damage": 25,
+      "direction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "engine_tick": 1180,
+      "friendly": true,
+      "id": 19,
+      "kind": "bolt",
+      "position": [
+        -7.75,
+        0.649999976158142,
+        2.0
+      ],
+      "speed": 24.0,
+      "tick": 1178
+    },
+    {
+      "collider": "CoverWest",
+      "damage": 0,
+      "engine_tick": 1185,
+      "friendly": true,
+      "id": 19,
+      "kind": "hit",
+      "position": [
+        -5.5,
+        0.649999976158142,
+        2.0
+      ],
+      "target": 0,
+      "tick": 1184
+    },
+    {
+      "engine_tick": 1210,
+      "kind": "state",
+      "state": 0,
+      "tick": 1208
+    },
+    {
+      "distance": 10.0,
+      "engine_tick": 1210,
+      "entity": 118,
+      "kind": "spawn_warning",
+      "position": [
+        10.0,
+        0.0,
+        10.0
+      ],
+      "tick": 1208
+    },
+    {
+      "distance": 14.1421356201172,
+      "engine_tick": 1210,
+      "entity": 119,
+      "kind": "spawn_warning",
+      "position": [
+        -10.0,
+        0.0,
+        0.0
+      ],
+      "tick": 1208
+    },
+    {
+      "distance": 10.0,
+      "engine_tick": 1210,
+      "entity": 120,
+      "kind": "spawn_warning",
+      "position": [
+        10.0,
+        0.0,
+        10.0
+      ],
+      "tick": 1208
+    },
+    {
+      "distance": 14.1421356201172,
+      "engine_tick": 1210,
+      "entity": 121,
+      "kind": "spawn_warning",
+      "position": [
+        -10.0,
+        0.0,
+        0.0
+      ],
+      "tick": 1208
+    },
+    {
+      "alive": 1,
+      "distance": 10.0,
+      "engine_tick": 1210,
+      "entity": 120,
+      "kind": "spawn",
+      "position": [
+        10.0,
+        0.0,
+        10.0
+      ],
+      "tick": 1208
+    },
+    {
+      "alive": 2,
+      "distance": 14.1421356201172,
+      "engine_tick": 1210,
+      "entity": 121,
+      "kind": "spawn",
+      "position": [
+        -10.0,
+        0.0,
+        0.0
+      ],
+      "tick": 1208
+    },
+    {
+      "distance": 10.0,
+      "engine_tick": 1210,
+      "entity": 122,
+      "kind": "spawn_warning",
+      "position": [
+        -10.0,
+        0.0,
+        10.0
+      ],
+      "tick": 1208
+    },
+    {
+      "alive": 3,
+      "distance": 10.0,
+      "engine_tick": 1210,
+      "entity": 122,
+      "kind": "spawn",
+      "position": [
+        -10.0,
+        0.0,
+        10.0
+      ],
+      "tick": 1208
+    },
+    {
+      "distance": 22.3606796264648,
+      "engine_tick": 1210,
+      "entity": 123,
+      "kind": "spawn_warning",
+      "position": [
+        -10.0,
+        0.0,
+        -10.0
+      ],
+      "tick": 1208
+    },
+    {
+      "alive": 4,
+      "distance": 22.3606796264648,
+      "engine_tick": 1210,
+      "entity": 123,
+      "kind": "spawn",
+      "position": [
+        -10.0,
+        0.0,
+        -10.0
+      ],
+      "tick": 1208
+    },
+    {
+      "distance": 22.3606796264648,
+      "engine_tick": 1210,
+      "entity": 124,
+      "kind": "spawn_warning",
+      "position": [
+        10.0,
+        0.0,
+        -10.0
+      ],
+      "tick": 1208
+    },
+    {
+      "alive": 5,
+      "distance": 22.3606796264648,
+      "engine_tick": 1210,
+      "entity": 124,
+      "kind": "spawn",
+      "position": [
+        10.0,
+        0.0,
+        -10.0
+      ],
+      "tick": 1208
+    },
+    {
+      "distance": 14.1421356201172,
+      "engine_tick": 1210,
+      "entity": 125,
+      "kind": "spawn_warning",
+      "position": [
+        10.0,
+        0.0,
+        0.0
+      ],
+      "tick": 1208
+    },
+    {
+      "alive": 6,
+      "distance": 14.1421356201172,
+      "engine_tick": 1210,
+      "entity": 125,
+      "kind": "spawn",
+      "position": [
+        10.0,
+        0.0,
+        0.0
+      ],
+      "tick": 1208
+    },
+    {
+      "distance": 10.0,
+      "engine_tick": 1210,
+      "entity": 126,
+      "kind": "spawn_warning",
+      "position": [
+        10.0,
+        0.0,
+        10.0
+      ],
+      "tick": 1208
+    },
+    {
+      "distance": 14.1421356201172,
+      "engine_tick": 1210,
+      "entity": 127,
+      "kind": "spawn_warning",
+      "position": [
+        -10.0,
+        0.0,
+        0.0
+      ],
+      "tick": 1208
+    },
+    {
+      "engine_tick": 1210,
+      "entity": 126,
+      "kind": "spawn_cancelled",
+      "tick": 1208
+    },
+    {
+      "distance": 20.0,
+      "engine_tick": 1210,
+      "entity": 128,
+      "kind": "spawn_warning",
+      "position": [
+        -10.0,
+        0.0,
+        10.0
+      ],
+      "tick": 1208
+    },
+    {
+      "alive": 1,
+      "distance": 22.3606796264648,
+      "engine_tick": 1210,
+      "entity": 127,
+      "kind": "spawn",
+      "position": [
+        -10.0,
+        0.0,
+        0.0
+      ],
+      "tick": 1208
+    },
+    {
+      "engine_tick": 1210,
+      "kind": "state",
+      "state": 0,
+      "tick": 1208
+    },
+    {
+      "distance": 10.0,
+      "engine_tick": 1210,
+      "entity": 129,
+      "kind": "spawn_warning",
+      "position": [
+        10.0,
+        0.0,
+        10.0
+      ],
+      "tick": 1208
+    },
+    {
+      "distance": 14.1421356201172,
+      "engine_tick": 1210,
+      "entity": 130,
+      "kind": "spawn_warning",
+      "position": [
+        -10.0,
+        0.0,
+        0.0
+      ],
+      "tick": 1208
+    },
+    {
+      "distance": 10.0,
+      "engine_tick": 1210,
+      "entity": 131,
+      "kind": "spawn_warning",
+      "position": [
+        10.0,
+        0.0,
+        10.0
+      ],
+      "tick": 1208
+    },
+    {
+      "distance": 14.1421356201172,
+      "engine_tick": 1210,
+      "entity": 132,
+      "kind": "spawn_warning",
+      "position": [
+        -10.0,
+        0.0,
+        0.0
+      ],
+      "tick": 1208
+    },
+    {
+      "engine_tick": 1220,
+      "kind": "state",
+      "state": 1,
+      "tick": 1218
+    },
+    {
+      "engine_tick": 1240,
+      "kind": "state",
+      "state": 0,
+      "tick": 1238
+    },
+    {
+      "engine_tick": 1240,
+      "entity": 2138,
+      "kind": "aim",
+      "position": [
+        -6.0,
+        0.0,
+        10.0
+      ],
+      "target": [
+        0.0,
+        0.0,
+        10.0
+      ],
+      "tick": 1239
+    },
+    {
+      "damage": 15,
+      "direction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "engine_tick": 1244,
+      "friendly": false,
+      "id": 20,
+      "kind": "bolt",
+      "position": [
+        -6.0,
+        0.649999976158142,
+        10.0
+      ],
+      "speed": 8.0,
+      "tick": 1242
+    },
+    {
+      "engine_tick": 1244,
+      "kind": "state",
+      "state": 1,
+      "tick": 1242
+    },
+    {
+      "engine_tick": 1264,
+      "kind": "state",
+      "state": 0,
+      "tick": 1262
+    },
+    {
+      "amount": 200,
+      "engine_tick": 1264,
+      "health": 0,
+      "kind": "player_damage",
+      "source": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "tick": 1262
+    },
+    {
+      "engine_tick": 1264,
+      "kind": "state",
+      "state": 3,
+      "tick": 1262
+    },
+    {
+      "engine_tick": 1264,
+      "health": 0,
+      "kind": "player_died",
+      "tick": 1262
+    },
+    {
+      "engine_tick": 1264,
+      "kind": "state",
+      "state": 0,
+      "tick": 1262
+    },
+    {
+      "distance": 10.0,
+      "engine_tick": 1264,
+      "entity": 133,
+      "kind": "spawn_warning",
+      "position": [
+        10.0,
+        0.0,
+        10.0
+      ],
+      "tick": 1262
+    },
+    {
+      "distance": 14.1421356201172,
+      "engine_tick": 1264,
+      "entity": 134,
+      "kind": "spawn_warning",
+      "position": [
+        -10.0,
+        0.0,
+        0.0
+      ],
+      "tick": 1262
+    },
+    {
+      "code": 82,
+      "engine_tick": 1264,
+      "kind": "input_key",
+      "pressed": true,
+      "tick": 1262
+    },
+    {
+      "code": 82,
+      "engine_tick": 1266,
+      "kind": "input_key",
+      "pressed": false,
+      "tick": 1264
+    }
+  ],
+  "failures": [
+    "aim_36_ticks",
+    "counterfire_interrupts_telegraphed_attack",
+    "counterfire_preserves_health"
+  ],
+  "frames": [],
+  "health": 100,
+  "passed": false,
+  "renderer": "llvmpipe (LLVM 21.1.8, 256 bits)",
+  "scenario": "focused",
+  "state": 0,
+  "ticks": 1264,
+  "visual_assessment": "UNASSESSED: no available image perception; files not visually inspected"
+}

@@ -1,0 +1,7148 @@
+{
+  "checks": [
+    {
+      "name": "real_rendered_x11",
+      "pass": true,
+      "tick": 0
+    },
+    {
+      "name": "physics_60hz",
+      "pass": true,
+      "tick": 0
+    },
+    {
+      "name": "active_survives_30_seconds",
+      "pass": true,
+      "tick": 1800
+    },
+    {
+      "name": "actively_threatened_and_hurt",
+      "pass": true,
+      "tick": 1800
+    },
+    {
+      "name": "player_shot_counterplay",
+      "pass": true,
+      "tick": 1800
+    },
+    {
+      "name": "real_input_fire",
+      "pass": true,
+      "tick": 1800
+    },
+    {
+      "name": "real_input_dash",
+      "pass": true,
+      "tick": 1800
+    }
+  ],
+  "engine": {
+    "build": "official",
+    "hash": "f62fdbde15035c5576dad93e586201f4d41ef0cb",
+    "hex": 263425,
+    "major": 4,
+    "minor": 5,
+    "patch": 1,
+    "status": "stable",
+    "string": "4.5.1-stable (official)",
+    "timestamp": 0
+  },
+  "events": [
+    {
+      "engine_tick": 1,
+      "kind": "state",
+      "state": 0,
+      "tick": 0
+    },
+    {
+      "distance": 10.0,
+      "engine_tick": 1,
+      "entity": 102,
+      "kind": "spawn_warning",
+      "position": [
+        10.0,
+        0.0,
+        10.0
+      ],
+      "tick": 0
+    },
+    {
+      "distance": 14.1421356201172,
+      "engine_tick": 1,
+      "entity": 103,
+      "kind": "spawn_warning",
+      "position": [
+        -10.0,
+        0.0,
+        0.0
+      ],
+      "tick": 0
+    },
+    {
+      "alive": 1,
+      "distance": 10.0,
+      "engine_tick": 61,
+      "entity": 102,
+      "kind": "spawn",
+      "position": [
+        10.0,
+        0.0,
+        10.0
+      ],
+      "tick": 60
+    },
+    {
+      "alive": 2,
+      "distance": 14.1421356201172,
+      "engine_tick": 61,
+      "entity": 103,
+      "kind": "spawn",
+      "position": [
+        -10.0,
+        0.0,
+        0.0
+      ],
+      "tick": 60
+    },
+    {
+      "engine_tick": 142,
+      "entity": 102,
+      "kind": "aim",
+      "position": [
+        5.99999904632568,
+        0.000943387334700674,
+        10.0
+      ],
+      "target": [
+        0.0,
+        0.0,
+        10.0
+      ],
+      "tick": 141
+    },
+    {
+      "damage": 15,
+      "direction": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "engine_tick": 178,
+      "friendly": false,
+      "id": 1,
+      "kind": "bolt",
+      "position": [
+        5.99999904632568,
+        0.650943338871002,
+        10.0
+      ],
+      "speed": 8.0,
+      "tick": 177
+    },
+    {
+      "engine_tick": 178,
+      "entity": 102,
+      "kind": "attack",
+      "position": [
+        5.99999904632568,
+        0.000943387334700674,
+        10.0
+      ],
+      "tick": 177
+    },
+    {
+      "collider": "@CharacterBody3D@404",
+      "damage": 15,
+      "engine_tick": 219,
+      "friendly": false,
+      "id": 1,
+      "kind": "hit",
+      "position": [
+        0.400000005960464,
+        0.650943338871002,
+        10.0
+      ],
+      "target": 0,
+      "tick": 218
+    },
+    {
+      "amount": 15,
+      "engine_tick": 219,
+      "health": 85,
+      "kind": "player_damage",
+      "source": [
+        5.99999904632568,
+        0.000943387334700674,
+        10.0
+      ],
+      "tick": 218
+    },
+    {
+      "code": 65,
+      "engine_tick": 220,
+      "kind": "input_key",
+      "pressed": true,
+      "tick": 219
+    },
+    {
+      "code": 32,
+      "engine_tick": 220,
+      "kind": "input_key",
+      "pressed": true,
+      "tick": 219
+    },
+    {
+      "engine_tick": 220,
+      "entity": 102,
+      "kind": "bot_target",
+      "tick": 219
+    },
+    {
+      "engine_tick": 220,
+      "kind": "input_fire",
+      "pointer": [
+        800.245239257812,
+        594.231384277344
+      ],
+      "pressed": true,
+      "tick": 219
+    },
+    {
+      "distance": 3.0,
+      "engine_tick": 220,
+      "kind": "player_dash",
+      "tick": 219
+    },
+    {
+      "damage": 25,
+      "direction": [
+        1.0,
+        0.0,
+        -0.0000472451465611812
+      ],
+      "engine_tick": 220,
+      "friendly": true,
+      "id": 2,
+      "kind": "bolt",
+      "position": [
+        -2.83333325386047,
+        0.650941967964172,
+        9.9999885559082
+      ],
+      "speed": 24.0,
+      "tick": 219
+    },
+    {
+      "direction": [
+        1.0,
+        0.0,
+        -0.0000472451465611812
+      ],
+      "engine_tick": 220,
+      "kind": "player_fired",
+      "origin": [
+        -2.83333325386047,
+        0.650941967964172,
+        9.9999885559082
+      ],
+      "tick": 219
+    },
+    {
+      "code": 32,
+      "engine_tick": 221,
+      "kind": "input_key",
+      "pressed": false,
+      "tick": 220
+    },
+    {
+      "code": 65,
+      "engine_tick": 221,
+      "kind": "input_key",
+      "pressed": false,
+      "tick": 220
+    },
+    {
+      "engine_tick": 221,
+      "entity": 103,
+      "kind": "aim",
+      "position": [
+        -4.37849235534668,
+        0.00094381021335721,
+        5.62150621414185
+      ],
+      "target": [
+        -3.08333325386047,
+        0.000941969570703804,
+        10.0
+      ],
+      "tick": 220
+    },
+    {
+      "collider": "@CharacterBody3D@588",
+      "damage": 25,
+      "engine_tick": 238,
+      "friendly": true,
+      "id": 2,
+      "kind": "hit",
+      "position": [
+        4.6999979019165,
+        0.650941967964172,
+        9.99962902069092
+      ],
+      "target": 102,
+      "tick": 237
+    },
+    {
+      "amount": 25,
+      "engine_tick": 238,
+      "entity": 102,
+      "health": 25,
+      "kind": "sentry_damage",
+      "tick": 237
+    },
+    {
+      "damage": 25,
+      "direction": [
+        1.0,
+        0.0,
+        -0.0000526180920132902
+      ],
+      "engine_tick": 241,
+      "friendly": true,
+      "id": 3,
+      "kind": "bolt",
+      "position": [
+        -2.83333325386047,
+        0.650941967964172,
+        9.99998664855957
+      ],
+      "speed": 24.0,
+      "tick": 240
+    },
+    {
+      "direction": [
+        1.0,
+        0.0,
+        -0.0000526180920132902
+      ],
+      "engine_tick": 241,
+      "kind": "player_fired",
+      "origin": [
+        -2.83333325386047,
+        0.650941967964172,
+        9.99998664855957
+      ],
+      "tick": 240
+    },
+    {
+      "damage": 15,
+      "direction": [
+        0.283650934696198,
+        0.0,
+        0.958927631378174
+      ],
+      "engine_tick": 257,
+      "friendly": false,
+      "id": 4,
+      "kind": "bolt",
+      "position": [
+        -4.37849235534668,
+        0.65094381570816,
+        5.62150621414185
+      ],
+      "speed": 8.0,
+      "tick": 256
+    },
+    {
+      "engine_tick": 257,
+      "entity": 103,
+      "kind": "attack",
+      "position": [
+        -4.37849235534668,
+        0.00094381021335721,
+        5.62150621414185
+      ],
+      "tick": 256
+    },
+    {
+      "collider": "@CharacterBody3D@588",
+      "damage": 25,
+      "engine_tick": 257,
+      "friendly": true,
+      "id": 3,
+      "kind": "hit",
+      "position": [
+        3.74999618530273,
+        0.650941967964172,
+        9.99964141845703
+      ],
+      "target": 102,
+      "tick": 256
+    },
+    {
+      "amount": 25,
+      "engine_tick": 257,
+      "entity": 102,
+      "health": 0,
+      "kind": "sentry_damage",
+      "tick": 256
+    },
+    {
+      "bodies": 16,
+      "engine_tick": 257,
+      "id": 1,
+      "kind": "burst",
+      "position": [
+        4.14999628067017,
+        0.000942985294386744,
+        10.0
+      ],
+      "tick": 256
+    },
+    {
+      "alive": 1,
+      "engine_tick": 257,
+      "entity": 102,
+      "kind": "destroyed",
+      "tick": 256
+    },
+    {
+      "engine_tick": 258,
+      "entity": 103,
+      "kind": "bot_target",
+      "tick": 257
+    },
+    {
+      "damage": 25,
+      "direction": [
+        -0.283647894859314,
+        0.0,
+        -0.958928525447845
+      ],
+      "engine_tick": 262,
+      "friendly": true,
+      "id": 5,
+      "kind": "bolt",
+      "position": [
+        -3.15424513816833,
+        0.650941967964172,
+        9.76026821136475
+      ],
+      "speed": 24.0,
+      "tick": 261
+    },
+    {
+      "direction": [
+        -0.283647894859314,
+        0.0,
+        -0.958928525447845
+      ],
+      "engine_tick": 262,
+      "kind": "player_fired",
+      "origin": [
+        -3.15424513816833,
+        0.650941967964172,
+        9.76026821136475
+      ],
+      "tick": 261
+    },
+    {
+      "collider": "@CharacterBody3D@594",
+      "damage": 25,
+      "engine_tick": 271,
+      "friendly": true,
+      "id": 5,
+      "kind": "hit",
+      "position": [
+        -4.25083637237549,
+        0.650941967964172,
+        6.05301952362061
+      ],
+      "target": 103,
+      "tick": 270
+    },
+    {
+      "amount": 25,
+      "engine_tick": 271,
+      "entity": 103,
+      "health": 25,
+      "kind": "sentry_damage",
+      "tick": 270
+    },
+    {
+      "damage": 25,
+      "direction": [
+        -0.283647894859314,
+        0.0,
+        -0.958928525447845
+      ],
+      "engine_tick": 283,
+      "friendly": true,
+      "id": 6,
+      "kind": "bolt",
+      "position": [
+        -3.15424513816833,
+        0.650941967964172,
+        9.76026821136475
+      ],
+      "speed": 24.0,
+      "tick": 282
+    },
+    {
+      "direction": [
+        -0.283647894859314,
+        0.0,
+        -0.958928525447845
+      ],
+      "engine_tick": 283,
+      "kind": "player_fired",
+      "origin": [
+        -3.15424513816833,
+        0.650941967964172,
+        9.76026821136475
+      ],
+      "tick": 282
+    },
+    {
+      "collider": "@CharacterBody3D@404",
+      "damage": 15,
+      "engine_tick": 288,
+      "friendly": false,
+      "id": 4,
+      "kind": "hit",
+      "position": [
+        -3.19679355621338,
+        0.65094381570816,
+        9.61642932891846
+      ],
+      "target": 0,
+      "tick": 287
+    },
+    {
+      "amount": 15,
+      "engine_tick": 288,
+      "health": 70,
+      "kind": "player_damage",
+      "source": [
+        -4.37849235534668,
+        0.00094381021335721,
+        5.62150621414185
+      ],
+      "tick": 287
+    },
+    {
+      "collider": "@CharacterBody3D@594",
+      "damage": 25,
+      "engine_tick": 292,
+      "friendly": true,
+      "id": 6,
+      "kind": "hit",
+      "position": [
+        -4.25083637237549,
+        0.650941967964172,
+        6.05301952362061
+      ],
+      "target": 103,
+      "tick": 291
+    },
+    {
+      "amount": 25,
+      "engine_tick": 292,
+      "entity": 103,
+      "health": 0,
+      "kind": "sentry_damage",
+      "tick": 291
+    },
+    {
+      "bodies": 32,
+      "engine_tick": 292,
+      "id": 2,
+      "kind": "burst",
+      "position": [
+        -4.37849235534668,
+        0.00094381021335721,
+        5.62150621414185
+      ],
+      "tick": 291
+    },
+    {
+      "alive": 0,
+      "engine_tick": 292,
+      "entity": 103,
+      "kind": "destroyed",
+      "tick": 291
+    },
+    {
+      "engine_tick": 293,
+      "kind": "input_fire",
+      "pointer": [
+        559.597900390625,
+        569.313354492188
+      ],
+      "pressed": false,
+      "tick": 292
+    },
+    {
+      "distance": 16.4673480987549,
+      "engine_tick": 901,
+      "entity": 104,
+      "kind": "spawn_warning",
+      "position": [
+        10.0,
+        0.0,
+        0.0
+      ],
+      "tick": 900
+    },
+    {
+      "alive": 1,
+      "distance": 16.4673480987549,
+      "engine_tick": 961,
+      "entity": 104,
+      "kind": "spawn",
+      "position": [
+        10.0,
+        0.0,
+        0.0
+      ],
+      "tick": 960
+    },
+    {
+      "engine_tick": 962,
+      "entity": 104,
+      "kind": "bot_target",
+      "tick": 961
+    },
+    {
+      "engine_tick": 962,
+      "kind": "input_fire",
+      "pointer": [
+        855.0224609375,
+        388.768402099609
+      ],
+      "pressed": true,
+      "tick": 961
+    },
+    {
+      "damage": 25,
+      "direction": [
+        0.794501543045044,
+        0.0,
+        -0.607262194156647
+      ],
+      "engine_tick": 962,
+      "friendly": true,
+      "id": 7,
+      "kind": "bolt",
+      "position": [
+        -2.88470792770386,
+        0.650941967964172,
+        9.84818458557129
+      ],
+      "speed": 24.0,
+      "tick": 961
+    },
+    {
+      "direction": [
+        0.794501543045044,
+        0.0,
+        -0.607262194156647
+      ],
+      "engine_tick": 962,
+      "kind": "player_fired",
+      "origin": [
+        -2.88470792770386,
+        0.650941967964172,
+        9.84818458557129
+      ],
+      "tick": 961
+    },
+    {
+      "damage": 25,
+      "direction": [
+        0.794485867023468,
+        0.0,
+        -0.607282638549805
+      ],
+      "engine_tick": 983,
+      "friendly": true,
+      "id": 8,
+      "kind": "bolt",
+      "position": [
+        -2.88471174240112,
+        0.650941967964172,
+        9.84817886352539
+      ],
+      "speed": 24.0,
+      "tick": 982
+    },
+    {
+      "direction": [
+        0.794485867023468,
+        0.0,
+        -0.607282638549805
+      ],
+      "engine_tick": 983,
+      "kind": "player_fired",
+      "origin": [
+        -2.88471174240112,
+        0.650941967964172,
+        9.84817886352539
+      ],
+      "tick": 982
+    },
+    {
+      "collider": "@CharacterBody3D@718",
+      "damage": 25,
+      "engine_tick": 997,
+      "friendly": true,
+      "id": 7,
+      "kind": "hit",
+      "position": [
+        8.25211524963379,
+        0.650941967964172,
+        1.33596920967102
+      ],
+      "target": 104,
+      "tick": 996
+    },
+    {
+      "amount": 25,
+      "engine_tick": 997,
+      "entity": 104,
+      "health": 25,
+      "kind": "sentry_damage",
+      "tick": 996
+    },
+    {
+      "damage": 25,
+      "direction": [
+        0.794485092163086,
+        0.0,
+        -0.607283651828766
+      ],
+      "engine_tick": 1004,
+      "friendly": true,
+      "id": 9,
+      "kind": "bolt",
+      "position": [
+        -2.8847119808197,
+        0.650941967964172,
+        9.84817886352539
+      ],
+      "speed": 24.0,
+      "tick": 1003
+    },
+    {
+      "direction": [
+        0.794485092163086,
+        0.0,
+        -0.607283651828766
+      ],
+      "engine_tick": 1004,
+      "kind": "player_fired",
+      "origin": [
+        -2.8847119808197,
+        0.650941967964172,
+        9.84817886352539
+      ],
+      "tick": 1003
+    },
+    {
+      "collider": "@CharacterBody3D@718",
+      "damage": 25,
+      "engine_tick": 1015,
+      "friendly": true,
+      "id": 8,
+      "kind": "hit",
+      "position": [
+        7.53685808181763,
+        0.650941967964172,
+        1.88221991062164
+      ],
+      "target": 104,
+      "tick": 1014
+    },
+    {
+      "amount": 25,
+      "engine_tick": 1015,
+      "entity": 104,
+      "health": 0,
+      "kind": "sentry_damage",
+      "tick": 1014
+    },
+    {
+      "bodies": 16,
+      "engine_tick": 1015,
+      "id": 3,
+      "kind": "burst",
+      "position": [
+        7.85488224029541,
+        0.000941807986237109,
+        1.63960766792297
+      ],
+      "tick": 1014
+    },
+    {
+      "alive": 0,
+      "engine_tick": 1015,
+      "entity": 104,
+      "kind": "destroyed",
+      "tick": 1014
+    },
+    {
+      "engine_tick": 1016,
+      "kind": "input_fire",
+      "pointer": [
+        559.597900390625,
+        569.313354492188
+      ],
+      "pressed": false,
+      "tick": 1015
+    },
+    {
+      "collider": "EastWall",
+      "damage": 0,
+      "engine_tick": 1050,
+      "friendly": true,
+      "id": 9,
+      "kind": "hit",
+      "position": [
+        12.0,
+        0.650941967964172,
+        -1.52930426597595
+      ],
+      "target": 0,
+      "tick": 1049
+    },
+    {
+      "distance": 21.1622371673584,
+      "engine_tick": 1801,
+      "entity": 105,
+      "kind": "spawn_warning",
+      "position": [
+        -10.0,
+        0.0,
+        -10.0
+      ],
+      "tick": 1800
+    }
+  ],
+  "failures": [],
+  "frames": [
+    {
+      "error": 0,
+      "file": "frame_00001.png",
+      "observed_tick": 0,
+      "tick": 0,
+      "unix_seconds": 1789337375.4449
+    },
+    {
+      "error": 0,
+      "file": "frame_00002.png",
+      "observed_tick": 2,
+      "tick": 2,
+      "unix_seconds": 1789337375.508
+    },
+    {
+      "error": 0,
+      "file": "frame_00003.png",
+      "observed_tick": 4,
+      "tick": 4,
+      "unix_seconds": 1789337375.56691
+    },
+    {
+      "error": 0,
+      "file": "frame_00004.png",
+      "observed_tick": 6,
+      "tick": 6,
+      "unix_seconds": 1789337375.62626
+    },
+    {
+      "error": 0,
+      "file": "frame_00005.png",
+      "observed_tick": 8,
+      "tick": 8,
+      "unix_seconds": 1789337375.68555
+    },
+    {
+      "error": 0,
+      "file": "frame_00006.png",
+      "observed_tick": 10,
+      "tick": 10,
+      "unix_seconds": 1789337375.74633
+    },
+    {
+      "error": 0,
+      "file": "frame_00007.png",
+      "observed_tick": 12,
+      "tick": 12,
+      "unix_seconds": 1789337375.80695
+    },
+    {
+      "error": 0,
+      "file": "frame_00008.png",
+      "observed_tick": 14,
+      "tick": 14,
+      "unix_seconds": 1789337375.86771
+    },
+    {
+      "error": 0,
+      "file": "frame_00009.png",
+      "observed_tick": 16,
+      "tick": 16,
+      "unix_seconds": 1789337375.92717
+    },
+    {
+      "error": 0,
+      "file": "frame_00010.png",
+      "observed_tick": 18,
+      "tick": 18,
+      "unix_seconds": 1789337375.98819
+    },
+    {
+      "error": 0,
+      "file": "frame_00011.png",
+      "observed_tick": 20,
+      "tick": 20,
+      "unix_seconds": 1789337376.05245
+    },
+    {
+      "error": 0,
+      "file": "frame_00012.png",
+      "observed_tick": 22,
+      "tick": 22,
+      "unix_seconds": 1789337376.11037
+    },
+    {
+      "error": 0,
+      "file": "frame_00013.png",
+      "observed_tick": 24,
+      "tick": 24,
+      "unix_seconds": 1789337376.17024
+    },
+    {
+      "error": 0,
+      "file": "frame_00014.png",
+      "observed_tick": 26,
+      "tick": 26,
+      "unix_seconds": 1789337376.2315
+    },
+    {
+      "error": 0,
+      "file": "frame_00015.png",
+      "observed_tick": 28,
+      "tick": 28,
+      "unix_seconds": 1789337376.29585
+    },
+    {
+      "error": 0,
+      "file": "frame_00016.png",
+      "observed_tick": 30,
+      "tick": 30,
+      "unix_seconds": 1789337376.35788
+    },
+    {
+      "error": 0,
+      "file": "frame_00017.png",
+      "observed_tick": 32,
+      "tick": 32,
+      "unix_seconds": 1789337376.42163
+    },
+    {
+      "error": 0,
+      "file": "frame_00018.png",
+      "observed_tick": 34,
+      "tick": 34,
+      "unix_seconds": 1789337376.47922
+    },
+    {
+      "error": 0,
+      "file": "frame_00019.png",
+      "observed_tick": 36,
+      "tick": 36,
+      "unix_seconds": 1789337376.53821
+    },
+    {
+      "error": 0,
+      "file": "frame_00020.png",
+      "observed_tick": 38,
+      "tick": 38,
+      "unix_seconds": 1789337376.5957
+    },
+    {
+      "error": 0,
+      "file": "frame_00021.png",
+      "observed_tick": 40,
+      "tick": 40,
+      "unix_seconds": 1789337376.65308
+    },
+    {
+      "error": 0,
+      "file": "frame_00022.png",
+      "observed_tick": 42,
+      "tick": 42,
+      "unix_seconds": 1789337376.70965
+    },
+    {
+      "error": 0,
+      "file": "frame_00023.png",
+      "observed_tick": 44,
+      "tick": 44,
+      "unix_seconds": 1789337376.7701
+    },
+    {
+      "error": 0,
+      "file": "frame_00024.png",
+      "observed_tick": 46,
+      "tick": 46,
+      "unix_seconds": 1789337376.83213
+    },
+    {
+      "error": 0,
+      "file": "frame_00025.png",
+      "observed_tick": 48,
+      "tick": 48,
+      "unix_seconds": 1789337376.89995
+    },
+    {
+      "error": 0,
+      "file": "frame_00026.png",
+      "observed_tick": 50,
+      "tick": 50,
+      "unix_seconds": 1789337376.9605
+    },
+    {
+      "error": 0,
+      "file": "frame_00027.png",
+      "observed_tick": 52,
+      "tick": 52,
+      "unix_seconds": 1789337377.02162
+    },
+    {
+      "error": 0,
+      "file": "frame_00028.png",
+      "observed_tick": 54,
+      "tick": 54,
+      "unix_seconds": 1789337377.08792
+    },
+    {
+      "error": 0,
+      "file": "frame_00029.png",
+      "observed_tick": 56,
+      "tick": 56,
+      "unix_seconds": 1789337377.15099
+    },
+    {
+      "error": 0,
+      "file": "frame_00030.png",
+      "observed_tick": 58,
+      "tick": 58,
+      "unix_seconds": 1789337377.21344
+    },
+    {
+      "error": 0,
+      "file": "frame_00031.png",
+      "observed_tick": 60,
+      "tick": 60,
+      "unix_seconds": 1789337377.2753
+    },
+    {
+      "error": 0,
+      "file": "frame_00032.png",
+      "observed_tick": 62,
+      "tick": 62,
+      "unix_seconds": 1789337377.33469
+    },
+    {
+      "error": 0,
+      "file": "frame_00033.png",
+      "observed_tick": 64,
+      "tick": 64,
+      "unix_seconds": 1789337377.39776
+    },
+    {
+      "error": 0,
+      "file": "frame_00034.png",
+      "observed_tick": 66,
+      "tick": 66,
+      "unix_seconds": 1789337377.46006
+    },
+    {
+      "error": 0,
+      "file": "frame_00035.png",
+      "observed_tick": 68,
+      "tick": 68,
+      "unix_seconds": 1789337377.5196
+    },
+    {
+      "error": 0,
+      "file": "frame_00036.png",
+      "observed_tick": 70,
+      "tick": 70,
+      "unix_seconds": 1789337377.57867
+    },
+    {
+      "error": 0,
+      "file": "frame_00037.png",
+      "observed_tick": 72,
+      "tick": 72,
+      "unix_seconds": 1789337377.63912
+    },
+    {
+      "error": 0,
+      "file": "frame_00038.png",
+      "observed_tick": 74,
+      "tick": 74,
+      "unix_seconds": 1789337377.69896
+    },
+    {
+      "error": 0,
+      "file": "frame_00039.png",
+      "observed_tick": 76,
+      "tick": 76,
+      "unix_seconds": 1789337377.7596
+    },
+    {
+      "error": 0,
+      "file": "frame_00040.png",
+      "observed_tick": 78,
+      "tick": 78,
+      "unix_seconds": 1789337377.81828
+    },
+    {
+      "error": 0,
+      "file": "frame_00041.png",
+      "observed_tick": 80,
+      "tick": 80,
+      "unix_seconds": 1789337377.87832
+    },
+    {
+      "error": 0,
+      "file": "frame_00042.png",
+      "observed_tick": 82,
+      "tick": 82,
+      "unix_seconds": 1789337377.93813
+    },
+    {
+      "error": 0,
+      "file": "frame_00043.png",
+      "observed_tick": 84,
+      "tick": 84,
+      "unix_seconds": 1789337378.00056
+    },
+    {
+      "error": 0,
+      "file": "frame_00044.png",
+      "observed_tick": 86,
+      "tick": 86,
+      "unix_seconds": 1789337378.06406
+    },
+    {
+      "error": 0,
+      "file": "frame_00045.png",
+      "observed_tick": 88,
+      "tick": 88,
+      "unix_seconds": 1789337378.13339
+    },
+    {
+      "error": 0,
+      "file": "frame_00046.png",
+      "observed_tick": 90,
+      "tick": 90,
+      "unix_seconds": 1789337378.19965
+    },
+    {
+      "error": 0,
+      "file": "frame_00047.png",
+      "observed_tick": 92,
+      "tick": 92,
+      "unix_seconds": 1789337378.25904
+    },
+    {
+      "error": 0,
+      "file": "frame_00048.png",
+      "observed_tick": 94,
+      "tick": 94,
+      "unix_seconds": 1789337378.32888
+    },
+    {
+      "error": 0,
+      "file": "frame_00049.png",
+      "observed_tick": 96,
+      "tick": 96,
+      "unix_seconds": 1789337378.38951
+    },
+    {
+      "error": 0,
+      "file": "frame_00050.png",
+      "observed_tick": 98,
+      "tick": 98,
+      "unix_seconds": 1789337378.45144
+    },
+    {
+      "error": 0,
+      "file": "frame_00051.png",
+      "observed_tick": 100,
+      "tick": 100,
+      "unix_seconds": 1789337378.51455
+    },
+    {
+      "error": 0,
+      "file": "frame_00052.png",
+      "observed_tick": 102,
+      "tick": 102,
+      "unix_seconds": 1789337378.57547
+    },
+    {
+      "error": 0,
+      "file": "frame_00053.png",
+      "observed_tick": 104,
+      "tick": 104,
+      "unix_seconds": 1789337378.63856
+    },
+    {
+      "error": 0,
+      "file": "frame_00054.png",
+      "observed_tick": 106,
+      "tick": 106,
+      "unix_seconds": 1789337378.69884
+    },
+    {
+      "error": 0,
+      "file": "frame_00055.png",
+      "observed_tick": 108,
+      "tick": 108,
+      "unix_seconds": 1789337378.76468
+    },
+    {
+      "error": 0,
+      "file": "frame_00056.png",
+      "observed_tick": 110,
+      "tick": 110,
+      "unix_seconds": 1789337378.83083
+    },
+    {
+      "error": 0,
+      "file": "frame_00057.png",
+      "observed_tick": 112,
+      "tick": 112,
+      "unix_seconds": 1789337378.88991
+    },
+    {
+      "error": 0,
+      "file": "frame_00058.png",
+      "observed_tick": 114,
+      "tick": 114,
+      "unix_seconds": 1789337378.95034
+    },
+    {
+      "error": 0,
+      "file": "frame_00059.png",
+      "observed_tick": 116,
+      "tick": 116,
+      "unix_seconds": 1789337379.014
+    },
+    {
+      "error": 0,
+      "file": "frame_00060.png",
+      "observed_tick": 118,
+      "tick": 118,
+      "unix_seconds": 1789337379.07417
+    },
+    {
+      "error": 0,
+      "file": "frame_00061.png",
+      "observed_tick": 120,
+      "tick": 120,
+      "unix_seconds": 1789337379.13669
+    },
+    {
+      "error": 0,
+      "file": "frame_00062.png",
+      "observed_tick": 122,
+      "tick": 122,
+      "unix_seconds": 1789337379.20149
+    },
+    {
+      "error": 0,
+      "file": "frame_00063.png",
+      "observed_tick": 124,
+      "tick": 124,
+      "unix_seconds": 1789337379.26383
+    },
+    {
+      "error": 0,
+      "file": "frame_00064.png",
+      "observed_tick": 126,
+      "tick": 126,
+      "unix_seconds": 1789337379.32361
+    },
+    {
+      "error": 0,
+      "file": "frame_00065.png",
+      "observed_tick": 128,
+      "tick": 128,
+      "unix_seconds": 1789337379.38127
+    },
+    {
+      "error": 0,
+      "file": "frame_00066.png",
+      "observed_tick": 130,
+      "tick": 130,
+      "unix_seconds": 1789337379.43979
+    },
+    {
+      "error": 0,
+      "file": "frame_00067.png",
+      "observed_tick": 132,
+      "tick": 132,
+      "unix_seconds": 1789337379.49506
+    },
+    {
+      "error": 0,
+      "file": "frame_00068.png",
+      "observed_tick": 134,
+      "tick": 134,
+      "unix_seconds": 1789337379.55239
+    },
+    {
+      "error": 0,
+      "file": "frame_00069.png",
+      "observed_tick": 136,
+      "tick": 136,
+      "unix_seconds": 1789337379.61037
+    },
+    {
+      "error": 0,
+      "file": "frame_00070.png",
+      "observed_tick": 138,
+      "tick": 138,
+      "unix_seconds": 1789337379.67386
+    },
+    {
+      "error": 0,
+      "file": "frame_00071.png",
+      "observed_tick": 140,
+      "tick": 140,
+      "unix_seconds": 1789337379.7345
+    },
+    {
+      "error": 0,
+      "file": "frame_00072.png",
+      "observed_tick": 142,
+      "tick": 142,
+      "unix_seconds": 1789337379.79891
+    },
+    {
+      "error": 0,
+      "file": "frame_00073.png",
+      "observed_tick": 144,
+      "tick": 144,
+      "unix_seconds": 1789337379.85414
+    },
+    {
+      "error": 0,
+      "file": "frame_00074.png",
+      "observed_tick": 146,
+      "tick": 146,
+      "unix_seconds": 1789337379.9102
+    },
+    {
+      "error": 0,
+      "file": "frame_00075.png",
+      "observed_tick": 148,
+      "tick": 148,
+      "unix_seconds": 1789337379.96575
+    },
+    {
+      "error": 0,
+      "file": "frame_00076.png",
+      "observed_tick": 150,
+      "tick": 150,
+      "unix_seconds": 1789337380.02096
+    },
+    {
+      "error": 0,
+      "file": "frame_00077.png",
+      "observed_tick": 152,
+      "tick": 152,
+      "unix_seconds": 1789337380.07731
+    },
+    {
+      "error": 0,
+      "file": "frame_00078.png",
+      "observed_tick": 154,
+      "tick": 154,
+      "unix_seconds": 1789337380.13356
+    },
+    {
+      "error": 0,
+      "file": "frame_00079.png",
+      "observed_tick": 156,
+      "tick": 156,
+      "unix_seconds": 1789337380.18948
+    },
+    {
+      "error": 0,
+      "file": "frame_00080.png",
+      "observed_tick": 158,
+      "tick": 158,
+      "unix_seconds": 1789337380.25228
+    },
+    {
+      "error": 0,
+      "file": "frame_00081.png",
+      "observed_tick": 160,
+      "tick": 160,
+      "unix_seconds": 1789337380.30829
+    },
+    {
+      "error": 0,
+      "file": "frame_00082.png",
+      "observed_tick": 162,
+      "tick": 162,
+      "unix_seconds": 1789337380.36561
+    },
+    {
+      "error": 0,
+      "file": "frame_00083.png",
+      "observed_tick": 164,
+      "tick": 164,
+      "unix_seconds": 1789337380.42525
+    },
+    {
+      "error": 0,
+      "file": "frame_00084.png",
+      "observed_tick": 166,
+      "tick": 166,
+      "unix_seconds": 1789337380.48084
+    },
+    {
+      "error": 0,
+      "file": "frame_00085.png",
+      "observed_tick": 168,
+      "tick": 168,
+      "unix_seconds": 1789337380.53717
+    },
+    {
+      "error": 0,
+      "file": "frame_00086.png",
+      "observed_tick": 170,
+      "tick": 170,
+      "unix_seconds": 1789337380.59421
+    },
+    {
+      "error": 0,
+      "file": "frame_00087.png",
+      "observed_tick": 172,
+      "tick": 172,
+      "unix_seconds": 1789337380.65187
+    },
+    {
+      "error": 0,
+      "file": "frame_00088.png",
+      "observed_tick": 174,
+      "tick": 174,
+      "unix_seconds": 1789337380.71026
+    },
+    {
+      "error": 0,
+      "file": "frame_00089.png",
+      "observed_tick": 176,
+      "tick": 176,
+      "unix_seconds": 1789337380.76659
+    },
+    {
+      "error": 0,
+      "file": "frame_00090.png",
+      "observed_tick": 178,
+      "tick": 178,
+      "unix_seconds": 1789337380.82206
+    },
+    {
+      "error": 0,
+      "file": "frame_00091.png",
+      "observed_tick": 180,
+      "tick": 180,
+      "unix_seconds": 1789337380.87903
+    },
+    {
+      "error": 0,
+      "file": "frame_00092.png",
+      "observed_tick": 182,
+      "tick": 182,
+      "unix_seconds": 1789337380.93488
+    },
+    {
+      "error": 0,
+      "file": "frame_00093.png",
+      "observed_tick": 184,
+      "tick": 184,
+      "unix_seconds": 1789337380.9904
+    },
+    {
+      "error": 0,
+      "file": "frame_00094.png",
+      "observed_tick": 186,
+      "tick": 186,
+      "unix_seconds": 1789337381.04829
+    },
+    {
+      "error": 0,
+      "file": "frame_00095.png",
+      "observed_tick": 188,
+      "tick": 188,
+      "unix_seconds": 1789337381.10515
+    },
+    {
+      "error": 0,
+      "file": "frame_00096.png",
+      "observed_tick": 190,
+      "tick": 190,
+      "unix_seconds": 1789337381.16162
+    },
+    {
+      "error": 0,
+      "file": "frame_00097.png",
+      "observed_tick": 192,
+      "tick": 192,
+      "unix_seconds": 1789337381.21877
+    },
+    {
+      "error": 0,
+      "file": "frame_00098.png",
+      "observed_tick": 194,
+      "tick": 194,
+      "unix_seconds": 1789337381.27572
+    },
+    {
+      "error": 0,
+      "file": "frame_00099.png",
+      "observed_tick": 196,
+      "tick": 196,
+      "unix_seconds": 1789337381.33555
+    },
+    {
+      "error": 0,
+      "file": "frame_00100.png",
+      "observed_tick": 198,
+      "tick": 198,
+      "unix_seconds": 1789337381.39434
+    },
+    {
+      "error": 0,
+      "file": "frame_00101.png",
+      "observed_tick": 200,
+      "tick": 200,
+      "unix_seconds": 1789337381.44895
+    },
+    {
+      "error": 0,
+      "file": "frame_00102.png",
+      "observed_tick": 202,
+      "tick": 202,
+      "unix_seconds": 1789337381.50772
+    },
+    {
+      "error": 0,
+      "file": "frame_00103.png",
+      "observed_tick": 204,
+      "tick": 204,
+      "unix_seconds": 1789337381.56695
+    },
+    {
+      "error": 0,
+      "file": "frame_00104.png",
+      "observed_tick": 206,
+      "tick": 206,
+      "unix_seconds": 1789337381.62292
+    },
+    {
+      "error": 0,
+      "file": "frame_00105.png",
+      "observed_tick": 208,
+      "tick": 208,
+      "unix_seconds": 1789337381.68008
+    },
+    {
+      "error": 0,
+      "file": "frame_00106.png",
+      "observed_tick": 210,
+      "tick": 210,
+      "unix_seconds": 1789337381.738
+    },
+    {
+      "error": 0,
+      "file": "frame_00107.png",
+      "observed_tick": 212,
+      "tick": 212,
+      "unix_seconds": 1789337381.79472
+    },
+    {
+      "error": 0,
+      "file": "frame_00108.png",
+      "observed_tick": 214,
+      "tick": 214,
+      "unix_seconds": 1789337381.85285
+    },
+    {
+      "error": 0,
+      "file": "frame_00109.png",
+      "observed_tick": 216,
+      "tick": 216,
+      "unix_seconds": 1789337381.90912
+    },
+    {
+      "error": 0,
+      "file": "frame_00110.png",
+      "observed_tick": 218,
+      "tick": 218,
+      "unix_seconds": 1789337381.96331
+    },
+    {
+      "error": 0,
+      "file": "frame_00111.png",
+      "observed_tick": 220,
+      "tick": 220,
+      "unix_seconds": 1789337382.02051
+    },
+    {
+      "error": 0,
+      "file": "frame_00112.png",
+      "observed_tick": 222,
+      "tick": 222,
+      "unix_seconds": 1789337382.0813
+    },
+    {
+      "error": 0,
+      "file": "frame_00113.png",
+      "observed_tick": 224,
+      "tick": 224,
+      "unix_seconds": 1789337382.14227
+    },
+    {
+      "error": 0,
+      "file": "frame_00114.png",
+      "observed_tick": 226,
+      "tick": 226,
+      "unix_seconds": 1789337382.19899
+    },
+    {
+      "error": 0,
+      "file": "frame_00115.png",
+      "observed_tick": 228,
+      "tick": 228,
+      "unix_seconds": 1789337382.25884
+    },
+    {
+      "error": 0,
+      "file": "frame_00116.png",
+      "observed_tick": 230,
+      "tick": 230,
+      "unix_seconds": 1789337382.32089
+    },
+    {
+      "error": 0,
+      "file": "frame_00117.png",
+      "observed_tick": 232,
+      "tick": 232,
+      "unix_seconds": 1789337382.37806
+    },
+    {
+      "error": 0,
+      "file": "frame_00118.png",
+      "observed_tick": 234,
+      "tick": 234,
+      "unix_seconds": 1789337382.4355
+    },
+    {
+      "error": 0,
+      "file": "frame_00119.png",
+      "observed_tick": 236,
+      "tick": 236,
+      "unix_seconds": 1789337382.49687
+    },
+    {
+      "error": 0,
+      "file": "frame_00120.png",
+      "observed_tick": 238,
+      "tick": 238,
+      "unix_seconds": 1789337382.55675
+    },
+    {
+      "error": 0,
+      "file": "frame_00121.png",
+      "observed_tick": 240,
+      "tick": 240,
+      "unix_seconds": 1789337382.62002
+    },
+    {
+      "error": 0,
+      "file": "frame_00122.png",
+      "observed_tick": 242,
+      "tick": 242,
+      "unix_seconds": 1789337382.67922
+    },
+    {
+      "error": 0,
+      "file": "frame_00123.png",
+      "observed_tick": 244,
+      "tick": 244,
+      "unix_seconds": 1789337382.73825
+    },
+    {
+      "error": 0,
+      "file": "frame_00124.png",
+      "observed_tick": 246,
+      "tick": 246,
+      "unix_seconds": 1789337382.79856
+    },
+    {
+      "error": 0,
+      "file": "frame_00125.png",
+      "observed_tick": 248,
+      "tick": 248,
+      "unix_seconds": 1789337382.85663
+    },
+    {
+      "error": 0,
+      "file": "frame_00126.png",
+      "observed_tick": 250,
+      "tick": 250,
+      "unix_seconds": 1789337382.91564
+    },
+    {
+      "error": 0,
+      "file": "frame_00127.png",
+      "observed_tick": 252,
+      "tick": 252,
+      "unix_seconds": 1789337382.97183
+    },
+    {
+      "error": 0,
+      "file": "frame_00128.png",
+      "observed_tick": 254,
+      "tick": 254,
+      "unix_seconds": 1789337383.02895
+    },
+    {
+      "error": 0,
+      "file": "frame_00129.png",
+      "observed_tick": 256,
+      "tick": 256,
+      "unix_seconds": 1789337383.08736
+    },
+    {
+      "error": 0,
+      "file": "frame_00130.png",
+      "observed_tick": 258,
+      "tick": 258,
+      "unix_seconds": 1789337383.16977
+    },
+    {
+      "error": 0,
+      "file": "frame_00131.png",
+      "observed_tick": 260,
+      "tick": 260,
+      "unix_seconds": 1789337383.23257
+    },
+    {
+      "error": 0,
+      "file": "frame_00132.png",
+      "observed_tick": 262,
+      "tick": 262,
+      "unix_seconds": 1789337383.29153
+    },
+    {
+      "error": 0,
+      "file": "frame_00133.png",
+      "observed_tick": 264,
+      "tick": 264,
+      "unix_seconds": 1789337383.35017
+    },
+    {
+      "error": 0,
+      "file": "frame_00134.png",
+      "observed_tick": 266,
+      "tick": 266,
+      "unix_seconds": 1789337383.4105
+    },
+    {
+      "error": 0,
+      "file": "frame_00135.png",
+      "observed_tick": 268,
+      "tick": 268,
+      "unix_seconds": 1789337383.4701
+    },
+    {
+      "error": 0,
+      "file": "frame_00136.png",
+      "observed_tick": 270,
+      "tick": 270,
+      "unix_seconds": 1789337383.52801
+    },
+    {
+      "error": 0,
+      "file": "frame_00137.png",
+      "observed_tick": 272,
+      "tick": 272,
+      "unix_seconds": 1789337383.58502
+    },
+    {
+      "error": 0,
+      "file": "frame_00138.png",
+      "observed_tick": 274,
+      "tick": 274,
+      "unix_seconds": 1789337383.64217
+    },
+    {
+      "error": 0,
+      "file": "frame_00139.png",
+      "observed_tick": 276,
+      "tick": 276,
+      "unix_seconds": 1789337383.70088
+    },
+    {
+      "error": 0,
+      "file": "frame_00140.png",
+      "observed_tick": 278,
+      "tick": 278,
+      "unix_seconds": 1789337383.75886
+    },
+    {
+      "error": 0,
+      "file": "frame_00141.png",
+      "observed_tick": 280,
+      "tick": 280,
+      "unix_seconds": 1789337383.82007
+    },
+    {
+      "error": 0,
+      "file": "frame_00142.png",
+      "observed_tick": 282,
+      "tick": 282,
+      "unix_seconds": 1789337383.87972
+    },
+    {
+      "error": 0,
+      "file": "frame_00143.png",
+      "observed_tick": 284,
+      "tick": 284,
+      "unix_seconds": 1789337383.94018
+    },
+    {
+      "error": 0,
+      "file": "frame_00144.png",
+      "observed_tick": 286,
+      "tick": 286,
+      "unix_seconds": 1789337384.00755
+    },
+    {
+      "error": 0,
+      "file": "frame_00145.png",
+      "observed_tick": 288,
+      "tick": 288,
+      "unix_seconds": 1789337384.06855
+    },
+    {
+      "error": 0,
+      "file": "frame_00146.png",
+      "observed_tick": 290,
+      "tick": 290,
+      "unix_seconds": 1789337384.1281
+    },
+    {
+      "error": 0,
+      "file": "frame_00147.png",
+      "observed_tick": 292,
+      "tick": 292,
+      "unix_seconds": 1789337384.18942
+    },
+    {
+      "error": 0,
+      "file": "frame_00148.png",
+      "observed_tick": 294,
+      "tick": 294,
+      "unix_seconds": 1789337384.25303
+    },
+    {
+      "error": 0,
+      "file": "frame_00149.png",
+      "observed_tick": 296,
+      "tick": 296,
+      "unix_seconds": 1789337384.3142
+    },
+    {
+      "error": 0,
+      "file": "frame_00150.png",
+      "observed_tick": 298,
+      "tick": 298,
+      "unix_seconds": 1789337384.37287
+    },
+    {
+      "error": 0,
+      "file": "frame_00151.png",
+      "observed_tick": 300,
+      "tick": 300,
+      "unix_seconds": 1789337384.43234
+    },
+    {
+      "error": 0,
+      "file": "frame_00152.png",
+      "observed_tick": 302,
+      "tick": 302,
+      "unix_seconds": 1789337384.49094
+    },
+    {
+      "error": 0,
+      "file": "frame_00153.png",
+      "observed_tick": 304,
+      "tick": 304,
+      "unix_seconds": 1789337384.55085
+    },
+    {
+      "error": 0,
+      "file": "frame_00154.png",
+      "observed_tick": 306,
+      "tick": 306,
+      "unix_seconds": 1789337384.61407
+    },
+    {
+      "error": 0,
+      "file": "frame_00155.png",
+      "observed_tick": 308,
+      "tick": 308,
+      "unix_seconds": 1789337384.67839
+    },
+    {
+      "error": 0,
+      "file": "frame_00156.png",
+      "observed_tick": 310,
+      "tick": 310,
+      "unix_seconds": 1789337384.73921
+    },
+    {
+      "error": 0,
+      "file": "frame_00157.png",
+      "observed_tick": 312,
+      "tick": 312,
+      "unix_seconds": 1789337384.80113
+    },
+    {
+      "error": 0,
+      "file": "frame_00158.png",
+      "observed_tick": 314,
+      "tick": 314,
+      "unix_seconds": 1789337384.86086
+    },
+    {
+      "error": 0,
+      "file": "frame_00159.png",
+      "observed_tick": 316,
+      "tick": 316,
+      "unix_seconds": 1789337384.91722
+    },
+    {
+      "error": 0,
+      "file": "frame_00160.png",
+      "observed_tick": 318,
+      "tick": 318,
+      "unix_seconds": 1789337384.97866
+    },
+    {
+      "error": 0,
+      "file": "frame_00161.png",
+      "observed_tick": 320,
+      "tick": 320,
+      "unix_seconds": 1789337385.04363
+    },
+    {
+      "error": 0,
+      "file": "frame_00162.png",
+      "observed_tick": 322,
+      "tick": 322,
+      "unix_seconds": 1789337385.10479
+    },
+    {
+      "error": 0,
+      "file": "frame_00163.png",
+      "observed_tick": 324,
+      "tick": 324,
+      "unix_seconds": 1789337385.17219
+    },
+    {
+      "error": 0,
+      "file": "frame_00164.png",
+      "observed_tick": 326,
+      "tick": 326,
+      "unix_seconds": 1789337385.23503
+    },
+    {
+      "error": 0,
+      "file": "frame_00165.png",
+      "observed_tick": 328,
+      "tick": 328,
+      "unix_seconds": 1789337385.2964
+    },
+    {
+      "error": 0,
+      "file": "frame_00166.png",
+      "observed_tick": 330,
+      "tick": 330,
+      "unix_seconds": 1789337385.35613
+    },
+    {
+      "error": 0,
+      "file": "frame_00167.png",
+      "observed_tick": 332,
+      "tick": 332,
+      "unix_seconds": 1789337385.41798
+    },
+    {
+      "error": 0,
+      "file": "frame_00168.png",
+      "observed_tick": 334,
+      "tick": 334,
+      "unix_seconds": 1789337385.47824
+    },
+    {
+      "error": 0,
+      "file": "frame_00169.png",
+      "observed_tick": 336,
+      "tick": 336,
+      "unix_seconds": 1789337385.54129
+    },
+    {
+      "error": 0,
+      "file": "frame_00170.png",
+      "observed_tick": 338,
+      "tick": 338,
+      "unix_seconds": 1789337385.60407
+    },
+    {
+      "error": 0,
+      "file": "frame_00171.png",
+      "observed_tick": 340,
+      "tick": 340,
+      "unix_seconds": 1789337385.66523
+    },
+    {
+      "error": 0,
+      "file": "frame_00172.png",
+      "observed_tick": 342,
+      "tick": 342,
+      "unix_seconds": 1789337385.72518
+    },
+    {
+      "error": 0,
+      "file": "frame_00173.png",
+      "observed_tick": 344,
+      "tick": 344,
+      "unix_seconds": 1789337385.78358
+    },
+    {
+      "error": 0,
+      "file": "frame_00174.png",
+      "observed_tick": 346,
+      "tick": 346,
+      "unix_seconds": 1789337385.84688
+    },
+    {
+      "error": 0,
+      "file": "frame_00175.png",
+      "observed_tick": 348,
+      "tick": 348,
+      "unix_seconds": 1789337385.9105
+    },
+    {
+      "error": 0,
+      "file": "frame_00176.png",
+      "observed_tick": 350,
+      "tick": 350,
+      "unix_seconds": 1789337385.97559
+    },
+    {
+      "error": 0,
+      "file": "frame_00177.png",
+      "observed_tick": 352,
+      "tick": 352,
+      "unix_seconds": 1789337386.04114
+    },
+    {
+      "error": 0,
+      "file": "frame_00178.png",
+      "observed_tick": 354,
+      "tick": 354,
+      "unix_seconds": 1789337386.10385
+    },
+    {
+      "error": 0,
+      "file": "frame_00179.png",
+      "observed_tick": 356,
+      "tick": 356,
+      "unix_seconds": 1789337386.16537
+    },
+    {
+      "error": 0,
+      "file": "frame_00180.png",
+      "observed_tick": 358,
+      "tick": 358,
+      "unix_seconds": 1789337386.22051
+    },
+    {
+      "error": 0,
+      "file": "frame_00181.png",
+      "observed_tick": 360,
+      "tick": 360,
+      "unix_seconds": 1789337386.28118
+    },
+    {
+      "error": 0,
+      "file": "frame_00182.png",
+      "observed_tick": 362,
+      "tick": 362,
+      "unix_seconds": 1789337386.34191
+    },
+    {
+      "error": 0,
+      "file": "frame_00183.png",
+      "observed_tick": 364,
+      "tick": 364,
+      "unix_seconds": 1789337386.39845
+    },
+    {
+      "error": 0,
+      "file": "frame_00184.png",
+      "observed_tick": 366,
+      "tick": 366,
+      "unix_seconds": 1789337386.46007
+    },
+    {
+      "error": 0,
+      "file": "frame_00185.png",
+      "observed_tick": 368,
+      "tick": 368,
+      "unix_seconds": 1789337386.51987
+    },
+    {
+      "error": 0,
+      "file": "frame_00186.png",
+      "observed_tick": 370,
+      "tick": 370,
+      "unix_seconds": 1789337386.57826
+    },
+    {
+      "error": 0,
+      "file": "frame_00187.png",
+      "observed_tick": 372,
+      "tick": 372,
+      "unix_seconds": 1789337386.63635
+    },
+    {
+      "error": 0,
+      "file": "frame_00188.png",
+      "observed_tick": 374,
+      "tick": 374,
+      "unix_seconds": 1789337386.69691
+    },
+    {
+      "error": 0,
+      "file": "frame_00189.png",
+      "observed_tick": 376,
+      "tick": 376,
+      "unix_seconds": 1789337386.75779
+    },
+    {
+      "error": 0,
+      "file": "frame_00190.png",
+      "observed_tick": 378,
+      "tick": 378,
+      "unix_seconds": 1789337386.81751
+    },
+    {
+      "error": 0,
+      "file": "frame_00191.png",
+      "observed_tick": 380,
+      "tick": 380,
+      "unix_seconds": 1789337386.87767
+    },
+    {
+      "error": 0,
+      "file": "frame_00192.png",
+      "observed_tick": 382,
+      "tick": 382,
+      "unix_seconds": 1789337386.9369
+    },
+    {
+      "error": 0,
+      "file": "frame_00193.png",
+      "observed_tick": 384,
+      "tick": 384,
+      "unix_seconds": 1789337386.99765
+    },
+    {
+      "error": 0,
+      "file": "frame_00194.png",
+      "observed_tick": 386,
+      "tick": 386,
+      "unix_seconds": 1789337387.05752
+    },
+    {
+      "error": 0,
+      "file": "frame_00195.png",
+      "observed_tick": 388,
+      "tick": 388,
+      "unix_seconds": 1789337387.11754
+    },
+    {
+      "error": 0,
+      "file": "frame_00196.png",
+      "observed_tick": 390,
+      "tick": 390,
+      "unix_seconds": 1789337387.17817
+    },
+    {
+      "error": 0,
+      "file": "frame_00197.png",
+      "observed_tick": 392,
+      "tick": 392,
+      "unix_seconds": 1789337387.23681
+    },
+    {
+      "error": 0,
+      "file": "frame_00198.png",
+      "observed_tick": 394,
+      "tick": 394,
+      "unix_seconds": 1789337387.29574
+    },
+    {
+      "error": 0,
+      "file": "frame_00199.png",
+      "observed_tick": 396,
+      "tick": 396,
+      "unix_seconds": 1789337387.35768
+    },
+    {
+      "error": 0,
+      "file": "frame_00200.png",
+      "observed_tick": 398,
+      "tick": 398,
+      "unix_seconds": 1789337387.41652
+    },
+    {
+      "error": 0,
+      "file": "frame_00201.png",
+      "observed_tick": 400,
+      "tick": 400,
+      "unix_seconds": 1789337387.47948
+    },
+    {
+      "error": 0,
+      "file": "frame_00202.png",
+      "observed_tick": 402,
+      "tick": 402,
+      "unix_seconds": 1789337387.53919
+    },
+    {
+      "error": 0,
+      "file": "frame_00203.png",
+      "observed_tick": 404,
+      "tick": 404,
+      "unix_seconds": 1789337387.60185
+    },
+    {
+      "error": 0,
+      "file": "frame_00204.png",
+      "observed_tick": 406,
+      "tick": 406,
+      "unix_seconds": 1789337387.66281
+    },
+    {
+      "error": 0,
+      "file": "frame_00205.png",
+      "observed_tick": 408,
+      "tick": 408,
+      "unix_seconds": 1789337387.72563
+    },
+    {
+      "error": 0,
+      "file": "frame_00206.png",
+      "observed_tick": 410,
+      "tick": 410,
+      "unix_seconds": 1789337387.79383
+    },
+    {
+      "error": 0,
+      "file": "frame_00207.png",
+      "observed_tick": 412,
+      "tick": 412,
+      "unix_seconds": 1789337387.85243
+    },
+    {
+      "error": 0,
+      "file": "frame_00208.png",
+      "observed_tick": 414,
+      "tick": 414,
+      "unix_seconds": 1789337387.9139
+    },
+    {
+      "error": 0,
+      "file": "frame_00209.png",
+      "observed_tick": 416,
+      "tick": 416,
+      "unix_seconds": 1789337387.98032
+    },
+    {
+      "error": 0,
+      "file": "frame_00210.png",
+      "observed_tick": 418,
+      "tick": 418,
+      "unix_seconds": 1789337388.04097
+    },
+    {
+      "error": 0,
+      "file": "frame_00211.png",
+      "observed_tick": 420,
+      "tick": 420,
+      "unix_seconds": 1789337388.10087
+    },
+    {
+      "error": 0,
+      "file": "frame_00212.png",
+      "observed_tick": 422,
+      "tick": 422,
+      "unix_seconds": 1789337388.16296
+    },
+    {
+      "error": 0,
+      "file": "frame_00213.png",
+      "observed_tick": 424,
+      "tick": 424,
+      "unix_seconds": 1789337388.22528
+    },
+    {
+      "error": 0,
+      "file": "frame_00214.png",
+      "observed_tick": 426,
+      "tick": 426,
+      "unix_seconds": 1789337388.28821
+    },
+    {
+      "error": 0,
+      "file": "frame_00215.png",
+      "observed_tick": 428,
+      "tick": 428,
+      "unix_seconds": 1789337388.34853
+    },
+    {
+      "error": 0,
+      "file": "frame_00216.png",
+      "observed_tick": 430,
+      "tick": 430,
+      "unix_seconds": 1789337388.41917
+    },
+    {
+      "error": 0,
+      "file": "frame_00217.png",
+      "observed_tick": 432,
+      "tick": 432,
+      "unix_seconds": 1789337388.49274
+    },
+    {
+      "error": 0,
+      "file": "frame_00218.png",
+      "observed_tick": 434,
+      "tick": 434,
+      "unix_seconds": 1789337388.55863
+    },
+    {
+      "error": 0,
+      "file": "frame_00219.png",
+      "observed_tick": 436,
+      "tick": 436,
+      "unix_seconds": 1789337388.62092
+    },
+    {
+      "error": 0,
+      "file": "frame_00220.png",
+      "observed_tick": 438,
+      "tick": 438,
+      "unix_seconds": 1789337388.68199
+    },
+    {
+      "error": 0,
+      "file": "frame_00221.png",
+      "observed_tick": 440,
+      "tick": 440,
+      "unix_seconds": 1789337388.74339
+    },
+    {
+      "error": 0,
+      "file": "frame_00222.png",
+      "observed_tick": 442,
+      "tick": 442,
+      "unix_seconds": 1789337388.80351
+    },
+    {
+      "error": 0,
+      "file": "frame_00223.png",
+      "observed_tick": 444,
+      "tick": 444,
+      "unix_seconds": 1789337388.86609
+    },
+    {
+      "error": 0,
+      "file": "frame_00224.png",
+      "observed_tick": 446,
+      "tick": 446,
+      "unix_seconds": 1789337388.93009
+    },
+    {
+      "error": 0,
+      "file": "frame_00225.png",
+      "observed_tick": 448,
+      "tick": 448,
+      "unix_seconds": 1789337388.99018
+    },
+    {
+      "error": 0,
+      "file": "frame_00226.png",
+      "observed_tick": 450,
+      "tick": 450,
+      "unix_seconds": 1789337389.05097
+    },
+    {
+      "error": 0,
+      "file": "frame_00227.png",
+      "observed_tick": 452,
+      "tick": 452,
+      "unix_seconds": 1789337389.11127
+    },
+    {
+      "error": 0,
+      "file": "frame_00228.png",
+      "observed_tick": 454,
+      "tick": 454,
+      "unix_seconds": 1789337389.17301
+    },
+    {
+      "error": 0,
+      "file": "frame_00229.png",
+      "observed_tick": 456,
+      "tick": 456,
+      "unix_seconds": 1789337389.23416
+    },
+    {
+      "error": 0,
+      "file": "frame_00230.png",
+      "observed_tick": 458,
+      "tick": 458,
+      "unix_seconds": 1789337389.29569
+    },
+    {
+      "error": 0,
+      "file": "frame_00231.png",
+      "observed_tick": 460,
+      "tick": 460,
+      "unix_seconds": 1789337389.35749
+    },
+    {
+      "error": 0,
+      "file": "frame_00232.png",
+      "observed_tick": 462,
+      "tick": 462,
+      "unix_seconds": 1789337389.42537
+    },
+    {
+      "error": 0,
+      "file": "frame_00233.png",
+      "observed_tick": 464,
+      "tick": 464,
+      "unix_seconds": 1789337389.48518
+    },
+    {
+      "error": 0,
+      "file": "frame_00234.png",
+      "observed_tick": 466,
+      "tick": 466,
+      "unix_seconds": 1789337389.54755
+    },
+    {
+      "error": 0,
+      "file": "frame_00235.png",
+      "observed_tick": 468,
+      "tick": 468,
+      "unix_seconds": 1789337389.61274
+    },
+    {
+      "error": 0,
+      "file": "frame_00236.png",
+      "observed_tick": 470,
+      "tick": 470,
+      "unix_seconds": 1789337389.67566
+    },
+    {
+      "error": 0,
+      "file": "frame_00237.png",
+      "observed_tick": 472,
+      "tick": 472,
+      "unix_seconds": 1789337389.73832
+    },
+    {
+      "error": 0,
+      "file": "frame_00238.png",
+      "observed_tick": 474,
+      "tick": 474,
+      "unix_seconds": 1789337389.79715
+    },
+    {
+      "error": 0,
+      "file": "frame_00239.png",
+      "observed_tick": 476,
+      "tick": 476,
+      "unix_seconds": 1789337389.85613
+    },
+    {
+      "error": 0,
+      "file": "frame_00240.png",
+      "observed_tick": 478,
+      "tick": 478,
+      "unix_seconds": 1789337389.91482
+    },
+    {
+      "error": 0,
+      "file": "frame_00241.png",
+      "observed_tick": 480,
+      "tick": 480,
+      "unix_seconds": 1789337389.97498
+    },
+    {
+      "error": 0,
+      "file": "frame_00242.png",
+      "observed_tick": 482,
+      "tick": 482,
+      "unix_seconds": 1789337390.03284
+    },
+    {
+      "error": 0,
+      "file": "frame_00243.png",
+      "observed_tick": 484,
+      "tick": 484,
+      "unix_seconds": 1789337390.09102
+    },
+    {
+      "error": 0,
+      "file": "frame_00244.png",
+      "observed_tick": 486,
+      "tick": 486,
+      "unix_seconds": 1789337390.15029
+    },
+    {
+      "error": 0,
+      "file": "frame_00245.png",
+      "observed_tick": 488,
+      "tick": 488,
+      "unix_seconds": 1789337390.2076
+    },
+    {
+      "error": 0,
+      "file": "frame_00246.png",
+      "observed_tick": 490,
+      "tick": 490,
+      "unix_seconds": 1789337390.26863
+    },
+    {
+      "error": 0,
+      "file": "frame_00247.png",
+      "observed_tick": 492,
+      "tick": 492,
+      "unix_seconds": 1789337390.33219
+    },
+    {
+      "error": 0,
+      "file": "frame_00248.png",
+      "observed_tick": 494,
+      "tick": 494,
+      "unix_seconds": 1789337390.39611
+    },
+    {
+      "error": 0,
+      "file": "frame_00249.png",
+      "observed_tick": 496,
+      "tick": 496,
+      "unix_seconds": 1789337390.46041
+    },
+    {
+      "error": 0,
+      "file": "frame_00250.png",
+      "observed_tick": 498,
+      "tick": 498,
+      "unix_seconds": 1789337390.52105
+    },
+    {
+      "error": 0,
+      "file": "frame_00251.png",
+      "observed_tick": 500,
+      "tick": 500,
+      "unix_seconds": 1789337390.58387
+    },
+    {
+      "error": 0,
+      "file": "frame_00252.png",
+      "observed_tick": 502,
+      "tick": 502,
+      "unix_seconds": 1789337390.64467
+    },
+    {
+      "error": 0,
+      "file": "frame_00253.png",
+      "observed_tick": 504,
+      "tick": 504,
+      "unix_seconds": 1789337390.70563
+    },
+    {
+      "error": 0,
+      "file": "frame_00254.png",
+      "observed_tick": 506,
+      "tick": 506,
+      "unix_seconds": 1789337390.7701
+    },
+    {
+      "error": 0,
+      "file": "frame_00255.png",
+      "observed_tick": 508,
+      "tick": 508,
+      "unix_seconds": 1789337390.83301
+    },
+    {
+      "error": 0,
+      "file": "frame_00256.png",
+      "observed_tick": 510,
+      "tick": 510,
+      "unix_seconds": 1789337390.89495
+    },
+    {
+      "error": 0,
+      "file": "frame_00257.png",
+      "observed_tick": 512,
+      "tick": 512,
+      "unix_seconds": 1789337390.95692
+    },
+    {
+      "error": 0,
+      "file": "frame_00258.png",
+      "observed_tick": 514,
+      "tick": 514,
+      "unix_seconds": 1789337391.02102
+    },
+    {
+      "error": 0,
+      "file": "frame_00259.png",
+      "observed_tick": 516,
+      "tick": 516,
+      "unix_seconds": 1789337391.08588
+    },
+    {
+      "error": 0,
+      "file": "frame_00260.png",
+      "observed_tick": 518,
+      "tick": 518,
+      "unix_seconds": 1789337391.14845
+    },
+    {
+      "error": 0,
+      "file": "frame_00261.png",
+      "observed_tick": 520,
+      "tick": 520,
+      "unix_seconds": 1789337391.21054
+    },
+    {
+      "error": 0,
+      "file": "frame_00262.png",
+      "observed_tick": 522,
+      "tick": 522,
+      "unix_seconds": 1789337391.27777
+    },
+    {
+      "error": 0,
+      "file": "frame_00263.png",
+      "observed_tick": 524,
+      "tick": 524,
+      "unix_seconds": 1789337391.34239
+    },
+    {
+      "error": 0,
+      "file": "frame_00264.png",
+      "observed_tick": 526,
+      "tick": 526,
+      "unix_seconds": 1789337391.41308
+    },
+    {
+      "error": 0,
+      "file": "frame_00265.png",
+      "observed_tick": 528,
+      "tick": 528,
+      "unix_seconds": 1789337391.47504
+    },
+    {
+      "error": 0,
+      "file": "frame_00266.png",
+      "observed_tick": 530,
+      "tick": 530,
+      "unix_seconds": 1789337391.53435
+    },
+    {
+      "error": 0,
+      "file": "frame_00267.png",
+      "observed_tick": 532,
+      "tick": 532,
+      "unix_seconds": 1789337391.59404
+    },
+    {
+      "error": 0,
+      "file": "frame_00268.png",
+      "observed_tick": 534,
+      "tick": 534,
+      "unix_seconds": 1789337391.65477
+    },
+    {
+      "error": 0,
+      "file": "frame_00269.png",
+      "observed_tick": 536,
+      "tick": 536,
+      "unix_seconds": 1789337391.7167
+    },
+    {
+      "error": 0,
+      "file": "frame_00270.png",
+      "observed_tick": 538,
+      "tick": 538,
+      "unix_seconds": 1789337391.77973
+    },
+    {
+      "error": 0,
+      "file": "frame_00271.png",
+      "observed_tick": 540,
+      "tick": 540,
+      "unix_seconds": 1789337391.86039
+    },
+    {
+      "error": 0,
+      "file": "frame_00272.png",
+      "observed_tick": 542,
+      "tick": 542,
+      "unix_seconds": 1789337391.92778
+    },
+    {
+      "error": 0,
+      "file": "frame_00273.png",
+      "observed_tick": 544,
+      "tick": 544,
+      "unix_seconds": 1789337391.996
+    },
+    {
+      "error": 0,
+      "file": "frame_00274.png",
+      "observed_tick": 546,
+      "tick": 546,
+      "unix_seconds": 1789337392.06717
+    },
+    {
+      "error": 0,
+      "file": "frame_00275.png",
+      "observed_tick": 548,
+      "tick": 548,
+      "unix_seconds": 1789337392.14605
+    },
+    {
+      "error": 0,
+      "file": "frame_00276.png",
+      "observed_tick": 550,
+      "tick": 550,
+      "unix_seconds": 1789337392.22231
+    },
+    {
+      "error": 0,
+      "file": "frame_00277.png",
+      "observed_tick": 552,
+      "tick": 552,
+      "unix_seconds": 1789337392.29319
+    },
+    {
+      "error": 0,
+      "file": "frame_00278.png",
+      "observed_tick": 554,
+      "tick": 554,
+      "unix_seconds": 1789337392.36641
+    },
+    {
+      "error": 0,
+      "file": "frame_00279.png",
+      "observed_tick": 556,
+      "tick": 556,
+      "unix_seconds": 1789337392.44951
+    },
+    {
+      "error": 0,
+      "file": "frame_00280.png",
+      "observed_tick": 558,
+      "tick": 558,
+      "unix_seconds": 1789337392.5284
+    },
+    {
+      "error": 0,
+      "file": "frame_00281.png",
+      "observed_tick": 560,
+      "tick": 560,
+      "unix_seconds": 1789337392.60469
+    },
+    {
+      "error": 0,
+      "file": "frame_00282.png",
+      "observed_tick": 562,
+      "tick": 562,
+      "unix_seconds": 1789337392.6782
+    },
+    {
+      "error": 0,
+      "file": "frame_00283.png",
+      "observed_tick": 564,
+      "tick": 564,
+      "unix_seconds": 1789337392.74877
+    },
+    {
+      "error": 0,
+      "file": "frame_00284.png",
+      "observed_tick": 566,
+      "tick": 566,
+      "unix_seconds": 1789337392.81719
+    },
+    {
+      "error": 0,
+      "file": "frame_00285.png",
+      "observed_tick": 568,
+      "tick": 568,
+      "unix_seconds": 1789337392.8862
+    },
+    {
+      "error": 0,
+      "file": "frame_00286.png",
+      "observed_tick": 570,
+      "tick": 570,
+      "unix_seconds": 1789337392.95596
+    },
+    {
+      "error": 0,
+      "file": "frame_00287.png",
+      "observed_tick": 572,
+      "tick": 572,
+      "unix_seconds": 1789337393.0278
+    },
+    {
+      "error": 0,
+      "file": "frame_00288.png",
+      "observed_tick": 574,
+      "tick": 574,
+      "unix_seconds": 1789337393.09542
+    },
+    {
+      "error": 0,
+      "file": "frame_00289.png",
+      "observed_tick": 576,
+      "tick": 576,
+      "unix_seconds": 1789337393.16624
+    },
+    {
+      "error": 0,
+      "file": "frame_00290.png",
+      "observed_tick": 578,
+      "tick": 578,
+      "unix_seconds": 1789337393.2323
+    },
+    {
+      "error": 0,
+      "file": "frame_00291.png",
+      "observed_tick": 580,
+      "tick": 580,
+      "unix_seconds": 1789337393.3011
+    },
+    {
+      "error": 0,
+      "file": "frame_00292.png",
+      "observed_tick": 582,
+      "tick": 582,
+      "unix_seconds": 1789337393.37122
+    },
+    {
+      "error": 0,
+      "file": "frame_00293.png",
+      "observed_tick": 584,
+      "tick": 584,
+      "unix_seconds": 1789337393.44457
+    },
+    {
+      "error": 0,
+      "file": "frame_00294.png",
+      "observed_tick": 586,
+      "tick": 586,
+      "unix_seconds": 1789337393.51573
+    },
+    {
+      "error": 0,
+      "file": "frame_00295.png",
+      "observed_tick": 588,
+      "tick": 588,
+      "unix_seconds": 1789337393.58615
+    },
+    {
+      "error": 0,
+      "file": "frame_00296.png",
+      "observed_tick": 590,
+      "tick": 590,
+      "unix_seconds": 1789337393.65161
+    },
+    {
+      "error": 0,
+      "file": "frame_00297.png",
+      "observed_tick": 592,
+      "tick": 592,
+      "unix_seconds": 1789337393.71573
+    },
+    {
+      "error": 0,
+      "file": "frame_00298.png",
+      "observed_tick": 594,
+      "tick": 594,
+      "unix_seconds": 1789337393.7918
+    },
+    {
+      "error": 0,
+      "file": "frame_00299.png",
+      "observed_tick": 596,
+      "tick": 596,
+      "unix_seconds": 1789337393.86134
+    },
+    {
+      "error": 0,
+      "file": "frame_00300.png",
+      "observed_tick": 598,
+      "tick": 598,
+      "unix_seconds": 1789337393.9406
+    },
+    {
+      "error": 0,
+      "file": "frame_00301.png",
+      "observed_tick": 600,
+      "tick": 600,
+      "unix_seconds": 1789337394.02528
+    },
+    {
+      "error": 0,
+      "file": "frame_00302.png",
+      "observed_tick": 602,
+      "tick": 602,
+      "unix_seconds": 1789337394.09929
+    },
+    {
+      "error": 0,
+      "file": "frame_00303.png",
+      "observed_tick": 604,
+      "tick": 604,
+      "unix_seconds": 1789337394.17105
+    },
+    {
+      "error": 0,
+      "file": "frame_00304.png",
+      "observed_tick": 606,
+      "tick": 606,
+      "unix_seconds": 1789337394.24155
+    },
+    {
+      "error": 0,
+      "file": "frame_00305.png",
+      "observed_tick": 608,
+      "tick": 608,
+      "unix_seconds": 1789337394.31179
+    },
+    {
+      "error": 0,
+      "file": "frame_00306.png",
+      "observed_tick": 610,
+      "tick": 610,
+      "unix_seconds": 1789337394.38581
+    },
+    {
+      "error": 0,
+      "file": "frame_00307.png",
+      "observed_tick": 612,
+      "tick": 612,
+      "unix_seconds": 1789337394.45847
+    },
+    {
+      "error": 0,
+      "file": "frame_00308.png",
+      "observed_tick": 614,
+      "tick": 614,
+      "unix_seconds": 1789337394.5273
+    },
+    {
+      "error": 0,
+      "file": "frame_00309.png",
+      "observed_tick": 616,
+      "tick": 616,
+      "unix_seconds": 1789337394.59515
+    },
+    {
+      "error": 0,
+      "file": "frame_00310.png",
+      "observed_tick": 618,
+      "tick": 618,
+      "unix_seconds": 1789337394.66734
+    },
+    {
+      "error": 0,
+      "file": "frame_00311.png",
+      "observed_tick": 620,
+      "tick": 620,
+      "unix_seconds": 1789337394.7376
+    },
+    {
+      "error": 0,
+      "file": "frame_00312.png",
+      "observed_tick": 622,
+      "tick": 622,
+      "unix_seconds": 1789337394.80952
+    },
+    {
+      "error": 0,
+      "file": "frame_00313.png",
+      "observed_tick": 624,
+      "tick": 624,
+      "unix_seconds": 1789337394.87952
+    },
+    {
+      "error": 0,
+      "file": "frame_00314.png",
+      "observed_tick": 626,
+      "tick": 626,
+      "unix_seconds": 1789337394.95731
+    },
+    {
+      "error": 0,
+      "file": "frame_00315.png",
+      "observed_tick": 628,
+      "tick": 628,
+      "unix_seconds": 1789337395.02969
+    },
+    {
+      "error": 0,
+      "file": "frame_00316.png",
+      "observed_tick": 630,
+      "tick": 630,
+      "unix_seconds": 1789337395.09964
+    },
+    {
+      "error": 0,
+      "file": "frame_00317.png",
+      "observed_tick": 632,
+      "tick": 632,
+      "unix_seconds": 1789337395.16999
+    },
+    {
+      "error": 0,
+      "file": "frame_00318.png",
+      "observed_tick": 634,
+      "tick": 634,
+      "unix_seconds": 1789337395.24002
+    },
+    {
+      "error": 0,
+      "file": "frame_00319.png",
+      "observed_tick": 636,
+      "tick": 636,
+      "unix_seconds": 1789337395.3095
+    },
+    {
+      "error": 0,
+      "file": "frame_00320.png",
+      "observed_tick": 638,
+      "tick": 638,
+      "unix_seconds": 1789337395.37829
+    },
+    {
+      "error": 0,
+      "file": "frame_00321.png",
+      "observed_tick": 640,
+      "tick": 640,
+      "unix_seconds": 1789337395.44517
+    },
+    {
+      "error": 0,
+      "file": "frame_00322.png",
+      "observed_tick": 642,
+      "tick": 642,
+      "unix_seconds": 1789337395.5239
+    },
+    {
+      "error": 0,
+      "file": "frame_00323.png",
+      "observed_tick": 644,
+      "tick": 644,
+      "unix_seconds": 1789337395.5991
+    },
+    {
+      "error": 0,
+      "file": "frame_00324.png",
+      "observed_tick": 646,
+      "tick": 646,
+      "unix_seconds": 1789337395.67094
+    },
+    {
+      "error": 0,
+      "file": "frame_00325.png",
+      "observed_tick": 648,
+      "tick": 648,
+      "unix_seconds": 1789337395.74537
+    },
+    {
+      "error": 0,
+      "file": "frame_00326.png",
+      "observed_tick": 650,
+      "tick": 650,
+      "unix_seconds": 1789337395.81297
+    },
+    {
+      "error": 0,
+      "file": "frame_00327.png",
+      "observed_tick": 652,
+      "tick": 652,
+      "unix_seconds": 1789337395.88427
+    },
+    {
+      "error": 0,
+      "file": "frame_00328.png",
+      "observed_tick": 654,
+      "tick": 654,
+      "unix_seconds": 1789337395.95843
+    },
+    {
+      "error": 0,
+      "file": "frame_00329.png",
+      "observed_tick": 656,
+      "tick": 656,
+      "unix_seconds": 1789337396.0317
+    },
+    {
+      "error": 0,
+      "file": "frame_00330.png",
+      "observed_tick": 658,
+      "tick": 658,
+      "unix_seconds": 1789337396.10285
+    },
+    {
+      "error": 0,
+      "file": "frame_00331.png",
+      "observed_tick": 660,
+      "tick": 660,
+      "unix_seconds": 1789337396.1758
+    },
+    {
+      "error": 0,
+      "file": "frame_00332.png",
+      "observed_tick": 662,
+      "tick": 662,
+      "unix_seconds": 1789337396.25949
+    },
+    {
+      "error": 0,
+      "file": "frame_00333.png",
+      "observed_tick": 664,
+      "tick": 664,
+      "unix_seconds": 1789337396.33647
+    },
+    {
+      "error": 0,
+      "file": "frame_00334.png",
+      "observed_tick": 666,
+      "tick": 666,
+      "unix_seconds": 1789337396.4103
+    },
+    {
+      "error": 0,
+      "file": "frame_00335.png",
+      "observed_tick": 668,
+      "tick": 668,
+      "unix_seconds": 1789337396.48965
+    },
+    {
+      "error": 0,
+      "file": "frame_00336.png",
+      "observed_tick": 670,
+      "tick": 670,
+      "unix_seconds": 1789337396.5633
+    },
+    {
+      "error": 0,
+      "file": "frame_00337.png",
+      "observed_tick": 672,
+      "tick": 672,
+      "unix_seconds": 1789337396.62424
+    },
+    {
+      "error": 0,
+      "file": "frame_00338.png",
+      "observed_tick": 674,
+      "tick": 674,
+      "unix_seconds": 1789337396.68597
+    },
+    {
+      "error": 0,
+      "file": "frame_00339.png",
+      "observed_tick": 676,
+      "tick": 676,
+      "unix_seconds": 1789337396.75061
+    },
+    {
+      "error": 0,
+      "file": "frame_00340.png",
+      "observed_tick": 678,
+      "tick": 678,
+      "unix_seconds": 1789337396.81345
+    },
+    {
+      "error": 0,
+      "file": "frame_00341.png",
+      "observed_tick": 680,
+      "tick": 680,
+      "unix_seconds": 1789337396.87381
+    },
+    {
+      "error": 0,
+      "file": "frame_00342.png",
+      "observed_tick": 682,
+      "tick": 682,
+      "unix_seconds": 1789337396.93918
+    },
+    {
+      "error": 0,
+      "file": "frame_00343.png",
+      "observed_tick": 684,
+      "tick": 684,
+      "unix_seconds": 1789337396.99898
+    },
+    {
+      "error": 0,
+      "file": "frame_00344.png",
+      "observed_tick": 686,
+      "tick": 686,
+      "unix_seconds": 1789337397.06376
+    },
+    {
+      "error": 0,
+      "file": "frame_00345.png",
+      "observed_tick": 688,
+      "tick": 688,
+      "unix_seconds": 1789337397.12629
+    },
+    {
+      "error": 0,
+      "file": "frame_00346.png",
+      "observed_tick": 690,
+      "tick": 690,
+      "unix_seconds": 1789337397.18472
+    },
+    {
+      "error": 0,
+      "file": "frame_00347.png",
+      "observed_tick": 692,
+      "tick": 692,
+      "unix_seconds": 1789337397.24377
+    },
+    {
+      "error": 0,
+      "file": "frame_00348.png",
+      "observed_tick": 694,
+      "tick": 694,
+      "unix_seconds": 1789337397.30281
+    },
+    {
+      "error": 0,
+      "file": "frame_00349.png",
+      "observed_tick": 696,
+      "tick": 696,
+      "unix_seconds": 1789337397.36265
+    },
+    {
+      "error": 0,
+      "file": "frame_00350.png",
+      "observed_tick": 698,
+      "tick": 698,
+      "unix_seconds": 1789337397.42128
+    },
+    {
+      "error": 0,
+      "file": "frame_00351.png",
+      "observed_tick": 700,
+      "tick": 700,
+      "unix_seconds": 1789337397.47926
+    },
+    {
+      "error": 0,
+      "file": "frame_00352.png",
+      "observed_tick": 702,
+      "tick": 702,
+      "unix_seconds": 1789337397.54307
+    },
+    {
+      "error": 0,
+      "file": "frame_00353.png",
+      "observed_tick": 704,
+      "tick": 704,
+      "unix_seconds": 1789337397.60563
+    },
+    {
+      "error": 0,
+      "file": "frame_00354.png",
+      "observed_tick": 706,
+      "tick": 706,
+      "unix_seconds": 1789337397.66853
+    },
+    {
+      "error": 0,
+      "file": "frame_00355.png",
+      "observed_tick": 708,
+      "tick": 708,
+      "unix_seconds": 1789337397.73518
+    },
+    {
+      "error": 0,
+      "file": "frame_00356.png",
+      "observed_tick": 710,
+      "tick": 710,
+      "unix_seconds": 1789337397.79867
+    },
+    {
+      "error": 0,
+      "file": "frame_00357.png",
+      "observed_tick": 712,
+      "tick": 712,
+      "unix_seconds": 1789337397.86257
+    },
+    {
+      "error": 0,
+      "file": "frame_00358.png",
+      "observed_tick": 714,
+      "tick": 714,
+      "unix_seconds": 1789337397.92461
+    },
+    {
+      "error": 0,
+      "file": "frame_00359.png",
+      "observed_tick": 716,
+      "tick": 716,
+      "unix_seconds": 1789337397.98657
+    },
+    {
+      "error": 0,
+      "file": "frame_00360.png",
+      "observed_tick": 718,
+      "tick": 718,
+      "unix_seconds": 1789337398.0492
+    },
+    {
+      "error": 0,
+      "file": "frame_00361.png",
+      "observed_tick": 720,
+      "tick": 720,
+      "unix_seconds": 1789337398.11472
+    },
+    {
+      "error": 0,
+      "file": "frame_00362.png",
+      "observed_tick": 722,
+      "tick": 722,
+      "unix_seconds": 1789337398.18378
+    },
+    {
+      "error": 0,
+      "file": "frame_00363.png",
+      "observed_tick": 724,
+      "tick": 724,
+      "unix_seconds": 1789337398.25471
+    },
+    {
+      "error": 0,
+      "file": "frame_00364.png",
+      "observed_tick": 726,
+      "tick": 726,
+      "unix_seconds": 1789337398.32405
+    },
+    {
+      "error": 0,
+      "file": "frame_00365.png",
+      "observed_tick": 728,
+      "tick": 728,
+      "unix_seconds": 1789337398.39201
+    },
+    {
+      "error": 0,
+      "file": "frame_00366.png",
+      "observed_tick": 730,
+      "tick": 730,
+      "unix_seconds": 1789337398.46277
+    },
+    {
+      "error": 0,
+      "file": "frame_00367.png",
+      "observed_tick": 732,
+      "tick": 732,
+      "unix_seconds": 1789337398.53306
+    },
+    {
+      "error": 0,
+      "file": "frame_00368.png",
+      "observed_tick": 734,
+      "tick": 734,
+      "unix_seconds": 1789337398.60623
+    },
+    {
+      "error": 0,
+      "file": "frame_00369.png",
+      "observed_tick": 736,
+      "tick": 736,
+      "unix_seconds": 1789337398.67557
+    },
+    {
+      "error": 0,
+      "file": "frame_00370.png",
+      "observed_tick": 738,
+      "tick": 738,
+      "unix_seconds": 1789337398.74825
+    },
+    {
+      "error": 0,
+      "file": "frame_00371.png",
+      "observed_tick": 740,
+      "tick": 740,
+      "unix_seconds": 1789337398.82291
+    },
+    {
+      "error": 0,
+      "file": "frame_00372.png",
+      "observed_tick": 742,
+      "tick": 742,
+      "unix_seconds": 1789337398.89485
+    },
+    {
+      "error": 0,
+      "file": "frame_00373.png",
+      "observed_tick": 744,
+      "tick": 744,
+      "unix_seconds": 1789337398.9659
+    },
+    {
+      "error": 0,
+      "file": "frame_00374.png",
+      "observed_tick": 746,
+      "tick": 746,
+      "unix_seconds": 1789337399.03484
+    },
+    {
+      "error": 0,
+      "file": "frame_00375.png",
+      "observed_tick": 748,
+      "tick": 748,
+      "unix_seconds": 1789337399.10987
+    },
+    {
+      "error": 0,
+      "file": "frame_00376.png",
+      "observed_tick": 750,
+      "tick": 750,
+      "unix_seconds": 1789337399.18828
+    },
+    {
+      "error": 0,
+      "file": "frame_00377.png",
+      "observed_tick": 752,
+      "tick": 752,
+      "unix_seconds": 1789337399.25973
+    },
+    {
+      "error": 0,
+      "file": "frame_00378.png",
+      "observed_tick": 754,
+      "tick": 754,
+      "unix_seconds": 1789337399.33036
+    },
+    {
+      "error": 0,
+      "file": "frame_00379.png",
+      "observed_tick": 756,
+      "tick": 756,
+      "unix_seconds": 1789337399.39815
+    },
+    {
+      "error": 0,
+      "file": "frame_00380.png",
+      "observed_tick": 758,
+      "tick": 758,
+      "unix_seconds": 1789337399.46711
+    },
+    {
+      "error": 0,
+      "file": "frame_00381.png",
+      "observed_tick": 760,
+      "tick": 760,
+      "unix_seconds": 1789337399.53843
+    },
+    {
+      "error": 0,
+      "file": "frame_00382.png",
+      "observed_tick": 762,
+      "tick": 762,
+      "unix_seconds": 1789337399.61058
+    },
+    {
+      "error": 0,
+      "file": "frame_00383.png",
+      "observed_tick": 764,
+      "tick": 764,
+      "unix_seconds": 1789337399.6824
+    },
+    {
+      "error": 0,
+      "file": "frame_00384.png",
+      "observed_tick": 766,
+      "tick": 766,
+      "unix_seconds": 1789337399.75284
+    },
+    {
+      "error": 0,
+      "file": "frame_00385.png",
+      "observed_tick": 768,
+      "tick": 768,
+      "unix_seconds": 1789337399.82168
+    },
+    {
+      "error": 0,
+      "file": "frame_00386.png",
+      "observed_tick": 770,
+      "tick": 770,
+      "unix_seconds": 1789337399.89344
+    },
+    {
+      "error": 0,
+      "file": "frame_00387.png",
+      "observed_tick": 772,
+      "tick": 772,
+      "unix_seconds": 1789337399.96297
+    },
+    {
+      "error": 0,
+      "file": "frame_00388.png",
+      "observed_tick": 774,
+      "tick": 774,
+      "unix_seconds": 1789337400.03526
+    },
+    {
+      "error": 0,
+      "file": "frame_00389.png",
+      "observed_tick": 776,
+      "tick": 776,
+      "unix_seconds": 1789337400.11876
+    },
+    {
+      "error": 0,
+      "file": "frame_00390.png",
+      "observed_tick": 778,
+      "tick": 778,
+      "unix_seconds": 1789337400.19399
+    },
+    {
+      "error": 0,
+      "file": "frame_00391.png",
+      "observed_tick": 780,
+      "tick": 780,
+      "unix_seconds": 1789337400.26375
+    },
+    {
+      "error": 0,
+      "file": "frame_00392.png",
+      "observed_tick": 782,
+      "tick": 782,
+      "unix_seconds": 1789337400.34862
+    },
+    {
+      "error": 0,
+      "file": "frame_00393.png",
+      "observed_tick": 784,
+      "tick": 784,
+      "unix_seconds": 1789337400.42159
+    },
+    {
+      "error": 0,
+      "file": "frame_00394.png",
+      "observed_tick": 786,
+      "tick": 786,
+      "unix_seconds": 1789337400.49477
+    },
+    {
+      "error": 0,
+      "file": "frame_00395.png",
+      "observed_tick": 788,
+      "tick": 788,
+      "unix_seconds": 1789337400.57168
+    },
+    {
+      "error": 0,
+      "file": "frame_00396.png",
+      "observed_tick": 790,
+      "tick": 790,
+      "unix_seconds": 1789337400.64696
+    },
+    {
+      "error": 0,
+      "file": "frame_00397.png",
+      "observed_tick": 792,
+      "tick": 792,
+      "unix_seconds": 1789337400.72077
+    },
+    {
+      "error": 0,
+      "file": "frame_00398.png",
+      "observed_tick": 794,
+      "tick": 794,
+      "unix_seconds": 1789337400.78984
+    },
+    {
+      "error": 0,
+      "file": "frame_00399.png",
+      "observed_tick": 796,
+      "tick": 796,
+      "unix_seconds": 1789337400.86157
+    },
+    {
+      "error": 0,
+      "file": "frame_00400.png",
+      "observed_tick": 798,
+      "tick": 798,
+      "unix_seconds": 1789337400.93502
+    },
+    {
+      "error": 0,
+      "file": "frame_00401.png",
+      "observed_tick": 800,
+      "tick": 800,
+      "unix_seconds": 1789337401.00672
+    },
+    {
+      "error": 0,
+      "file": "frame_00402.png",
+      "observed_tick": 802,
+      "tick": 802,
+      "unix_seconds": 1789337401.07872
+    },
+    {
+      "error": 0,
+      "file": "frame_00403.png",
+      "observed_tick": 804,
+      "tick": 804,
+      "unix_seconds": 1789337401.14938
+    },
+    {
+      "error": 0,
+      "file": "frame_00404.png",
+      "observed_tick": 806,
+      "tick": 806,
+      "unix_seconds": 1789337401.22048
+    },
+    {
+      "error": 0,
+      "file": "frame_00405.png",
+      "observed_tick": 808,
+      "tick": 808,
+      "unix_seconds": 1789337401.29418
+    },
+    {
+      "error": 0,
+      "file": "frame_00406.png",
+      "observed_tick": 810,
+      "tick": 810,
+      "unix_seconds": 1789337401.36797
+    },
+    {
+      "error": 0,
+      "file": "frame_00407.png",
+      "observed_tick": 812,
+      "tick": 812,
+      "unix_seconds": 1789337401.44495
+    },
+    {
+      "error": 0,
+      "file": "frame_00408.png",
+      "observed_tick": 814,
+      "tick": 814,
+      "unix_seconds": 1789337401.51615
+    },
+    {
+      "error": 0,
+      "file": "frame_00409.png",
+      "observed_tick": 816,
+      "tick": 816,
+      "unix_seconds": 1789337401.58365
+    },
+    {
+      "error": 0,
+      "file": "frame_00410.png",
+      "observed_tick": 818,
+      "tick": 818,
+      "unix_seconds": 1789337401.66513
+    },
+    {
+      "error": 0,
+      "file": "frame_00411.png",
+      "observed_tick": 820,
+      "tick": 820,
+      "unix_seconds": 1789337401.75478
+    },
+    {
+      "error": 0,
+      "file": "frame_00412.png",
+      "observed_tick": 822,
+      "tick": 822,
+      "unix_seconds": 1789337401.84252
+    },
+    {
+      "error": 0,
+      "file": "frame_00413.png",
+      "observed_tick": 824,
+      "tick": 824,
+      "unix_seconds": 1789337401.92872
+    },
+    {
+      "error": 0,
+      "file": "frame_00414.png",
+      "observed_tick": 826,
+      "tick": 826,
+      "unix_seconds": 1789337402.01096
+    },
+    {
+      "error": 0,
+      "file": "frame_00415.png",
+      "observed_tick": 828,
+      "tick": 828,
+      "unix_seconds": 1789337402.08411
+    },
+    {
+      "error": 0,
+      "file": "frame_00416.png",
+      "observed_tick": 830,
+      "tick": 830,
+      "unix_seconds": 1789337402.15764
+    },
+    {
+      "error": 0,
+      "file": "frame_00417.png",
+      "observed_tick": 832,
+      "tick": 832,
+      "unix_seconds": 1789337402.23468
+    },
+    {
+      "error": 0,
+      "file": "frame_00418.png",
+      "observed_tick": 834,
+      "tick": 834,
+      "unix_seconds": 1789337402.31003
+    },
+    {
+      "error": 0,
+      "file": "frame_00419.png",
+      "observed_tick": 836,
+      "tick": 836,
+      "unix_seconds": 1789337402.38281
+    },
+    {
+      "error": 0,
+      "file": "frame_00420.png",
+      "observed_tick": 838,
+      "tick": 838,
+      "unix_seconds": 1789337402.45328
+    },
+    {
+      "error": 0,
+      "file": "frame_00421.png",
+      "observed_tick": 840,
+      "tick": 840,
+      "unix_seconds": 1789337402.53695
+    },
+    {
+      "error": 0,
+      "file": "frame_00422.png",
+      "observed_tick": 842,
+      "tick": 842,
+      "unix_seconds": 1789337402.61145
+    },
+    {
+      "error": 0,
+      "file": "frame_00423.png",
+      "observed_tick": 844,
+      "tick": 844,
+      "unix_seconds": 1789337402.6961
+    },
+    {
+      "error": 0,
+      "file": "frame_00424.png",
+      "observed_tick": 846,
+      "tick": 846,
+      "unix_seconds": 1789337402.77951
+    },
+    {
+      "error": 0,
+      "file": "frame_00425.png",
+      "observed_tick": 848,
+      "tick": 848,
+      "unix_seconds": 1789337402.85379
+    },
+    {
+      "error": 0,
+      "file": "frame_00426.png",
+      "observed_tick": 850,
+      "tick": 850,
+      "unix_seconds": 1789337402.91989
+    },
+    {
+      "error": 0,
+      "file": "frame_00427.png",
+      "observed_tick": 852,
+      "tick": 852,
+      "unix_seconds": 1789337402.98542
+    },
+    {
+      "error": 0,
+      "file": "frame_00428.png",
+      "observed_tick": 854,
+      "tick": 854,
+      "unix_seconds": 1789337403.05822
+    },
+    {
+      "error": 0,
+      "file": "frame_00429.png",
+      "observed_tick": 856,
+      "tick": 856,
+      "unix_seconds": 1789337403.12648
+    },
+    {
+      "error": 0,
+      "file": "frame_00430.png",
+      "observed_tick": 858,
+      "tick": 858,
+      "unix_seconds": 1789337403.1928
+    },
+    {
+      "error": 0,
+      "file": "frame_00431.png",
+      "observed_tick": 860,
+      "tick": 860,
+      "unix_seconds": 1789337403.26967
+    },
+    {
+      "error": 0,
+      "file": "frame_00432.png",
+      "observed_tick": 862,
+      "tick": 862,
+      "unix_seconds": 1789337403.34461
+    },
+    {
+      "error": 0,
+      "file": "frame_00433.png",
+      "observed_tick": 864,
+      "tick": 864,
+      "unix_seconds": 1789337403.41684
+    },
+    {
+      "error": 0,
+      "file": "frame_00434.png",
+      "observed_tick": 866,
+      "tick": 866,
+      "unix_seconds": 1789337403.48755
+    },
+    {
+      "error": 0,
+      "file": "frame_00435.png",
+      "observed_tick": 868,
+      "tick": 868,
+      "unix_seconds": 1789337403.55313
+    },
+    {
+      "error": 0,
+      "file": "frame_00436.png",
+      "observed_tick": 870,
+      "tick": 870,
+      "unix_seconds": 1789337403.62033
+    },
+    {
+      "error": 0,
+      "file": "frame_00437.png",
+      "observed_tick": 872,
+      "tick": 872,
+      "unix_seconds": 1789337403.68858
+    },
+    {
+      "error": 0,
+      "file": "frame_00438.png",
+      "observed_tick": 874,
+      "tick": 874,
+      "unix_seconds": 1789337403.75763
+    },
+    {
+      "error": 0,
+      "file": "frame_00439.png",
+      "observed_tick": 876,
+      "tick": 876,
+      "unix_seconds": 1789337403.82456
+    },
+    {
+      "error": 0,
+      "file": "frame_00440.png",
+      "observed_tick": 878,
+      "tick": 878,
+      "unix_seconds": 1789337403.89146
+    },
+    {
+      "error": 0,
+      "file": "frame_00441.png",
+      "observed_tick": 880,
+      "tick": 880,
+      "unix_seconds": 1789337403.95894
+    },
+    {
+      "error": 0,
+      "file": "frame_00442.png",
+      "observed_tick": 882,
+      "tick": 882,
+      "unix_seconds": 1789337404.02572
+    },
+    {
+      "error": 0,
+      "file": "frame_00443.png",
+      "observed_tick": 884,
+      "tick": 884,
+      "unix_seconds": 1789337404.1024
+    },
+    {
+      "error": 0,
+      "file": "frame_00444.png",
+      "observed_tick": 886,
+      "tick": 886,
+      "unix_seconds": 1789337404.17129
+    },
+    {
+      "error": 0,
+      "file": "frame_00445.png",
+      "observed_tick": 888,
+      "tick": 888,
+      "unix_seconds": 1789337404.24072
+    },
+    {
+      "error": 0,
+      "file": "frame_00446.png",
+      "observed_tick": 890,
+      "tick": 890,
+      "unix_seconds": 1789337404.31031
+    },
+    {
+      "error": 0,
+      "file": "frame_00447.png",
+      "observed_tick": 892,
+      "tick": 892,
+      "unix_seconds": 1789337404.38135
+    },
+    {
+      "error": 0,
+      "file": "frame_00448.png",
+      "observed_tick": 894,
+      "tick": 894,
+      "unix_seconds": 1789337404.46065
+    },
+    {
+      "error": 0,
+      "file": "frame_00449.png",
+      "observed_tick": 896,
+      "tick": 896,
+      "unix_seconds": 1789337404.53475
+    },
+    {
+      "error": 0,
+      "file": "frame_00450.png",
+      "observed_tick": 898,
+      "tick": 898,
+      "unix_seconds": 1789337404.60185
+    },
+    {
+      "error": 0,
+      "file": "frame_00451.png",
+      "observed_tick": 900,
+      "tick": 900,
+      "unix_seconds": 1789337404.67683
+    },
+    {
+      "error": 0,
+      "file": "frame_00452.png",
+      "observed_tick": 902,
+      "tick": 902,
+      "unix_seconds": 1789337404.75215
+    },
+    {
+      "error": 0,
+      "file": "frame_00453.png",
+      "observed_tick": 904,
+      "tick": 904,
+      "unix_seconds": 1789337404.82615
+    },
+    {
+      "error": 0,
+      "file": "frame_00454.png",
+      "observed_tick": 906,
+      "tick": 906,
+      "unix_seconds": 1789337404.90036
+    },
+    {
+      "error": 0,
+      "file": "frame_00455.png",
+      "observed_tick": 908,
+      "tick": 908,
+      "unix_seconds": 1789337404.97747
+    },
+    {
+      "error": 0,
+      "file": "frame_00456.png",
+      "observed_tick": 910,
+      "tick": 910,
+      "unix_seconds": 1789337405.0535
+    },
+    {
+      "error": 0,
+      "file": "frame_00457.png",
+      "observed_tick": 912,
+      "tick": 912,
+      "unix_seconds": 1789337405.12544
+    },
+    {
+      "error": 0,
+      "file": "frame_00458.png",
+      "observed_tick": 914,
+      "tick": 914,
+      "unix_seconds": 1789337405.20569
+    },
+    {
+      "error": 0,
+      "file": "frame_00459.png",
+      "observed_tick": 916,
+      "tick": 916,
+      "unix_seconds": 1789337405.28304
+    },
+    {
+      "error": 0,
+      "file": "frame_00460.png",
+      "observed_tick": 918,
+      "tick": 918,
+      "unix_seconds": 1789337405.36244
+    },
+    {
+      "error": 0,
+      "file": "frame_00461.png",
+      "observed_tick": 920,
+      "tick": 920,
+      "unix_seconds": 1789337405.43787
+    },
+    {
+      "error": 0,
+      "file": "frame_00462.png",
+      "observed_tick": 922,
+      "tick": 922,
+      "unix_seconds": 1789337405.50965
+    },
+    {
+      "error": 0,
+      "file": "frame_00463.png",
+      "observed_tick": 924,
+      "tick": 924,
+      "unix_seconds": 1789337405.5826
+    },
+    {
+      "error": 0,
+      "file": "frame_00464.png",
+      "observed_tick": 926,
+      "tick": 926,
+      "unix_seconds": 1789337405.65532
+    },
+    {
+      "error": 0,
+      "file": "frame_00465.png",
+      "observed_tick": 928,
+      "tick": 928,
+      "unix_seconds": 1789337405.72295
+    },
+    {
+      "error": 0,
+      "file": "frame_00466.png",
+      "observed_tick": 930,
+      "tick": 930,
+      "unix_seconds": 1789337405.79336
+    },
+    {
+      "error": 0,
+      "file": "frame_00467.png",
+      "observed_tick": 932,
+      "tick": 932,
+      "unix_seconds": 1789337405.86288
+    },
+    {
+      "error": 0,
+      "file": "frame_00468.png",
+      "observed_tick": 934,
+      "tick": 934,
+      "unix_seconds": 1789337405.93158
+    },
+    {
+      "error": 0,
+      "file": "frame_00469.png",
+      "observed_tick": 936,
+      "tick": 936,
+      "unix_seconds": 1789337405.99888
+    },
+    {
+      "error": 0,
+      "file": "frame_00470.png",
+      "observed_tick": 938,
+      "tick": 938,
+      "unix_seconds": 1789337406.07031
+    },
+    {
+      "error": 0,
+      "file": "frame_00471.png",
+      "observed_tick": 940,
+      "tick": 940,
+      "unix_seconds": 1789337406.14373
+    },
+    {
+      "error": 0,
+      "file": "frame_00472.png",
+      "observed_tick": 942,
+      "tick": 942,
+      "unix_seconds": 1789337406.21429
+    },
+    {
+      "error": 0,
+      "file": "frame_00473.png",
+      "observed_tick": 944,
+      "tick": 944,
+      "unix_seconds": 1789337406.28603
+    },
+    {
+      "error": 0,
+      "file": "frame_00474.png",
+      "observed_tick": 946,
+      "tick": 946,
+      "unix_seconds": 1789337406.35402
+    },
+    {
+      "error": 0,
+      "file": "frame_00475.png",
+      "observed_tick": 948,
+      "tick": 948,
+      "unix_seconds": 1789337406.42365
+    },
+    {
+      "error": 0,
+      "file": "frame_00476.png",
+      "observed_tick": 950,
+      "tick": 950,
+      "unix_seconds": 1789337406.49898
+    },
+    {
+      "error": 0,
+      "file": "frame_00477.png",
+      "observed_tick": 952,
+      "tick": 952,
+      "unix_seconds": 1789337406.57527
+    },
+    {
+      "error": 0,
+      "file": "frame_00478.png",
+      "observed_tick": 954,
+      "tick": 954,
+      "unix_seconds": 1789337406.64436
+    },
+    {
+      "error": 0,
+      "file": "frame_00479.png",
+      "observed_tick": 956,
+      "tick": 956,
+      "unix_seconds": 1789337406.71003
+    },
+    {
+      "error": 0,
+      "file": "frame_00480.png",
+      "observed_tick": 958,
+      "tick": 958,
+      "unix_seconds": 1789337406.7724
+    },
+    {
+      "error": 0,
+      "file": "frame_00481.png",
+      "observed_tick": 960,
+      "tick": 960,
+      "unix_seconds": 1789337406.83318
+    },
+    {
+      "error": 0,
+      "file": "frame_00482.png",
+      "observed_tick": 962,
+      "tick": 962,
+      "unix_seconds": 1789337406.8982
+    },
+    {
+      "error": 0,
+      "file": "frame_00483.png",
+      "observed_tick": 964,
+      "tick": 964,
+      "unix_seconds": 1789337406.96873
+    },
+    {
+      "error": 0,
+      "file": "frame_00484.png",
+      "observed_tick": 966,
+      "tick": 966,
+      "unix_seconds": 1789337407.03564
+    },
+    {
+      "error": 0,
+      "file": "frame_00485.png",
+      "observed_tick": 968,
+      "tick": 968,
+      "unix_seconds": 1789337407.09692
+    },
+    {
+      "error": 0,
+      "file": "frame_00486.png",
+      "observed_tick": 970,
+      "tick": 970,
+      "unix_seconds": 1789337407.15921
+    },
+    {
+      "error": 0,
+      "file": "frame_00487.png",
+      "observed_tick": 972,
+      "tick": 972,
+      "unix_seconds": 1789337407.21831
+    },
+    {
+      "error": 0,
+      "file": "frame_00488.png",
+      "observed_tick": 974,
+      "tick": 974,
+      "unix_seconds": 1789337407.28696
+    },
+    {
+      "error": 0,
+      "file": "frame_00489.png",
+      "observed_tick": 976,
+      "tick": 976,
+      "unix_seconds": 1789337407.3532
+    },
+    {
+      "error": 0,
+      "file": "frame_00490.png",
+      "observed_tick": 978,
+      "tick": 978,
+      "unix_seconds": 1789337407.42211
+    },
+    {
+      "error": 0,
+      "file": "frame_00491.png",
+      "observed_tick": 980,
+      "tick": 980,
+      "unix_seconds": 1789337407.49221
+    },
+    {
+      "error": 0,
+      "file": "frame_00492.png",
+      "observed_tick": 982,
+      "tick": 982,
+      "unix_seconds": 1789337407.55676
+    },
+    {
+      "error": 0,
+      "file": "frame_00493.png",
+      "observed_tick": 984,
+      "tick": 984,
+      "unix_seconds": 1789337407.62008
+    },
+    {
+      "error": 0,
+      "file": "frame_00494.png",
+      "observed_tick": 986,
+      "tick": 986,
+      "unix_seconds": 1789337407.68476
+    },
+    {
+      "error": 0,
+      "file": "frame_00495.png",
+      "observed_tick": 988,
+      "tick": 988,
+      "unix_seconds": 1789337407.75389
+    },
+    {
+      "error": 0,
+      "file": "frame_00496.png",
+      "observed_tick": 990,
+      "tick": 990,
+      "unix_seconds": 1789337407.81496
+    },
+    {
+      "error": 0,
+      "file": "frame_00497.png",
+      "observed_tick": 992,
+      "tick": 992,
+      "unix_seconds": 1789337407.87737
+    },
+    {
+      "error": 0,
+      "file": "frame_00498.png",
+      "observed_tick": 994,
+      "tick": 994,
+      "unix_seconds": 1789337407.93625
+    },
+    {
+      "error": 0,
+      "file": "frame_00499.png",
+      "observed_tick": 996,
+      "tick": 996,
+      "unix_seconds": 1789337407.99721
+    },
+    {
+      "error": 0,
+      "file": "frame_00500.png",
+      "observed_tick": 998,
+      "tick": 998,
+      "unix_seconds": 1789337408.05726
+    },
+    {
+      "error": 0,
+      "file": "frame_00501.png",
+      "observed_tick": 1000,
+      "tick": 1000,
+      "unix_seconds": 1789337408.1207
+    },
+    {
+      "error": 0,
+      "file": "frame_00502.png",
+      "observed_tick": 1002,
+      "tick": 1002,
+      "unix_seconds": 1789337408.18046
+    },
+    {
+      "error": 0,
+      "file": "frame_00503.png",
+      "observed_tick": 1004,
+      "tick": 1004,
+      "unix_seconds": 1789337408.23844
+    },
+    {
+      "error": 0,
+      "file": "frame_00504.png",
+      "observed_tick": 1006,
+      "tick": 1006,
+      "unix_seconds": 1789337408.29845
+    },
+    {
+      "error": 0,
+      "file": "frame_00505.png",
+      "observed_tick": 1008,
+      "tick": 1008,
+      "unix_seconds": 1789337408.35877
+    },
+    {
+      "error": 0,
+      "file": "frame_00506.png",
+      "observed_tick": 1010,
+      "tick": 1010,
+      "unix_seconds": 1789337408.42081
+    },
+    {
+      "error": 0,
+      "file": "frame_00507.png",
+      "observed_tick": 1012,
+      "tick": 1012,
+      "unix_seconds": 1789337408.48692
+    },
+    {
+      "error": 0,
+      "file": "frame_00508.png",
+      "observed_tick": 1014,
+      "tick": 1014,
+      "unix_seconds": 1789337408.55657
+    },
+    {
+      "error": 0,
+      "file": "frame_00509.png",
+      "observed_tick": 1016,
+      "tick": 1016,
+      "unix_seconds": 1789337408.62139
+    },
+    {
+      "error": 0,
+      "file": "frame_00510.png",
+      "observed_tick": 1018,
+      "tick": 1018,
+      "unix_seconds": 1789337408.69435
+    },
+    {
+      "error": 0,
+      "file": "frame_00511.png",
+      "observed_tick": 1020,
+      "tick": 1020,
+      "unix_seconds": 1789337408.7582
+    },
+    {
+      "error": 0,
+      "file": "frame_00512.png",
+      "observed_tick": 1022,
+      "tick": 1022,
+      "unix_seconds": 1789337408.82444
+    },
+    {
+      "error": 0,
+      "file": "frame_00513.png",
+      "observed_tick": 1024,
+      "tick": 1024,
+      "unix_seconds": 1789337408.88814
+    },
+    {
+      "error": 0,
+      "file": "frame_00514.png",
+      "observed_tick": 1026,
+      "tick": 1026,
+      "unix_seconds": 1789337408.94822
+    },
+    {
+      "error": 0,
+      "file": "frame_00515.png",
+      "observed_tick": 1028,
+      "tick": 1028,
+      "unix_seconds": 1789337409.0184
+    },
+    {
+      "error": 0,
+      "file": "frame_00516.png",
+      "observed_tick": 1030,
+      "tick": 1030,
+      "unix_seconds": 1789337409.08147
+    },
+    {
+      "error": 0,
+      "file": "frame_00517.png",
+      "observed_tick": 1032,
+      "tick": 1032,
+      "unix_seconds": 1789337409.14279
+    },
+    {
+      "error": 0,
+      "file": "frame_00518.png",
+      "observed_tick": 1034,
+      "tick": 1034,
+      "unix_seconds": 1789337409.20591
+    },
+    {
+      "error": 0,
+      "file": "frame_00519.png",
+      "observed_tick": 1036,
+      "tick": 1036,
+      "unix_seconds": 1789337409.2687
+    },
+    {
+      "error": 0,
+      "file": "frame_00520.png",
+      "observed_tick": 1038,
+      "tick": 1038,
+      "unix_seconds": 1789337409.33233
+    },
+    {
+      "error": 0,
+      "file": "frame_00521.png",
+      "observed_tick": 1040,
+      "tick": 1040,
+      "unix_seconds": 1789337409.39625
+    },
+    {
+      "error": 0,
+      "file": "frame_00522.png",
+      "observed_tick": 1042,
+      "tick": 1042,
+      "unix_seconds": 1789337409.45609
+    },
+    {
+      "error": 0,
+      "file": "frame_00523.png",
+      "observed_tick": 1044,
+      "tick": 1044,
+      "unix_seconds": 1789337409.51758
+    },
+    {
+      "error": 0,
+      "file": "frame_00524.png",
+      "observed_tick": 1046,
+      "tick": 1046,
+      "unix_seconds": 1789337409.57661
+    },
+    {
+      "error": 0,
+      "file": "frame_00525.png",
+      "observed_tick": 1048,
+      "tick": 1048,
+      "unix_seconds": 1789337409.6373
+    },
+    {
+      "error": 0,
+      "file": "frame_00526.png",
+      "observed_tick": 1050,
+      "tick": 1050,
+      "unix_seconds": 1789337409.6973
+    },
+    {
+      "error": 0,
+      "file": "frame_00527.png",
+      "observed_tick": 1052,
+      "tick": 1052,
+      "unix_seconds": 1789337409.75647
+    },
+    {
+      "error": 0,
+      "file": "frame_00528.png",
+      "observed_tick": 1054,
+      "tick": 1054,
+      "unix_seconds": 1789337409.82169
+    },
+    {
+      "error": 0,
+      "file": "frame_00529.png",
+      "observed_tick": 1056,
+      "tick": 1056,
+      "unix_seconds": 1789337409.88389
+    },
+    {
+      "error": 0,
+      "file": "frame_00530.png",
+      "observed_tick": 1058,
+      "tick": 1058,
+      "unix_seconds": 1789337409.9444
+    },
+    {
+      "error": 0,
+      "file": "frame_00531.png",
+      "observed_tick": 1060,
+      "tick": 1060,
+      "unix_seconds": 1789337410.00557
+    },
+    {
+      "error": 0,
+      "file": "frame_00532.png",
+      "observed_tick": 1062,
+      "tick": 1062,
+      "unix_seconds": 1789337410.06659
+    },
+    {
+      "error": 0,
+      "file": "frame_00533.png",
+      "observed_tick": 1064,
+      "tick": 1064,
+      "unix_seconds": 1789337410.12691
+    },
+    {
+      "error": 0,
+      "file": "frame_00534.png",
+      "observed_tick": 1066,
+      "tick": 1066,
+      "unix_seconds": 1789337410.18892
+    },
+    {
+      "error": 0,
+      "file": "frame_00535.png",
+      "observed_tick": 1068,
+      "tick": 1068,
+      "unix_seconds": 1789337410.25215
+    },
+    {
+      "error": 0,
+      "file": "frame_00536.png",
+      "observed_tick": 1070,
+      "tick": 1070,
+      "unix_seconds": 1789337410.31733
+    },
+    {
+      "error": 0,
+      "file": "frame_00537.png",
+      "observed_tick": 1072,
+      "tick": 1072,
+      "unix_seconds": 1789337410.38079
+    },
+    {
+      "error": 0,
+      "file": "frame_00538.png",
+      "observed_tick": 1074,
+      "tick": 1074,
+      "unix_seconds": 1789337410.44928
+    },
+    {
+      "error": 0,
+      "file": "frame_00539.png",
+      "observed_tick": 1076,
+      "tick": 1076,
+      "unix_seconds": 1789337410.50777
+    },
+    {
+      "error": 0,
+      "file": "frame_00540.png",
+      "observed_tick": 1078,
+      "tick": 1078,
+      "unix_seconds": 1789337410.57326
+    },
+    {
+      "error": 0,
+      "file": "frame_00541.png",
+      "observed_tick": 1080,
+      "tick": 1080,
+      "unix_seconds": 1789337410.63352
+    },
+    {
+      "error": 0,
+      "file": "frame_00542.png",
+      "observed_tick": 1082,
+      "tick": 1082,
+      "unix_seconds": 1789337410.69317
+    },
+    {
+      "error": 0,
+      "file": "frame_00543.png",
+      "observed_tick": 1084,
+      "tick": 1084,
+      "unix_seconds": 1789337410.75188
+    },
+    {
+      "error": 0,
+      "file": "frame_00544.png",
+      "observed_tick": 1086,
+      "tick": 1086,
+      "unix_seconds": 1789337410.81398
+    },
+    {
+      "error": 0,
+      "file": "frame_00545.png",
+      "observed_tick": 1088,
+      "tick": 1088,
+      "unix_seconds": 1789337410.87498
+    },
+    {
+      "error": 0,
+      "file": "frame_00546.png",
+      "observed_tick": 1090,
+      "tick": 1090,
+      "unix_seconds": 1789337410.93143
+    },
+    {
+      "error": 0,
+      "file": "frame_00547.png",
+      "observed_tick": 1092,
+      "tick": 1092,
+      "unix_seconds": 1789337410.98821
+    },
+    {
+      "error": 0,
+      "file": "frame_00548.png",
+      "observed_tick": 1094,
+      "tick": 1094,
+      "unix_seconds": 1789337411.0503
+    },
+    {
+      "error": 0,
+      "file": "frame_00549.png",
+      "observed_tick": 1096,
+      "tick": 1096,
+      "unix_seconds": 1789337411.10958
+    },
+    {
+      "error": 0,
+      "file": "frame_00550.png",
+      "observed_tick": 1098,
+      "tick": 1098,
+      "unix_seconds": 1789337411.16768
+    },
+    {
+      "error": 0,
+      "file": "frame_00551.png",
+      "observed_tick": 1100,
+      "tick": 1100,
+      "unix_seconds": 1789337411.2284
+    },
+    {
+      "error": 0,
+      "file": "frame_00552.png",
+      "observed_tick": 1102,
+      "tick": 1102,
+      "unix_seconds": 1789337411.28749
+    },
+    {
+      "error": 0,
+      "file": "frame_00553.png",
+      "observed_tick": 1104,
+      "tick": 1104,
+      "unix_seconds": 1789337411.35004
+    },
+    {
+      "error": 0,
+      "file": "frame_00554.png",
+      "observed_tick": 1106,
+      "tick": 1106,
+      "unix_seconds": 1789337411.41749
+    },
+    {
+      "error": 0,
+      "file": "frame_00555.png",
+      "observed_tick": 1108,
+      "tick": 1108,
+      "unix_seconds": 1789337411.47956
+    },
+    {
+      "error": 0,
+      "file": "frame_00556.png",
+      "observed_tick": 1110,
+      "tick": 1110,
+      "unix_seconds": 1789337411.54252
+    },
+    {
+      "error": 0,
+      "file": "frame_00557.png",
+      "observed_tick": 1112,
+      "tick": 1112,
+      "unix_seconds": 1789337411.61064
+    },
+    {
+      "error": 0,
+      "file": "frame_00558.png",
+      "observed_tick": 1114,
+      "tick": 1114,
+      "unix_seconds": 1789337411.67379
+    },
+    {
+      "error": 0,
+      "file": "frame_00559.png",
+      "observed_tick": 1116,
+      "tick": 1116,
+      "unix_seconds": 1789337411.74092
+    },
+    {
+      "error": 0,
+      "file": "frame_00560.png",
+      "observed_tick": 1118,
+      "tick": 1118,
+      "unix_seconds": 1789337411.80322
+    },
+    {
+      "error": 0,
+      "file": "frame_00561.png",
+      "observed_tick": 1120,
+      "tick": 1120,
+      "unix_seconds": 1789337411.86707
+    },
+    {
+      "error": 0,
+      "file": "frame_00562.png",
+      "observed_tick": 1122,
+      "tick": 1122,
+      "unix_seconds": 1789337411.93289
+    },
+    {
+      "error": 0,
+      "file": "frame_00563.png",
+      "observed_tick": 1124,
+      "tick": 1124,
+      "unix_seconds": 1789337411.99569
+    },
+    {
+      "error": 0,
+      "file": "frame_00564.png",
+      "observed_tick": 1126,
+      "tick": 1126,
+      "unix_seconds": 1789337412.05779
+    },
+    {
+      "error": 0,
+      "file": "frame_00565.png",
+      "observed_tick": 1128,
+      "tick": 1128,
+      "unix_seconds": 1789337412.12011
+    },
+    {
+      "error": 0,
+      "file": "frame_00566.png",
+      "observed_tick": 1130,
+      "tick": 1130,
+      "unix_seconds": 1789337412.17962
+    },
+    {
+      "error": 0,
+      "file": "frame_00567.png",
+      "observed_tick": 1132,
+      "tick": 1132,
+      "unix_seconds": 1789337412.24167
+    },
+    {
+      "error": 0,
+      "file": "frame_00568.png",
+      "observed_tick": 1134,
+      "tick": 1134,
+      "unix_seconds": 1789337412.30616
+    },
+    {
+      "error": 0,
+      "file": "frame_00569.png",
+      "observed_tick": 1136,
+      "tick": 1136,
+      "unix_seconds": 1789337412.36957
+    },
+    {
+      "error": 0,
+      "file": "frame_00570.png",
+      "observed_tick": 1138,
+      "tick": 1138,
+      "unix_seconds": 1789337412.42915
+    },
+    {
+      "error": 0,
+      "file": "frame_00571.png",
+      "observed_tick": 1140,
+      "tick": 1140,
+      "unix_seconds": 1789337412.49389
+    },
+    {
+      "error": 0,
+      "file": "frame_00572.png",
+      "observed_tick": 1142,
+      "tick": 1142,
+      "unix_seconds": 1789337412.55471
+    },
+    {
+      "error": 0,
+      "file": "frame_00573.png",
+      "observed_tick": 1144,
+      "tick": 1144,
+      "unix_seconds": 1789337412.61195
+    },
+    {
+      "error": 0,
+      "file": "frame_00574.png",
+      "observed_tick": 1146,
+      "tick": 1146,
+      "unix_seconds": 1789337412.66984
+    },
+    {
+      "error": 0,
+      "file": "frame_00575.png",
+      "observed_tick": 1148,
+      "tick": 1148,
+      "unix_seconds": 1789337412.73355
+    },
+    {
+      "error": 0,
+      "file": "frame_00576.png",
+      "observed_tick": 1150,
+      "tick": 1150,
+      "unix_seconds": 1789337412.79449
+    },
+    {
+      "error": 0,
+      "file": "frame_00577.png",
+      "observed_tick": 1152,
+      "tick": 1152,
+      "unix_seconds": 1789337412.85277
+    },
+    {
+      "error": 0,
+      "file": "frame_00578.png",
+      "observed_tick": 1154,
+      "tick": 1154,
+      "unix_seconds": 1789337412.91364
+    },
+    {
+      "error": 0,
+      "file": "frame_00579.png",
+      "observed_tick": 1156,
+      "tick": 1156,
+      "unix_seconds": 1789337412.97264
+    },
+    {
+      "error": 0,
+      "file": "frame_00580.png",
+      "observed_tick": 1158,
+      "tick": 1158,
+      "unix_seconds": 1789337413.02952
+    },
+    {
+      "error": 0,
+      "file": "frame_00581.png",
+      "observed_tick": 1160,
+      "tick": 1160,
+      "unix_seconds": 1789337413.09971
+    },
+    {
+      "error": 0,
+      "file": "frame_00582.png",
+      "observed_tick": 1162,
+      "tick": 1162,
+      "unix_seconds": 1789337413.16055
+    },
+    {
+      "error": 0,
+      "file": "frame_00583.png",
+      "observed_tick": 1164,
+      "tick": 1164,
+      "unix_seconds": 1789337413.22322
+    },
+    {
+      "error": 0,
+      "file": "frame_00584.png",
+      "observed_tick": 1166,
+      "tick": 1166,
+      "unix_seconds": 1789337413.28701
+    },
+    {
+      "error": 0,
+      "file": "frame_00585.png",
+      "observed_tick": 1168,
+      "tick": 1168,
+      "unix_seconds": 1789337413.35227
+    },
+    {
+      "error": 0,
+      "file": "frame_00586.png",
+      "observed_tick": 1170,
+      "tick": 1170,
+      "unix_seconds": 1789337413.41453
+    },
+    {
+      "error": 0,
+      "file": "frame_00587.png",
+      "observed_tick": 1172,
+      "tick": 1172,
+      "unix_seconds": 1789337413.47474
+    },
+    {
+      "error": 0,
+      "file": "frame_00588.png",
+      "observed_tick": 1174,
+      "tick": 1174,
+      "unix_seconds": 1789337413.53575
+    },
+    {
+      "error": 0,
+      "file": "frame_00589.png",
+      "observed_tick": 1176,
+      "tick": 1176,
+      "unix_seconds": 1789337413.59784
+    },
+    {
+      "error": 0,
+      "file": "frame_00590.png",
+      "observed_tick": 1178,
+      "tick": 1178,
+      "unix_seconds": 1789337413.65691
+    },
+    {
+      "error": 0,
+      "file": "frame_00591.png",
+      "observed_tick": 1180,
+      "tick": 1180,
+      "unix_seconds": 1789337413.71655
+    },
+    {
+      "error": 0,
+      "file": "frame_00592.png",
+      "observed_tick": 1182,
+      "tick": 1182,
+      "unix_seconds": 1789337413.77459
+    },
+    {
+      "error": 0,
+      "file": "frame_00593.png",
+      "observed_tick": 1184,
+      "tick": 1184,
+      "unix_seconds": 1789337413.83191
+    },
+    {
+      "error": 0,
+      "file": "frame_00594.png",
+      "observed_tick": 1186,
+      "tick": 1186,
+      "unix_seconds": 1789337413.88973
+    },
+    {
+      "error": 0,
+      "file": "frame_00595.png",
+      "observed_tick": 1188,
+      "tick": 1188,
+      "unix_seconds": 1789337413.9471
+    },
+    {
+      "error": 0,
+      "file": "frame_00596.png",
+      "observed_tick": 1190,
+      "tick": 1190,
+      "unix_seconds": 1789337414.0073
+    },
+    {
+      "error": 0,
+      "file": "frame_00597.png",
+      "observed_tick": 1192,
+      "tick": 1192,
+      "unix_seconds": 1789337414.06845
+    },
+    {
+      "error": 0,
+      "file": "frame_00598.png",
+      "observed_tick": 1194,
+      "tick": 1194,
+      "unix_seconds": 1789337414.1292
+    },
+    {
+      "error": 0,
+      "file": "frame_00599.png",
+      "observed_tick": 1196,
+      "tick": 1196,
+      "unix_seconds": 1789337414.19072
+    },
+    {
+      "error": 0,
+      "file": "frame_00600.png",
+      "observed_tick": 1198,
+      "tick": 1198,
+      "unix_seconds": 1789337414.25128
+    },
+    {
+      "error": 0,
+      "file": "frame_00601.png",
+      "observed_tick": 1200,
+      "tick": 1200,
+      "unix_seconds": 1789337414.31377
+    },
+    {
+      "error": 0,
+      "file": "frame_00602.png",
+      "observed_tick": 1202,
+      "tick": 1202,
+      "unix_seconds": 1789337414.37549
+    },
+    {
+      "error": 0,
+      "file": "frame_00603.png",
+      "observed_tick": 1204,
+      "tick": 1204,
+      "unix_seconds": 1789337414.43653
+    },
+    {
+      "error": 0,
+      "file": "frame_00604.png",
+      "observed_tick": 1206,
+      "tick": 1206,
+      "unix_seconds": 1789337414.49856
+    },
+    {
+      "error": 0,
+      "file": "frame_00605.png",
+      "observed_tick": 1208,
+      "tick": 1208,
+      "unix_seconds": 1789337414.56059
+    },
+    {
+      "error": 0,
+      "file": "frame_00606.png",
+      "observed_tick": 1210,
+      "tick": 1210,
+      "unix_seconds": 1789337414.62327
+    },
+    {
+      "error": 0,
+      "file": "frame_00607.png",
+      "observed_tick": 1212,
+      "tick": 1212,
+      "unix_seconds": 1789337414.69228
+    },
+    {
+      "error": 0,
+      "file": "frame_00608.png",
+      "observed_tick": 1214,
+      "tick": 1214,
+      "unix_seconds": 1789337414.75559
+    },
+    {
+      "error": 0,
+      "file": "frame_00609.png",
+      "observed_tick": 1216,
+      "tick": 1216,
+      "unix_seconds": 1789337414.81942
+    },
+    {
+      "error": 0,
+      "file": "frame_00610.png",
+      "observed_tick": 1218,
+      "tick": 1218,
+      "unix_seconds": 1789337414.87802
+    },
+    {
+      "error": 0,
+      "file": "frame_00611.png",
+      "observed_tick": 1220,
+      "tick": 1220,
+      "unix_seconds": 1789337414.93608
+    },
+    {
+      "error": 0,
+      "file": "frame_00612.png",
+      "observed_tick": 1222,
+      "tick": 1222,
+      "unix_seconds": 1789337415.00091
+    },
+    {
+      "error": 0,
+      "file": "frame_00613.png",
+      "observed_tick": 1224,
+      "tick": 1224,
+      "unix_seconds": 1789337415.0598
+    },
+    {
+      "error": 0,
+      "file": "frame_00614.png",
+      "observed_tick": 1226,
+      "tick": 1226,
+      "unix_seconds": 1789337415.11872
+    },
+    {
+      "error": 0,
+      "file": "frame_00615.png",
+      "observed_tick": 1228,
+      "tick": 1228,
+      "unix_seconds": 1789337415.17663
+    },
+    {
+      "error": 0,
+      "file": "frame_00616.png",
+      "observed_tick": 1230,
+      "tick": 1230,
+      "unix_seconds": 1789337415.23487
+    },
+    {
+      "error": 0,
+      "file": "frame_00617.png",
+      "observed_tick": 1232,
+      "tick": 1232,
+      "unix_seconds": 1789337415.29518
+    },
+    {
+      "error": 0,
+      "file": "frame_00618.png",
+      "observed_tick": 1234,
+      "tick": 1234,
+      "unix_seconds": 1789337415.36043
+    },
+    {
+      "error": 0,
+      "file": "frame_00619.png",
+      "observed_tick": 1236,
+      "tick": 1236,
+      "unix_seconds": 1789337415.42315
+    },
+    {
+      "error": 0,
+      "file": "frame_00620.png",
+      "observed_tick": 1238,
+      "tick": 1238,
+      "unix_seconds": 1789337415.48312
+    },
+    {
+      "error": 0,
+      "file": "frame_00621.png",
+      "observed_tick": 1240,
+      "tick": 1240,
+      "unix_seconds": 1789337415.54406
+    },
+    {
+      "error": 0,
+      "file": "frame_00622.png",
+      "observed_tick": 1242,
+      "tick": 1242,
+      "unix_seconds": 1789337415.60342
+    },
+    {
+      "error": 0,
+      "file": "frame_00623.png",
+      "observed_tick": 1244,
+      "tick": 1244,
+      "unix_seconds": 1789337415.66339
+    },
+    {
+      "error": 0,
+      "file": "frame_00624.png",
+      "observed_tick": 1246,
+      "tick": 1246,
+      "unix_seconds": 1789337415.72175
+    },
+    {
+      "error": 0,
+      "file": "frame_00625.png",
+      "observed_tick": 1248,
+      "tick": 1248,
+      "unix_seconds": 1789337415.78142
+    },
+    {
+      "error": 0,
+      "file": "frame_00626.png",
+      "observed_tick": 1250,
+      "tick": 1250,
+      "unix_seconds": 1789337415.83976
+    },
+    {
+      "error": 0,
+      "file": "frame_00627.png",
+      "observed_tick": 1252,
+      "tick": 1252,
+      "unix_seconds": 1789337415.90271
+    },
+    {
+      "error": 0,
+      "file": "frame_00628.png",
+      "observed_tick": 1254,
+      "tick": 1254,
+      "unix_seconds": 1789337415.95895
+    },
+    {
+      "error": 0,
+      "file": "frame_00629.png",
+      "observed_tick": 1256,
+      "tick": 1256,
+      "unix_seconds": 1789337416.01621
+    },
+    {
+      "error": 0,
+      "file": "frame_00630.png",
+      "observed_tick": 1258,
+      "tick": 1258,
+      "unix_seconds": 1789337416.07361
+    },
+    {
+      "error": 0,
+      "file": "frame_00631.png",
+      "observed_tick": 1260,
+      "tick": 1260,
+      "unix_seconds": 1789337416.13353
+    },
+    {
+      "error": 0,
+      "file": "frame_00632.png",
+      "observed_tick": 1262,
+      "tick": 1262,
+      "unix_seconds": 1789337416.19117
+    },
+    {
+      "error": 0,
+      "file": "frame_00633.png",
+      "observed_tick": 1264,
+      "tick": 1264,
+      "unix_seconds": 1789337416.24891
+    },
+    {
+      "error": 0,
+      "file": "frame_00634.png",
+      "observed_tick": 1266,
+      "tick": 1266,
+      "unix_seconds": 1789337416.30702
+    },
+    {
+      "error": 0,
+      "file": "frame_00635.png",
+      "observed_tick": 1268,
+      "tick": 1268,
+      "unix_seconds": 1789337416.36469
+    },
+    {
+      "error": 0,
+      "file": "frame_00636.png",
+      "observed_tick": 1270,
+      "tick": 1270,
+      "unix_seconds": 1789337416.42635
+    },
+    {
+      "error": 0,
+      "file": "frame_00637.png",
+      "observed_tick": 1272,
+      "tick": 1272,
+      "unix_seconds": 1789337416.48643
+    },
+    {
+      "error": 0,
+      "file": "frame_00638.png",
+      "observed_tick": 1274,
+      "tick": 1274,
+      "unix_seconds": 1789337416.54533
+    },
+    {
+      "error": 0,
+      "file": "frame_00639.png",
+      "observed_tick": 1276,
+      "tick": 1276,
+      "unix_seconds": 1789337416.6036
+    },
+    {
+      "error": 0,
+      "file": "frame_00640.png",
+      "observed_tick": 1278,
+      "tick": 1278,
+      "unix_seconds": 1789337416.66302
+    },
+    {
+      "error": 0,
+      "file": "frame_00641.png",
+      "observed_tick": 1280,
+      "tick": 1280,
+      "unix_seconds": 1789337416.72796
+    },
+    {
+      "error": 0,
+      "file": "frame_00642.png",
+      "observed_tick": 1282,
+      "tick": 1282,
+      "unix_seconds": 1789337416.79338
+    },
+    {
+      "error": 0,
+      "file": "frame_00643.png",
+      "observed_tick": 1284,
+      "tick": 1284,
+      "unix_seconds": 1789337416.86079
+    },
+    {
+      "error": 0,
+      "file": "frame_00644.png",
+      "observed_tick": 1286,
+      "tick": 1286,
+      "unix_seconds": 1789337416.92321
+    },
+    {
+      "error": 0,
+      "file": "frame_00645.png",
+      "observed_tick": 1288,
+      "tick": 1288,
+      "unix_seconds": 1789337416.98068
+    },
+    {
+      "error": 0,
+      "file": "frame_00646.png",
+      "observed_tick": 1290,
+      "tick": 1290,
+      "unix_seconds": 1789337417.03967
+    },
+    {
+      "error": 0,
+      "file": "frame_00647.png",
+      "observed_tick": 1292,
+      "tick": 1292,
+      "unix_seconds": 1789337417.10236
+    },
+    {
+      "error": 0,
+      "file": "frame_00648.png",
+      "observed_tick": 1294,
+      "tick": 1294,
+      "unix_seconds": 1789337417.16742
+    },
+    {
+      "error": 0,
+      "file": "frame_00649.png",
+      "observed_tick": 1296,
+      "tick": 1296,
+      "unix_seconds": 1789337417.23343
+    },
+    {
+      "error": 0,
+      "file": "frame_00650.png",
+      "observed_tick": 1298,
+      "tick": 1298,
+      "unix_seconds": 1789337417.29421
+    },
+    {
+      "error": 0,
+      "file": "frame_00651.png",
+      "observed_tick": 1300,
+      "tick": 1300,
+      "unix_seconds": 1789337417.35722
+    },
+    {
+      "error": 0,
+      "file": "frame_00652.png",
+      "observed_tick": 1302,
+      "tick": 1302,
+      "unix_seconds": 1789337417.42265
+    },
+    {
+      "error": 0,
+      "file": "frame_00653.png",
+      "observed_tick": 1304,
+      "tick": 1304,
+      "unix_seconds": 1789337417.48725
+    },
+    {
+      "error": 0,
+      "file": "frame_00654.png",
+      "observed_tick": 1306,
+      "tick": 1306,
+      "unix_seconds": 1789337417.54788
+    },
+    {
+      "error": 0,
+      "file": "frame_00655.png",
+      "observed_tick": 1308,
+      "tick": 1308,
+      "unix_seconds": 1789337417.61465
+    },
+    {
+      "error": 0,
+      "file": "frame_00656.png",
+      "observed_tick": 1310,
+      "tick": 1310,
+      "unix_seconds": 1789337417.67743
+    },
+    {
+      "error": 0,
+      "file": "frame_00657.png",
+      "observed_tick": 1312,
+      "tick": 1312,
+      "unix_seconds": 1789337417.73687
+    },
+    {
+      "error": 0,
+      "file": "frame_00658.png",
+      "observed_tick": 1314,
+      "tick": 1314,
+      "unix_seconds": 1789337417.7995
+    },
+    {
+      "error": 0,
+      "file": "frame_00659.png",
+      "observed_tick": 1316,
+      "tick": 1316,
+      "unix_seconds": 1789337417.86324
+    },
+    {
+      "error": 0,
+      "file": "frame_00660.png",
+      "observed_tick": 1318,
+      "tick": 1318,
+      "unix_seconds": 1789337417.92431
+    },
+    {
+      "error": 0,
+      "file": "frame_00661.png",
+      "observed_tick": 1320,
+      "tick": 1320,
+      "unix_seconds": 1789337417.98438
+    },
+    {
+      "error": 0,
+      "file": "frame_00662.png",
+      "observed_tick": 1322,
+      "tick": 1322,
+      "unix_seconds": 1789337418.0446
+    },
+    {
+      "error": 0,
+      "file": "frame_00663.png",
+      "observed_tick": 1324,
+      "tick": 1324,
+      "unix_seconds": 1789337418.10719
+    },
+    {
+      "error": 0,
+      "file": "frame_00664.png",
+      "observed_tick": 1326,
+      "tick": 1326,
+      "unix_seconds": 1789337418.16671
+    },
+    {
+      "error": 0,
+      "file": "frame_00665.png",
+      "observed_tick": 1328,
+      "tick": 1328,
+      "unix_seconds": 1789337418.2266
+    },
+    {
+      "error": 0,
+      "file": "frame_00666.png",
+      "observed_tick": 1330,
+      "tick": 1330,
+      "unix_seconds": 1789337418.28804
+    },
+    {
+      "error": 0,
+      "file": "frame_00667.png",
+      "observed_tick": 1332,
+      "tick": 1332,
+      "unix_seconds": 1789337418.3522
+    },
+    {
+      "error": 0,
+      "file": "frame_00668.png",
+      "observed_tick": 1334,
+      "tick": 1334,
+      "unix_seconds": 1789337418.41575
+    },
+    {
+      "error": 0,
+      "file": "frame_00669.png",
+      "observed_tick": 1336,
+      "tick": 1336,
+      "unix_seconds": 1789337418.47779
+    },
+    {
+      "error": 0,
+      "file": "frame_00670.png",
+      "observed_tick": 1338,
+      "tick": 1338,
+      "unix_seconds": 1789337418.54192
+    },
+    {
+      "error": 0,
+      "file": "frame_00671.png",
+      "observed_tick": 1340,
+      "tick": 1340,
+      "unix_seconds": 1789337418.60444
+    },
+    {
+      "error": 0,
+      "file": "frame_00672.png",
+      "observed_tick": 1342,
+      "tick": 1342,
+      "unix_seconds": 1789337418.66561
+    },
+    {
+      "error": 0,
+      "file": "frame_00673.png",
+      "observed_tick": 1344,
+      "tick": 1344,
+      "unix_seconds": 1789337418.73285
+    },
+    {
+      "error": 0,
+      "file": "frame_00674.png",
+      "observed_tick": 1346,
+      "tick": 1346,
+      "unix_seconds": 1789337418.80621
+    },
+    {
+      "error": 0,
+      "file": "frame_00675.png",
+      "observed_tick": 1348,
+      "tick": 1348,
+      "unix_seconds": 1789337418.88333
+    },
+    {
+      "error": 0,
+      "file": "frame_00676.png",
+      "observed_tick": 1350,
+      "tick": 1350,
+      "unix_seconds": 1789337418.94504
+    },
+    {
+      "error": 0,
+      "file": "frame_00677.png",
+      "observed_tick": 1352,
+      "tick": 1352,
+      "unix_seconds": 1789337419.01859
+    },
+    {
+      "error": 0,
+      "file": "frame_00678.png",
+      "observed_tick": 1354,
+      "tick": 1354,
+      "unix_seconds": 1789337419.08124
+    },
+    {
+      "error": 0,
+      "file": "frame_00679.png",
+      "observed_tick": 1356,
+      "tick": 1356,
+      "unix_seconds": 1789337419.14532
+    },
+    {
+      "error": 0,
+      "file": "frame_00680.png",
+      "observed_tick": 1358,
+      "tick": 1358,
+      "unix_seconds": 1789337419.21443
+    },
+    {
+      "error": 0,
+      "file": "frame_00681.png",
+      "observed_tick": 1360,
+      "tick": 1360,
+      "unix_seconds": 1789337419.27235
+    },
+    {
+      "error": 0,
+      "file": "frame_00682.png",
+      "observed_tick": 1362,
+      "tick": 1362,
+      "unix_seconds": 1789337419.33679
+    },
+    {
+      "error": 0,
+      "file": "frame_00683.png",
+      "observed_tick": 1364,
+      "tick": 1364,
+      "unix_seconds": 1789337419.40847
+    },
+    {
+      "error": 0,
+      "file": "frame_00684.png",
+      "observed_tick": 1366,
+      "tick": 1366,
+      "unix_seconds": 1789337419.47595
+    },
+    {
+      "error": 0,
+      "file": "frame_00685.png",
+      "observed_tick": 1368,
+      "tick": 1368,
+      "unix_seconds": 1789337419.53841
+    },
+    {
+      "error": 0,
+      "file": "frame_00686.png",
+      "observed_tick": 1370,
+      "tick": 1370,
+      "unix_seconds": 1789337419.59744
+    },
+    {
+      "error": 0,
+      "file": "frame_00687.png",
+      "observed_tick": 1372,
+      "tick": 1372,
+      "unix_seconds": 1789337419.66107
+    },
+    {
+      "error": 0,
+      "file": "frame_00688.png",
+      "observed_tick": 1374,
+      "tick": 1374,
+      "unix_seconds": 1789337419.72495
+    },
+    {
+      "error": 0,
+      "file": "frame_00689.png",
+      "observed_tick": 1376,
+      "tick": 1376,
+      "unix_seconds": 1789337419.79462
+    },
+    {
+      "error": 0,
+      "file": "frame_00690.png",
+      "observed_tick": 1378,
+      "tick": 1378,
+      "unix_seconds": 1789337419.86426
+    },
+    {
+      "error": 0,
+      "file": "frame_00691.png",
+      "observed_tick": 1380,
+      "tick": 1380,
+      "unix_seconds": 1789337419.93072
+    },
+    {
+      "error": 0,
+      "file": "frame_00692.png",
+      "observed_tick": 1382,
+      "tick": 1382,
+      "unix_seconds": 1789337419.99001
+    },
+    {
+      "error": 0,
+      "file": "frame_00693.png",
+      "observed_tick": 1384,
+      "tick": 1384,
+      "unix_seconds": 1789337420.05297
+    },
+    {
+      "error": 0,
+      "file": "frame_00694.png",
+      "observed_tick": 1386,
+      "tick": 1386,
+      "unix_seconds": 1789337420.1238
+    },
+    {
+      "error": 0,
+      "file": "frame_00695.png",
+      "observed_tick": 1388,
+      "tick": 1388,
+      "unix_seconds": 1789337420.18547
+    },
+    {
+      "error": 0,
+      "file": "frame_00696.png",
+      "observed_tick": 1390,
+      "tick": 1390,
+      "unix_seconds": 1789337420.24779
+    },
+    {
+      "error": 0,
+      "file": "frame_00697.png",
+      "observed_tick": 1392,
+      "tick": 1392,
+      "unix_seconds": 1789337420.31098
+    },
+    {
+      "error": 0,
+      "file": "frame_00698.png",
+      "observed_tick": 1394,
+      "tick": 1394,
+      "unix_seconds": 1789337420.3779
+    },
+    {
+      "error": 0,
+      "file": "frame_00699.png",
+      "observed_tick": 1396,
+      "tick": 1396,
+      "unix_seconds": 1789337420.44111
+    },
+    {
+      "error": 0,
+      "file": "frame_00700.png",
+      "observed_tick": 1398,
+      "tick": 1398,
+      "unix_seconds": 1789337420.50274
+    },
+    {
+      "error": 0,
+      "file": "frame_00701.png",
+      "observed_tick": 1400,
+      "tick": 1400,
+      "unix_seconds": 1789337420.56643
+    },
+    {
+      "error": 0,
+      "file": "frame_00702.png",
+      "observed_tick": 1402,
+      "tick": 1402,
+      "unix_seconds": 1789337420.62784
+    },
+    {
+      "error": 0,
+      "file": "frame_00703.png",
+      "observed_tick": 1404,
+      "tick": 1404,
+      "unix_seconds": 1789337420.68986
+    },
+    {
+      "error": 0,
+      "file": "frame_00704.png",
+      "observed_tick": 1406,
+      "tick": 1406,
+      "unix_seconds": 1789337420.7534
+    },
+    {
+      "error": 0,
+      "file": "frame_00705.png",
+      "observed_tick": 1408,
+      "tick": 1408,
+      "unix_seconds": 1789337420.81464
+    },
+    {
+      "error": 0,
+      "file": "frame_00706.png",
+      "observed_tick": 1410,
+      "tick": 1410,
+      "unix_seconds": 1789337420.87729
+    },
+    {
+      "error": 0,
+      "file": "frame_00707.png",
+      "observed_tick": 1412,
+      "tick": 1412,
+      "unix_seconds": 1789337420.94002
+    },
+    {
+      "error": 0,
+      "file": "frame_00708.png",
+      "observed_tick": 1414,
+      "tick": 1414,
+      "unix_seconds": 1789337421.01149
+    },
+    {
+      "error": 0,
+      "file": "frame_00709.png",
+      "observed_tick": 1416,
+      "tick": 1416,
+      "unix_seconds": 1789337421.07264
+    },
+    {
+      "error": 0,
+      "file": "frame_00710.png",
+      "observed_tick": 1418,
+      "tick": 1418,
+      "unix_seconds": 1789337421.12845
+    },
+    {
+      "error": 0,
+      "file": "frame_00711.png",
+      "observed_tick": 1420,
+      "tick": 1420,
+      "unix_seconds": 1789337421.18573
+    },
+    {
+      "error": 0,
+      "file": "frame_00712.png",
+      "observed_tick": 1422,
+      "tick": 1422,
+      "unix_seconds": 1789337421.24442
+    },
+    {
+      "error": 0,
+      "file": "frame_00713.png",
+      "observed_tick": 1424,
+      "tick": 1424,
+      "unix_seconds": 1789337421.31262
+    },
+    {
+      "error": 0,
+      "file": "frame_00714.png",
+      "observed_tick": 1426,
+      "tick": 1426,
+      "unix_seconds": 1789337421.37324
+    },
+    {
+      "error": 0,
+      "file": "frame_00715.png",
+      "observed_tick": 1428,
+      "tick": 1428,
+      "unix_seconds": 1789337421.43371
+    },
+    {
+      "error": 0,
+      "file": "frame_00716.png",
+      "observed_tick": 1430,
+      "tick": 1430,
+      "unix_seconds": 1789337421.49763
+    },
+    {
+      "error": 0,
+      "file": "frame_00717.png",
+      "observed_tick": 1432,
+      "tick": 1432,
+      "unix_seconds": 1789337421.55955
+    },
+    {
+      "error": 0,
+      "file": "frame_00718.png",
+      "observed_tick": 1434,
+      "tick": 1434,
+      "unix_seconds": 1789337421.63033
+    },
+    {
+      "error": 0,
+      "file": "frame_00719.png",
+      "observed_tick": 1436,
+      "tick": 1436,
+      "unix_seconds": 1789337421.68639
+    },
+    {
+      "error": 0,
+      "file": "frame_00720.png",
+      "observed_tick": 1438,
+      "tick": 1438,
+      "unix_seconds": 1789337421.74548
+    },
+    {
+      "error": 0,
+      "file": "frame_00721.png",
+      "observed_tick": 1440,
+      "tick": 1440,
+      "unix_seconds": 1789337421.80337
+    },
+    {
+      "error": 0,
+      "file": "frame_00722.png",
+      "observed_tick": 1442,
+      "tick": 1442,
+      "unix_seconds": 1789337421.86435
+    },
+    {
+      "error": 0,
+      "file": "frame_00723.png",
+      "observed_tick": 1444,
+      "tick": 1444,
+      "unix_seconds": 1789337421.92865
+    },
+    {
+      "error": 0,
+      "file": "frame_00724.png",
+      "observed_tick": 1446,
+      "tick": 1446,
+      "unix_seconds": 1789337421.98849
+    },
+    {
+      "error": 0,
+      "file": "frame_00725.png",
+      "observed_tick": 1448,
+      "tick": 1448,
+      "unix_seconds": 1789337422.04773
+    },
+    {
+      "error": 0,
+      "file": "frame_00726.png",
+      "observed_tick": 1450,
+      "tick": 1450,
+      "unix_seconds": 1789337422.10901
+    },
+    {
+      "error": 0,
+      "file": "frame_00727.png",
+      "observed_tick": 1452,
+      "tick": 1452,
+      "unix_seconds": 1789337422.16846
+    },
+    {
+      "error": 0,
+      "file": "frame_00728.png",
+      "observed_tick": 1454,
+      "tick": 1454,
+      "unix_seconds": 1789337422.2261
+    },
+    {
+      "error": 0,
+      "file": "frame_00729.png",
+      "observed_tick": 1456,
+      "tick": 1456,
+      "unix_seconds": 1789337422.28641
+    },
+    {
+      "error": 0,
+      "file": "frame_00730.png",
+      "observed_tick": 1458,
+      "tick": 1458,
+      "unix_seconds": 1789337422.34523
+    },
+    {
+      "error": 0,
+      "file": "frame_00731.png",
+      "observed_tick": 1460,
+      "tick": 1460,
+      "unix_seconds": 1789337422.40353
+    },
+    {
+      "error": 0,
+      "file": "frame_00732.png",
+      "observed_tick": 1462,
+      "tick": 1462,
+      "unix_seconds": 1789337422.46463
+    },
+    {
+      "error": 0,
+      "file": "frame_00733.png",
+      "observed_tick": 1464,
+      "tick": 1464,
+      "unix_seconds": 1789337422.52415
+    },
+    {
+      "error": 0,
+      "file": "frame_00734.png",
+      "observed_tick": 1466,
+      "tick": 1466,
+      "unix_seconds": 1789337422.58242
+    },
+    {
+      "error": 0,
+      "file": "frame_00735.png",
+      "observed_tick": 1468,
+      "tick": 1468,
+      "unix_seconds": 1789337422.63958
+    },
+    {
+      "error": 0,
+      "file": "frame_00736.png",
+      "observed_tick": 1470,
+      "tick": 1470,
+      "unix_seconds": 1789337422.69733
+    },
+    {
+      "error": 0,
+      "file": "frame_00737.png",
+      "observed_tick": 1472,
+      "tick": 1472,
+      "unix_seconds": 1789337422.75568
+    },
+    {
+      "error": 0,
+      "file": "frame_00738.png",
+      "observed_tick": 1474,
+      "tick": 1474,
+      "unix_seconds": 1789337422.81995
+    },
+    {
+      "error": 0,
+      "file": "frame_00739.png",
+      "observed_tick": 1476,
+      "tick": 1476,
+      "unix_seconds": 1789337422.88113
+    },
+    {
+      "error": 0,
+      "file": "frame_00740.png",
+      "observed_tick": 1478,
+      "tick": 1478,
+      "unix_seconds": 1789337422.94205
+    },
+    {
+      "error": 0,
+      "file": "frame_00741.png",
+      "observed_tick": 1480,
+      "tick": 1480,
+      "unix_seconds": 1789337423.00713
+    },
+    {
+      "error": 0,
+      "file": "frame_00742.png",
+      "observed_tick": 1482,
+      "tick": 1482,
+      "unix_seconds": 1789337423.06595
+    },
+    {
+      "error": 0,
+      "file": "frame_00743.png",
+      "observed_tick": 1484,
+      "tick": 1484,
+      "unix_seconds": 1789337423.12296
+    },
+    {
+      "error": 0,
+      "file": "frame_00744.png",
+      "observed_tick": 1486,
+      "tick": 1486,
+      "unix_seconds": 1789337423.183
+    },
+    {
+      "error": 0,
+      "file": "frame_00745.png",
+      "observed_tick": 1488,
+      "tick": 1488,
+      "unix_seconds": 1789337423.25522
+    },
+    {
+      "error": 0,
+      "file": "frame_00746.png",
+      "observed_tick": 1490,
+      "tick": 1490,
+      "unix_seconds": 1789337423.31423
+    },
+    {
+      "error": 0,
+      "file": "frame_00747.png",
+      "observed_tick": 1492,
+      "tick": 1492,
+      "unix_seconds": 1789337423.37607
+    },
+    {
+      "error": 0,
+      "file": "frame_00748.png",
+      "observed_tick": 1494,
+      "tick": 1494,
+      "unix_seconds": 1789337423.43578
+    },
+    {
+      "error": 0,
+      "file": "frame_00749.png",
+      "observed_tick": 1496,
+      "tick": 1496,
+      "unix_seconds": 1789337423.49798
+    },
+    {
+      "error": 0,
+      "file": "frame_00750.png",
+      "observed_tick": 1498,
+      "tick": 1498,
+      "unix_seconds": 1789337423.55796
+    },
+    {
+      "error": 0,
+      "file": "frame_00751.png",
+      "observed_tick": 1500,
+      "tick": 1500,
+      "unix_seconds": 1789337423.61773
+    },
+    {
+      "error": 0,
+      "file": "frame_00752.png",
+      "observed_tick": 1502,
+      "tick": 1502,
+      "unix_seconds": 1789337423.67598
+    },
+    {
+      "error": 0,
+      "file": "frame_00753.png",
+      "observed_tick": 1504,
+      "tick": 1504,
+      "unix_seconds": 1789337423.7356
+    },
+    {
+      "error": 0,
+      "file": "frame_00754.png",
+      "observed_tick": 1506,
+      "tick": 1506,
+      "unix_seconds": 1789337423.7967
+    },
+    {
+      "error": 0,
+      "file": "frame_00755.png",
+      "observed_tick": 1508,
+      "tick": 1508,
+      "unix_seconds": 1789337423.85655
+    },
+    {
+      "error": 0,
+      "file": "frame_00756.png",
+      "observed_tick": 1510,
+      "tick": 1510,
+      "unix_seconds": 1789337423.91889
+    },
+    {
+      "error": 0,
+      "file": "frame_00757.png",
+      "observed_tick": 1512,
+      "tick": 1512,
+      "unix_seconds": 1789337423.98078
+    },
+    {
+      "error": 0,
+      "file": "frame_00758.png",
+      "observed_tick": 1514,
+      "tick": 1514,
+      "unix_seconds": 1789337424.04395
+    },
+    {
+      "error": 0,
+      "file": "frame_00759.png",
+      "observed_tick": 1516,
+      "tick": 1516,
+      "unix_seconds": 1789337424.10519
+    },
+    {
+      "error": 0,
+      "file": "frame_00760.png",
+      "observed_tick": 1518,
+      "tick": 1518,
+      "unix_seconds": 1789337424.17046
+    },
+    {
+      "error": 0,
+      "file": "frame_00761.png",
+      "observed_tick": 1520,
+      "tick": 1520,
+      "unix_seconds": 1789337424.23317
+    },
+    {
+      "error": 0,
+      "file": "frame_00762.png",
+      "observed_tick": 1522,
+      "tick": 1522,
+      "unix_seconds": 1789337424.29286
+    },
+    {
+      "error": 0,
+      "file": "frame_00763.png",
+      "observed_tick": 1524,
+      "tick": 1524,
+      "unix_seconds": 1789337424.3559
+    },
+    {
+      "error": 0,
+      "file": "frame_00764.png",
+      "observed_tick": 1526,
+      "tick": 1526,
+      "unix_seconds": 1789337424.42069
+    },
+    {
+      "error": 0,
+      "file": "frame_00765.png",
+      "observed_tick": 1528,
+      "tick": 1528,
+      "unix_seconds": 1789337424.48302
+    },
+    {
+      "error": 0,
+      "file": "frame_00766.png",
+      "observed_tick": 1530,
+      "tick": 1530,
+      "unix_seconds": 1789337424.54436
+    },
+    {
+      "error": 0,
+      "file": "frame_00767.png",
+      "observed_tick": 1532,
+      "tick": 1532,
+      "unix_seconds": 1789337424.60457
+    },
+    {
+      "error": 0,
+      "file": "frame_00768.png",
+      "observed_tick": 1534,
+      "tick": 1534,
+      "unix_seconds": 1789337424.66758
+    },
+    {
+      "error": 0,
+      "file": "frame_00769.png",
+      "observed_tick": 1536,
+      "tick": 1536,
+      "unix_seconds": 1789337424.72835
+    },
+    {
+      "error": 0,
+      "file": "frame_00770.png",
+      "observed_tick": 1538,
+      "tick": 1538,
+      "unix_seconds": 1789337424.78995
+    },
+    {
+      "error": 0,
+      "file": "frame_00771.png",
+      "observed_tick": 1540,
+      "tick": 1540,
+      "unix_seconds": 1789337424.84925
+    },
+    {
+      "error": 0,
+      "file": "frame_00772.png",
+      "observed_tick": 1542,
+      "tick": 1542,
+      "unix_seconds": 1789337424.90898
+    },
+    {
+      "error": 0,
+      "file": "frame_00773.png",
+      "observed_tick": 1544,
+      "tick": 1544,
+      "unix_seconds": 1789337424.97299
+    },
+    {
+      "error": 0,
+      "file": "frame_00774.png",
+      "observed_tick": 1546,
+      "tick": 1546,
+      "unix_seconds": 1789337425.03602
+    },
+    {
+      "error": 0,
+      "file": "frame_00775.png",
+      "observed_tick": 1548,
+      "tick": 1548,
+      "unix_seconds": 1789337425.09928
+    },
+    {
+      "error": 0,
+      "file": "frame_00776.png",
+      "observed_tick": 1550,
+      "tick": 1550,
+      "unix_seconds": 1789337425.1614
+    },
+    {
+      "error": 0,
+      "file": "frame_00777.png",
+      "observed_tick": 1552,
+      "tick": 1552,
+      "unix_seconds": 1789337425.22026
+    },
+    {
+      "error": 0,
+      "file": "frame_00778.png",
+      "observed_tick": 1554,
+      "tick": 1554,
+      "unix_seconds": 1789337425.28459
+    },
+    {
+      "error": 0,
+      "file": "frame_00779.png",
+      "observed_tick": 1556,
+      "tick": 1556,
+      "unix_seconds": 1789337425.35617
+    },
+    {
+      "error": 0,
+      "file": "frame_00780.png",
+      "observed_tick": 1558,
+      "tick": 1558,
+      "unix_seconds": 1789337425.42107
+    },
+    {
+      "error": 0,
+      "file": "frame_00781.png",
+      "observed_tick": 1560,
+      "tick": 1560,
+      "unix_seconds": 1789337425.49107
+    },
+    {
+      "error": 0,
+      "file": "frame_00782.png",
+      "observed_tick": 1562,
+      "tick": 1562,
+      "unix_seconds": 1789337425.56055
+    },
+    {
+      "error": 0,
+      "file": "frame_00783.png",
+      "observed_tick": 1564,
+      "tick": 1564,
+      "unix_seconds": 1789337425.62649
+    },
+    {
+      "error": 0,
+      "file": "frame_00784.png",
+      "observed_tick": 1566,
+      "tick": 1566,
+      "unix_seconds": 1789337425.69611
+    },
+    {
+      "error": 0,
+      "file": "frame_00785.png",
+      "observed_tick": 1568,
+      "tick": 1568,
+      "unix_seconds": 1789337425.76548
+    },
+    {
+      "error": 0,
+      "file": "frame_00786.png",
+      "observed_tick": 1570,
+      "tick": 1570,
+      "unix_seconds": 1789337425.83344
+    },
+    {
+      "error": 0,
+      "file": "frame_00787.png",
+      "observed_tick": 1572,
+      "tick": 1572,
+      "unix_seconds": 1789337425.89986
+    },
+    {
+      "error": 0,
+      "file": "frame_00788.png",
+      "observed_tick": 1574,
+      "tick": 1574,
+      "unix_seconds": 1789337425.97375
+    },
+    {
+      "error": 0,
+      "file": "frame_00789.png",
+      "observed_tick": 1576,
+      "tick": 1576,
+      "unix_seconds": 1789337426.03749
+    },
+    {
+      "error": 0,
+      "file": "frame_00790.png",
+      "observed_tick": 1578,
+      "tick": 1578,
+      "unix_seconds": 1789337426.10686
+    },
+    {
+      "error": 0,
+      "file": "frame_00791.png",
+      "observed_tick": 1580,
+      "tick": 1580,
+      "unix_seconds": 1789337426.18787
+    },
+    {
+      "error": 0,
+      "file": "frame_00792.png",
+      "observed_tick": 1582,
+      "tick": 1582,
+      "unix_seconds": 1789337426.25533
+    },
+    {
+      "error": 0,
+      "file": "frame_00793.png",
+      "observed_tick": 1584,
+      "tick": 1584,
+      "unix_seconds": 1789337426.3209
+    },
+    {
+      "error": 0,
+      "file": "frame_00794.png",
+      "observed_tick": 1586,
+      "tick": 1586,
+      "unix_seconds": 1789337426.39763
+    },
+    {
+      "error": 0,
+      "file": "frame_00795.png",
+      "observed_tick": 1588,
+      "tick": 1588,
+      "unix_seconds": 1789337426.46568
+    },
+    {
+      "error": 0,
+      "file": "frame_00796.png",
+      "observed_tick": 1590,
+      "tick": 1590,
+      "unix_seconds": 1789337426.5491
+    },
+    {
+      "error": 0,
+      "file": "frame_00797.png",
+      "observed_tick": 1592,
+      "tick": 1592,
+      "unix_seconds": 1789337426.6151
+    },
+    {
+      "error": 0,
+      "file": "frame_00798.png",
+      "observed_tick": 1594,
+      "tick": 1594,
+      "unix_seconds": 1789337426.68512
+    },
+    {
+      "error": 0,
+      "file": "frame_00799.png",
+      "observed_tick": 1596,
+      "tick": 1596,
+      "unix_seconds": 1789337426.76376
+    },
+    {
+      "error": 0,
+      "file": "frame_00800.png",
+      "observed_tick": 1598,
+      "tick": 1598,
+      "unix_seconds": 1789337426.82877
+    },
+    {
+      "error": 0,
+      "file": "frame_00801.png",
+      "observed_tick": 1600,
+      "tick": 1600,
+      "unix_seconds": 1789337426.89215
+    },
+    {
+      "error": 0,
+      "file": "frame_00802.png",
+      "observed_tick": 1602,
+      "tick": 1602,
+      "unix_seconds": 1789337426.96404
+    },
+    {
+      "error": 0,
+      "file": "frame_00803.png",
+      "observed_tick": 1604,
+      "tick": 1604,
+      "unix_seconds": 1789337427.02734
+    },
+    {
+      "error": 0,
+      "file": "frame_00804.png",
+      "observed_tick": 1606,
+      "tick": 1606,
+      "unix_seconds": 1789337427.0905
+    },
+    {
+      "error": 0,
+      "file": "frame_00805.png",
+      "observed_tick": 1608,
+      "tick": 1608,
+      "unix_seconds": 1789337427.15638
+    },
+    {
+      "error": 0,
+      "file": "frame_00806.png",
+      "observed_tick": 1610,
+      "tick": 1610,
+      "unix_seconds": 1789337427.22083
+    },
+    {
+      "error": 0,
+      "file": "frame_00807.png",
+      "observed_tick": 1612,
+      "tick": 1612,
+      "unix_seconds": 1789337427.28374
+    },
+    {
+      "error": 0,
+      "file": "frame_00808.png",
+      "observed_tick": 1614,
+      "tick": 1614,
+      "unix_seconds": 1789337427.34381
+    },
+    {
+      "error": 0,
+      "file": "frame_00809.png",
+      "observed_tick": 1616,
+      "tick": 1616,
+      "unix_seconds": 1789337427.41805
+    },
+    {
+      "error": 0,
+      "file": "frame_00810.png",
+      "observed_tick": 1618,
+      "tick": 1618,
+      "unix_seconds": 1789337427.47568
+    },
+    {
+      "error": 0,
+      "file": "frame_00811.png",
+      "observed_tick": 1620,
+      "tick": 1620,
+      "unix_seconds": 1789337427.53679
+    },
+    {
+      "error": 0,
+      "file": "frame_00812.png",
+      "observed_tick": 1622,
+      "tick": 1622,
+      "unix_seconds": 1789337427.59882
+    },
+    {
+      "error": 0,
+      "file": "frame_00813.png",
+      "observed_tick": 1624,
+      "tick": 1624,
+      "unix_seconds": 1789337427.66828
+    },
+    {
+      "error": 0,
+      "file": "frame_00814.png",
+      "observed_tick": 1626,
+      "tick": 1626,
+      "unix_seconds": 1789337427.72896
+    },
+    {
+      "error": 0,
+      "file": "frame_00815.png",
+      "observed_tick": 1628,
+      "tick": 1628,
+      "unix_seconds": 1789337427.78708
+    },
+    {
+      "error": 0,
+      "file": "frame_00816.png",
+      "observed_tick": 1630,
+      "tick": 1630,
+      "unix_seconds": 1789337427.84462
+    },
+    {
+      "error": 0,
+      "file": "frame_00817.png",
+      "observed_tick": 1632,
+      "tick": 1632,
+      "unix_seconds": 1789337427.90128
+    },
+    {
+      "error": 0,
+      "file": "frame_00818.png",
+      "observed_tick": 1634,
+      "tick": 1634,
+      "unix_seconds": 1789337427.96282
+    },
+    {
+      "error": 0,
+      "file": "frame_00819.png",
+      "observed_tick": 1636,
+      "tick": 1636,
+      "unix_seconds": 1789337428.02896
+    },
+    {
+      "error": 0,
+      "file": "frame_00820.png",
+      "observed_tick": 1638,
+      "tick": 1638,
+      "unix_seconds": 1789337428.08469
+    },
+    {
+      "error": 0,
+      "file": "frame_00821.png",
+      "observed_tick": 1640,
+      "tick": 1640,
+      "unix_seconds": 1789337428.15086
+    },
+    {
+      "error": 0,
+      "file": "frame_00822.png",
+      "observed_tick": 1642,
+      "tick": 1642,
+      "unix_seconds": 1789337428.21507
+    },
+    {
+      "error": 0,
+      "file": "frame_00823.png",
+      "observed_tick": 1644,
+      "tick": 1644,
+      "unix_seconds": 1789337428.28163
+    },
+    {
+      "error": 0,
+      "file": "frame_00824.png",
+      "observed_tick": 1646,
+      "tick": 1646,
+      "unix_seconds": 1789337428.34583
+    },
+    {
+      "error": 0,
+      "file": "frame_00825.png",
+      "observed_tick": 1648,
+      "tick": 1648,
+      "unix_seconds": 1789337428.41467
+    },
+    {
+      "error": 0,
+      "file": "frame_00826.png",
+      "observed_tick": 1650,
+      "tick": 1650,
+      "unix_seconds": 1789337428.47573
+    },
+    {
+      "error": 0,
+      "file": "frame_00827.png",
+      "observed_tick": 1652,
+      "tick": 1652,
+      "unix_seconds": 1789337428.54148
+    },
+    {
+      "error": 0,
+      "file": "frame_00828.png",
+      "observed_tick": 1654,
+      "tick": 1654,
+      "unix_seconds": 1789337428.60427
+    },
+    {
+      "error": 0,
+      "file": "frame_00829.png",
+      "observed_tick": 1656,
+      "tick": 1656,
+      "unix_seconds": 1789337428.66353
+    },
+    {
+      "error": 0,
+      "file": "frame_00830.png",
+      "observed_tick": 1658,
+      "tick": 1658,
+      "unix_seconds": 1789337428.72517
+    },
+    {
+      "error": 0,
+      "file": "frame_00831.png",
+      "observed_tick": 1660,
+      "tick": 1660,
+      "unix_seconds": 1789337428.78531
+    },
+    {
+      "error": 0,
+      "file": "frame_00832.png",
+      "observed_tick": 1662,
+      "tick": 1662,
+      "unix_seconds": 1789337428.84838
+    },
+    {
+      "error": 0,
+      "file": "frame_00833.png",
+      "observed_tick": 1664,
+      "tick": 1664,
+      "unix_seconds": 1789337428.90861
+    },
+    {
+      "error": 0,
+      "file": "frame_00834.png",
+      "observed_tick": 1666,
+      "tick": 1666,
+      "unix_seconds": 1789337428.96913
+    },
+    {
+      "error": 0,
+      "file": "frame_00835.png",
+      "observed_tick": 1668,
+      "tick": 1668,
+      "unix_seconds": 1789337429.0349
+    },
+    {
+      "error": 0,
+      "file": "frame_00836.png",
+      "observed_tick": 1670,
+      "tick": 1670,
+      "unix_seconds": 1789337429.09804
+    },
+    {
+      "error": 0,
+      "file": "frame_00837.png",
+      "observed_tick": 1672,
+      "tick": 1672,
+      "unix_seconds": 1789337429.1617
+    },
+    {
+      "error": 0,
+      "file": "frame_00838.png",
+      "observed_tick": 1674,
+      "tick": 1674,
+      "unix_seconds": 1789337429.22433
+    },
+    {
+      "error": 0,
+      "file": "frame_00839.png",
+      "observed_tick": 1676,
+      "tick": 1676,
+      "unix_seconds": 1789337429.28466
+    },
+    {
+      "error": 0,
+      "file": "frame_00840.png",
+      "observed_tick": 1678,
+      "tick": 1678,
+      "unix_seconds": 1789337429.34724
+    },
+    {
+      "error": 0,
+      "file": "frame_00841.png",
+      "observed_tick": 1680,
+      "tick": 1680,
+      "unix_seconds": 1789337429.42122
+    },
+    {
+      "error": 0,
+      "file": "frame_00842.png",
+      "observed_tick": 1682,
+      "tick": 1682,
+      "unix_seconds": 1789337429.48365
+    },
+    {
+      "error": 0,
+      "file": "frame_00843.png",
+      "observed_tick": 1684,
+      "tick": 1684,
+      "unix_seconds": 1789337429.54635
+    },
+    {
+      "error": 0,
+      "file": "frame_00844.png",
+      "observed_tick": 1686,
+      "tick": 1686,
+      "unix_seconds": 1789337429.60522
+    },
+    {
+      "error": 0,
+      "file": "frame_00845.png",
+      "observed_tick": 1688,
+      "tick": 1688,
+      "unix_seconds": 1789337429.66712
+    },
+    {
+      "error": 0,
+      "file": "frame_00846.png",
+      "observed_tick": 1690,
+      "tick": 1690,
+      "unix_seconds": 1789337429.72638
+    },
+    {
+      "error": 0,
+      "file": "frame_00847.png",
+      "observed_tick": 1692,
+      "tick": 1692,
+      "unix_seconds": 1789337429.78334
+    },
+    {
+      "error": 0,
+      "file": "frame_00848.png",
+      "observed_tick": 1694,
+      "tick": 1694,
+      "unix_seconds": 1789337429.84049
+    },
+    {
+      "error": 0,
+      "file": "frame_00849.png",
+      "observed_tick": 1696,
+      "tick": 1696,
+      "unix_seconds": 1789337429.90146
+    },
+    {
+      "error": 0,
+      "file": "frame_00850.png",
+      "observed_tick": 1698,
+      "tick": 1698,
+      "unix_seconds": 1789337429.96304
+    },
+    {
+      "error": 0,
+      "file": "frame_00851.png",
+      "observed_tick": 1700,
+      "tick": 1700,
+      "unix_seconds": 1789337430.02526
+    },
+    {
+      "error": 0,
+      "file": "frame_00852.png",
+      "observed_tick": 1702,
+      "tick": 1702,
+      "unix_seconds": 1789337430.08782
+    },
+    {
+      "error": 0,
+      "file": "frame_00853.png",
+      "observed_tick": 1704,
+      "tick": 1704,
+      "unix_seconds": 1789337430.14739
+    },
+    {
+      "error": 0,
+      "file": "frame_00854.png",
+      "observed_tick": 1706,
+      "tick": 1706,
+      "unix_seconds": 1789337430.20462
+    },
+    {
+      "error": 0,
+      "file": "frame_00855.png",
+      "observed_tick": 1708,
+      "tick": 1708,
+      "unix_seconds": 1789337430.26607
+    },
+    {
+      "error": 0,
+      "file": "frame_00856.png",
+      "observed_tick": 1710,
+      "tick": 1710,
+      "unix_seconds": 1789337430.32761
+    },
+    {
+      "error": 0,
+      "file": "frame_00857.png",
+      "observed_tick": 1712,
+      "tick": 1712,
+      "unix_seconds": 1789337430.38759
+    },
+    {
+      "error": 0,
+      "file": "frame_00858.png",
+      "observed_tick": 1714,
+      "tick": 1714,
+      "unix_seconds": 1789337430.44954
+    },
+    {
+      "error": 0,
+      "file": "frame_00859.png",
+      "observed_tick": 1716,
+      "tick": 1716,
+      "unix_seconds": 1789337430.51351
+    },
+    {
+      "error": 0,
+      "file": "frame_00860.png",
+      "observed_tick": 1718,
+      "tick": 1718,
+      "unix_seconds": 1789337430.57795
+    },
+    {
+      "error": 0,
+      "file": "frame_00861.png",
+      "observed_tick": 1720,
+      "tick": 1720,
+      "unix_seconds": 1789337430.63796
+    },
+    {
+      "error": 0,
+      "file": "frame_00862.png",
+      "observed_tick": 1722,
+      "tick": 1722,
+      "unix_seconds": 1789337430.69825
+    },
+    {
+      "error": 0,
+      "file": "frame_00863.png",
+      "observed_tick": 1724,
+      "tick": 1724,
+      "unix_seconds": 1789337430.76091
+    },
+    {
+      "error": 0,
+      "file": "frame_00864.png",
+      "observed_tick": 1726,
+      "tick": 1726,
+      "unix_seconds": 1789337430.82001
+    },
+    {
+      "error": 0,
+      "file": "frame_00865.png",
+      "observed_tick": 1728,
+      "tick": 1728,
+      "unix_seconds": 1789337430.89529
+    },
+    {
+      "error": 0,
+      "file": "frame_00866.png",
+      "observed_tick": 1730,
+      "tick": 1730,
+      "unix_seconds": 1789337430.95583
+    },
+    {
+      "error": 0,
+      "file": "frame_00867.png",
+      "observed_tick": 1732,
+      "tick": 1732,
+      "unix_seconds": 1789337431.01932
+    },
+    {
+      "error": 0,
+      "file": "frame_00868.png",
+      "observed_tick": 1734,
+      "tick": 1734,
+      "unix_seconds": 1789337431.08151
+    },
+    {
+      "error": 0,
+      "file": "frame_00869.png",
+      "observed_tick": 1736,
+      "tick": 1736,
+      "unix_seconds": 1789337431.14365
+    },
+    {
+      "error": 0,
+      "file": "frame_00870.png",
+      "observed_tick": 1738,
+      "tick": 1738,
+      "unix_seconds": 1789337431.20752
+    },
+    {
+      "error": 0,
+      "file": "frame_00871.png",
+      "observed_tick": 1740,
+      "tick": 1740,
+      "unix_seconds": 1789337431.2761
+    },
+    {
+      "error": 0,
+      "file": "frame_00872.png",
+      "observed_tick": 1742,
+      "tick": 1742,
+      "unix_seconds": 1789337431.33711
+    },
+    {
+      "error": 0,
+      "file": "frame_00873.png",
+      "observed_tick": 1744,
+      "tick": 1744,
+      "unix_seconds": 1789337431.40024
+    },
+    {
+      "error": 0,
+      "file": "frame_00874.png",
+      "observed_tick": 1746,
+      "tick": 1746,
+      "unix_seconds": 1789337431.46132
+    },
+    {
+      "error": 0,
+      "file": "frame_00875.png",
+      "observed_tick": 1748,
+      "tick": 1748,
+      "unix_seconds": 1789337431.52566
+    },
+    {
+      "error": 0,
+      "file": "frame_00876.png",
+      "observed_tick": 1750,
+      "tick": 1750,
+      "unix_seconds": 1789337431.60452
+    },
+    {
+      "error": 0,
+      "file": "frame_00877.png",
+      "observed_tick": 1752,
+      "tick": 1752,
+      "unix_seconds": 1789337431.67391
+    },
+    {
+      "error": 0,
+      "file": "frame_00878.png",
+      "observed_tick": 1754,
+      "tick": 1754,
+      "unix_seconds": 1789337431.73688
+    },
+    {
+      "error": 0,
+      "file": "frame_00879.png",
+      "observed_tick": 1756,
+      "tick": 1756,
+      "unix_seconds": 1789337431.79932
+    },
+    {
+      "error": 0,
+      "file": "frame_00880.png",
+      "observed_tick": 1758,
+      "tick": 1758,
+      "unix_seconds": 1789337431.86354
+    },
+    {
+      "error": 0,
+      "file": "frame_00881.png",
+      "observed_tick": 1760,
+      "tick": 1760,
+      "unix_seconds": 1789337431.9335
+    },
+    {
+      "error": 0,
+      "file": "frame_00882.png",
+      "observed_tick": 1762,
+      "tick": 1762,
+      "unix_seconds": 1789337431.99535
+    },
+    {
+      "error": 0,
+      "file": "frame_00883.png",
+      "observed_tick": 1764,
+      "tick": 1764,
+      "unix_seconds": 1789337432.06258
+    },
+    {
+      "error": 0,
+      "file": "frame_00884.png",
+      "observed_tick": 1766,
+      "tick": 1766,
+      "unix_seconds": 1789337432.12886
+    },
+    {
+      "error": 0,
+      "file": "frame_00885.png",
+      "observed_tick": 1768,
+      "tick": 1768,
+      "unix_seconds": 1789337432.18726
+    },
+    {
+      "error": 0,
+      "file": "frame_00886.png",
+      "observed_tick": 1770,
+      "tick": 1770,
+      "unix_seconds": 1789337432.24589
+    },
+    {
+      "error": 0,
+      "file": "frame_00887.png",
+      "observed_tick": 1772,
+      "tick": 1772,
+      "unix_seconds": 1789337432.30514
+    },
+    {
+      "error": 0,
+      "file": "frame_00888.png",
+      "observed_tick": 1774,
+      "tick": 1774,
+      "unix_seconds": 1789337432.36275
+    },
+    {
+      "error": 0,
+      "file": "frame_00889.png",
+      "observed_tick": 1776,
+      "tick": 1776,
+      "unix_seconds": 1789337432.43239
+    },
+    {
+      "error": 0,
+      "file": "frame_00890.png",
+      "observed_tick": 1778,
+      "tick": 1778,
+      "unix_seconds": 1789337432.49014
+    },
+    {
+      "error": 0,
+      "file": "frame_00891.png",
+      "observed_tick": 1780,
+      "tick": 1780,
+      "unix_seconds": 1789337432.55855
+    },
+    {
+      "error": 0,
+      "file": "frame_00892.png",
+      "observed_tick": 1782,
+      "tick": 1782,
+      "unix_seconds": 1789337432.61708
+    },
+    {
+      "error": 0,
+      "file": "frame_00893.png",
+      "observed_tick": 1784,
+      "tick": 1784,
+      "unix_seconds": 1789337432.67624
+    },
+    {
+      "error": 0,
+      "file": "frame_00894.png",
+      "observed_tick": 1786,
+      "tick": 1786,
+      "unix_seconds": 1789337432.73492
+    },
+    {
+      "error": 0,
+      "file": "frame_00895.png",
+      "observed_tick": 1788,
+      "tick": 1788,
+      "unix_seconds": 1789337432.806
+    },
+    {
+      "error": 0,
+      "file": "frame_00896.png",
+      "observed_tick": 1790,
+      "tick": 1790,
+      "unix_seconds": 1789337432.86615
+    },
+    {
+      "error": 0,
+      "file": "frame_00897.png",
+      "observed_tick": 1792,
+      "tick": 1792,
+      "unix_seconds": 1789337432.92372
+    },
+    {
+      "error": 0,
+      "file": "frame_00898.png",
+      "observed_tick": 1794,
+      "tick": 1794,
+      "unix_seconds": 1789337432.98399
+    },
+    {
+      "error": 0,
+      "file": "frame_00899.png",
+      "observed_tick": 1796,
+      "tick": 1796,
+      "unix_seconds": 1789337433.05057
+    },
+    {
+      "error": 0,
+      "file": "frame_00900.png",
+      "observed_tick": 1798,
+      "tick": 1798,
+      "unix_seconds": 1789337433.11054
+    },
+    {
+      "error": 0,
+      "file": "frame_00901.png",
+      "observed_tick": 1800,
+      "tick": 1800,
+      "unix_seconds": 1789337433.18321
+    }
+  ],
+  "health": 70,
+  "passed": true,
+  "renderer": "llvmpipe (LLVM 21.1.8, 256 bits)",
+  "scenario": "active",
+  "state": 0,
+  "ticks": 1800,
+  "visual_assessment": "UNASSESSED: no available image perception; files not visually inspected"
+}
