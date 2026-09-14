@@ -1,0 +1,77 @@
+{
+  "destination": "G12 node 9 human playtest",
+  "authority": "Current node-2 task instruction explicitly carries subjective judgments to node 9; no vision repair or renderer redesign merely because the worker cannot see captures.",
+  "tested_commit": "89f1f7be6c5b8321c2f6d0e326c21fad75e9ad1e",
+  "archive": "evidence/node2-s137/runtime-evidence.tar.xz",
+  "extraction_command": "tar -xJf evidence/node2-s137/runtime-evidence.tar.xz",
+  "production_crowded_burst_frames": [
+    "evidence/arena/n2-s137-dense-720p/dense_001_color.png",
+    "evidence/arena/n2-s137-dense-720p/dense_012_color.png",
+    "evidence/arena/n2-s137-dense-720p/dense_030_color.png",
+    "evidence/arena/n2-s137-dense-720p/dense_060_color.png",
+    "evidence/arena/n2-s137-dense-720p/dense_090_color.png",
+    "evidence/arena/n2-s137-dense-720p/dense_120_color.png",
+    "evidence/arena/n2-s137-dense-4x3/dense_001_color.png",
+    "evidence/arena/n2-s137-dense-4x3/dense_012_color.png",
+    "evidence/arena/n2-s137-dense-4x3/dense_030_color.png",
+    "evidence/arena/n2-s137-dense-4x3/dense_060_color.png",
+    "evidence/arena/n2-s137-dense-4x3/dense_090_color.png",
+    "evidence/arena/n2-s137-dense-4x3/dense_120_color.png"
+  ],
+  "ordinary_camera_frames": [
+    "evidence/arena/n2-s137-720p/overview.png",
+    "evidence/arena/n2-s137-720p/northwest.png",
+    "evidence/arena/n2-s137-720p/northeast.png",
+    "evidence/arena/n2-s137-720p/airborne.png",
+    "evidence/arena/n2-s137-720p/resized.png",
+    "evidence/arena/n2-s137-4x3/overview.png",
+    "evidence/arena/n2-s137-4x3/northwest.png",
+    "evidence/arena/n2-s137-4x3/northeast.png",
+    "evidence/arena/n2-s137-4x3/airborne.png",
+    "evidence/arena/n2-s137-4x3/resized.png"
+  ],
+  "concerns": [
+    "Judge subjective arena/action readability and ground-contact clarity during motion, particularly near-ground overlaps and high rear-corner debris.",
+    "Dense tick-12 cyan actor-region retention is only 27.23% at 720p and 37.05% at 4:3. These are local color-class proxies, not visible body percentages. Decide whether brief occlusion is tolerable in real play.",
+    "Judge exit-ring and label recognition under dense debris; minimum sampled label-region retention is 87.27% / 78.83%, not OCR or a readability verdict.",
+    "The tight analytic seven-cube case has only three pieces with at least three visible ID pixels; no claim of tracking fully hidden pieces.",
+    "Assess satisfying destruction, perceived weight, visual comfort, enjoyment and audible impact on the exact release during human playtest. None was judged in this terminal."
+  ],
+  "restrictions": [
+    "Show *_color.png and ordinary scene captures as production appearance, never clean/ID/solo/shadowless diagnostic passes.",
+    "This is deliberately injected 192-body stress, not a typical gameplay frequency claim. Simulation is paused for diagnostic images, so dense timings are not a performance result.",
+    "Node 2 does not validate input, combat, destruction behavior, audio, win/loss, root completion, or human acceptance."
+  ],
+  "dense_measurements": [
+    {
+      "directory": "evidence/arena/n2-s137-dense-720p",
+      "perspective": {
+        "near_pixels": 1402,
+        "far_pixels": 547
+      },
+      "minimum_cubes_with_3_pixels": 136,
+      "minimum_shadow_pixels": 2976,
+      "minimum_retained_fraction": {
+        "actor": 0.27233115468409586,
+        "contact": 0.6450617283950617,
+        "exit": 0.5419161676646707,
+        "label": 0.8727272727272727
+      }
+    },
+    {
+      "directory": "evidence/arena/n2-s137-dense-4x3",
+      "perspective": {
+        "near_pixels": 956,
+        "far_pixels": 426
+      },
+      "minimum_cubes_with_3_pixels": 133,
+      "minimum_shadow_pixels": 2367,
+      "minimum_retained_fraction": {
+        "actor": 0.3704600484261501,
+        "contact": 0.7225609756097561,
+        "exit": 0.584,
+        "label": 0.7883211678832117
+      }
+    }
+  ]
+}

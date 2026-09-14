@@ -1,0 +1,7169 @@
+{
+  "passed": true,
+  "analytic": [
+    {
+      "directory": "evidence/arena/n2-s137-analytic-720p",
+      "camera": [
+        0.0,
+        22.2788181304932,
+        24.3345813751221
+      ],
+      "summary": {
+        "frames": 40,
+        "minimum_cubes_with_3_pixels": 3,
+        "mean_visible_fraction": 0.7061548849847255,
+        "mean_seam_rgb": 135.6395948454173,
+        "landmark_minimum_retained_fraction": {
+          "actor": 0.6590038314176245,
+          "contact": 0.8367346938775511,
+          "exit": 0.8353293413173652,
+          "label": 1.0
+        }
+      },
+      "records": [
+        {
+          "prefix": "tour_0001_00",
+          "visible_pixels": [
+            137,
+            40,
+            0,
+            0,
+            1,
+            50,
+            105
+          ],
+          "isolated_pixels": [
+            156,
+            90,
+            6,
+            0,
+            7,
+            73,
+            133
+          ],
+          "visible_fraction": [
+            0.8782051282051282,
+            0.4444444444444444,
+            0.0,
+            0.0,
+            0.14285714285714285,
+            0.684931506849315,
+            0.7894736842105263
+          ],
+          "cubes_with_3_pixels": 4,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 517,
+              "retained_pixels": 517,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 343,
+              "retained_pixels": 287,
+              "retained_fraction": 0.8367346938775511
+            },
+            "exit": {
+              "reference_pixels": 334,
+              "retained_pixels": 334,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 165,
+              "retained_pixels": 165,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 48,
+          "seam_rgb_mean": 156.07942413420324
+        },
+        {
+          "prefix": "tour_0001_06",
+          "visible_pixels": [
+            137,
+            40,
+            0,
+            0,
+            1,
+            50,
+            105
+          ],
+          "isolated_pixels": [
+            156,
+            90,
+            6,
+            0,
+            7,
+            73,
+            133
+          ],
+          "visible_fraction": [
+            0.8782051282051282,
+            0.4444444444444444,
+            0.0,
+            0.0,
+            0.14285714285714285,
+            0.684931506849315,
+            0.7894736842105263
+          ],
+          "cubes_with_3_pixels": 4,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 517,
+              "retained_pixels": 517,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 343,
+              "retained_pixels": 287,
+              "retained_fraction": 0.8367346938775511
+            },
+            "exit": {
+              "reference_pixels": 334,
+              "retained_pixels": 334,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 165,
+              "retained_pixels": 165,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 48,
+          "seam_rgb_mean": 156.07942413420324
+        },
+        {
+          "prefix": "tour_0001_12",
+          "visible_pixels": [
+            162,
+            40,
+            0,
+            0,
+            0,
+            49,
+            109
+          ],
+          "isolated_pixels": [
+            165,
+            91,
+            10,
+            0,
+            7,
+            76,
+            136
+          ],
+          "visible_fraction": [
+            0.9818181818181818,
+            0.43956043956043955,
+            0.0,
+            0.0,
+            0.0,
+            0.6447368421052632,
+            0.8014705882352942
+          ],
+          "cubes_with_3_pixels": 4,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 518,
+              "retained_pixels": 518,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 342,
+              "retained_pixels": 294,
+              "retained_fraction": 0.8596491228070176
+            },
+            "exit": {
+              "reference_pixels": 334,
+              "retained_pixels": 334,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 165,
+              "retained_pixels": 165,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 47,
+          "seam_rgb_mean": 131.71795321238824
+        },
+        {
+          "prefix": "tour_0001_18",
+          "visible_pixels": [
+            167,
+            97,
+            132,
+            95,
+            54,
+            81,
+            113
+          ],
+          "isolated_pixels": [
+            175,
+            138,
+            186,
+            172,
+            103,
+            81,
+            160
+          ],
+          "visible_fraction": [
+            0.9542857142857143,
+            0.7028985507246377,
+            0.7096774193548387,
+            0.5523255813953488,
+            0.5242718446601942,
+            1.0,
+            0.70625
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 522,
+              "retained_pixels": 344,
+              "retained_fraction": 0.6590038314176245
+            },
+            "contact": {
+              "reference_pixels": 341,
+              "retained_pixels": 318,
+              "retained_fraction": 0.9325513196480938
+            },
+            "exit": {
+              "reference_pixels": 334,
+              "retained_pixels": 334,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 165,
+              "retained_pixels": 165,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 92,
+          "seam_rgb_mean": 136.20825628382244
+        },
+        {
+          "prefix": "tour_0001_24",
+          "visible_pixels": [
+            180,
+            113,
+            120,
+            110,
+            116,
+            133,
+            97
+          ],
+          "isolated_pixels": [
+            188,
+            162,
+            186,
+            178,
+            185,
+            188,
+            153
+          ],
+          "visible_fraction": [
+            0.9574468085106383,
+            0.6975308641975309,
+            0.6451612903225806,
+            0.6179775280898876,
+            0.6270270270270271,
+            0.7074468085106383,
+            0.6339869281045751
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 519,
+              "retained_pixels": 519,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 339,
+              "retained_pixels": 339,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 334,
+              "retained_pixels": 334,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 165,
+              "retained_pixels": 165,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 114,
+          "seam_rgb_mean": 142.44341444996385
+        },
+        {
+          "prefix": "tour_0120_00",
+          "visible_pixels": [
+            176,
+            124,
+            154,
+            140,
+            123,
+            142,
+            111
+          ],
+          "isolated_pixels": [
+            187,
+            168,
+            186,
+            186,
+            160,
+            181,
+            134
+          ],
+          "visible_fraction": [
+            0.9411764705882353,
+            0.7380952380952381,
+            0.8279569892473119,
+            0.7526881720430108,
+            0.76875,
+            0.7845303867403315,
+            0.8283582089552238
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 546,
+              "retained_pixels": 546,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 376,
+              "retained_pixels": 376,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 334,
+              "retained_pixels": 334,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 165,
+              "retained_pixels": 165,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 99,
+          "seam_rgb_mean": 105.6720358698067
+        },
+        {
+          "prefix": "tour_0120_06",
+          "visible_pixels": [
+            135,
+            114,
+            127,
+            129,
+            127,
+            125,
+            118
+          ],
+          "isolated_pixels": [
+            153,
+            134,
+            174,
+            153,
+            170,
+            168,
+            146
+          ],
+          "visible_fraction": [
+            0.8823529411764706,
+            0.8507462686567164,
+            0.7298850574712644,
+            0.8431372549019608,
+            0.7470588235294118,
+            0.7440476190476191,
+            0.8082191780821918
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 535,
+              "retained_pixels": 535,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 349,
+              "retained_pixels": 349,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 334,
+              "retained_pixels": 334,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 165,
+              "retained_pixels": 165,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 92,
+          "seam_rgb_mean": 117.296570199466
+        },
+        {
+          "prefix": "tour_0120_12",
+          "visible_pixels": [
+            133,
+            109,
+            109,
+            112,
+            122,
+            105,
+            121
+          ],
+          "isolated_pixels": [
+            158,
+            111,
+            153,
+            126,
+            162,
+            143,
+            149
+          ],
+          "visible_fraction": [
+            0.8417721518987342,
+            0.9819819819819819,
+            0.7124183006535948,
+            0.8888888888888888,
+            0.7530864197530864,
+            0.7342657342657343,
+            0.8120805369127517
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 513,
+              "retained_pixels": 513,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 342,
+              "retained_pixels": 342,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 334,
+              "retained_pixels": 334,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 165,
+              "retained_pixels": 165,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 90,
+          "seam_rgb_mean": 126.50233302616786
+        },
+        {
+          "prefix": "tour_0120_18",
+          "visible_pixels": [
+            128,
+            102,
+            94,
+            101,
+            109,
+            91,
+            110
+          ],
+          "isolated_pixels": [
+            149,
+            105,
+            132,
+            120,
+            149,
+            126,
+            136
+          ],
+          "visible_fraction": [
+            0.8590604026845637,
+            0.9714285714285714,
+            0.7121212121212122,
+            0.8416666666666667,
+            0.7315436241610739,
+            0.7222222222222222,
+            0.8088235294117647
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 500,
+              "retained_pixels": 500,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 323,
+              "retained_pixels": 323,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 334,
+              "retained_pixels": 334,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 165,
+              "retained_pixels": 165,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 89,
+          "seam_rgb_mean": 138.5417474378679
+        },
+        {
+          "prefix": "tour_0120_24",
+          "visible_pixels": [
+            115,
+            94,
+            86,
+            90,
+            102,
+            81,
+            106
+          ],
+          "isolated_pixels": [
+            135,
+            99,
+            121,
+            109,
+            134,
+            113,
+            129
+          ],
+          "visible_fraction": [
+            0.8518518518518519,
+            0.9494949494949495,
+            0.7107438016528925,
+            0.8256880733944955,
+            0.7611940298507462,
+            0.7168141592920354,
+            0.8217054263565892
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 482,
+              "retained_pixels": 482,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 316,
+              "retained_pixels": 316,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 334,
+              "retained_pixels": 334,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 165,
+              "retained_pixels": 165,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 82,
+          "seam_rgb_mean": 127.36694445876488
+        },
+        {
+          "prefix": "tour_0240_00",
+          "visible_pixels": [
+            77,
+            55,
+            48,
+            55,
+            54,
+            50,
+            59
+          ],
+          "isolated_pixels": [
+            84,
+            65,
+            72,
+            66,
+            77,
+            72,
+            80
+          ],
+          "visible_fraction": [
+            0.9166666666666666,
+            0.8461538461538461,
+            0.6666666666666666,
+            0.8333333333333334,
+            0.7012987012987013,
+            0.6944444444444444,
+            0.7375
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 366,
+              "retained_pixels": 366,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 379,
+              "retained_pixels": 379,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 334,
+              "retained_pixels": 334,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 165,
+              "retained_pixels": 165,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 68,
+          "seam_rgb_mean": 102.33673955263652
+        },
+        {
+          "prefix": "tour_0240_06",
+          "visible_pixels": [
+            74,
+            42,
+            50,
+            48,
+            57,
+            49,
+            59
+          ],
+          "isolated_pixels": [
+            75,
+            61,
+            75,
+            60,
+            77,
+            68,
+            77
+          ],
+          "visible_fraction": [
+            0.9866666666666667,
+            0.6885245901639344,
+            0.6666666666666666,
+            0.8,
+            0.7402597402597403,
+            0.7205882352941176,
+            0.7662337662337663
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 371,
+              "retained_pixels": 371,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 379,
+              "retained_pixels": 379,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 334,
+              "retained_pixels": 334,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 165,
+              "retained_pixels": 165,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 67,
+          "seam_rgb_mean": 86.8163986755109
+        },
+        {
+          "prefix": "tour_0240_12",
+          "visible_pixels": [
+            69,
+            45,
+            63,
+            46,
+            56,
+            50,
+            44
+          ],
+          "isolated_pixels": [
+            70,
+            69,
+            76,
+            74,
+            70,
+            72,
+            61
+          ],
+          "visible_fraction": [
+            0.9857142857142858,
+            0.6521739130434783,
+            0.8289473684210527,
+            0.6216216216216216,
+            0.8,
+            0.6944444444444444,
+            0.7213114754098361
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 374,
+              "retained_pixels": 374,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 372,
+              "retained_pixels": 372,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 334,
+              "retained_pixels": 334,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 165,
+              "retained_pixels": 165,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 67,
+          "seam_rgb_mean": 130.01207243617742
+        },
+        {
+          "prefix": "tour_0240_18",
+          "visible_pixels": [
+            72,
+            54,
+            52,
+            56,
+            48,
+            50,
+            39
+          ],
+          "isolated_pixels": [
+            78,
+            76,
+            66,
+            79,
+            68,
+            66,
+            53
+          ],
+          "visible_fraction": [
+            0.9230769230769231,
+            0.7105263157894737,
+            0.7878787878787878,
+            0.7088607594936709,
+            0.7058823529411765,
+            0.7575757575757576,
+            0.7358490566037735
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 383,
+              "retained_pixels": 383,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 378,
+              "retained_pixels": 378,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 334,
+              "retained_pixels": 334,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 165,
+              "retained_pixels": 165,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 66,
+          "seam_rgb_mean": 113.73685674850982
+        },
+        {
+          "prefix": "tour_0240_24",
+          "visible_pixels": [
+            68,
+            39,
+            44,
+            52,
+            53,
+            33,
+            56
+          ],
+          "isolated_pixels": [
+            68,
+            58,
+            63,
+            66,
+            73,
+            48,
+            70
+          ],
+          "visible_fraction": [
+            1.0,
+            0.6724137931034483,
+            0.6984126984126984,
+            0.7878787878787878,
+            0.726027397260274,
+            0.6875,
+            0.8
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 385,
+              "retained_pixels": 385,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 362,
+              "retained_pixels": 362,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 334,
+              "retained_pixels": 334,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 165,
+              "retained_pixels": 165,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 64,
+          "seam_rgb_mean": 140.27303158001524
+        },
+        {
+          "prefix": "tour_0360_00",
+          "visible_pixels": [
+            216,
+            85,
+            87,
+            77,
+            103,
+            109,
+            57
+          ],
+          "isolated_pixels": [
+            221,
+            184,
+            187,
+            172,
+            196,
+            215,
+            163
+          ],
+          "visible_fraction": [
+            0.9773755656108597,
+            0.46195652173913043,
+            0.46524064171123,
+            0.4476744186046512,
+            0.5255102040816326,
+            0.5069767441860465,
+            0.3496932515337423
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 567,
+              "retained_pixels": 567,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 387,
+              "retained_pixels": 387,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 334,
+              "retained_pixels": 334,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 165,
+              "retained_pixels": 165,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 133,
+          "seam_rgb_mean": 141.5094304749022
+        },
+        {
+          "prefix": "tour_0360_06",
+          "visible_pixels": [
+            182,
+            81,
+            79,
+            15,
+            0,
+            0,
+            64
+          ],
+          "isolated_pixels": [
+            182,
+            169,
+            183,
+            15,
+            0,
+            0,
+            64
+          ],
+          "visible_fraction": [
+            1.0,
+            0.47928994082840237,
+            0.43169398907103823,
+            1.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "cubes_with_3_pixels": 5,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 567,
+              "retained_pixels": 420,
+              "retained_fraction": 0.7407407407407407
+            },
+            "contact": {
+              "reference_pixels": 387,
+              "retained_pixels": 387,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 334,
+              "retained_pixels": 334,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 165,
+              "retained_pixels": 165,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 49,
+          "seam_rgb_mean": 176.73030873309
+        },
+        {
+          "prefix": "tour_0360_12",
+          "visible_pixels": [
+            196,
+            35,
+            0,
+            0,
+            0,
+            0,
+            73
+          ],
+          "isolated_pixels": [
+            201,
+            115,
+            29,
+            0,
+            0,
+            0,
+            73
+          ],
+          "visible_fraction": [
+            0.9751243781094527,
+            0.30434782608695654,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "cubes_with_3_pixels": 3,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 567,
+              "retained_pixels": 556,
+              "retained_fraction": 0.9805996472663139
+            },
+            "contact": {
+              "reference_pixels": 386,
+              "retained_pixels": 354,
+              "retained_fraction": 0.917098445595855
+            },
+            "exit": {
+              "reference_pixels": 334,
+              "retained_pixels": 334,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 165,
+              "retained_pixels": 165,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 19,
+          "seam_rgb_mean": 113.82299135874645
+        },
+        {
+          "prefix": "tour_0360_18",
+          "visible_pixels": [
+            195,
+            82,
+            101,
+            56,
+            0,
+            17,
+            46
+          ],
+          "isolated_pixels": [
+            195,
+            180,
+            210,
+            162,
+            0,
+            17,
+            59
+          ],
+          "visible_fraction": [
+            1.0,
+            0.45555555555555555,
+            0.48095238095238096,
+            0.345679012345679,
+            0.0,
+            1.0,
+            0.7796610169491526
+          ],
+          "cubes_with_3_pixels": 6,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 567,
+              "retained_pixels": 423,
+              "retained_fraction": 0.746031746031746
+            },
+            "contact": {
+              "reference_pixels": 385,
+              "retained_pixels": 385,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 334,
+              "retained_pixels": 334,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 165,
+              "retained_pixels": 165,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 74,
+          "seam_rgb_mean": 163.19444444924454
+        },
+        {
+          "prefix": "tour_0360_24",
+          "visible_pixels": [
+            214,
+            92,
+            82,
+            89,
+            100,
+            109,
+            65
+          ],
+          "isolated_pixels": [
+            220,
+            185,
+            178,
+            181,
+            190,
+            216,
+            174
+          ],
+          "visible_fraction": [
+            0.9727272727272728,
+            0.4972972972972973,
+            0.4606741573033708,
+            0.49171270718232046,
+            0.5263157894736842,
+            0.5046296296296297,
+            0.3735632183908046
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 567,
+              "retained_pixels": 567,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 388,
+              "retained_pixels": 388,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 334,
+              "retained_pixels": 334,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 165,
+              "retained_pixels": 165,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 132,
+          "seam_rgb_mean": 122.88444690685473
+        },
+        {
+          "prefix": "tour_0480_00",
+          "visible_pixels": [
+            107,
+            72,
+            69,
+            84,
+            81,
+            65,
+            76
+          ],
+          "isolated_pixels": [
+            111,
+            90,
+            90,
+            112,
+            107,
+            105,
+            95
+          ],
+          "visible_fraction": [
+            0.963963963963964,
+            0.8,
+            0.7666666666666667,
+            0.75,
+            0.7570093457943925,
+            0.6190476190476191,
+            0.8
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 458,
+              "retained_pixels": 458,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 345,
+              "retained_pixels": 345,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 334,
+              "retained_pixels": 334,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 165,
+              "retained_pixels": 165,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 76,
+          "seam_rgb_mean": 130.8788297257997
+        },
+        {
+          "prefix": "tour_0480_06",
+          "visible_pixels": [
+            118,
+            75,
+            73,
+            88,
+            84,
+            76,
+            79
+          ],
+          "isolated_pixels": [
+            127,
+            103,
+            97,
+            111,
+            125,
+            96,
+            105
+          ],
+          "visible_fraction": [
+            0.9291338582677166,
+            0.7281553398058253,
+            0.7525773195876289,
+            0.7927927927927928,
+            0.672,
+            0.7916666666666666,
+            0.7523809523809524
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 458,
+              "retained_pixels": 458,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 355,
+              "retained_pixels": 355,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 334,
+              "retained_pixels": 334,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 165,
+              "retained_pixels": 165,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 79,
+          "seam_rgb_mean": 127.51839374282935
+        },
+        {
+          "prefix": "tour_0480_12",
+          "visible_pixels": [
+            128,
+            82,
+            112,
+            89,
+            89,
+            91,
+            73
+          ],
+          "isolated_pixels": [
+            138,
+            128,
+            131,
+            135,
+            117,
+            130,
+            99
+          ],
+          "visible_fraction": [
+            0.927536231884058,
+            0.640625,
+            0.8549618320610687,
+            0.6592592592592592,
+            0.7606837606837606,
+            0.7,
+            0.7373737373737373
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 477,
+              "retained_pixels": 477,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 367,
+              "retained_pixels": 367,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 334,
+              "retained_pixels": 334,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 165,
+              "retained_pixels": 165,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 92,
+          "seam_rgb_mean": 137.31960333083654
+        },
+        {
+          "prefix": "tour_0480_18",
+          "visible_pixels": [
+            130,
+            75,
+            118,
+            87,
+            100,
+            99,
+            81
+          ],
+          "isolated_pixels": [
+            130,
+            111,
+            146,
+            129,
+            138,
+            141,
+            116
+          ],
+          "visible_fraction": [
+            1.0,
+            0.6756756756756757,
+            0.8082191780821918,
+            0.6744186046511628,
+            0.7246376811594203,
+            0.7021276595744681,
+            0.6982758620689655
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 478,
+              "retained_pixels": 478,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 363,
+              "retained_pixels": 363,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 334,
+              "retained_pixels": 334,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 165,
+              "retained_pixels": 165,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 94,
+          "seam_rgb_mean": 136.76333607287623
+        },
+        {
+          "prefix": "tour_0480_24",
+          "visible_pixels": [
+            148,
+            79,
+            96,
+            105,
+            110,
+            93,
+            99
+          ],
+          "isolated_pixels": [
+            156,
+            102,
+            144,
+            133,
+            161,
+            137,
+            142
+          ],
+          "visible_fraction": [
+            0.9487179487179487,
+            0.7745098039215687,
+            0.6666666666666666,
+            0.7894736842105263,
+            0.6832298136645962,
+            0.6788321167883211,
+            0.6971830985915493
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 476,
+              "retained_pixels": 476,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 355,
+              "retained_pixels": 355,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 334,
+              "retained_pixels": 334,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 165,
+              "retained_pixels": 165,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 97,
+          "seam_rgb_mean": 109.3645381730662
+        },
+        {
+          "prefix": "tour_0600_00",
+          "visible_pixels": [
+            243,
+            167,
+            176,
+            194,
+            182,
+            162,
+            174
+          ],
+          "isolated_pixels": [
+            275,
+            196,
+            261,
+            255,
+            263,
+            236,
+            233
+          ],
+          "visible_fraction": [
+            0.8836363636363637,
+            0.8520408163265306,
+            0.6743295019157088,
+            0.7607843137254902,
+            0.6920152091254753,
+            0.6864406779661016,
+            0.7467811158798283
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 561,
+              "retained_pixels": 561,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 367,
+              "retained_pixels": 367,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 334,
+              "retained_pixels": 334,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 165,
+              "retained_pixels": 165,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 135,
+          "seam_rgb_mean": 152.4737549759462
+        },
+        {
+          "prefix": "tour_0600_06",
+          "visible_pixels": [
+            249,
+            175,
+            175,
+            199,
+            189,
+            163,
+            181
+          ],
+          "isolated_pixels": [
+            282,
+            202,
+            258,
+            257,
+            268,
+            239,
+            234
+          ],
+          "visible_fraction": [
+            0.8829787234042553,
+            0.8663366336633663,
+            0.6782945736434108,
+            0.77431906614786,
+            0.7052238805970149,
+            0.6820083682008368,
+            0.7735042735042735
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 562,
+              "retained_pixels": 562,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 379,
+              "retained_pixels": 379,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 334,
+              "retained_pixels": 334,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 165,
+              "retained_pixels": 165,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 126,
+          "seam_rgb_mean": 147.70064287348922
+        },
+        {
+          "prefix": "tour_0600_12",
+          "visible_pixels": [
+            243,
+            179,
+            188,
+            205,
+            193,
+            176,
+            173
+          ],
+          "isolated_pixels": [
+            279,
+            200,
+            276,
+            255,
+            274,
+            252,
+            224
+          ],
+          "visible_fraction": [
+            0.8709677419354839,
+            0.895,
+            0.6811594202898551,
+            0.803921568627451,
+            0.7043795620437956,
+            0.6984126984126984,
+            0.7723214285714286
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 562,
+              "retained_pixels": 562,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 384,
+              "retained_pixels": 384,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 334,
+              "retained_pixels": 334,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 165,
+              "retained_pixels": 165,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 133,
+          "seam_rgb_mean": 147.11452978459172
+        },
+        {
+          "prefix": "tour_0600_18",
+          "visible_pixels": [
+            224,
+            183,
+            201,
+            199,
+            193,
+            191,
+            163
+          ],
+          "isolated_pixels": [
+            249,
+            209,
+            280,
+            234,
+            267,
+            264,
+            216
+          ],
+          "visible_fraction": [
+            0.8995983935742972,
+            0.8755980861244019,
+            0.7178571428571429,
+            0.8504273504273504,
+            0.7228464419475655,
+            0.7234848484848485,
+            0.7546296296296297
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 564,
+              "retained_pixels": 564,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 389,
+              "retained_pixels": 389,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 334,
+              "retained_pixels": 334,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 165,
+              "retained_pixels": 165,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 129,
+          "seam_rgb_mean": 122.42507352305275
+        },
+        {
+          "prefix": "tour_0600_24",
+          "visible_pixels": [
+            259,
+            172,
+            228,
+            200,
+            179,
+            197,
+            172
+          ],
+          "isolated_pixels": [
+            273,
+            225,
+            282,
+            258,
+            239,
+            268,
+            220
+          ],
+          "visible_fraction": [
+            0.9487179487179487,
+            0.7644444444444445,
+            0.8085106382978723,
+            0.7751937984496124,
+            0.7489539748953975,
+            0.7350746268656716,
+            0.7818181818181819
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 566,
+              "retained_pixels": 566,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 387,
+              "retained_pixels": 387,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 334,
+              "retained_pixels": 334,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 165,
+              "retained_pixels": 165,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 125,
+          "seam_rgb_mean": 108.77968433823312
+        },
+        {
+          "prefix": "extract_00",
+          "visible_pixels": [
+            122,
+            99,
+            72,
+            95,
+            89,
+            82,
+            93
+          ],
+          "isolated_pixels": [
+            140,
+            110,
+            110,
+            119,
+            125,
+            119,
+            124
+          ],
+          "visible_fraction": [
+            0.8714285714285714,
+            0.9,
+            0.6545454545454545,
+            0.7983193277310925,
+            0.712,
+            0.6890756302521008,
+            0.75
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 467,
+              "retained_pixels": 467,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 349,
+              "retained_pixels": 349,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 334,
+              "retained_pixels": 279,
+              "retained_fraction": 0.8353293413173652
+            },
+            "label": {
+              "reference_pixels": 165,
+              "retained_pixels": 165,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 88,
+          "seam_rgb_mean": 126.17385879979814
+        },
+        {
+          "prefix": "extract_06",
+          "visible_pixels": [
+            127,
+            102,
+            75,
+            91,
+            91,
+            82,
+            93
+          ],
+          "isolated_pixels": [
+            142,
+            121,
+            113,
+            121,
+            125,
+            122,
+            123
+          ],
+          "visible_fraction": [
+            0.8943661971830986,
+            0.8429752066115702,
+            0.6637168141592921,
+            0.7520661157024794,
+            0.728,
+            0.6721311475409836,
+            0.7560975609756098
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 467,
+              "retained_pixels": 467,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 349,
+              "retained_pixels": 349,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 334,
+              "retained_pixels": 288,
+              "retained_fraction": 0.8622754491017964
+            },
+            "label": {
+              "reference_pixels": 165,
+              "retained_pixels": 165,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 92,
+          "seam_rgb_mean": 131.67993957020173
+        },
+        {
+          "prefix": "extract_12",
+          "visible_pixels": [
+            131,
+            97,
+            73,
+            97,
+            90,
+            85,
+            91
+          ],
+          "isolated_pixels": [
+            144,
+            120,
+            109,
+            126,
+            126,
+            122,
+            122
+          ],
+          "visible_fraction": [
+            0.9097222222222222,
+            0.8083333333333333,
+            0.6697247706422018,
+            0.7698412698412699,
+            0.7142857142857143,
+            0.6967213114754098,
+            0.7459016393442623
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 467,
+              "retained_pixels": 467,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 349,
+              "retained_pixels": 349,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 334,
+              "retained_pixels": 295,
+              "retained_fraction": 0.8832335329341318
+            },
+            "label": {
+              "reference_pixels": 165,
+              "retained_pixels": 165,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 89,
+          "seam_rgb_mean": 148.77194293496416
+        },
+        {
+          "prefix": "extract_18",
+          "visible_pixels": [
+            132,
+            103,
+            75,
+            96,
+            93,
+            85,
+            90
+          ],
+          "isolated_pixels": [
+            144,
+            125,
+            111,
+            123,
+            126,
+            124,
+            119
+          ],
+          "visible_fraction": [
+            0.9166666666666666,
+            0.824,
+            0.6756756756756757,
+            0.7804878048780488,
+            0.7380952380952381,
+            0.6854838709677419,
+            0.7563025210084033
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 467,
+              "retained_pixels": 467,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 349,
+              "retained_pixels": 349,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 334,
+              "retained_pixels": 296,
+              "retained_fraction": 0.8862275449101796
+            },
+            "label": {
+              "reference_pixels": 165,
+              "retained_pixels": 165,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 85,
+          "seam_rgb_mean": 138.90926888214096
+        },
+        {
+          "prefix": "extract_24",
+          "visible_pixels": [
+            132,
+            105,
+            75,
+            96,
+            90,
+            87,
+            91
+          ],
+          "isolated_pixels": [
+            144,
+            129,
+            109,
+            125,
+            122,
+            126,
+            119
+          ],
+          "visible_fraction": [
+            0.9166666666666666,
+            0.813953488372093,
+            0.6880733944954128,
+            0.768,
+            0.7377049180327869,
+            0.6904761904761905,
+            0.7647058823529411
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 467,
+              "retained_pixels": 467,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 349,
+              "retained_pixels": 349,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 334,
+              "retained_pixels": 298,
+              "retained_fraction": 0.8922155688622755
+            },
+            "label": {
+              "reference_pixels": 165,
+              "retained_pixels": 165,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 87,
+          "seam_rgb_mean": 152.91868547829887
+        },
+        {
+          "prefix": "p3_00",
+          "visible_pixels": [
+            187,
+            138,
+            107,
+            100,
+            131,
+            129,
+            111
+          ],
+          "isolated_pixels": [
+            198,
+            185,
+            165,
+            160,
+            167,
+            200,
+            166
+          ],
+          "visible_fraction": [
+            0.9444444444444444,
+            0.745945945945946,
+            0.6484848484848484,
+            0.625,
+            0.7844311377245509,
+            0.645,
+            0.6686746987951807
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 517,
+              "retained_pixels": 517,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 343,
+              "retained_pixels": 343,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 334,
+              "retained_pixels": 334,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 165,
+              "retained_pixels": 165,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 112,
+          "seam_rgb_mean": 150.73829948665838
+        },
+        {
+          "prefix": "p3_06",
+          "visible_pixels": [
+            188,
+            140,
+            105,
+            104,
+            122,
+            132,
+            113
+          ],
+          "isolated_pixels": [
+            198,
+            186,
+            163,
+            163,
+            164,
+            197,
+            166
+          ],
+          "visible_fraction": [
+            0.9494949494949495,
+            0.7526881720430108,
+            0.6441717791411042,
+            0.6380368098159509,
+            0.7439024390243902,
+            0.6700507614213198,
+            0.6807228915662651
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 517,
+              "retained_pixels": 517,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 343,
+              "retained_pixels": 343,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 334,
+              "retained_pixels": 334,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 165,
+              "retained_pixels": 165,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 109,
+          "seam_rgb_mean": 144.25048118557822
+        },
+        {
+          "prefix": "p3_12",
+          "visible_pixels": [
+            189,
+            137,
+            105,
+            104,
+            133,
+            121,
+            115
+          ],
+          "isolated_pixels": [
+            197,
+            187,
+            161,
+            159,
+            177,
+            197,
+            169
+          ],
+          "visible_fraction": [
+            0.9593908629441624,
+            0.732620320855615,
+            0.6521739130434783,
+            0.6540880503144654,
+            0.751412429378531,
+            0.6142131979695431,
+            0.6804733727810651
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 517,
+              "retained_pixels": 517,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 343,
+              "retained_pixels": 343,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 334,
+              "retained_pixels": 334,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 165,
+              "retained_pixels": 165,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 109,
+          "seam_rgb_mean": 155.46457854060424
+        },
+        {
+          "prefix": "p3_18",
+          "visible_pixels": [
+            190,
+            139,
+            105,
+            111,
+            131,
+            120,
+            118
+          ],
+          "isolated_pixels": [
+            199,
+            187,
+            149,
+            166,
+            178,
+            194,
+            169
+          ],
+          "visible_fraction": [
+            0.9547738693467337,
+            0.7433155080213903,
+            0.7046979865771812,
+            0.6686746987951807,
+            0.7359550561797753,
+            0.6185567010309279,
+            0.6982248520710059
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 517,
+              "retained_pixels": 517,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 343,
+              "retained_pixels": 343,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 334,
+              "retained_pixels": 334,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 165,
+              "retained_pixels": 165,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 112,
+          "seam_rgb_mean": 158.53812457471577
+        },
+        {
+          "prefix": "p3_24",
+          "visible_pixels": [
+            188,
+            138,
+            109,
+            112,
+            131,
+            123,
+            118
+          ],
+          "isolated_pixels": [
+            192,
+            187,
+            151,
+            167,
+            181,
+            192,
+            171
+          ],
+          "visible_fraction": [
+            0.9791666666666666,
+            0.7379679144385026,
+            0.7218543046357616,
+            0.6706586826347305,
+            0.7237569060773481,
+            0.640625,
+            0.6900584795321637
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 517,
+              "retained_pixels": 517,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 343,
+              "retained_pixels": 343,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 334,
+              "retained_pixels": 334,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 165,
+              "retained_pixels": 165,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 110,
+          "seam_rgb_mean": 149.68875113584562
+        }
+      ],
+      "limitation": "Color-class retention is a sampled visibility proxy, not OCR or subjective readability. ID passes quantify depth-visible surfaces, not the recognizability of hidden faces."
+    },
+    {
+      "directory": "evidence/arena/n2-s137-analytic-4x3",
+      "camera": [
+        0.0,
+        25.3951663970947,
+        28.0741996765137
+      ],
+      "summary": {
+        "frames": 40,
+        "minimum_cubes_with_3_pixels": 3,
+        "mean_visible_fraction": 0.711054936162389,
+        "mean_seam_rgb": 123.86890085358571,
+        "landmark_minimum_retained_fraction": {
+          "actor": 0.6339869281045751,
+          "contact": 0.7315068493150685,
+          "exit": 0.78,
+          "label": 1.0
+        }
+      },
+      "records": [
+        {
+          "prefix": "tour_0001_00",
+          "visible_pixels": [
+            95,
+            31,
+            0,
+            0,
+            1,
+            34,
+            75
+          ],
+          "isolated_pixels": [
+            109,
+            65,
+            5,
+            0,
+            6,
+            50,
+            90
+          ],
+          "visible_fraction": [
+            0.8715596330275229,
+            0.47692307692307695,
+            0.0,
+            0.0,
+            0.16666666666666666,
+            0.68,
+            0.8333333333333334
+          ],
+          "cubes_with_3_pixels": 4,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 460,
+              "retained_pixels": 458,
+              "retained_fraction": 0.9956521739130435
+            },
+            "contact": {
+              "reference_pixels": 365,
+              "retained_pixels": 267,
+              "retained_fraction": 0.7315068493150685
+            },
+            "exit": {
+              "reference_pixels": 250,
+              "retained_pixels": 250,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 137,
+              "retained_pixels": 137,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 40,
+          "seam_rgb_mean": 128.77075704150914
+        },
+        {
+          "prefix": "tour_0001_06",
+          "visible_pixels": [
+            95,
+            31,
+            0,
+            0,
+            1,
+            34,
+            75
+          ],
+          "isolated_pixels": [
+            109,
+            65,
+            5,
+            0,
+            6,
+            50,
+            90
+          ],
+          "visible_fraction": [
+            0.8715596330275229,
+            0.47692307692307695,
+            0.0,
+            0.0,
+            0.16666666666666666,
+            0.68,
+            0.8333333333333334
+          ],
+          "cubes_with_3_pixels": 4,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 460,
+              "retained_pixels": 458,
+              "retained_fraction": 0.9956521739130435
+            },
+            "contact": {
+              "reference_pixels": 365,
+              "retained_pixels": 267,
+              "retained_fraction": 0.7315068493150685
+            },
+            "exit": {
+              "reference_pixels": 250,
+              "retained_pixels": 250,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 137,
+              "retained_pixels": 137,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 40,
+          "seam_rgb_mean": 128.77075704150914
+        },
+        {
+          "prefix": "tour_0001_12",
+          "visible_pixels": [
+            113,
+            32,
+            0,
+            0,
+            0,
+            36,
+            75
+          ],
+          "isolated_pixels": [
+            115,
+            65,
+            7,
+            0,
+            6,
+            55,
+            94
+          ],
+          "visible_fraction": [
+            0.9826086956521739,
+            0.49230769230769234,
+            0.0,
+            0.0,
+            0.0,
+            0.6545454545454545,
+            0.7978723404255319
+          ],
+          "cubes_with_3_pixels": 4,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 459,
+              "retained_pixels": 454,
+              "retained_fraction": 0.9891067538126361
+            },
+            "contact": {
+              "reference_pixels": 365,
+              "retained_pixels": 290,
+              "retained_fraction": 0.7945205479452054
+            },
+            "exit": {
+              "reference_pixels": 250,
+              "retained_pixels": 250,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 137,
+              "retained_pixels": 137,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 34,
+          "seam_rgb_mean": 117.02102509942924
+        },
+        {
+          "prefix": "tour_0001_18",
+          "visible_pixels": [
+            117,
+            62,
+            92,
+            68,
+            37,
+            67,
+            80
+          ],
+          "isolated_pixels": [
+            122,
+            89,
+            127,
+            118,
+            69,
+            67,
+            114
+          ],
+          "visible_fraction": [
+            0.9590163934426229,
+            0.6966292134831461,
+            0.7244094488188977,
+            0.576271186440678,
+            0.5362318840579711,
+            1.0,
+            0.7017543859649122
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 459,
+              "retained_pixels": 291,
+              "retained_fraction": 0.6339869281045751
+            },
+            "contact": {
+              "reference_pixels": 361,
+              "retained_pixels": 324,
+              "retained_fraction": 0.8975069252077562
+            },
+            "exit": {
+              "reference_pixels": 250,
+              "retained_pixels": 250,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 137,
+              "retained_pixels": 137,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 76,
+          "seam_rgb_mean": 124.87327535358102
+        },
+        {
+          "prefix": "tour_0001_24",
+          "visible_pixels": [
+            120,
+            79,
+            83,
+            78,
+            79,
+            90,
+            62
+          ],
+          "isolated_pixels": [
+            125,
+            113,
+            127,
+            124,
+            127,
+            128,
+            96
+          ],
+          "visible_fraction": [
+            0.96,
+            0.6991150442477876,
+            0.6535433070866141,
+            0.6290322580645161,
+            0.6220472440944882,
+            0.703125,
+            0.6458333333333334
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 457,
+              "retained_pixels": 457,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 365,
+              "retained_pixels": 365,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 250,
+              "retained_pixels": 250,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 137,
+              "retained_pixels": 137,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 93,
+          "seam_rgb_mean": 114.77922672084865
+        },
+        {
+          "prefix": "tour_0120_00",
+          "visible_pixels": [
+            117,
+            79,
+            105,
+            94,
+            88,
+            95,
+            73
+          ],
+          "isolated_pixels": [
+            123,
+            109,
+            130,
+            123,
+            115,
+            126,
+            90
+          ],
+          "visible_fraction": [
+            0.9512195121951219,
+            0.7247706422018348,
+            0.8076923076923077,
+            0.7642276422764228,
+            0.7652173913043478,
+            0.753968253968254,
+            0.8111111111111111
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 478,
+              "retained_pixels": 478,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 326,
+              "retained_pixels": 326,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 250,
+              "retained_pixels": 250,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 137,
+              "retained_pixels": 137,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 83,
+          "seam_rgb_mean": 99.18088195511234
+        },
+        {
+          "prefix": "tour_0120_06",
+          "visible_pixels": [
+            98,
+            76,
+            88,
+            88,
+            87,
+            87,
+            83
+          ],
+          "isolated_pixels": [
+            110,
+            88,
+            120,
+            103,
+            117,
+            115,
+            104
+          ],
+          "visible_fraction": [
+            0.8909090909090909,
+            0.8636363636363636,
+            0.7333333333333333,
+            0.8543689320388349,
+            0.7435897435897436,
+            0.7565217391304347,
+            0.7980769230769231
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 458,
+              "retained_pixels": 458,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 309,
+              "retained_pixels": 309,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 250,
+              "retained_pixels": 250,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 137,
+              "retained_pixels": 137,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 77,
+          "seam_rgb_mean": 109.19341402566975
+        },
+        {
+          "prefix": "tour_0120_12",
+          "visible_pixels": [
+            95,
+            75,
+            73,
+            81,
+            84,
+            70,
+            85
+          ],
+          "isolated_pixels": [
+            111,
+            76,
+            103,
+            94,
+            117,
+            98,
+            102
+          ],
+          "visible_fraction": [
+            0.8558558558558559,
+            0.9868421052631579,
+            0.7087378640776699,
+            0.8617021276595744,
+            0.717948717948718,
+            0.7142857142857143,
+            0.8333333333333334
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 446,
+              "retained_pixels": 446,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 305,
+              "retained_pixels": 305,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 250,
+              "retained_pixels": 250,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 137,
+              "retained_pixels": 137,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 69,
+          "seam_rgb_mean": 129.6720510103214
+        },
+        {
+          "prefix": "tour_0120_18",
+          "visible_pixels": [
+            93,
+            70,
+            66,
+            74,
+            78,
+            64,
+            78
+          ],
+          "isolated_pixels": [
+            107,
+            72,
+            93,
+            88,
+            105,
+            88,
+            99
+          ],
+          "visible_fraction": [
+            0.8691588785046729,
+            0.9722222222222222,
+            0.7096774193548387,
+            0.8409090909090909,
+            0.7428571428571429,
+            0.7272727272727273,
+            0.7878787878787878
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 422,
+              "retained_pixels": 422,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 299,
+              "retained_pixels": 299,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 250,
+              "retained_pixels": 250,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 137,
+              "retained_pixels": 137,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 70,
+          "seam_rgb_mean": 110.53495083715302
+        },
+        {
+          "prefix": "tour_0120_24",
+          "visible_pixels": [
+            84,
+            64,
+            63,
+            68,
+            71,
+            59,
+            76
+          ],
+          "isolated_pixels": [
+            99,
+            66,
+            87,
+            82,
+            99,
+            81,
+            94
+          ],
+          "visible_fraction": [
+            0.8484848484848485,
+            0.9696969696969697,
+            0.7241379310344828,
+            0.8292682926829268,
+            0.7171717171717171,
+            0.7283950617283951,
+            0.8085106382978723
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 420,
+              "retained_pixels": 420,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 288,
+              "retained_pixels": 288,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 250,
+              "retained_pixels": 250,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 137,
+              "retained_pixels": 137,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 67,
+          "seam_rgb_mean": 108.81655297565341
+        },
+        {
+          "prefix": "tour_0240_00",
+          "visible_pixels": [
+            58,
+            40,
+            35,
+            45,
+            43,
+            39,
+            45
+          ],
+          "isolated_pixels": [
+            63,
+            47,
+            55,
+            53,
+            60,
+            56,
+            60
+          ],
+          "visible_fraction": [
+            0.9206349206349206,
+            0.851063829787234,
+            0.6363636363636364,
+            0.8490566037735849,
+            0.7166666666666667,
+            0.6964285714285714,
+            0.75
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 340,
+              "retained_pixels": 340,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 405,
+              "retained_pixels": 405,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 250,
+              "retained_pixels": 250,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 137,
+              "retained_pixels": 137,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 60,
+          "seam_rgb_mean": 89.26345953343086
+        },
+        {
+          "prefix": "tour_0240_06",
+          "visible_pixels": [
+            61,
+            31,
+            38,
+            37,
+            45,
+            40,
+            43
+          ],
+          "isolated_pixels": [
+            61,
+            45,
+            53,
+            50,
+            60,
+            54,
+            59
+          ],
+          "visible_fraction": [
+            1.0,
+            0.6888888888888889,
+            0.7169811320754716,
+            0.74,
+            0.75,
+            0.7407407407407407,
+            0.7288135593220338
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 346,
+              "retained_pixels": 346,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 397,
+              "retained_pixels": 397,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 250,
+              "retained_pixels": 250,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 137,
+              "retained_pixels": 137,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 60,
+          "seam_rgb_mean": 107.50536244949504
+        },
+        {
+          "prefix": "tour_0240_12",
+          "visible_pixels": [
+            52,
+            38,
+            50,
+            36,
+            40,
+            44,
+            33
+          ],
+          "isolated_pixels": [
+            53,
+            55,
+            62,
+            58,
+            54,
+            60,
+            47
+          ],
+          "visible_fraction": [
+            0.9811320754716981,
+            0.6909090909090909,
+            0.8064516129032258,
+            0.6206896551724138,
+            0.7407407407407407,
+            0.7333333333333333,
+            0.7021276595744681
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 348,
+              "retained_pixels": 348,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 402,
+              "retained_pixels": 402,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 250,
+              "retained_pixels": 250,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 137,
+              "retained_pixels": 137,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 58,
+          "seam_rgb_mean": 121.82800590513419
+        },
+        {
+          "prefix": "tour_0240_18",
+          "visible_pixels": [
+            58,
+            42,
+            40,
+            43,
+            38,
+            42,
+            32
+          ],
+          "isolated_pixels": [
+            61,
+            57,
+            50,
+            59,
+            56,
+            53,
+            44
+          ],
+          "visible_fraction": [
+            0.9508196721311475,
+            0.7368421052631579,
+            0.8,
+            0.7288135593220338,
+            0.6785714285714286,
+            0.7924528301886793,
+            0.7272727272727273
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 354,
+              "retained_pixels": 354,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 407,
+              "retained_pixels": 407,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 250,
+              "retained_pixels": 250,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 137,
+              "retained_pixels": 137,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 65,
+          "seam_rgb_mean": 102.02030725243736
+        },
+        {
+          "prefix": "tour_0240_24",
+          "visible_pixels": [
+            52,
+            29,
+            33,
+            41,
+            43,
+            26,
+            45
+          ],
+          "isolated_pixels": [
+            52,
+            43,
+            49,
+            51,
+            58,
+            38,
+            54
+          ],
+          "visible_fraction": [
+            1.0,
+            0.6744186046511628,
+            0.673469387755102,
+            0.803921568627451,
+            0.7413793103448276,
+            0.6842105263157895,
+            0.8333333333333334
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 360,
+              "retained_pixels": 360,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 402,
+              "retained_pixels": 402,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 250,
+              "retained_pixels": 250,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 137,
+              "retained_pixels": 137,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 54,
+          "seam_rgb_mean": 141.8500629003606
+        },
+        {
+          "prefix": "tour_0360_00",
+          "visible_pixels": [
+            143,
+            62,
+            62,
+            62,
+            71,
+            76,
+            43
+          ],
+          "isolated_pixels": [
+            146,
+            124,
+            126,
+            116,
+            133,
+            142,
+            105
+          ],
+          "visible_fraction": [
+            0.9794520547945206,
+            0.5,
+            0.49206349206349204,
+            0.5344827586206896,
+            0.5338345864661654,
+            0.5352112676056338,
+            0.4095238095238095
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 556,
+              "retained_pixels": 535,
+              "retained_fraction": 0.9622302158273381
+            },
+            "contact": {
+              "reference_pixels": 403,
+              "retained_pixels": 402,
+              "retained_fraction": 0.9975186104218362
+            },
+            "exit": {
+              "reference_pixels": 250,
+              "retained_pixels": 250,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 137,
+              "retained_pixels": 137,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 103,
+          "seam_rgb_mean": 129.79514817848428
+        },
+        {
+          "prefix": "tour_0360_06",
+          "visible_pixels": [
+            121,
+            57,
+            61,
+            10,
+            0,
+            0,
+            58
+          ],
+          "isolated_pixels": [
+            121,
+            107,
+            122,
+            11,
+            0,
+            2,
+            58
+          ],
+          "visible_fraction": [
+            1.0,
+            0.5327102803738317,
+            0.5,
+            0.9090909090909091,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "cubes_with_3_pixels": 5,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 556,
+              "retained_pixels": 436,
+              "retained_fraction": 0.7841726618705036
+            },
+            "contact": {
+              "reference_pixels": 405,
+              "retained_pixels": 376,
+              "retained_fraction": 0.928395061728395
+            },
+            "exit": {
+              "reference_pixels": 250,
+              "retained_pixels": 250,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 137,
+              "retained_pixels": 137,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 39,
+          "seam_rgb_mean": 156.08817241523877
+        },
+        {
+          "prefix": "tour_0360_12",
+          "visible_pixels": [
+            132,
+            27,
+            1,
+            0,
+            0,
+            1,
+            57
+          ],
+          "isolated_pixels": [
+            137,
+            81,
+            18,
+            0,
+            0,
+            2,
+            58
+          ],
+          "visible_fraction": [
+            0.9635036496350365,
+            0.3333333333333333,
+            0.05555555555555555,
+            0.0,
+            0.0,
+            0.5,
+            0.9827586206896551
+          ],
+          "cubes_with_3_pixels": 3,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 560,
+              "retained_pixels": 536,
+              "retained_fraction": 0.9571428571428572
+            },
+            "contact": {
+              "reference_pixels": 405,
+              "retained_pixels": 342,
+              "retained_fraction": 0.8444444444444444
+            },
+            "exit": {
+              "reference_pixels": 250,
+              "retained_pixels": 250,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 137,
+              "retained_pixels": 137,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 21,
+          "seam_rgb_mean": 122.67031178580596
+        },
+        {
+          "prefix": "tour_0360_18",
+          "visible_pixels": [
+            124,
+            58,
+            74,
+            41,
+            0,
+            15,
+            46
+          ],
+          "isolated_pixels": [
+            124,
+            116,
+            140,
+            107,
+            0,
+            15,
+            57
+          ],
+          "visible_fraction": [
+            1.0,
+            0.5,
+            0.5285714285714286,
+            0.38317757009345793,
+            0.0,
+            1.0,
+            0.8070175438596491
+          ],
+          "cubes_with_3_pixels": 6,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 560,
+              "retained_pixels": 428,
+              "retained_fraction": 0.7642857142857142
+            },
+            "contact": {
+              "reference_pixels": 401,
+              "retained_pixels": 372,
+              "retained_fraction": 0.9276807980049875
+            },
+            "exit": {
+              "reference_pixels": 250,
+              "retained_pixels": 250,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 137,
+              "retained_pixels": 137,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 56,
+          "seam_rgb_mean": 141.51524118510568
+        },
+        {
+          "prefix": "tour_0360_24",
+          "visible_pixels": [
+            144,
+            66,
+            62,
+            59,
+            74,
+            81,
+            44
+          ],
+          "isolated_pixels": [
+            148,
+            125,
+            121,
+            116,
+            129,
+            146,
+            108
+          ],
+          "visible_fraction": [
+            0.972972972972973,
+            0.528,
+            0.512396694214876,
+            0.5086206896551724,
+            0.5736434108527132,
+            0.5547945205479452,
+            0.4074074074074074
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 554,
+              "retained_pixels": 539,
+              "retained_fraction": 0.9729241877256317
+            },
+            "contact": {
+              "reference_pixels": 407,
+              "retained_pixels": 407,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 250,
+              "retained_pixels": 250,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 137,
+              "retained_pixels": 137,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 104,
+          "seam_rgb_mean": 128.75261709536892
+        },
+        {
+          "prefix": "tour_0480_00",
+          "visible_pixels": [
+            78,
+            55,
+            51,
+            62,
+            62,
+            50,
+            58
+          ],
+          "isolated_pixels": [
+            84,
+            65,
+            71,
+            83,
+            82,
+            81,
+            72
+          ],
+          "visible_fraction": [
+            0.9285714285714286,
+            0.8461538461538461,
+            0.7183098591549296,
+            0.7469879518072289,
+            0.7560975609756098,
+            0.6172839506172839,
+            0.8055555555555556
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 448,
+              "retained_pixels": 448,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 355,
+              "retained_pixels": 355,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 250,
+              "retained_pixels": 250,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 137,
+              "retained_pixels": 137,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 66,
+          "seam_rgb_mean": 129.7645905756107
+        },
+        {
+          "prefix": "tour_0480_06",
+          "visible_pixels": [
+            86,
+            55,
+            54,
+            60,
+            65,
+            56,
+            58
+          ],
+          "isolated_pixels": [
+            94,
+            74,
+            71,
+            76,
+            94,
+            72,
+            79
+          ],
+          "visible_fraction": [
+            0.9148936170212766,
+            0.7432432432432432,
+            0.7605633802816901,
+            0.7894736842105263,
+            0.6914893617021277,
+            0.7777777777777778,
+            0.7341772151898734
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 448,
+              "retained_pixels": 448,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 369,
+              "retained_pixels": 369,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 250,
+              "retained_pixels": 250,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 137,
+              "retained_pixels": 137,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 67,
+          "seam_rgb_mean": 110.50982964968549
+        },
+        {
+          "prefix": "tour_0480_12",
+          "visible_pixels": [
+            94,
+            59,
+            80,
+            64,
+            65,
+            68,
+            54
+          ],
+          "isolated_pixels": [
+            102,
+            90,
+            95,
+            98,
+            83,
+            97,
+            74
+          ],
+          "visible_fraction": [
+            0.9215686274509803,
+            0.6555555555555556,
+            0.8421052631578947,
+            0.6530612244897959,
+            0.7831325301204819,
+            0.7010309278350515,
+            0.7297297297297297
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 441,
+              "retained_pixels": 441,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 367,
+              "retained_pixels": 367,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 250,
+              "retained_pixels": 250,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 137,
+              "retained_pixels": 137,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 75,
+          "seam_rgb_mean": 134.20480615610597
+        },
+        {
+          "prefix": "tour_0480_18",
+          "visible_pixels": [
+            88,
+            54,
+            87,
+            62,
+            72,
+            71,
+            61
+          ],
+          "isolated_pixels": [
+            88,
+            80,
+            106,
+            95,
+            98,
+            103,
+            86
+          ],
+          "visible_fraction": [
+            1.0,
+            0.675,
+            0.8207547169811321,
+            0.6526315789473685,
+            0.7346938775510204,
+            0.6893203883495146,
+            0.7093023255813954
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 439,
+              "retained_pixels": 439,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 361,
+              "retained_pixels": 361,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 250,
+              "retained_pixels": 250,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 137,
+              "retained_pixels": 137,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 81,
+          "seam_rgb_mean": 130.70045067003238
+        },
+        {
+          "prefix": "tour_0480_24",
+          "visible_pixels": [
+            105,
+            57,
+            67,
+            77,
+            75,
+            67,
+            71
+          ],
+          "isolated_pixels": [
+            111,
+            74,
+            103,
+            94,
+            112,
+            98,
+            100
+          ],
+          "visible_fraction": [
+            0.9459459459459459,
+            0.7702702702702703,
+            0.6504854368932039,
+            0.8191489361702128,
+            0.6696428571428571,
+            0.6836734693877551,
+            0.71
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 451,
+              "retained_pixels": 451,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 331,
+              "retained_pixels": 331,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 250,
+              "retained_pixels": 250,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 137,
+              "retained_pixels": 137,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 84,
+          "seam_rgb_mean": 101.08793480414133
+        },
+        {
+          "prefix": "tour_0600_00",
+          "visible_pixels": [
+            157,
+            111,
+            103,
+            124,
+            117,
+            106,
+            111
+          ],
+          "isolated_pixels": [
+            177,
+            133,
+            157,
+            164,
+            171,
+            151,
+            148
+          ],
+          "visible_fraction": [
+            0.8870056497175142,
+            0.8345864661654135,
+            0.6560509554140127,
+            0.7560975609756098,
+            0.6842105263157895,
+            0.7019867549668874,
+            0.75
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 507,
+              "retained_pixels": 507,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 384,
+              "retained_pixels": 384,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 250,
+              "retained_pixels": 250,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 137,
+              "retained_pixels": 137,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 106,
+          "seam_rgb_mean": 141.87424846133177
+        },
+        {
+          "prefix": "tour_0600_06",
+          "visible_pixels": [
+            161,
+            115,
+            104,
+            125,
+            118,
+            103,
+            110
+          ],
+          "isolated_pixels": [
+            181,
+            136,
+            157,
+            167,
+            168,
+            151,
+            149
+          ],
+          "visible_fraction": [
+            0.8895027624309392,
+            0.8455882352941176,
+            0.6624203821656051,
+            0.7485029940119761,
+            0.7023809523809523,
+            0.6821192052980133,
+            0.738255033557047
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 515,
+              "retained_pixels": 515,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 393,
+              "retained_pixels": 393,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 250,
+              "retained_pixels": 250,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 137,
+              "retained_pixels": 137,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 100,
+          "seam_rgb_mean": 138.16642295845176
+        },
+        {
+          "prefix": "tour_0600_12",
+          "visible_pixels": [
+            155,
+            113,
+            113,
+            128,
+            123,
+            108,
+            113
+          ],
+          "isolated_pixels": [
+            179,
+            127,
+            168,
+            162,
+            175,
+            156,
+            146
+          ],
+          "visible_fraction": [
+            0.8659217877094972,
+            0.889763779527559,
+            0.6726190476190477,
+            0.7901234567901234,
+            0.7028571428571428,
+            0.6923076923076923,
+            0.773972602739726
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 522,
+              "retained_pixels": 522,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 397,
+              "retained_pixels": 397,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 250,
+              "retained_pixels": 250,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 137,
+              "retained_pixels": 137,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 106,
+          "seam_rgb_mean": 125.84043842370102
+        },
+        {
+          "prefix": "tour_0600_18",
+          "visible_pixels": [
+            150,
+            113,
+            126,
+            124,
+            124,
+            120,
+            107
+          ],
+          "isolated_pixels": [
+            166,
+            129,
+            176,
+            147,
+            170,
+            168,
+            145
+          ],
+          "visible_fraction": [
+            0.9036144578313253,
+            0.875968992248062,
+            0.7159090909090909,
+            0.8435374149659864,
+            0.7294117647058823,
+            0.7142857142857143,
+            0.7379310344827587
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 534,
+              "retained_pixels": 534,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 393,
+              "retained_pixels": 393,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 250,
+              "retained_pixels": 250,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 137,
+              "retained_pixels": 137,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 101,
+          "seam_rgb_mean": 115.96713853200453
+        },
+        {
+          "prefix": "tour_0600_24",
+          "visible_pixels": [
+            161,
+            107,
+            143,
+            123,
+            115,
+            129,
+            105
+          ],
+          "isolated_pixels": [
+            168,
+            140,
+            180,
+            160,
+            157,
+            175,
+            139
+          ],
+          "visible_fraction": [
+            0.9583333333333334,
+            0.7642857142857142,
+            0.7944444444444444,
+            0.76875,
+            0.732484076433121,
+            0.7371428571428571,
+            0.7553956834532374
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 526,
+              "retained_pixels": 526,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 399,
+              "retained_pixels": 399,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 250,
+              "retained_pixels": 250,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 137,
+              "retained_pixels": 137,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 98,
+          "seam_rgb_mean": 105.84410055517739
+        },
+        {
+          "prefix": "extract_00",
+          "visible_pixels": [
+            92,
+            65,
+            51,
+            70,
+            67,
+            56,
+            66
+          ],
+          "isolated_pixels": [
+            102,
+            79,
+            79,
+            90,
+            94,
+            84,
+            89
+          ],
+          "visible_fraction": [
+            0.9019607843137255,
+            0.8227848101265823,
+            0.6455696202531646,
+            0.7777777777777778,
+            0.7127659574468085,
+            0.6666666666666666,
+            0.7415730337078652
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 454,
+              "retained_pixels": 454,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 359,
+              "retained_pixels": 359,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 250,
+              "retained_pixels": 195,
+              "retained_fraction": 0.78
+            },
+            "label": {
+              "reference_pixels": 137,
+              "retained_pixels": 137,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 76,
+          "seam_rgb_mean": 110.3679535838723
+        },
+        {
+          "prefix": "extract_06",
+          "visible_pixels": [
+            96,
+            69,
+            49,
+            69,
+            67,
+            59,
+            65
+          ],
+          "isolated_pixels": [
+            106,
+            84,
+            78,
+            90,
+            95,
+            87,
+            89
+          ],
+          "visible_fraction": [
+            0.9056603773584906,
+            0.8214285714285714,
+            0.6282051282051282,
+            0.7666666666666667,
+            0.7052631578947368,
+            0.6781609195402298,
+            0.7303370786516854
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 454,
+              "retained_pixels": 454,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 359,
+              "retained_pixels": 359,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 250,
+              "retained_pixels": 206,
+              "retained_fraction": 0.824
+            },
+            "label": {
+              "reference_pixels": 137,
+              "retained_pixels": 137,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 73,
+          "seam_rgb_mean": 126.77560549044925
+        },
+        {
+          "prefix": "extract_12",
+          "visible_pixels": [
+            94,
+            69,
+            53,
+            68,
+            66,
+            61,
+            63
+          ],
+          "isolated_pixels": [
+            104,
+            87,
+            80,
+            91,
+            89,
+            88,
+            86
+          ],
+          "visible_fraction": [
+            0.9038461538461539,
+            0.7931034482758621,
+            0.6625,
+            0.7472527472527473,
+            0.7415730337078652,
+            0.6931818181818182,
+            0.7325581395348837
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 454,
+              "retained_pixels": 454,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 359,
+              "retained_pixels": 359,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 250,
+              "retained_pixels": 215,
+              "retained_fraction": 0.86
+            },
+            "label": {
+              "reference_pixels": 137,
+              "retained_pixels": 137,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 74,
+          "seam_rgb_mean": 136.76200660748748
+        },
+        {
+          "prefix": "extract_18",
+          "visible_pixels": [
+            94,
+            74,
+            54,
+            69,
+            66,
+            63,
+            65
+          ],
+          "isolated_pixels": [
+            104,
+            91,
+            80,
+            89,
+            88,
+            91,
+            87
+          ],
+          "visible_fraction": [
+            0.9038461538461539,
+            0.8131868131868132,
+            0.675,
+            0.7752808988764045,
+            0.75,
+            0.6923076923076923,
+            0.7471264367816092
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 454,
+              "retained_pixels": 454,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 359,
+              "retained_pixels": 359,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 250,
+              "retained_pixels": 221,
+              "retained_fraction": 0.884
+            },
+            "label": {
+              "reference_pixels": 137,
+              "retained_pixels": 137,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 70,
+          "seam_rgb_mean": 122.11985178166337
+        },
+        {
+          "prefix": "extract_24",
+          "visible_pixels": [
+            96,
+            77,
+            52,
+            68,
+            62,
+            64,
+            65
+          ],
+          "isolated_pixels": [
+            107,
+            95,
+            78,
+            90,
+            79,
+            92,
+            86
+          ],
+          "visible_fraction": [
+            0.897196261682243,
+            0.8105263157894737,
+            0.6666666666666666,
+            0.7555555555555555,
+            0.7848101265822784,
+            0.6956521739130435,
+            0.7558139534883721
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 454,
+              "retained_pixels": 454,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 359,
+              "retained_pixels": 359,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 250,
+              "retained_pixels": 227,
+              "retained_fraction": 0.908
+            },
+            "label": {
+              "reference_pixels": 137,
+              "retained_pixels": 137,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 68,
+          "seam_rgb_mean": 120.48810869923524
+        },
+        {
+          "prefix": "p3_00",
+          "visible_pixels": [
+            129,
+            92,
+            74,
+            70,
+            90,
+            88,
+            73
+          ],
+          "isolated_pixels": [
+            138,
+            121,
+            108,
+            111,
+            116,
+            136,
+            107
+          ],
+          "visible_fraction": [
+            0.9347826086956522,
+            0.7603305785123967,
+            0.6851851851851852,
+            0.6306306306306306,
+            0.7758620689655172,
+            0.6470588235294118,
+            0.6822429906542056
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 460,
+              "retained_pixels": 460,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 365,
+              "retained_pixels": 365,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 250,
+              "retained_pixels": 250,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 137,
+              "retained_pixels": 137,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 88,
+          "seam_rgb_mean": 134.54164765992996
+        },
+        {
+          "prefix": "p3_06",
+          "visible_pixels": [
+            129,
+            90,
+            74,
+            74,
+            84,
+            89,
+            75
+          ],
+          "isolated_pixels": [
+            136,
+            119,
+            107,
+            114,
+            111,
+            133,
+            110
+          ],
+          "visible_fraction": [
+            0.9485294117647058,
+            0.7563025210084033,
+            0.6915887850467289,
+            0.6491228070175439,
+            0.7567567567567568,
+            0.6691729323308271,
+            0.6818181818181818
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 460,
+              "retained_pixels": 460,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 365,
+              "retained_pixels": 365,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 250,
+              "retained_pixels": 250,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 137,
+              "retained_pixels": 137,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 90,
+          "seam_rgb_mean": 117.37936265393728
+        },
+        {
+          "prefix": "p3_12",
+          "visible_pixels": [
+            123,
+            94,
+            69,
+            78,
+            90,
+            85,
+            80
+          ],
+          "isolated_pixels": [
+            128,
+            123,
+            104,
+            113,
+            118,
+            133,
+            115
+          ],
+          "visible_fraction": [
+            0.9609375,
+            0.7642276422764228,
+            0.6634615384615384,
+            0.6902654867256637,
+            0.7627118644067796,
+            0.6390977443609023,
+            0.6956521739130435
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 460,
+              "retained_pixels": 460,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 365,
+              "retained_pixels": 365,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 250,
+              "retained_pixels": 250,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 137,
+              "retained_pixels": 137,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 87,
+          "seam_rgb_mean": 135.65775900880507
+        },
+        {
+          "prefix": "p3_18",
+          "visible_pixels": [
+            126,
+            93,
+            64,
+            83,
+            92,
+            81,
+            79
+          ],
+          "isolated_pixels": [
+            131,
+            124,
+            99,
+            115,
+            121,
+            132,
+            112
+          ],
+          "visible_fraction": [
+            0.9618320610687023,
+            0.75,
+            0.6464646464646465,
+            0.7217391304347827,
+            0.7603305785123967,
+            0.6136363636363636,
+            0.7053571428571429
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 460,
+              "retained_pixels": 460,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 365,
+              "retained_pixels": 365,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 250,
+              "retained_pixels": 250,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 137,
+              "retained_pixels": 137,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 88,
+          "seam_rgb_mean": 160.0148977190029
+        },
+        {
+          "prefix": "p3_24",
+          "visible_pixels": [
+            126,
+            97,
+            71,
+            82,
+            93,
+            81,
+            81
+          ],
+          "isolated_pixels": [
+            130,
+            129,
+            100,
+            116,
+            129,
+            131,
+            113
+          ],
+          "visible_fraction": [
+            0.9692307692307692,
+            0.751937984496124,
+            0.71,
+            0.7068965517241379,
+            0.7209302325581395,
+            0.6183206106870229,
+            0.7168141592920354
+          ],
+          "cubes_with_3_pixels": 7,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 460,
+              "retained_pixels": 460,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 365,
+              "retained_pixels": 365,
+              "retained_fraction": 1.0
+            },
+            "exit": {
+              "reference_pixels": 250,
+              "retained_pixels": 250,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 137,
+              "retained_pixels": 137,
+              "retained_fraction": 1.0
+            }
+          },
+          "seam_samples": 91,
+          "seam_rgb_mean": 138.99825261854602
+        }
+      ],
+      "limitation": "Color-class retention is a sampled visibility proxy, not OCR or subjective readability. ID passes quantify depth-visible surfaces, not the recognizability of hidden faces."
+    }
+  ],
+  "dense": [
+    {
+      "directory": "evidence/arena/n2-s137-dense-720p",
+      "perspective": {
+        "near_pixels": 1402,
+        "far_pixels": 547
+      },
+      "records": [
+        {
+          "prefix": "dense_001",
+          "visible_pixels": [
+            0,
+            0,
+            0,
+            10,
+            0,
+            0,
+            0,
+            16,
+            1,
+            0,
+            0,
+            4,
+            38,
+            43,
+            39,
+            44,
+            24,
+            19,
+            27,
+            49,
+            28,
+            39,
+            31,
+            25,
+            26,
+            23,
+            27,
+            38,
+            61,
+            63,
+            63,
+            64,
+            11,
+            0,
+            0,
+            0,
+            17,
+            0,
+            0,
+            0,
+            11,
+            1,
+            0,
+            0,
+            48,
+            50,
+            35,
+            47,
+            49,
+            29,
+            20,
+            29,
+            44,
+            29,
+            20,
+            25,
+            39,
+            26,
+            37,
+            32,
+            73,
+            69,
+            62,
+            54,
+            3,
+            0,
+            0,
+            0,
+            2,
+            5,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3,
+            67,
+            71,
+            34,
+            73,
+            70,
+            70,
+            56,
+            61,
+            67,
+            78,
+            75,
+            73,
+            68,
+            65,
+            66,
+            72,
+            111,
+            116,
+            122,
+            127,
+            7,
+            0,
+            0,
+            0,
+            0,
+            0,
+            4,
+            13,
+            0,
+            0,
+            6,
+            8,
+            92,
+            0,
+            5,
+            62,
+            86,
+            111,
+            75,
+            105,
+            98,
+            85,
+            102,
+            80,
+            72,
+            90,
+            90,
+            116,
+            160,
+            91,
+            112,
+            156,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            2,
+            0,
+            1,
+            0,
+            0,
+            2,
+            51,
+            30,
+            42,
+            38,
+            32,
+            31,
+            23,
+            30,
+            21,
+            19,
+            25,
+            18,
+            21,
+            18,
+            23,
+            32,
+            61,
+            61,
+            50,
+            63,
+            12,
+            0,
+            0,
+            0,
+            11,
+            1,
+            0,
+            0,
+            3,
+            0,
+            0,
+            0,
+            70,
+            48,
+            66,
+            65,
+            59,
+            51,
+            50,
+            32,
+            42,
+            38,
+            55,
+            31,
+            65,
+            49,
+            49,
+            65,
+            101,
+            84,
+            97,
+            103
+          ],
+          "cubes_with_3_pixels": 136,
+          "debris_pixels": 6982,
+          "shadow_darkened_non_debris_pixels": 2976,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 459,
+              "retained_pixels": 217,
+              "retained_fraction": 0.47276688453159044
+            },
+            "contact": {
+              "reference_pixels": 324,
+              "retained_pixels": 240,
+              "retained_fraction": 0.7407407407407407
+            },
+            "exit": {
+              "reference_pixels": 334,
+              "retained_pixels": 181,
+              "retained_fraction": 0.5419161676646707
+            },
+            "label": {
+              "reference_pixels": 165,
+              "retained_pixels": 165,
+              "retained_fraction": 1.0
+            }
+          },
+          "sentries": 2,
+          "health": 100
+        },
+        {
+          "prefix": "dense_012",
+          "visible_pixels": [
+            0,
+            4,
+            1,
+            9,
+            0,
+            7,
+            67,
+            29,
+            22,
+            4,
+            1,
+            69,
+            56,
+            62,
+            16,
+            33,
+            17,
+            51,
+            23,
+            68,
+            59,
+            54,
+            72,
+            25,
+            25,
+            4,
+            61,
+            57,
+            57,
+            68,
+            65,
+            13,
+            64,
+            15,
+            50,
+            8,
+            73,
+            11,
+            28,
+            20,
+            8,
+            45,
+            2,
+            75,
+            75,
+            3,
+            5,
+            81,
+            70,
+            26,
+            15,
+            40,
+            63,
+            8,
+            62,
+            0,
+            70,
+            76,
+            25,
+            71,
+            75,
+            32,
+            60,
+            3,
+            7,
+            74,
+            7,
+            22,
+            5,
+            77,
+            0,
+            28,
+            0,
+            9,
+            27,
+            0,
+            66,
+            57,
+            42,
+            104,
+            22,
+            130,
+            110,
+            111,
+            28,
+            132,
+            110,
+            50,
+            96,
+            93,
+            61,
+            98,
+            16,
+            142,
+            112,
+            127,
+            108,
+            55,
+            0,
+            65,
+            97,
+            23,
+            138,
+            31,
+            8,
+            0,
+            11,
+            84,
+            84,
+            79,
+            132,
+            103,
+            63,
+            168,
+            53,
+            132,
+            11,
+            94,
+            139,
+            116,
+            87,
+            88,
+            73,
+            145,
+            182,
+            96,
+            94,
+            181,
+            20,
+            2,
+            2,
+            6,
+            43,
+            0,
+            32,
+            7,
+            32,
+            10,
+            1,
+            71,
+            56,
+            39,
+            53,
+            10,
+            51,
+            50,
+            46,
+            60,
+            31,
+            26,
+            56,
+            65,
+            66,
+            18,
+            25,
+            25,
+            67,
+            45,
+            0,
+            68,
+            69,
+            0,
+            17,
+            17,
+            46,
+            59,
+            0,
+            4,
+            38,
+            45,
+            1,
+            69,
+            98,
+            72,
+            94,
+            119,
+            10,
+            76,
+            58,
+            2,
+            29,
+            1,
+            67,
+            24,
+            112,
+            76,
+            79,
+            93,
+            54,
+            74,
+            112,
+            71
+          ],
+          "cubes_with_3_pixels": 171,
+          "debris_pixels": 9830,
+          "shadow_darkened_non_debris_pixels": 5157,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 459,
+              "retained_pixels": 125,
+              "retained_fraction": 0.27233115468409586
+            },
+            "contact": {
+              "reference_pixels": 324,
+              "retained_pixels": 209,
+              "retained_fraction": 0.6450617283950617
+            },
+            "exit": {
+              "reference_pixels": 334,
+              "retained_pixels": 191,
+              "retained_fraction": 0.5718562874251497
+            },
+            "label": {
+              "reference_pixels": 165,
+              "retained_pixels": 165,
+              "retained_fraction": 1.0
+            }
+          },
+          "sentries": 2,
+          "health": 100
+        },
+        {
+          "prefix": "dense_030",
+          "visible_pixels": [
+            33,
+            67,
+            18,
+            20,
+            72,
+            48,
+            78,
+            40,
+            48,
+            8,
+            67,
+            77,
+            67,
+            55,
+            51,
+            16,
+            70,
+            80,
+            50,
+            73,
+            52,
+            63,
+            64,
+            28,
+            60,
+            41,
+            82,
+            70,
+            16,
+            72,
+            75,
+            65,
+            74,
+            78,
+            67,
+            65,
+            62,
+            75,
+            26,
+            55,
+            9,
+            70,
+            7,
+            86,
+            75,
+            14,
+            33,
+            18,
+            62,
+            80,
+            16,
+            66,
+            66,
+            71,
+            61,
+            85,
+            70,
+            81,
+            65,
+            42,
+            69,
+            0,
+            70,
+            50,
+            51,
+            101,
+            90,
+            112,
+            129,
+            120,
+            18,
+            136,
+            93,
+            117,
+            111,
+            133,
+            86,
+            125,
+            81,
+            157,
+            21,
+            95,
+            35,
+            104,
+            25,
+            118,
+            127,
+            117,
+            116,
+            130,
+            8,
+            136,
+            115,
+            148,
+            132,
+            140,
+            153,
+            144,
+            132,
+            158,
+            19,
+            167,
+            197,
+            166,
+            69,
+            138,
+            139,
+            123,
+            201,
+            40,
+            175,
+            14,
+            89,
+            182,
+            72,
+            159,
+            142,
+            106,
+            163,
+            167,
+            132,
+            162,
+            197,
+            169,
+            183,
+            72,
+            132,
+            192,
+            24,
+            62,
+            22,
+            58,
+            57,
+            46,
+            3,
+            75,
+            57,
+            72,
+            25,
+            77,
+            63,
+            47,
+            70,
+            13,
+            74,
+            61,
+            14,
+            67,
+            16,
+            68,
+            33,
+            65,
+            76,
+            19,
+            66,
+            44,
+            75,
+            74,
+            9,
+            29,
+            90,
+            91,
+            98,
+            79,
+            72,
+            84,
+            110,
+            66,
+            93,
+            108,
+            36,
+            94,
+            128,
+            45,
+            55,
+            83,
+            59,
+            62,
+            94,
+            91,
+            55,
+            8,
+            115,
+            68,
+            101,
+            114,
+            107,
+            114,
+            108,
+            76,
+            104,
+            20
+          ],
+          "cubes_with_3_pixels": 191,
+          "debris_pixels": 15264,
+          "shadow_darkened_non_debris_pixels": 7622,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 459,
+              "retained_pixels": 433,
+              "retained_fraction": 0.9433551198257081
+            },
+            "contact": {
+              "reference_pixels": 324,
+              "retained_pixels": 296,
+              "retained_fraction": 0.9135802469135802
+            },
+            "exit": {
+              "reference_pixels": 334,
+              "retained_pixels": 223,
+              "retained_fraction": 0.6676646706586826
+            },
+            "label": {
+              "reference_pixels": 165,
+              "retained_pixels": 165,
+              "retained_fraction": 1.0
+            }
+          },
+          "sentries": 2,
+          "health": 100
+        },
+        {
+          "prefix": "dense_060",
+          "visible_pixels": [
+            74,
+            61,
+            85,
+            28,
+            86,
+            12,
+            79,
+            61,
+            16,
+            57,
+            69,
+            75,
+            79,
+            60,
+            34,
+            62,
+            63,
+            78,
+            48,
+            71,
+            56,
+            68,
+            90,
+            75,
+            63,
+            70,
+            66,
+            62,
+            63,
+            85,
+            72,
+            54,
+            77,
+            66,
+            70,
+            87,
+            64,
+            67,
+            47,
+            89,
+            9,
+            70,
+            50,
+            86,
+            66,
+            49,
+            62,
+            45,
+            65,
+            81,
+            70,
+            73,
+            94,
+            69,
+            53,
+            84,
+            85,
+            79,
+            70,
+            81,
+            71,
+            52,
+            76,
+            54,
+            136,
+            129,
+            101,
+            136,
+            149,
+            86,
+            147,
+            137,
+            22,
+            107,
+            123,
+            87,
+            155,
+            138,
+            85,
+            111,
+            136,
+            114,
+            110,
+            155,
+            144,
+            128,
+            45,
+            91,
+            143,
+            166,
+            85,
+            164,
+            112,
+            122,
+            153,
+            161,
+            189,
+            133,
+            132,
+            168,
+            140,
+            182,
+            196,
+            165,
+            18,
+            169,
+            50,
+            191,
+            158,
+            181,
+            169,
+            60,
+            168,
+            162,
+            188,
+            145,
+            156,
+            83,
+            147,
+            166,
+            73,
+            155,
+            130,
+            163,
+            99,
+            123,
+            147,
+            195,
+            57,
+            57,
+            70,
+            59,
+            41,
+            47,
+            27,
+            76,
+            65,
+            73,
+            50,
+            77,
+            73,
+            55,
+            50,
+            46,
+            71,
+            65,
+            46,
+            75,
+            63,
+            74,
+            15,
+            70,
+            52,
+            30,
+            66,
+            52,
+            76,
+            68,
+            52,
+            35,
+            100,
+            100,
+            113,
+            95,
+            93,
+            125,
+            118,
+            120,
+            75,
+            104,
+            80,
+            112,
+            88,
+            73,
+            109,
+            96,
+            108,
+            92,
+            96,
+            95,
+            105,
+            96,
+            121,
+            114,
+            96,
+            104,
+            119,
+            92,
+            88,
+            114,
+            90,
+            95
+          ],
+          "cubes_with_3_pixels": 192,
+          "debris_pixels": 17721,
+          "shadow_darkened_non_debris_pixels": 8571,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 455,
+              "retained_pixels": 455,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 323,
+              "retained_pixels": 314,
+              "retained_fraction": 0.9721362229102167
+            },
+            "exit": {
+              "reference_pixels": 334,
+              "retained_pixels": 281,
+              "retained_fraction": 0.8413173652694611
+            },
+            "label": {
+              "reference_pixels": 165,
+              "retained_pixels": 144,
+              "retained_fraction": 0.8727272727272727
+            }
+          },
+          "sentries": 2,
+          "health": 100
+        },
+        {
+          "prefix": "dense_090",
+          "visible_pixels": [
+            73,
+            77,
+            83,
+            58,
+            59,
+            67,
+            73,
+            56,
+            67,
+            55,
+            71,
+            62,
+            37,
+            49,
+            33,
+            59,
+            68,
+            74,
+            67,
+            54,
+            64,
+            61,
+            69,
+            75,
+            72,
+            79,
+            77,
+            68,
+            69,
+            81,
+            70,
+            57,
+            54,
+            66,
+            61,
+            57,
+            73,
+            56,
+            68,
+            82,
+            62,
+            49,
+            62,
+            77,
+            84,
+            56,
+            55,
+            50,
+            63,
+            70,
+            22,
+            72,
+            76,
+            71,
+            71,
+            75,
+            65,
+            83,
+            59,
+            41,
+            85,
+            72,
+            61,
+            55,
+            56,
+            117,
+            88,
+            141,
+            155,
+            108,
+            69,
+            139,
+            117,
+            98,
+            70,
+            76,
+            115,
+            140,
+            119,
+            126,
+            160,
+            95,
+            146,
+            151,
+            127,
+            109,
+            90,
+            86,
+            116,
+            141,
+            142,
+            119,
+            115,
+            154,
+            148,
+            172,
+            205,
+            127,
+            134,
+            167,
+            112,
+            159,
+            183,
+            161,
+            79,
+            128,
+            111,
+            136,
+            136,
+            147,
+            210,
+            106,
+            157,
+            148,
+            178,
+            176,
+            166,
+            159,
+            151,
+            107,
+            103,
+            93,
+            150,
+            147,
+            110,
+            100,
+            119,
+            186,
+            57,
+            62,
+            37,
+            55,
+            0,
+            52,
+            59,
+            66,
+            61,
+            71,
+            28,
+            63,
+            63,
+            63,
+            33,
+            48,
+            55,
+            46,
+            44,
+            69,
+            63,
+            67,
+            15,
+            60,
+            19,
+            47,
+            62,
+            54,
+            69,
+            59,
+            65,
+            8,
+            94,
+            84,
+            93,
+            91,
+            65,
+            102,
+            79,
+            113,
+            78,
+            88,
+            86,
+            95,
+            109,
+            92,
+            104,
+            113,
+            117,
+            110,
+            88,
+            109,
+            84,
+            95,
+            118,
+            105,
+            87,
+            89,
+            139,
+            90,
+            105,
+            83,
+            94,
+            76
+          ],
+          "cubes_with_3_pixels": 191,
+          "debris_pixels": 17188,
+          "shadow_darkened_non_debris_pixels": 5622,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 455,
+              "retained_pixels": 455,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 323,
+              "retained_pixels": 307,
+              "retained_fraction": 0.9504643962848297
+            },
+            "exit": {
+              "reference_pixels": 334,
+              "retained_pixels": 322,
+              "retained_fraction": 0.9640718562874252
+            },
+            "label": {
+              "reference_pixels": 165,
+              "retained_pixels": 163,
+              "retained_fraction": 0.9878787878787879
+            }
+          },
+          "sentries": 2,
+          "health": 100
+        },
+        {
+          "prefix": "dense_120",
+          "visible_pixels": [
+            86,
+            50,
+            72,
+            57,
+            68,
+            58,
+            79,
+            16,
+            68,
+            53,
+            66,
+            75,
+            75,
+            58,
+            49,
+            60,
+            59,
+            69,
+            54,
+            66,
+            59,
+            60,
+            84,
+            62,
+            72,
+            79,
+            66,
+            71,
+            71,
+            51,
+            63,
+            59,
+            49,
+            71,
+            56,
+            79,
+            60,
+            57,
+            68,
+            78,
+            67,
+            56,
+            63,
+            83,
+            72,
+            58,
+            54,
+            79,
+            63,
+            80,
+            69,
+            80,
+            74,
+            70,
+            53,
+            70,
+            69,
+            91,
+            73,
+            65,
+            83,
+            69,
+            74,
+            67,
+            124,
+            96,
+            100,
+            166,
+            98,
+            116,
+            150,
+            155,
+            116,
+            94,
+            142,
+            102,
+            99,
+            30,
+            113,
+            131,
+            160,
+            91,
+            101,
+            167,
+            125,
+            122,
+            103,
+            96,
+            116,
+            143,
+            136,
+            151,
+            92,
+            148,
+            159,
+            176,
+            186,
+            103,
+            103,
+            115,
+            79,
+            178,
+            119,
+            178,
+            146,
+            85,
+            95,
+            158,
+            143,
+            135,
+            0,
+            70,
+            176,
+            120,
+            152,
+            199,
+            180,
+            82,
+            116,
+            82,
+            135,
+            112,
+            155,
+            118,
+            50,
+            131,
+            147,
+            0,
+            58,
+            53,
+            68,
+            54,
+            0,
+            38,
+            58,
+            58,
+            70,
+            67,
+            0,
+            23,
+            60,
+            57,
+            68,
+            49,
+            76,
+            0,
+            0,
+            69,
+            59,
+            54,
+            0,
+            68,
+            1,
+            70,
+            76,
+            0,
+            54,
+            41,
+            53,
+            51,
+            92,
+            96,
+            139,
+            67,
+            97,
+            111,
+            126,
+            100,
+            31,
+            80,
+            101,
+            95,
+            147,
+            104,
+            97,
+            103,
+            116,
+            111,
+            78,
+            85,
+            100,
+            102,
+            115,
+            91,
+            86,
+            77,
+            120,
+            86,
+            94,
+            79,
+            62,
+            90
+          ],
+          "cubes_with_3_pixels": 183,
+          "debris_pixels": 16532,
+          "shadow_darkened_non_debris_pixels": 4797,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 459,
+              "retained_pixels": 459,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 324,
+              "retained_pixels": 303,
+              "retained_fraction": 0.9351851851851852
+            },
+            "exit": {
+              "reference_pixels": 334,
+              "retained_pixels": 334,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 165,
+              "retained_pixels": 165,
+              "retained_fraction": 1.0
+            }
+          },
+          "sentries": 2,
+          "health": 100
+        }
+      ],
+      "limitations": "ID pass changes only materials, not depth/poses. Palette quantization excludes antialiased boundary pixels. Shadow difference includes world and actor shadows. Physics is paused during diagnostics, not eased during the live intervals."
+    },
+    {
+      "directory": "evidence/arena/n2-s137-dense-4x3",
+      "perspective": {
+        "near_pixels": 956,
+        "far_pixels": 426
+      },
+      "records": [
+        {
+          "prefix": "dense_001",
+          "visible_pixels": [
+            0,
+            0,
+            0,
+            8,
+            0,
+            0,
+            0,
+            12,
+            1,
+            0,
+            0,
+            1,
+            29,
+            31,
+            29,
+            32,
+            19,
+            12,
+            18,
+            36,
+            26,
+            33,
+            24,
+            22,
+            22,
+            15,
+            20,
+            28,
+            44,
+            54,
+            53,
+            53,
+            9,
+            0,
+            0,
+            0,
+            16,
+            0,
+            0,
+            0,
+            10,
+            2,
+            0,
+            2,
+            35,
+            36,
+            23,
+            36,
+            39,
+            23,
+            19,
+            19,
+            32,
+            22,
+            20,
+            19,
+            35,
+            19,
+            26,
+            27,
+            49,
+            56,
+            49,
+            47,
+            0,
+            0,
+            0,
+            0,
+            1,
+            6,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            50,
+            53,
+            26,
+            54,
+            50,
+            53,
+            42,
+            41,
+            45,
+            51,
+            54,
+            50,
+            52,
+            47,
+            47,
+            54,
+            79,
+            82,
+            85,
+            95,
+            8,
+            0,
+            0,
+            0,
+            2,
+            0,
+            5,
+            9,
+            0,
+            0,
+            5,
+            7,
+            69,
+            0,
+            5,
+            50,
+            57,
+            79,
+            51,
+            71,
+            69,
+            57,
+            71,
+            54,
+            43,
+            60,
+            60,
+            80,
+            112,
+            61,
+            72,
+            107,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            2,
+            3,
+            0,
+            0,
+            1,
+            1,
+            39,
+            22,
+            30,
+            35,
+            24,
+            26,
+            21,
+            24,
+            19,
+            17,
+            22,
+            16,
+            21,
+            12,
+            20,
+            22,
+            46,
+            51,
+            38,
+            48,
+            6,
+            0,
+            0,
+            0,
+            9,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            54,
+            36,
+            49,
+            53,
+            46,
+            44,
+            38,
+            22,
+            28,
+            30,
+            37,
+            22,
+            47,
+            38,
+            36,
+            49,
+            72,
+            65,
+            73,
+            73
+          ],
+          "cubes_with_3_pixels": 133,
+          "debris_pixels": 5163,
+          "shadow_darkened_non_debris_pixels": 2367,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 413,
+              "retained_pixels": 191,
+              "retained_fraction": 0.46246973365617433
+            },
+            "contact": {
+              "reference_pixels": 328,
+              "retained_pixels": 237,
+              "retained_fraction": 0.7225609756097561
+            },
+            "exit": {
+              "reference_pixels": 250,
+              "retained_pixels": 146,
+              "retained_fraction": 0.584
+            },
+            "label": {
+              "reference_pixels": 137,
+              "retained_pixels": 137,
+              "retained_fraction": 1.0
+            }
+          },
+          "sentries": 2,
+          "health": 100
+        },
+        {
+          "prefix": "dense_012",
+          "visible_pixels": [
+            0,
+            2,
+            1,
+            4,
+            0,
+            9,
+            51,
+            22,
+            18,
+            3,
+            3,
+            53,
+            49,
+            47,
+            13,
+            23,
+            15,
+            40,
+            20,
+            55,
+            47,
+            46,
+            55,
+            21,
+            20,
+            2,
+            47,
+            43,
+            44,
+            52,
+            41,
+            13,
+            48,
+            9,
+            39,
+            4,
+            55,
+            9,
+            23,
+            15,
+            6,
+            37,
+            2,
+            58,
+            58,
+            2,
+            3,
+            64,
+            55,
+            22,
+            12,
+            29,
+            50,
+            7,
+            46,
+            0,
+            55,
+            60,
+            19,
+            57,
+            58,
+            25,
+            48,
+            2,
+            3,
+            50,
+            4,
+            18,
+            3,
+            56,
+            0,
+            17,
+            0,
+            7,
+            24,
+            0,
+            46,
+            42,
+            31,
+            75,
+            14,
+            97,
+            76,
+            80,
+            20,
+            87,
+            79,
+            37,
+            65,
+            65,
+            47,
+            67,
+            10,
+            99,
+            79,
+            92,
+            79,
+            34,
+            0,
+            45,
+            66,
+            11,
+            95,
+            20,
+            7,
+            1,
+            8,
+            57,
+            59,
+            48,
+            94,
+            68,
+            42,
+            117,
+            34,
+            95,
+            11,
+            62,
+            102,
+            84,
+            59,
+            60,
+            51,
+            98,
+            122,
+            62,
+            60,
+            118,
+            18,
+            0,
+            0,
+            5,
+            34,
+            0,
+            26,
+            6,
+            26,
+            7,
+            1,
+            55,
+            47,
+            28,
+            41,
+            8,
+            41,
+            41,
+            34,
+            49,
+            27,
+            21,
+            45,
+            50,
+            51,
+            16,
+            20,
+            26,
+            52,
+            38,
+            0,
+            53,
+            50,
+            0,
+            13,
+            12,
+            37,
+            45,
+            0,
+            4,
+            30,
+            31,
+            0,
+            53,
+            73,
+            56,
+            69,
+            87,
+            7,
+            54,
+            42,
+            2,
+            20,
+            0,
+            54,
+            16,
+            83,
+            56,
+            57,
+            71,
+            40,
+            54,
+            78,
+            55
+          ],
+          "cubes_with_3_pixels": 168,
+          "debris_pixels": 7210,
+          "shadow_darkened_non_debris_pixels": 4052,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 413,
+              "retained_pixels": 153,
+              "retained_fraction": 0.3704600484261501
+            },
+            "contact": {
+              "reference_pixels": 328,
+              "retained_pixels": 249,
+              "retained_fraction": 0.7591463414634146
+            },
+            "exit": {
+              "reference_pixels": 250,
+              "retained_pixels": 152,
+              "retained_fraction": 0.608
+            },
+            "label": {
+              "reference_pixels": 137,
+              "retained_pixels": 137,
+              "retained_fraction": 1.0
+            }
+          },
+          "sentries": 2,
+          "health": 100
+        },
+        {
+          "prefix": "dense_030",
+          "visible_pixels": [
+            23,
+            52,
+            17,
+            13,
+            53,
+            35,
+            55,
+            33,
+            38,
+            12,
+            53,
+            60,
+            52,
+            44,
+            40,
+            15,
+            55,
+            63,
+            39,
+            60,
+            41,
+            49,
+            49,
+            26,
+            47,
+            31,
+            63,
+            52,
+            10,
+            58,
+            58,
+            51,
+            60,
+            59,
+            57,
+            48,
+            49,
+            57,
+            21,
+            43,
+            9,
+            53,
+            7,
+            64,
+            56,
+            12,
+            25,
+            17,
+            48,
+            60,
+            9,
+            52,
+            47,
+            59,
+            45,
+            62,
+            51,
+            64,
+            48,
+            35,
+            51,
+            2,
+            52,
+            45,
+            36,
+            71,
+            67,
+            81,
+            90,
+            85,
+            11,
+            95,
+            69,
+            85,
+            81,
+            97,
+            58,
+            86,
+            60,
+            115,
+            15,
+            71,
+            25,
+            76,
+            15,
+            86,
+            91,
+            85,
+            73,
+            85,
+            6,
+            91,
+            82,
+            106,
+            93,
+            102,
+            105,
+            98,
+            88,
+            108,
+            34,
+            115,
+            134,
+            115,
+            43,
+            85,
+            100,
+            82,
+            137,
+            24,
+            115,
+            8,
+            56,
+            124,
+            49,
+            108,
+            102,
+            67,
+            114,
+            115,
+            83,
+            112,
+            139,
+            113,
+            126,
+            60,
+            85,
+            124,
+            20,
+            50,
+            17,
+            46,
+            44,
+            37,
+            3,
+            57,
+            49,
+            58,
+            19,
+            59,
+            48,
+            38,
+            48,
+            9,
+            56,
+            48,
+            15,
+            50,
+            12,
+            54,
+            27,
+            52,
+            59,
+            17,
+            50,
+            34,
+            58,
+            55,
+            8,
+            21,
+            61,
+            68,
+            73,
+            61,
+            61,
+            65,
+            81,
+            50,
+            68,
+            87,
+            26,
+            71,
+            92,
+            34,
+            39,
+            61,
+            41,
+            45,
+            70,
+            70,
+            37,
+            7,
+            82,
+            52,
+            74,
+            86,
+            79,
+            86,
+            84,
+            52,
+            77,
+            18
+          ],
+          "cubes_with_3_pixels": 191,
+          "debris_pixels": 11147,
+          "shadow_darkened_non_debris_pixels": 5947,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 413,
+              "retained_pixels": 350,
+              "retained_fraction": 0.847457627118644
+            },
+            "contact": {
+              "reference_pixels": 328,
+              "retained_pixels": 288,
+              "retained_fraction": 0.8780487804878049
+            },
+            "exit": {
+              "reference_pixels": 250,
+              "retained_pixels": 172,
+              "retained_fraction": 0.688
+            },
+            "label": {
+              "reference_pixels": 137,
+              "retained_pixels": 137,
+              "retained_fraction": 1.0
+            }
+          },
+          "sentries": 2,
+          "health": 100
+        },
+        {
+          "prefix": "dense_060",
+          "visible_pixels": [
+            61,
+            47,
+            64,
+            14,
+            67,
+            9,
+            60,
+            49,
+            18,
+            48,
+            52,
+            56,
+            61,
+            49,
+            31,
+            52,
+            49,
+            60,
+            40,
+            54,
+            43,
+            50,
+            70,
+            57,
+            49,
+            55,
+            52,
+            46,
+            48,
+            64,
+            56,
+            41,
+            60,
+            52,
+            56,
+            69,
+            50,
+            52,
+            37,
+            69,
+            25,
+            53,
+            42,
+            64,
+            52,
+            33,
+            50,
+            32,
+            53,
+            64,
+            53,
+            59,
+            69,
+            54,
+            42,
+            66,
+            62,
+            65,
+            57,
+            63,
+            57,
+            43,
+            54,
+            42,
+            98,
+            94,
+            75,
+            94,
+            107,
+            65,
+            100,
+            99,
+            16,
+            76,
+            90,
+            65,
+            110,
+            90,
+            64,
+            88,
+            94,
+            84,
+            71,
+            115,
+            104,
+            92,
+            33,
+            72,
+            101,
+            116,
+            58,
+            117,
+            82,
+            81,
+            107,
+            116,
+            120,
+            98,
+            94,
+            114,
+            95,
+            128,
+            131,
+            115,
+            27,
+            117,
+            47,
+            129,
+            107,
+            126,
+            114,
+            44,
+            110,
+            114,
+            122,
+            99,
+            110,
+            60,
+            104,
+            112,
+            57,
+            112,
+            91,
+            109,
+            69,
+            90,
+            96,
+            130,
+            46,
+            43,
+            55,
+            46,
+            35,
+            38,
+            22,
+            61,
+            53,
+            57,
+            42,
+            62,
+            58,
+            43,
+            41,
+            40,
+            55,
+            51,
+            39,
+            58,
+            40,
+            56,
+            13,
+            54,
+            36,
+            22,
+            59,
+            40,
+            59,
+            53,
+            41,
+            28,
+            79,
+            75,
+            82,
+            70,
+            68,
+            93,
+            86,
+            87,
+            54,
+            75,
+            55,
+            85,
+            65,
+            53,
+            81,
+            70,
+            79,
+            68,
+            75,
+            72,
+            77,
+            70,
+            86,
+            85,
+            75,
+            81,
+            86,
+            70,
+            67,
+            86,
+            72,
+            70
+          ],
+          "cubes_with_3_pixels": 192,
+          "debris_pixels": 13079,
+          "shadow_darkened_non_debris_pixels": 6731,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 405,
+              "retained_pixels": 392,
+              "retained_fraction": 0.9679012345679012
+            },
+            "contact": {
+              "reference_pixels": 321,
+              "retained_pixels": 270,
+              "retained_fraction": 0.8411214953271028
+            },
+            "exit": {
+              "reference_pixels": 250,
+              "retained_pixels": 200,
+              "retained_fraction": 0.8
+            },
+            "label": {
+              "reference_pixels": 137,
+              "retained_pixels": 108,
+              "retained_fraction": 0.7883211678832117
+            }
+          },
+          "sentries": 2,
+          "health": 100
+        },
+        {
+          "prefix": "dense_090",
+          "visible_pixels": [
+            60,
+            61,
+            66,
+            46,
+            47,
+            53,
+            58,
+            45,
+            53,
+            43,
+            58,
+            46,
+            30,
+            39,
+            28,
+            48,
+            57,
+            59,
+            53,
+            44,
+            48,
+            49,
+            51,
+            56,
+            56,
+            62,
+            64,
+            55,
+            57,
+            64,
+            54,
+            42,
+            41,
+            52,
+            49,
+            48,
+            54,
+            44,
+            52,
+            65,
+            47,
+            37,
+            47,
+            59,
+            65,
+            43,
+            43,
+            39,
+            52,
+            54,
+            19,
+            57,
+            60,
+            57,
+            55,
+            61,
+            48,
+            62,
+            45,
+            32,
+            68,
+            58,
+            50,
+            44,
+            39,
+            84,
+            65,
+            98,
+            108,
+            78,
+            50,
+            100,
+            88,
+            75,
+            48,
+            54,
+            81,
+            98,
+            86,
+            89,
+            112,
+            70,
+            102,
+            106,
+            92,
+            78,
+            69,
+            61,
+            88,
+            101,
+            102,
+            78,
+            82,
+            108,
+            102,
+            119,
+            141,
+            92,
+            91,
+            113,
+            78,
+            109,
+            127,
+            115,
+            58,
+            80,
+            82,
+            93,
+            91,
+            100,
+            133,
+            71,
+            111,
+            105,
+            125,
+            115,
+            112,
+            108,
+            107,
+            65,
+            73,
+            66,
+            95,
+            102,
+            79,
+            75,
+            84,
+            124,
+            47,
+            52,
+            34,
+            42,
+            0,
+            42,
+            54,
+            50,
+            47,
+            58,
+            21,
+            48,
+            53,
+            50,
+            23,
+            37,
+            47,
+            39,
+            35,
+            55,
+            49,
+            53,
+            17,
+            46,
+            18,
+            38,
+            51,
+            46,
+            53,
+            45,
+            48,
+            6,
+            73,
+            65,
+            65,
+            70,
+            49,
+            72,
+            59,
+            84,
+            60,
+            66,
+            63,
+            72,
+            78,
+            68,
+            76,
+            80,
+            86,
+            86,
+            68,
+            83,
+            62,
+            69,
+            86,
+            77,
+            69,
+            65,
+            101,
+            68,
+            77,
+            65,
+            74,
+            56
+          ],
+          "cubes_with_3_pixels": 191,
+          "debris_pixels": 12686,
+          "shadow_darkened_non_debris_pixels": 4481,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 405,
+              "retained_pixels": 405,
+              "retained_fraction": 1.0
+            },
+            "contact": {
+              "reference_pixels": 321,
+              "retained_pixels": 274,
+              "retained_fraction": 0.8535825545171339
+            },
+            "exit": {
+              "reference_pixels": 250,
+              "retained_pixels": 240,
+              "retained_fraction": 0.96
+            },
+            "label": {
+              "reference_pixels": 137,
+              "retained_pixels": 137,
+              "retained_fraction": 1.0
+            }
+          },
+          "sentries": 2,
+          "health": 100
+        },
+        {
+          "prefix": "dense_120",
+          "visible_pixels": [
+            63,
+            42,
+            55,
+            44,
+            51,
+            43,
+            62,
+            10,
+            52,
+            46,
+            48,
+            57,
+            58,
+            47,
+            39,
+            46,
+            45,
+            54,
+            43,
+            54,
+            43,
+            49,
+            60,
+            48,
+            55,
+            61,
+            51,
+            58,
+            55,
+            41,
+            52,
+            53,
+            39,
+            56,
+            44,
+            58,
+            49,
+            46,
+            52,
+            60,
+            51,
+            47,
+            48,
+            64,
+            55,
+            45,
+            43,
+            62,
+            51,
+            61,
+            55,
+            64,
+            56,
+            54,
+            42,
+            56,
+            56,
+            70,
+            56,
+            50,
+            66,
+            53,
+            57,
+            53,
+            89,
+            74,
+            77,
+            115,
+            68,
+            84,
+            102,
+            110,
+            78,
+            71,
+            101,
+            75,
+            75,
+            20,
+            85,
+            93,
+            112,
+            69,
+            70,
+            117,
+            89,
+            87,
+            73,
+            72,
+            83,
+            96,
+            88,
+            103,
+            70,
+            105,
+            111,
+            116,
+            126,
+            76,
+            73,
+            74,
+            55,
+            118,
+            76,
+            122,
+            106,
+            54,
+            73,
+            108,
+            106,
+            97,
+            133,
+            51,
+            116,
+            88,
+            102,
+            140,
+            124,
+            51,
+            79,
+            50,
+            96,
+            86,
+            100,
+            75,
+            34,
+            92,
+            101,
+            0,
+            46,
+            41,
+            54,
+            45,
+            0,
+            29,
+            48,
+            48,
+            57,
+            56,
+            0,
+            19,
+            48,
+            47,
+            52,
+            39,
+            58,
+            0,
+            0,
+            55,
+            47,
+            41,
+            0,
+            50,
+            4,
+            54,
+            62,
+            0,
+            46,
+            40,
+            47,
+            39,
+            68,
+            71,
+            104,
+            47,
+            71,
+            80,
+            94,
+            74,
+            25,
+            59,
+            79,
+            71,
+            101,
+            77,
+            72,
+            74,
+            83,
+            84,
+            62,
+            65,
+            74,
+            78,
+            87,
+            67,
+            65,
+            59,
+            83,
+            65,
+            69,
+            61,
+            45,
+            68
+          ],
+          "cubes_with_3_pixels": 185,
+          "debris_pixels": 12318,
+          "shadow_darkened_non_debris_pixels": 3895,
+          "landmarks": {
+            "actor": {
+              "reference_pixels": 413,
+              "retained_pixels": 407,
+              "retained_fraction": 0.9854721549636803
+            },
+            "contact": {
+              "reference_pixels": 328,
+              "retained_pixels": 277,
+              "retained_fraction": 0.8445121951219512
+            },
+            "exit": {
+              "reference_pixels": 250,
+              "retained_pixels": 250,
+              "retained_fraction": 1.0
+            },
+            "label": {
+              "reference_pixels": 137,
+              "retained_pixels": 137,
+              "retained_fraction": 1.0
+            }
+          },
+          "sentries": 2,
+          "health": 100
+        }
+      ],
+      "limitations": "ID pass changes only materials, not depth/poses. Palette quantization excludes antialiased boundary pixels. Shadow difference includes world and actor shadows. Physics is paused during diagnostics, not eased during the live intervals."
+    }
+  ],
+  "comparisons": [],
+  "rejected_mutations": [
+    "missing_frame",
+    "lost_actor",
+    "lost_label",
+    "lost_debris"
+  ],
+  "limitation": "Sampled engineering bounds chosen to preserve identity cues, not a new acceptance contract. Dense bursts still occlude most cyan body pixels briefly; human motion/readability judgment remains required."
+}

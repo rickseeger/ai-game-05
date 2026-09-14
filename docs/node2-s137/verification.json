@@ -1,0 +1,55 @@
+{
+  "archive_sha256": "d8c3ab50f7d3fbf842092bc7f83b3af24dc8289677ed4bfe26adabc6447074b5",
+  "verified_members": 923,
+  "verified_pngs": 886,
+  "engine_logs": [
+    {
+      "path": "evidence/arena/n2-s137-4x3/engine.log",
+      "no_engine_errors": true,
+      "actual_OpenGL": true
+    },
+    {
+      "path": "evidence/arena/n2-s137-720p/engine.log",
+      "no_engine_errors": true,
+      "actual_OpenGL": true
+    },
+    {
+      "path": "evidence/arena/n2-s137-analytic-4x3/engine.log",
+      "no_engine_errors": true,
+      "actual_OpenGL": true
+    },
+    {
+      "path": "evidence/arena/n2-s137-analytic-720p/engine.log",
+      "no_engine_errors": true,
+      "actual_OpenGL": true
+    },
+    {
+      "path": "evidence/arena/n2-s137-dense-4x3/engine.log",
+      "no_engine_errors": true,
+      "actual_OpenGL": true
+    },
+    {
+      "path": "evidence/arena/n2-s137-dense-720p/engine.log",
+      "no_engine_errors": true,
+      "actual_OpenGL": true
+    },
+    {
+      "path": "evidence/arena/n2-s137-negative/engine.log",
+      "no_engine_errors": true,
+      "actual_OpenGL": true
+    },
+    {
+      "path": "evidence/arena/n2-s137-tour/engine.log",
+      "no_engine_errors": true,
+      "actual_OpenGL": true
+    },
+    {
+      "path": "evidence/arena/n2-s137-wide/engine.log",
+      "no_engine_errors": true,
+      "actual_OpenGL": true
+    }
+  ],
+  "handoff_paths_present": true,
+  "source_and_tests_unchanged": true,
+  "scope": "Independent file readback after packaging; not a controller or human acceptance."
+}
