@@ -381,6 +381,8 @@ func focused() -> void:
     check("negative_player_damage_ignored", session.player.health == 100)
     session.player.apply_damage(200, Vector3.LEFT)
     session.player.apply_damage(15, Vector3.LEFT)
+    # Production terminal resolution is end-of-tick, not inside died emission.
+    await wait_ticks(2)
     check("lethal_idempotent", session.player.health == 0 and session.state == session.State.LOST and events.filter(func(e): return e.kind == "player_died").size() == 1)
     key(KEY_R, true)
     await wait_ticks(2)

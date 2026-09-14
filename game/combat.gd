@@ -42,7 +42,8 @@ func clear() -> void:
 
 func _physics_process(dt: float) -> void:
     for bolt in bolts.duplicate():
-        # Lethal player damage can pause the scene midway through this callback.
+        # Honor externally paused fixtures; production Session resolves terminal
+        # outcomes at priority 20, after this entire priority-10 damage pass.
         if get_tree().paused:
             break
         var end: Vector3 = bolt.p + bolt.direction * bolt.speed * dt
