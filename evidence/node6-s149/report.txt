@@ -1,0 +1,126 @@
+G12 node 6 / step 149: current-source opposition verification
+
+Scope
+    Temporary worker execution only. No harness or mission state was modified;
+    no node is declared durably completed. Reused existing opposition, controls,
+    destruction and audio. Read design.md, controls and destruction interfaces,
+    opposition implementation/tests, reproduction helper and previous evidence.
+    This delivery supersedes historical evidence for this execution, not the
+    completion contract or the final node-9 human gate.
+
+Source and narrowly scoped repair
+    Base revision: a9b147fabcd7f4465492159af8ac87d346d1fe24
+    Tested revision: 5a261111fc6c9ce320751debfde2df3ce1543133
+    Production game source and game tests remain byte-identical to base.
+    Existing source: game/sentry.gd, opposition.gd, combat.gd,
+    opposition_session.gd, player.gd, player_input.gd, destructible_target.gd,
+    destruction.gd. Focused/natural tests: game/tests/opposition_tests.gd.
+
+    Reproducible verification defect: scripts/setup.sh installed the engine,
+    but a fresh clone lacked generated WAV sample imports. The original helper
+    launched gameplay without editor import, producing resource load errors
+    and combat_audio_eight_voice_bound failure. The failed n6s149-focused run
+    and its command/log remain in the archive and are NOT positive evidence.
+    Fixed only scripts/rerun_opposition_node6.py: prepare assets with the pinned
+    Godot --headless --path game --editor --import --quit before gameplay, record
+    that command/log, and bound subprocess waits. Headless mode is asset import
+    only; every gameplay test uses actual X11 rendering. No audio/gameplay rules,
+    camera, destruction, controls, thresholds or test assertions were changed.
+
+Fresh execution
+    The complete repaired serial helper ran end to end at the tested revision.
+    Exact UTC command starts/exit codes are in verification.json and archived
+    commands.json; per-run launch.json includes source hashes and environment.
+    Godot 4.5.1 official f62fdbde1; downloaded ZIP checksum verified. Linux X11/
+    Xvfb, Compatibility OpenGL, Mesa llvmpipe LLVM 21.1.8, 1280x720, 60Hz physics,
+    Dummy audio. Engine binary/ZIP hashes are in provenance.json.
+
+    Focused: 47 checks, zero failures (the earlier 42 plus five existing combat
+    audio integration checks). Pursuit, obstacle avoidance, 36-tick red aim,
+    108-tick attack cycle, 15-damage bolts, cover collision, spawn warnings and
+    spacing/cap, locked-aim dodge, interruption, pause and R restart all pass.
+    Four player bolts destroy a pylon and its solid cover into 32 physical
+    fragments; an enemy bolt then damages the exposed player. Two bolts kill
+    a sentry, remove collider/mesh before one 16-body burst, and stop further
+    attacks; duplicate death/damage cannot produce another burst.
+
+    Inactive: independent process, seed 1201, no input or fixture damage.
+    Seven actual hostile hits cause zero health and LOST at tick 543 (9.05s).
+    Capture has 273 decoded frames and includes terminal state.
+    Active: separate process, same seed/rules; waits for actual incoming damage,
+    then uses production mouse aim/fire and keyboard dash input. Survives 1800
+    ticks (30s) with 70 health, destroys three sentries through swept two-hit
+    combat and physical destruction, with no post-death attacks. Two hostile
+    attacks cause two actual hits. Capture has 901 decoded frames.
+    This proves counterplay survival, not victory or a completed objective loop.
+
+    Independent check_opposition.py validates current source hashes, natural
+    approach/cue timing, clocks, collision provenance, health, firing cadence,
+    bursts and removed threats, continuous capture coverage and video decoding.
+    Seven altered telemetry controls are rejected. Controls regression passes
+    99 assertions and six trace mutation controls.
+    Actual engine negative changes AIM_TIME from 0.6 to 0.2; the engine exits 1
+    with aim_36_ticks, counterfire_interrupts_telegraphed_attack and
+    counterfire_preserves_health failures. Wrapper exits 0 because rejection is
+    expected; finally restores source. Post-restore positive hashes/checks pass.
+
+Rendering evidence and limits
+    Natural inactive and active gameplay recordings are unmodified runs: no
+    fixture repositioning, AI freezing, time skips, healing, direct damage or
+    easier threat rules. The active driver DOES read internal player health,
+    sentry IDs and world positions, and projects targets through the production
+    camera to inject InputEvents. It does not interpret images or recognize
+    visual warnings. Input-path evidence is not proof of human reaction ability.
+
+    A SEPARATE focused fixture freezes physics without a pause HUD, toggles
+    only the real production aim beam on/off/restored, flushes renders, then
+    restores before resuming. Independent decoded-RGB comparison finds 298
+    changed ROI pixels, 286 newly red over 143 columns; restored RGB is identical.
+    ROI: [456,575,646,587]. Absent/swapped/not-restored image negatives rejected.
+    This objectively proves the cue contributes rendered pixels in that fixture,
+    not readable threats everywhere, during debris, or to a human at normal speed.
+    Natural runs never toggle/freeze beams. No visual perception was performed,
+    sought or claimed; missing vision is not a worker blocker.
+
+    Node 9 human playtest questions: Are incoming spawn warnings and locked red
+    aim distinct from moving damaging bolts? Can Rick see the hit direction and
+    choose dodge/counterfire during debris? Is the warning window fair at normal
+    speed? Are threat pressure, controls and destructive responses satisfying?
+    Judge these on the integrated exact Linux release, not just these captures.
+    human-handoff.json indexes real events to nearest video frames/times.
+    Capture uses fixed 30 rendered FPS / 60Hz simulation; video seconds are not
+    wall-time performance. No subjective audio, laptop performance, full-loop,
+    export/release, balance or overall fun acceptance is claimed. Existing audio
+    integration ran, but Dummy output and assertions are not a listening test.
+
+Reproduction (repository root; install prerequisites in docs/validation.md)
+    bash scripts/setup.sh
+    python3 scripts/rerun_opposition_node6.py controller-n6-fresh-149
+
+    Use a NEW prefix; run serially because the negative temporarily edits source.
+    The actual final invocation was:
+    python3 scripts/rerun_opposition_node6.py n6s149-final
+
+Inspect this delivery
+    tar -xzf evidence/node6-s149/raw-runs.tar.gz
+    python3 scripts/check_opposition.py evidence/opposition/n6s149-final-focused evidence/opposition/n6s149-final-inactive evidence/opposition/n6s149-final-active --self-test evidence/opposition/n6s149-final-active evidence/opposition/n6s149-final-inactive
+    python3 scripts/check_opposition_cue.py evidence/opposition/n6s149-final-focused
+    python3 scripts/check_controls.py evidence/controls/n6s149-final-controls --self-test
+    sha256sum -c evidence/node6-s149/SHA256SUMS
+
+    Natural runtime captures after extraction:
+    evidence/opposition/n6s149-final-inactive/runtime.mp4
+    evidence/opposition/n6s149-final-active/runtime.mp4
+    Cue PNGs: evidence/opposition/n6s149-final-focused/cue_{on,off,restored}.png
+    All engine logs, launch metadata, timestamped results/traces, retained PNGs,
+    MP4s, checker results and failed initial launch are in raw-runs.tar.gz.
+    artifact-manifest.json enumerates 72 archive files with sizes/SHA256; package.py
+    verifies every archive member by readback. verification.json is the concise
+    machine-readable result. provenance.json ties results to unchanged source.
+
+    Interactive Linux opposition slice (not the default controls-only scene):
+    .tools/Godot_v4.5.1-stable_linux.x86_64 --path game res://opposition.tscn --rendering-method gl_compatibility
+
+No remaining reproducible opposition technical defect was observed in this scope.
+Subjective readability/satisfaction remains an explicit node-9 human question,
+not an invented success and not a reason to change accepted systems here.
