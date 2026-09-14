@@ -4,6 +4,7 @@ No rules fixture or supplied pass flags are accepted as natural-play evidence.
 """
 import argparse,collections,copy,gzip,hashlib,json,re,subprocess
 from pathlib import Path
+from release_context import baseline_digest
 import numpy as np
 from PIL import Image
 from scipy.io import wavfile
@@ -194,12 +195,12 @@ def main():
     for f in (ROOT/'game').iterdir():
         if not f.is_file() or f.suffix=='.uid':continue
         name=str(f.relative_to(ROOT))
-        old=subprocess.check_output(['git','show','04832df0af77769a10db15272ed901bac1dfd669:'+name],cwd=ROOT)
+        old=baseline_digest(name)
         if f.name=='opposition_session.gd':
             hook='    if "--natural-test" in OS.get_cmdline_user_args():\n        var driver = load("res://tests/natural_play.gd").new()\n        add_child(driver)\n        driver.call_deferred("run", self)\n'
-            assert f.read_text().replace(hook,'').encode()==old, 'production hook only'
-        else:assert f.read_bytes()==old, 'production unchanged '+name
-        production[name]=hashlib.sha256(old).hexdigest()
+            assert hashlib.sha256(f.read_text().replace(hook,'').encode()).hexdigest()==old, 'production hook only'
+        else:assert hashlib.sha256(f.read_bytes()).hexdigest()==old, 'production unchanged '+name
+        production[name]=old
     r=rows(out/'events.jsonl.gz');result={'source_commit':meta['source_commit'],'rules':check_rules(r,meta['mode'])}
     result['production_unchanged_except_opt_in_hook']=production
     if meta['mode']=='victory':result['physics']=check_physics(r,rows(out/'physics.jsonl.gz'))

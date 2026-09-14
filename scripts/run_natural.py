@@ -2,6 +2,7 @@
 """Default production entry + opt-in input-only driver, private user settings."""
 import argparse,datetime,gzip,hashlib,json,os,signal,subprocess,time
 from pathlib import Path
+from release_context import source_commit, source_status
 ROOT=Path(__file__).resolve().parents[1]
 p=argparse.ArgumentParser();p.add_argument('output',type=Path);p.add_argument('--mode',choices=['victory','timeout'],default='victory');p.add_argument('--movie',action='store_true');p.add_argument('--fixed',action='store_true');p.add_argument('--frames',action='store_true');p.add_argument('--replay',type=Path);a=p.parse_args()
 out=a.output.resolve();out.mkdir(parents=True,exist_ok=False)
@@ -17,7 +18,7 @@ if a.replay:
     payload=[e for e in original if e['kind'].startswith('input_') or e['kind'] in ['early_extraction','pause_start','pause_end','end']]
     (out/'replay-input.json').write_text(json.dumps(payload))
     env['NATURAL_REPLAY']=str(out/'replay-input.json')
-meta={'command':cmd,'utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'source_commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),'source_status':subprocess.check_output(['git','status','--short'],cwd=ROOT,text=True),'source_sha256':{str(f.relative_to(ROOT)):hashlib.sha256(f.read_bytes()).hexdigest() for f in (ROOT/'game').rglob('*') if f.is_file() and '.godot' not in f.parts},'engine_sha256':hashlib.sha256(godot.read_bytes()).hexdigest(),'mode':a.mode,'replay_source':str(a.replay) if a.replay else None,'replay_sha256':hashlib.sha256((out/'replay-input.json').read_bytes()).hexdigest() if a.replay else None,'frames':a.frames,'movie':a.movie,'fixed':a.fixed or a.movie,'environment':{k:env[k] for k in ['NATURAL_OUT','NATURAL_MODE','XDG_DATA_HOME','LIBGL_ALWAYS_SOFTWARE']},'uname':list(os.uname())}
+meta={'command':cmd,'utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'source_commit':source_commit(),'source_status':source_status(),'source_sha256':{str(f.relative_to(ROOT)):hashlib.sha256(f.read_bytes()).hexdigest() for f in (ROOT/'game').rglob('*') if f.is_file() and '.godot' not in f.parts},'engine_sha256':hashlib.sha256(godot.read_bytes()).hexdigest(),'mode':a.mode,'replay_source':str(a.replay) if a.replay else None,'replay_sha256':hashlib.sha256((out/'replay-input.json').read_bytes()).hexdigest() if a.replay else None,'frames':a.frames,'movie':a.movie,'fixed':a.fixed or a.movie,'environment':{k:env[k] for k in ['NATURAL_OUT','NATURAL_MODE','XDG_DATA_HOME','LIBGL_ALWAYS_SOFTWARE']},'uname':list(os.uname())}
 (out/'launch.json').write_text(json.dumps(meta,indent=2))
 t=time.monotonic()
 with (out/'engine.log').open('w') as log:

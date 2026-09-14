@@ -1,3 +1,5 @@
+Linux release packaging: see docs/linux-release.txt for the playable artifact layout, launch, controls, dependencies, licensing, reproducible assembly and clean-artifact validation. Release tooling does not change accepted gameplay.
+
 # G12: Breakwater — Linux session integration
 
 Default launch now runs the complete production session: destroy three pylons,

@@ -1,0 +1,132 @@
+BREAKWATER - Linux x86_64 release
+
+PLAY (no Python, Git, network download or Godot installation needed)
+
+    tar -xzf breakwater-linux-x86_64.tar.gz
+    cd breakwater-linux-x86_64
+    ./launch.sh
+
+The actual archive filename may carry a revision suffix. Check its sidecar with
+sha256sum -c ARCHIVE.tar.gz.sha256 in the same directory before extraction.
+launch.sh works from other working directories and paths containing spaces.
+It imports included source assets with the bundled Godot 4.5.1 editor runtime,
+then launches the default integrated production scene, not a demo or test mode.
+This is a source+runtime distribution, not an exported/stripped PCK executable.
+The extracted directory must be writable (game/.godot is generated on launch).
+No editor/import cache, historical evidence/recordings, Git metadata, virtualenv,
+Windows runtime or export templates are distributed. Normal play is offline.
+
+GOAL AND CONTROLS
+
+Destroy all THREE orange pylons with your bolts, then enter north EXTRACT alive
+before the 150-second active-play deadline. Locked extraction cannot win; clearing
+the pylons remotely unlocks it but does not win until you enter. Sentries threaten
+you; counterfire, movement, dash and cover are meaningful tools. Pause stops time.
+    WASD              move
+    Mouse             aim
+    Hold left button  fire
+    Space             dash (HUD shows cooldown)
+    Esc               pause/resume; pause also exposes sound settings
+    R                 retry after victory or defeat (not during active play)
+    M                 mute/unmute
+    - / =             decrease/increase SFX level
+    Master/SFX sliders in settings adjust volume
+Close the window or Alt+F4 to quit. No save/resume; retries rebuild the session.
+Sound settings persist in Godot user data; they do not reset with R.
+
+SUPPORTED TARGET AND SYSTEM DEPENDENCIES
+
+Linux x86_64 with glibc (not musl/Alpine), X11 or XWayland, OpenGL 3.3-capable
+Mesa/vendor drivers; use a reasonably modern SSE4.2-capable x86_64 CPU. Bundled
+runtime is Godot 4.5.1.stable.official.f62fdbde1, native non-.NET build. Launch
+uses the OpenGL compatibility renderer and X11 explicitly. No Vulkan required.
+Tested only on the worker Linux x86_64/glibc 2.43 server with Mesa llvmpipe and
+Xvfb. Other distros/glibc versions, physical GPUs and Rick hardware are unverified;
+this is NOT a tested universal-Linux compatibility promise. Native Wayland, ARM,
+32-bit, musl and Windows are outside this release target. Desktop audio requires
+a working PulseAudio-compatible service (including PipeWire pulse) or ALSA.
+
+Debian/Ubuntu package names (adapt to your distro; libasound2 on older versions):
+    sudo apt-get install libgl1 libgl1-mesa-dri libx11-6 libxcursor1 libxrandr2 libxinerama1 libxi6 libxrender1 libxext6 libpulse0 libasound2t64
+The runtime also dynamically links glibc, libm, libdl, libpthread and librt.
+GL/X11/audio libraries are dynamically loaded; ldd alone is not the full list.
+Allow 500 MB for extraction/import, more for your logs. Automated movie validation
+needs at least 12 GB temporary free space because uncompressed AVI is large.
+
+TROUBLESHOOTING
+
+Permission denied: extract on an executable, writable Linux filesystem; chmod +x
+launch.sh runtime/Godot_v4.5.1-stable_linux.x86_64 if archive modes were lost.
+Missing display: use a desktop terminal with DISPLAY set, or install XWayland.
+Black window/driver error: update GPU drivers; try LIBGL_ALWAYS_SOFTWARE=1 ./launch.sh
+as a diagnostic (slower). On headless servers use xvfb-run -a ./launch.sh
+--audio-driver Dummy; this is offscreen and silent, NOT a human audio test.
+No sound: unmute M, check Master/SFX sliders and desktop output device; try
+./launch.sh --audio-driver ALSA or --audio-driver PulseAudio. Dummy means no
+speakers. Reset sound preferences only if desired by moving the Breakwater
+user folder under ~/.local/share/godot/app_userdata/ (or your XDG_DATA_HOME).
+Import errors: ensure the directory is writable and all manifest files are intact;
+remove only game/.godot then relaunch to regenerate caches. Source assets are
+included. To log launch: ./launch.sh --verbose > launch.log 2>&1
+Slow on software rendering: the recorded 60 FPS movie is offline, not a performance
+claim. Unfixed runtime logs report real frame intervals including test observation.
+No subjective readability, sound-weight, keyboard-feel or fun assessment is claimed.
+
+SOURCE, ASSETS AND LICENSES
+
+RELEASE.json gives the exact source Git SHA, accepted unchanged game SHA, engine
+ZIP/binary digests and every included file digest/mode. game/ contains the complete
+integrated game and GDScript tests. scripts/ contains the supported release test
+runners/checkers, deterministic sound generator and release assembler. docs/ retains
+historical design/validation context; historical commands not included in scripts/
+require the full Git repository and their own evidence. Use THIS file for release.
+
+Original game code, procedural geometry and generated WAV assets are MIT licensed
+(see LICENSE and game/audio/provenance.json). The full Godot runtime is redistributed
+under its MIT license, with third-party copyright/license notices bundled in
+release/licenses/Godot-LICENSE.txt and Godot-COPYRIGHT.txt, copied from the exact
+4.5.1-stable engine source. Engine source: https://github.com/godotengine/godot/tree/4.5.1-stable
+No external music/fonts/textures are required; the engine includes its default font.
+System libraries and optional test packages retain their licenses and are not bundled.
+
+REPRODUCIBLE ASSEMBLY FROM COMMITTED SOURCE (Linux, Python 3.12+)
+
+    git clone git@github.com:rickseeger/ai-game-05.git
+    cd ai-game-05
+    git checkout SOURCE_REVISION_FROM_RELEASE_JSON
+    ./scripts/setup.sh
+    python3 scripts/build_linux_release.py --source HEAD --engine-zip .tools/godot.zip --output /tmp/breakwater-linux-x86_64.tar.gz
+
+Git, curl and unzip are build-only dependencies; install with your package manager.
+setup.sh downloads the official 4.5.1 Linux x86_64 ZIP and verifies its pinned
+SHA-256 02ec53d1cc7dbb9cc6355393c61b9ab43d1244751a124f10248a4802830788cd.
+No export templates or recompilation are necessary. Assembly reads Git blobs from
+the specified revision, not dirty checkout files, and asserts game/ is identical
+to accepted 7ec9261cae21cd63d68e93c1fceb1c1090e3f091. Tar ordering/modes/owners/times
+and gzip timestamp/name are normalized. Use the same Python/zlib for byte-identical
+gzip; cross-version compression bytes are not guaranteed. Repeat into a DIFFERENT
+output file and compare sha256sum. Shallow clones must fetch the accepted commit.
+The packaged assembler requires a Git checkout; gameplay and tests do not.
+
+CLEAN-ARTIFACT AUTOMATED VALIDATION
+
+Test dependencies: Python 3.12+, numpy 2.5.3, scipy 1.18.1, Pillow 12.3.0, ffmpeg
+(with libx264), ffprobe, xvfb-run, xauth, ldd and the GL/X11 runtime above.
+    sudo apt-get install python3-venv ffmpeg xvfb xauth
+    python3 -m venv /tmp/breakwater-tests
+    /tmp/breakwater-tests/bin/pip install -r release/requirements-test.txt
+    /tmp/breakwater-tests/bin/python scripts/verify_linux_release.py /absolute/release.tar.gz /tmp/new-breakwater-verification
+Alternatively use uv venv --python 3.12 and uv pip install --python VENV/bin/python.
+The output directory must not exist. Run the packaged script or the exact source
+revision script. It verifies every archive file/mode, extracts to a fresh path with
+spaces, launches the real launcher (including first import), then exercises the
+bundled runtime/default game with accepted normal InputEvents through victory,
+real-threat death, destruction/physics/audio, two ordinary R retries and fresh
+combat. It separately runs unfixed realtime and rules/integration regressions.
+Fixed-FPS MovieWriter records actual stereo mixer PCM plus rendered frames, then
+independent Python checks decode pixels, check physics and match break/ground-impact
+assets in PCM; no fabricated waveform and no production state mutations in natural
+play. Forced rule/reset fixtures are explicitly separate. A native-audio diagnostic
+records server fallback without treating it as a speaker pass. Logs and captures
+are tied to the finished artifact SHA-256 in verification.json. No network or Git
+is used by these packaged test runners. Tests never request a human playtest.
