@@ -45,8 +45,11 @@ func _ready() -> void:
         var voice := AudioStreamPlayer3D.new()
         voice.process_mode = Node.PROCESS_MODE_PAUSABLE
         voice.bus = AudioServer.get_bus_name(bus)
-        # Arena camera is elevated: avoid making every fracture sound far away.
-        voice.unit_size = 50.0
+        # Elevated arena camera is ~27..40m from playable ground positions.
+        # A 50m unity radius clamped the whole arena to max_db: no distance cue.
+        # Keep near attacks strong, but let far breaks/contacts attenuate.
+        voice.attenuation_model = AudioStreamPlayer3D.ATTENUATION_INVERSE_DISTANCE
+        voice.unit_size = 26.0
         voice.max_distance = 0.0 # inverse attenuation only, no second distance fade
         voice.max_db = 0.0
         voice.attenuation_filter_cutoff_hz = 14000.0

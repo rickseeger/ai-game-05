@@ -5,13 +5,16 @@ No fabricated audio, no alternate solver; MovieWriter is not speaker evidence.
 import argparse, datetime, hashlib, json, os, subprocess, sys, time
 from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
-p = argparse.ArgumentParser(); p.add_argument("output"); a = p.parse_args()
+p = argparse.ArgumentParser(); p.add_argument("output"); p.add_argument("--spatial", action="store_true"); a = p.parse_args()
 assert Path(a.output).name == a.output and a.output not in (".", "..")
 out = ROOT / "evidence/audio" / a.output
 out.mkdir(parents=True, exist_ok=False)
 godot = os.environ.get("GODOT_BIN", str(ROOT / ".tools/Godot_v4.5.1-stable_linux.x86_64"))
 env = dict(os.environ, AUDIO_OUT=str(out), XDG_DATA_HOME=str(out / "userdata"), LIBGL_ALWAYS_SOFTWARE="1", GODOT_SILENCE_ROOT_WARNING="1")
 cmd = ["xvfb-run", "-a", "-s", "-screen 0 1280x1024x24", godot, "--path", str(ROOT / "game"), "res://destruction_demo.tscn", "--rendering-method", "gl_compatibility", "--resolution", "1280x720", "--audio-driver", "Dummy", "--fixed-fps", "60", "--disable-vsync", "--write-movie", str(out / "movie.avi"), "--", "--audio-test"]
+if a.spatial:
+    cmd.remove("res://destruction_demo.tscn")
+    cmd[cmd.index("--"):] = ["--script", "res://tests/audio_spatial_tests.gd"]
 meta = {"command": cmd, "utc": datetime.datetime.now(datetime.timezone.utc).isoformat(), "clock": "MovieWriter 60fps, 60Hz actual GodotPhysics, 48000Hz mixer; offline not real-time or speakers", "engine_sha256": hashlib.sha256(Path(godot).read_bytes()).hexdigest(), "uname": list(os.uname()), "base_commit": subprocess.check_output(["git", "rev-parse", "HEAD"], text=True).strip(), "source_sha256": {str(f.relative_to(ROOT)): hashlib.sha256(f.read_bytes()).hexdigest() for f in sorted((ROOT / "game").rglob("*")) if f.is_file() and ".godot" not in f.parts and f.suffix != ".uid"}, "environment": {k:env[k] for k in ["AUDIO_OUT", "XDG_DATA_HOME", "LIBGL_ALWAYS_SOFTWARE", "GODOT_SILENCE_ROOT_WARNING"]}}
 start = time.monotonic()
 with (out / "engine.log").open("w") as log:
