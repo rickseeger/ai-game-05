@@ -1,0 +1,55 @@
+{
+  "archive": "evidence/node7-s150/raw-inactive.tar.gz",
+  "sha256": "ff8935725749176dde2106edbef17a6aafbe5cdd7a2379feaedd5d6bcd048db6",
+  "members": {
+    "evidence/opposition/node7-s150-inactive/encode.log": {
+      "bytes": 3457,
+      "sha256": "551eb0f86219b5747404bcc0a5570b2dd568d6f3143055cc6d97f67e239e84f6"
+    },
+    "evidence/opposition/node7-s150-inactive/engine.log": {
+      "bytes": 533,
+      "sha256": "316d84aeab7174bc06f7cbc5132472135a7adbee1c749a86767f1a41890064e5"
+    },
+    "evidence/opposition/node7-s150-inactive/frame_00001.png": {
+      "bytes": 80366,
+      "sha256": "759f2fe839ae18d8b86e5e7521fec923389d2e8e1a697180b1e728261882f3c1"
+    },
+    "evidence/opposition/node7-s150-inactive/frame_00002.png": {
+      "bytes": 79696,
+      "sha256": "8d26ad42a9a64cac4c94fcfe066a1bc8a61a38e119bbfd9bac9b2c4b77653c39"
+    },
+    "evidence/opposition/node7-s150-inactive/frame_00072.png": {
+      "bytes": 78903,
+      "sha256": "b290d60557d64b5609a10d15bebf9de056ea62a7fbb8299f5c2650714fa8dee0"
+    },
+    "evidence/opposition/node7-s150-inactive/frame_00111.png": {
+      "bytes": 78593,
+      "sha256": "4f4b95135b53a3aa1b0e18696823a082f639e36afd66c55cdcee7712071272e0"
+    },
+    "evidence/opposition/node7-s150-inactive/frame_00273.png": {
+      "bytes": 106800,
+      "sha256": "674bbd3837653e7d439e0da9d484d9f525490fa600901eb17ec8cbb7e164f400"
+    },
+    "evidence/opposition/node7-s150-inactive/launch.json": {
+      "bytes": 9933,
+      "sha256": "8a96100f43093b30117331620f10ba0b36bc0cc9ec3abf55ec0dfafc1249cbfe"
+    },
+    "evidence/opposition/node7-s150-inactive/results.json": {
+      "bytes": 54058,
+      "sha256": "768fcd85708a4f790f1b30d9b4c826a6eb49dc7e0ee63f49e169d25c2d3bf310"
+    },
+    "evidence/opposition/node7-s150-inactive/runtime.mp4": {
+      "bytes": 141235,
+      "sha256": "eac5d02fb6476a30c78c8a8ec908932b23a8c15c9d6979f2b28133beef473f50"
+    },
+    "evidence/opposition/node7-s150-inactive/trace.json": {
+      "bytes": 186576,
+      "sha256": "fd242b826cd861e93c7b40d2a441a535b04b7530b552b12e59c6e98a2a41c6c7"
+    },
+    "evidence/opposition/node7-s150-inactive/video.json": {
+      "bytes": 2155,
+      "sha256": "cc27e57a4712476946b349805bfeaff2ea0325c90be6ca51a85d77c45890db82"
+    }
+  },
+  "readback_verified": true
+}

@@ -1,0 +1,44 @@
+{
+  "status": "proposal_only_no_tree_changes",
+  "reason": "Current source has accepted combat components but no production win, pylon objective, exit gate, deadline or full-session progression test. Implementation plus input-strategy/capture validation exceeds the requested focused exercise-and-tune pass.",
+  "children": [
+    {
+      "label": "A",
+      "objective": "Implement the bounded complete Session and HUD on the accepted opposition slice",
+      "depends_on": [],
+      "deliverables": [
+        "Integrated production Session/default entry",
+        "Pylon progress + locked/open exit feedback + countdown + results",
+        "Loss-before-win resolution and full restart reset",
+        "Automated state-boundary, pause and repeated-reset tests with actual logs"
+      ],
+      "constraints": [
+        "Preserve accepted mechanics and audio asset import prerequisite",
+        "Start with existing design values",
+        "Label isolated rule fixtures honestly",
+        "Commit and push source/tests/evidence"
+      ]
+    },
+    {
+      "label": "B",
+      "objective": "Validate natural full-session progression/restarts and apply only demonstrated bounded tuning",
+      "depends_on": [
+        "A independently accepted"
+      ],
+      "deliverables": [
+        "Reproducible normal-input victory, defeat and restarted runs",
+        "Input/collision/progression/reset provenance assertions",
+        "Fresh synchronized rendered video and actual game-mixer audio including destruction",
+        "Pixel-level rendering checks",
+        "Measured observations, revisions and any bounded tuning changes"
+      ],
+      "constraints": [
+        "No forced outcomes, direct state/health mutation or isolated scenes as natural play evidence",
+        "Preserve renderer/controls/destruction/audio/opposition",
+        "Do not package release or solicit final playtest",
+        "Reserve subjective quality for Rick at node 9",
+        "Commit and push source/tests/evidence"
+      ]
+    }
+  ]
+}

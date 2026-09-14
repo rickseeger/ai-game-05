@@ -1,0 +1,18 @@
+{
+  "runs": [
+    {
+      "directory": "/opt/g-harness/workspace/G12/node_7_step_150/repo/evidence/opposition/node7-s150-inactive",
+      "engine_assertions": 5,
+      "scenario": "inactive",
+      "ticks": 543,
+      "seconds": 9.05,
+      "health": 0,
+      "attacks": 7,
+      "damage_hits": 7,
+      "destroyed": 0,
+      "decoded_frames": 273
+    }
+  ],
+  "visual_assessment": "UNASSESSED; decoding is not perception",
+  "passed": true
+}

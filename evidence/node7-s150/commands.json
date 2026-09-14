@@ -1,0 +1,44 @@
+[
+  {
+    "command": [
+      "/opt/g-harness/workspace/G12/node_6_step_149/repo/.tools/Godot_v4.5.1-stable_linux.x86_64",
+      "--version"
+    ],
+    "returncode": 0,
+    "output": "engine-version.txt"
+  },
+  {
+    "command": [
+      "/opt/g-harness/workspace/G12/node_6_step_149/repo/.tools/Godot_v4.5.1-stable_linux.x86_64",
+      "--headless",
+      "--path",
+      "game",
+      "--editor",
+      "--import",
+      "--quit"
+    ],
+    "returncode": 0,
+    "output": "import.log"
+  },
+  {
+    "command": [
+      "/usr/bin/python3",
+      "scripts/run_opposition.py",
+      "node7-s150-inactive",
+      "--scenario",
+      "inactive",
+      "--capture"
+    ],
+    "returncode": 0,
+    "output": "inactive.log"
+  },
+  {
+    "command": [
+      "/usr/bin/python3",
+      "scripts/check_opposition.py",
+      "/opt/g-harness/workspace/G12/node_7_step_150/repo/evidence/opposition/node7-s150-inactive"
+    ],
+    "returncode": 0,
+    "output": "independent-checks.json"
+  }
+]

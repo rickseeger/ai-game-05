@@ -1,0 +1,177 @@
+{
+  "source_commit": "e815172c725883a02664771723ed00de85e35953",
+  "references": [
+    {
+      "file": "game/arena.gd",
+      "line": 9,
+      "text": "var exit_transform := Transform3D(Basis.IDENTITY, Vector3(0, 0, -10))"
+    },
+    {
+      "file": "game/arena.gd",
+      "line": 47,
+      "text": "    ring(geometry, exit_transform.origin + Vector3.UP * 0.025, 1.5, Color(\"55e0b5\"))"
+    },
+    {
+      "file": "game/arena.gd",
+      "line": 52,
+      "text": "        \"enemy_spawn_points\": enemy_spawn_points.duplicate(), \"exit_transform\": exit_transform}"
+    },
+    {
+      "file": "game/arena_preview.gd",
+      "line": 11,
+      "text": "var elapsed := 0.0"
+    },
+    {
+      "file": "game/arena_preview.gd",
+      "line": 96,
+      "text": "    elapsed += delta"
+    },
+    {
+      "file": "game/arena_preview.gd",
+      "line": 97,
+      "text": "    var index := int(elapsed / 2.0) % fixtures.size()"
+    },
+    {
+      "file": "game/arena_preview.gd",
+      "line": 99,
+      "text": "    var blend := smoothstep(0.0, 1.0, fmod(elapsed, 2.0) / 2.0)"
+    },
+    {
+      "file": "game/arena_preview.gd",
+      "line": 102,
+      "text": "    var height := 0.3 + sin(fmod(elapsed, 2.0) / 2.0 * PI) * 7.7"
+    },
+    {
+      "file": "game/arena_preview.gd",
+      "line": 107,
+      "text": "        tour_trace.append({\"frame\": tour_frame, \"delta\": delta, \"elapsed\": elapsed,"
+    },
+    {
+      "file": "game/combat.gd",
+      "line": 38,
+      "text": "func clear() -> void:"
+    },
+    {
+      "file": "game/controls_session.gd",
+      "line": 3,
+      "text": "## Later rule owner calls finish(WON/LOST); R exercises this same restart path."
+    },
+    {
+      "file": "game/controls_session.gd",
+      "line": 19,
+      "text": "var elapsed := 0.0"
+    },
+    {
+      "file": "game/controls_session.gd",
+      "line": 70,
+      "text": "func start(seed_value: int) -> void:"
+    },
+    {
+      "file": "game/controls_session.gd",
+      "line": 82,
+      "text": "    elapsed = 0.0"
+    },
+    {
+      "file": "game/controls_session.gd",
+      "line": 114,
+      "text": "func finish(result: int) -> void:"
+    },
+    {
+      "file": "game/controls_session.gd",
+      "line": 116,
+      "text": "    if state != State.PLAYING or result not in [State.WON, State.LOST]:"
+    },
+    {
+      "file": "game/controls_session.gd",
+      "line": 127,
+      "text": "    if state in [State.WON, State.LOST]:"
+    },
+    {
+      "file": "game/controls_session.gd",
+      "line": 140,
+      "text": "        elapsed += dt"
+    },
+    {
+      "file": "game/controls_session.gd",
+      "line": 148,
+      "text": "    if state in [State.WON, State.LOST]:"
+    },
+    {
+      "file": "game/controls_session.gd",
+      "line": 149,
+      "text": "        title = (\"WON\" if state == State.WON else \"LOST\") + \" \u2014 R to restart\""
+    },
+    {
+      "file": "game/destruction.gd",
+      "line": 120,
+      "text": "func clear() -> void:"
+    },
+    {
+      "file": "game/destruction_demo.gd",
+      "line": 68,
+      "text": "func start(seed_value: int) -> void:"
+    },
+    {
+      "file": "game/opposition.gd",
+      "line": 15,
+      "text": "var elapsed := 0.0"
+    },
+    {
+      "file": "game/opposition.gd",
+      "line": 21,
+      "text": "func start(seed_value: int) -> void:"
+    },
+    {
+      "file": "game/opposition.gd",
+      "line": 25,
+      "text": "    elapsed = 0.0"
+    },
+    {
+      "file": "game/opposition.gd",
+      "line": 30,
+      "text": "func clear() -> void:"
+    },
+    {
+      "file": "game/opposition.gd",
+      "line": 68,
+      "text": "    elapsed += dt"
+    },
+    {
+      "file": "game/opposition.gd",
+      "line": 88,
+      "text": "        sentry.destroyed.connect(on_destroyed)"
+    },
+    {
+      "file": "game/opposition.gd",
+      "line": 94,
+      "text": "    if elapsed + 0.00001 >= next_spawn:"
+    },
+    {
+      "file": "game/opposition_session.gd",
+      "line": 54,
+      "text": "    player.died.connect(func(): finish(State.LOST))"
+    },
+    {
+      "file": "game/opposition_session.gd",
+      "line": 58,
+      "text": "func start(seed_value: int) -> void:"
+    },
+    {
+      "file": "game/player_input.gd",
+      "line": 33,
+      "text": "func clear_controls() -> void:"
+    },
+    {
+      "file": "game/sentry.gd",
+      "line": 49,
+      "text": "func clear_sight(player_position: Vector3) -> bool:"
+    },
+    {
+      "file": "game/sound.gd",
+      "line": 216,
+      "text": "func clear() -> void:"
+    }
+  ],
+  "main_scene": "config_version=5\n[application]\nconfig/name=\"Breakwater \u2014 Controls\"\nrun/main_scene=\"res://controls.tscn\"\n[display]\nwindow/size/viewport_width=1280\nwindow/size/viewport_height=720\n[rendering]\nrenderer/rendering_method=\"gl_compatibility\"\nrenderer/rendering_method.mobile=\"gl_compatibility\"\nenvironment/defaults/default_clear_color=Color(0.025, 0.04, 0.065, 1)\n[physics]\n3d/physics_engine=\"GodotPhysics3D\"\n3d/default_gravity=9.8\ncommon/physics_ticks_per_second=60\n",
+  "method": "Read all production session scripts and inspect references across top-level game scripts. Symbol search supports manual source review; not a universal proof over arbitrary programs."
+}

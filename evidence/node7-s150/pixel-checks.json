@@ -1,0 +1,31 @@
+{
+  "frames": [
+    {
+      "file": "evidence/opposition/node7-s150-inactive/frame_00001.png",
+      "unique_rgb_colors": 1833,
+      "rgb_sha256": "1827d2e647a0f6203737a8859dd6586d77d77422c56ba332b943525adf7bbe79"
+    },
+    {
+      "file": "evidence/opposition/node7-s150-inactive/frame_00002.png",
+      "unique_rgb_colors": 1793,
+      "rgb_sha256": "96ed3ef53646fbd890a2198e6de0b3d789e7c79dd48df1f148164c6ecfbc43f9"
+    },
+    {
+      "file": "evidence/opposition/node7-s150-inactive/frame_00072.png",
+      "unique_rgb_colors": 1575,
+      "rgb_sha256": "b6098608c08d7bca009135324a2f7675d1125fd51f3ba642aeb7ba8d3318f64d"
+    },
+    {
+      "file": "evidence/opposition/node7-s150-inactive/frame_00111.png",
+      "unique_rgb_colors": 1575,
+      "rgb_sha256": "672b3956590a88514b2051eb0671d4154159f892a0b293dba2b285ed1b370cfa"
+    },
+    {
+      "file": "evidence/opposition/node7-s150-inactive/frame_00273.png",
+      "unique_rgb_colors": 2037,
+      "rgb_sha256": "d42371dc78fd04093cfaeb375e49a7f0ce3c61ff4c652ccb3f6b97b78d39bd65"
+    }
+  ],
+  "first_last_changed_pixels": 100575,
+  "scope": "Nonuniform rendered frames and temporal change only; not text recognition or visual judgment."
+}

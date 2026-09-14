@@ -1,0 +1,9 @@
+Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org
+WARNING: Could not set V-Sync mode, as changing V-Sync mode is not supported by the graphics driver.
+     at: set_use_vsync (platform/linuxbsd/x11/gl_manager_x11.cpp:364)
+OpenGL API 4.5 (Core Profile) Mesa 26.0.8-1ubuntu0.3 - Compatibility - Using Device: Mesa - llvmpipe (LLVM 21.1.8, 256 bits)
+
+SOUND_OUTPUT driver=Dummy device=Default (routing diagnostic, NOT proof of listening)
+OPPOSITION_TEST_DONE scenario=inactive checks=5 failures=0 ticks=543 health=0
+
+{"output": "/opt/g-harness/workspace/G12/node_7_step_150/repo/evidence/opposition/node7-s150-inactive", "returncode": 0, "valid": true, "wall_seconds": 18.58166101599636}
