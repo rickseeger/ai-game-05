@@ -1,0 +1,293 @@
+{
+  "commands.json": [
+    {
+      "command": [
+        "/usr/bin/python3",
+        "scripts/run_opposition.py",
+        "n6s139-final-focused",
+        "--scenario",
+        "focused"
+      ],
+      "utc_started": "2026-09-14T00:22:50.421468+00:00",
+      "returncode": 0,
+      "output": "focused.log"
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "scripts/run_opposition.py",
+        "n6s139-final-inactive",
+        "--scenario",
+        "inactive",
+        "--capture"
+      ],
+      "utc_started": "2026-09-14T00:23:13.125629+00:00",
+      "returncode": 0,
+      "output": "inactive.log"
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "scripts/run_opposition.py",
+        "n6s139-final-active",
+        "--scenario",
+        "active",
+        "--capture"
+      ],
+      "utc_started": "2026-09-14T00:23:33.048294+00:00",
+      "returncode": 0,
+      "output": "active.log"
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "scripts/check_opposition.py",
+        "evidence/opposition/n6s139-final-focused",
+        "evidence/opposition/n6s139-final-inactive",
+        "evidence/opposition/n6s139-final-active",
+        "--self-test",
+        "evidence/opposition/n6s139-final-active",
+        "evidence/opposition/n6s139-final-inactive"
+      ],
+      "utc_started": "2026-09-14T00:24:35.034003+00:00",
+      "returncode": 0,
+      "output": "opposition-checks.json"
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "scripts/check_opposition_cue.py",
+        "evidence/opposition/n6s139-final-focused"
+      ],
+      "utc_started": "2026-09-14T00:24:36.573083+00:00",
+      "returncode": 0,
+      "output": "cue-checks.json"
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "scripts/run_controls.py",
+        "n6s139-final-controls"
+      ],
+      "utc_started": "2026-09-14T00:24:36.840383+00:00",
+      "returncode": 0,
+      "output": "controls.log"
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "scripts/check_controls.py",
+        "evidence/controls/n6s139-final-controls",
+        "--self-test"
+      ],
+      "utc_started": "2026-09-14T00:25:13.413358+00:00",
+      "returncode": 0,
+      "output": "controls-checks.json"
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "scripts/test_opposition_negative.py",
+        "n6s139-final-negative"
+      ],
+      "utc_started": "2026-09-14T00:25:14.091941+00:00",
+      "returncode": 0,
+      "output": "negative.log"
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "scripts/check_opposition.py",
+        "evidence/opposition/n6s139-final-focused",
+        "evidence/opposition/n6s139-final-inactive",
+        "evidence/opposition/n6s139-final-active"
+      ],
+      "utc_started": "2026-09-14T00:25:36.942684+00:00",
+      "returncode": 0,
+      "output": "post-restore-checks.json"
+    }
+  ],
+  "opposition-checks.json": {
+    "runs": [
+      {
+        "directory": "evidence/opposition/n6s139-final-focused",
+        "engine_assertions": 42
+      },
+      {
+        "directory": "evidence/opposition/n6s139-final-inactive",
+        "engine_assertions": 5,
+        "scenario": "inactive",
+        "ticks": 543,
+        "seconds": 9.05,
+        "health": 0,
+        "attacks": 7,
+        "damage_hits": 7,
+        "destroyed": 0,
+        "decoded_frames": 273
+      },
+      {
+        "directory": "evidence/opposition/n6s139-final-active",
+        "engine_assertions": 7,
+        "scenario": "active",
+        "ticks": 1800,
+        "seconds": 30.0,
+        "health": 70,
+        "attacks": 2,
+        "damage_hits": 2,
+        "destroyed": 3,
+        "decoded_frames": 901
+      }
+    ],
+    "visual_assessment": "UNASSESSED; decoding is not perception",
+    "rejected_mutations": [
+      "short_telegraph",
+      "no_damage",
+      "no_destruction",
+      "no_burst",
+      "duplicate_hit",
+      "inactive_fires",
+      "healing"
+    ],
+    "passed": true
+  },
+  "cue-checks.json": {
+    "roi": [
+      456,
+      575,
+      646,
+      587
+    ],
+    "changed_pixels": 298,
+    "red_changed_pixels": 286,
+    "red_columns": 143,
+    "restored_identical": true,
+    "passed": true,
+    "directory": "evidence/opposition/n6s139-final-focused",
+    "rejected_mutations": [
+      "absent_beam",
+      "swapped_visibility",
+      "not_restored"
+    ],
+    "files": {
+      "cue_on.png": "783a6a8923a65d79e96b81984b4b4472ca9daeb40d82eb262608a56787423a89",
+      "cue_off.png": "a41a39ad8b1341289c89c7406f622d6a7363fa01d26044f2ef1b2cd8f2e60c5b",
+      "cue_restored.png": "783a6a8923a65d79e96b81984b4b4472ca9daeb40d82eb262608a56787423a89"
+    },
+    "limitation": "Isolated frozen fixture; not a human readability/fun judgment or dense-scene guarantee"
+  },
+  "controls-checks.json": {
+    "runs": [
+      {
+        "ticks": 2089,
+        "injected_events": 438,
+        "emitted_shots": 8,
+        "fire_tick_intervals": [
+          21,
+          21,
+          21
+        ],
+        "generations": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "maximum_actor_extent_m": 11.5997943878174,
+        "directory": "evidence/controls/n6s139-final-controls",
+        "assertions": 99,
+        "frames": [
+          {
+            "file": "initial.png",
+            "width": 1280,
+            "height": 720,
+            "distinct_colors": 990,
+            "sha256": "823be680a8fd7363058a14106989042f08ac7e550942e107cdc9cc384e7b6dbb"
+          },
+          {
+            "file": "aim_cover.png",
+            "width": 1280,
+            "height": 720,
+            "distinct_colors": 990,
+            "sha256": "486d9d02804d6a2b2d64b902b844226fcabfe79883b085a5bca73101e32ef6c0"
+          },
+          {
+            "file": "resized_target.png",
+            "width": 960,
+            "height": 720,
+            "distinct_colors": 875,
+            "sha256": "38db8eab98a7bca7d120de077be69c77e572ae4b4251ccbb5285bcb89358088b"
+          },
+          {
+            "file": "paused_controls.png",
+            "width": 960,
+            "height": 720,
+            "distinct_colors": 1652,
+            "sha256": "44b6d86e89ec2a073dc302164661b054974d842627ddab8e41d130afc51c3cc6"
+          },
+          {
+            "file": "final_restart.png",
+            "width": 960,
+            "height": 720,
+            "distinct_colors": 878,
+            "sha256": "491ccc97ba128716332ae2b8a89bb6a2c04764c0034055d155a82e13ba58d0ad"
+          }
+        ]
+      }
+    ],
+    "rejected_trace_mutations": [
+      "missing_input_events",
+      "static_movement",
+      "outside_wall",
+      "wrong_targeting",
+      "pause_clock_drift",
+      "restart_stale_shots"
+    ],
+    "passed": true
+  },
+  "post-restore-checks.json": {
+    "runs": [
+      {
+        "directory": "evidence/opposition/n6s139-final-focused",
+        "engine_assertions": 42
+      },
+      {
+        "directory": "evidence/opposition/n6s139-final-inactive",
+        "engine_assertions": 5,
+        "scenario": "inactive",
+        "ticks": 543,
+        "seconds": 9.05,
+        "health": 0,
+        "attacks": 7,
+        "damage_hits": 7,
+        "destroyed": 0,
+        "decoded_frames": 273
+      },
+      {
+        "directory": "evidence/opposition/n6s139-final-active",
+        "engine_assertions": 7,
+        "scenario": "active",
+        "ticks": 1800,
+        "seconds": 30.0,
+        "health": 70,
+        "attacks": 2,
+        "damage_hits": 2,
+        "destroyed": 3,
+        "decoded_frames": 901
+      }
+    ],
+    "visual_assessment": "UNASSESSED; decoding is not perception",
+    "passed": true
+  },
+  "negative": {
+    "rejected": true,
+    "mutation": "sentry AIM_TIME 0.6 -> 0.2",
+    "failed_checks": [
+      "aim_36_ticks",
+      "counterfire_interrupts_telegraphed_attack",
+      "counterfire_preserves_health"
+    ],
+    "runner_returncode": 1,
+    "source_restored": true
+  },
+  "scope": "Worker execution only; no durable mission-state change; subjective readability and fun unassessed"
+}

@@ -29,6 +29,7 @@ func record(kind: String, data: Dictionary) -> void:
     item.kind = kind
     item.tick = tick
     item.engine_tick = Engine.get_physics_frames()
+    item.unix_seconds = Time.get_unix_time_from_system()
     events.append(item)
 
 func attach_player() -> void:
@@ -128,7 +129,7 @@ func _physics_process(_dt: float) -> void:
     for sentry in session.opposition.sentries:
         enemies.append({"id": sentry.entity_id, "p": session.combat.vec(sentry.global_position),
             "health": sentry.health, "aiming": sentry.aiming, "aim_left": sentry.aim_left})
-    trace.append({"tick": tick, "time": session.elapsed, "health": session.player.health,
+    trace.append({"tick": tick, "unix_seconds": Time.get_unix_time_from_system(), "time": session.elapsed, "health": session.player.health,
         "state": session.state, "player": session.combat.vec(session.player.global_position),
         "enemies": enemies, "bolts": session.combat.bolts.size(), "debris": session.debris.bodies.size()})
     if mode == "focused":
@@ -164,6 +165,34 @@ func capture() -> void:
     frames.append({"file": filename, "tick": sampled_tick, "observed_tick": tick,
         "unix_seconds": Time.get_unix_time_from_system(), "error": error})
     capture_busy = false
+
+func verify_rendered_cue(s: CharacterBody3D) -> void:
+    # Isolated rendering fixture ONLY: freeze normal physics without a pause HUD,
+    # toggle just the real beam, flush each change, then restore before resuming.
+    # Natural inactive/active scenarios never enter this function.
+    get_tree().paused = true
+    var before: float = s.aim_left
+    var endpoints: Array = []
+    for z in [-s.RANGE / 2.0, s.RANGE / 2.0]:
+        var p: Vector2 = session.camera.unproject_position(s.beam.to_global(Vector3(0, 0, z)))
+        endpoints.append([p.x, p.y])
+    var samples: Array = []
+    for visible in [true, false, true]:
+        s.beam.visible = visible
+        await get_tree().process_frame
+        await RenderingServer.frame_post_draw
+        var filename: String = ["cue_on.png", "cue_off.png", "cue_restored.png"][samples.size()]
+        var image := get_viewport().get_texture().get_image()
+        var error := image.save_png(out.path_join(filename))
+        check("cue_capture_" + filename, error == OK)
+        samples.append({"file": filename, "unix_seconds": Time.get_unix_time_from_system(),
+            "tick": tick, "engine_tick": Engine.get_physics_frames(), "visible": visible})
+    check("cue_capture_does_not_advance_attack", s.aim_left == before and s.aiming and s.beam.visible)
+    FileAccess.open(out.path_join("cue-render.json"), FileAccess.WRITE).store_string(JSON.stringify({
+        "fixture": "paused physics; production beam on/off/restored; no gameplay changes",
+        "endpoints": endpoints, "frames": samples, "aim_left": before,
+        "width": 1280, "height": 720, "subjective_readability": "UNASSESSED"}, "  "))
+    get_tree().paused = false
 
 func wait_ticks(count: int) -> void:
     for i in count:
@@ -268,6 +297,7 @@ func focused() -> void:
     await wait_ticks(8)
     var locked: Vector3 = s.locked_direction
     check("red_aim_visible_before_attack", s.aiming and s.beam.visible)
+    await verify_rendered_cue(s)
     session.player.global_position = Vector3(0, 0, 7)
     await wait_ticks(82)
     check("locked_aim_dodge_avoids_damage", locked.is_equal_approx(Vector3.RIGHT) and session.player.health == 100)

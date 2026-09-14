@@ -1,12 +1,16 @@
 #!/usr/bin/env python3
 """Serial-only actual-engine negative control. Restores source even on failure."""
-import json, subprocess
+import argparse, json, subprocess
 from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 source = ROOT / "game/sentry.gd"
 original = source.read_text()
 assert original.count("const AIM_TIME := 0.6") == 1
-out = ROOT / "evidence/opposition/negative-short-aim"
+parser = argparse.ArgumentParser()
+parser.add_argument("output", nargs="?", default="negative-short-aim")
+args = parser.parse_args()
+assert Path(args.output).name == args.output and args.output not in (".", ".."), "single directory name required"
+out = ROOT / "evidence/opposition" / args.output
 assert not out.exists(), "fresh output required"
 try:
     source.write_text(original.replace("const AIM_TIME := 0.6", "const AIM_TIME := 0.2"))

@@ -1,3 +1,7 @@
+> Historical step-127 report. Fresh current-source verification and the updated
+> worker-scope/human-playtest handoff are in [node6-s139/report.md](../evidence/node6-s139/report.md).
+> The old vision blocker below is not the status of the step-139 execution.
+
 # Node 6 opposition execution: technical evidence, visual gate BLOCKED
 
 Recovered the uncommitted node_6_step_126 implementation into a fresh clone of

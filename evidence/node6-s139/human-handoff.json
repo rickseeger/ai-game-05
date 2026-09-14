@@ -1,0 +1,698 @@
+{
+  "status": "UNASSESSED; carry to node 9 human playtest, not a worker vision blocker",
+  "concerns": [
+    "Red warning/aim/bolt discrimination at normal speed",
+    "Directional damage clarity",
+    "Threat/counterplay readability during debris",
+    "Difficulty, responsiveness and fun"
+  ],
+  "archive_extraction": "tar -xzf evidence/node6-s139/raw-runs.tar.gz",
+  "runs": {
+    "inactive": {
+      "movie": "evidence/opposition/n6s139-final-inactive/runtime.mp4",
+      "results": "evidence/opposition/n6s139-final-inactive/results.json",
+      "trace": "evidence/opposition/n6s139-final-inactive/trace.json",
+      "moments": [
+        {
+          "event": {
+            "distance": 10.0,
+            "engine_tick": 1,
+            "entity": 102,
+            "kind": "spawn_warning",
+            "position": [
+              10.0,
+              0.0,
+              10.0
+            ],
+            "tick": 0,
+            "unix_seconds": 1789345393.65399
+          },
+          "video_frame_one_based": 1,
+          "video_seconds": 0.0,
+          "note": "Telemetry index, not a subjective visual observation"
+        },
+        {
+          "event": {
+            "distance": 14.1421356201172,
+            "engine_tick": 1,
+            "entity": 103,
+            "kind": "spawn_warning",
+            "position": [
+              -10.0,
+              0.0,
+              0.0
+            ],
+            "tick": 0,
+            "unix_seconds": 1789345393.65404
+          },
+          "video_frame_one_based": 1,
+          "video_seconds": 0.0,
+          "note": "Telemetry index, not a subjective visual observation"
+        },
+        {
+          "event": {
+            "engine_tick": 142,
+            "entity": 102,
+            "kind": "aim",
+            "position": [
+              5.99999904632568,
+              0.000943387334700674,
+              10.0
+            ],
+            "target": [
+              0.0,
+              0.0,
+              10.0
+            ],
+            "tick": 141,
+            "unix_seconds": 1789345398.00629
+          },
+          "video_frame_one_based": 71,
+          "video_seconds": 2.3333333333333335,
+          "note": "Telemetry index, not a subjective visual observation"
+        },
+        {
+          "event": {
+            "engine_tick": 178,
+            "entity": 102,
+            "kind": "attack",
+            "position": [
+              5.99999904632568,
+              0.000943387334700674,
+              10.0
+            ],
+            "tick": 177,
+            "unix_seconds": 1789345399.05443
+          },
+          "video_frame_one_based": 89,
+          "video_seconds": 2.933333333333333,
+          "note": "Telemetry index, not a subjective visual observation"
+        },
+        {
+          "event": {
+            "amount": 15,
+            "engine_tick": 219,
+            "health": 85,
+            "kind": "player_damage",
+            "source": [
+              5.99999904632568,
+              0.000943387334700674,
+              10.0
+            ],
+            "tick": 218,
+            "unix_seconds": 1789345400.23555
+          },
+          "video_frame_one_based": 110,
+          "video_seconds": 3.6333333333333333,
+          "note": "Telemetry index, not a subjective visual observation"
+        },
+        {
+          "event": {
+            "engine_tick": 225,
+            "entity": 103,
+            "kind": "aim",
+            "position": [
+              -4.2370719909668,
+              0.000942613929510117,
+              5.76292657852173
+            ],
+            "target": [
+              0.0,
+              0.0,
+              10.0
+            ],
+            "tick": 224,
+            "unix_seconds": 1789345400.42183
+          },
+          "video_frame_one_based": 113,
+          "video_seconds": 3.7333333333333334,
+          "note": "Telemetry index, not a subjective visual observation"
+        },
+        {
+          "event": {
+            "engine_tick": 250,
+            "entity": 102,
+            "kind": "aim",
+            "position": [
+              5.99999904632568,
+              0.000943387334700674,
+              10.0
+            ],
+            "target": [
+              0.0,
+              0.0,
+              10.0
+            ],
+            "tick": 249,
+            "unix_seconds": 1789345401.18546
+          },
+          "video_frame_one_based": 125,
+          "video_seconds": 4.133333333333334,
+          "note": "Telemetry index, not a subjective visual observation"
+        },
+        {
+          "event": {
+            "engine_tick": 261,
+            "entity": 103,
+            "kind": "attack",
+            "position": [
+              -4.2370719909668,
+              0.000942613929510117,
+              5.76292657852173
+            ],
+            "tick": 260,
+            "unix_seconds": 1789345401.49441
+          },
+          "video_frame_one_based": 131,
+          "video_seconds": 4.333333333333333,
+          "note": "Telemetry index, not a subjective visual observation"
+        },
+        {
+          "event": {
+            "engine_tick": 286,
+            "entity": 102,
+            "kind": "attack",
+            "position": [
+              5.99999904632568,
+              0.000943387334700674,
+              10.0
+            ],
+            "tick": 285,
+            "unix_seconds": 1789345402.31609
+          },
+          "video_frame_one_based": 143,
+          "video_seconds": 4.733333333333333,
+          "note": "Telemetry index, not a subjective visual observation"
+        },
+        {
+          "event": {
+            "amount": 15,
+            "engine_tick": 302,
+            "health": 70,
+            "kind": "player_damage",
+            "source": [
+              -4.2370719909668,
+              0.000942613929510117,
+              5.76292657852173
+            ],
+            "tick": 301,
+            "unix_seconds": 1789345402.7948
+          },
+          "video_frame_one_based": 151,
+          "video_seconds": 5.0,
+          "note": "Telemetry index, not a subjective visual observation"
+        },
+        {
+          "event": {
+            "amount": 15,
+            "engine_tick": 327,
+            "health": 55,
+            "kind": "player_damage",
+            "source": [
+              5.99999904632568,
+              0.000943387334700674,
+              10.0
+            ],
+            "tick": 326,
+            "unix_seconds": 1789345403.48763
+          },
+          "video_frame_one_based": 164,
+          "video_seconds": 5.433333333333334,
+          "note": "Telemetry index, not a subjective visual observation"
+        },
+        {
+          "event": {
+            "engine_tick": 333,
+            "entity": 103,
+            "kind": "aim",
+            "position": [
+              -4.2370719909668,
+              0.000942613929510117,
+              5.76292657852173
+            ],
+            "target": [
+              0.0,
+              0.0,
+              10.0
+            ],
+            "tick": 332,
+            "unix_seconds": 1789345403.65667
+          },
+          "video_frame_one_based": 167,
+          "video_seconds": 5.533333333333333,
+          "note": "Telemetry index, not a subjective visual observation"
+        },
+        {
+          "event": {
+            "engine_tick": 358,
+            "entity": 102,
+            "kind": "aim",
+            "position": [
+              5.99999904632568,
+              0.000943387334700674,
+              10.0
+            ],
+            "target": [
+              0.0,
+              0.0,
+              10.0
+            ],
+            "tick": 357,
+            "unix_seconds": 1789345404.42166
+          },
+          "video_frame_one_based": 179,
+          "video_seconds": 5.933333333333334,
+          "note": "Telemetry index, not a subjective visual observation"
+        },
+        {
+          "event": {
+            "engine_tick": 369,
+            "entity": 103,
+            "kind": "attack",
+            "position": [
+              -4.2370719909668,
+              0.000942613929510117,
+              5.76292657852173
+            ],
+            "tick": 368,
+            "unix_seconds": 1789345404.7379
+          },
+          "video_frame_one_based": 185,
+          "video_seconds": 6.133333333333334,
+          "note": "Telemetry index, not a subjective visual observation"
+        },
+        {
+          "event": {
+            "engine_tick": 394,
+            "entity": 102,
+            "kind": "attack",
+            "position": [
+              5.99999904632568,
+              0.000943387334700674,
+              10.0
+            ],
+            "tick": 393,
+            "unix_seconds": 1789345405.54573
+          },
+          "video_frame_one_based": 197,
+          "video_seconds": 6.533333333333333,
+          "note": "Telemetry index, not a subjective visual observation"
+        },
+        {
+          "event": {
+            "amount": 15,
+            "engine_tick": 410,
+            "health": 40,
+            "kind": "player_damage",
+            "source": [
+              -4.2370719909668,
+              0.000942613929510117,
+              5.76292657852173
+            ],
+            "tick": 409,
+            "unix_seconds": 1789345406.04985
+          },
+          "video_frame_one_based": 205,
+          "video_seconds": 6.8,
+          "note": "Telemetry index, not a subjective visual observation"
+        },
+        {
+          "event": {
+            "amount": 15,
+            "engine_tick": 435,
+            "health": 25,
+            "kind": "player_damage",
+            "source": [
+              5.99999904632568,
+              0.000943387334700674,
+              10.0
+            ],
+            "tick": 434,
+            "unix_seconds": 1789345406.75602
+          },
+          "video_frame_one_based": 218,
+          "video_seconds": 7.233333333333333,
+          "note": "Telemetry index, not a subjective visual observation"
+        },
+        {
+          "event": {
+            "engine_tick": 441,
+            "entity": 103,
+            "kind": "aim",
+            "position": [
+              -4.2370719909668,
+              0.000942613929510117,
+              5.76292657852173
+            ],
+            "target": [
+              0.0,
+              0.0,
+              10.0
+            ],
+            "tick": 440,
+            "unix_seconds": 1789345406.93331
+          },
+          "video_frame_one_based": 221,
+          "video_seconds": 7.333333333333333,
+          "note": "Telemetry index, not a subjective visual observation"
+        },
+        {
+          "event": {
+            "engine_tick": 466,
+            "entity": 102,
+            "kind": "aim",
+            "position": [
+              5.99999904632568,
+              0.000943387334700674,
+              10.0
+            ],
+            "target": [
+              0.0,
+              0.0,
+              10.0
+            ],
+            "tick": 465,
+            "unix_seconds": 1789345407.70803
+          },
+          "video_frame_one_based": 233,
+          "video_seconds": 7.733333333333333,
+          "note": "Telemetry index, not a subjective visual observation"
+        },
+        {
+          "event": {
+            "engine_tick": 477,
+            "entity": 103,
+            "kind": "attack",
+            "position": [
+              -4.2370719909668,
+              0.000942613929510117,
+              5.76292657852173
+            ],
+            "tick": 476,
+            "unix_seconds": 1789345407.99963
+          },
+          "video_frame_one_based": 239,
+          "video_seconds": 7.933333333333334,
+          "note": "Telemetry index, not a subjective visual observation"
+        },
+        {
+          "event": {
+            "engine_tick": 502,
+            "entity": 102,
+            "kind": "attack",
+            "position": [
+              5.99999904632568,
+              0.000943387334700674,
+              10.0
+            ],
+            "tick": 501,
+            "unix_seconds": 1789345408.77959
+          },
+          "video_frame_one_based": 251,
+          "video_seconds": 8.333333333333334,
+          "note": "Telemetry index, not a subjective visual observation"
+        },
+        {
+          "event": {
+            "amount": 15,
+            "engine_tick": 518,
+            "health": 10,
+            "kind": "player_damage",
+            "source": [
+              -4.2370719909668,
+              0.000942613929510117,
+              5.76292657852173
+            ],
+            "tick": 517,
+            "unix_seconds": 1789345409.27838
+          },
+          "video_frame_one_based": 259,
+          "video_seconds": 8.6,
+          "note": "Telemetry index, not a subjective visual observation"
+        },
+        {
+          "event": {
+            "amount": 15,
+            "engine_tick": 543,
+            "health": 0,
+            "kind": "player_damage",
+            "source": [
+              5.99999904632568,
+              0.000943387334700674,
+              10.0
+            ],
+            "tick": 542,
+            "unix_seconds": 1789345410.02228
+          },
+          "video_frame_one_based": 272,
+          "video_seconds": 9.033333333333333,
+          "note": "Telemetry index, not a subjective visual observation"
+        },
+        {
+          "event": {
+            "engine_tick": 543,
+            "health": 0,
+            "kind": "player_died",
+            "tick": 542,
+            "unix_seconds": 1789345410.02242
+          },
+          "video_frame_one_based": 272,
+          "video_seconds": 9.033333333333333,
+          "note": "Telemetry index, not a subjective visual observation"
+        }
+      ]
+    },
+    "active": {
+      "movie": "evidence/opposition/n6s139-final-active/runtime.mp4",
+      "results": "evidence/opposition/n6s139-final-active/results.json",
+      "trace": "evidence/opposition/n6s139-final-active/trace.json",
+      "moments": [
+        {
+          "event": {
+            "distance": 10.0,
+            "engine_tick": 1,
+            "entity": 102,
+            "kind": "spawn_warning",
+            "position": [
+              10.0,
+              0.0,
+              10.0
+            ],
+            "tick": 0,
+            "unix_seconds": 1789345413.56946
+          },
+          "video_frame_one_based": 1,
+          "video_seconds": 0.0,
+          "note": "Telemetry index, not a subjective visual observation"
+        },
+        {
+          "event": {
+            "distance": 14.1421356201172,
+            "engine_tick": 1,
+            "entity": 103,
+            "kind": "spawn_warning",
+            "position": [
+              -10.0,
+              0.0,
+              0.0
+            ],
+            "tick": 0,
+            "unix_seconds": 1789345413.56953
+          },
+          "video_frame_one_based": 1,
+          "video_seconds": 0.0,
+          "note": "Telemetry index, not a subjective visual observation"
+        },
+        {
+          "event": {
+            "engine_tick": 142,
+            "entity": 102,
+            "kind": "aim",
+            "position": [
+              5.99999904632568,
+              0.000943387334700674,
+              10.0
+            ],
+            "target": [
+              0.0,
+              0.0,
+              10.0
+            ],
+            "tick": 141,
+            "unix_seconds": 1789345417.9515
+          },
+          "video_frame_one_based": 71,
+          "video_seconds": 2.3333333333333335,
+          "note": "Telemetry index, not a subjective visual observation"
+        },
+        {
+          "event": {
+            "engine_tick": 178,
+            "entity": 102,
+            "kind": "attack",
+            "position": [
+              5.99999904632568,
+              0.000943387334700674,
+              10.0
+            ],
+            "tick": 177,
+            "unix_seconds": 1789345419.09259
+          },
+          "video_frame_one_based": 89,
+          "video_seconds": 2.933333333333333,
+          "note": "Telemetry index, not a subjective visual observation"
+        },
+        {
+          "event": {
+            "amount": 15,
+            "engine_tick": 219,
+            "health": 85,
+            "kind": "player_damage",
+            "source": [
+              5.99999904632568,
+              0.000943387334700674,
+              10.0
+            ],
+            "tick": 218,
+            "unix_seconds": 1789345420.3067
+          },
+          "video_frame_one_based": 110,
+          "video_seconds": 3.6333333333333333,
+          "note": "Telemetry index, not a subjective visual observation"
+        },
+        {
+          "event": {
+            "engine_tick": 221,
+            "entity": 103,
+            "kind": "aim",
+            "position": [
+              -4.37849235534668,
+              0.00094381021335721,
+              5.62150621414185
+            ],
+            "target": [
+              -3.08333325386047,
+              0.000941969570703804,
+              10.0
+            ],
+            "tick": 220,
+            "unix_seconds": 1789345420.36491
+          },
+          "video_frame_one_based": 111,
+          "video_seconds": 3.6666666666666665,
+          "note": "Telemetry index, not a subjective visual observation"
+        },
+        {
+          "event": {
+            "engine_tick": 257,
+            "entity": 103,
+            "kind": "attack",
+            "position": [
+              -4.37849235534668,
+              0.00094381021335721,
+              5.62150621414185
+            ],
+            "tick": 256,
+            "unix_seconds": 1789345421.44764
+          },
+          "video_frame_one_based": 129,
+          "video_seconds": 4.266666666666667,
+          "note": "Telemetry index, not a subjective visual observation"
+        },
+        {
+          "event": {
+            "alive": 1,
+            "engine_tick": 257,
+            "entity": 102,
+            "kind": "destroyed",
+            "tick": 256,
+            "unix_seconds": 1789345421.44811
+          },
+          "video_frame_one_based": 129,
+          "video_seconds": 4.266666666666667,
+          "note": "Telemetry index, not a subjective visual observation"
+        },
+        {
+          "event": {
+            "amount": 15,
+            "engine_tick": 288,
+            "health": 70,
+            "kind": "player_damage",
+            "source": [
+              -4.37849235534668,
+              0.00094381021335721,
+              5.62150621414185
+            ],
+            "tick": 287,
+            "unix_seconds": 1789345422.48049
+          },
+          "video_frame_one_based": 144,
+          "video_seconds": 4.766666666666667,
+          "note": "Telemetry index, not a subjective visual observation"
+        },
+        {
+          "event": {
+            "alive": 0,
+            "engine_tick": 292,
+            "entity": 103,
+            "kind": "destroyed",
+            "tick": 291,
+            "unix_seconds": 1789345422.59819
+          },
+          "video_frame_one_based": 146,
+          "video_seconds": 4.833333333333333,
+          "note": "Telemetry index, not a subjective visual observation"
+        },
+        {
+          "event": {
+            "distance": 16.4673480987549,
+            "engine_tick": 901,
+            "entity": 104,
+            "kind": "spawn_warning",
+            "position": [
+              10.0,
+              0.0,
+              0.0
+            ],
+            "tick": 900,
+            "unix_seconds": 1789345441.40065
+          },
+          "video_frame_one_based": 451,
+          "video_seconds": 15.0,
+          "note": "Telemetry index, not a subjective visual observation"
+        },
+        {
+          "event": {
+            "alive": 0,
+            "engine_tick": 1015,
+            "entity": 104,
+            "kind": "destroyed",
+            "tick": 1014,
+            "unix_seconds": 1789345444.88592
+          },
+          "video_frame_one_based": 508,
+          "video_seconds": 16.9,
+          "note": "Telemetry index, not a subjective visual observation"
+        },
+        {
+          "event": {
+            "distance": 21.1622371673584,
+            "engine_tick": 1801,
+            "entity": 105,
+            "kind": "spawn_warning",
+            "position": [
+              -10.0,
+              0.0,
+              -10.0
+            ],
+            "tick": 1800,
+            "unix_seconds": 1789345468.78733
+          },
+          "video_frame_one_based": 901,
+          "video_seconds": 30.0,
+          "note": "Telemetry index, not a subjective visual observation"
+        }
+      ]
+    }
+  }
+}
