@@ -1,0 +1,27 @@
+{
+  "archive_member_count": 45,
+  "png_count": 27,
+  "archive_sha256": "dc5301dc4465e6c8084b6835a71156c7504a9690ca79638ca09a76c8101c43db",
+  "all_members_hash_size_verified": true,
+  "extracted_archive_checker": {
+    "command": [
+      "/usr/bin/python3",
+      "/opt/g-harness/workspace/G12/node_2_step_148/repo/scripts/check_arena.py",
+      "evidence/arena/n2-s148-720p",
+      "evidence/arena/n2-s148-4x3",
+      "--negative-dir",
+      "evidence/arena/n2-s148-negative",
+      "--tour-dir",
+      "evidence/arena/n2-s148-tour",
+      "--self-test"
+    ],
+    "cwd": "fresh temporary archive extraction (removed after verification)",
+    "returncode": 0,
+    "results_equal_original": true
+  },
+  "game_and_existing_scripts_unchanged": true,
+  "production_technical_failures": [],
+  "expected_negative_camera_failures": 162,
+  "initial_wrapper_syntax_error": "Retained in archive. Escaped-newline typo repaired before any engine launch; not a renderer defect.",
+  "scope": "Assigned execution finished only. Independent controller decides durable acceptance."
+}

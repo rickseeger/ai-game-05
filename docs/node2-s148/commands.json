@@ -1,0 +1,80 @@
+[
+  {
+    "name": "720p",
+    "command": [
+      "/usr/bin/python3",
+      "scripts/run_arena.py",
+      "n2-s148-720p",
+      "--size",
+      "1280x720"
+    ],
+    "cwd": "/opt/g-harness/workspace/G12/node_2_step_148/repo",
+    "returncode": 0,
+    "expected_returncode": 0,
+    "elapsed_seconds": 3.1739185900005396,
+    "log": "/opt/g-harness/workspace/G12/node_2_step_148/repo/docs/node2-s148/logs/720p.log"
+  },
+  {
+    "name": "4x3",
+    "command": [
+      "/usr/bin/python3",
+      "scripts/run_arena.py",
+      "n2-s148-4x3",
+      "--size",
+      "960x720"
+    ],
+    "cwd": "/opt/g-harness/workspace/G12/node_2_step_148/repo",
+    "returncode": 0,
+    "expected_returncode": 0,
+    "elapsed_seconds": 3.0736998099964694,
+    "log": "/opt/g-harness/workspace/G12/node_2_step_148/repo/docs/node2-s148/logs/4x3.log"
+  },
+  {
+    "name": "negative",
+    "command": [
+      "/usr/bin/python3",
+      "scripts/run_arena.py",
+      "n2-s148-negative",
+      "--negative-camera"
+    ],
+    "cwd": "/opt/g-harness/workspace/G12/node_2_step_148/repo",
+    "returncode": 1,
+    "expected_returncode": 1,
+    "elapsed_seconds": 4.078809607002768,
+    "log": "/opt/g-harness/workspace/G12/node_2_step_148/repo/docs/node2-s148/logs/negative.log"
+  },
+  {
+    "name": "tour",
+    "command": [
+      "/usr/bin/python3",
+      "scripts/run_arena.py",
+      "n2-s148-tour",
+      "--tour-frames",
+      "720"
+    ],
+    "cwd": "/opt/g-harness/workspace/G12/node_2_step_148/repo",
+    "returncode": 0,
+    "expected_returncode": 0,
+    "elapsed_seconds": 18.400611980003305,
+    "log": "/opt/g-harness/workspace/G12/node_2_step_148/repo/docs/node2-s148/logs/tour.log"
+  },
+  {
+    "name": "arena-checks",
+    "command": [
+      "/usr/bin/python3",
+      "scripts/check_arena.py",
+      "evidence/arena/n2-s148-720p",
+      "evidence/arena/n2-s148-4x3",
+      "--negative-dir",
+      "evidence/arena/n2-s148-negative",
+      "--tour-dir",
+      "evidence/arena/n2-s148-tour",
+      "--self-test"
+    ],
+    "cwd": "/opt/g-harness/workspace/G12/node_2_step_148/repo",
+    "returncode": 0,
+    "expected_returncode": 0,
+    "elapsed_seconds": 2.22011367000232,
+    "log": "/opt/g-harness/workspace/G12/node_2_step_148/repo/docs/node2-s148/logs/arena-checks.log"
+  }
+]

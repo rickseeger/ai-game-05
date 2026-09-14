@@ -1,0 +1,91 @@
+{
+  "destination": "G12 node 9 exact-release Linux human playtest",
+  "current_tested_source": "08be9c20e8f48fac462738b9df855f464677c50b",
+  "subjective_visual_judgment": "UNASSESSED; no reliable vision tool. Technical passes are not perceptual readability or satisfaction.",
+  "fresh_camera_archive": "evidence/node2-s148/runtime-evidence.tar.gz",
+  "fresh_camera_frames": [
+    "evidence/arena/n2-s148-720p/overview.png",
+    "evidence/arena/n2-s148-720p/northwest.png",
+    "evidence/arena/n2-s148-720p/northeast.png",
+    "evidence/arena/n2-s148-720p/airborne.png",
+    "evidence/arena/n2-s148-720p/resized.png",
+    "evidence/arena/n2-s148-4x3/overview.png",
+    "evidence/arena/n2-s148-4x3/northwest.png",
+    "evidence/arena/n2-s148-4x3/northeast.png",
+    "evidence/arena/n2-s148-4x3/airborne.png",
+    "evidence/arena/n2-s148-4x3/resized.png"
+  ],
+  "prior_dense_evidence": {
+    "archive": "evidence/node2-s138/runtime-evidence.tar.xz",
+    "sha256": "edcd88e1d91f0b1ef087de4d80fc086d991b6fad56b5361824993b5d99e87127",
+    "extraction_command": "tar -xJf evidence/node2-s138/runtime-evidence.tar.xz",
+    "source_revision": "954782e0fb5b6b535ce99168795872ae56ad4c16",
+    "production_frames": [
+      "evidence/arena/n2-s138-dense-4x3/dense_001_color.png",
+      "evidence/arena/n2-s138-dense-4x3/dense_012_color.png",
+      "evidence/arena/n2-s138-dense-4x3/dense_030_color.png",
+      "evidence/arena/n2-s138-dense-4x3/dense_060_color.png",
+      "evidence/arena/n2-s138-dense-4x3/dense_090_color.png",
+      "evidence/arena/n2-s138-dense-4x3/dense_120_color.png",
+      "evidence/arena/n2-s138-dense-720p/dense_001_color.png",
+      "evidence/arena/n2-s138-dense-720p/dense_012_color.png",
+      "evidence/arena/n2-s138-dense-720p/dense_030_color.png",
+      "evidence/arena/n2-s138-dense-720p/dense_060_color.png",
+      "evidence/arena/n2-s138-dense-720p/dense_090_color.png",
+      "evidence/arena/n2-s138-dense-720p/dense_120_color.png"
+    ],
+    "frame_hashes_reverified": true,
+    "note": "Historical captured sequence, NOT a new dense rerun or continuous recording. Diagnostics pause simulation; only *_color.png is production appearance."
+  },
+  "existing_motion_recording": {
+    "path": "evidence/audio-node5-s147/runtime.mp4",
+    "sha256": "ae4d5ecd7d28cdad94e7e45093a5340abe42097828226d9471698b604f10a651",
+    "ffprobe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "width": 1280,
+          "height": 720,
+          "r_frame_rate": "60/1",
+          "duration": "26.250000",
+          "nb_frames": "1575"
+        }
+      ]
+    },
+    "source_revision": "7ee3d568eaa81d4095c7b1d4a75f331318054c38",
+    "game_source_matches_current": true,
+    "review_cues_seconds": [
+      {
+        "phase": "single_default",
+        "render_frame": 74,
+        "seconds": 1.2333333333333334
+      },
+      {
+        "phase": "crowded_default",
+        "render_frame": 314,
+        "seconds": 5.233333333333333
+      },
+      {
+        "phase": "max_overload",
+        "render_frame": 1334,
+        "seconds": 22.233333333333334
+      }
+    ],
+    "note": "Existing node5 MovieWriter capture of actual renderer and physics, offline common clock. Not a fresh node2 run, natural combat, real-time FPS or subjective audio evidence; do not use sparse supplemental live.mkv for timing."
+  },
+  "review_questions": [
+    "Can you keep track of the blue actor, its ground position and incoming threats through crowded bursts while moving and aiming in the exact release?",
+    "Are airborne trajectories, landing/contact and depth clear at rear corners and after resizing? Is the locked view comfortable?",
+    "Can you identify the extraction ring and label through debris? Are near-ground overlaps tolerable rather than confusing?",
+    "Does brief actor occlusion disrupt decisions? Historical tick-12 cyan-region retention is 27.23% / 37.05%, recovering at tick 30 to 94.34% / 84.75%. These sparse local color samples are not whole-body visibility percentages or continuous duration bounds.",
+    "The tour_0360_12 seven-cube diagnostic has only three pieces with at least three ID pixels despite all centers in frame. Does overlap obscure action in motion? Do not require every fragment visible.",
+    "Historical dense tick 120 has escaped below-floor fragments outside the configured camera envelope (IDs 111 and 128 at 720p; 128 at 4:3). Is boundary behavior distracting? If so route to destruction/boundary owner, not speculative camera expansion.",
+    "On the exact final release, are destruction, perceived weight and visual/audio payoff satisfying? This worker has neither seen nor heard them subjectively."
+  ],
+  "restrictions": [
+    "No new dense/analytic experiments or numerical redefinition of visual satisfaction.",
+    "No input/combat/destruction/audio/root or durable node acceptance.",
+    "Final playtest judges the exact release; stored fixture recordings are supporting references, not release signoff."
+  ]
+}
