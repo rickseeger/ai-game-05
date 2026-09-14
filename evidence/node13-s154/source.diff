@@ -1,0 +1,721 @@
+diff --git a/game/opposition_session.gd b/game/opposition_session.gd
+index a15b369..a8d4169 100644
+--- a/game/opposition_session.gd
++++ b/game/opposition_session.gd
+@@ -39,6 +39,10 @@ func _ready() -> void:
+     build_session_hud()
+     rebuild_combat()
+     refresh_hud()
++    if "--natural-test" in OS.get_cmdline_user_args():
++        var driver = load("res://tests/natural_play.gd").new()
++        add_child(driver)
++        driver.call_deferred("run", self)
+     if "--integration-test" in OS.get_cmdline_user_args():
+         var tests = load("res://tests/integration_tests.gd").new()
+         add_child(tests)
+diff --git a/game/tests/natural_play.gd b/game/tests/natural_play.gd
+new file mode 100644
+index 0000000..c091579
+--- /dev/null
++++ b/game/tests/natural_play.gd
+@@ -0,0 +1,334 @@
++extends Node
++## Read-only observer plus ordinary InputEvents. Never writes production state.
++var s: Node3D
++var out: String
++var mode: String
++var tick := 0
++var phase := 0
++var phase_tick := 0
++var keys: Dictionary = {}
++var firing := false
++var events: FileAccess
++var physics: FileAccess
++var frames: FileAccess
++var running := false
++var initial_generation := 0
++var terminal_tick := -1
++var last_frame_usec := 0
++var done := false
++var pause_snapshot: Dictionary
++var capture_frames: Dictionary = {}
++var capture_busy := false
++var replay: Dictionary = {}
++var replay_enabled := false
++
++func v(a: Vector3) -> Array:
++    return [a.x, a.y, a.z]
++
++func record(kind: String, data: Dictionary = {}) -> void:
++    var row := data.duplicate(true)
++    row.kind = kind
++    row.tick = tick
++    row.engine_tick = Engine.get_physics_frames()
++    row.frame = Engine.get_process_frames()
++    row.usec = Time.get_ticks_usec()
++    row.generation = s.generation
++    row.phase = phase
++    events.store_line(JSON.stringify(row))
++
++func snapshot() -> Dictionary:
++    var targets: Array = []
++    for t in s.targets:
++        targets.append({"id":t.entity_id,"health":t.health,"destroyed":t.is_destroyed,"intact":is_instance_valid(t.intact)})
++    var enemies: Array = []
++    for e in s.opposition.sentries:
++        enemies.append({"id":e.entity_id,"p":v(e.global_position),"health":e.health,"aiming":e.aiming})
++    return {"state":s.state,"time":s.elapsed,"health":s.player.health,"p":v(s.player.global_position),
++        "remaining":s.remaining_pylons(),"unlocked":s.extraction_unlocked(),"inside":s.in_extraction(),
++        "reason":s.loss_reason,"targets":targets,"enemies":enemies,"pending":s.opposition.pending.size(),
++        "bolts":s.combat.bolts.size(),"debris":s.debris.bodies.size(),"visible_debris":s.debris.batch.multimesh.visible_instance_count,
++        "shots":s.shots,"player_shots":s.player.shot_count,"dashes":s.player.dash_count,"dash_left":s.player.dash_remaining,
++        "fire_left":s.player.fire_remaining,"held":s.controls.held.duplicate(),"pointer_known":s.controls.pointer_known,
++        "aim_valid":s.player.aim_valid,"opposition_time":s.opposition.elapsed,"next_spawn":s.opposition.next_spawn,
++        "next_enemy":s.opposition.next_entity,"voices":s.sound.active_count(),"body_throttle":s.sound.body_ticks.size(),
++        "clock_error":s._clock_error,"nodes":s.get_tree().get_node_count(),"buses":AudioServer.bus_count,
++        "master":s.sound.master,"sfx":s.sound.sfx,"muted":s.sound.muted,
++        "collisions":range(s.player.get_slide_collision_count()).map(func(i):return str(s.player.get_slide_collision(i).get_collider().name))}
++
++func attach() -> void:
++    s.player.fired.connect(func(a: Vector3,b: Vector3):record("fired",{"p":v(a),"direction":v(b)}))
++    s.player.damaged.connect(func(a: int,b: Vector3):record("damage",{"amount":a,"source":v(b),"health":s.player.health}))
++    s.player.dashed.connect(func(d: float):record("dash",{"distance":d}))
++    for t in s.targets:
++        t.destroyed.connect(func(id: int,at: Transform3D,kind: StringName,seed_value: int):
++            record("target_destroyed",{"id":id,"p":v(at.origin),"target_kind":kind,"seed":seed_value,"snapshot":snapshot()}))
++
++func body_row(b: RigidBody3D) -> Dictionary:
++    return {"id":b.body_id,"event":b.event_id,"age":b.age,"p":v(b.global_position),"v":v(b.linear_velocity),
++        "w":v(b.angular_velocity),"contacts":b.contact_count,"colliders":b.get_colliding_bodies().map(func(c):return str(c.name)),"sleeping":b.sleeping,"rotation":v(b.rotation)}
++
++func run(owner: Node3D) -> void:
++    s = owner
++    out = OS.get_environment("NATURAL_OUT")
++    mode = OS.get_environment("NATURAL_MODE")
++    events = FileAccess.open(out.path_join("events.jsonl"),FileAccess.WRITE)
++    physics = FileAccess.open(out.path_join("physics.jsonl"),FileAccess.WRITE)
++    frames = FileAccess.open(out.path_join("frames.jsonl"),FileAccess.WRITE)
++    process_mode = Node.PROCESS_MODE_ALWAYS
++    process_physics_priority = -8
++    initial_generation = s.generation
++    s.combat.event.connect(record)
++    s.opposition.event.connect(record)
++    s.sound.audio_event.connect(func(d: Dictionary):record("audio",{"audio":d}))
++    s.debris.burst_started.connect(func(id: int,at: Vector3):
++        var bodies: Array = []
++        for b in s.debris.bodies:
++            if b.event_id == id:bodies.append(body_row(b))
++        record("burst",{"id":id,"p":v(at),"bodies":bodies})
++        if OS.get_environment("NATURAL_MOVIE")=="1":
++            for delta in [0,30,60,90,180,360]:capture_frames[Engine.get_process_frames()+delta]=true)
++    s.debris.impact.connect(func(at: Vector3,speed: float,mat: StringName,id: int):
++        record("impact",{"id":id,"p":v(at),"speed":speed,"material":mat}))
++    s.debris.fragment_retired.connect(func(id: int,why: String,age: float,asleep: bool):
++        record("retired",{"id":id,"reason":why,"age":age,"sleeping":asleep}))
++    s.objectives_changed.connect(func(n: int):record("progress",{"remaining":n}))
++    s.state_changed.connect(func(_state: int):
++        record("state",snapshot())
++        if OS.get_environment("NATURAL_MOVIE")=="1":capture_frames[Engine.get_process_frames()]=true)
++    s.player_replaced.connect(func(_p: CharacterBody3D):
++        record("reset",snapshot())
++        attach())
++    attach()
++    record("initial",snapshot())
++    record("environment",{"display":DisplayServer.get_name(),"audio":AudioServer.get_driver_name(),"physics_hz":Engine.physics_ticks_per_second,"mode":mode})
++    var replay_path := OS.get_environment("NATURAL_REPLAY")
++    replay_enabled = not replay_path.is_empty()
++    if replay_enabled:
++        for e in JSON.parse_string(FileAccess.get_file_as_string(replay_path)):
++            var n := int(e.tick)
++            if not replay.has(n):replay[n]=[]
++            replay[n].append(e)
++    running = true
++
++func key(code: int, down: bool) -> void:
++    if bool(keys.get(code,false)) == down:return
++    keys[code] = down
++    var e := InputEventKey.new()
++    e.physical_keycode = code
++    e.pressed = down
++    record("input_key",{"code":code,"pressed":down})
++    Input.parse_input_event(e)
++
++func aim(at: Vector3,fire: bool) -> void:
++    at.y = 0
++    var p: Vector2 = s.camera.unproject_position(at)
++    var e := InputEventMouseMotion.new()
++    e.position = p
++    record("input_mouse",{"p":[p.x,p.y],"world":v(at)})
++    Input.parse_input_event(e)
++    if fire != firing:
++        firing = fire
++        var b := InputEventMouseButton.new()
++        b.button_index = MOUSE_BUTTON_LEFT
++        b.position = p
++        b.pressed = fire
++        record("input_fire",{"p":[p.x,p.y],"pressed":fire})
++        Input.parse_input_event(b)
++
++func release() -> void:
++    for code in [KEY_W,KEY_A,KEY_S,KEY_D,KEY_SPACE,KEY_ESCAPE,KEY_R]:key(code,false)
++    aim(Vector3(0,0,6),false)
++
++func move_to(at: Vector3, dash := true) -> bool:
++    var d: Vector3 = at-s.player.global_position
++    d.y = 0
++    key(KEY_D,d.x>0.12)
++    key(KEY_A,d.x< -0.12)
++    key(KEY_S,d.z>0.12)
++    key(KEY_W,d.z< -0.12)
++    key(KEY_SPACE,dash and d.length()>4.0 and s.player.dash_remaining<0.00001)
++    return d.length()<0.24
++
++func clear_shot(at: Vector3) -> bool:
++    var a: Vector3 = s.player.global_position+Vector3.UP*0.65
++    var b := at+Vector3.UP*0.65
++    var q := PhysicsRayQueryParameters3D.create(a,b,1|4,[s.player.get_rid()])
++    var hit: Dictionary = s.get_world_3d().direct_space_state.intersect_ray(q)
++    if hit.is_empty():return true
++    return hit.position.distance_to(b)<0.9
++
++func shoot(objective: int = -1) -> void:
++    var chosen: Node3D = null
++    var distance := 1000.0
++    for e in s.opposition.sentries:
++        var d: float = e.global_position.distance_to(s.player.global_position)
++        if d<distance and clear_shot(e.global_position):
++            chosen=e
++            distance=d
++    if chosen != null and (distance<8.0 or objective<0):
++        aim(chosen.global_position,true)
++    elif objective>=0 and not s.targets[objective].is_destroyed:
++        aim(s.targets[objective].global_position,true)
++    else:aim(Vector3(0,0,6),false)
++
++func next_phase() -> void:
++    phase += 1
++    phase_tick = tick
++    record("phase",snapshot())
++
++func victory_route() -> void:
++    if phase not in [4,5,8]:shoot()
++    match phase:
++        0:
++            if move_to(Vector3(2.5,0,9)):next_phase()
++        1:
++            if move_to(Vector3(2.5,0,-9)):next_phase()
++        2:
++            if move_to(Vector3(0,0,-10)):next_phase()
++        3:
++            move_to(Vector3(0,0,-10),false)
++            if tick-phase_tick>60:
++                record("early_extraction",snapshot())
++                next_phase()
++        4:
++            shoot(0)
++            if s.targets[0].is_destroyed:next_phase()
++        5:
++            shoot(1)
++            if s.targets[1].is_destroyed:next_phase()
++        6:
++            if move_to(Vector3(2.5,0,-8)):next_phase()
++        7:
++            if move_to(Vector3(2.5,0,3)):next_phase()
++        8:
++            move_to(Vector3(2.5,0,3),false)
++            shoot(2)
++            if s.targets[2].is_destroyed:next_phase()
++        9:
++            if tick-phase_tick>540:next_phase()
++        10:
++            if move_to(Vector3(2.5,0,-9)):next_phase()
++        11:move_to(Vector3(0,0,-10))
++
++func _physics_process(_dt: float) -> void:
++    if not running or done:return
++    tick += 1
++    record("sample",snapshot())
++    var bodies: Array = []
++    for b in s.debris.bodies:bodies.append(body_row(b))
++    if not bodies.is_empty():physics.store_line(JSON.stringify({"tick":tick,"engine_tick":Engine.get_physics_frames(),"frame":Engine.get_process_frames(),"generation":s.generation,"bodies":bodies}))
++    if replay_enabled:
++        if s.state in [s.State.WON,s.State.LOST] and terminal_tick<0:
++            terminal_tick=tick
++            record("terminal",snapshot())
++        elif s.state==s.State.PLAYING:terminal_tick=-1
++        for e in replay.get(tick,[]):
++            if e.kind=="input_key":
++                var event := InputEventKey.new()
++                event.physical_keycode=int(e.code)
++                event.pressed=e.pressed
++                record("input_key",{"code":int(e.code),"pressed":e.pressed})
++                Input.parse_input_event(event)
++            elif e.kind=="input_mouse":
++                var event := InputEventMouseMotion.new()
++                event.position=Vector2(e.p[0],e.p[1])
++                record("input_mouse",{"p":e.p})
++                Input.parse_input_event(event)
++            elif e.kind=="input_fire":
++                var event := InputEventMouseButton.new()
++                event.button_index=MOUSE_BUTTON_LEFT
++                event.position=Vector2(e.p[0],e.p[1])
++                event.pressed=e.pressed
++                record("input_fire",{"p":e.p,"pressed":e.pressed})
++                Input.parse_input_event(event)
++            elif e.kind=="end":call_deferred("finish","finished")
++            else:record(e.kind,snapshot())
++        if tick>14000:finish("watchdog")
++        return
++    if tick>14000:
++        finish("watchdog")
++        return
++    if s.state in [s.State.WON,s.State.LOST]:
++        if terminal_tick<0:
++            terminal_tick=tick
++            record("terminal",snapshot())
++            release()
++        if tick-terminal_tick==60:
++            key(KEY_R,true)
++        return
++    if terminal_tick>=0:
++        key(KEY_R,false)
++        terminal_tick=-1
++        phase=0
++        phase_tick=tick
++        keys.clear()
++        firing=false
++    if tick==30:
++        release()
++        key(KEY_ESCAPE,true)
++        pause_snapshot=snapshot()
++        record("pause_start",pause_snapshot)
++        return
++    if tick==31:key(KEY_ESCAPE,false)
++    if tick==90:
++        record("pause_end",snapshot())
++        key(KEY_ESCAPE,true)
++        return
++    if tick==91:key(KEY_ESCAPE,false)
++    if s.state != s.State.PLAYING:return
++    var cycle: int = s.generation-initial_generation
++    if mode=="timeout" and cycle==0:
++        shoot()
++        return
++    if cycle==0:
++        victory_route()
++    elif cycle==1 and mode!="timeout":
++        # Fresh input replay: remove southern cover, then expose oneself by
++        # withholding counterfire. Threats remain at full production strength.
++        if s.elapsed<3:
++            move_to(Vector3(2,0,9),false)
++            shoot(2)
++        else:release()
++    else:
++        if s.elapsed<3:
++            move_to(Vector3(2,0,9),false)
++            shoot(2)
++        else:
++            release()
++            if s.elapsed>3.5 and s.sound.active_count()==0:call_deferred("finish","finished")
++
++func _process(_dt: float) -> void:
++    if not running or done:return
++    var now := Time.get_ticks_usec()
++    frames.store_line(JSON.stringify({"frame":Engine.get_process_frames(),"tick":tick,"usec":now,"interval_usec":now-last_frame_usec,"engine_process":Performance.get_monitor(Performance.TIME_PROCESS),"physics_process":Performance.get_monitor(Performance.TIME_PHYSICS_PROCESS)}))
++    last_frame_usec=now
++    if capture_frames.has(Engine.get_process_frames()) and not capture_busy:
++        capture_busy=true
++        var frame := Engine.get_process_frames()
++        await RenderingServer.frame_post_draw
++        var name := "frame_%05d.png" % frame
++        var image := get_viewport().get_texture().get_image()
++        var code := image.save_png(out.path_join(name))
++        var projected: Array = []
++        for b in s.debris.bodies:
++            var pixel: Vector2 = s.camera.unproject_position(b.global_position)
++            projected.append({"id":b.body_id,"pixel":[pixel.x,pixel.y],"age":b.age})
++        record("capture",{"file":name,"captured_frame":frame,"error":code,"projected_bodies":projected,"snapshot":snapshot()})
++        capture_busy=false
++
++func finish(reason: String) -> void:
++    if done:return
++    if reason=="finished" and s.sound.active_count()>0:return
++    done=true
++    record("end",{"reason":reason,"snapshot":snapshot()})
++    events.close()
++    physics.close()
++    frames.close()
++    print("NATURAL_END ",reason," generation=",s.generation," phase=",phase," state=",s.state)
++    # Remove observer closures before tree teardown (no gameplay mutation).
++    for source in [s,s.player,s.combat,s.opposition,s.sound,s.debris]+s.targets:
++        for sig in source.get_signal_list():
++            for connection in source.get_signal_connection_list(sig.name):
++                if connection.callable.get_object()==self:
++                    source.disconnect(sig.name,connection.callable)
++    get_tree().quit(0 if reason=="finished" else 1)
+diff --git a/scripts/check_natural.py b/scripts/check_natural.py
+new file mode 100644
+index 0000000..d48495c
+--- /dev/null
++++ b/scripts/check_natural.py
+@@ -0,0 +1,240 @@
++#!/usr/bin/env python3
++"""Independent assertions over input, combat, session, solver, rendered and PCM evidence.
++No rules fixture or supplied pass flags are accepted as natural-play evidence.
++"""
++import argparse,collections,copy,gzip,hashlib,json,re,subprocess
++from pathlib import Path
++import numpy as np
++from PIL import Image
++from scipy.io import wavfile
++from scipy.signal import correlate
++ROOT=Path(__file__).resolve().parents[1]
++def rows(p):
++    with gzip.open(p,'rt') as f:return [json.loads(l) for l in f]
++def only(r,k):return [e for e in r if e['kind']==k]
++def check_rules(r,mode):
++    initial=only(r,'initial')[0];g=initial['generation'];term=only(r,'terminal');resets=only(r,'reset')
++    assert [e['state'] for e in term]==([2,3] if mode=='victory' else [3]), 'natural outcomes'
++    assert len(resets)==len(term), 'retry count'
++    env=only(r,'environment')[0];assert env['display']=='X11' and env['physics_hz']==60
++    pa=only(r,'pause_start')[0];pb=only(r,'pause_end')[0]
++    for k in ['state','time','health','p','enemies','bolts','debris','opposition_time']:assert pa[k]==pb[k], 'pause '+k
++    assert pb['tick']-pa['tick']==60 and pa['state']==1
++    for reset in resets:
++        expected={'state':0,'time':0,'health':100,'p':[0,0,10],'remaining':3,'unlocked':False,'inside':False,'reason':'',
++          'enemies':[],'pending':2,'bolts':0,'debris':0,'visible_debris':0,'shots':0,'player_shots':0,'dashes':0,'dash_left':0,
++          'fire_left':0,'held':{},'pointer_known':False,'aim_valid':False,'opposition_time':0,'next_spawn':15,'next_enemy':102,
++          'voices':0,'body_throttle':0,'clock_error':0,'buses':initial['buses'],'nodes':initial['nodes'],
++          'master':initial['master'],'sfx':initial['sfx'],'muted':initial['muted'],'targets':initial['targets']}
++        for k,value in expected.items():assert reset[k]==value, 'reset '+k
++        retry=[e for e in only(r,'input_key') if e['generation']==reset['generation']-1 and e['pressed'] and e['code']==82]
++        assert retry and retry[-1]['engine_tick']==reset['engine_tick'], 'ordinary R boundary'
++        later=[e for e in only(r,'sample') if e['generation']==reset['generation'] and e['time']>2.5]
++        assert later and later[0]['shots']>=4 and np.linalg.norm(np.array(later[0]['p'])-[0,0,10])>1, 'fresh movement/fire'
++        assert any(e['generation']==reset['generation'] for e in only(r,'target_destroyed')), 'fresh pylon combat'
++    # Each observed target destruction is downstream of four independent swept
++    # player bolt hits, which themselves have a real fired signal/input lineage.
++    bolts={e['id']:e for e in only(r,'bolt')}
++    deaths=only(r,'target_destroyed')
++    for e in deaths:
++        hits=[h for h in only(r,'hit') if h['generation']==e['generation'] and h['target']==e['id'] and h['damage']>0]
++        assert len(hits)==4 and sum(h['damage'] for h in hits)==100, 'four real hits'
++        assert hits[-1]['engine_tick']==e['engine_tick'], 'destruction hit tick'
++        for h in hits:
++            b=bolts[h['id']];assert b['friendly'] and h['friendly'] and b['damage']==25 and b['engine_tick']<=h['engine_tick']
++            fired=[f for f in only(r,'fired') if f['generation']==e['generation'] and f['engine_tick']==b['engine_tick']]
++            assert len(fired)==1 and np.allclose(fired[0]['p'],b['position']), 'normal player fire origin'
++        t=next(t for t in e['snapshot']['targets'] if t['id']==e['id'])
++        assert t['destroyed'] and not t['intact'] and t['health']==0
++        assert any(b['engine_tick']==e['engine_tick'] and b['p']==e['p'] and len(b['bodies'])==32 for b in only(r,'burst')), 'pylon physical burst'
++    for e in only(r,'progress'):
++        if e['remaining']==3:assert any(x['engine_tick']==e['engine_tick'] for x in resets)
++        else:
++            d=[x for x in deaths if x['generation']==e['generation'] and x['engine_tick']<=e['engine_tick']]
++            assert len({x['id'] for x in d})==3-e['remaining'] and d[-1]['engine_tick']==e['engine_tick'], 'distinct destruction progress'
++    for t in term:
++        if t['state']==2:
++            assert t['unlocked'] and t['remaining']==0 and t['inside'] and t['health']>0 and t['time']<150, 'victory eligibility'
++            assert np.linalg.norm(np.array(t['p'])[[0,2]]-[0,-10])<=1.5
++        elif t['reason']=='death':
++            ds=[e for e in only(r,'damage') if e['generation']==t['generation']]
++            assert len(ds)==7 and all(e['amount']==15 for e in ds) and t['health']==0 and t['time']<150, 'natural lethal pressure'
++            for d in ds:assert any(h['engine_tick']==d['engine_tick'] and not h['friendly'] and h['damage']==15 and h['target']==0 for h in only(r,'hit')), 'real threat hit'
++        else:assert t['reason']=='timeout' and t['time']==150 and t['health']>0, 'natural deadline'
++    if mode=='victory':
++        early=only(r,'early_extraction');assert len(early)==1 and early[0]['inside'] and not early[0]['unlocked'] and early[0]['remaining']==3 and early[0]['state']==0
++        assert len([e for e in deaths if e['generation']==g])==3
++        assert only(r,'dash') and max(d['distance'] for d in only(r,'dash'))>2.9
++    # Tick-to-tick continuity disallows hidden position, clock or health jumps.
++    samples=only(r,'sample')
++    for a,b in zip(samples,samples[1:]):
++        if a['generation']!=b['generation']:continue
++        dt=b['time']-a['time'];assert -.000001<=dt<=1/60+.000001, 'clock continuity'
++        ds=[d for d in only(r,'damage') if d['generation']==a['generation'] and a['engine_tick']<=d['engine_tick']<b['engine_tick']]
++        assert b['health']==max(0,a['health']-sum(d['amount'] for d in ds)), 'health continuity'
++        dash=[d for d in only(r,'dash') if a['engine_tick']<=d['engine_tick']<b['engine_tick']]
++        assert np.linalg.norm(np.array(b['p'])-a['p'])<=5/60+.01+sum(d['distance'] for d in dash), 'movement continuity'
++        assert b['unlocked']==(b['remaining']==0)
++        if b['state']==2:assert b['inside'] and b['unlocked']
++    end=only(r,'end')[-1];assert end['reason']=='finished' and end['snapshot']['state']==0
++    return {'terminals':[{'generation':e['generation'],'state':e['state'],'reason':e['reason'],'active_seconds':e['time'],'health':e['health'],'shots':e['shots']} for e in term],
++        'resets':len(resets),'destructions':len(deaths),'hits':len(only(r,'hit')),'threat_attacks':len(only(r,'attack')),'input_events':sum(e['kind'].startswith('input_') for e in r),'samples':len(samples)}
++
++def check_physics(r,pr):
++    tracks=collections.defaultdict(list)
++    for sample in pr:
++        for b in sample['bodies']:tracks[b['id']].append(b)
++    details=[]
++    for burst in only(r,'burst'):
++        launch=burst['bodies'];assert len(launch) in [16,32]
++        assert all(4.5<=b['v'][1]<=7.5 for b in launch), 'upward launch'
++        assert len({tuple(b['v']) for b in launch})==len(launch) and len({tuple(b['w']) for b in launch})==len(launch), 'random velocity/spin'
++        if len(launch)!=32 or burst['generation']!=only(r,'initial')[0]['generation']:continue
++        for first in launch:
++            tr=tracks[first['id']];assert len(tr)>350
++            pos=np.array([b['p'] for b in tr]);vel=np.array([b['v'] for b in tr]);spin=np.array([b['w'] for b in tr]);age=np.array([b['age'] for b in tr])
++            assert pos[:,1].max()>first['p'][1]+.6 and np.any(vel[:,1]<-1), 'gravity descent'
++            air=(age>.05)&(age<.35);acc=np.diff(vel[:,1])[air[:-1]]*60
++            assert -11.0<float(np.median(acc))<-8.8, 'gravity acceleration'
++            ground=[i for i,b in enumerate(tr) if 'Ground' in b.get('colliders',[]) and b['contacts']>0]
++            assert ground, 'real ground collision'
++            contact=ground[0]
++            assert np.any(vel[max(0,contact-3):contact+25,1]>.3), 'subsequent bounce'
++            rolling=[i for i in ground if age[i]>age[contact]+.25 and np.linalg.norm(spin[i])>.2 and np.linalg.norm(vel[i,[0,2]])>.03]
++            assert rolling, 'ground rolling motion'
++            assert np.linalg.norm(vel[-1])<.15 or tr[-1]['sleeping'], 'eventual settling'
++            details.append({'id':first['id'],'burst':burst['id'],'max_height':float(pos[:,1].max()),'gravity_median':float(np.median(acc)),'first_ground_age':float(age[contact]),'rolling_samples':len(rolling),'last_speed':float(np.linalg.norm(vel[-1])),'sleeping':tr[-1]['sleeping']})
++    assert len(details)==96, 'three full 32-cube pylon tracks'
++    return {'pylon_arcs':len(details),'samples':sum(len(v) for v in tracks.values()),'tracks':details}
++
++def check_audio(r,sr,x):
++    assert sr==48000 and x.ndim==2 and x.shape[1]==2
++    assert .02<float(abs(x).max())<.81 and not np.any(abs(x)>=.9999), 'non-silent unclipped mixer'
++    sources={(e['kind'],e['id'],e['engine_tick']) for e in r if e['kind'] in ['burst','impact']}
++    audio=[e for e in only(r,'audio') if not e['audio']['dropped']]
++    for e in audio:
++        a=e['audio'];kind='burst' if a['kind']=='break' else 'impact'
++        assert (kind,a['id'],a['tick']) in sources and a['tick']==e['engine_tick'], 'same-tick mixer source'
++        assert 1<=a['active']<=8 and 0<=a['slot']<8
++    # Preselect sparse source events from trace, then require a quiet signal
++    # window and a real measured onset 0..50ms later. No waveform is synthesized.
++    candidates=[];last=-1000
++    for e in audio:
++        if e['frame']-last>=16:candidates.append(e)
++        last=e['frame']
++    onsets=[]
++    for e in candidates:
++        t=e['frame']/60;z=x[round((t-.05)*sr):round((t+.1)*sr)]
++        if len(z)!=round(.15*sr) or abs(z[:round(.05*sr)]).max()>.00025:continue
++        hits=np.flatnonzero(abs(z).max(axis=1)>.0005)
++        assert len(hits), 'missing source attack'
++        delay=hits[0]/sr-.05
++        assert 0<=delay<.05, 'mixer attack synchronization'
++        onsets.append({'kind':e['audio']['kind'],'frame':e['frame'],'delay_ms':delay*1000,'peak':float(abs(z).max())})
++    assert sum(e['kind']=='break' for e in onsets)>=3 and sum(e['kind']=='impact' for e in onsets)>=3, 'sparse break/impact onsets'
++    first=only(r,'burst')[0]['frame']/60
++    assert abs(x[:round(first*sr)]).max()<.000001, 'silence before first physical source'
++    # Identify every pylon fracture in the actual PCM, even with overlapping
++    # earlier impacts: correlate its recorded variant/pitch against the mix.
++    # This analyzes the real asset; it does not generate replacement evidence.
++    correlations=[]
++    for d in only(r,'target_destroyed'):
++        burst=next(b for b in only(r,'burst') if b['engine_tick']==d['engine_tick'] and b['p']==d['p'])
++        e=next(a for a in audio if a['audio']['kind']=='break' and a['audio']['id']==burst['id']);a=e['audio']
++        rate,asset=wavfile.read(ROOT/('game/audio/break_%d.wav'%a['variant']))
++        idx=np.arange(round(.18*sr))*a['pitch']*rate/sr
++        template=np.interp(idx,np.arange(len(asset)),asset.astype(float));template-=template.mean()
++        start=round(e['frame']/60*sr);win=x[start:start+round(.3*sr)].mean(axis=1)
++        corr=correlate(win,template,mode='valid',method='fft')
++        energy=np.convolve(win**2,np.ones(len(template)),mode='valid')
++        score=corr/np.sqrt(energy*np.sum(template**2)+1e-30);offset=int(score.argmax())
++        assert score[offset]>.8 and 0<=offset/sr<.05, 'pylon PCM asset/time correlation'
++        correlations.append({'generation':d['generation'],'pylon':d['id'],'frame':e['frame'],'normalized_correlation':float(score[offset]),'delay_ms':offset/sr*1000})
++    return {'pylon_asset_correlations':correlations,'sample_rate':sr,'channels':2,'seconds':len(x)/sr,'peak':float(abs(x).max()),'rms':float(np.sqrt(np.mean(x*x))),'clipped_samples':int(np.sum(abs(x)>=.9999)),'matched_sources':len(audio),'onsets':onsets}
++
++def check_pixels(out,r):
++    # Decode every video frame; compare sparse original PNG readbacks against
++    # their exact recorded movie frame, independently of the engine event flags.
++    cmd=['ffmpeg','-v','error','-i',str(out/'game.mp4'),'-vf','scale=320:180','-pix_fmt','rgb24','-f','rawvideo','pipe:1']
++    rgb=np.frombuffer(subprocess.check_output(cmd),np.uint8).reshape(-1,180,320,3)
++    assert len(rgb)>1000 and rgb.std()>15
++    captures=only(r,'capture');checks=[]
++    for e in captures:
++        f=e['captured_frame'];img=Image.open(out/e['file']).convert('RGB');assert img.size==(1280,720) and e['error']==0
++        small=np.asarray(img.resize((320,180),Image.Resampling.BILINEAR)).astype(float)
++        error=float(abs(small-rgb[f]).mean());assert error<3, 'PNG/video timestamp match'
++        a=np.asarray(img);orange=(a[:,:,0]>a[:,:,1]*1.2)&(a[:,:,1]>a[:,:,2]*1.4)&(a[:,:,0]>110)
++        projected=e.get('projected_bodies',[]);matched=0
++        for b in projected:
++            x,y=map(round,b['pixel']);patch=orange[max(0,y-5):min(720,y+6),max(0,x-5):min(1280,x+6)]
++            matched+=bool(patch.size and patch.any())
++        checks.append({'frame':f,'png_movie_mae':error,'projected_bodies':len(projected),'orange_near_projected':matched})
++    assert sum(e['orange_near_projected'] for e in checks)>200, 'rendered fragment pixel presence'
++    flight=[]
++    for b in only(r,'burst'):
++        f=b['frame']
++        if f+90>=len(rgb):continue
++        # Central arena ROI excludes HUD and settings, not a subjective metric.
++        changed=int(np.sum(np.max(abs(rgb[f+30,35:150].astype(int)-rgb[f,35:150].astype(int)),axis=2)>12))
++        assert changed>30, 'rendered destruction activity'
++        flight.append({'burst':b['id'],'frame':f,'changed_arena_pixels_30_frames_later':changed})
++    return {'decoded_frames':len(rgb),'captures':checks,'flight_differences':flight,'subjective':'UNASSESSED'}
++
++def main():
++    p=argparse.ArgumentParser();p.add_argument('output',type=Path);p.add_argument('--self-test',action='store_true');a=p.parse_args();out=a.output
++    meta=json.loads((out/'launch.json').read_text());assert meta['returncode']==0
++    assert '--natural-test' in meta['command'] and '--script' not in meta['command'] and not any(v.endswith('.tscn') for v in meta['command']), 'default entry'
++    for name,h in meta['source_sha256'].items():assert hashlib.sha256((ROOT/name).read_bytes()).hexdigest()==h, 'source '+name
++    driver=(ROOT/'game/tests/natural_play.gd').read_text()
++    assert not re.search(r'\bs(?:\.[A-Za-z_]+)+\s*=(?!=)',driver), 'production state assignment'
++    for forbidden in ['s.start(', 's.finish(', 's.pause(', '.apply_damage(', '.spawn_bolt(', '.fixed_step(', '.set_physics_process(', '.burst(', 'get_tree().paused =']:
++        assert forbidden not in driver, 'input-only audit '+forbidden
++    assert 'Input.parse_input_event' in driver
++    production={}
++    for f in (ROOT/'game').iterdir():
++        if not f.is_file() or f.suffix=='.uid':continue
++        name=str(f.relative_to(ROOT))
++        old=subprocess.check_output(['git','show','04832df0af77769a10db15272ed901bac1dfd669:'+name],cwd=ROOT)
++        if f.name=='opposition_session.gd':
++            hook='    if "--natural-test" in OS.get_cmdline_user_args():\n        var driver = load("res://tests/natural_play.gd").new()\n        add_child(driver)\n        driver.call_deferred("run", self)\n'
++            assert f.read_text().replace(hook,'').encode()==old, 'production hook only'
++        else:assert f.read_bytes()==old, 'production unchanged '+name
++        production[name]=hashlib.sha256(old).hexdigest()
++    r=rows(out/'events.jsonl.gz');result={'source_commit':meta['source_commit'],'rules':check_rules(r,meta['mode'])}
++    result['production_unchanged_except_opt_in_hook']=production
++    if meta['mode']=='victory':result['physics']=check_physics(r,rows(out/'physics.jsonl.gz'))
++    if meta['movie']:
++        sr,x=wavfile.read(out/'audio.wav');x=x.astype(np.float64)/2**(8*x.dtype.itemsize-1)
++        result['audio']=check_audio(r,sr,x);result['pixels']=check_pixels(out,r)
++    if meta.get('frames') and not meta['movie']:
++        captures=only(r,'capture');assert len(captures)>10
++        for e in captures:
++            im=np.asarray(Image.open(out/e['file']).convert('RGB'))
++            assert im.shape==(720,1280,3) and im.std()>15 and e['error']==0
++        assert any(e['snapshot']['state']==3 and e['snapshot']['reason']=='timeout' for e in captures), 'rendered timeout snapshot'
++        result['frame_sequence']={'decoded_pngs':len(captures),'distinct_hashes':len({hashlib.sha256((out/e['file']).read_bytes()).hexdigest() for e in captures})}
++    fr=rows(out/'frames.jsonl.gz');interval=np.array([x['interval_usec']/1000 for x in fr[10:]])
++    result['performance']={'fixed_fps':meta['fixed'],'wall_seconds':meta['wall_seconds'],'frame_interval_ms':dict(zip(['p50','p95','p99'],map(float,np.percentile(interval,[50,95,99])))),'mean_observed_fps':1000/float(interval.mean()),'max_frame_ms':float(interval.max()),'note':'Offline fixed-FPS evidence is NOT real-time performance. Unfixed run measures this software-rendered host including observation overhead; not Rick hardware.'}
++    if a.self_test:
++        rejected=[]
++        for name in ['win_locked','missing_hit','missing_retry','reset_dirty','health_jump','no_early_entry']:
++            bad=copy.deepcopy(r)
++            if name=='win_locked':only(bad,'terminal')[0]['unlocked']=False
++            elif name=='missing_hit':bad.remove(next(e for e in only(bad,'hit') if e['target']==1 and e['damage']>0))
++            elif name=='missing_retry':bad=[e for e in bad if not(e['kind']=='input_key' and e['code']==82)]
++            elif name=='reset_dirty':only(bad,'reset')[0]['debris']=1
++            elif name=='health_jump':only(bad,'sample')[150]['health']=42
++            else:only(bad,'early_extraction')[0]['inside']=False
++            try:check_rules(bad,meta['mode'])
++            except AssertionError:rejected.append(name)
++            else:raise AssertionError('accepted mutation '+name)
++        if meta['movie']:
++            for name,z in [('silent',np.zeros_like(x)),('delayed',np.roll(x,sr//4,axis=0)),('clipped',np.ones_like(x))]:
++                try:check_audio(r,sr,z)
++                except AssertionError:rejected.append(name)
++                else:raise AssertionError('accepted audio mutation '+name)
++        result['rejected_mutations']=rejected
++    result['passed']=True
++    (out/'analysis.json').write_text(json.dumps(result,indent=2)+'\n')
++    print(json.dumps({k:v for k,v in result.items() if k not in ['physics','pixels']},indent=2))
++if __name__=='__main__':main()
+diff --git a/scripts/compare_natural_replay.py b/scripts/compare_natural_replay.py
+new file mode 100644
+index 0000000..77bed91
+--- /dev/null
++++ b/scripts/compare_natural_replay.py
+@@ -0,0 +1,29 @@
++#!/usr/bin/env python3
++"""Compare independent engine runs driven by the same recorded ordinary inputs."""
++import argparse,hashlib,json
++from pathlib import Path
++from check_natural import rows
++p=argparse.ArgumentParser();p.add_argument('original',type=Path);p.add_argument('replay',type=Path);a=p.parse_args()
++x=rows(a.original/'events.jsonl.gz');y=rows(a.replay/'events.jsonl.gz')
++def canonical(rows):
++    result=[]
++    for e in rows:
++        if e['kind'] in ['hit','bolt','target_destroyed','damage','dash','progress','state','reset','terminal','end','early_extraction']:
++            e={k:v for k,v in e.items() if k not in ['usec','frame','phase','collider','nodes','engine_tick']}
++            # Godot collider auto-names and last-bit floating values are not gameplay.
++            def clean(v):
++                if isinstance(v,float):return round(v,4)
++                if isinstance(v,dict):return {k:clean(x) for k,x in v.items() if k not in ['nodes','voices','body_throttle','visible_debris','collisions']}
++                if isinstance(v,list):return [clean(x) for x in v]
++                return v
++            result.append(clean(e))
++    return result
++cx,cy=canonical(x),canonical(y)
++if cx!=cy:
++    for i,(a,b) in enumerate(zip(cx,cy)):
++        if a!=b:print(json.dumps({'first_difference':i,'original':a,'replay':b},indent=2));break
++assert cx==cy, 'independent exact-input runtime differs'
++meta=json.loads((a.replay/'launch.json').read_text())
++assert hashlib.sha256((a.replay/'replay-input.json').read_bytes()).hexdigest()==meta['replay_sha256']
++result={'passed':True,'compared_events':len(cx),'scope':'Independent fresh default-engine process; replays only recorded InputEvents and observation times, no bot navigation/aim decisions. Float tolerance 0.0001; diagnostic IDs/voice occupancy excluded.'}
++(a.replay/'comparison.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result))
+diff --git a/scripts/run_natural.py b/scripts/run_natural.py
+new file mode 100644
+index 0000000..de0a6c7
+--- /dev/null
++++ b/scripts/run_natural.py
+@@ -0,0 +1,43 @@
++#!/usr/bin/env python3
++"""Default production entry + opt-in input-only driver, private user settings."""
++import argparse,datetime,gzip,hashlib,json,os,signal,subprocess,time
++from pathlib import Path
++ROOT=Path(__file__).resolve().parents[1]
++p=argparse.ArgumentParser();p.add_argument('output',type=Path);p.add_argument('--mode',choices=['victory','timeout'],default='victory');p.add_argument('--movie',action='store_true');p.add_argument('--fixed',action='store_true');p.add_argument('--frames',action='store_true');p.add_argument('--replay',type=Path);a=p.parse_args()
++out=a.output.resolve();out.mkdir(parents=True,exist_ok=False)
++godot=Path(os.environ.get('GODOT_BIN',ROOT/'.tools/Godot_v4.5.1-stable_linux.x86_64')).resolve()
++cmd=['xvfb-run','-a','-s','-screen 0 1280x1024x24',str(godot),'--path',str(ROOT/'game'),'--rendering-method','gl_compatibility','--audio-driver','Dummy','--resolution','1280x720','--disable-vsync','--verbose']
++if a.movie:cmd+=['--write-movie',str(out/'game.avi'),'--fixed-fps','60']
++elif a.fixed:cmd+=['--fixed-fps','60']
++else:cmd+=['--max-fps','60']
++cmd+=['--','--natural-test']
++env=dict(os.environ,NATURAL_OUT=str(out),NATURAL_MODE=a.mode,NATURAL_MOVIE=str(int(a.movie or a.frames)),XDG_DATA_HOME=str(out/'userdata'),LIBGL_ALWAYS_SOFTWARE='1',GODOT_SILENCE_ROOT_WARNING='1')
++if a.replay:
++    with gzip.open(a.replay/'events.jsonl.gz','rt') as f:original=[json.loads(l) for l in f]
++    payload=[e for e in original if e['kind'].startswith('input_') or e['kind'] in ['early_extraction','pause_start','pause_end','end']]
++    (out/'replay-input.json').write_text(json.dumps(payload))
++    env['NATURAL_REPLAY']=str(out/'replay-input.json')
++meta={'command':cmd,'utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'source_commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),'source_status':subprocess.check_output(['git','status','--short'],cwd=ROOT,text=True),'source_sha256':{str(f.relative_to(ROOT)):hashlib.sha256(f.read_bytes()).hexdigest() for f in (ROOT/'game').rglob('*') if f.is_file() and '.godot' not in f.parts},'engine_sha256':hashlib.sha256(godot.read_bytes()).hexdigest(),'mode':a.mode,'replay_source':str(a.replay) if a.replay else None,'replay_sha256':hashlib.sha256((out/'replay-input.json').read_bytes()).hexdigest() if a.replay else None,'frames':a.frames,'movie':a.movie,'fixed':a.fixed or a.movie,'environment':{k:env[k] for k in ['NATURAL_OUT','NATURAL_MODE','XDG_DATA_HOME','LIBGL_ALWAYS_SOFTWARE']},'uname':list(os.uname())}
++(out/'launch.json').write_text(json.dumps(meta,indent=2))
++t=time.monotonic()
++with (out/'engine.log').open('w') as log:
++    proc=subprocess.Popen(cmd,cwd=ROOT,env=env,stdout=log,stderr=subprocess.STDOUT,start_new_session=True)
++    try:rc=proc.wait(timeout=1200)
++    except subprocess.TimeoutExpired:
++        os.killpg(proc.pid,signal.SIGTERM);proc.wait();rc=124
++meta.update(returncode=rc,wall_seconds=time.monotonic()-t)
++(out/'launch.json').write_text(json.dumps(meta,indent=2))
++print((out/'engine.log').read_text())
++if a.movie and (out/'game.avi').exists():
++    with (out/'encode.log').open('w') as log:
++        subprocess.run(['ffmpeg','-y','-i',str(out/'game.avi'),'-map','0:v','-c:v','libx264','-crf','18','-preset','fast','-pix_fmt','yuv420p','-threads','2','-map','0:a','-c:a','aac',str(out/'game.mp4'),'-map','0:a','-c:a','pcm_s32le',str(out/'audio.wav')],stdout=log,stderr=subprocess.STDOUT,check=True)
++    (out/'video.json').write_text(subprocess.check_output(['ffprobe','-v','error','-show_streams','-show_format','-of','json',str(out/'game.mp4')],text=True))
++    meta['original_avi_sha256']=hashlib.sha256((out/'game.avi').read_bytes()).hexdigest()
++    (out/'launch.json').write_text(json.dumps(meta,indent=2))
++    (out/'game.avi').unlink()
++for f in out.glob('*.jsonl'):
++    with gzip.open(str(f)+'.gz','wb') as z:z.write(f.read_bytes())
++    f.unlink()
++print(json.dumps({'returncode':rc,'wall_seconds':meta['wall_seconds'],'output':str(out)}))
++assert rc==0 and 'SCRIPT ERROR' not in (out/'engine.log').read_text()
++raise SystemExit(rc)
+diff --git a/scripts/verify_natural_node13.py b/scripts/verify_natural_node13.py
+new file mode 100644
+index 0000000..115071b
+--- /dev/null
++++ b/scripts/verify_natural_node13.py
+@@ -0,0 +1,30 @@
++#!/usr/bin/env python3
++"""Serial reproducible natural-play suite. Use a fresh output prefix."""
++import argparse,datetime,json,os,subprocess,sys
++from pathlib import Path
++ROOT=Path(__file__).resolve().parents[1]
++p=argparse.ArgumentParser();p.add_argument('prefix');a=p.parse_args();assert Path(a.prefix).name==a.prefix and a.prefix not in ('.','..')
++out=ROOT/'evidence'/(a.prefix+'-verification');out.mkdir(exist_ok=False)
++base='evidence/'+a.prefix;commands=[]
++def run(args,name):
++    cmd=[sys.executable]+args
++    started=datetime.datetime.now(datetime.timezone.utc).isoformat()
++    with (out/name).open('w') as f:r=subprocess.run(cmd,cwd=ROOT,stdout=f,stderr=subprocess.STDOUT,timeout=1800)
++    commands.append({'command':cmd,'utc':started,'returncode':r.returncode,'output':name})
++    (out/'commands.json').write_text(json.dumps(commands,indent=2)+'\n');print(name,r.returncode,flush=True)
++    if r.returncode:raise SystemExit(r.returncode)
++run(['scripts/run_natural.py',base+'-movie','--movie'],'movie.log')
++run(['scripts/check_natural.py',base+'-movie','--self-test'],'movie-checks.log')
++run(['scripts/run_natural.py',base+'-replay','--movie','--replay',base+'-movie'],'replay.log')
++run(['scripts/check_natural.py',base+'-replay','--self-test'],'replay-checks.log')
++run(['scripts/compare_natural_replay.py',base+'-movie',base+'-replay'],'comparison.log')
++run(['scripts/run_natural.py',base+'-timeout','--mode','timeout','--fixed','--frames'],'timeout.log')
++run(['scripts/check_natural.py',base+'-timeout'],'timeout-checks.log')
++run(['scripts/run_natural.py',base+'-realtime'],'realtime.log')
++run(['scripts/check_natural.py',base+'-realtime'],'realtime-checks.log')
++for i in (1,2):run(['scripts/run_session.py',base+'-rules-'+str(i)],'rules-'+str(i)+'.log')
++run(['scripts/check_session.py',base+'-rules-1',base+'-rules-2'],'rules-checks.log')
++run(['scripts/run_integration.py',base+'-integration'],'integration.log')
++run(['scripts/check_integration.py',base+'-integration'],'integration-checks.log')
++summary={'passed':True,'commands':len(commands),'source_commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip()}
++(out/'summary.json').write_text(json.dumps(summary,indent=2)+'\n');print(json.dumps(summary))

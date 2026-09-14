@@ -1,0 +1,38 @@
+[
+  {
+    "tree_id": "G12",
+    "node_id": 11,
+    "parent_id": 7,
+    "objective": "Implement the designed production session rules on the accepted opposition slice: three destroyed pylons unlock extraction, extraction wins, and player death or the 150-second deadline loses.",
+    "completion_contract": "Outcome: in ai-game-05, extend the existing session rather than replacing accepted systems. Consume once-only destructible-target events, count distinct destroyed pylons, reject extraction until all three are destroyed, and require entry into the existing 1.5m extraction radius to win. Enforce the designed 150-second active-play deadline and resolve terminal outcomes after gameplay damage with loss-before-win precedence. Pause stops the session clock; terminal resolution is idempotent. Preserve normal combat, physical fragment bursts, and sound. Evidence: committed and pushed source, focused automated tests, actual Godot execution logs, and reproduction commands tied to the source revision. Tests cover duplicate destruction signals, locked extraction, unlock and victory, death, timeout boundaries, same-tick loss versus victory, pause, and terminal idempotency. Validation: independently rerun tests and inspect production event wiring and processing order. Clearly distinguish isolated rule fixtures from natural gameplay; do not claim this child establishes full-session playability or subjective quality.",
+    "state": "completed",
+    "state_memo": "completed: contract validated against referenced artifacts",
+    "created_at": "2026-09-14T02:52:21.738363+00:00",
+    "updated_at": "2026-09-14T03:10:17.443093+00:00",
+    "artifact_refs_count": 3259
+  },
+  {
+    "tree_id": "G12",
+    "node_id": 12,
+    "parent_id": 7,
+    "objective": "Integrate the accepted complete session as the default Linux game, with objective/status feedback and reliable restart after victory or defeat.",
+    "completion_contract": "Prerequisite: the session-rules child is independently accepted. Outcome: default project launch enters the complete game rather than controls-only mode. Using the existing visual/audio direction, show controls, the destroy-three-pylons-then-extract objective, pylon progress, locked/open extraction status, remaining time, health and dash status, pause state, and explicit victory/defeat results with retry instructions. Extend the existing restart boundary, not a parallel implementation. Retry fully restores health, clock, objectives, pylons, extraction lock, player/input state, and opposition, while clearing prior bolts, debris, and sound voices. Evidence: committed and pushed integration source and automated launch, HUD-binding, pause/resume, and repeated win/loss/restart tests; fresh rendered Linux captures with code-level pixel checks and engine logs. Validation: independently launch the default entry and rerun tests, checking that the production scene includes combat, destruction, sound, and opposition and that repeated resets leave no stale state or duplicate callbacks. Forced terminal fixtures may test reset boundaries but must be labeled as fixtures, not natural victories. Subjective readability remains for node 9.",
+    "state": "completed",
+    "state_memo": "completed: contract validated against referenced artifacts",
+    "created_at": "2026-09-14T02:52:21.739587+00:00",
+    "updated_at": "2026-09-14T03:39:01.357291+00:00",
+    "artifact_refs_count": 740
+  },
+  {
+    "tree_id": "G12",
+    "node_id": 13,
+    "parent_id": 7,
+    "objective": "Verify natural full-session victory, defeat, and replay through normal controls; capture synchronized destruction and sound evidence and make only demonstrated bounded tuning adjustments.",
+    "completion_contract": "Prerequisites: both session-rules and default-session/reset children are independently accepted. Outcome: exercise the actual integrated Linux game through ordinary movement, aiming, firing, dash, pause, and retry InputEvents under production rules. Demonstrate a natural victory by destroying the three pylons and reaching extraction, a natural defeat from real threats or the deadline, and a fresh playable retry after each. No direct health, position, progress, or outcome mutation, disabled threats, or isolated scenes may substitute for natural-play evidence. Evidence: committed and pushed reproducible input driver and independent assertions, source revision and commands, runtime event/collision/progression traces, fresh rendered recordings or frame sequences, and synchronized actual game-mixer audio capturing destruction and debris impacts. Assert objective progress derives from real hits/destruction, early extraction cannot win, victory requires unlocked extraction, and restart resets the complete session. Record destruction launch, randomized spin/velocity, gravity, ground impacts and subsequent bounce/rolling telemetry alongside rendering and audio evidence. Document observed challenge, meaningful destruction-related choices, failed routes, and any bounded parameter tuning, retaining failed-run evidence and rerunning affected regression tests after changes. Validation: independently reproduce the normal-input runs, inspect provenance and assertions, decode captures, perform pixel-level rendering and audio-signal/event-timing checks, and report actual runtime performance without equating capture FPS with real-time performance. Do not require unavailable image perception or claim subjective fun, readability, or audible satisfaction; preserve those verdicts for Rick at node 9. Do not package the release or solicit playtest in this child.",
+    "state": "open",
+    "state_memo": "created as open",
+    "created_at": "2026-09-14T02:52:21.740326+00:00",
+    "updated_at": "2026-09-14T02:52:21.740326+00:00",
+    "artifact_refs_count": 0
+  }
+]

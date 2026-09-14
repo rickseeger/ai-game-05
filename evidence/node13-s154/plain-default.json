@@ -1,0 +1,20 @@
+{
+  "command": [
+    "xvfb-run",
+    "-a",
+    "/opt/g-harness/workspace/G12/node_11_step_152/repo/.tools/Godot_v4.5.1-stable_linux.x86_64",
+    "--path",
+    "/opt/g-harness/workspace/G12/node_13_step_154/repo/game",
+    "--audio-driver",
+    "Dummy",
+    "--quit-after",
+    "120",
+    "--max-fps",
+    "60"
+  ],
+  "returncode": 0,
+  "source_commit": "31fe4e6db34dce8c9e94281b0f3bd5ee27b284b8",
+  "utc": "2026-09-14T04:05:07.717992+00:00",
+  "engine_sha256": "db07cae7de644278a1884d4552bdf2bca3f5d30131b18faf3a0c4d730080b199",
+  "passed": true
+}

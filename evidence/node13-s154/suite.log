@@ -1,0 +1,15 @@
+movie.log 0
+movie-checks.log 0
+replay.log 0
+replay-checks.log 0
+comparison.log 0
+timeout.log 0
+timeout-checks.log 0
+realtime.log 0
+realtime-checks.log 0
+rules-1.log 0
+rules-2.log 0
+rules-checks.log 0
+integration.log 0
+integration-checks.log 0
+{"passed": true, "commands": 14, "source_commit": "31fe4e6db34dce8c9e94281b0f3bd5ee27b284b8"}

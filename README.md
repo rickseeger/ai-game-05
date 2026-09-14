@@ -12,9 +12,11 @@ only after victory/defeat. Master/SFX sliders, M mute, -/= SFX volume.
 The accepted combat, physical destruction, sound and opposition are integrated;
 this is NOT release packaging or a completed mission. Node 12 tests reset/HUD
 integration with explicitly forced terminal fixtures, not natural full-session
-victories. Natural victory/defeat/replay and tuning remain node 13; subjective
-readability, sound satisfaction and fun remain Rick's node-9 playtest.
-See docs/session-integration.md for reproduction and limitations.
+victories. Node 13 adds natural normal-input victory/death/deadline/retry evidence,
+including exact-input replay and synchronized game-mixer captures; see
+docs/natural-session-validation.md. Independent acceptance is still required;
+subjective readability, sound satisfaction and fun remain Rick's node-9 playtest.
+See docs/session-integration.md for the earlier reset fixtures and limitations.
 
 The following probe/slice sections are historical validation entry points, NOT
 the default game. They remain available for focused subsystem regressions.

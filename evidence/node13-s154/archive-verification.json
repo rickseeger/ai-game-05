@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "archives": 6,
+  "members": 456,
+  "excluded": "Disposable shader caches and redundant MovieWriter AVI only; original AVI hash is in launch metadata."
+}
