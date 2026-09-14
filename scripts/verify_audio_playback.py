@@ -35,6 +35,17 @@ try:
         time.sleep(.05) # readiness polling, not a blind start delay
     (out/"monitor-ready.txt").write_text(state)
     meta["paplay_rc"]=run(["paplay","--device=g12_audio_validation",str(a.wav.resolve())],"paplay.txt")
+    # paplay completion does not mean parec flushed its buffered samples. Keep
+    # recording actual monitor output through a bounded drain window; never pad
+    # or manufacture PCM. This cannot repair dropped/drifting virtual transport.
+    import wave
+    with wave.open(str(a.wav), "rb") as original:
+        minimum_bytes = round((original.getnframes()/original.getframerate()+1.0)*48000)*4+44
+    deadline = time.monotonic()+5
+    while (out/"playback-monitor.wav").stat().st_size < minimum_bytes:
+        assert monitor.poll() is None and time.monotonic() < deadline, "monitor drain timeout"
+        time.sleep(.05)
+    meta["monitor_drain_minimum_bytes"] = minimum_bytes
     monitor.send_signal(signal.SIGINT);meta["parec_rc"]=monitor.wait(timeout=10)
     assert meta["paplay_rc"]==0
     # New real-time rendered engine process, external screen + Pulse monitor capture.

@@ -15,6 +15,8 @@ var captures := false
 var capture_busy := false
 var frame_index := 0
 var controls_started := false
+var audio_events: Array[Dictionary] = []
+var impact_sources: Array[Dictionary] = []
 var target_id := -1
 var dash_used := false
 
@@ -47,6 +49,9 @@ func run(owner: Node3D) -> void:
     out = OS.get_environment("OPPOSITION_OUT")
     mode = OS.get_environment("OPPOSITION_SCENARIO")
     captures = OS.get_environment("OPPOSITION_CAPTURE") == "1"
+    session.sound.audio_event.connect(func(data: Dictionary): audio_events.append(data.duplicate(true)))
+    session.debris.impact.connect(func(_at: Vector3, speed: float, _material: StringName, id: int):
+        impact_sources.append({"id": id, "tick": Engine.get_physics_frames(), "speed": speed}))
     session.combat.event.connect(record)
     session.opposition.event.connect(record)
     session.debris.burst_started.connect(func(id: int, at: Vector3):
@@ -393,9 +398,23 @@ func finish() -> void:
     if captures:
         await capture()
     running = false
+    # Observe production combat -> target/sentry -> destruction -> sound, not
+    # synthetic calls to the sound API. Original gameplay assertions stay intact.
+    if mode in ["focused", "active"]:
+        var bursts := events.filter(func(e): return e.kind == "burst")
+        var attacks := audio_events.filter(func(e): return e.kind == "break" and not e.dropped)
+        check("combat_audio_real_breaks_exercised", bursts.size() >= 2)
+        check("combat_audio_once_per_same_tick_burst", attacks.size() == bursts.size() and bursts.all(func(b):
+            return attacks.filter(func(a): return a.id == b.id and a.tick == b.engine_tick).size() == 1))
+        var impacts := audio_events.filter(func(e): return e.kind == "impact" and not e.dropped)
+        check("combat_audio_ground_impacts_exercised", not impacts.is_empty())
+        check("combat_audio_impacts_same_tick_thresholded", impacts.all(func(a):
+            return impact_sources.any(func(i): return i.id == a.id and i.tick == a.tick and i.speed >= 1.0)))
+        check("combat_audio_eight_voice_bound", audio_events.all(func(a): return a.dropped or (a.active >= 1 and a.active <= 8)))
     var result := {"passed": failures.is_empty(), "scenario": mode, "checks": checks,
         "failures": failures, "ticks": tick, "health": session.player.health,
         "state": session.state, "events": events, "frames": frames,
+        "audio_events": audio_events, "impact_sources": impact_sources,
         "engine": Engine.get_version_info(), "renderer": RenderingServer.get_video_adapter_name(),
         "visual_assessment": "UNASSESSED: no available image perception; files not visually inspected"}
     FileAccess.open(out.path_join("results.json"), FileAccess.WRITE).store_string(JSON.stringify(result, "  "))
