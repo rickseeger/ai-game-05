@@ -1,0 +1,190 @@
+{
+  "source_commit": "eb46c211639144fd94b46f7d3637672e5c40f6f8",
+  "rules": {
+    "terminals": [
+      {
+        "generation": 1,
+        "state": 2,
+        "reason": "",
+        "active_seconds": 21.7833333333333,
+        "health": 100,
+        "shots": 19
+      },
+      {
+        "generation": 2,
+        "state": 3,
+        "reason": "death",
+        "active_seconds": 16.1,
+        "health": 0,
+        "shots": 6
+      }
+    ],
+    "resets": 2,
+    "destructions": 5,
+    "hits": 39,
+    "threat_attacks": 8,
+    "input_events": 2657,
+    "samples": 2779
+  },
+  "production_unchanged_except_opt_in_hook": {
+    "game/arena_camera.gd": "d75ecf5d6ed4d8308f07472d0c3640baa0dcbda877178ebd1fbb0c62d2493636",
+    "game/controls.tscn": "2fbdf146211eb7a353d40ea5b57679f4e8e0bdb44a1205bf8c1bd330a80973e2",
+    "game/destruction_demo.gd": "184d04f9f3d7ca48f9c29ca530d130d944de841fcc80a540d80583621a4ffea1",
+    "game/project.godot": "647ace047e85d13c6ff7abb7b012cc645d867e72340ac62b84c5a738abf04ae2",
+    "game/debris_block.gd": "eed370e566148d7f8c532d6b70e92ffc06889a21dfabd52a3824d3b7a8c2965a",
+    "game/opposition_session.gd": "22c438cab0800afbc5a61837b7abe24248a32ead063929252359852fe4185a15",
+    "game/combat.gd": "5daf4b1f4be47b595478972788e8343728265184b4d99a7bb54c5ef748a5a68d",
+    "game/arena_preview.gd": "1a11c0585464ec6a6ca3206dc10765bcc62fbad8a9b7b5f65a6a301746368052",
+    "game/player_input.gd": "0942be81f55a8d17c8871d2887ce93556ad24e15067ea494500967fbd001c86b",
+    "game/sound.gd": "d2455b28090fa86a3201586e34586aad37d6061b6f222803d138efeb61e55990",
+    "game/opposition.tscn": "573a008b5cfba0184e5bebce10f27ba515b84a037236480e569c49152ab93054",
+    "game/debris_surface.gdshader": "5493cce601e6e6b48d9909b360b32881688e691fc60967d2b6f7dab160d60912",
+    "game/destructible_target.gd": "60cd8225c794e1310ff8b273981270ca3e4831e1b5b7a02557b71775059b52d3",
+    "game/player.gd": "2a1d08a55ed31803437216b6178759c249d0899d02c9ca40d1c5d0daf767bd90",
+    "game/controls_session.gd": "106c5e0c61a65eb7629e8d8a6136e070db2a8b242f850d9450f69b43bd599872",
+    "game/arena.gd": "418782e4363c993ad14809a5477ded14643cf287c01f652a264aeb0721e1dddc",
+    "game/sentry.gd": "666b66971991122479434529cdd644d072e806311537b8335a9130e33d9e4226",
+    "game/destruction_demo.tscn": "a34bc6ae8e50e1f4559771495e07bcc37dfe2131a3d0f3fedd3d77d02fa7238e",
+    "game/arena_preview.tscn": "ab8b68a873e2328c55872ba0a5cfb16ad8a4c3cb2b2e644d3ebaba6e3b24c6f2",
+    "game/opposition.gd": "40b914e795d48375a198ce154a841aa7bc4744c5aa839316cc7ffc9a8e2508b8",
+    "game/destruction.gd": "4e380e6170a885c1c17e98359339631cb1f03c6f07486ece377a577a15fe4964"
+  },
+  "audio": {
+    "pylon_asset_correlations": [
+      {
+        "generation": 1,
+        "pylon": 1,
+        "frame": 414,
+        "normalized_correlation": 0.9676744718896807,
+        "delay_ms": 26.104166666666668
+      },
+      {
+        "generation": 1,
+        "pylon": 2,
+        "frame": 499,
+        "normalized_correlation": 0.9408908696264782,
+        "delay_ms": 28.104166666666668
+      },
+      {
+        "generation": 1,
+        "pylon": 3,
+        "frame": 703,
+        "normalized_correlation": 0.9682344797484876,
+        "delay_ms": 20.083333333333336
+      },
+      {
+        "generation": 2,
+        "pylon": 3,
+        "frame": 1539,
+        "normalized_correlation": 0.969352393964559,
+        "delay_ms": 28.083333333333332
+      },
+      {
+        "generation": 3,
+        "pylon": 3,
+        "frame": 2565,
+        "normalized_correlation": 0.9718338058688061,
+        "delay_ms": 26.75
+      }
+    ],
+    "sample_rate": 48000,
+    "channels": 2,
+    "seconds": 46.333333333333336,
+    "peak": 0.3066263198852539,
+    "rms": 0.014159127309256619,
+    "clipped_samples": 0,
+    "matched_sources": 301,
+    "onsets": [
+      {
+        "kind": "break",
+        "frame": 161,
+        "delay_ms": 29.5,
+        "peak": 0.26314353942871094
+      },
+      {
+        "kind": "break",
+        "frame": 202,
+        "delay_ms": 28.833333333333336,
+        "peak": 0.24104785919189453
+      },
+      {
+        "kind": "impact",
+        "frame": 457,
+        "delay_ms": 24.729166666666664,
+        "peak": 0.025293350219726562
+      },
+      {
+        "kind": "impact",
+        "frame": 759,
+        "delay_ms": 25.666666666666657,
+        "peak": 0.06251144409179688
+      },
+      {
+        "kind": "impact",
+        "frame": 957,
+        "delay_ms": 22.0625,
+        "peak": 0.034873008728027344
+      },
+      {
+        "kind": "break",
+        "frame": 1068,
+        "delay_ms": 27.479166666666664,
+        "peak": 0.3066263198852539
+      },
+      {
+        "kind": "impact",
+        "frame": 1123,
+        "delay_ms": 28.43749999999999,
+        "peak": 0.05274677276611328
+      },
+      {
+        "kind": "impact",
+        "frame": 1299,
+        "delay_ms": 28.499999999999996,
+        "peak": 0.033225059509277344
+      },
+      {
+        "kind": "break",
+        "frame": 1525,
+        "delay_ms": 26.791666666666657,
+        "peak": 0.2954721450805664
+      },
+      {
+        "kind": "impact",
+        "frame": 1793,
+        "delay_ms": 30.062499999999993,
+        "peak": 0.035025596618652344
+      },
+      {
+        "kind": "break",
+        "frame": 2551,
+        "delay_ms": 25.458333333333332,
+        "peak": 0.3030738830566406
+      }
+    ]
+  },
+  "performance": {
+    "fixed_fps": true,
+    "wall_seconds": 111.99584032400162,
+    "frame_interval_ms": {
+      "p50": 38.392,
+      "p95": 45.2036,
+      "p99": 78.09024000000001
+    },
+    "mean_observed_fps": 25.215746482396536,
+    "max_frame_ms": 96.174,
+    "note": "Offline fixed-FPS evidence is NOT real-time performance. Unfixed run measures this software-rendered host including observation overhead; not Rick hardware."
+  },
+  "rejected_mutations": [
+    "win_locked",
+    "missing_hit",
+    "missing_retry",
+    "reset_dirty",
+    "health_jump",
+    "no_early_entry",
+    "silent",
+    "delayed",
+    "clipped"
+  ],
+  "passed": true
+}

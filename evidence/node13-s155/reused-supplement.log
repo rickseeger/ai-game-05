@@ -1,0 +1,123 @@
+{
+  "source_commit": "eb46c211639144fd94b46f7d3637672e5c40f6f8",
+  "inputs_and_unlock": {
+    "held_input_fired_events": 31,
+    "swept_hit_segments": 39,
+    "remote_unlock_tick": 703,
+    "remote_unlock_playing_samples": 663,
+    "remote_unlock_active_wait_seconds": 11.049999999999999
+  },
+  "ground_impact_asset_matches": [
+    {
+      "frame": 457,
+      "body": 26,
+      "burst": 2,
+      "speed": 1.38330376148224,
+      "ground_ticks": [
+        455,
+        456,
+        457,
+        458,
+        459
+      ],
+      "variant": 1,
+      "pitch": 0.858331382274628,
+      "asset_sha256": "bf6934fd66a0be85569f0273ad7fd5d242eb0bf94e2c337606cc0829828135f9",
+      "normalized_correlation": 0.934648839342943,
+      "delay_ms": 36.4375
+    },
+    {
+      "frame": 759,
+      "body": 112,
+      "burst": 5,
+      "speed": 5.29299259185791,
+      "ground_ticks": [
+        760,
+        761,
+        762,
+        763
+      ],
+      "variant": 4,
+      "pitch": 0.934217393398285,
+      "asset_sha256": "542420e3989db201a45df0c72308683697c3e247a1aa0b3a06db39523310148a",
+      "normalized_correlation": 0.9292593010415301,
+      "delay_ms": 44.0625
+    },
+    {
+      "frame": 957,
+      "body": 128,
+      "burst": 5,
+      "speed": 1.37012708187103,
+      "ground_ticks": [
+        955,
+        956,
+        957,
+        958,
+        959
+      ],
+      "variant": 2,
+      "pitch": 0.945976614952087,
+      "asset_sha256": "4c26c5728f77c3c177a596d8992353d3849060d0e50d2a0f6758e883605af2a0",
+      "normalized_correlation": 0.9200257905866976,
+      "delay_ms": 26.125
+    },
+    {
+      "frame": 1123,
+      "body": 135,
+      "burst": 6,
+      "speed": 5.12965059280396,
+      "ground_ticks": [
+        1124
+      ],
+      "variant": 0,
+      "pitch": 0.966989040374756,
+      "asset_sha256": "e521e32886ec10c4edcbcf8ab42f756199beb99465b78d84cd3d4186aad26437",
+      "normalized_correlation": 0.94245774943638,
+      "delay_ms": 34.729166666666664
+    },
+    {
+      "frame": 1299,
+      "body": 144,
+      "burst": 6,
+      "speed": 1.45791172981262,
+      "ground_ticks": [
+        1297,
+        1298,
+        1299,
+        1300,
+        1301
+      ],
+      "variant": 0,
+      "pitch": 0.888062000274658,
+      "asset_sha256": "e521e32886ec10c4edcbcf8ab42f756199beb99465b78d84cd3d4186aad26437",
+      "normalized_correlation": 0.9408950048726308,
+      "delay_ms": 35.3125
+    },
+    {
+      "frame": 1793,
+      "body": 192,
+      "burst": 8,
+      "speed": 1.37012708187103,
+      "ground_ticks": [
+        1791,
+        1792,
+        1793,
+        1794,
+        1795
+      ],
+      "variant": 2,
+      "pitch": 0.956340253353119,
+      "asset_sha256": "4c26c5728f77c3c177a596d8992353d3849060d0e50d2a0f6758e883605af2a0",
+      "normalized_correlation": 0.9203209444095134,
+      "delay_ms": 34.083333333333336
+    }
+  ],
+  "rejected_mutations": [
+    "no_fire_press",
+    "remote_unlock_won",
+    "off_ray_hit",
+    "silent_impact_pcm",
+    "delayed_impact_pcm"
+  ],
+  "passed": true
+}

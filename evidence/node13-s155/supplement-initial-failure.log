@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/opt/g-harness/workspace/G12/node_13_step_155/repo/scripts/check_natural_resume.py", line 109, in <module>
+    if __name__ == "__main__": main()
+                               ^^^^^^
+  File "/opt/g-harness/workspace/G12/node_13_step_155/repo/scripts/check_natural_resume.py", line 92, in main
+    result = {"source_commit":meta["source_commit"], "inputs_and_unlock":input_and_unlock(r), "ground_impact_asset_matches":impact_pcm(r,pr,sr,x)}
+                                                                                                                            ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/g-harness/workspace/G12/node_13_step_155/repo/scripts/check_natural_resume.py", line 80, in impact_pcm
+    assert score[offset] > .8 and 0 <= offset/sr < .05, "actual impact waveform/time mismatch"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: actual impact waveform/time mismatch

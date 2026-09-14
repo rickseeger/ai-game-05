@@ -1,0 +1,19 @@
+{
+  "cwd": "/opt/g-harness/workspace/G12/node_13_step_155/repo",
+  "note": "Executed commands recorded after execution; capture launch.json files contain contemporaneous argument arrays, UTC, engine and source hashes, environment and actual wall duration. Supplemental check initially failed before its analysis-only correction; separate failure log and initial source retained.",
+  "successful_commands": [
+    ".tools/Godot_v4.5.1-stable_linux.x86_64 --headless --path game --editor --import --quit",
+    ".tools/validation-venv/bin/python scripts/check_natural.py .tools/controller-n13-movie --self-test",
+    ".tools/validation-venv/bin/python scripts/check_natural.py .tools/controller-n13-replay --self-test",
+    ".tools/validation-venv/bin/python scripts/check_natural.py .tools/controller-realtime-retry",
+    ".tools/validation-venv/bin/python scripts/check_natural.py .tools/controller-timeout-retry",
+    ".tools/validation-venv/bin/python scripts/run_natural.py .tools/s155-fresh-replay --movie --replay .tools/controller-n13-movie",
+    ".tools/validation-venv/bin/python scripts/check_natural.py .tools/s155-fresh-replay --self-test",
+    ".tools/validation-venv/bin/python scripts/compare_natural_replay.py .tools/controller-n13-movie .tools/s155-fresh-replay",
+    ".tools/validation-venv/bin/python scripts/check_natural_resume.py .tools/s155-fresh-replay --output evidence/node13-s155/fresh-supplement.json",
+    ".tools/validation-venv/bin/python scripts/check_natural_resume.py .tools/controller-n13-movie --output evidence/node13-s155/reused-supplement.json",
+    ".tools/validation-venv/bin/python scripts/check_session.py .tools/regression-reuse/evidence/n13-verified-rules-1 .tools/regression-reuse/evidence/n13-verified-rules-2",
+    ".tools/validation-venv/bin/python scripts/check_integration.py .tools/regression-reuse/evidence/n13-verified-integration",
+    "python3 scripts/archive_natural_resume.py"
+  ]
+}

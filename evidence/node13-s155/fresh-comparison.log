@@ -1,0 +1,1 @@
+{"passed": true, "compared_events": 114, "scope": "Independent fresh default-engine process; replays only recorded InputEvents and observation times, no bot navigation/aim decisions. Float tolerance 0.0001; diagnostic IDs/voice occupancy excluded."}

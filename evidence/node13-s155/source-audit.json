@@ -1,0 +1,24 @@
+{
+  "tested_source": "eb46c211639144fd94b46f7d3637672e5c40f6f8",
+  "remote_HEAD_before_and_after_execution": "eb46c211639144fd94b46f7d3637672e5c40f6f8",
+  "production_diff_against_tested_source": "",
+  "reviewed_sha256": {
+    "game/tests/natural_play.gd": "03d2be570fc92b34b7e424a3ad311672b7f2d186fb4e85c9c81be937095a99d4",
+    "game/opposition_session.gd": "0f1ed61940c2a209057f2c4eb14a11afa44151062afc2de23598dde4a8f71279",
+    "game/controls_session.gd": "106c5e0c61a65eb7629e8d8a6136e070db2a8b242f850d9450f69b43bd599872",
+    "game/player_input.gd": "0942be81f55a8d17c8871d2887ce93556ad24e15067ea494500967fbd001c86b",
+    "game/player.gd": "2a1d08a55ed31803437216b6178759c249d0899d02c9ca40d1c5d0daf767bd90",
+    "game/combat.gd": "5daf4b1f4be47b595478972788e8343728265184b4d99a7bb54c5ef748a5a68d",
+    "game/destructible_target.gd": "60cd8225c794e1310ff8b273981270ca3e4831e1b5b7a02557b71775059b52d3",
+    "game/destruction.gd": "4e380e6170a885c1c17e98359339631cb1f03c6f07486ece377a577a15fe4964",
+    "game/debris_block.gd": "eed370e566148d7f8c532d6b70e92ffc06889a21dfabd52a3824d3b7a8c2965a",
+    "game/sound.gd": "d2455b28090fa86a3201586e34586aad37d6061b6f222803d138efeb61e55990",
+    "scripts/run_natural.py": "b2f54ef58d887b38436fafced7d5bf83e230034060aab1b39e526480ad069c52",
+    "scripts/check_natural.py": "5672963b93c1340b65ce061fc51240a79806d3094bae71439e5d2a088bf9ccab",
+    "scripts/check_natural_resume.py": "8e074bea295244784a6a2a913e8c4125e35b7b7b6ea68f838330cd7ce70ee003"
+  },
+  "audit": "Read whole normal-input driver and production control/combat/session/destruction/audio paths. Automated production comparison against accepted 04832df removes only exact opt-in natural-test loader. No health/position/time/progress/outcome assignments, alternate scenes, forced gameplay APIs, disabled threats or seeded-state overrides in driver. Replay sends recorded InputEventKey/MouseMotion/MouseButton only; observations remain connected in a fresh default scene. Local at.y=0 and query creation operate on value/local objects. Assignment to s stores observer owner reference, not gameplay state. Attach connects read-only observers; process priority/mode modify observer only; end removes only its own closures and quits AFTER observed final playable retry. No production mutation to manufacture outcomes.",
+  "input_advantages": "Perfect world-coordinate aim and read-only threat/line-of-sight knowledge; fixed normal production seed 1201, not human performance or a seed sweep.",
+  "reset_scope": "Natural assertions cover health, spawn, session/opposition clocks, intact objectives and lock, player input/aim/cooldowns/shots, spawns, no old bolts/debris/render instances/voices/throttle entries, stable nodes/buses/settings; reused accepted dirty-reset fixtures additionally cover old objects/callbacks. Lifetime diagnostic ID counters are not claimed to rewind.",
+  "changes": "No gameplay or driver tuning. New independent Python supplemental assertions and evidence-only archival helper; imported preexisting driver UID is now made durable."
+}

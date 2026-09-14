@@ -1,0 +1,105 @@
+[
+  {
+    "frame": 457,
+    "body": 26,
+    "burst": 2,
+    "speed": 1.38330376148224,
+    "ground_ticks": [
+      455,
+      456,
+      457,
+      458,
+      459
+    ],
+    "variant": 1,
+    "pitch": 0.858331382274628,
+    "asset_sha256": "bf6934fd66a0be85569f0273ad7fd5d242eb0bf94e2c337606cc0829828135f9",
+    "normalized_correlation": 0.9410723725504282,
+    "delay_ms": 36.4375
+  },
+  {
+    "frame": 759,
+    "body": 112,
+    "burst": 5,
+    "speed": 5.29299259185791,
+    "ground_ticks": [
+      760,
+      761,
+      762,
+      763
+    ],
+    "variant": 4,
+    "pitch": 0.934217393398285,
+    "asset_sha256": "542420e3989db201a45df0c72308683697c3e247a1aa0b3a06db39523310148a",
+    "normalized_correlation": 0.8151816493732656,
+    "delay_ms": 25.4375
+  },
+  {
+    "frame": 957,
+    "body": 128,
+    "burst": 5,
+    "speed": 1.37012708187103,
+    "ground_ticks": [
+      955,
+      956,
+      957,
+      958,
+      959
+    ],
+    "variant": 2,
+    "pitch": 0.945976614952087,
+    "asset_sha256": "4c26c5728f77c3c177a596d8992353d3849060d0e50d2a0f6758e883605af2a0",
+    "normalized_correlation": 0.9443173262499812,
+    "delay_ms": 54.9375
+  },
+  {
+    "frame": 1123,
+    "body": 135,
+    "burst": 6,
+    "speed": 5.12965059280396,
+    "ground_ticks": [
+      1124
+    ],
+    "variant": 0,
+    "pitch": 0.966989040374756,
+    "asset_sha256": "e521e32886ec10c4edcbcf8ab42f756199beb99465b78d84cd3d4186aad26437",
+    "normalized_correlation": 0.7663212036464694,
+    "delay_ms": 34.708333333333336
+  },
+  {
+    "frame": 1299,
+    "body": 144,
+    "burst": 6,
+    "speed": 1.45791172981262,
+    "ground_ticks": [
+      1297,
+      1298,
+      1299,
+      1300,
+      1301
+    ],
+    "variant": 0,
+    "pitch": 0.888062000274658,
+    "asset_sha256": "e521e32886ec10c4edcbcf8ab42f756199beb99465b78d84cd3d4186aad26437",
+    "normalized_correlation": 0.9463404518390623,
+    "delay_ms": 35.3125
+  },
+  {
+    "frame": 1793,
+    "body": 192,
+    "burst": 8,
+    "speed": 1.37012708187103,
+    "ground_ticks": [
+      1791,
+      1792,
+      1793,
+      1794,
+      1795
+    ],
+    "variant": 2,
+    "pitch": 0.956340253353119,
+    "asset_sha256": "4c26c5728f77c3c177a596d8992353d3849060d0e50d2a0f6758e883605af2a0",
+    "normalized_correlation": 0.945292579471389,
+    "delay_ms": 62.56249999999999
+  }
+]

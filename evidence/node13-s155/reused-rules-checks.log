@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "runs": [
+    {
+      "combat_hits": 12,
+      "distinct_pylons": 3,
+      "same_tick_orders_checked": 2,
+      "same_tick_break_sounds": 3,
+      "engine_assertions": 55,
+      "source_commit": "31fe4e6db34dce8c9e94281b0f3bd5ee27b284b8",
+      "rendered_colors": 2365,
+      "rejected_mutations": [
+        "duplicate_progress",
+        "early_deadline",
+        "win_over_loss",
+        "early_terminal",
+        "late_audio",
+        "missing_hit"
+      ]
+    },
+    {
+      "combat_hits": 12,
+      "distinct_pylons": 3,
+      "same_tick_orders_checked": 2,
+      "same_tick_break_sounds": 3,
+      "engine_assertions": 55,
+      "source_commit": "31fe4e6db34dce8c9e94281b0f3bd5ee27b284b8",
+      "rendered_colors": 2365,
+      "rejected_mutations": [
+        "duplicate_progress",
+        "early_deadline",
+        "win_over_loss",
+        "early_terminal",
+        "late_audio",
+        "missing_hit"
+      ]
+    }
+  ],
+  "limits": "Fixtures only; pixel diversity is not visual assessment; Dummy audio is not listening."
+}

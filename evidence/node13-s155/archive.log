@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "archives": {
+    "controller-n13-movie.tar.gz": {
+      "sha256": "293326b5ff9e4e1e3141f2a46743a9af14d04fd3a1901638884170cdfac9b900",
+      "size": 25228339,
+      "members": 75
+    },
+    "controller-n13-replay.tar.gz": {
+      "sha256": "3c15266089b791238de2b7adfa9e335450b337bed4c23eafec68375b49a45e35",
+      "size": 25276507,
+      "members": 77
+    },
+    "controller-realtime-retry.tar.gz": {
+      "sha256": "095b855157bf72294bdb1fb4b57738ba8c125a935487f8ac9f08bb7556e2aef6",
+      "size": 8152927,
+      "members": 7
+    },
+    "controller-timeout-retry.tar.gz": {
+      "sha256": "7f45ad820a2166d1c2a2e1c4c11d863238bdd661845bf2b6111b1e0cc2e5196d",
+      "size": 13051672,
+      "members": 87
+    },
+    "controller-n13-timeout.tar.gz": {
+      "sha256": "8b93b1f3839e06465a5d05c9e7b186e203558b592e4ee8ce94530b0a8471eb83",
+      "size": 7000820,
+      "members": 50
+    },
+    "controller-n13-verification.tar.gz": {
+      "sha256": "f293f991bea5c8773ed593e7f0fc509aca216f2009481df3f42cb2d83f73f6a8",
+      "size": 5949,
+      "members": 7
+    },
+    "s155-fresh-replay.tar.gz": {
+      "sha256": "dad6b2ba139a17b93882b4563ccd9906f4347af6fee194d5c7110da2be0caba2",
+      "size": 25276997,
+      "members": 77
+    }
+  },
+  "members": 380,
+  "previous_worker_members_verified": 456,
+  "excluded": "Disposable shader caches only; MovieWriter already removed redundant AVI after decoding and recording its SHA256. Incomplete controller timeout retained as failure evidence, never counted as a passing run."
+}

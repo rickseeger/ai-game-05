@@ -1,0 +1,15 @@
+{
+  "physics_tracks": 96,
+  "physics_samples": 100896,
+  "sleeping": 96,
+  "gravity_range": [
+    -10.414667129516442,
+    -10.077438354492614
+  ],
+  "decoded_frames": 2780,
+  "png_count": 64,
+  "max_mae": 1.2668460648148148,
+  "orange_hits": 3180,
+  "pcm_sha256": "d074d586793faaea844f8a4696cbc843dffab2db3438c6f3f37323e23b679813",
+  "preview_sha256": "713cd16faaa7e4b99b92b045501f4d89dd10b084f447f477e36134419c51027a"
+}
