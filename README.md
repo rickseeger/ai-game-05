@@ -74,3 +74,13 @@ target. Neither is relabelled a pass on the strength of automated physics tests.
 
     python3 scripts/run_destruction.py local-destruction
     python3 scripts/check_destruction.py evidence/destruction/local-destruction --self-test
+
+## Destruction audio integration (node 5)
+
+The destruction fixture and opposition slice now route real breaks/rigid-body
+impacts through an eight-voice spatial sound service with generated MIT assets,
+limiter, persistent Master/SFX controls and M mute. See docs/audio-validation.md
+for real execution, captures, independent checks and explicit listening limits.
+The controls-only default scene and full-session objectives are unchanged.
+
+    python3 scripts/run_audio.py local-audio

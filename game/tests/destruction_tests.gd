@@ -257,4 +257,9 @@ func finish() -> void:
         "visual_assessment": "UNASSESSED: rendered files are not perception", "no_captures": no_capture, "performance_only": performance_only}
     FileAccess.open(out.path_join("results.json"), FileAccess.WRITE).store_string(JSON.stringify(report, "  "))
     print("DESTRUCTION_TEST_DONE checks=", checks.size(), " failures=", failures.size(), " ticks=", tick)
+    # Audio integration owns asynchronous mixer references. Drain stop fades before
+    # immediate test-process teardown; assertions/physics workload above unchanged.
+    if is_instance_valid(session.get("sound")):
+        session.sound.clear()
+        await get_tree().create_timer(0.10, true).timeout
     get_tree().quit(0 if failures.is_empty() else 1)

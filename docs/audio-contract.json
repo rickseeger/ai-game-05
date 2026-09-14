@@ -1,0 +1,7 @@
+{
+  "tree_id": "G12",
+  "node_id": 5,
+  "objective": "Make destruction and debris impacts sound forceful and synchronized in the actual running game.",
+  "completion_contract": "Prerequisite: accepted destruction events and physics implementation. Outcome: an integrated audio system gives target breakage a strong attack and weight, followed by varied debris impacts tied to actual collisions; sound remains clear under repeated destruction without clipping or uncontrolled voice accumulation. Include usable volume/mute controls and properly licensed or generated assets. Evidence: source and asset provenance, focused tests for event routing, impact thresholds, variation, and voice limits, plus captured runtime audio synchronized with a destruction recording. Validation: exercise real destruction and ground impacts; inspect the captured signal for timing and clipping and listen through an available playback path. A WAV file existing or an audio API call succeeding is not proof of satisfying audible output; explicitly report any listening limitation.",
+  "execution_scope": "Temporary worker only; no durable node/root acceptance or tree mutation. Subjective auditory and visual judgment handed to human final playtest."
+}

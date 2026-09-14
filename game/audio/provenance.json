@@ -1,0 +1,68 @@
+{
+  "license": "MIT (../../LICENSE)",
+  "author": "the gardener <root@g.seeger.net>",
+  "source": "scripts/generate_sound_assets.py",
+  "inputs": "Only deterministic PRNG noise and mathematical oscillators; no external samples or AI-generated recordings",
+  "assets": {
+    "break_0.wav": {
+      "sha256": "740cfb53222894eee784d2a6f7d3cbf0a9f1345539daeefaa9d582c6f95f1e3b",
+      "duration_s": 0.62,
+      "peak": 0.92,
+      "seed": 120141
+    },
+    "break_1.wav": {
+      "sha256": "56e31b021c97efbf1a1e436601acb90a96003c9ac40917c367222f9ed161a6fa",
+      "duration_s": 0.62,
+      "peak": 0.92,
+      "seed": 120142
+    },
+    "break_2.wav": {
+      "sha256": "652381586d18d15c401296acf91925b7dfba18c7741d41e9bef3b7756d603572",
+      "duration_s": 0.62,
+      "peak": 0.92,
+      "seed": 120143
+    },
+    "break_3.wav": {
+      "sha256": "c8d0cb9c1904ad73ce16cd53fae234a5a19faacb8dc04cd39eec3e8305d028bf",
+      "duration_s": 0.62,
+      "peak": 0.92,
+      "seed": 120144
+    },
+    "impact_0.wav": {
+      "sha256": "e521e32886ec10c4edcbcf8ab42f756199beb99465b78d84cd3d4186aad26437",
+      "duration_s": 0.19,
+      "peak": 0.92,
+      "seed": 120241
+    },
+    "impact_1.wav": {
+      "sha256": "bf6934fd66a0be85569f0273ad7fd5d242eb0bf94e2c337606cc0829828135f9",
+      "duration_s": 0.19,
+      "peak": 0.92,
+      "seed": 120242
+    },
+    "impact_2.wav": {
+      "sha256": "4c26c5728f77c3c177a596d8992353d3849060d0e50d2a0f6758e883605af2a0",
+      "duration_s": 0.19,
+      "peak": 0.92,
+      "seed": 120243
+    },
+    "impact_3.wav": {
+      "sha256": "ddfe13478e22b842dc84447e35773e837ba432925a9d9a7ffb6dc69cddd05ba9",
+      "duration_s": 0.19,
+      "peak": 0.92,
+      "seed": 120244
+    },
+    "impact_4.wav": {
+      "sha256": "542420e3989db201a45df0c72308683697c3e247a1aa0b3a06db39523310148a",
+      "duration_s": 0.19,
+      "peak": 0.92,
+      "seed": 120245
+    },
+    "impact_5.wav": {
+      "sha256": "ff313a848534c15aedb86e71d7fcafe526f2f58bac1800d9414dd4d3e4cbb5ee",
+      "duration_s": 0.19,
+      "peak": 0.92,
+      "seed": 120246
+    }
+  }
+}
