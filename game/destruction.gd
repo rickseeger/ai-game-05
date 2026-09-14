@@ -121,6 +121,8 @@ func clear() -> void:
     for body in bodies.duplicate():
         retire(body, "restart")
     last_impact_tick = -100
+    if is_instance_valid(batch):
+        batch.multimesh.visible_instance_count = 0
 
 func _physics_process(dt: float) -> void:
     tick += 1

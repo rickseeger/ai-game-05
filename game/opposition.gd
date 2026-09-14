@@ -24,6 +24,7 @@ func start(seed_value: int) -> void:
     rng.seed = seed_value
     elapsed = 0.0
     next_spawn = SPAWN_INTERVAL
+    next_entity = 100
     warn_spawn()
     warn_spawn()
 

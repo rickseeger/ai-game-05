@@ -1,6 +1,5 @@
 extends "res://controls_session.gd"
-## Production rules on the accepted opposition slice; default launch/HUD polish
-## are separate integration work. Resolve only AFTER movement and combat damage.
+## Complete production session. Resolve only AFTER movement and combat damage.
 signal objectives_changed(remaining: int)
 const REQUIRED_PYLONS := 3
 const DEADLINE := 150.0
@@ -18,6 +17,7 @@ var debris: Node3D
 var combat: Node3D
 var opposition: Node3D
 var targets: Array[Node3D] = []
+var hud_panel: PanelContainer
 
 func _ready() -> void:
     super._ready()
@@ -29,7 +29,6 @@ func _ready() -> void:
     add_child(sound)
     sound.bind(debris)
     sound.gameplay_input = controls
-    player_replaced.connect(func(_player): sound.clear())
     combat = Combat.new()
     add_child(combat)
     opposition = Opposition.new()
@@ -37,7 +36,13 @@ func _ready() -> void:
     opposition.combat = combat
     opposition.destruction = debris
     add_child(opposition)
+    build_session_hud()
     rebuild_combat()
+    refresh_hud()
+    if "--integration-test" in OS.get_cmdline_user_args():
+        var tests = load("res://tests/integration_tests.gd").new()
+        add_child(tests)
+        tests.call_deferred("run", self)
     if "--opposition-test" in OS.get_cmdline_user_args():
         var tests = load("res://tests/opposition_tests.gd").new()
         add_child(tests)
@@ -67,10 +72,11 @@ func rebuild_combat() -> void:
     # Do not finish from died: all bolts in this physics tick must resolve first.
     opposition.player = player
     opposition.start(run_seed)
+    arena.set_extraction_open(false)
+    refresh_hud()
     objectives_changed.emit(remaining_pylons())
 
-func start(seed_value: int) -> void:
-    super.start(seed_value)
+func rebuild_run() -> void:
     if is_instance_valid(opposition):
         rebuild_combat()
 
@@ -79,11 +85,53 @@ func on_fired(origin: Vector3, direction: Vector3) -> void:
     if is_instance_valid(combat):
         combat.spawn_bolt(player, origin, direction, player.BOLT_DAMAGE)
 
+func build_session_hud() -> void:
+    # Reuse the inherited labels and terminal panel; no second HUD state model.
+    var style := StyleBoxFlat.new()
+    style.bg_color = Color("09131eee")
+    for side in [SIDE_LEFT, SIDE_TOP, SIDE_RIGHT, SIDE_BOTTOM]:
+        style.set_content_margin(side, 10)
+    hud_panel = PanelContainer.new()
+    hud.get_parent().add_child(hud_panel)
+    hud.reparent(hud_panel)
+    hud_panel.add_theme_stylebox_override("panel", style)
+    hud_panel.set_anchors_and_offsets_preset(Control.PRESET_TOP_WIDE)
+    hud_panel.offset_left = 12
+    hud_panel.offset_right = -12
+    hud_panel.offset_top = 10
+    hud_panel.offset_bottom = 118
+    hud_panel.mouse_filter = Control.MOUSE_FILTER_IGNORE
+    hud.add_theme_color_override("font_color", Color("e1f5ff"))
+    hud.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+    hud.mouse_filter = Control.MOUSE_FILTER_IGNORE
+    panel.add_theme_stylebox_override("panel", style)
+    panel.set_anchors_and_offsets_preset(Control.PRESET_CENTER)
+    panel.offset_left = -330
+    panel.offset_right = 330
+    panel.offset_top = -125
+    panel.offset_bottom = 125
+    panel.mouse_filter = Control.MOUSE_FILTER_IGNORE
+    message.mouse_filter = Control.MOUSE_FILTER_IGNORE
+    message.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+    message.add_theme_color_override("font_color", Color("e1f5ff"))
+
 func refresh_hud() -> void:
-    super.refresh_hud()
-    hud.text = "BREAKWATER / SESSION RULES SLICE — status UI pending | destruction audio enabled\nWASD move | Mouse aim | Hold LMB fire | Space dash | Esc pause\nHealth: %d / 100   Dash: %s   Sentries: %d\nRed line: locked aim (0.6s) | Red bolt: 15 damage | Sentry: two hits" % [
-        player.health, "READY" if player.dash_remaining <= 0.00001 else "%.1fs" % player.dash_remaining,
+    if not is_instance_valid(player):
+        return
+    var seconds_left := ceili(maxf(0.0, DEADLINE - elapsed))
+    var clock := "%d:%02d" % [seconds_left / 60, seconds_left % 60]
+    var extraction := "OPEN - reach the north pad" if extraction_unlocked() else "LOCKED - destroy all pylons"
+    hud.text = "BREAKWATER | Destroy THREE pylons, then reach EXTRACT alive before time runs out.\nPylons: %d / 3 destroyed | Extraction: %s\nTime: %s | Health: %d / 100 | Dash: %s | Sentries: %d\nWASD move | Mouse aim | Hold LMB fire | Space dash | Esc pause | M mute" % [
+        destroyed_pylons.size(), extraction, clock, player.health,
+        "READY" if player.dash_remaining <= 0.00001 else "%.1fs" % player.dash_remaining,
         opposition.sentries.size() if is_instance_valid(opposition) else 0]
+    panel.visible = state != State.PLAYING
+    var title := "PAUSED - Esc to resume"
+    if state == State.WON:
+        title = "VICTORY - extracted alive!\nR to retry"
+    elif state == State.LOST:
+        title = "DEFEAT - " + ("time ran out" if loss_reason == "timeout" else "health depleted") + "\nR to retry"
+    message.text = title + "\n\nDestroy three pylons, then enter the north EXTRACT pad.\nWASD move | Mouse aim | Hold LMB fire\nSpace dash (2s cooldown) | Esc pause/resume\nRelease and re-press controls after resume/retry."
 
 func remaining_pylons() -> int:
     return maxi(0, REQUIRED_PYLONS - destroyed_pylons.size())
@@ -99,6 +147,8 @@ func on_target_destroyed(id: int, _at: Transform3D, kind: StringName, _seed: int
     for target in targets:
         if target.entity_id == id and target.is_destroyed:
             destroyed_pylons[id] = true
+            arena.set_extraction_open(extraction_unlocked())
+            refresh_hud()
             objectives_changed.emit(remaining_pylons())
             return
 

@@ -71,6 +71,8 @@ func start(seed_value: int) -> void:
     get_tree().paused = false
     run_seed = seed_value
     controls.set_enabled(true)
+    controls.pointer = Vector2.ZERO
+    controls.pointer_known = false
     if is_instance_valid(player):
         remove_child(player)
         player.free()
@@ -85,9 +87,14 @@ func start(seed_value: int) -> void:
     player.fired.connect(on_fired)
     state = State.PLAYING
     Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
+    rebuild_run()
     player_replaced.emit(player)
     state_changed.emit(state)
     refresh_hud()
+
+func rebuild_run() -> void:
+    # Extension point inside the ONE restart boundary, before observers see PLAYING.
+    pass
 
 func on_fired(_origin: Vector3, _direction: Vector3) -> void:
     shots += 1

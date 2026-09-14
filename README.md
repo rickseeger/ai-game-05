@@ -1,9 +1,23 @@
-# G12: Breakwater — design and Linux technology probe
+# G12: Breakwater — Linux session integration
 
-This repository contains a node-1 technology probe, node-2 arena/camera slice,
-and node-3 player controls slice,
-NOT a playable game or a completed mission.
-The repository was empty when cloned from the persisted G12 configuration.
+Default launch now runs the complete production session: destroy three pylons,
+then reach north EXTRACT alive before the 150-second active-play deadline.
+WASD move, mouse aim, hold LMB fire, Space dash, Esc pause/resume; R retries
+only after victory/defeat. Master/SFX sliders, M mute, -/= SFX volume.
+
+    ./scripts/setup.sh
+    .tools/Godot_v4.5.1-stable_linux.x86_64 --headless --path game --editor --import --quit
+    .tools/Godot_v4.5.1-stable_linux.x86_64 --path game
+
+The accepted combat, physical destruction, sound and opposition are integrated;
+this is NOT release packaging or a completed mission. Node 12 tests reset/HUD
+integration with explicitly forced terminal fixtures, not natural full-session
+victories. Natural victory/defeat/replay and tuning remain node 13; subjective
+readability, sound satisfaction and fun remain Rick's node-9 playtest.
+See docs/session-integration.md for reproduction and limitations.
+
+The following probe/slice sections are historical validation entry points, NOT
+the default game. They remain available for focused subsystem regressions.
 
 - docs/design.md: bounded loop, destruction/audio specification, interfaces and order.
 - docs/acceptance.md: probe results versus later release gates.
@@ -49,10 +63,10 @@ Use a new output name each time. Seven PNGs, engine log, launch metadata and
 
 ## Player controls slice (node 3)
 
-    .tools/Godot_v4.5.1-stable_linux.x86_64 --path game --rendering-method gl_compatibility
+    .tools/Godot_v4.5.1-stable_linux.x86_64 --path game res://controls.tscn --rendering-method gl_compatibility
 
 WASD moves, mouse aims, hold LMB emits fire commands, Space dashes, Esc pauses.
-R restarts only after terminal state (natural win/loss rules are not implemented).
+In this historical slice only, R tests terminal reset without natural win/loss rules.
 No projectiles/damage, destruction, sound or opposition are presented as complete.
 See docs/controls-validation.md for interfaces, actual input-driven tests/traces,
 exact reproduction commands and limitations. Node 2 visual assessment remains
@@ -81,6 +95,6 @@ The destruction fixture and opposition slice now route real breaks/rigid-body
 impacts through an eight-voice spatial sound service with generated MIT assets,
 limiter, persistent Master/SFX controls and M mute. See docs/audio-validation.md
 for real execution, captures, independent checks and explicit listening limits.
-The controls-only default scene and full-session objectives are unchanged.
+The default game now includes this service; this command still runs the audio fixture.
 
     python3 scripts/run_audio.py local-audio

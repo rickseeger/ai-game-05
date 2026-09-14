@@ -9,6 +9,8 @@ var enemy_spawn_points: Array[Vector3] = []
 var exit_transform := Transform3D(Basis.IDENTITY, Vector3(0, 0, -10))
 var ground: StaticBody3D
 var geometry: Node3D
+var extraction_marker: Node3D
+var extraction_label: Label3D
 
 func _ready() -> void:
     build(1201)
@@ -44,12 +46,24 @@ func build(_seed: int = 1201) -> Dictionary:
         var p := pylon_spawns[i].origin
         ring(geometry, p + Vector3.UP * 0.025, 1.35, Color("eeb358"))
         label(geometry, "P%d" % (i + 1), p + Vector3(2.0, 0.15, 0), Color("ffd88b"))
-    ring(geometry, exit_transform.origin + Vector3.UP * 0.025, 1.5, Color("55e0b5"))
-    box(geometry, Vector3(1.6, 0.025, 0.18), Vector3(0, 0.03, -10), Color("55e0b5"))
-    box(geometry, Vector3(0.18, 0.025, 1.6), Vector3(0, 0.03, -10), Color("55e0b5"))
-    label(geometry, "EXTRACT", Vector3(-3.6, 0.15, -10), Color("86ffe0"))
+    extraction_marker = Node3D.new()
+    geometry.add_child(extraction_marker)
+    ring(extraction_marker, exit_transform.origin + Vector3.UP * 0.025, 1.5, Color("55e0b5"))
+    box(extraction_marker, Vector3(1.6, 0.025, 0.18), Vector3(0, 0.03, -10), Color("55e0b5"))
+    box(extraction_marker, Vector3(0.18, 0.025, 1.6), Vector3(0, 0.03, -10), Color("55e0b5"))
+    label(extraction_marker, "EXTRACT", Vector3(-3.6, 0.15, -10), Color("86ffe0"))
+    extraction_label = extraction_marker.get_child(extraction_marker.get_child_count() - 1)
     return {"player_spawn": player_spawn, "pylon_spawns": pylon_spawns.duplicate(),
         "enemy_spawn_points": enemy_spawn_points.duplicate(), "exit_transform": exit_transform}
+
+func set_extraction_open(value: bool) -> void:
+    # Presentation only: the session remains the sole authority for eligibility.
+    var color := Color("55e0b5") if value else Color("eeb358")
+    for child in extraction_marker.get_children():
+        if child is MeshInstance3D or child is MultiMeshInstance3D:
+            child.material_override.albedo_color = color
+    extraction_label.text = "EXTRACT [OPEN]" if value else "EXTRACT [LOCKED]"
+    extraction_label.modulate = Color("86ffe0") if value else Color("ffd88b")
 
 func solid_box(id: String, size: Vector3, at: Vector3, color: Color) -> StaticBody3D:
     var body := StaticBody3D.new()
