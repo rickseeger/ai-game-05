@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Serial, fresh-prefix engine launches and independent checks; no mission writes."""
-import argparse, datetime, json, subprocess, sys
+import argparse, datetime, json, os, subprocess, sys
 from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 p = argparse.ArgumentParser()
@@ -10,15 +10,19 @@ assert Path(a.prefix).name == a.prefix and a.prefix not in (".", "..")
 out = ROOT / "evidence" / (a.prefix + "-verification")
 out.mkdir(exist_ok=False)
 commands = []
-def run(arguments, filename):
-    cmd = [sys.executable] + arguments
+def run(arguments, filename, python=True):
+    cmd = ([sys.executable] if python else []) + arguments
     utc = datetime.datetime.now(datetime.timezone.utc).isoformat()
-    r = subprocess.run(cmd, cwd=ROOT, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
+    r = subprocess.run(cmd, cwd=ROOT, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True, timeout=600)
     (out/filename).write_text(r.stdout)
     commands.append({"command":cmd, "utc_started":utc, "returncode":r.returncode, "output":filename})
     (out/"commands.json").write_text(json.dumps(commands, indent=2)+"\n")
     print(filename, r.returncode, flush=True)
     assert r.returncode == 0, r.stdout
+# A fresh clone has WAV import descriptors but no generated sample cache.
+# Asset preparation only; every gameplay scenario below still uses rendered X11.
+godot = os.environ.get("GODOT_BIN", str(ROOT / ".tools/Godot_v4.5.1-stable_linux.x86_64"))
+run([godot, "--headless", "--path", "game", "--editor", "--import", "--quit"], "import.log", python=False)
 for mode in ("focused", "inactive", "active"):
     run(["scripts/run_opposition.py", a.prefix+"-"+mode, "--scenario", mode] +
         (["--capture"] if mode != "focused" else []), mode+".log")
