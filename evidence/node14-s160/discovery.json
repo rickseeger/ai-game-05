@@ -1,0 +1,41 @@
+{
+  "checked_at": "2026-09-14T05:51:34.523048+00:00",
+  "nodes": [
+    {
+      "tree_id": "G12",
+      "node_id": 8,
+      "parent_id": 0,
+      "objective": "Produce and verify a reproducible Linux-runnable release containing the integrated game and its required assets.",
+      "completion_contract": "Prerequisite: accepted complete game loop. Outcome: a Linux artifact with an explicit supported architecture/runtime, an accessible launch command, controls and troubleshooting instructions, source, tests, and all required assets; no Windows work. Evidence: artifact absolute path or URL, source revision, dependency/build instructions, license information, and clean-directory launch and test logs. Validation: build or assemble the release, extract or install it into a fresh directory, and actually launch that exact artifact through rendering, sound initialization, active gameplay, destruction, and restart. Disclose required system dependencies and any unverified portability limits.",
+      "state": "completed",
+      "state_memo": "completed: contract validated against referenced artifacts",
+      "artifact_refs": "[\"G12/node8/repo/docs/linux-release.txt\",\"G12/node8/REPORT.txt\",\"G12/node8/SHA256SUMS\",\"G12/node8/audit.json\",\"G12/node8/audit_release.py\",\"G12/node8/capture-index.json\",\"G12/node8/discovery.json\",\"G12/node8/fresh-validation.tar.gz\",\"G12/handoff_7fb15bdf.json\",\"G12/node8/metrics.json\",\"G12/node8/package_evidence.py\",\"G12/push-verification_352412cb.json\",\"G12/node8/rebuild.log\",\"G12/node8/validation-run.log\",\"G12/node8/verification.json\",\"G12/worker_result_f111649cd0cf4fcb9994f401e74ec24a.json\",\"G12/task_packet_3ca07631d78b485d87d1992050cf06bd.json\"]",
+      "created_at": "2026-09-13T19:39:29.398430+00:00",
+      "updated_at": "2026-09-14T05:49:27.431503+00:00"
+    },
+    {
+      "tree_id": "G12",
+      "node_id": 14,
+      "parent_id": 9,
+      "objective": "Prepare and verify Rick's Linux playtest handoff for the accepted Breakwater release without changing gameplay.",
+      "completion_contract": "Outcome: Rick has a verified accessible download location and concise launch/playtest instructions for the exact accepted release. Use /opt/g-harness/workspace/G12/node_8_step_158/dist/breakwater-linux-x86_64.tar.gz, source revision 42e3bd348b22590ba504ef5ebcb55dbd8443e652, expected SHA256 1fc3c4121aed811406a1e34475f5d8abf99850c0b7cc9cde41c91f1f1373e6cf. Inspect existing authorized delivery infrastructure and repository rickseeger/ai-game-05; do not require Rick to run server commands. Evidence: exact download URL or verified existing delivery mechanism, checksum, and a handoff document covering extraction, ./launch.sh, controls, destroy-three-pylons-then-extract goal, dependencies, and accepted automated-test evidence references. Validation: retrieve the delivered archive through that mechanism and verify its checksum. Disclose that only Linux x86_64/glibc with X11/OpenGL was server-tested, desktop speakers and Rick's hardware remain unverified, and mixer PCM checks are not subjective listening. If delivery requires unavailable access or a human decision, report the precise blocker rather than claiming delivery.",
+      "state": "open",
+      "state_memo": "created as open",
+      "artifact_refs": "[]",
+      "created_at": "2026-09-14T05:50:05.072364+00:00",
+      "updated_at": "2026-09-14T05:50:05.072364+00:00"
+    }
+  ],
+  "repository": {
+    "full_name": "rickseeger/ai-game-05",
+    "private": false,
+    "has_pages": false,
+    "releases_count": 0
+  },
+  "github_auth_status": "You are not logged into any GitHub hosts. To log in, run: gh auth login\n",
+  "listeners": "State  Recv-Q Send-Q Local Address:Port Peer Address:PortProcess                                                \nLISTEN 0      4096         0.0.0.0:22        0.0.0.0:*    users:((\"sshd\",pid=950,fd=3),(\"systemd\",pid=1,fd=112))\nLISTEN 0      4096   127.0.0.53%lo:53        0.0.0.0:*    users:((\"systemd-resolve\",pid=495,fd=17))             \nLISTEN 0      4096      127.0.0.54:53        0.0.0.0:*    users:((\"systemd-resolve\",pid=495,fd=19))             \nLISTEN 0      4096            [::]:22           [::]:*    users:((\"sshd\",pid=950,fd=4),(\"systemd\",pid=1,fd=113))\n",
+  "delivery_choice": "Existing public designated repository via authorized SSH push, then immutable anonymous raw HTTPS URL. No configured GitHub API login, web listener or Pages. Archive is below GitHub 100 MiB file limit; no rebuild, gameplay change, server or credentials provisioned.",
+  "original_artifact": "/opt/g-harness/workspace/G12/node_8_step_158/dist/breakwater-linux-x86_64.tar.gz",
+  "sha256": "1fc3c4121aed811406a1e34475f5d8abf99850c0b7cc9cde41c91f1f1373e6cf",
+  "bytes": 70613010
+}

@@ -1,0 +1,150 @@
+{
+  "checksum.log": {
+    "bytes": 35,
+    "sha256": "227f07c2e7512d0cd2a96c94f85812517543b4060d821fd4072683211089fde1"
+  },
+  "extraction.log": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "integration/death-fixture.png": {
+    "bytes": 100813,
+    "sha256": "b010428328bb6d66562e2cb8206107cf0143180b135b6f7ab3a3da5f1f2b5327"
+  },
+  "integration/default-playing.png": {
+    "bytes": 80345,
+    "sha256": "e92ae043f790b450de80bb3b1f1a78eaee5e2321ad69752eced8feb0873f4980"
+  },
+  "integration/engine.log": {
+    "bytes": 10871,
+    "sha256": "a02fd3efb3e393c8e90fea7c9f886868f7e0a278e8d3ab07f5c27e926ddf6e67"
+  },
+  "integration/extraction-locked.png": {
+    "bytes": 85328,
+    "sha256": "45744d9aac07c592614433549be2c69a4a9ed72c51d8767bc547a32ee0d3d35b"
+  },
+  "integration/extraction-open-fixture.png": {
+    "bytes": 98404,
+    "sha256": "df6ad8bba63d5d0f734b1afda64c911d2a7bd82c9dd65520836d671052556bfe"
+  },
+  "integration/final-retry-paused.png": {
+    "bytes": 103853,
+    "sha256": "dc323846f4cbd0e43b1e5773ca25f5c48caceabcf780581b9927b74b2b9211ad"
+  },
+  "integration/launch.json": {
+    "bytes": 10056,
+    "sha256": "75ce00f1829734053ce265899aaa42ad64aaf0cd8ffc51b5035b0c7a1d33caa4"
+  },
+  "integration/locked-marker-hidden.png": {
+    "bytes": 82323,
+    "sha256": "4c580c5be011a7286e97c602ca373c149a1cd709e27cb7ebe86e86fb21c70099"
+  },
+  "integration/locked-marker-restored.png": {
+    "bytes": 85328,
+    "sha256": "45744d9aac07c592614433549be2c69a4a9ed72c51d8767bc547a32ee0d3d35b"
+  },
+  "integration/paused-4x3.png": {
+    "bytes": 95703,
+    "sha256": "0a4e073f8f49988221791125b31d545e63ac27a422ea69e8d6b9ba23af17170d"
+  },
+  "integration/paused-hud-hidden.png": {
+    "bytes": 76943,
+    "sha256": "e73f002380d1ce2c42bbe98a11e9c5a05692206a08a5b3f7045ca4fc4f38b81b"
+  },
+  "integration/paused-panel-hidden.png": {
+    "bytes": 85328,
+    "sha256": "45744d9aac07c592614433549be2c69a4a9ed72c51d8767bc547a32ee0d3d35b"
+  },
+  "integration/paused-restored.png": {
+    "bytes": 106017,
+    "sha256": "879caeaef80e3eeb3def0daa66036deba61cb6b25ffbab20ae3373bac8d09bda"
+  },
+  "integration/paused-visible.png": {
+    "bytes": 106017,
+    "sha256": "879caeaef80e3eeb3def0daa66036deba61cb6b25ffbab20ae3373bac8d09bda"
+  },
+  "integration/results.json": {
+    "bytes": 136349,
+    "sha256": "c4577d71d48e342f7fb50b7f720a205d80798a4dffb70568b226822c87100a7e"
+  },
+  "integration/timeout-fixture.png": {
+    "bytes": 100972,
+    "sha256": "c4d030f0cd44e65c569fa0677d2560305fc3ee72da13f0bbb334dba209936165"
+  },
+  "integration/userdata/godot/app_userdata/Breakwater/logs/godot.log": {
+    "bytes": 10869,
+    "sha256": "116ec313288df4124f77bc442653aabd06e12ae65562f464a1c236e1266642ad"
+  },
+  "integration/userdata/godot/app_userdata/Breakwater/shader_cache/CanvasShaderGLES3/d6f43d7e0fbc440290f0c3a77cf0f40066898da0fbdcc46f8b51b2aedaf2b191/6bb7c9a2fd1c4a8fa77cb96555b9b4a720209981.cache": {
+    "bytes": 35574,
+    "sha256": "588368477c42c3000febac8128c263ea4a98abb1efb1294d127db78d74c59412"
+  },
+  "integration/userdata/godot/app_userdata/Breakwater/shader_cache/CopyShaderGLES3/9e43c80d5a04be55b43ab2338e8da8f5b0f20618a3e869928272b954afcff6fe/6bb7c9a2fd1c4a8fa77cb96555b9b4a720209981.cache": {
+    "bytes": 72198,
+    "sha256": "001641141dd1c35eb9b3def10944131b55cacbd5e204a005ac5531133e9351ee"
+  },
+  "integration/userdata/godot/app_userdata/Breakwater/shader_cache/FeedShaderGLES3/37a956d1fa2424db9cc4da95128f7750da7138107b45bfd8dc4c00b472c38603/6bb7c9a2fd1c4a8fa77cb96555b9b4a720209981.cache": {
+    "bytes": 5105,
+    "sha256": "ec4be5d51aee6356e774044b5de7dc72d37c4a19db6f29744660152be9e6a207"
+  },
+  "integration/userdata/godot/app_userdata/Breakwater/shader_cache/PostShaderGLES3/907f5f5388055d7fedef256127241995e5d797ba6b0616cba4cc6040697a9c1d/6bb7c9a2fd1c4a8fa77cb96555b9b4a720209981.cache": {
+    "bytes": 10797,
+    "sha256": "cceb0311d601f95de63a68dc029ff386d12e4faee86a9fa38e0d87f38a4e588a"
+  },
+  "integration/userdata/godot/app_userdata/Breakwater/shader_cache/SceneShaderGLES3/926d7ef5f331286ebab4e4c2e582064fbbc800752e71ebc08c6a8145043adbb2/4505b6017dc502b9cb1ea9be38a366bfd444849c.cache": {
+    "bytes": 713108,
+    "sha256": "c4e0f234a172065e4a3dde33d0f61666ca5177588b4bc8d84e597174717e3bfd"
+  },
+  "integration/userdata/godot/app_userdata/Breakwater/shader_cache/SceneShaderGLES3/926d7ef5f331286ebab4e4c2e582064fbbc800752e71ebc08c6a8145043adbb2/6bb7c9a2fd1c4a8fa77cb96555b9b4a720209981.cache": {
+    "bytes": 579256,
+    "sha256": "d69a15fc6e35a674e9cc9ec2b94fe8bc5f1fddb361f403fb2989954aea527a6f"
+  },
+  "integration/userdata/godot/app_userdata/Breakwater/shader_cache/SceneShaderGLES3/926d7ef5f331286ebab4e4c2e582064fbbc800752e71ebc08c6a8145043adbb2/77047cd41f429f33ceff24e890e174f5465e755e.cache": {
+    "bytes": 599630,
+    "sha256": "49f89a84a2cf377668d285944d43c68576e1f0c09f53bc771e66cb48ce2b050a"
+  },
+  "integration/userdata/godot/app_userdata/Breakwater/shader_cache/SceneShaderGLES3/926d7ef5f331286ebab4e4c2e582064fbbc800752e71ebc08c6a8145043adbb2/a7066d9c826da62591c9a7200b95903130e922bd.cache": {
+    "bytes": 590749,
+    "sha256": "c2f7996d89753f9e3fc01f38d3c6faabdb723bcc000531d15360d2095b555296"
+  },
+  "integration/userdata/godot/app_userdata/Breakwater/shader_cache/SceneShaderGLES3/926d7ef5f331286ebab4e4c2e582064fbbc800752e71ebc08c6a8145043adbb2/c43acb7911e92e912490e79d283f5095108609fe.cache": {
+    "bytes": 725210,
+    "sha256": "d8a869de68fbdc24c4e4285bf7754ae2eede73c93083fc10582b7556bef85b56"
+  },
+  "integration/userdata/godot/app_userdata/Breakwater/shader_cache/SceneShaderGLES3/926d7ef5f331286ebab4e4c2e582064fbbc800752e71ebc08c6a8145043adbb2/f2e328ac8a780a17a0c65e242b0c8bc4fc063f03.cache": {
+    "bytes": 705798,
+    "sha256": "ebc99475312486ea6c4526ed05ad6617f15edcd681237129c269f6e5145a8ece"
+  },
+  "integration/victory-fixture.png": {
+    "bytes": 121564,
+    "sha256": "be0c36d73a994d215e5a24a1f5d358122cef861cead5849d4dafb2f61c5409aa"
+  },
+  "integration/victory-marker-hidden.png": {
+    "bytes": 95770,
+    "sha256": "ab4726c91d34b1d5138922e7b7be8058d6113e2c49a8e7867a568a3bb6c0ec64"
+  },
+  "integration/victory-marker-restored.png": {
+    "bytes": 98404,
+    "sha256": "df6ad8bba63d5d0f734b1afda64c911d2a7bd82c9dd65520836d671052556bfe"
+  },
+  "integration-checks.json": {
+    "bytes": 1668,
+    "sha256": "c6e1b80d337e4782015134f455f052b76962936946bce11cb2e1f0ef0a6f4490"
+  },
+  "integration-run.log": {
+    "bytes": 10994,
+    "sha256": "9017297335ff2cf6bf4e10bf58f7c1de0b7f0b77cb62222cc7dced5e70baf95a"
+  },
+  "launch.log": {
+    "bytes": 10672,
+    "sha256": "1a146be157ac2dd8d74df826ce577c18e7e70e7dd15ce9bb3571c005b3c9e35b"
+  },
+  "ldd.log": {
+    "bytes": 459,
+    "sha256": "bd502e1a544c7ef25907ee14abef70c60dacfd5b704cbe440dcf4045641c346e"
+  },
+  "unrelated-cwd-launch.log": {
+    "bytes": 1399,
+    "sha256": "06b1f850842602c8530b2f1af85e6c090c61c36b44b417266881a752c79fd2d1"
+  }
+}

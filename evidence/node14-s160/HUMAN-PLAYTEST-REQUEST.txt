@@ -1,0 +1,21 @@
+Rick — Breakwater is ready for your Linux playtest, not yet approved by you.
+
+Download (save as breakwater-linux-x86_64.tar.gz):
+https://raw.githubusercontent.com/rickseeger/ai-game-05/c3147c7c37fd14aa6c2f03354483b54a7473aa30/downloads/breakwater-42e3bd348b22/breakwater-linux-x86_64.tar.gz
+
+Instructions, controls, dependencies and checksum:
+https://github.com/rickseeger/ai-game-05/blob/main/docs/PLAYTEST-HANDOFF.txt
+
+On your Linux desktop: extract, enter breakwater-linux-x86_64, run ./launch.sh.
+WASD move, mouse aim, hold left mouse fire, Space dash, Esc pause/settings,
+R retry after win/loss; close the window to quit. Destroy all three orange pylons,
+then enter north EXTRACT alive before the timer runs out.
+
+Please try a run and a retry. Tell me whether destruction trajectories/spins,
+gravity and bounces feel physical; whether breaks/impacts sound good; whether
+controls and HUD are clear; and whether threat, tension and fun make you want
+another run. Include distro/GPU, sound/launch failures and requested changes.
+Only Linux x86_64/glibc X11/OpenGL was server-tested. Your hardware and speakers
+are unverified; mixer PCM checks were not subjective listening. No verdict assumed.
+
+Prepared for node 15; this worker has not sent this request or changed node state.

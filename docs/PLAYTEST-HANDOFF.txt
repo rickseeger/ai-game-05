@@ -1,0 +1,127 @@
+BREAKWATER — Rick’s Linux playtest handoff
+
+Download the accepted, unchanged source+runtime archive (no login needed):
+https://raw.githubusercontent.com/rickseeger/ai-game-05/c3147c7c37fd14aa6c2f03354483b54a7473aa30/downloads/breakwater-42e3bd348b22/breakwater-linux-x86_64.tar.gz
+Checksum sidecar: same URL with .sha256 appended.
+Save as breakwater-linux-x86_64.tar.gz (not GitHub’s source ZIP).
+Archive: 70,613,010 bytes
+SHA256: 1fc3c4121aed811406a1e34475f5d8abf99850c0b7cc9cde41c91f1f1373e6cf
+Game/release source: 42e3bd348b22590ba504ef5ebcb55dbd8443e652
+Delivery commit: c3147c7c37fd14aa6c2f03354483b54a7473aa30
+The delivery commit only publishes the existing archive; it is not a new game build.
+
+LAUNCH ON YOUR LINUX DESKTOP — no server commands or build tools needed
+
+Save the archive and its .sha256 sidecar together in a writable local folder.
+Open a desktop terminal there, then:
+
+    sha256sum -c breakwater-linux-x86_64.tar.gz.sha256
+    tar -xzf breakwater-linux-x86_64.tar.gz
+    cd breakwater-linux-x86_64
+    ./launch.sh
+
+Checksum must say OK; do not run a mismatching download. Alternatively compare
+sha256sum breakwater-linux-x86_64.tar.gz to the full digest above.
+The first launch imports bundled assets; give it a moment. The extracted folder
+must be writable and permit executable files. Normal play is offline; the bundled
+Godot 4.5.1 runtime needs no Godot, Python or Git installation.
+
+GOAL AND CONTROLS
+
+Destroy all THREE orange pylons, then enter the north EXTRACT zone alive before
+150 active seconds expire. All three destroyed unlocks extraction; you must still
+enter it. Sentries threaten you: move, fire, dash and use cover. Pause stops time.
+
+    WASD                move
+    Mouse               aim
+    Hold left mouse     fire
+    Space               dash (cooldown on HUD)
+    Esc                 pause/resume and sound settings
+    R                   retry after victory/defeat, not during active play
+    M                   mute/unmute
+    - / =               decrease/increase SFX level
+    Settings sliders    Master and SFX volume
+    Close window/Alt+F4  quit
+
+No save/resume. R rebuilds the session; sound preferences persist.
+
+PREREQUISITES AND TROUBLESHOOTING
+
+Linux x86_64/glibc, modern SSE4.2-capable CPU, X11 or XWayland, and working
+OpenGL 3.3 drivers. Launcher explicitly uses X11/OpenGL compatibility, not Vulkan.
+Allow at least 500 MB for extraction/import. Desktop audio needs PulseAudio,
+PipeWire with pulse compatibility, or ALSA plus a working output device.
+Ubuntu/Pop!_OS libraries: libgl1, libgl1-mesa-dri, libx11-6, libxcursor1,
+libxrandr2, libxinerama1, libxi6, libxrender1, libxext6, libpulse0, and
+libasound2t64 (libasound2 on older Ubuntu). Most desktops already have these;
+if a library is missing, send G the exact error rather than doing server work.
+
+Missing display: launch from your graphical desktop; XWayland must be available.
+Permission denied: extract on a writable/executable Linux filesystem; file modes
+are present in this tar archive. No sound: check M, sliders and desktop output;
+optional diagnostic: ./launch.sh --audio-driver PulseAudio (or ALSA).
+Driver/black-window issue: try LIBGL_ALWAYS_SOFTWARE=1 ./launch.sh as a slower
+diagnostic. Log a problem with ./launch.sh --verbose > launch.log 2>&1 and send
+the log plus your distro/GPU. More detail and licenses: extracted README.txt.
+
+SHORT PLAYTEST — Rick’s judgment is still needed (node 15)
+
+Try a full run, retry with R after a win/loss, and try again.
+  1. Destruction: do pieces launch along distinct trajectories, spin, fall under
+     gravity, hit the ground and bounce/settle convincingly rather than vanish?
+  2. Sound: are breaks and ground impacts audible, varied and satisfying at your
+     speakers/headphones? Any silence, clipping, repetition or excessive volume?
+  3. Controls: movement, aim/fire, dash, pause/resume, mute/volume, retry and quit.
+     Any missed input, stuck controls, lag, or stale state after retry?
+  4. Readability: can you track player, pylons, threats, debris, health, dash,
+     timer and locked/open extraction without guessing or losing the action?
+  5. Threat/tension/fun: do enemies matter, is there a reason to move/use cover,
+     does the deadline add tension, and do you want another run? What falls flat?
+
+Reply with your distro/GPU, whether it launched and made sound, whether you won
+or lost, your verdict on those five areas, and specific blockers/changes wanted.
+An honest “not fun” is useful. No human verdict has been assumed or requested by
+this worker; this is the prepared request for the controller’s later human gate.
+
+WHAT HAS ACTUALLY BEEN VERIFIED
+
+This handoff downloaded BOTH archive and sidecar anonymously via the URLs above
+(HTTP 200), checked the exact expected SHA256 and byte equality with node 8’s
+accepted artifact, and used tar -xzf into a fresh directory containing spaces.
+All 210 archive members were checked against the release manifest; no import
+cache was inherited. ./launch.sh rendered via Xvfb/software OpenGL and exited 0;
+launch from an unrelated directory also exited 0. Test-only --audio-driver Dummy,
+--quit-after and --max-fps flags made these server smoke runs bounded and silent;
+Rick should use plain ./launch.sh, without those flags.
+Additional packaged integration checks passed: 127 engine assertions, six forced
+reset cycles, 16 decoded PNGs, eight rejected corrupt-trace controls, and exact
+HUD/pause/extraction-marker pixel restoration. These are not natural-play wins.
+No release, gameplay, visual or sound files were modified; no rebuild was done.
+
+Fresh handoff evidence is in evidence/node14-s160/ in the repository:
+delivery-verification.json, verification-logs.tar.gz, verification-log-index.json,
+verify_handoff.py and discovery.json. The logs archive contains exact commands’
+outputs, engine traces/results and PNGs; the index hashes each archived file.
+
+Accepted node 8 evidence (full natural gameplay/physics/mixer suite, NOT rerun
+in this handoff):
+https://github.com/rickseeger/ai-game-05/tree/31da0bf0d4e6821a4fb2054e33307cfee8619e4a/evidence/node8-s158
+Read REPORT.txt, verification.json, metrics.json and fresh-validation.tar.gz there.
+It records natural input-only victory, actual threat death and two ordinary R
+retries; 96 fragment arcs/100896 body samples; 2780 decoded frames/64 PNGs;
+actual stereo 48kHz mixer PCM and fracture/impact asset correlations; fourteen
+natural-evidence negative controls; two 55-assertion rules runs and integration.
+
+LIMITS — technical evidence is not a human playtest
+
+Only Linux x86_64/glibc (server glibc 2.43) with X11/OpenGL, Xvfb and Mesa llvmpipe
+was server-tested. Rick’s hardware, physical keyboard/mouse, GPUs, other distros
+and older glibc remain unverified. Native Wayland, ARM, musl, 32-bit and Windows
+are not supported/tested release targets. No universal Linux promise is made.
+Desktop speakers were NOT tested: node 8 had no PulseAudio/ALSA device/session.
+Actual mixer PCM checks are NOT subjective listening or proof of speaker output.
+Node 8 measured mean real-time 35.50 FPS with observer overhead on software GL;
+its offline 60 FPS capture is not a real-time performance claim. Automated pixel
+sampling proves rendering/bindings, not visual satisfaction/readability. Sound
+quality, control feel, threat, tension and fun remain Rick’s node-15 judgment.
+No nodes 9, 15 or 0 are declared complete by this work.

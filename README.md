@@ -1,3 +1,5 @@
+Accepted Linux playtest download and instructions: docs/PLAYTEST-HANDOFF.txt (no build required). Human verdict is still pending.
+
 Linux release packaging: see docs/linux-release.txt for the playable artifact layout, launch, controls, dependencies, licensing, reproducible assembly and clean-artifact validation. Release tooling does not change accepted gameplay.
 
 # G12: Breakwater — Linux session integration

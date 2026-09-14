@@ -1,0 +1,259 @@
+{
+  "utc_started": "2026-09-14T05:52:18.435612+00:00",
+  "download_url": "https://raw.githubusercontent.com/rickseeger/ai-game-05/c3147c7c37fd14aa6c2f03354483b54a7473aa30/downloads/breakwater-42e3bd348b22/breakwater-linux-x86_64.tar.gz",
+  "delivery_commit": "c3147c7c37fd14aa6c2f03354483b54a7473aa30",
+  "source_revision": "42e3bd348b22590ba504ef5ebcb55dbd8443e652",
+  "commands": [
+    {
+      "command": [
+        "sha256sum",
+        "-c",
+        "breakwater-linux-x86_64.tar.gz.sha256"
+      ],
+      "cwd": "/opt/g-harness/workspace/G12/node_14_step_160/downloaded",
+      "returncode": 0,
+      "seconds": 0.2651422499984619,
+      "log": "verification-logs/checksum.log"
+    },
+    {
+      "command": [
+        "tar",
+        "-xzf",
+        "/opt/g-harness/workspace/G12/node_14_step_160/downloaded/breakwater-linux-x86_64.tar.gz"
+      ],
+      "cwd": "/opt/g-harness/workspace/G12/node_14_step_160/fresh verification with spaces",
+      "returncode": 0,
+      "seconds": 0.5162829770051758,
+      "log": "verification-logs/extraction.log"
+    },
+    {
+      "command": [
+        "ldd",
+        "/opt/g-harness/workspace/G12/node_14_step_160/fresh verification with spaces/breakwater-linux-x86_64/runtime/Godot_v4.5.1-stable_linux.x86_64"
+      ],
+      "cwd": "/opt/g-harness/workspace/G12/node_14_step_160/fresh verification with spaces/breakwater-linux-x86_64",
+      "returncode": 0,
+      "seconds": 0.016826896004204173,
+      "log": "verification-logs/ldd.log"
+    },
+    {
+      "command": [
+        "xvfb-run",
+        "-a",
+        "./launch.sh",
+        "--audio-driver",
+        "Dummy",
+        "--quit-after",
+        "120",
+        "--max-fps",
+        "60",
+        "--verbose"
+      ],
+      "cwd": "/opt/g-harness/workspace/G12/node_14_step_160/fresh verification with spaces/breakwater-linux-x86_64",
+      "returncode": 0,
+      "seconds": 8.594723030997557,
+      "log": "verification-logs/launch.log"
+    },
+    {
+      "command": [
+        "xvfb-run",
+        "-a",
+        "/opt/g-harness/workspace/G12/node_14_step_160/fresh verification with spaces/breakwater-linux-x86_64/launch.sh",
+        "--audio-driver",
+        "Dummy",
+        "--quit-after",
+        "30",
+        "--max-fps",
+        "60"
+      ],
+      "cwd": "/opt/g-harness/workspace/G12/node_14_step_160",
+      "returncode": 0,
+      "seconds": 6.2835576529978425,
+      "log": "verification-logs/unrelated-cwd-launch.log"
+    },
+    {
+      "command": [
+        "/opt/g-harness/workspace/G12/node_8_step_157/.validation-venv/bin/python",
+        "/opt/g-harness/workspace/G12/node_14_step_160/fresh verification with spaces/breakwater-linux-x86_64/scripts/run_integration.py",
+        "/opt/g-harness/workspace/G12/node_14_step_160/verification-logs/integration"
+      ],
+      "cwd": "/opt/g-harness/workspace/G12/node_14_step_160/fresh verification with spaces/breakwater-linux-x86_64",
+      "returncode": 0,
+      "seconds": 15.958431469000061,
+      "log": "verification-logs/integration-run.log"
+    },
+    {
+      "command": [
+        "/opt/g-harness/workspace/G12/node_8_step_157/.validation-venv/bin/python",
+        "/opt/g-harness/workspace/G12/node_14_step_160/fresh verification with spaces/breakwater-linux-x86_64/scripts/check_integration.py",
+        "/opt/g-harness/workspace/G12/node_14_step_160/verification-logs/integration"
+      ],
+      "cwd": "/opt/g-harness/workspace/G12/node_14_step_160/fresh verification with spaces/breakwater-linux-x86_64",
+      "returncode": 0,
+      "seconds": 11.650733116002812,
+      "log": "verification-logs/integration-checks.json"
+    }
+  ],
+  "environment": {
+    "uname": [
+      "Linux",
+      "g",
+      "7.0.0-31-generic",
+      "#31-Ubuntu SMP PREEMPT_DYNAMIC Sat Aug  1 04:26:38 UTC 2026",
+      "x86_64"
+    ],
+    "glibc": [
+      "glibc",
+      "2.43"
+    ]
+  },
+  "scope": "Fresh HTTPS retrieval, archive identity/manifest, documented tar extraction and launcher, additional forced integration/pixel assertions. Full natural gameplay/physics/mixer acceptance remains referenced node8-s158 evidence; not rerun here.",
+  "retrievals": [
+    {
+      "url": "https://raw.githubusercontent.com/rickseeger/ai-game-05/c3147c7c37fd14aa6c2f03354483b54a7473aa30/downloads/breakwater-42e3bd348b22/breakwater-linux-x86_64.tar.gz",
+      "final_url": "https://raw.githubusercontent.com/rickseeger/ai-game-05/c3147c7c37fd14aa6c2f03354483b54a7473aa30/downloads/breakwater-42e3bd348b22/breakwater-linux-x86_64.tar.gz",
+      "status": 200,
+      "headers": {
+        "Connection": "close",
+        "Content-Length": "70613010",
+        "Cache-Control": "max-age=300",
+        "Content-Security-Policy": "default-src 'none'; style-src 'unsafe-inline'; sandbox",
+        "Content-Type": "application/octet-stream",
+        "ETag": "\"dcb4c29afff06388be2306f207d30819ee50d94807f3e9caa6ab6256f2deffe0\"",
+        "Strict-Transport-Security": "max-age=31536000",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "deny",
+        "X-XSS-Protection": "1; mode=block",
+        "X-GitHub-Request-Id": "EECE:224D67:1DCFECC:2518FA5:6AA78B8E",
+        "x-github-edge-region": "iad",
+        "Accept-Ranges": "bytes",
+        "Date": "Mon, 14 Sep 2026 05:52:19 GMT",
+        "Via": "1.1 varnish",
+        "X-Served-By": "cache-bos-kbos510047-BOS",
+        "X-Cache": "MISS",
+        "X-Cache-Hits": "0",
+        "X-Timer": "S1789365138.453675,VS0,VE705",
+        "Vary": "Authorization,Accept-Encoding",
+        "Access-Control-Allow-Origin": "*",
+        "Cross-Origin-Resource-Policy": "cross-origin",
+        "X-Fastly-Request-ID": "6a20d09418f8c01214aa52d6663aaa766cb99b77",
+        "Expires": "Mon, 14 Sep 2026 05:57:19 GMT",
+        "Source-Age": "1"
+      },
+      "authentication": "none",
+      "bytes": 70613010,
+      "sha256": "1fc3c4121aed811406a1e34475f5d8abf99850c0b7cc9cde41c91f1f1373e6cf"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/rickseeger/ai-game-05/c3147c7c37fd14aa6c2f03354483b54a7473aa30/downloads/breakwater-42e3bd348b22/breakwater-linux-x86_64.tar.gz.sha256",
+      "final_url": "https://raw.githubusercontent.com/rickseeger/ai-game-05/c3147c7c37fd14aa6c2f03354483b54a7473aa30/downloads/breakwater-42e3bd348b22/breakwater-linux-x86_64.tar.gz.sha256",
+      "status": 200,
+      "headers": {
+        "Connection": "close",
+        "Content-Length": "97",
+        "Cache-Control": "max-age=300",
+        "Content-Security-Policy": "default-src 'none'; style-src 'unsafe-inline'; sandbox",
+        "Content-Type": "text/plain; charset=utf-8",
+        "ETag": "\"0cc6b2fe75f18d38b827530587ba0a2121a70e56030c424c95cf09a3019fabda\"",
+        "Strict-Transport-Security": "max-age=31536000",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "deny",
+        "X-XSS-Protection": "1; mode=block",
+        "X-GitHub-Request-Id": "4128:23370B:2DA693:3E5C50:6AA78B92",
+        "x-github-edge-region": "iad",
+        "Accept-Ranges": "bytes",
+        "Date": "Mon, 14 Sep 2026 05:52:20 GMT",
+        "Via": "1.1 varnish",
+        "X-Served-By": "cache-dfw-kdfw8210162-DFW",
+        "X-Cache": "MISS",
+        "X-Cache-Hits": "0",
+        "X-Timer": "S1789365140.981573,VS0,VE89",
+        "Vary": "Authorization,Accept-Encoding",
+        "Access-Control-Allow-Origin": "*",
+        "Cross-Origin-Resource-Policy": "cross-origin",
+        "X-Fastly-Request-ID": "c83d511df7ba2834cce0acb91245050c3c57621d",
+        "Expires": "Mon, 14 Sep 2026 05:57:20 GMT",
+        "Source-Age": "0"
+      },
+      "authentication": "none",
+      "bytes": 97,
+      "sha256": "1c18497d30b325ffc25c78c020f9f558f094a34dacd0bc945d9383f04fad9638"
+    }
+  ],
+  "verified_archive_members": 210,
+  "fresh_cache_absent_before_launch": true,
+  "original_and_download_byte_identical": true,
+  "integration": {
+    "passed": true,
+    "runs": [
+      {
+        "engine_assertions": 127,
+        "forced_reset_cycles": 6,
+        "ordinary_input_pylon_hits": 4,
+        "pixels": {
+          "hud": {
+            "changed_pixels": 12494,
+            "bounds": [
+              22,
+              26,
+              683,
+              119
+            ],
+            "restored_identical": true
+          },
+          "panel": {
+            "changed_pixels": 138370,
+            "bounds": [
+              310,
+              236,
+              969,
+              484
+            ],
+            "restored_identical": true
+          },
+          "locked_marker": {
+            "changed_pixels": 1090,
+            "bounds": [
+              512,
+              256,
+              667,
+              286
+            ],
+            "restored_identical": true,
+            "amber_or_green_pixels": 658
+          },
+          "open_marker": {
+            "changed_pixels": 948,
+            "bounds": [
+              520,
+              256,
+              667,
+              286
+            ],
+            "restored_identical": true,
+            "amber_or_green_pixels": 643
+          },
+          "captures": 16
+        },
+        "rejected_trace_mutations": [
+          "health",
+          "remaining",
+          "voices",
+          "bodies",
+          "player_callbacks",
+          "pointer_known",
+          "elapsed",
+          "hud"
+        ],
+        "source_commit": "42e3bd348b22590ba504ef5ebcb55dbd8443e652",
+        "run": "/opt/g-harness/workspace/G12/node_14_step_160/verification-logs/integration"
+      }
+    ],
+    "limits": "Decoded pixels prove drawing and bindings, not subjective readability. Forced terminal fixtures are not natural victories; Dummy audio is not listening; fixed FPS is not performance."
+  },
+  "passed": true,
+  "sha256": "1fc3c4121aed811406a1e34475f5d8abf99850c0b7cc9cde41c91f1f1373e6cf",
+  "bytes": 70613010,
+  "release_files_unchanged": true,
+  "limitations": "Only Linux x86_64/glibc X11/OpenGL on Xvfb/Mesa llvmpipe server tested. Dummy audio here; accepted node8 mixer PCM is not subjective listening or desktop speakers. Rick hardware, physical controls, readability and fun unverified. No nodes completed or human verdict solicited."
+}
