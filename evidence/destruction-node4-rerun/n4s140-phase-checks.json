@@ -1,0 +1,243 @@
+{
+  "passed": true,
+  "prefix": "n4s140",
+  "correlation": [
+    {
+      "file": "frame_0001.png",
+      "observed_tick": 1,
+      "utc_captured": "2026-09-14T00:32:07.440280+00:00",
+      "capture_minus_last_body_sample_seconds": 0.12626099586486816,
+      "note": "Same observed physics tick; asynchronous rendered frame, not exact simultaneous pose"
+    },
+    {
+      "file": "frame_0010.png",
+      "observed_tick": 13,
+      "utc_captured": "2026-09-14T00:32:07.568590+00:00",
+      "capture_minus_last_body_sample_seconds": 0.06255292892456055,
+      "note": "Same observed physics tick; asynchronous rendered frame, not exact simultaneous pose"
+    },
+    {
+      "file": "frame_0030.png",
+      "observed_tick": 31,
+      "utc_captured": "2026-09-14T00:32:07.853220+00:00",
+      "capture_minus_last_body_sample_seconds": 0.05935096740722656,
+      "note": "Same observed physics tick; asynchronous rendered frame, not exact simultaneous pose"
+    },
+    {
+      "file": "frame_0060.png",
+      "observed_tick": 61,
+      "utc_captured": "2026-09-14T00:32:08.364550+00:00",
+      "capture_minus_last_body_sample_seconds": 0.06152820587158203,
+      "note": "Same observed physics tick; asynchronous rendered frame, not exact simultaneous pose"
+    },
+    {
+      "file": "frame_0090.png",
+      "observed_tick": 90,
+      "utc_captured": "2026-09-14T00:32:08.834460+00:00",
+      "capture_minus_last_body_sample_seconds": 0.05740094184875488,
+      "note": "Same observed physics tick; asynchronous rendered frame, not exact simultaneous pose"
+    },
+    {
+      "file": "frame_0096.png",
+      "observed_tick": 97,
+      "utc_captured": "2026-09-14T00:32:08.967860+00:00",
+      "capture_minus_last_body_sample_seconds": 0.06175589561462402,
+      "note": "Same observed physics tick; asynchronous rendered frame, not exact simultaneous pose"
+    },
+    {
+      "file": "frame_0102.png",
+      "observed_tick": 102,
+      "utc_captured": "2026-09-14T00:32:09.053680+00:00",
+      "capture_minus_last_body_sample_seconds": 0.061192989349365234,
+      "note": "Same observed physics tick; asynchronous rendered frame, not exact simultaneous pose"
+    },
+    {
+      "file": "frame_0108.png",
+      "observed_tick": 108,
+      "utc_captured": "2026-09-14T00:32:09.143260+00:00",
+      "capture_minus_last_body_sample_seconds": 0.06193709373474121,
+      "note": "Same observed physics tick; asynchronous rendered frame, not exact simultaneous pose"
+    },
+    {
+      "file": "frame_0114.png",
+      "observed_tick": 115,
+      "utc_captured": "2026-09-14T00:32:09.264650+00:00",
+      "capture_minus_last_body_sample_seconds": 0.06430816650390625,
+      "note": "Same observed physics tick; asynchronous rendered frame, not exact simultaneous pose"
+    },
+    {
+      "file": "frame_0120.png",
+      "observed_tick": 120,
+      "utc_captured": "2026-09-14T00:32:09.357800+00:00",
+      "capture_minus_last_body_sample_seconds": 0.06482195854187012,
+      "note": "Same observed physics tick; asynchronous rendered frame, not exact simultaneous pose"
+    },
+    {
+      "file": "frame_0126.png",
+      "observed_tick": 126,
+      "utc_captured": "2026-09-14T00:32:09.445530+00:00",
+      "capture_minus_last_body_sample_seconds": 0.060484886169433594,
+      "note": "Same observed physics tick; asynchronous rendered frame, not exact simultaneous pose"
+    },
+    {
+      "file": "frame_0132.png",
+      "observed_tick": 132,
+      "utc_captured": "2026-09-14T00:32:09.535620+00:00",
+      "capture_minus_last_body_sample_seconds": 0.060986995697021484,
+      "note": "Same observed physics tick; asynchronous rendered frame, not exact simultaneous pose"
+    },
+    {
+      "file": "frame_0138.png",
+      "observed_tick": 139,
+      "utc_captured": "2026-09-14T00:32:09.656320+00:00",
+      "capture_minus_last_body_sample_seconds": 0.061315059661865234,
+      "note": "Same observed physics tick; asynchronous rendered frame, not exact simultaneous pose"
+    },
+    {
+      "file": "frame_0144.png",
+      "observed_tick": 144,
+      "utc_captured": "2026-09-14T00:32:09.743680+00:00",
+      "capture_minus_last_body_sample_seconds": 0.06211209297180176,
+      "note": "Same observed physics tick; asynchronous rendered frame, not exact simultaneous pose"
+    },
+    {
+      "file": "frame_0150.png",
+      "observed_tick": 151,
+      "utc_captured": "2026-09-14T00:32:09.858310+00:00",
+      "capture_minus_last_body_sample_seconds": 0.0628969669342041,
+      "note": "Same observed physics tick; asynchronous rendered frame, not exact simultaneous pose"
+    },
+    {
+      "file": "frame_0210.png",
+      "observed_tick": 210,
+      "utc_captured": "2026-09-14T00:32:10.858590+00:00",
+      "capture_minus_last_body_sample_seconds": 0.0685129165649414,
+      "note": "Same observed physics tick; asynchronous rendered frame, not exact simultaneous pose"
+    },
+    {
+      "file": "frame_0300.png",
+      "observed_tick": 301,
+      "utc_captured": "2026-09-14T00:32:12.356300+00:00",
+      "capture_minus_last_body_sample_seconds": 0.059194087982177734,
+      "note": "Same observed physics tick; asynchronous rendered frame, not exact simultaneous pose"
+    },
+    {
+      "file": "frame_0390.png",
+      "observed_tick": 390,
+      "utc_captured": "2026-09-14T00:32:13.833390+00:00",
+      "capture_minus_last_body_sample_seconds": 0.05636310577392578,
+      "note": "Same observed physics tick; asynchronous rendered frame, not exact simultaneous pose"
+    },
+    {
+      "file": "frame_0450.png",
+      "observed_tick": 450,
+      "utc_captured": "2026-09-14T00:32:14.854650+00:00",
+      "capture_minus_last_body_sample_seconds": 0.0545809268951416,
+      "note": "Same observed physics tick; asynchronous rendered frame, not exact simultaneous pose"
+    },
+    {
+      "file": "frame_0479.png",
+      "observed_tick": 479,
+      "utc_captured": "2026-09-14T00:32:15.334800+00:00",
+      "capture_minus_last_body_sample_seconds": 0.05852389335632324,
+      "note": "Same observed physics tick; asynchronous rendered frame, not exact simultaneous pose"
+    },
+    {
+      "file": "frame_0490.png",
+      "observed_tick": 490,
+      "utc_captured": "2026-09-14T00:32:15.513020+00:00",
+      "capture_minus_last_body_sample_seconds": null,
+      "note": "No body rows after cleanup"
+    },
+    {
+      "file": "frame_0511.png",
+      "observed_tick": 512,
+      "utc_captured": "2026-09-14T00:32:15.887400+00:00",
+      "capture_minus_last_body_sample_seconds": 0.0697779655456543,
+      "note": "Same observed physics tick; asynchronous rendered frame, not exact simultaneous pose"
+    },
+    {
+      "file": "frame_0540.png",
+      "observed_tick": 541,
+      "utc_captured": "2026-09-14T00:32:16.372900+00:00",
+      "capture_minus_last_body_sample_seconds": 0.06537008285522461,
+      "note": "Same observed physics tick; asynchronous rendered frame, not exact simultaneous pose"
+    },
+    {
+      "file": "frame_0600.png",
+      "observed_tick": 601,
+      "utc_captured": "2026-09-14T00:32:17.368850+00:00",
+      "capture_minus_last_body_sample_seconds": 0.06641292572021484,
+      "note": "Same observed physics tick; asynchronous rendered frame, not exact simultaneous pose"
+    },
+    {
+      "file": "frame_0631.png",
+      "observed_tick": 631,
+      "utc_captured": "2026-09-14T00:32:17.864340+00:00",
+      "capture_minus_last_body_sample_seconds": 0.06185317039489746,
+      "note": "Same observed physics tick; asynchronous rendered frame, not exact simultaneous pose"
+    },
+    {
+      "file": "frame_0660.png",
+      "observed_tick": 661,
+      "utc_captured": "2026-09-14T00:32:18.359990+00:00",
+      "capture_minus_last_body_sample_seconds": 0.06238389015197754,
+      "note": "Same observed physics tick; asynchronous rendered frame, not exact simultaneous pose"
+    },
+    {
+      "file": "frame_0720.png",
+      "observed_tick": 720,
+      "utc_captured": "2026-09-14T00:32:19.358890+00:00",
+      "capture_minus_last_body_sample_seconds": 0.06833314895629883,
+      "note": "Same observed physics tick; asynchronous rendered frame, not exact simultaneous pose"
+    },
+    {
+      "file": "frame_0900.png",
+      "observed_tick": 900,
+      "utc_captured": "2026-09-14T00:32:22.346550+00:00",
+      "capture_minus_last_body_sample_seconds": 0.0646970272064209,
+      "note": "Same observed physics tick; asynchronous rendered frame, not exact simultaneous pose"
+    },
+    {
+      "file": "frame_0930.png",
+      "observed_tick": 930,
+      "utc_captured": "2026-09-14T00:32:22.859340+00:00",
+      "capture_minus_last_body_sample_seconds": 0.06971406936645508,
+      "note": "Same observed physics tick; asynchronous rendered frame, not exact simultaneous pose"
+    },
+    {
+      "file": "frame_1020.png",
+      "observed_tick": 1020,
+      "utc_captured": "2026-09-14T00:32:24.362520+00:00",
+      "capture_minus_last_body_sample_seconds": 0.06853795051574707,
+      "note": "Same observed physics tick; asynchronous rendered frame, not exact simultaneous pose"
+    },
+    {
+      "file": "frame_1190.png",
+      "observed_tick": 1190,
+      "utc_captured": "2026-09-14T00:32:27.200480+00:00",
+      "capture_minus_last_body_sample_seconds": 0.0664680004119873,
+      "note": "Same observed physics tick; asynchronous rendered frame, not exact simultaneous pose"
+    },
+    {
+      "file": "frame_1385.png",
+      "observed_tick": 1385,
+      "utc_captured": "2026-09-14T00:32:30.438450+00:00",
+      "capture_minus_last_body_sample_seconds": null,
+      "note": "No body rows after cleanup"
+    }
+  ],
+  "asserted": [
+    "strictly increasing capture UTC",
+    "same-observed-tick body sample/capture lag under one second",
+    "launch, flight, ground interaction and overload change actual pixels",
+    "natural settling transitions to pixel-identical resting frames",
+    "shrink and complete cleanup",
+    "repeated simultaneous breaks at cap"
+  ],
+  "limitations": [
+    "Whole-image pixel differences include shadows/UI; do not establish individual fragment visibility or subjective weight",
+    "Physics telemetry establishes collision/spin/rebound, not inference from pixels",
+    "Subjective quality belongs to node 9 human exact-release playtest"
+  ]
+}

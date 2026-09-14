@@ -1,0 +1,85 @@
+{
+  "runs": [
+    {
+      "directory": "evidence/arena/n4s140-arena",
+      "assertions": 337,
+      "camera_position": [
+        0.0,
+        22.2788181304932,
+        24.3345813751221
+      ],
+      "resized_camera_position": [
+        0.0,
+        25.3951663970947,
+        28.0741996765137
+      ],
+      "minimum_frame_margin": 0.0857609510421753,
+      "minimum_cube_pixels": 6.084228515625,
+      "frames": [
+        {
+          "file": "overview.png",
+          "width": 1280,
+          "height": 720,
+          "distinct_colors": 1550,
+          "sha256": "6e63dadc0ade83a17b9a3b79c390d181edfe8c058e3e7cadb97c67fadeb8ec6d",
+          "gold_pixels": 98
+        },
+        {
+          "file": "southwest.png",
+          "width": 1280,
+          "height": 720,
+          "distinct_colors": 1675,
+          "sha256": "7b02dda11dfdfaecf89351e36682a07c0e322ccb0ceeee66d318f69787768d8e",
+          "gold_pixels": 86
+        },
+        {
+          "file": "northwest.png",
+          "width": 1280,
+          "height": 720,
+          "distinct_colors": 1387,
+          "sha256": "78a256ba7ff06066cd232e1be70e7f012a19555c59baaf3c044eaa2547969500",
+          "gold_pixels": 76
+        },
+        {
+          "file": "northeast.png",
+          "width": 1280,
+          "height": 720,
+          "distinct_colors": 1348,
+          "sha256": "53312c1badd7eda8f3da0d213ed49285aad2903e49502511c04bcadb07ba5a76",
+          "gold_pixels": 73
+        },
+        {
+          "file": "southeast.png",
+          "width": 1280,
+          "height": 720,
+          "distinct_colors": 1596,
+          "sha256": "5f8078174f68bdea0b96cf655642f6a32de321bcaa589cf6e83c4ecb9fe6331c",
+          "gold_pixels": 108
+        },
+        {
+          "file": "airborne.png",
+          "width": 1280,
+          "height": 720,
+          "distinct_colors": 1517,
+          "sha256": "a67fb5c3bb5f3861c4255fa246dff06acf914f9c317794b2ed10a25924c1fbae",
+          "gold_pixels": 111
+        },
+        {
+          "file": "resized.png",
+          "width": 960,
+          "height": 720,
+          "distinct_colors": 1324,
+          "sha256": "50aa01c270e62e145304a6b92c61efafe1bf2f6f0fd98a1c19e65ed4de76868a"
+        }
+      ]
+    }
+  ],
+  "checker_negative_controls_rejected": [
+    "missing_assertion",
+    "duplicate_assertion",
+    "failed_assertion",
+    "clipped_frustum",
+    "headless"
+  ],
+  "passed": true
+}

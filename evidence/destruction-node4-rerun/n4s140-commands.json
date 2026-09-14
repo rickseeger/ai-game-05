@@ -1,0 +1,219 @@
+{
+  "source_commit": "29d4c115fa798666952436b5aa27c9bfee26eba3",
+  "godot_sha256": "db07cae7de644278a1884d4552bdf2bca3f5d30131b18faf3a0c4d730080b199",
+  "commands": [
+    {
+      "label": "arena",
+      "argv": [
+        "python3",
+        "scripts/run_arena.py",
+        "n4s140-arena"
+      ],
+      "cwd": "/opt/g-harness/workspace/G12/node_4_step_140/repo",
+      "GODOT_BIN": "/opt/g-harness/workspace/G12/node_1_step_112/tools/Godot_v4.5.1-stable_linux.x86_64",
+      "utc_started": "2026-09-14T00:32:02.824452+00:00",
+      "wall_seconds": 3.1786019549981575,
+      "returncode": 0,
+      "expected_returncode": 0
+    },
+    {
+      "label": "arena-check",
+      "argv": [
+        "python3",
+        "scripts/check_arena.py",
+        "evidence/arena/n4s140-arena",
+        "--self-test"
+      ],
+      "cwd": "/opt/g-harness/workspace/G12/node_4_step_140/repo",
+      "GODOT_BIN": "/opt/g-harness/workspace/G12/node_1_step_112/tools/Godot_v4.5.1-stable_linux.x86_64",
+      "utc_started": "2026-09-14T00:32:06.003415+00:00",
+      "wall_seconds": 0.8209158640020178,
+      "returncode": 0,
+      "expected_returncode": 0
+    },
+    {
+      "label": "capture",
+      "argv": [
+        "python3",
+        "scripts/run_destruction.py",
+        "n4s140-capture"
+      ],
+      "cwd": "/opt/g-harness/workspace/G12/node_4_step_140/repo",
+      "GODOT_BIN": "/opt/g-harness/workspace/G12/node_1_step_112/tools/Godot_v4.5.1-stable_linux.x86_64",
+      "utc_started": "2026-09-14T00:32:06.824620+00:00",
+      "wall_seconds": 34.77247525399798,
+      "returncode": 0,
+      "expected_returncode": 0
+    },
+    {
+      "label": "rerun",
+      "argv": [
+        "python3",
+        "scripts/run_destruction.py",
+        "n4s140-rerun",
+        "--no-captures"
+      ],
+      "cwd": "/opt/g-harness/workspace/G12/node_4_step_140/repo",
+      "GODOT_BIN": "/opt/g-harness/workspace/G12/node_1_step_112/tools/Godot_v4.5.1-stable_linux.x86_64",
+      "utc_started": "2026-09-14T00:32:41.597485+00:00",
+      "wall_seconds": 33.7978990240008,
+      "returncode": 0,
+      "expected_returncode": 0
+    },
+    {
+      "label": "seed2207",
+      "argv": [
+        "python3",
+        "scripts/run_destruction.py",
+        "n4s140-seed2207",
+        "--seed",
+        "2207",
+        "--no-captures"
+      ],
+      "cwd": "/opt/g-harness/workspace/G12/node_4_step_140/repo",
+      "GODOT_BIN": "/opt/g-harness/workspace/G12/node_1_step_112/tools/Godot_v4.5.1-stable_linux.x86_64",
+      "utc_started": "2026-09-14T00:33:15.395682+00:00",
+      "wall_seconds": 34.77056549400004,
+      "returncode": 0,
+      "expected_returncode": 0
+    },
+    {
+      "label": "perf1",
+      "argv": [
+        "python3",
+        "scripts/run_destruction.py",
+        "n4s140-perf1",
+        "--performance"
+      ],
+      "cwd": "/opt/g-harness/workspace/G12/node_4_step_140/repo",
+      "GODOT_BIN": "/opt/g-harness/workspace/G12/node_1_step_112/tools/Godot_v4.5.1-stable_linux.x86_64",
+      "utc_started": "2026-09-14T00:33:50.166520+00:00",
+      "wall_seconds": 29.55530583200016,
+      "returncode": 0,
+      "expected_returncode": 0
+    },
+    {
+      "label": "perf2",
+      "argv": [
+        "python3",
+        "scripts/run_destruction.py",
+        "n4s140-perf2",
+        "--performance"
+      ],
+      "cwd": "/opt/g-harness/workspace/G12/node_4_step_140/repo",
+      "GODOT_BIN": "/opt/g-harness/workspace/G12/node_1_step_112/tools/Godot_v4.5.1-stable_linux.x86_64",
+      "utc_started": "2026-09-14T00:34:19.722121+00:00",
+      "wall_seconds": 30.542161297002167,
+      "returncode": 0,
+      "expected_returncode": 0
+    },
+    {
+      "label": "perf3",
+      "argv": [
+        "python3",
+        "scripts/run_destruction.py",
+        "n4s140-perf3",
+        "--performance"
+      ],
+      "cwd": "/opt/g-harness/workspace/G12/node_4_step_140/repo",
+      "GODOT_BIN": "/opt/g-harness/workspace/G12/node_1_step_112/tools/Godot_v4.5.1-stable_linux.x86_64",
+      "utc_started": "2026-09-14T00:34:50.264699+00:00",
+      "wall_seconds": 30.398681360999035,
+      "returncode": 0,
+      "expected_returncode": 0
+    },
+    {
+      "label": "no-gravity",
+      "argv": [
+        "python3",
+        "scripts/run_destruction.py",
+        "n4s140-no-gravity",
+        "--negative-gravity",
+        "--no-captures"
+      ],
+      "cwd": "/opt/g-harness/workspace/G12/node_4_step_140/repo",
+      "GODOT_BIN": "/opt/g-harness/workspace/G12/node_1_step_112/tools/Godot_v4.5.1-stable_linux.x86_64",
+      "utc_started": "2026-09-14T00:35:20.663674+00:00",
+      "wall_seconds": 34.86908895599845,
+      "returncode": 1,
+      "expected_returncode": 1
+    },
+    {
+      "label": "no-ground",
+      "argv": [
+        "python3",
+        "scripts/run_destruction.py",
+        "n4s140-no-ground",
+        "--negative-ground",
+        "--no-captures"
+      ],
+      "cwd": "/opt/g-harness/workspace/G12/node_4_step_140/repo",
+      "GODOT_BIN": "/opt/g-harness/workspace/G12/node_1_step_112/tools/Godot_v4.5.1-stable_linux.x86_64",
+      "utc_started": "2026-09-14T00:35:55.533150+00:00",
+      "wall_seconds": 34.80012849099876,
+      "returncode": 1,
+      "expected_returncode": 1
+    },
+    {
+      "label": "destruction-check",
+      "argv": [
+        "python3",
+        "scripts/check_destruction.py",
+        "evidence/destruction/n4s140-capture",
+        "evidence/destruction/n4s140-rerun",
+        "evidence/destruction/n4s140-seed2207",
+        "evidence/destruction/n4s140-perf1",
+        "evidence/destruction/n4s140-perf2",
+        "evidence/destruction/n4s140-perf3",
+        "--self-test",
+        "--negative",
+        "evidence/destruction/n4s140-no-gravity",
+        "--negative",
+        "evidence/destruction/n4s140-no-ground",
+        "--output",
+        "/opt/g-harness/workspace/G12/node_4_step_140/repo/evidence/destruction-node4-rerun/n4s140-checks.json"
+      ],
+      "cwd": "/opt/g-harness/workspace/G12/node_4_step_140/repo",
+      "GODOT_BIN": "/opt/g-harness/workspace/G12/node_1_step_112/tools/Godot_v4.5.1-stable_linux.x86_64",
+      "utc_started": "2026-09-14T00:36:30.333633+00:00",
+      "wall_seconds": 16.298670377000235,
+      "returncode": 0,
+      "expected_returncode": 0
+    },
+    {
+      "label": "performance-gate",
+      "argv": [
+        "python3",
+        "scripts/check_frame_target.py",
+        "evidence/destruction/n4s140-perf1",
+        "evidence/destruction/n4s140-perf2",
+        "evidence/destruction/n4s140-perf3",
+        "--output",
+        "/opt/g-harness/workspace/G12/node_4_step_140/repo/evidence/destruction-node4-rerun/n4s140-performance.json"
+      ],
+      "cwd": "/opt/g-harness/workspace/G12/node_4_step_140/repo",
+      "GODOT_BIN": "/opt/g-harness/workspace/G12/node_1_step_112/tools/Godot_v4.5.1-stable_linux.x86_64",
+      "utc_started": "2026-09-14T00:36:46.632762+00:00",
+      "wall_seconds": 0.08069392500328831,
+      "returncode": 0,
+      "expected_returncode": 0
+    },
+    {
+      "label": "physics-comparison",
+      "argv": [
+        "python3",
+        "scripts/compare_destruction_physics.py",
+        "evidence/destruction/n4s140-capture",
+        "evidence/destruction/n4s140-rerun",
+        "--output",
+        "/opt/g-harness/workspace/G12/node_4_step_140/repo/evidence/destruction-node4-rerun/n4s140-physics-comparison.json"
+      ],
+      "cwd": "/opt/g-harness/workspace/G12/node_4_step_140/repo",
+      "GODOT_BIN": "/opt/g-harness/workspace/G12/node_1_step_112/tools/Godot_v4.5.1-stable_linux.x86_64",
+      "utc_started": "2026-09-14T00:36:46.713960+00:00",
+      "wall_seconds": 4.499645694999344,
+      "returncode": 0,
+      "expected_returncode": 0
+    }
+  ]
+}
