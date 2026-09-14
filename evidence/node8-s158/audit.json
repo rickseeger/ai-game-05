@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "artifact": "/opt/g-harness/workspace/G12/node_8_step_158/dist/breakwater-linux-x86_64.tar.gz",
+  "bytes": 70613010,
+  "sha256": "1fc3c4121aed811406a1e34475f5d8abf99850c0b7cc9cde41c91f1f1373e6cf",
+  "rebuilt_sha256": "1fc3c4121aed811406a1e34475f5d8abf99850c0b7cc9cde41c91f1f1373e6cf",
+  "byte_identical_rebuild": true,
+  "source_revision": "42e3bd348b22590ba504ef5ebcb55dbd8443e652",
+  "accepted_game_revision": "7ec9261cae21cd63d68e93c1fceb1c1090e3f091",
+  "archive_members": 210,
+  "git_blobs_verified": 208,
+  "complete_game_files": 84,
+  "audio_assets_verified": 10,
+  "engine_elf": "ELF64 little-endian x86-64",
+  "licenses_verified": [
+    "LICENSE",
+    "release/licenses/Godot-LICENSE.txt",
+    "release/licenses/Godot-COPYRIGHT.txt",
+    "game/audio/provenance.json"
+  ],
+  "assembly_python": "3.14.4",
+  "assembly_zlib": "1.3.1",
+  "build_command": "python3 repo/scripts/build_linux_release.py --source 42e3bd348b22590ba504ef5ebcb55dbd8443e652 --engine-zip /opt/g-harness/workspace/G12/node_8_step_157/repo/.tools/godot.zip --output dist/rebuilt-linux-x86_64.tar.gz"
+}

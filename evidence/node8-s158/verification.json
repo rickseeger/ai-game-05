@@ -1,0 +1,206 @@
+{
+  "artifact": "/opt/g-harness/workspace/G12/node_8_step_158/dist/breakwater-linux-x86_64.tar.gz",
+  "artifact_sha256": "1fc3c4121aed811406a1e34475f5d8abf99850c0b7cc9cde41c91f1f1373e6cf",
+  "source_revision": "42e3bd348b22590ba504ef5ebcb55dbd8443e652",
+  "accepted_game_revision": "7ec9261cae21cd63d68e93c1fceb1c1090e3f091",
+  "engine_sha256": "db07cae7de644278a1884d4552bdf2bca3f5d30131b18faf3a0c4d730080b199",
+  "fresh_root": "/opt/g-harness/workspace/G12/node_8_step_158/fresh-run/fresh directory with spaces/breakwater-linux-x86_64",
+  "fresh_cache_absent": true,
+  "verified_members": 210,
+  "utc_started": "2026-09-14T05:37:49.785350+00:00",
+  "environment": {
+    "uname": [
+      "Linux",
+      "g",
+      "7.0.0-31-generic",
+      "#31-Ubuntu SMP PREEMPT_DYNAMIC Sat Aug  1 04:26:38 UTC 2026",
+      "x86_64"
+    ],
+    "python": "3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]",
+    "glibc": [
+      "glibc",
+      "2.43"
+    ],
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "pillow": "12.3.0"
+  },
+  "commands": [
+    {
+      "command": [
+        "ldd",
+        "/opt/g-harness/workspace/G12/node_8_step_158/fresh-run/fresh directory with spaces/breakwater-linux-x86_64/runtime/Godot_v4.5.1-stable_linux.x86_64"
+      ],
+      "cwd": "/opt/g-harness/workspace/G12/node_8_step_158/fresh-run/fresh directory with spaces/breakwater-linux-x86_64",
+      "log": "runtime-ldd.log",
+      "returncode": 0,
+      "wall_seconds": 0.01660107399948174,
+      "required": true
+    },
+    {
+      "command": [
+        "xvfb-run",
+        "-a",
+        "/opt/g-harness/workspace/G12/node_8_step_158/fresh-run/fresh directory with spaces/breakwater-linux-x86_64/launch.sh",
+        "--audio-driver",
+        "Dummy",
+        "--quit-after",
+        "120",
+        "--max-fps",
+        "60",
+        "--verbose"
+      ],
+      "cwd": "/opt/g-harness/workspace/G12/node_8_step_158/fresh-run/fresh directory with spaces/breakwater-linux-x86_64",
+      "log": "clean-launch.log",
+      "returncode": 0,
+      "wall_seconds": 9.25607747399772,
+      "required": true
+    },
+    {
+      "command": [
+        "xvfb-run",
+        "-a",
+        "/opt/g-harness/workspace/G12/node_8_step_158/fresh-run/fresh directory with spaces/breakwater-linux-x86_64/launch.sh",
+        "--quit-after",
+        "30",
+        "--max-fps",
+        "60",
+        "--verbose"
+      ],
+      "cwd": "/opt/g-harness/workspace/G12/node_8_step_158/fresh-run/fresh directory with spaces/breakwater-linux-x86_64",
+      "log": "native-audio-diagnostic.log",
+      "returncode": 0,
+      "wall_seconds": 6.888663079997059,
+      "required": false
+    },
+    {
+      "command": [
+        "/opt/g-harness/workspace/G12/node_8_step_157/.validation-venv/bin/python",
+        "/opt/g-harness/workspace/G12/node_8_step_158/fresh-run/fresh directory with spaces/breakwater-linux-x86_64/scripts/run_natural.py",
+        "/opt/g-harness/workspace/G12/node_8_step_158/fresh-run/natural-movie",
+        "--movie"
+      ],
+      "cwd": "/opt/g-harness/workspace/G12/node_8_step_158/fresh-run/fresh directory with spaces/breakwater-linux-x86_64",
+      "log": "natural-movie.log",
+      "returncode": 0,
+      "wall_seconds": 139.18277487200248,
+      "required": true
+    },
+    {
+      "command": [
+        "/opt/g-harness/workspace/G12/node_8_step_157/.validation-venv/bin/python",
+        "/opt/g-harness/workspace/G12/node_8_step_158/fresh-run/fresh directory with spaces/breakwater-linux-x86_64/scripts/check_natural.py",
+        "/opt/g-harness/workspace/G12/node_8_step_158/fresh-run/natural-movie",
+        "--self-test"
+      ],
+      "cwd": "/opt/g-harness/workspace/G12/node_8_step_158/fresh-run/fresh directory with spaces/breakwater-linux-x86_64",
+      "log": "natural-checks.log",
+      "returncode": 0,
+      "wall_seconds": 15.320451283994771,
+      "required": true
+    },
+    {
+      "command": [
+        "/opt/g-harness/workspace/G12/node_8_step_157/.validation-venv/bin/python",
+        "/opt/g-harness/workspace/G12/node_8_step_158/fresh-run/fresh directory with spaces/breakwater-linux-x86_64/scripts/check_natural_resume.py",
+        "/opt/g-harness/workspace/G12/node_8_step_158/fresh-run/natural-movie",
+        "--output",
+        "/opt/g-harness/workspace/G12/node_8_step_158/fresh-run/natural-supplement.json"
+      ],
+      "cwd": "/opt/g-harness/workspace/G12/node_8_step_158/fresh-run/fresh directory with spaces/breakwater-linux-x86_64",
+      "log": "natural-supplement.log",
+      "returncode": 0,
+      "wall_seconds": 4.228501910001796,
+      "required": true
+    },
+    {
+      "command": [
+        "/opt/g-harness/workspace/G12/node_8_step_157/.validation-venv/bin/python",
+        "/opt/g-harness/workspace/G12/node_8_step_158/fresh-run/fresh directory with spaces/breakwater-linux-x86_64/scripts/run_natural.py",
+        "/opt/g-harness/workspace/G12/node_8_step_158/fresh-run/natural-realtime"
+      ],
+      "cwd": "/opt/g-harness/workspace/G12/node_8_step_158/fresh-run/fresh directory with spaces/breakwater-linux-x86_64",
+      "log": "natural-realtime.log",
+      "returncode": 0,
+      "wall_seconds": 50.574665318999905,
+      "required": true
+    },
+    {
+      "command": [
+        "/opt/g-harness/workspace/G12/node_8_step_157/.validation-venv/bin/python",
+        "/opt/g-harness/workspace/G12/node_8_step_158/fresh-run/fresh directory with spaces/breakwater-linux-x86_64/scripts/check_natural.py",
+        "/opt/g-harness/workspace/G12/node_8_step_158/fresh-run/natural-realtime",
+        "--self-test"
+      ],
+      "cwd": "/opt/g-harness/workspace/G12/node_8_step_158/fresh-run/fresh directory with spaces/breakwater-linux-x86_64",
+      "log": "realtime-checks.log",
+      "returncode": 0,
+      "wall_seconds": 5.932171537999238,
+      "required": true
+    },
+    {
+      "command": [
+        "/opt/g-harness/workspace/G12/node_8_step_157/.validation-venv/bin/python",
+        "/opt/g-harness/workspace/G12/node_8_step_158/fresh-run/fresh directory with spaces/breakwater-linux-x86_64/scripts/run_session.py",
+        "/opt/g-harness/workspace/G12/node_8_step_158/fresh-run/rules-1"
+      ],
+      "cwd": "/opt/g-harness/workspace/G12/node_8_step_158/fresh-run/fresh directory with spaces/breakwater-linux-x86_64",
+      "log": "rules-1.log",
+      "returncode": 0,
+      "wall_seconds": 9.41306700399582,
+      "required": true
+    },
+    {
+      "command": [
+        "/opt/g-harness/workspace/G12/node_8_step_157/.validation-venv/bin/python",
+        "/opt/g-harness/workspace/G12/node_8_step_158/fresh-run/fresh directory with spaces/breakwater-linux-x86_64/scripts/run_session.py",
+        "/opt/g-harness/workspace/G12/node_8_step_158/fresh-run/rules-2"
+      ],
+      "cwd": "/opt/g-harness/workspace/G12/node_8_step_158/fresh-run/fresh directory with spaces/breakwater-linux-x86_64",
+      "log": "rules-2.log",
+      "returncode": 0,
+      "wall_seconds": 9.716208664001897,
+      "required": true
+    },
+    {
+      "command": [
+        "/opt/g-harness/workspace/G12/node_8_step_157/.validation-venv/bin/python",
+        "/opt/g-harness/workspace/G12/node_8_step_158/fresh-run/fresh directory with spaces/breakwater-linux-x86_64/scripts/check_session.py",
+        "/opt/g-harness/workspace/G12/node_8_step_158/fresh-run/rules-1",
+        "/opt/g-harness/workspace/G12/node_8_step_158/fresh-run/rules-2"
+      ],
+      "cwd": "/opt/g-harness/workspace/G12/node_8_step_158/fresh-run/fresh directory with spaces/breakwater-linux-x86_64",
+      "log": "rules-checks.log",
+      "returncode": 0,
+      "wall_seconds": 0.26603263200377114,
+      "required": true
+    },
+    {
+      "command": [
+        "/opt/g-harness/workspace/G12/node_8_step_157/.validation-venv/bin/python",
+        "/opt/g-harness/workspace/G12/node_8_step_158/fresh-run/fresh directory with spaces/breakwater-linux-x86_64/scripts/run_integration.py",
+        "/opt/g-harness/workspace/G12/node_8_step_158/fresh-run/integration"
+      ],
+      "cwd": "/opt/g-harness/workspace/G12/node_8_step_158/fresh-run/fresh directory with spaces/breakwater-linux-x86_64",
+      "log": "integration.log",
+      "returncode": 0,
+      "wall_seconds": 17.00920983400283,
+      "required": true
+    },
+    {
+      "command": [
+        "/opt/g-harness/workspace/G12/node_8_step_157/.validation-venv/bin/python",
+        "/opt/g-harness/workspace/G12/node_8_step_158/fresh-run/fresh directory with spaces/breakwater-linux-x86_64/scripts/check_integration.py",
+        "/opt/g-harness/workspace/G12/node_8_step_158/fresh-run/integration"
+      ],
+      "cwd": "/opt/g-harness/workspace/G12/node_8_step_158/fresh-run/fresh directory with spaces/breakwater-linux-x86_64",
+      "log": "integration-checks.log",
+      "returncode": 0,
+      "wall_seconds": 11.349825536002754,
+      "required": true
+    }
+  ],
+  "passed": true,
+  "unchanged_release_members_after_tests": true,
+  "limits": "Xvfb + software llvmpipe; offline MovieWriter is actual mixer PCM, not speakers or realtime FPS. Unfixed realtime separately measured with observer overhead. Native audio diagnostic is not a speaker pass. No subjective visual, sound or fun verdict. Other distributions, GPUs, older glibc, Wayland and ARM unverified; Windows not built."
+}

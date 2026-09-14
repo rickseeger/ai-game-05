@@ -1,0 +1,228 @@
+{
+  "passed": true,
+  "required_commands_passed": 12,
+  "natural_rules": {
+    "terminals": [
+      {
+        "generation": 1,
+        "state": 2,
+        "reason": "",
+        "active_seconds": 21.7833333333333,
+        "health": 100,
+        "shots": 19
+      },
+      {
+        "generation": 2,
+        "state": 3,
+        "reason": "death",
+        "active_seconds": 16.1,
+        "health": 0,
+        "shots": 6
+      }
+    ],
+    "resets": 2,
+    "destructions": 5,
+    "hits": 39,
+    "threat_attacks": 8,
+    "input_events": 2657,
+    "samples": 2779
+  },
+  "pylon_arcs": 96,
+  "physics_samples": 100896,
+  "decoded_frames": 2780,
+  "png_captures": 64,
+  "audio": {
+    "pylon_asset_correlations": [
+      {
+        "generation": 1,
+        "pylon": 1,
+        "frame": 414,
+        "normalized_correlation": 0.9676744718896807,
+        "delay_ms": 26.104166666666668
+      },
+      {
+        "generation": 1,
+        "pylon": 2,
+        "frame": 499,
+        "normalized_correlation": 0.9408908696264782,
+        "delay_ms": 28.104166666666668
+      },
+      {
+        "generation": 1,
+        "pylon": 3,
+        "frame": 703,
+        "normalized_correlation": 0.9682344797484876,
+        "delay_ms": 20.083333333333336
+      },
+      {
+        "generation": 2,
+        "pylon": 3,
+        "frame": 1539,
+        "normalized_correlation": 0.969352393964559,
+        "delay_ms": 28.083333333333332
+      },
+      {
+        "generation": 3,
+        "pylon": 3,
+        "frame": 2565,
+        "normalized_correlation": 0.9718338058688061,
+        "delay_ms": 26.75
+      }
+    ],
+    "sample_rate": 48000,
+    "channels": 2,
+    "seconds": 46.333333333333336,
+    "peak": 0.3066263198852539,
+    "rms": 0.014159127309256619,
+    "clipped_samples": 0,
+    "matched_sources": 301,
+    "onsets": [
+      {
+        "kind": "break",
+        "frame": 161,
+        "delay_ms": 29.5,
+        "peak": 0.26314353942871094
+      },
+      {
+        "kind": "break",
+        "frame": 202,
+        "delay_ms": 28.833333333333336,
+        "peak": 0.24104785919189453
+      },
+      {
+        "kind": "impact",
+        "frame": 457,
+        "delay_ms": 24.729166666666664,
+        "peak": 0.025293350219726562
+      },
+      {
+        "kind": "impact",
+        "frame": 759,
+        "delay_ms": 25.666666666666657,
+        "peak": 0.06251144409179688
+      },
+      {
+        "kind": "impact",
+        "frame": 957,
+        "delay_ms": 22.0625,
+        "peak": 0.034873008728027344
+      },
+      {
+        "kind": "break",
+        "frame": 1068,
+        "delay_ms": 27.479166666666664,
+        "peak": 0.3066263198852539
+      },
+      {
+        "kind": "impact",
+        "frame": 1123,
+        "delay_ms": 28.43749999999999,
+        "peak": 0.05274677276611328
+      },
+      {
+        "kind": "impact",
+        "frame": 1299,
+        "delay_ms": 28.499999999999996,
+        "peak": 0.033225059509277344
+      },
+      {
+        "kind": "break",
+        "frame": 1525,
+        "delay_ms": 26.791666666666657,
+        "peak": 0.2954721450805664
+      },
+      {
+        "kind": "impact",
+        "frame": 1793,
+        "delay_ms": 30.062499999999993,
+        "peak": 0.035025596618652344
+      },
+      {
+        "kind": "break",
+        "frame": 2551,
+        "delay_ms": 25.458333333333332,
+        "peak": 0.3030738830566406
+      }
+    ]
+  },
+  "impact_pcm_matches": 6,
+  "natural_negative_controls": 14,
+  "realtime_performance": {
+    "fixed_fps": false,
+    "wall_seconds": 48.41310867200082,
+    "frame_interval_ms": {
+      "p50": 27.886499999999998,
+      "p95": 34.39885,
+      "p99": 37.96693
+    },
+    "mean_observed_fps": 35.50395013878866,
+    "max_frame_ms": 66.845,
+    "note": "Offline fixed-FPS evidence is NOT real-time performance. Unfixed run measures this software-rendered host including observation overhead; not Rick hardware."
+  },
+  "rules_assertions_per_run": [
+    55,
+    55
+  ],
+  "integration": {
+    "engine_assertions": 127,
+    "forced_reset_cycles": 6,
+    "ordinary_input_pylon_hits": 4,
+    "pixels": {
+      "hud": {
+        "changed_pixels": 12494,
+        "bounds": [
+          22,
+          26,
+          683,
+          119
+        ],
+        "restored_identical": true
+      },
+      "panel": {
+        "changed_pixels": 138370,
+        "bounds": [
+          310,
+          236,
+          969,
+          484
+        ],
+        "restored_identical": true
+      },
+      "locked_marker": {
+        "changed_pixels": 1090,
+        "bounds": [
+          512,
+          256,
+          667,
+          286
+        ],
+        "restored_identical": true,
+        "amber_or_green_pixels": 658
+      },
+      "open_marker": {
+        "changed_pixels": 948,
+        "bounds": [
+          520,
+          256,
+          667,
+          286
+        ],
+        "restored_identical": true,
+        "amber_or_green_pixels": 643
+      },
+      "captures": 16
+    },
+    "rejected_trace_mutations": [
+      "health",
+      "remaining",
+      "voices",
+      "bodies",
+      "player_callbacks",
+      "pointer_known",
+      "elapsed",
+      "hud"
+    ],
+    "source_commit": "42e3bd348b22590ba504ef5ebcb55dbd8443e652",
+    "run": "/opt/g-harness/workspace/G12/node_8_step_158/fresh-run/integration"
+  }
+}

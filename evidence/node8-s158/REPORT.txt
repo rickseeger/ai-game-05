@@ -1,0 +1,82 @@
+G12 node 8, step 158: independent Linux release verification
+
+Assigned execution finished; this is not a durable mission-node completion.
+No gameplay changes, Windows work or human playtest request was made.
+The prior node_8_step_157 artifact and logs were located and preserved. Its
+reported success was not used as proof: the exact artifact was rebuilt and run
+again here in a newly created directory with spaces and no inherited import cache.
+
+ARTIFACT
+/opt/g-harness/workspace/G12/node_8_step_158/dist/breakwater-linux-x86_64.tar.gz
+Source: 42e3bd348b22590ba504ef5ebcb55dbd8443e652
+Accepted game: 7ec9261cae21cd63d68e93c1fceb1c1090e3f091
+SHA256: 1fc3c4121aed811406a1e34475f5d8abf99850c0b7cc9cde41c91f1f1373e6cf
+Size: 70613010 bytes. Source and tests are included in the artifact.
+Repository: git@github.com:rickseeger/ai-game-05.git
+
+COMMANDS (from this workspace unless indicated)
+  python3 repo/scripts/build_linux_release.py --source 42e3bd348b22590ba504ef5ebcb55dbd8443e652 --engine-zip /opt/g-harness/workspace/G12/node_8_step_157/repo/.tools/godot.zip --output dist/rebuilt-linux-x86_64.tar.gz
+  cmp dist/breakwater-linux-x86_64.tar.gz dist/rebuilt-linux-x86_64.tar.gz
+  python3 audit_release.py
+  /opt/g-harness/workspace/G12/node_8_step_157/.validation-venv/bin/python repo/scripts/verify_linux_release.py dist/breakwater-linux-x86_64.tar.gz fresh-run
+  python3 package_evidence.py
+All returned 0. Reassembly is byte-identical using Python 3.14.4/zlib 1.3.1.
+The test interpreter was Python 3.12.14; pinned dependencies are in the release.
+Build reused the official engine ZIP only after its pinned SHA256 was checked.
+Audit checked all 210 members, 208 Git source/doc blobs, the complete 84 game
+files, all 10 WAV provenance hashes, ELF64 x86-64 header and included licenses.
+
+PLAY (from a writable Linux directory)
+  tar -xzf /opt/g-harness/workspace/G12/node_8_step_158/dist/breakwater-linux-x86_64.tar.gz
+  ./breakwater-linux-x86_64/launch.sh
+The same launcher also passed from an unrelated working directory. It first
+imports the bundled source assets, then launches the integrated default scene.
+Controls, goal, dependencies, reproducible build, testing and troubleshooting:
+LINUX-RELEASE.txt (identical to the artifact README.txt/docs/linux-release.txt).
+WASD move, mouse aim, hold left mouse fire, Space dash, Esc pause/settings,
+R retry after victory/defeat, M mute, -/= SFX level. Destroy all three pylons,
+then enter north EXTRACT alive before 150 active seconds.
+
+FRESH RESULTS
+All 12 required verification subprocesses passed, plus unrelated-CWD launch.
+Natural input-only gameplay won at 21.783333 active seconds, died to actual
+threat hits at 16.1 seconds, performed two ordinary R retries and fresh combat.
+Physics: 96 pylon fragment arcs, 100896 body samples, upward launch, descent,
+ground collision, bounce, rolling and settling. Rendering: 2780 decoded video
+frames, 64 PNG captures matched to movie timestamps, projected fragment pixels
+and destruction frame differences. Audio: actual stereo 48kHz Godot mixer PCM,
+non-silent/unclipped, five fracture and six ground-impact asset correlations.
+Fourteen natural-trace/audio negative controls rejected corrupted evidence.
+Rules: two runs of 55 assertions. Integration: 127 assertions, six reset cycles,
+HUD/pause/marker pixel changes and restoration. Release files remained unchanged.
+
+EVIDENCE
+verification.json: artifact identity, environment, exact commands, return codes.
+metrics.json: measured results, including real-time performance, not offline FPS.
+audit.json/rebuild.log: independently checked provenance and identical assembly.
+fresh-validation.tar.gz: fresh raw events/physics/frame traces, engine logs,
+MP4, PCM WAV, PNG captures, analyses, launch logs and test outputs.
+capture-index.json: every archived member hash; all read back from the archive.
+The temporary extraction and clone are removed after evidence publication;
+re-extract the delivered artifact to play, and clone the repository as repo to
+rerun audit_release.py. Recreate fresh-run with the verifier to rerun packaging.
+
+LIMITS AND LICENSES
+Target: Linux x86_64/glibc, Godot 4.5.1 official non-.NET runtime, X11/XWayland,
+OpenGL 3.3 compatibility. Runtime needs GL/X11 drivers/libraries and PulseAudio
+(or PipeWire pulse) or ALSA for desktop sound; glibc libraries are not bundled.
+Tests also need numpy 2.5.3, scipy 1.18.1, Pillow 12.3.0, ffmpeg/ffprobe,
+xvfb-run, xauth and ldd. Build requires Git, Python 3.12+, curl and unzip.
+Exact package names and installation commands are in LINUX-RELEASE.txt.
+Only this Linux x86_64/glibc 2.43 server with Mesa llvmpipe/Xvfb was tested.
+Native PulseAudio/ALSA initialization failed here (no audio session/device),
+falling back to Dummy. Mixer PCM succeeded; speakers were NOT verified.
+Unfixed real-time mean FPS was 35.50395013878866; p95 frame interval 34.39885 ms,
+including observer overhead. The 60 FPS MovieWriter recording is offline,
+not a performance claim. Other distributions, older glibc, physical GPUs,
+Rick hardware and physical keyboard/mouse delivery are unverified. Native
+Wayland, ARM, musl, 32-bit and Windows are outside this release target.
+Original game/code/generated assets: MIT. Exact Godot MIT and third-party
+copyright/license notices are bundled. No external music/fonts/textures needed.
+Subjective readability, sound quality, control feel and fun remain unassessed
+for Rick at node 9; no visual perception or listening is claimed.
