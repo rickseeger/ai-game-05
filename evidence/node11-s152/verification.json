@@ -1,0 +1,165 @@
+{
+  "source_commit": "5b05232d9e9de5a95732afd4c2fccb0a33d8cd59",
+  "accepted_base": "ae06960675a8d0a304c337aa8212c4098f4abb92",
+  "functional_verification": {
+    "passed": true,
+    "source_commit": "5b05232d9e9de5a95732afd4c2fccb0a33d8cd59",
+    "commands": 15,
+    "limits": "Session runs are isolated rules fixtures; opposition inactive/active runs use existing natural threat/counterplay drivers, not full-session victories. Audio is offline engine mixer, not speakers. No perception or performance claims."
+  },
+  "session": {
+    "passed": true,
+    "runs": [
+      {
+        "combat_hits": 12,
+        "distinct_pylons": 3,
+        "same_tick_orders_checked": 2,
+        "same_tick_break_sounds": 3,
+        "engine_assertions": 55,
+        "source_commit": "5b05232d9e9de5a95732afd4c2fccb0a33d8cd59",
+        "rendered_colors": 6454,
+        "rejected_mutations": [
+          "duplicate_progress",
+          "early_deadline",
+          "win_over_loss",
+          "early_terminal",
+          "late_audio",
+          "missing_hit"
+        ]
+      },
+      {
+        "combat_hits": 12,
+        "distinct_pylons": 3,
+        "same_tick_orders_checked": 2,
+        "same_tick_break_sounds": 3,
+        "engine_assertions": 55,
+        "source_commit": "5b05232d9e9de5a95732afd4c2fccb0a33d8cd59",
+        "rendered_colors": 6454,
+        "rejected_mutations": [
+          "duplicate_progress",
+          "early_deadline",
+          "win_over_loss",
+          "early_terminal",
+          "late_audio",
+          "missing_hit"
+        ]
+      }
+    ],
+    "limits": "Fixtures only; pixel diversity is not visual assessment; Dummy audio is not listening."
+  },
+  "opposition": {
+    "runs": [
+      {
+        "directory": "evidence/opposition/n11-s152-focused",
+        "engine_assertions": 47
+      },
+      {
+        "directory": "evidence/opposition/n11-s152-inactive",
+        "engine_assertions": 5,
+        "scenario": "inactive",
+        "ticks": 543,
+        "seconds": 9.05,
+        "health": 0,
+        "attacks": 7,
+        "damage_hits": 7,
+        "destroyed": 0
+      },
+      {
+        "directory": "evidence/opposition/n11-s152-active",
+        "engine_assertions": 12,
+        "scenario": "active",
+        "ticks": 1800,
+        "seconds": 30.0,
+        "health": 70,
+        "attacks": 2,
+        "damage_hits": 2,
+        "destroyed": 3
+      }
+    ],
+    "visual_assessment": "UNASSESSED; decoding is not perception",
+    "rejected_mutations": [
+      "short_telegraph",
+      "no_damage",
+      "no_destruction",
+      "no_burst",
+      "duplicate_hit",
+      "inactive_fires",
+      "healing"
+    ],
+    "passed": true
+  },
+  "physics_assertions": 34,
+  "audio_assertions": 738,
+  "performance_caveat": {
+    "frame_samples": 339,
+    "window_ticks": [
+      510,
+      1109
+    ],
+    "frame_ms": {
+      "median": 29.754,
+      "p95": 34.009,
+      "max": 38.344
+    },
+    "physics_process_ms": {
+      "median": 3.713,
+      "p95": 6.718,
+      "max": 6.718
+    },
+    "p95_target_ms": 33.3,
+    "meets_p95_target": false,
+    "capture_overlap_frames": 0,
+    "limit": "Offscreen CPU llvmpipe reference VM; not laptop or subjective smoothness acceptance."
+  },
+  "audio_signal": {
+    "sample_rate": 48000,
+    "channels": 2,
+    "duration_s": 26.25,
+    "sample_peak": 0.7943325042724609,
+    "sample_peak_dbfs": -1.99995331309778,
+    "true_peak_4x": 0.803419144116967,
+    "clipped_samples": 0,
+    "rms": 0.029750162075208263,
+    "isolated_break_onsets": [
+      {
+        "phase": "single_default",
+        "frame": 74,
+        "onset_delay_ms": 28.958333333333336,
+        "peak_first_800ms": 0.2745227813720703
+      },
+      {
+        "phase": "crowded_default",
+        "frame": 314,
+        "onset_delay_ms": 29.16666666666666,
+        "peak_first_800ms": 0.5739030838012695
+      },
+      {
+        "phase": "low_sfx",
+        "frame": 854,
+        "onset_delay_ms": 21.187499999999996,
+        "peak_first_800ms": 0.0704965591430664
+      },
+      {
+        "phase": "max_single",
+        "frame": 1094,
+        "onset_delay_ms": 20.916666666666668,
+        "peak_first_800ms": 0.3465232849121094
+      },
+      {
+        "phase": "max_overload",
+        "frame": 1334,
+        "onset_delay_ms": 20.791666666666668,
+        "peak_first_800ms": 0.7943325042724609
+      }
+    ],
+    "first_emitted_contact_event_frame": 133,
+    "first_emitted_impact_onset_delay_ms": 27.041666666666657,
+    "silence_after_80ms": {
+      "muted": 0.0,
+      "zero_master": 0.0
+    },
+    "low_to_max_single_peak_ratio": 0.2034396019330904,
+    "attack_35_200hz_energy_fraction": 0.9826267661376977
+  },
+  "controller_status": "Worker result only; no mission/node state changed."
+}
