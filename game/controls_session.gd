@@ -71,8 +71,6 @@ func start(seed_value: int) -> void:
     get_tree().paused = false
     run_seed = seed_value
     controls.set_enabled(true)
-    controls.pointer = Vector2.ZERO
-    controls.pointer_known = false
     if is_instance_valid(player):
         remove_child(player)
         player.free()

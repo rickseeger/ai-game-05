@@ -26,9 +26,9 @@ A rebuild_run extension hook places production cleanup BEFORE player_replaced
 and state_changed observers. Rebuild clears combat, opposition, sound and debris,
 recreates intact pylons, progress and lock, restores the clock compensation and
 loss reason, then seeds two normal warning spawns. It reuses service nodes and
-sound bus instead of duplicating callbacks/pools. Pointer knowledge and position
-now reset along with held input; pause/resume still preserves ordinary pointer
-behavior. Opposition entity sequence resets to 100 for reproducible seeded retry.
+sound bus instead of duplicating callbacks/pools. Production pointer knowledge
+and position now reset along with held input; the accepted isolated controls
+slice and pause/resume still preserve their ordinary pointer behavior. Opposition entity sequence resets to 100 for reproducible seeded retry.
 Debris.clear now clears its visible instance count immediately, not next draw.
 Monotonic combat/debris diagnostic IDs are deliberately retained, not gameplay
 state. Sound settings and bounded variant-selection history deliberately persist;

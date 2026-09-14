@@ -77,6 +77,9 @@ func rebuild_combat() -> void:
     objectives_changed.emit(remaining_pylons())
 
 func rebuild_run() -> void:
+    # Full-session retry clears aim; leave accepted isolated controls unchanged.
+    controls.pointer = Vector2.ZERO
+    controls.pointer_known = false
     if is_instance_valid(opposition):
         rebuild_combat()
 
