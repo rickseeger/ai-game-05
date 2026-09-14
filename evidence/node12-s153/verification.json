@@ -1,0 +1,577 @@
+{
+  "passed": true,
+  "commands": [
+    {
+      "command": [
+        "/opt/g-harness/workspace/G12/node_12_step_153/repo/.tools/validation-venv/bin/python",
+        "scripts/run_integration.py",
+        "evidence/n12-s153-final-integration-1"
+      ],
+      "utc_started": "2026-09-14T03:22:16.163787+00:00",
+      "returncode": 0,
+      "output": "integration-1.log"
+    },
+    {
+      "command": [
+        "/opt/g-harness/workspace/G12/node_12_step_153/repo/.tools/validation-venv/bin/python",
+        "scripts/run_integration.py",
+        "evidence/n12-s153-final-integration-2"
+      ],
+      "utc_started": "2026-09-14T03:22:31.171891+00:00",
+      "returncode": 0,
+      "output": "integration-2.log"
+    },
+    {
+      "command": [
+        "/opt/g-harness/workspace/G12/node_12_step_153/repo/.tools/validation-venv/bin/python",
+        "scripts/check_integration.py",
+        "evidence/n12-s153-final-integration-1",
+        "evidence/n12-s153-final-integration-2"
+      ],
+      "utc_started": "2026-09-14T03:22:46.536719+00:00",
+      "returncode": 0,
+      "output": "integration-checks.json"
+    },
+    {
+      "command": [
+        "xvfb-run",
+        "-a",
+        "/opt/g-harness/workspace/G12/node_11_step_152/repo/.tools/Godot_v4.5.1-stable_linux.x86_64",
+        "--path",
+        "/opt/g-harness/workspace/G12/node_12_step_153/repo/game",
+        "--audio-driver",
+        "Dummy",
+        "--quit-after",
+        "120",
+        "--max-fps",
+        "60"
+      ],
+      "utc_started": "2026-09-14T03:23:08.585879+00:00",
+      "returncode": 0,
+      "output": "plain-default-engine.log"
+    },
+    {
+      "command": [
+        "/opt/g-harness/workspace/G12/node_12_step_153/repo/.tools/validation-venv/bin/python",
+        "scripts/verify_session_node11.py",
+        "n12-s153-final-regression"
+      ],
+      "utc_started": "2026-09-14T03:23:13.021378+00:00",
+      "returncode": 0,
+      "output": "accepted-regressions.log"
+    },
+    {
+      "command": [
+        "/opt/g-harness/workspace/G12/node_12_step_153/repo/.tools/validation-venv/bin/python",
+        "scripts/run_arena.py",
+        "n12-s153-final-arena"
+      ],
+      "utc_started": "2026-09-14T03:27:03.746983+00:00",
+      "returncode": 0,
+      "output": "arena.log"
+    },
+    {
+      "command": [
+        "/opt/g-harness/workspace/G12/node_12_step_153/repo/.tools/validation-venv/bin/python",
+        "scripts/check_arena.py",
+        "evidence/arena/n12-s153-final-arena"
+      ],
+      "utc_started": "2026-09-14T03:27:06.757438+00:00",
+      "returncode": 0,
+      "output": "arena-checks.json"
+    },
+    {
+      "command": [
+        "/opt/g-harness/workspace/G12/node_12_step_153/repo/.tools/validation-venv/bin/python",
+        "scripts/run_ring_batch.py",
+        "n12-s153-final-ring"
+      ],
+      "utc_started": "2026-09-14T03:27:07.532838+00:00",
+      "returncode": 0,
+      "output": "ring.log"
+    }
+  ],
+  "source_commit": "08dfe3261aa662d302331f5b8e6264836a0169c2",
+  "engine_sha256": "db07cae7de644278a1884d4552bdf2bca3f5d30131b18faf3a0c4d730080b199",
+  "limits": "Forced terminal fixtures are not natural victories. Pixel checks are not readability; Dummy/mixer audio is not listening. No performance claim.",
+  "archive_rechecks": [
+    {
+      "command": [
+        "/opt/g-harness/workspace/G12/node_12_step_153/repo/.tools/validation-venv/bin/python",
+        "/opt/g-harness/workspace/G12/node_12_step_153/repo/scripts/check_integration.py",
+        "/opt/g-harness/workspace/G12/node_12_step_153/archive-check-vavr2bja/evidence/n12-s153-final-integration-1",
+        "/opt/g-harness/workspace/G12/node_12_step_153/archive-check-vavr2bja/evidence/n12-s153-final-integration-2"
+      ],
+      "returncode": 0,
+      "result": {
+        "passed": true,
+        "runs": [
+          {
+            "engine_assertions": 127,
+            "forced_reset_cycles": 6,
+            "ordinary_input_pylon_hits": 4,
+            "pixels": {
+              "hud": {
+                "changed_pixels": 12494,
+                "bounds": [
+                  22,
+                  26,
+                  683,
+                  119
+                ],
+                "restored_identical": true
+              },
+              "panel": {
+                "changed_pixels": 138370,
+                "bounds": [
+                  310,
+                  236,
+                  969,
+                  484
+                ],
+                "restored_identical": true
+              },
+              "locked_marker": {
+                "changed_pixels": 1090,
+                "bounds": [
+                  512,
+                  256,
+                  667,
+                  286
+                ],
+                "restored_identical": true,
+                "amber_or_green_pixels": 658
+              },
+              "open_marker": {
+                "changed_pixels": 948,
+                "bounds": [
+                  520,
+                  256,
+                  667,
+                  286
+                ],
+                "restored_identical": true,
+                "amber_or_green_pixels": 643
+              },
+              "captures": 16
+            },
+            "rejected_trace_mutations": [
+              "health",
+              "remaining",
+              "voices",
+              "bodies",
+              "player_callbacks",
+              "pointer_known",
+              "elapsed",
+              "hud"
+            ],
+            "source_commit": "08dfe3261aa662d302331f5b8e6264836a0169c2",
+            "run": "/opt/g-harness/workspace/G12/node_12_step_153/archive-check-vavr2bja/evidence/n12-s153-final-integration-1"
+          },
+          {
+            "engine_assertions": 127,
+            "forced_reset_cycles": 6,
+            "ordinary_input_pylon_hits": 4,
+            "pixels": {
+              "hud": {
+                "changed_pixels": 12494,
+                "bounds": [
+                  22,
+                  26,
+                  683,
+                  119
+                ],
+                "restored_identical": true
+              },
+              "panel": {
+                "changed_pixels": 138370,
+                "bounds": [
+                  310,
+                  236,
+                  969,
+                  484
+                ],
+                "restored_identical": true
+              },
+              "locked_marker": {
+                "changed_pixels": 1090,
+                "bounds": [
+                  512,
+                  256,
+                  667,
+                  286
+                ],
+                "restored_identical": true,
+                "amber_or_green_pixels": 658
+              },
+              "open_marker": {
+                "changed_pixels": 948,
+                "bounds": [
+                  520,
+                  256,
+                  667,
+                  286
+                ],
+                "restored_identical": true,
+                "amber_or_green_pixels": 643
+              },
+              "captures": 16
+            },
+            "rejected_trace_mutations": [
+              "health",
+              "remaining",
+              "voices",
+              "bodies",
+              "player_callbacks",
+              "pointer_known",
+              "elapsed",
+              "hud"
+            ],
+            "source_commit": "08dfe3261aa662d302331f5b8e6264836a0169c2",
+            "run": "/opt/g-harness/workspace/G12/node_12_step_153/archive-check-vavr2bja/evidence/n12-s153-final-integration-2"
+          }
+        ],
+        "limits": "Decoded pixels prove drawing and bindings, not subjective readability. Forced terminal fixtures are not natural victories; Dummy audio is not listening; fixed FPS is not performance."
+      }
+    },
+    {
+      "command": [
+        "/opt/g-harness/workspace/G12/node_12_step_153/repo/.tools/validation-venv/bin/python",
+        "/opt/g-harness/workspace/G12/node_12_step_153/repo/scripts/check_audio.py",
+        "/opt/g-harness/workspace/G12/node_12_step_153/archive-check-vavr2bja/evidence/audio/n12-s153-final-regression-audio",
+        "--self-test"
+      ],
+      "returncode": 0,
+      "result": {
+        "routing": {
+          "assertions": 738,
+          "source_breaks": 45,
+          "source_impacts": 222,
+          "runtime_voice_requests": 267,
+          "same_tick_matched": 267,
+          "max_active_slots": 8,
+          "burst_sample_variants": 4,
+          "impact_sample_variants": 6,
+          "steals": 6
+        },
+        "signal": {
+          "sample_rate": 48000,
+          "channels": 2,
+          "duration_s": 26.25,
+          "sample_peak": 0.7943325042724609,
+          "sample_peak_dbfs": -1.99995331309778,
+          "true_peak_4x": 0.803419144116967,
+          "clipped_samples": 0,
+          "rms": 0.029750162075208263,
+          "isolated_break_onsets": [
+            {
+              "phase": "single_default",
+              "frame": 74,
+              "onset_delay_ms": 28.958333333333336,
+              "peak_first_800ms": 0.2745227813720703
+            },
+            {
+              "phase": "crowded_default",
+              "frame": 314,
+              "onset_delay_ms": 29.16666666666666,
+              "peak_first_800ms": 0.5739030838012695
+            },
+            {
+              "phase": "low_sfx",
+              "frame": 854,
+              "onset_delay_ms": 21.187499999999996,
+              "peak_first_800ms": 0.0704965591430664
+            },
+            {
+              "phase": "max_single",
+              "frame": 1094,
+              "onset_delay_ms": 20.916666666666668,
+              "peak_first_800ms": 0.3465232849121094
+            },
+            {
+              "phase": "max_overload",
+              "frame": 1334,
+              "onset_delay_ms": 20.791666666666668,
+              "peak_first_800ms": 0.7943325042724609
+            }
+          ],
+          "first_emitted_contact_event_frame": 133,
+          "first_emitted_impact_onset_delay_ms": 27.041666666666657,
+          "silence_after_80ms": {
+            "muted": 0.0,
+            "zero_master": 0.0
+          },
+          "low_to_max_single_peak_ratio": 0.2034396019330904,
+          "attack_35_200hz_energy_fraction": 0.9826267661376977
+        },
+        "rendering": {
+          "frames": 1575,
+          "marker_frames": [
+            74,
+            314,
+            374,
+            434,
+            614,
+            734,
+            854,
+            1094,
+            1334
+          ],
+          "changed_downsampled_arena_pixels_launch_to_flight": 222,
+          "visual_judgment": "UNASSESSED: numeric rendering/timestamp checks only"
+        },
+        "aac_preview": {
+          "decoded_peak": 0.7931037545204163,
+          "clipped_samples": 0
+        },
+        "rejected_mutations": [
+          "clip",
+          "silence",
+          "delay_250ms",
+          "mute_leak",
+          "route_wrong_tick",
+          "no_contact",
+          "no_variation",
+          "voices_9"
+        ],
+        "audible_quality": "UNVERIFIED: no subjective listening. Strong attack/weight is the synthesis/tuning intent, not an observed perception."
+      }
+    }
+  ],
+  "integration_checks": {
+    "passed": true,
+    "runs": [
+      {
+        "engine_assertions": 127,
+        "forced_reset_cycles": 6,
+        "ordinary_input_pylon_hits": 4,
+        "pixels": {
+          "hud": {
+            "changed_pixels": 12494,
+            "bounds": [
+              22,
+              26,
+              683,
+              119
+            ],
+            "restored_identical": true
+          },
+          "panel": {
+            "changed_pixels": 138370,
+            "bounds": [
+              310,
+              236,
+              969,
+              484
+            ],
+            "restored_identical": true
+          },
+          "locked_marker": {
+            "changed_pixels": 1090,
+            "bounds": [
+              512,
+              256,
+              667,
+              286
+            ],
+            "restored_identical": true,
+            "amber_or_green_pixels": 658
+          },
+          "open_marker": {
+            "changed_pixels": 948,
+            "bounds": [
+              520,
+              256,
+              667,
+              286
+            ],
+            "restored_identical": true,
+            "amber_or_green_pixels": 643
+          },
+          "captures": 16
+        },
+        "rejected_trace_mutations": [
+          "health",
+          "remaining",
+          "voices",
+          "bodies",
+          "player_callbacks",
+          "pointer_known",
+          "elapsed",
+          "hud"
+        ],
+        "source_commit": "08dfe3261aa662d302331f5b8e6264836a0169c2",
+        "run": "evidence/n12-s153-final-integration-1"
+      },
+      {
+        "engine_assertions": 127,
+        "forced_reset_cycles": 6,
+        "ordinary_input_pylon_hits": 4,
+        "pixels": {
+          "hud": {
+            "changed_pixels": 12494,
+            "bounds": [
+              22,
+              26,
+              683,
+              119
+            ],
+            "restored_identical": true
+          },
+          "panel": {
+            "changed_pixels": 138370,
+            "bounds": [
+              310,
+              236,
+              969,
+              484
+            ],
+            "restored_identical": true
+          },
+          "locked_marker": {
+            "changed_pixels": 1090,
+            "bounds": [
+              512,
+              256,
+              667,
+              286
+            ],
+            "restored_identical": true,
+            "amber_or_green_pixels": 658
+          },
+          "open_marker": {
+            "changed_pixels": 948,
+            "bounds": [
+              520,
+              256,
+              667,
+              286
+            ],
+            "restored_identical": true,
+            "amber_or_green_pixels": 643
+          },
+          "captures": 16
+        },
+        "rejected_trace_mutations": [
+          "health",
+          "remaining",
+          "voices",
+          "bodies",
+          "player_callbacks",
+          "pointer_known",
+          "elapsed",
+          "hud"
+        ],
+        "source_commit": "08dfe3261aa662d302331f5b8e6264836a0169c2",
+        "run": "evidence/n12-s153-final-integration-2"
+      }
+    ],
+    "limits": "Decoded pixels prove drawing and bindings, not subjective readability. Forced terminal fixtures are not natural victories; Dummy audio is not listening; fixed FPS is not performance."
+  },
+  "accepted_regressions": {
+    "passed": true,
+    "source_commit": "08dfe3261aa662d302331f5b8e6264836a0169c2",
+    "commands": 15,
+    "limits": "Session runs are isolated rules fixtures; opposition inactive/active runs use existing natural threat/counterplay drivers, not full-session victories. Audio is offline engine mixer, not speakers. No perception or performance claims."
+  },
+  "clean_remote_execution": {
+    "source_commit": "08dfe3261aa662d302331f5b8e6264836a0169c2",
+    "remote": "git@github.com:rickseeger/ai-game-05.git",
+    "status": "",
+    "commands": [
+      {
+        "command": [
+          ".tools/Godot_v4.5.1-stable_linux.x86_64",
+          "--headless",
+          "--path",
+          "game",
+          "--editor",
+          "--import",
+          "--quit"
+        ],
+        "cwd": "/opt/g-harness/workspace/G12/node_12_step_153/clean-checkout",
+        "returncode": 0,
+        "log": "clean-import.log"
+      },
+      {
+        "command": [
+          "python3",
+          "scripts/run_integration.py",
+          "../clean-integration"
+        ],
+        "cwd": "/opt/g-harness/workspace/G12/node_12_step_153/clean-checkout",
+        "returncode": 0,
+        "log": "clean-integration-console.log"
+      }
+    ],
+    "checks_passed": true
+  },
+  "clean_remote_checks": {
+    "passed": true,
+    "runs": [
+      {
+        "engine_assertions": 127,
+        "forced_reset_cycles": 6,
+        "ordinary_input_pylon_hits": 4,
+        "pixels": {
+          "hud": {
+            "changed_pixels": 12494,
+            "bounds": [
+              22,
+              26,
+              683,
+              119
+            ],
+            "restored_identical": true
+          },
+          "panel": {
+            "changed_pixels": 138370,
+            "bounds": [
+              310,
+              236,
+              969,
+              484
+            ],
+            "restored_identical": true
+          },
+          "locked_marker": {
+            "changed_pixels": 1090,
+            "bounds": [
+              512,
+              256,
+              667,
+              286
+            ],
+            "restored_identical": true,
+            "amber_or_green_pixels": 658
+          },
+          "open_marker": {
+            "changed_pixels": 948,
+            "bounds": [
+              520,
+              256,
+              667,
+              286
+            ],
+            "restored_identical": true,
+            "amber_or_green_pixels": 643
+          },
+          "captures": 16
+        },
+        "rejected_trace_mutations": [
+          "health",
+          "remaining",
+          "voices",
+          "bodies",
+          "player_callbacks",
+          "pointer_known",
+          "elapsed",
+          "hud"
+        ],
+        "source_commit": "08dfe3261aa662d302331f5b8e6264836a0169c2",
+        "run": "../clean-integration"
+      }
+    ],
+    "limits": "Decoded pixels prove drawing and bindings, not subjective readability. Forced terminal fixtures are not natural victories; Dummy audio is not listening; fixed FPS is not performance."
+  }
+}

@@ -1,0 +1,872 @@
+diff --git a/README.md b/README.md
+index 69ad0e3..c3e5929 100644
+--- a/README.md
++++ b/README.md
+@@ -1,9 +1,23 @@
+-# G12: Breakwater — design and Linux technology probe
++# G12: Breakwater — Linux session integration
+ 
+-This repository contains a node-1 technology probe, node-2 arena/camera slice,
+-and node-3 player controls slice,
+-NOT a playable game or a completed mission.
+-The repository was empty when cloned from the persisted G12 configuration.
++Default launch now runs the complete production session: destroy three pylons,
++then reach north EXTRACT alive before the 150-second active-play deadline.
++WASD move, mouse aim, hold LMB fire, Space dash, Esc pause/resume; R retries
++only after victory/defeat. Master/SFX sliders, M mute, -/= SFX volume.
++
++    ./scripts/setup.sh
++    .tools/Godot_v4.5.1-stable_linux.x86_64 --headless --path game --editor --import --quit
++    .tools/Godot_v4.5.1-stable_linux.x86_64 --path game
++
++The accepted combat, physical destruction, sound and opposition are integrated;
++this is NOT release packaging or a completed mission. Node 12 tests reset/HUD
++integration with explicitly forced terminal fixtures, not natural full-session
++victories. Natural victory/defeat/replay and tuning remain node 13; subjective
++readability, sound satisfaction and fun remain Rick's node-9 playtest.
++See docs/session-integration.md for reproduction and limitations.
++
++The following probe/slice sections are historical validation entry points, NOT
++the default game. They remain available for focused subsystem regressions.
+ 
+ - docs/design.md: bounded loop, destruction/audio specification, interfaces and order.
+ - docs/acceptance.md: probe results versus later release gates.
+@@ -49,10 +63,10 @@ Use a new output name each time. Seven PNGs, engine log, launch metadata and
+ 
+ ## Player controls slice (node 3)
+ 
+-    .tools/Godot_v4.5.1-stable_linux.x86_64 --path game --rendering-method gl_compatibility
++    .tools/Godot_v4.5.1-stable_linux.x86_64 --path game res://controls.tscn --rendering-method gl_compatibility
+ 
+ WASD moves, mouse aims, hold LMB emits fire commands, Space dashes, Esc pauses.
+-R restarts only after terminal state (natural win/loss rules are not implemented).
++In this historical slice only, R tests terminal reset without natural win/loss rules.
+ No projectiles/damage, destruction, sound or opposition are presented as complete.
+ See docs/controls-validation.md for interfaces, actual input-driven tests/traces,
+ exact reproduction commands and limitations. Node 2 visual assessment remains
+@@ -81,6 +95,6 @@ The destruction fixture and opposition slice now route real breaks/rigid-body
+ impacts through an eight-voice spatial sound service with generated MIT assets,
+ limiter, persistent Master/SFX controls and M mute. See docs/audio-validation.md
+ for real execution, captures, independent checks and explicit listening limits.
+-The controls-only default scene and full-session objectives are unchanged.
++The default game now includes this service; this command still runs the audio fixture.
+ 
+     python3 scripts/run_audio.py local-audio
+diff --git a/docs/session-integration.md b/docs/session-integration.md
+new file mode 100644
+index 0000000..56bdb05
+--- /dev/null
++++ b/docs/session-integration.md
+@@ -0,0 +1,90 @@
++# Default Linux session integration (node 12)
++
++Prerequisite read from the harness database read-only: node 11 completed,
++independently accepted, 2026-09-14T03:10:17.443093+00:00. Node 12's full contract,
++accepted docs/design.md and evidence/node11-s152/review.md were read first.
++No mission/node state is mutated by this worker.
++
++## One production implementation
++
++project.godot now selects opposition.tscn, not controls.tscn. The existing
++opposition_session extends controls_session and retains node 11's rules and
++priority ordering unchanged: three distinct genuinely destroyed pylons, 1.5m
++extraction, 150 active seconds, death/timeout before victory after combat.
++
++The existing HUD and terminal labels now show the objective, controls, destroyed
++count, locked/open extraction, ceiling-rounded mm:ss, health, dash and sentries.
++HUD reads the actual session/player state each physics tick and synchronously
++on progress, pause, terminal and reset boundaries; no parallel UI rules model.
++The inherited terminal panel shows PAUSED/Esc or VICTORY/DEFEAT/R, loss reason,
++controls and the release/re-press rule. Both panels use the existing dark blue,
++white/cyan/amber direction. Amber LOCKED / green OPEN extraction labels and ring
++are presentation only, never a replacement collider or alternate win condition.
++
++The inherited start/run-seed/player-replacement boundary is still the only retry.
++A rebuild_run extension hook places production cleanup BEFORE player_replaced
++and state_changed observers. Rebuild clears combat, opposition, sound and debris,
++recreates intact pylons, progress and lock, restores the clock compensation and
++loss reason, then seeds two normal warning spawns. It reuses service nodes and
++sound bus instead of duplicating callbacks/pools. Production pointer knowledge
++and position now reset along with held input; the accepted isolated controls
++slice and pause/resume still preserve their ordinary pointer behavior. Opposition entity sequence resets to 100 for reproducible seeded retry.
++Debris.clear now clears its visible instance count immediately, not next draw.
++Monotonic combat/debris diagnostic IDs are deliberately retained, not gameplay
++state. Sound settings and bounded variant-selection history deliberately persist;
++all old voices are stopped and per-body throttle state cleared by existing clear.
++
++Demonstrated source defects addressed: old start emitted PLAYING before production
++rebuild (stale observer/HUD window), pointer aim survived reset, seeded enemy IDs
++kept increasing, and cleared debris could remain in the render batch until its
++next _process. Focused assertions now protect each boundary. No control/weapon,
++sentry AI, combat damage, pylon physics, destruction tuning, sound synthesis or
++mix parameters changed. Arena marker geometry is merely grouped for tinting;
++world/camera geometry and collision values are untouched.
++
++## Reproduction
++
++Linux x86_64 prerequisites/setup are in README. From repository root:
++
++    ./scripts/setup.sh
++    .tools/Godot_v4.5.1-stable_linux.x86_64 --headless --path game --editor --import --quit
++    uv venv .tools/validation-venv
++    uv pip install --python .tools/validation-venv/bin/python numpy==2.5.3 scipy==1.18.1 pillow==12.3.0
++    .tools/validation-venv/bin/python scripts/verify_integration_node12.py independent-n12
++
++Use a fresh prefix. GODOT_BIN may point to the identical pinned engine; every
++integration launch records its checksum and all game source hashes. The verifier
++runs two separate DEFAULT-entry processes (no scene override / no --script), a
++plain no-test-flag default smoke process, session rules and accepted subsystem
++regressions. Xvfb + actual X11/OpenGL rendering, not headless image substitution.
++Targeted tests / ordinary desktop launch:
++
++    python3 scripts/run_integration.py evidence/local-integration-a
++    python3 scripts/run_integration.py evidence/local-integration-b
++    .tools/validation-venv/bin/python scripts/check_integration.py evidence/local-integration-a evidence/local-integration-b
++    .tools/Godot_v4.5.1-stable_linux.x86_64 --path game
++
++Tests use ordinary InputEvents for pause/resume/R, initial four-hit pylon combat,
++and movement/firing after each retry. Six forced terminal cycles cover victory,
++death and timeout twice, with real opposition always enabled. Position, elapsed,
++health and target damage are explicitly injected for terminal setup: NOT natural
++victories or a natural full-session deadline run. Tests dirty state, verify old
++objects freed, all reset domains restored immediately, real new input works, and
++stable node/bus/connection counts with exactly one reset callback per signal.
++
++Independent Python checks recompute HUD strings from recorded state, pause
++invariants, reset state/event counts, default-entry command and game hashes.
++Eight corrupted traces must be rejected. PNG decoding verifies sizes/diversity,
++localized text/panel/marker hide-restore differences, amber/green marker pixels,
++and bit-identical paused restoration. 960x720 layout bounds are checked too.
++These are code-level drawing checks, not perception or subjective readability.
++
++## Boundaries
++
++Node 13 owns extended normal-control full-session victory/defeat/replay and
++bounded tuning; node 8 owns release packaging. Rick at node 9 judges readability
++(particularly dense HUD and terminal overlay), audiovisual satisfaction and fun.
++Fixed-FPS integration captures are NOT a real-time performance benchmark.
++Dummy audio diagnostics establish routing, not hearing speakers. Regression
++MovieWriter PCM establishes actual mixer behavior only. No subjective verdict.
++See evidence/node12-s153/review.md and verification.json for executed results.
+diff --git a/game/arena.gd b/game/arena.gd
+index 6b8fa8c..bd41f91 100644
+--- a/game/arena.gd
++++ b/game/arena.gd
+@@ -9,6 +9,8 @@ var enemy_spawn_points: Array[Vector3] = []
+ var exit_transform := Transform3D(Basis.IDENTITY, Vector3(0, 0, -10))
+ var ground: StaticBody3D
+ var geometry: Node3D
++var extraction_marker: Node3D
++var extraction_label: Label3D
+ 
+ func _ready() -> void:
+     build(1201)
+@@ -44,13 +46,25 @@ func build(_seed: int = 1201) -> Dictionary:
+         var p := pylon_spawns[i].origin
+         ring(geometry, p + Vector3.UP * 0.025, 1.35, Color("eeb358"))
+         label(geometry, "P%d" % (i + 1), p + Vector3(2.0, 0.15, 0), Color("ffd88b"))
+-    ring(geometry, exit_transform.origin + Vector3.UP * 0.025, 1.5, Color("55e0b5"))
+-    box(geometry, Vector3(1.6, 0.025, 0.18), Vector3(0, 0.03, -10), Color("55e0b5"))
+-    box(geometry, Vector3(0.18, 0.025, 1.6), Vector3(0, 0.03, -10), Color("55e0b5"))
+-    label(geometry, "EXTRACT", Vector3(-3.6, 0.15, -10), Color("86ffe0"))
++    extraction_marker = Node3D.new()
++    geometry.add_child(extraction_marker)
++    ring(extraction_marker, exit_transform.origin + Vector3.UP * 0.025, 1.5, Color("55e0b5"))
++    box(extraction_marker, Vector3(1.6, 0.025, 0.18), Vector3(0, 0.03, -10), Color("55e0b5"))
++    box(extraction_marker, Vector3(0.18, 0.025, 1.6), Vector3(0, 0.03, -10), Color("55e0b5"))
++    label(extraction_marker, "EXTRACT", Vector3(-3.6, 0.15, -10), Color("86ffe0"))
++    extraction_label = extraction_marker.get_child(extraction_marker.get_child_count() - 1)
+     return {"player_spawn": player_spawn, "pylon_spawns": pylon_spawns.duplicate(),
+         "enemy_spawn_points": enemy_spawn_points.duplicate(), "exit_transform": exit_transform}
+ 
++func set_extraction_open(value: bool) -> void:
++    # Presentation only: the session remains the sole authority for eligibility.
++    var color := Color("55e0b5") if value else Color("eeb358")
++    for child in extraction_marker.get_children():
++        if child is MeshInstance3D or child is MultiMeshInstance3D:
++            child.material_override.albedo_color = color
++    extraction_label.text = "EXTRACT [OPEN]" if value else "EXTRACT [LOCKED]"
++    extraction_label.modulate = Color("86ffe0") if value else Color("ffd88b")
++
+ func solid_box(id: String, size: Vector3, at: Vector3, color: Color) -> StaticBody3D:
+     var body := StaticBody3D.new()
+     body.name = id
+diff --git a/game/controls_session.gd b/game/controls_session.gd
+index faf3cd2..bacad15 100644
+--- a/game/controls_session.gd
++++ b/game/controls_session.gd
+@@ -85,10 +85,15 @@ func start(seed_value: int) -> void:
+     player.fired.connect(on_fired)
+     state = State.PLAYING
+     Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
++    rebuild_run()
+     player_replaced.emit(player)
+     state_changed.emit(state)
+     refresh_hud()
+ 
++func rebuild_run() -> void:
++    # Extension point inside the ONE restart boundary, before observers see PLAYING.
++    pass
++
+ func on_fired(_origin: Vector3, _direction: Vector3) -> void:
+     shots += 1
+     # Visible command acknowledgement, NOT a hit/damage/projectile simulation.
+diff --git a/game/destruction.gd b/game/destruction.gd
+index c3393d1..9322bda 100644
+--- a/game/destruction.gd
++++ b/game/destruction.gd
+@@ -121,6 +121,8 @@ func clear() -> void:
+     for body in bodies.duplicate():
+         retire(body, "restart")
+     last_impact_tick = -100
++    if is_instance_valid(batch):
++        batch.multimesh.visible_instance_count = 0
+ 
+ func _physics_process(dt: float) -> void:
+     tick += 1
+diff --git a/game/opposition.gd b/game/opposition.gd
+index ace430e..b8fa0e9 100644
+--- a/game/opposition.gd
++++ b/game/opposition.gd
+@@ -24,6 +24,7 @@ func start(seed_value: int) -> void:
+     rng.seed = seed_value
+     elapsed = 0.0
+     next_spawn = SPAWN_INTERVAL
++    next_entity = 100
+     warn_spawn()
+     warn_spawn()
+ 
+diff --git a/game/opposition_session.gd b/game/opposition_session.gd
+index 18e1b20..a15b369 100644
+--- a/game/opposition_session.gd
++++ b/game/opposition_session.gd
+@@ -1,6 +1,5 @@
+ extends "res://controls_session.gd"
+-## Production rules on the accepted opposition slice; default launch/HUD polish
+-## are separate integration work. Resolve only AFTER movement and combat damage.
++## Complete production session. Resolve only AFTER movement and combat damage.
+ signal objectives_changed(remaining: int)
+ const REQUIRED_PYLONS := 3
+ const DEADLINE := 150.0
+@@ -18,6 +17,7 @@ var debris: Node3D
+ var combat: Node3D
+ var opposition: Node3D
+ var targets: Array[Node3D] = []
++var hud_panel: PanelContainer
+ 
+ func _ready() -> void:
+     super._ready()
+@@ -29,7 +29,6 @@ func _ready() -> void:
+     add_child(sound)
+     sound.bind(debris)
+     sound.gameplay_input = controls
+-    player_replaced.connect(func(_player): sound.clear())
+     combat = Combat.new()
+     add_child(combat)
+     opposition = Opposition.new()
+@@ -37,7 +36,13 @@ func _ready() -> void:
+     opposition.combat = combat
+     opposition.destruction = debris
+     add_child(opposition)
++    build_session_hud()
+     rebuild_combat()
++    refresh_hud()
++    if "--integration-test" in OS.get_cmdline_user_args():
++        var tests = load("res://tests/integration_tests.gd").new()
++        add_child(tests)
++        tests.call_deferred("run", self)
+     if "--opposition-test" in OS.get_cmdline_user_args():
+         var tests = load("res://tests/opposition_tests.gd").new()
+         add_child(tests)
+@@ -67,10 +72,14 @@ func rebuild_combat() -> void:
+     # Do not finish from died: all bolts in this physics tick must resolve first.
+     opposition.player = player
+     opposition.start(run_seed)
++    arena.set_extraction_open(false)
++    refresh_hud()
+     objectives_changed.emit(remaining_pylons())
+ 
+-func start(seed_value: int) -> void:
+-    super.start(seed_value)
++func rebuild_run() -> void:
++    # Full-session retry clears aim; leave accepted isolated controls unchanged.
++    controls.pointer = Vector2.ZERO
++    controls.pointer_known = false
+     if is_instance_valid(opposition):
+         rebuild_combat()
+ 
+@@ -79,11 +88,53 @@ func on_fired(origin: Vector3, direction: Vector3) -> void:
+     if is_instance_valid(combat):
+         combat.spawn_bolt(player, origin, direction, player.BOLT_DAMAGE)
+ 
++func build_session_hud() -> void:
++    # Reuse the inherited labels and terminal panel; no second HUD state model.
++    var style := StyleBoxFlat.new()
++    style.bg_color = Color("09131eee")
++    for side in [SIDE_LEFT, SIDE_TOP, SIDE_RIGHT, SIDE_BOTTOM]:
++        style.set_content_margin(side, 10)
++    hud_panel = PanelContainer.new()
++    hud.get_parent().add_child(hud_panel)
++    hud.reparent(hud_panel)
++    hud_panel.add_theme_stylebox_override("panel", style)
++    hud_panel.set_anchors_and_offsets_preset(Control.PRESET_TOP_WIDE)
++    hud_panel.offset_left = 12
++    hud_panel.offset_right = -12
++    hud_panel.offset_top = 10
++    hud_panel.offset_bottom = 118
++    hud_panel.mouse_filter = Control.MOUSE_FILTER_IGNORE
++    hud.add_theme_color_override("font_color", Color("e1f5ff"))
++    hud.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
++    hud.mouse_filter = Control.MOUSE_FILTER_IGNORE
++    panel.add_theme_stylebox_override("panel", style)
++    panel.set_anchors_and_offsets_preset(Control.PRESET_CENTER)
++    panel.offset_left = -330
++    panel.offset_right = 330
++    panel.offset_top = -125
++    panel.offset_bottom = 125
++    panel.mouse_filter = Control.MOUSE_FILTER_IGNORE
++    message.mouse_filter = Control.MOUSE_FILTER_IGNORE
++    message.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
++    message.add_theme_color_override("font_color", Color("e1f5ff"))
++
+ func refresh_hud() -> void:
+-    super.refresh_hud()
+-    hud.text = "BREAKWATER / SESSION RULES SLICE — status UI pending | destruction audio enabled\nWASD move | Mouse aim | Hold LMB fire | Space dash | Esc pause\nHealth: %d / 100   Dash: %s   Sentries: %d\nRed line: locked aim (0.6s) | Red bolt: 15 damage | Sentry: two hits" % [
+-        player.health, "READY" if player.dash_remaining <= 0.00001 else "%.1fs" % player.dash_remaining,
++    if not is_instance_valid(player):
++        return
++    var seconds_left := ceili(maxf(0.0, DEADLINE - elapsed))
++    var clock := "%d:%02d" % [seconds_left / 60, seconds_left % 60]
++    var extraction := "OPEN - reach the north pad" if extraction_unlocked() else "LOCKED - destroy all pylons"
++    hud.text = "BREAKWATER | Destroy THREE pylons, then reach EXTRACT alive before time runs out.\nPylons: %d / 3 destroyed | Extraction: %s\nTime: %s | Health: %d / 100 | Dash: %s | Sentries: %d\nWASD move | Mouse aim | Hold LMB fire | Space dash | Esc pause | M mute" % [
++        destroyed_pylons.size(), extraction, clock, player.health,
++        "READY" if player.dash_remaining <= 0.00001 else "%.1fs" % player.dash_remaining,
+         opposition.sentries.size() if is_instance_valid(opposition) else 0]
++    panel.visible = state != State.PLAYING
++    var title := "PAUSED - Esc to resume"
++    if state == State.WON:
++        title = "VICTORY - extracted alive!\nR to retry"
++    elif state == State.LOST:
++        title = "DEFEAT - " + ("time ran out" if loss_reason == "timeout" else "health depleted") + "\nR to retry"
++    message.text = title + "\n\nDestroy three pylons, then enter the north EXTRACT pad.\nWASD move | Mouse aim | Hold LMB fire\nSpace dash (2s cooldown) | Esc pause/resume\nRelease and re-press controls after resume/retry."
+ 
+ func remaining_pylons() -> int:
+     return maxi(0, REQUIRED_PYLONS - destroyed_pylons.size())
+@@ -99,6 +150,8 @@ func on_target_destroyed(id: int, _at: Transform3D, kind: StringName, _seed: int
+     for target in targets:
+         if target.entity_id == id and target.is_destroyed:
+             destroyed_pylons[id] = true
++            arena.set_extraction_open(extraction_unlocked())
++            refresh_hud()
+             objectives_changed.emit(remaining_pylons())
+             return
+ 
+diff --git a/game/project.godot b/game/project.godot
+index 632229b..27f8302 100644
+--- a/game/project.godot
++++ b/game/project.godot
+@@ -1,7 +1,7 @@
+ config_version=5
+ [application]
+-config/name="Breakwater — Controls"
+-run/main_scene="res://controls.tscn"
++config/name="Breakwater"
++run/main_scene="res://opposition.tscn"
+ [display]
+ window/size/viewport_width=1280
+ window/size/viewport_height=720
+diff --git a/game/tests/integration_tests.gd b/game/tests/integration_tests.gd
+new file mode 100644
+index 0000000..1f6e0ae
+--- /dev/null
++++ b/game/tests/integration_tests.gd
+@@ -0,0 +1,279 @@
++extends Node
++## Default-entry integration. Terminal setup is an explicitly forced fixture,
++## NEVER a natural victory. Pause, movement, firing, dash and R use InputEvents.
++signal after_tick
++var scene: Node3D
++var out := ""
++var checks: Array[Dictionary] = []
++var snapshots: Array[Dictionary] = []
++var events: Array[Dictionary] = []
++var phase := "default_launch"
++var initial_nodes := 0
++var initial_buses := 0
++var progress_events := 0
++var state_events := 0
++var replace_events := 0
++
++func _ready() -> void:
++    process_mode = Node.PROCESS_MODE_ALWAYS
++    process_physics_priority = 100
++
++func _physics_process(_dt: float) -> void:
++    after_tick.emit()
++
++func steps(n: int) -> void:
++    for i in n:
++        await after_tick
++
++func check(label: String, value: bool) -> void:
++    checks.append({"phase": phase, "name": label, "pass": value})
++    print("INTEGRATION_ASSERT ", phase, " / ", label, " ", "PASS" if value else "FAIL")
++    if not value:
++        push_error(label)
++
++func key(code: Key, pressed: bool, echo_value := false) -> void:
++    var e := InputEventKey.new()
++    e.physical_keycode = code
++    e.pressed = pressed
++    e.echo = echo_value
++    Input.parse_input_event(e)
++    events.append({"kind": "input_key", "phase": phase, "tick": Engine.get_physics_frames(), "code": code, "pressed": pressed, "echo": echo_value})
++
++func tap(code: Key) -> void:
++    key(code, true)
++    key(code, false)
++
++func mouse(at: Vector2) -> void:
++    var e := InputEventMouseMotion.new()
++    e.position = at
++    e.global_position = at
++    Input.parse_input_event(e)
++
++func button(pressed: bool) -> void:
++    var e := InputEventMouseButton.new()
++    e.position = scene.controls.pointer
++    e.global_position = e.position
++    e.button_index = MOUSE_BUTTON_LEFT
++    e.pressed = pressed
++    Input.parse_input_event(e)
++
++func v(a: Vector3) -> Array:
++    return [a.x, a.y, a.z]
++
++func count_nodes(n: Node) -> int:
++    var result := 1
++    for child in n.get_children():
++        result += count_nodes(child)
++    return result
++
++func rect(c: Control) -> Array:
++    var r := c.get_global_rect()
++    return [r.position.x, r.position.y, r.size.x, r.size.y]
++
++func snapshot(label: String) -> Dictionary:
++    var p = scene.player
++    var t: Array = []
++    for target in scene.targets:
++        t.append({"id": target.entity_id, "health": target.health, "destroyed": target.is_destroyed,
++            "intact": is_instance_valid(target.intact), "callbacks": target.destroyed.get_connections().size()})
++    var voices: Array = []
++    for voice in scene.sound.voices:
++        voices.append(voice.playing)
++    var s := {"label": label, "phase": phase, "tick": Engine.get_physics_frames(),
++        "state": scene.state, "generation": scene.generation, "elapsed": scene.elapsed,
++        "clock_error": scene._clock_error, "health": p.health, "loss_reason": scene.loss_reason,
++        "remaining": scene.remaining_pylons(), "unlocked": scene.extraction_unlocked(),
++        "marker": scene.arena.extraction_label.text, "position": v(p.global_position),
++        "velocity": v(p.velocity), "aim_valid": p.aim_valid, "pointer_known": scene.controls.pointer_known,
++        "pointer": [scene.controls.pointer.x, scene.controls.pointer.y], "held": scene.controls.held.keys(),
++        "dash_edge": scene.controls.dash_edge, "input_enabled": scene.controls.enabled,
++        "fire_remaining": p.fire_remaining, "dash_remaining": p.dash_remaining,
++        "shots": scene.shots, "shot_count": p.shot_count, "dash_count": p.dash_count,
++        "targets": t, "bolts": scene.combat.bolts.size(), "bolt_visuals": scene.combat.get_child_count(),
++        "bodies": scene.debris.bodies.size(), "rendered_bodies": scene.debris.batch.multimesh.visible_instance_count,
++        "voices": voices, "audio_history": scene.sound.body_ticks.size(),
++        "sentries": scene.opposition.sentries.size(), "pending": scene.opposition.pending.map(func(w): return {"id": w.id, "left": w.left, "position": v(w.position)}),
++        "opposition_elapsed": scene.opposition.elapsed, "next_spawn": scene.opposition.next_spawn,
++        "nodes": count_nodes(scene), "buses": AudioServer.bus_count,
++        "player_callbacks": p.fired.get_connections().size(),
++        "burst_callbacks": scene.debris.burst_started.get_connections().size(),
++        "impact_callbacks": scene.debris.impact.get_connections().size(),
++        "pause_callbacks": scene.controls.pause_requested.get_connections().size(),
++        "restart_callbacks": scene.controls.restart_requested.get_connections().size(),
++        "hud": scene.hud.text, "message": scene.message.text, "panel_visible": scene.panel.visible,
++        "paused": get_tree().paused, "hud_rect": rect(scene.hud), "panel_rect": rect(scene.panel)}
++    snapshots.append(s)
++    return s
++
++func capture(label: String) -> void:
++    await RenderingServer.frame_post_draw
++    check("capture_" + label, get_viewport().get_texture().get_image().save_png(out.path_join(label + ".png")) == OK)
++    snapshot(label)
++
++func on_state(value: int) -> void:
++    state_events += 1
++    events.append({"kind": "state", "value": value, "phase": phase, "remaining": scene.remaining_pylons(), "elapsed": scene.elapsed, "tick": Engine.get_physics_frames()})
++
++func on_progress(value: int) -> void:
++    progress_events += 1
++    events.append({"kind": "progress", "value": value, "phase": phase, "tick": Engine.get_physics_frames()})
++
++func verify_reset(old_ids: Array, expected_generation: int) -> void:
++    var s := snapshot("reset")
++    check("fresh_player_clock_and_input", s.health == 100 and s.elapsed == 0 and s.clock_error == 0 and s.generation == expected_generation and s.state == scene.State.PLAYING and s.input_enabled and not s.paused and s.held.is_empty() and not s.dash_edge and not s.pointer_known and s.pointer == [0.0, 0.0] and not s.aim_valid and s.velocity == [0.0, 0.0, 0.0] and s.position == v(scene.arena.player_spawn.origin))
++    check("cooldowns_shots_and_damage_feedback_reset", s.dash_remaining == 0 and s.fire_remaining == 0 and s.shots == 0 and s.shot_count == 0 and s.dash_count == 0 and scene.player.hit_flash == 0 and not scene.player.hit_indicator.visible)
++    check("three_fresh_solid_pylons_and_locked_exit", s.remaining == 3 and not s.unlocked and s.loss_reason == "" and s.marker == "EXTRACT [LOCKED]" and s.targets.size() == 3 and s.targets.all(func(t): return t.health == 100 and not t.destroyed and t.intact and t.callbacks == 1))
++    check("prior_objects_freed", old_ids.all(func(id): return not is_instance_id_valid(id)))
++    check("bolts_debris_voices_cleared_immediately", s.bolts == 0 and s.bolt_visuals == 0 and s.bodies == 0 and s.rendered_bodies == 0 and s.audio_history == 0 and not s.voices.any(func(playing): return playing))
++    check("opposition_seed_clock_warnings_restored", s.sentries == 0 and s.pending.size() == 2 and s.pending[0].id == 100 and s.pending[1].id == 101 and s.pending.all(func(w): return w.left == 1.0) and s.opposition_elapsed == 0 and s.next_spawn == 15.0)
++    check("no_node_bus_or_callback_growth", s.nodes == initial_nodes and s.buses == initial_buses and s.player_callbacks == 1 and s.burst_callbacks == 1 and s.impact_callbacks == 1 and s.pause_callbacks == 1 and s.restart_callbacks == 1)
++    check("hud_reset_before_return", "Pylons: 0 / 3" in s.hud and "LOCKED" in s.hud and "Time: 2:30" in s.hud and "Health: 100 / 100" in s.hud and "Dash: READY" in s.hud and not s.panel_visible)
++
++func run(session: Node3D) -> void:
++    scene = session
++    out = OS.get_environment("INTEGRATION_OUT")
++    initial_nodes = count_nodes(scene)
++    initial_buses = AudioServer.bus_count
++    scene.state_changed.connect(on_state)
++    scene.objectives_changed.connect(on_progress)
++    scene.player_replaced.connect(func(_p): replace_events += 1)
++    scene.combat.event.connect(func(kind, data): events.append({"kind": "combat_" + kind, "data": data, "phase": phase, "tick": Engine.get_physics_frames()}))
++    scene.sound.audio_event.connect(func(data): events.append({"kind": "audio", "data": data, "phase": phase, "tick": Engine.get_physics_frames()}))
++    check("actual_default_main_scene", get_tree().current_scene == scene and scene.scene_file_path == ProjectSettings.get_setting("application/run/main_scene") and scene.scene_file_path == "res://opposition.tscn")
++    check("linux_rendered_production_services", OS.get_name() == "Linux" and DisplayServer.get_name() == "X11" and scene.combat.get_script().resource_path == "res://combat.gd" and scene.debris.get_script().resource_path == "res://destruction.gd" and scene.sound.get_script().resource_path == "res://sound.gd" and scene.opposition.get_script().resource_path == "res://opposition.gd")
++    snapshot("launch")
++    await steps(3)
++    await capture("default-playing")
++    var gen: int = scene.generation
++    tap(KEY_R)
++    check("R_ignored_while_playing", scene.generation == gen)
++    # Real default spawn -> ground aim -> four ordinary LMB hits on nearby P3.
++    mouse(scene.camera.unproject_position(scene.targets[2].global_position))
++    button(true)
++    await steps(80)
++    button(false)
++    check("normal_input_combat_destroys_pylon_and_routes_sound", scene.targets[2].is_destroyed and scene.remaining_pylons() == 2 and scene.debris.bodies.size() == 32 and events.any(func(e): return e.kind == "audio" and e.data.kind == "break" and not e.data.dropped))
++    check("production_opposition_spawns", scene.opposition.sentries.size() == 2)
++    mouse(scene.camera.unproject_position(Vector3(8, 0, 8)))
++    key(KEY_A, true)
++    key(KEY_SPACE, true)
++    button(true)
++    await steps(2)
++    tap(KEY_ESCAPE)
++    var frozen := snapshot("pause-start")
++    check("pause_hud_live_bindings", frozen.paused and frozen.panel_visible and "PAUSED" in frozen.message and "Pylons: 1 / 3" in frozen.hud and "Dash: READY" not in frozen.hud and "Sentries: 2" in frozen.hud)
++    tap(KEY_R)
++    key(KEY_ESCAPE, true, true)
++    key(KEY_D, true)
++    await steps(20)
++    var later := snapshot("pause-end")
++    check("pause_freezes_all_active_timers_and_world", scene.generation == gen and later.elapsed == frozen.elapsed and later.opposition_elapsed == frozen.opposition_elapsed and later.position == frozen.position and later.fire_remaining == frozen.fire_remaining and later.dash_remaining == frozen.dash_remaining and later.bodies == frozen.bodies and later.state == scene.State.PAUSED)
++    await capture("paused-visible")
++    scene.hud.visible = false
++    await capture("paused-hud-hidden")
++    scene.hud.visible = true
++    scene.panel.visible = false
++    await capture("paused-panel-hidden")
++    scene.panel.visible = true
++    await capture("paused-restored")
++    scene.panel.visible = false
++    await capture("extraction-locked")
++    scene.arena.extraction_marker.visible = false
++    await capture("locked-marker-hidden")
++    scene.arena.extraction_marker.visible = true
++    await capture("locked-marker-restored")
++    scene.panel.visible = true
++    get_window().size = Vector2i(960, 720)
++    await steps(3)
++    await capture("paused-4x3")
++    check("hud_and_panel_fit_4x3", scene.hud.get_global_rect().end.x <= 960 and scene.hud.get_global_rect().end.y < scene.panel.get_global_rect().position.y and scene.panel.get_global_rect().end.x <= 960 and scene.panel.get_global_rect().end.y < 600)
++    get_window().size = Vector2i(1280, 720)
++    tap(KEY_ESCAPE)
++    await steps(3)
++    check("resume_advances_without_resurrecting_held_controls", scene.state == scene.State.PLAYING and scene.elapsed > frozen.elapsed and scene.opposition.elapsed > frozen.opposition_elapsed and scene.controls.held.is_empty() and scene.player.shot_count == frozen.shot_count and scene.player.global_position.distance_to(Vector3(frozen.position[0], frozen.position[1], frozen.position[2])) < 0.002)
++    key(KEY_A, false)
++    key(KEY_D, false)
++    key(KEY_SPACE, false)
++    button(false)
++
++    for cycle in 6:
++        phase = "forced_terminal_cycle_%d" % cycle
++        var mode: String = ["victory", "death", "timeout"][cycle % 3]
++        await steps(65) # Real opposition always active; wait for fresh warning spawns.
++        check("retry_has_live_opposition", scene.opposition.sentries.size() >= 2)
++        # Fixtures deliberately dirty every reset domain. No bypass claims.
++        scene.player.apply_damage(15, Vector3(8, 0, 0))
++        scene.player.dash_remaining = 1.25
++        scene.player.fire_remaining = 0.2
++        scene.elapsed = 42.0
++        for target in scene.targets:
++            if not target.is_destroyed:
++                target.apply_damage(100, Vector3.ZERO, Vector3.FORWARD)
++        scene.on_fired(scene.player.global_position + Vector3.UP, Vector3.LEFT)
++        scene.controls.held["move_up"] = true
++        scene.controls.held["fire"] = true
++        scene.controls.dash_edge = true
++        scene.controls.pointer_known = true
++        scene.controls.pointer = Vector2(350, 400)
++        scene.player.global_position = (scene.arena.global_transform * scene.arena.exit_transform).origin
++        check("fixture_dirty_live_domains", scene.remaining_pylons() == 0 and scene.debris.bodies.size() >= 64 and scene.combat.bolts.size() > 0 and scene.sound.active_count() > 0)
++        if mode == "death":
++            scene.player.apply_damage(100, Vector3.ZERO)
++        elif mode == "timeout":
++            scene.elapsed = 150.0
++        var before: int = state_events
++        scene.resolve_tick()
++        check("terminal_correct_and_single_callback", state_events == before + 1 and scene.state == (scene.State.WON if mode == "victory" else scene.State.LOST) and get_tree().paused and scene.panel.visible and "R to retry" in scene.message.text and ("VICTORY" if mode == "victory" else "DEFEAT") in scene.message.text)
++        check("terminal_health_time_reason_hud", ("Health: %d / 100" % scene.player.health) in scene.hud.text and (mode != "timeout" or ("Time: 0:00" in scene.hud.text and "time ran out" in scene.message.text)) and (mode != "death" or "health depleted" in scene.message.text))
++        scene.resolve_tick()
++        tap(KEY_ESCAPE)
++        check("terminal_idempotent_and_cannot_resume", state_events == before + 1 and get_tree().paused)
++        if cycle < 3:
++            await capture(mode + "-fixture")
++            if cycle == 0:
++                scene.panel.visible = false
++                await capture("extraction-open-fixture")
++                scene.arena.extraction_marker.visible = false
++                await capture("victory-marker-hidden")
++                scene.arena.extraction_marker.visible = true
++                await capture("victory-marker-restored")
++                scene.panel.visible = true
++        var old_ids: Array = [scene.player.get_instance_id()]
++        for target in scene.targets:
++            old_ids.append(target.get_instance_id())
++        for sentry in scene.opposition.sentries:
++            old_ids.append(sentry.get_instance_id())
++        for body in scene.debris.bodies:
++            old_ids.append(body.get_instance_id())
++        for bolt in scene.combat.bolts:
++            old_ids.append(bolt.visual.get_instance_id())
++        var expected_gen: int = scene.generation + 1
++        var prev_progress := progress_events
++        var prev_replace := replace_events
++        before = state_events
++        tap(KEY_R)
++        verify_reset(old_ids, expected_gen)
++        check("exactly_one_reset_notification_each", progress_events == prev_progress + 1 and state_events == before + 1 and replace_events == prev_replace + 1)
++        check("playing_observers_see_complete_reset", events.filter(func(e): return e.kind == "state")[-1].remaining == 3 and events.filter(func(e): return e.kind == "state")[-1].elapsed == 0)
++        await steps(3)
++        check("no_stale_fire_or_dash_after_retry", scene.player.shot_count == 0 and scene.player.dash_count == 0 and scene.combat.bolts.is_empty() and scene.player.health == 100 and scene.sound.active_count() == 0)
++        mouse(scene.camera.unproject_position(Vector3(8, 0, 8)))
++        key(KEY_D, true)
++        button(true)
++        var at: Vector3 = scene.player.global_position
++        await steps(2)
++        key(KEY_D, false)
++        button(false)
++        check("fresh_input_moves_and_fires_once_after_retry", scene.player.global_position.x > at.x and scene.player.shot_count == 1 and scene.shots == 1 and scene.combat.bolts.size() == 1)
++        snapshot("replay-live")
++    phase = "final_replay"
++    tap(KEY_ESCAPE)
++    await capture("final-retry-paused")
++    var failed := checks.filter(func(c): return not c.pass)
++    var result := {"passed": failed.is_empty(), "checks": checks, "snapshots": snapshots, "events": events,
++        "engine": Engine.get_version_info(), "renderer": RenderingServer.get_video_adapter_name(),
++        "scope": "Actual default entry; ordinary InputEvents for initial pylon and controls, forced terminal fixtures for six repeated victory/death/timeout resets. NOT natural full-session victories or subjective quality."}
++    FileAccess.open(out.path_join("results.json"), FileAccess.WRITE).store_string(JSON.stringify(result, "  "))
++    print("INTEGRATION_DONE checks=", checks.size(), " failures=", failed.size())
++    get_tree().paused = false
++    get_tree().quit(0 if failed.is_empty() else 1)
+diff --git a/game/tests/integration_tests.gd.uid b/game/tests/integration_tests.gd.uid
+new file mode 100644
+index 0000000..e9467f4
+--- /dev/null
++++ b/game/tests/integration_tests.gd.uid
+@@ -0,0 +1 @@
++uid://bs8hksuc05u6u
+diff --git a/scripts/check_integration.py b/scripts/check_integration.py
+new file mode 100644
+index 0000000..b27cd29
+--- /dev/null
++++ b/scripts/check_integration.py
+@@ -0,0 +1,115 @@
++#!/usr/bin/env python3
++"""Independent trace/HUD and decoded-pixel checks; no vision/readability verdict."""
++import argparse, copy, hashlib, json, math
++from pathlib import Path
++import numpy as np
++from PIL import Image
++ROOT = Path(__file__).resolve().parents[1]
++
++def validate(r):
++    assert r["passed"] and len(r["checks"]) >= 120 and all(c["pass"] for c in r["checks"])
++    ss = r["snapshots"]
++    named = {s["label"]: s for s in ss}
++    for s in ss:
++        seconds = math.ceil(max(0, 150-s["elapsed"]))
++        assert f"Time: {seconds//60}:{seconds%60:02d}" in s["hud"]
++        assert f"Pylons: {3-s['remaining']} / 3 destroyed" in s["hud"]
++        assert f"Health: {s['health']} / 100" in s["hud"]
++        assert f"Sentries: {s['sentries']}" in s["hud"]
++        dash = "READY" if s["dash_remaining"] <= .00001 else f"{s['dash_remaining']:.1f}s"
++        assert f"Dash: {dash}" in s["hud"]
++        assert s["unlocked"] == (s["remaining"] == 0)
++        assert ("Extraction: OPEN" if s["unlocked"] else "Extraction: LOCKED") in s["hud"]
++        for token in ["THREE pylons", "EXTRACT alive", "WASD", "Mouse", "LMB", "Space", "Esc"]:
++            assert token in s["hud"]
++        if s["state"] in [2,3]:
++            assert ("VICTORY" if s["state"] == 2 else "DEFEAT") in s["message"] and "R to retry" in s["message"]
++        if s["state"] == 1:
++            assert "PAUSED" in s["message"] and "Esc to resume" in s["message"]
++    for label,state,reason in [("victory-fixture",2,""),("death-fixture",3,"death"),("timeout-fixture",3,"timeout")]:
++        assert named[label]["state"] == state and named[label]["loss_reason"] == reason
++    a,b = named["pause-start"],named["pause-end"]
++    for field in ["elapsed","opposition_elapsed","position","fire_remaining","dash_remaining","bodies","state"]:
++        assert a[field] == b[field], field
++    resets = [s for s in ss if s["label"] == "reset"]
++    assert len(resets) == 6
++    for i,s in enumerate(resets):
++        assert s["generation"] == i+2 and s["state"] == 0 and not s["paused"]
++        for field in ["elapsed","clock_error","fire_remaining","dash_remaining","shots","shot_count","dash_count","bolts","bolt_visuals","bodies","rendered_bodies","audio_history","opposition_elapsed","sentries"]:
++            assert s[field] == 0, field
++        assert s["health"] == 100 and s["remaining"] == 3 and s["loss_reason"] == ""
++        assert s["input_enabled"] and not s["held"] and not s["dash_edge"] and not s["pointer_known"] and not s["aim_valid"]
++        assert s["pointer"] == [0,0] and s["velocity"] == [0,0,0] and s["position"] == [0,0,10]
++        assert not any(s["voices"]) and len(s["voices"]) == 8
++        assert s["next_spawn"] == 15 and s["pending"] == resets[0]["pending"]
++        assert [w["id"] for w in s["pending"]] == [100,101] and all(w["left"] == 1 for w in s["pending"])
++        assert [t["id"] for t in s["targets"]] == [1,2,3]
++        assert all(t["health"] == 100 and t["intact"] and not t["destroyed"] and t["callbacks"] == 1 for t in s["targets"])
++        assert s["marker"] == "EXTRACT [LOCKED]" and not s["panel_visible"]
++        assert s["nodes"] == named["launch"]["nodes"] and s["buses"] == named["launch"]["buses"]
++        for field in ["player_callbacks","burst_callbacks","impact_callbacks","pause_callbacks","restart_callbacks"]:
++            assert s[field] == 1, field
++        e = [e for e in r["events"] if e["phase"] == s["phase"]]
++        assert [x["value"] for x in e if x["kind"] == "state"] == [[2,3,3][i%3],0]
++        progress = [x["value"] for x in e if x["kind"] == "progress"]
++        assert progress == ([1,0,3] if i == 0 else [2,1,0,3]), progress
++    assert len([s for s in ss if s["label"] == "replay-live" and s["shots"] == 1 and s["shot_count"] == 1]) == 6
++    hits = [e for e in r["events"] if e["phase"] == "default_launch" and e["kind"] == "combat_hit" and e["data"]["target"] == 3]
++    assert len(hits) == 4 and all(e["data"]["damage"] == 25 for e in hits)
++    assert len([e for e in r["events"] if e["phase"] == "default_launch" and e["kind"] == "audio" and e["data"]["kind"] == "break" and not e["data"]["dropped"]]) == 1
++    return {"engine_assertions":len(r["checks"]),"forced_reset_cycles":len(resets),"ordinary_input_pylon_hits":len(hits)}
++
++def pixels(out,r):
++    named = {s["label"]:s for s in r["snapshots"]}
++    def image(name):
++        x = np.array(Image.open(out/(name+".png")).convert("RGB"))
++        assert x.shape == ((720,960,3) if name == "paused-4x3" else (720,1280,3))
++        assert len(np.unique(x.reshape(-1,3),axis=0)) > 1000
++        return x
++    images = {p.stem:image(p.stem) for p in out.glob("*.png")}
++    result = {}
++    for key,base,hidden,restored,rect_field in [
++        ("hud","paused-visible","paused-hud-hidden","paused-restored","hud_rect"),
++        ("panel","paused-visible","paused-panel-hidden","paused-restored","panel_rect"),
++        ("locked_marker","extraction-locked","locked-marker-hidden","locked-marker-restored",None),
++        ("open_marker","extraction-open-fixture","victory-marker-hidden","victory-marker-restored",None)]:
++        x,y,z = images[base],images[hidden],images[restored]
++        mask = np.any(x != y,axis=2)
++        changed = int(mask.sum())
++        assert changed > 100, key
++        assert np.array_equal(x,z), key+" restoration"
++        yy,xx = np.nonzero(mask)
++        if rect_field:
++            rx,ry,w,h = named[base][rect_field]
++            assert xx.min() >= math.floor(rx) and xx.max() < math.ceil(rx+w) and yy.min() >= math.floor(ry) and yy.max() < math.ceil(ry+h)
++        result[key] = {"changed_pixels":changed,"bounds":[int(xx.min()),int(yy.min()),int(xx.max()),int(yy.max())],"restored_identical":True}
++        if key.endswith("marker"):
++            colors=x[mask].astype(int)
++            is_color = ((colors[:,0] > colors[:,1]+20) & (colors[:,1] > colors[:,2]+20)) if key == "locked_marker" else ((colors[:,1] > colors[:,0]+40) & (colors[:,2] > colors[:,0]+30))
++            result[key]["amber_or_green_pixels"] = int(is_color.sum())
++            assert is_color.sum() > 30, key+" color"
++    assert int(np.any(images["death-fixture"][:130] != images["timeout-fixture"][:130],axis=2).sum()) > 100
++    result["captures"] = len(images)
++    return result
++
++def main():
++    p=argparse.ArgumentParser();p.add_argument("runs",nargs="+",type=Path);a=p.parse_args()
++    summary=[]
++    for out in a.runs:
++        launch=json.loads((out/"launch.json").read_text()); r=json.loads((out/"results.json").read_text())
++        assert launch["returncode"] == 0 and "--script" not in launch["command"] and not any(x.endswith(".tscn") for x in launch["command"])
++        assert "ERROR" not in (out/"engine.log").read_text()
++        for f,digest in launch["source_sha256"].items():
++            assert hashlib.sha256((ROOT/f).read_bytes()).hexdigest() == digest, f
++        report=validate(r);report["pixels"]=pixels(out,r)
++        rejected=[]
++        for field,value in [("health",99),("remaining",2),("voices",[True]*8),("bodies",1),("player_callbacks",2),("pointer_known",True),("elapsed",1),("hud","stale HUD")]:
++            corrupted=copy.deepcopy(r)
++            next(s for s in corrupted["snapshots"] if s["label"] == "reset")[field]=value
++            try: validate(corrupted)
++            except AssertionError: rejected.append(field)
++            else: raise AssertionError("accepted corrupt evidence: "+field)
++        report.update(rejected_trace_mutations=rejected,source_commit=launch["source_commit"],run=str(out))
++        summary.append(report)
++    print(json.dumps({"passed":True,"runs":summary,"limits":"Decoded pixels prove drawing and bindings, not subjective readability. Forced terminal fixtures are not natural victories; Dummy audio is not listening; fixed FPS is not performance."},indent=2))
++if __name__ == "__main__": main()
+diff --git a/scripts/run_integration.py b/scripts/run_integration.py
+new file mode 100644
+index 0000000..1e8afae
+--- /dev/null
++++ b/scripts/run_integration.py
+@@ -0,0 +1,33 @@
++#!/usr/bin/env python3
++"""Fresh Linux rendered process running integration fixtures via the ACTUAL DEFAULT ENTRY."""
++import argparse, hashlib, json, os, signal, subprocess, sys, time
++from pathlib import Path
++ROOT = Path(__file__).resolve().parents[1]
++p = argparse.ArgumentParser()
++p.add_argument("output", type=Path)
++a = p.parse_args()
++out = a.output.resolve()
++out.mkdir(parents=True, exist_ok=False)
++godot = Path(os.environ.get("GODOT_BIN", ROOT / ".tools/Godot_v4.5.1-stable_linux.x86_64")).resolve()
++cmd = ["xvfb-run", "-a", "-s", "-screen 0 1280x1024x24", str(godot), "--path", str(ROOT / "game"), "--rendering-method", "gl_compatibility", "--audio-driver", "Dummy", "--resolution", "1280x720", "--disable-vsync", "--fixed-fps", "60", "--", "--integration-test"]
++env = dict(os.environ, INTEGRATION_OUT=str(out), XDG_DATA_HOME=str(out / "userdata"), LIBGL_ALWAYS_SOFTWARE="1", GODOT_SILENCE_ROOT_WARNING="1")
++meta = {"command": cmd, "source_commit": subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip(), "source_status": subprocess.check_output(["git", "status", "--short"], cwd=ROOT, text=True), "source_sha256": {str(f.relative_to(ROOT)): hashlib.sha256(f.read_bytes()).hexdigest() for f in sorted((ROOT / "game").rglob("*")) if f.is_file() and ".godot" not in f.parts}, "engine_sha256": hashlib.sha256(godot.read_bytes()).hexdigest(), "uname": list(os.uname()), "environment": {k: env[k] for k in ["INTEGRATION_OUT", "XDG_DATA_HOME", "LIBGL_ALWAYS_SOFTWARE", "GODOT_SILENCE_ROOT_WARNING"]}, "scope": "Forced terminal/reset fixtures plus ordinary controls; rendered X11/software OpenGL, Dummy audio; no natural playability, speaker, perception or performance claim."}
++t = time.monotonic()
++with (out / "engine.log").open("w") as log:
++    process = subprocess.Popen(cmd, env=env, stdout=log, stderr=subprocess.STDOUT, start_new_session=True)
++    try:
++        rc = process.wait(timeout=180)
++    except subprocess.TimeoutExpired:
++        os.killpg(process.pid, signal.SIGTERM)
++        process.wait()
++        rc = 124
++meta.update(returncode=rc, wall_seconds=time.monotonic()-t)
++(out / "launch.json").write_text(json.dumps(meta, indent=2)+"\n")
++text = (out / "engine.log").read_text()
++print(text)
++valid = rc == 0 and "ERROR" not in text and (out / "results.json").exists()
++if valid:
++    r = json.loads((out / "results.json").read_text())
++    valid = r["passed"] and bool(r["checks"]) and all(c["pass"] for c in r["checks"])
++print(json.dumps({"valid":valid, "output":str(out), "returncode":rc}))
++sys.exit(0 if valid else 1)
+diff --git a/scripts/verify_integration_node12.py b/scripts/verify_integration_node12.py
+new file mode 100644
+index 0000000..7cb8129
+--- /dev/null
++++ b/scripts/verify_integration_node12.py
+@@ -0,0 +1,37 @@
++#!/usr/bin/env python3
++"""Serial fresh default-entry integration + accepted-system regressions."""
++import argparse, datetime, hashlib, json, os, subprocess, sys
++from pathlib import Path
++ROOT=Path(__file__).resolve().parents[1]
++p=argparse.ArgumentParser();p.add_argument("prefix");a=p.parse_args()
++assert Path(a.prefix).name == a.prefix and a.prefix not in (".","..")
++out=ROOT/"evidence"/(a.prefix+"-integration-verification");out.mkdir(exist_ok=False)
++commands=[]
++env=dict(os.environ,GODOT_BIN=str(Path(os.environ.get("GODOT_BIN",ROOT/".tools/Godot_v4.5.1-stable_linux.x86_64")).resolve()),LIBGL_ALWAYS_SOFTWARE="1",GODOT_SILENCE_ROOT_WARNING="1")
++def run(cmd,filename):
++    started=datetime.datetime.now(datetime.timezone.utc).isoformat()
++    try:
++        r=subprocess.run(cmd,cwd=ROOT,env=env,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,text=True,timeout=1500)
++        code,text=r.returncode,r.stdout
++    except subprocess.TimeoutExpired as e:
++        code,text=124,str(e.stdout)
++    (out/filename).write_text(text)
++    commands.append({"command":cmd,"utc_started":started,"returncode":code,"output":filename})
++    (out/"commands.json").write_text(json.dumps(commands,indent=2)+"\n")
++    print(filename,code,flush=True)
++    if code: print(text,flush=True)
++    return code
++runs=["evidence/"+a.prefix+"-integration-"+str(i) for i in (1,2)]
++for i,d in enumerate(runs):run([sys.executable,"scripts/run_integration.py",d],f"integration-{i+1}.log")
++run([sys.executable,"scripts/check_integration.py"]+runs,"integration-checks.json")
++run(["xvfb-run","-a",env["GODOT_BIN"],"--path",str(ROOT/"game"),"--audio-driver","Dummy","--quit-after","120","--max-fps","60"],"plain-default-engine.log")
++# Imported, accepted fixtures stay independent of the new default-entry driver.
++run([sys.executable,"scripts/verify_session_node11.py",a.prefix+"-regression"],"accepted-regressions.log")
++run([sys.executable,"scripts/run_arena.py",a.prefix+"-arena"],"arena.log")
++run([sys.executable,"scripts/check_arena.py","evidence/arena/"+a.prefix+"-arena"],"arena-checks.json")
++run([sys.executable,"scripts/run_ring_batch.py",a.prefix+"-ring"],"ring.log")
++passed=all(c["returncode"] == 0 for c in commands) and "ERROR" not in (out/"plain-default-engine.log").read_text()
++summary={"passed":passed,"commands":commands,"source_commit":subprocess.check_output(["git","rev-parse","HEAD"],cwd=ROOT,text=True).strip(),"engine_sha256":hashlib.sha256(Path(env["GODOT_BIN"]).read_bytes()).hexdigest(),"limits":"Forced terminal fixtures are not natural victories. Pixel checks are not readability; Dummy/mixer audio is not listening. No performance claim."}
++(out/"summary.json").write_text(json.dumps(summary,indent=2)+"\n")
++print(json.dumps({"passed":passed,"commands":len(commands)}),flush=True)
++sys.exit(0 if passed else 1)
