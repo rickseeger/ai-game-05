@@ -1,0 +1,156 @@
+[
+  {
+    "name": "720p",
+    "command": [
+      "/usr/local/lib/hermes-agent/venv/bin/python",
+      "scripts/run_arena.py",
+      "n2-s138-720p",
+      "--size",
+      "1280x720"
+    ],
+    "cwd": "/opt/g-harness/workspace/G12/node_2_step_138/repo",
+    "returncode": 0,
+    "expected_returncode": 0,
+    "elapsed_seconds": 3.2769579330015404,
+    "log": "docs/node2-s138/logs/720p.log"
+  },
+  {
+    "name": "4x3",
+    "command": [
+      "/usr/local/lib/hermes-agent/venv/bin/python",
+      "scripts/run_arena.py",
+      "n2-s138-4x3",
+      "--size",
+      "960x720"
+    ],
+    "cwd": "/opt/g-harness/workspace/G12/node_2_step_138/repo",
+    "returncode": 0,
+    "expected_returncode": 0,
+    "elapsed_seconds": 2.929776942000899,
+    "log": "docs/node2-s138/logs/4x3.log"
+  },
+  {
+    "name": "wide",
+    "command": [
+      "/usr/local/lib/hermes-agent/venv/bin/python",
+      "scripts/run_arena.py",
+      "n2-s138-wide",
+      "--size",
+      "1680x720"
+    ],
+    "cwd": "/opt/g-harness/workspace/G12/node_2_step_138/repo",
+    "returncode": 0,
+    "expected_returncode": 0,
+    "elapsed_seconds": 2.273309052998229,
+    "log": "docs/node2-s138/logs/wide.log"
+  },
+  {
+    "name": "negative",
+    "command": [
+      "/usr/local/lib/hermes-agent/venv/bin/python",
+      "scripts/run_arena.py",
+      "n2-s138-negative",
+      "--negative-camera"
+    ],
+    "cwd": "/opt/g-harness/workspace/G12/node_2_step_138/repo",
+    "returncode": 1,
+    "expected_returncode": 1,
+    "elapsed_seconds": 3.881696237000142,
+    "log": "docs/node2-s138/logs/negative.log"
+  },
+  {
+    "name": "tour",
+    "command": [
+      "/usr/local/lib/hermes-agent/venv/bin/python",
+      "scripts/run_arena.py",
+      "n2-s138-tour",
+      "--tour-frames",
+      "720"
+    ],
+    "cwd": "/opt/g-harness/workspace/G12/node_2_step_138/repo",
+    "returncode": 0,
+    "expected_returncode": 0,
+    "elapsed_seconds": 18.053936187003274,
+    "log": "docs/node2-s138/logs/tour.log"
+  },
+  {
+    "name": "analytic-720p",
+    "command": [
+      "/usr/local/lib/hermes-agent/venv/bin/python",
+      "scripts/run_visibility.py",
+      "n2-s138-analytic-720p",
+      "--size",
+      "1280x720"
+    ],
+    "cwd": "/opt/g-harness/workspace/G12/node_2_step_138/repo",
+    "returncode": 0,
+    "expected_returncode": 0,
+    "elapsed_seconds": 42.28767694999988,
+    "log": "docs/node2-s138/logs/analytic-720p.log"
+  },
+  {
+    "name": "dense-720p",
+    "command": [
+      "/usr/local/lib/hermes-agent/venv/bin/python",
+      "scripts/run_dense_visibility.py",
+      "n2-s138-dense-720p",
+      "--size",
+      "1280x720"
+    ],
+    "cwd": "/opt/g-harness/workspace/G12/node_2_step_138/repo",
+    "returncode": 0,
+    "expected_returncode": 0,
+    "elapsed_seconds": 7.655486981999275,
+    "log": "docs/node2-s138/logs/dense-720p.log"
+  },
+  {
+    "name": "analytic-4x3",
+    "command": [
+      "/usr/local/lib/hermes-agent/venv/bin/python",
+      "scripts/run_visibility.py",
+      "n2-s138-analytic-4x3",
+      "--size",
+      "960x720"
+    ],
+    "cwd": "/opt/g-harness/workspace/G12/node_2_step_138/repo",
+    "returncode": 0,
+    "expected_returncode": 0,
+    "elapsed_seconds": 35.37053441500029,
+    "log": "docs/node2-s138/logs/analytic-4x3.log"
+  },
+  {
+    "name": "dense-4x3",
+    "command": [
+      "/usr/local/lib/hermes-agent/venv/bin/python",
+      "scripts/run_dense_visibility.py",
+      "n2-s138-dense-4x3",
+      "--size",
+      "960x720"
+    ],
+    "cwd": "/opt/g-harness/workspace/G12/node_2_step_138/repo",
+    "returncode": 0,
+    "expected_returncode": 0,
+    "elapsed_seconds": 7.347461116998602,
+    "log": "docs/node2-s138/logs/dense-4x3.log"
+  },
+  {
+    "name": "arena-checks",
+    "command": [
+      "/usr/local/lib/hermes-agent/venv/bin/python",
+      "scripts/check_arena.py",
+      "evidence/arena/n2-s138-720p",
+      "evidence/arena/n2-s138-4x3",
+      "evidence/arena/n2-s138-wide",
+      "--negative-dir",
+      "evidence/arena/n2-s138-negative",
+      "--tour-dir",
+      "evidence/arena/n2-s138-tour",
+      "--self-test"
+    ],
+    "cwd": "/opt/g-harness/workspace/G12/node_2_step_138/repo",
+    "returncode": 0,
+    "expected_returncode": 0,
+    "elapsed_seconds": 3.021753405999334,
+    "log": "docs/node2-s138/logs/arena-checks.log"
+  }
+]

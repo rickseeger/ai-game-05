@@ -1,0 +1,30 @@
+{
+  "destination": "G12 node 9 final human playtest",
+  "tested_source_revision": "954782e0fb5b6b535ce99168795872ae56ad4c16",
+  "archive": "evidence/node2-s138/runtime-evidence.tar.xz",
+  "production_frames": [
+    "evidence/arena/n2-s138-dense-4x3/dense_001_color.png",
+    "evidence/arena/n2-s138-dense-4x3/dense_012_color.png",
+    "evidence/arena/n2-s138-dense-4x3/dense_030_color.png",
+    "evidence/arena/n2-s138-dense-4x3/dense_060_color.png",
+    "evidence/arena/n2-s138-dense-4x3/dense_090_color.png",
+    "evidence/arena/n2-s138-dense-4x3/dense_120_color.png",
+    "evidence/arena/n2-s138-dense-720p/dense_001_color.png",
+    "evidence/arena/n2-s138-dense-720p/dense_012_color.png",
+    "evidence/arena/n2-s138-dense-720p/dense_030_color.png",
+    "evidence/arena/n2-s138-dense-720p/dense_060_color.png",
+    "evidence/arena/n2-s138-dense-720p/dense_090_color.png",
+    "evidence/arena/n2-s138-dense-720p/dense_120_color.png"
+  ],
+  "concerns": [
+    "Judge action/airborne-debris legibility, visible ground contact, visual comfort and satisfaction in motion on the exact final release; no subjective inspection occurred here.",
+    "At tick 12 cyan actor-region retention is 27.23% / 37.05%; by tick 30 it is 94.34% / 84.75%. Sparse measurements do not bound continuous occlusion duration or establish body visibility/recognition.",
+    "Three-of-seven case tour_0360_12 reproduces at both sizes. All centers are in frame; some pieces are hidden even in isolated passes. Do not require every fragment visible, or treat this alone as a defect.",
+    "Dense tick 120 contains fragments beyond the arena floor and below y=0: IDs 111 and 128 offscreen at 720p, ID 128 at 4:3. These are outside the configured visual envelope, not clipping of in-arena action. If final playtest finds distracting boundary behavior, route to destruction/boundary owner; no physics acceptance or camera expansion was attempted."
+  ],
+  "restrictions": [
+    "Only *_color.png are production crowded appearance; IDs, solo, clean and shadow-disabled captures are diagnostics.",
+    "Dense diagnostics pause simulation; not a dense FPS benchmark. Tour uses seven nonphysical presentation cubes.",
+    "No input, combat, destruction physics, audio, root-objective or durable node acceptance."
+  ]
+}

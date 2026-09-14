@@ -1,0 +1,8 @@
+{
+  "tree_id": "G12",
+  "node_id": 2,
+  "objective": "Implement and test the game's Linux 3D arena rendering and camera, following the validated design.",
+  "completion_contract": "Prerequisite: the design and engine feasibility evidence have been independently accepted. Outcome: a legible real-time 3D arena with depth, lighting or equivalent depth cues, visible ground contact, and a camera that keeps action and airborne debris readable. Evidence: source, focused scene/camera tests, launch commands, and captured frames from the actual renderer. Validation: independently launch the scene and exercise camera behavior; confirm real 3D rendering rather than a 2D imitation. This node does not stand in for input, combat, or destruction validation.",
+  "execution_limit": "Only reproducible technical defects in renderer/camera; carry subjective judgments and crowded captures to node 9 for human playtest. Do not change mission state.",
+  "current_execution": "Focused fresh verification of current source revision; camera and crowded airborne debris; automated projection, depth/contact and pixel checks. Investigate occlusion without requiring every fragment visible; fix only reproducible scene/camera defects. Subjective judgments reserved for node 9; no durable node-state changes."
+}

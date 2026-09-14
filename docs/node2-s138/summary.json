@@ -1,0 +1,67 @@
+{
+  "passed": true,
+  "analytic": [
+    {
+      "frames": 40,
+      "minimum_cubes_with_3_pixels": 3,
+      "mean_visible_fraction": 0.7061548849847255,
+      "mean_seam_rgb": 135.6395948454173,
+      "landmark_minimum_retained_fraction": {
+        "actor": 0.6590038314176245,
+        "contact": 0.8367346938775511,
+        "exit": 0.8353293413173652,
+        "label": 1.0
+      }
+    },
+    {
+      "frames": 40,
+      "minimum_cubes_with_3_pixels": 3,
+      "mean_visible_fraction": 0.711054936162389,
+      "mean_seam_rgb": 123.86890085358571,
+      "landmark_minimum_retained_fraction": {
+        "actor": 0.6339869281045751,
+        "contact": 0.7315068493150685,
+        "exit": 0.78,
+        "label": 1.0
+      }
+    }
+  ],
+  "dense": [
+    {
+      "directory": "evidence/arena/n2-s138-dense-720p",
+      "perspective": {
+        "near_pixels": 1402,
+        "far_pixels": 547
+      },
+      "minimum_cubes_with_3_pixels": 136,
+      "minimum_shadow_pixels": 2976,
+      "minimum_retained_fraction": {
+        "actor": 0.27233115468409586,
+        "contact": 0.6450617283950617,
+        "exit": 0.5419161676646707,
+        "label": 0.8727272727272727
+      }
+    },
+    {
+      "directory": "evidence/arena/n2-s138-dense-4x3",
+      "perspective": {
+        "near_pixels": 956,
+        "far_pixels": 426
+      },
+      "minimum_cubes_with_3_pixels": 133,
+      "minimum_shadow_pixels": 2367,
+      "minimum_retained_fraction": {
+        "actor": 0.3704600484261501,
+        "contact": 0.7225609756097561,
+        "exit": 0.584,
+        "label": 0.7883211678832117
+      }
+    }
+  ],
+  "rejected_pixel_mutations": [
+    "missing_frame",
+    "lost_actor",
+    "lost_label",
+    "lost_debris"
+  ]
+}

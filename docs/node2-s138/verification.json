@@ -1,0 +1,19 @@
+{
+  "tested_source_revision": "954782e0fb5b6b535ce99168795872ae56ad4c16",
+  "production_and_existing_tests_unchanged": true,
+  "fresh_runner_exit": 0,
+  "focused_analysis_final_exit": 0,
+  "focused_analysis_initial_exits": [
+    1,
+    1
+  ],
+  "initial_analysis_failures": "Overbroad assertions about out-of-envelope fragment centers and all isolated pieces visible; investigated and recorded rather than modifying production to satisfy them.",
+  "archive_member_hashes_verified": 924,
+  "renderer_pngs": 886,
+  "sha256sum_exit": 0,
+  "prerequisite_evidence": "evidence/arena/prerequisite.json records independent contract validation of node 1; unchanged.",
+  "prior_controller_tmp_directory_available": true,
+  "no_durable_node_state_writes": true,
+  "subjective_visual_inspection": false,
+  "scope": "Renderer/camera execution only. Human readability and satisfaction reserved for node 9."
+}
