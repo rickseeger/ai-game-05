@@ -39,6 +39,10 @@ func _ready() -> void:
     build_session_hud()
     rebuild_combat()
     refresh_hud()
+    if "--natural-test" in OS.get_cmdline_user_args():
+        var driver = load("res://tests/natural_play.gd").new()
+        add_child(driver)
+        driver.call_deferred("run", self)
     if "--integration-test" in OS.get_cmdline_user_args():
         var tests = load("res://tests/integration_tests.gd").new()
         add_child(tests)
