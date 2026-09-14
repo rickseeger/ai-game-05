@@ -1,0 +1,717 @@
+{
+  "source_revision": "79f709f89dcfc8607dd49674d8ba47bfb5c22a1b",
+  "archive": "evidence/audio-node5-s146/runtime-evidence.tar.gz",
+  "archive_bytes": 33762373,
+  "archive_sha256": "4df87b9ff966f701345660da7011ed5dabf474750947a44ecb119195a84837e7",
+  "member_count": 141,
+  "members": [
+    {
+      "path": "evidence/audio/n5s146/analysis.json",
+      "bytes": 3706,
+      "sha256": "f58cb0614f81577107b513defc327991813162ea91ca33889c54cd6a004245aa"
+    },
+    {
+      "path": "evidence/audio/n5s146/encode.log",
+      "bytes": 9962,
+      "sha256": "dbb9707568e18aece10c6ae060cc4546bbcfa73467955d26f8d27068b5e85f29"
+    },
+    {
+      "path": "evidence/audio/n5s146/engine.log",
+      "bytes": 1172,
+      "sha256": "db7ed0116cbc75b23185f8bdbb99134e93a72ecca4f898d05bd2364a0a49c020"
+    },
+    {
+      "path": "evidence/audio/n5s146/frames.csv",
+      "bytes": 46826,
+      "sha256": "d8f7328f6404f77c6f43bb119bb010d72c7f16d149717d68831cd4e8c71c4e8b"
+    },
+    {
+      "path": "evidence/audio/n5s146/launch.json",
+      "bytes": 7461,
+      "sha256": "bff19393535a345af992e0840746cffaa62f7204fa5ead8ac2bd08dfb8b1ade1"
+    },
+    {
+      "path": "evidence/audio/n5s146/results.json",
+      "bytes": 279518,
+      "sha256": "d50bf72aa65e27ba87fe664cc18bec9927582b803bc7dacd6cf45cea85ad3a9e"
+    },
+    {
+      "path": "evidence/audio/n5s146/runtime.mp4",
+      "bytes": 7464445,
+      "sha256": "ae4d5ecd7d28cdad94e7e45093a5340abe42097828226d9471698b604f10a651"
+    },
+    {
+      "path": "evidence/audio/n5s146/runtime.wav",
+      "bytes": 10080102,
+      "sha256": "4132346fb77a8f5986d83f344d0c95099b2cd2da36ac6933d2c1fc0c8e23caf0"
+    },
+    {
+      "path": "evidence/audio/n5s146/userdata/godot/app_userdata/Breakwater \u2014 Controls/logs/godot.log",
+      "bytes": 1170,
+      "sha256": "7d3a1926f3fcb9481326904a2f4a7f3bfa679622a588ec8271b14ece834d922a"
+    },
+    {
+      "path": "evidence/audio/n5s146/userdata/godot/app_userdata/Breakwater \u2014 Controls/shader_cache/CanvasShaderGLES3/d6f43d7e0fbc440290f0c3a77cf0f40066898da0fbdcc46f8b51b2aedaf2b191/6bb7c9a2fd1c4a8fa77cb96555b9b4a720209981.cache",
+      "bytes": 35574,
+      "sha256": "655f8e97ae1d4fda0d63e6b9aae441e38047aabf9a3b8a20a4cedece63a71a67"
+    },
+    {
+      "path": "evidence/audio/n5s146/userdata/godot/app_userdata/Breakwater \u2014 Controls/shader_cache/CopyShaderGLES3/9e43c80d5a04be55b43ab2338e8da8f5b0f20618a3e869928272b954afcff6fe/6bb7c9a2fd1c4a8fa77cb96555b9b4a720209981.cache",
+      "bytes": 72198,
+      "sha256": "001641141dd1c35eb9b3def10944131b55cacbd5e204a005ac5531133e9351ee"
+    },
+    {
+      "path": "evidence/audio/n5s146/userdata/godot/app_userdata/Breakwater \u2014 Controls/shader_cache/FeedShaderGLES3/37a956d1fa2424db9cc4da95128f7750da7138107b45bfd8dc4c00b472c38603/6bb7c9a2fd1c4a8fa77cb96555b9b4a720209981.cache",
+      "bytes": 5105,
+      "sha256": "ec4be5d51aee6356e774044b5de7dc72d37c4a19db6f29744660152be9e6a207"
+    },
+    {
+      "path": "evidence/audio/n5s146/userdata/godot/app_userdata/Breakwater \u2014 Controls/shader_cache/PostShaderGLES3/907f5f5388055d7fedef256127241995e5d797ba6b0616cba4cc6040697a9c1d/6bb7c9a2fd1c4a8fa77cb96555b9b4a720209981.cache",
+      "bytes": 10797,
+      "sha256": "cceb0311d601f95de63a68dc029ff386d12e4faee86a9fa38e0d87f38a4e588a"
+    },
+    {
+      "path": "evidence/audio/n5s146/userdata/godot/app_userdata/Breakwater \u2014 Controls/shader_cache/SceneShaderGLES3/926d7ef5f331286ebab4e4c2e582064fbbc800752e71ebc08c6a8145043adbb2/4505b6017dc502b9cb1ea9be38a366bfd444849c.cache",
+      "bytes": 713108,
+      "sha256": "c4e0f234a172065e4a3dde33d0f61666ca5177588b4bc8d84e597174717e3bfd"
+    },
+    {
+      "path": "evidence/audio/n5s146/userdata/godot/app_userdata/Breakwater \u2014 Controls/shader_cache/SceneShaderGLES3/926d7ef5f331286ebab4e4c2e582064fbbc800752e71ebc08c6a8145043adbb2/6bb7c9a2fd1c4a8fa77cb96555b9b4a720209981.cache",
+      "bytes": 579256,
+      "sha256": "d69a15fc6e35a674e9cc9ec2b94fe8bc5f1fddb361f403fb2989954aea527a6f"
+    },
+    {
+      "path": "evidence/audio/n5s146/userdata/godot/app_userdata/Breakwater \u2014 Controls/shader_cache/SceneShaderGLES3/926d7ef5f331286ebab4e4c2e582064fbbc800752e71ebc08c6a8145043adbb2/77047cd41f429f33ceff24e890e174f5465e755e.cache",
+      "bytes": 599630,
+      "sha256": "245130ca437e7a066fb00ad235d716dada32fa381b9d760c2ac1f61c3e7a17c8"
+    },
+    {
+      "path": "evidence/audio/n5s146/userdata/godot/app_userdata/Breakwater \u2014 Controls/shader_cache/SceneShaderGLES3/926d7ef5f331286ebab4e4c2e582064fbbc800752e71ebc08c6a8145043adbb2/a7066d9c826da62591c9a7200b95903130e922bd.cache",
+      "bytes": 590749,
+      "sha256": "c2f7996d89753f9e3fc01f38d3c6faabdb723bcc000531d15360d2095b555296"
+    },
+    {
+      "path": "evidence/audio/n5s146/userdata/godot/app_userdata/Breakwater \u2014 Controls/shader_cache/SceneShaderGLES3/926d7ef5f331286ebab4e4c2e582064fbbc800752e71ebc08c6a8145043adbb2/c43acb7911e92e912490e79d283f5095108609fe.cache",
+      "bytes": 725210,
+      "sha256": "d8a869de68fbdc24c4e4285bf7754ae2eede73c93083fc10582b7556bef85b56"
+    },
+    {
+      "path": "evidence/audio/n5s146/userdata/godot/app_userdata/Breakwater \u2014 Controls/shader_cache/SceneShaderGLES3/926d7ef5f331286ebab4e4c2e582064fbbc800752e71ebc08c6a8145043adbb2/f2e328ac8a780a17a0c65e242b0c8bc4fc063f03.cache",
+      "bytes": 705798,
+      "sha256": "ebc99475312486ea6c4526ed05ad6617f15edcd681237129c269f6e5145a8ece"
+    },
+    {
+      "path": "evidence/audio/n5s146/userdata/godot/app_userdata/Breakwater \u2014 Controls/sound.cfg",
+      "bytes": 42,
+      "sha256": "24ae936a755e98bb4fd76ddc6bd2e2f78a92b662629eb1841ab72a9625d8cb55"
+    },
+    {
+      "path": "evidence/audio/n5s146/video.json",
+      "bytes": 4501,
+      "sha256": "d7bee8311803a5be6253b11207a40f54b8d786f781c7ea8b9baa33a06d4a87a8"
+    },
+    {
+      "path": "evidence/audio/n5s146-spatial/encode.log",
+      "bytes": 9162,
+      "sha256": "00b02f863b293fd98f33c67636f80f64fdedb0c8d9c4d5050b8b581cb87a042b"
+    },
+    {
+      "path": "evidence/audio/n5s146-spatial/engine.log",
+      "bytes": 1086,
+      "sha256": "5579a23a11eaeb4142d62f6c604ca6d9e5aafd800335f7a3d34600271aed7a31"
+    },
+    {
+      "path": "evidence/audio/n5s146-spatial/launch.json",
+      "bytes": 7510,
+      "sha256": "d4cbdf3572bdae0a77a20489d15589e669295139477a64b2f37bbd63cf02c8f4"
+    },
+    {
+      "path": "evidence/audio/n5s146-spatial/results.json",
+      "bytes": 29980,
+      "sha256": "d0c25b15c07e698539d187cda4ca2069eabb6328ba3819824fc6fb605260d12b"
+    },
+    {
+      "path": "evidence/audio/n5s146-spatial/runtime.mp4",
+      "bytes": 1175625,
+      "sha256": "dfba8f723997889716de5fcb94bfd91fb36fed93a5fc6e35cb4cda8a830cbe6c"
+    },
+    {
+      "path": "evidence/audio/n5s146-spatial/runtime.wav",
+      "bytes": 4691302,
+      "sha256": "0644052ffb54d2d08bce7225e9c13ac65840b43dea81aed7817b1e1f5d014348"
+    },
+    {
+      "path": "evidence/audio/n5s146-spatial/spatial-analysis.json",
+      "bytes": 1146,
+      "sha256": "0aa0b9be8e8d48c4ca130d0a27c9878f215b2da0e2335b3ae74e506f1dff9e8e"
+    },
+    {
+      "path": "evidence/audio/n5s146-spatial/userdata/godot/app_userdata/Breakwater \u2014 Controls/logs/godot.log",
+      "bytes": 1084,
+      "sha256": "b96b50a51ffd91205d47b4bdf381e340f678f61e12abaf4f9b54e7b771f6282e"
+    },
+    {
+      "path": "evidence/audio/n5s146-spatial/userdata/godot/app_userdata/Breakwater \u2014 Controls/shader_cache/CanvasShaderGLES3/d6f43d7e0fbc440290f0c3a77cf0f40066898da0fbdcc46f8b51b2aedaf2b191/6bb7c9a2fd1c4a8fa77cb96555b9b4a720209981.cache",
+      "bytes": 35574,
+      "sha256": "655f8e97ae1d4fda0d63e6b9aae441e38047aabf9a3b8a20a4cedece63a71a67"
+    },
+    {
+      "path": "evidence/audio/n5s146-spatial/userdata/godot/app_userdata/Breakwater \u2014 Controls/shader_cache/CopyShaderGLES3/9e43c80d5a04be55b43ab2338e8da8f5b0f20618a3e869928272b954afcff6fe/6bb7c9a2fd1c4a8fa77cb96555b9b4a720209981.cache",
+      "bytes": 72198,
+      "sha256": "001641141dd1c35eb9b3def10944131b55cacbd5e204a005ac5531133e9351ee"
+    },
+    {
+      "path": "evidence/audio/n5s146-spatial/userdata/godot/app_userdata/Breakwater \u2014 Controls/shader_cache/FeedShaderGLES3/37a956d1fa2424db9cc4da95128f7750da7138107b45bfd8dc4c00b472c38603/6bb7c9a2fd1c4a8fa77cb96555b9b4a720209981.cache",
+      "bytes": 5105,
+      "sha256": "ec4be5d51aee6356e774044b5de7dc72d37c4a19db6f29744660152be9e6a207"
+    },
+    {
+      "path": "evidence/audio/n5s146-spatial/userdata/godot/app_userdata/Breakwater \u2014 Controls/shader_cache/PostShaderGLES3/907f5f5388055d7fedef256127241995e5d797ba6b0616cba4cc6040697a9c1d/6bb7c9a2fd1c4a8fa77cb96555b9b4a720209981.cache",
+      "bytes": 10797,
+      "sha256": "cceb0311d601f95de63a68dc029ff386d12e4faee86a9fa38e0d87f38a4e588a"
+    },
+    {
+      "path": "evidence/audio/n5s146-spatial/userdata/godot/app_userdata/Breakwater \u2014 Controls/shader_cache/SceneShaderGLES3/926d7ef5f331286ebab4e4c2e582064fbbc800752e71ebc08c6a8145043adbb2/4505b6017dc502b9cb1ea9be38a366bfd444849c.cache",
+      "bytes": 713108,
+      "sha256": "c4e0f234a172065e4a3dde33d0f61666ca5177588b4bc8d84e597174717e3bfd"
+    },
+    {
+      "path": "evidence/audio/n5s146-spatial/userdata/godot/app_userdata/Breakwater \u2014 Controls/shader_cache/SceneShaderGLES3/926d7ef5f331286ebab4e4c2e582064fbbc800752e71ebc08c6a8145043adbb2/6bb7c9a2fd1c4a8fa77cb96555b9b4a720209981.cache",
+      "bytes": 579256,
+      "sha256": "d69a15fc6e35a674e9cc9ec2b94fe8bc5f1fddb361f403fb2989954aea527a6f"
+    },
+    {
+      "path": "evidence/audio/n5s146-spatial/userdata/godot/app_userdata/Breakwater \u2014 Controls/shader_cache/SceneShaderGLES3/926d7ef5f331286ebab4e4c2e582064fbbc800752e71ebc08c6a8145043adbb2/77047cd41f429f33ceff24e890e174f5465e755e.cache",
+      "bytes": 599630,
+      "sha256": "222b422d9d8679d8c43532991fd5a2093fc847b15bd7d626e9e7d7bf3f2f1997"
+    },
+    {
+      "path": "evidence/audio/n5s146-spatial/userdata/godot/app_userdata/Breakwater \u2014 Controls/shader_cache/SceneShaderGLES3/926d7ef5f331286ebab4e4c2e582064fbbc800752e71ebc08c6a8145043adbb2/a7066d9c826da62591c9a7200b95903130e922bd.cache",
+      "bytes": 590749,
+      "sha256": "c2f7996d89753f9e3fc01f38d3c6faabdb723bcc000531d15360d2095b555296"
+    },
+    {
+      "path": "evidence/audio/n5s146-spatial/userdata/godot/app_userdata/Breakwater \u2014 Controls/shader_cache/SceneShaderGLES3/926d7ef5f331286ebab4e4c2e582064fbbc800752e71ebc08c6a8145043adbb2/c43acb7911e92e912490e79d283f5095108609fe.cache",
+      "bytes": 725210,
+      "sha256": "d8a869de68fbdc24c4e4285bf7754ae2eede73c93083fc10582b7556bef85b56"
+    },
+    {
+      "path": "evidence/audio/n5s146-spatial/userdata/godot/app_userdata/Breakwater \u2014 Controls/shader_cache/SceneShaderGLES3/926d7ef5f331286ebab4e4c2e582064fbbc800752e71ebc08c6a8145043adbb2/f2e328ac8a780a17a0c65e242b0c8bc4fc063f03.cache",
+      "bytes": 705798,
+      "sha256": "ebc99475312486ea6c4526ed05ad6617f15edcd681237129c269f6e5145a8ece"
+    },
+    {
+      "path": "evidence/audio/n5s146-spatial/video.json",
+      "bytes": 4504,
+      "sha256": "2dce4fdfb09dbac278f6aa4dba383dbf08dff72167bdfbab27c6a7fd3eb3d977"
+    },
+    {
+      "path": "evidence/audio/n5s146-transport/engine.log",
+      "bytes": 582,
+      "sha256": "149c05859948bf77bfee96c948c46b2a8b58c8e920d3ee83935b48e6b3f98c47"
+    },
+    {
+      "path": "evidence/audio/n5s146-transport/frames.csv",
+      "bytes": 46344,
+      "sha256": "e95313d399c1d553e5d53f65e0c4852d9319e02084f0c14a9c0d74a0a7be3a7d"
+    },
+    {
+      "path": "evidence/audio/n5s146-transport/hardware-playback.txt",
+      "bytes": 148,
+      "sha256": "6b5916d1cc1640e93bb57a0e81111eb323f9d7f19558b3024a6d5007e7259ea7"
+    },
+    {
+      "path": "evidence/audio/n5s146-transport/hardware.txt",
+      "bytes": 47,
+      "sha256": "a361e51d27b7cd223ba6a2708167db99e737219b21b5a494337cd233d7e116e6"
+    },
+    {
+      "path": "evidence/audio/n5s146-transport/live-encode.log",
+      "bytes": 12227,
+      "sha256": "6a80d5bb53060a1295c362ce456092e43c5505bd9a1b0c9c719025912f942509"
+    },
+    {
+      "path": "evidence/audio/n5s146-transport/live-extract.log",
+      "bytes": 3240,
+      "sha256": "c4302b410070eb65996347010f32174e45ff706e32a9fe9de0bd4c2f0759f617"
+    },
+    {
+      "path": "evidence/audio/n5s146-transport/live.mkv",
+      "bytes": 6040509,
+      "sha256": "3215bcbe90d72a69c10eb671c34e0dac25a58198edce996c4328926cd6be45c8"
+    },
+    {
+      "path": "evidence/audio/n5s146-transport/live.wav",
+      "bytes": 5475854,
+      "sha256": "449020c0211fd7bbaa2785463411ca3482b52720a7a9017a9e12a62868437c70"
+    },
+    {
+      "path": "evidence/audio/n5s146-transport/monitor-ready.txt",
+      "bytes": 42,
+      "sha256": "8e08fb9e0a67c94163b743410cc9608d289c4eb73f5ec5e4c082ee31ed294ee2"
+    },
+    {
+      "path": "evidence/audio/n5s146-transport/paplay.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/audio/n5s146-transport/parec.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/audio/n5s146-transport/playback-monitor.wav",
+      "bytes": 5368776,
+      "sha256": "e291f9e4a759f766918ffa7cda008c2b8594d5bcd12d72c6ab09dcc8b246f6fa"
+    },
+    {
+      "path": "evidence/audio/n5s146-transport/playback.json",
+      "bytes": 7892,
+      "sha256": "ca8203dfe3562c57ba21dcf5540aea39d195cadeb3b62e25ae5b6e8c74c30421"
+    },
+    {
+      "path": "evidence/audio/n5s146-transport/pulse-info.txt",
+      "bytes": 423,
+      "sha256": "fb6fd17eaf541b3150a391a8cfba70c539675cfcd138aa7cac7accd2e7a674a9"
+    },
+    {
+      "path": "evidence/audio/n5s146-transport/recorder-ready.txt",
+      "bytes": 194,
+      "sha256": "4f0dd3a99176e851cd513014ed3367713bbddc2f21d52889efed1bbc74a38d73"
+    },
+    {
+      "path": "evidence/audio/n5s146-transport/results.json",
+      "bytes": 279217,
+      "sha256": "06057bee231080b4901d8f3dc6aee914d5a0666ebcf5e1471065a0f9c7eed37e"
+    },
+    {
+      "path": "evidence/audio/n5s146-transport/sinks.txt",
+      "bytes": 65,
+      "sha256": "e1f6c6405ae8b2855813e1c8af7da15db798055a715c9b2126bdcc5515239602"
+    },
+    {
+      "path": "evidence/audio/n5s146-transport/userdata/godot/app_userdata/Breakwater \u2014 Controls/logs/godot.log",
+      "bytes": 580,
+      "sha256": "29cfff941c1fb7b71b9a1bd487b219e91f9fb14fe1b90ce514d64961ea788983"
+    },
+    {
+      "path": "evidence/audio/n5s146-transport/userdata/godot/app_userdata/Breakwater \u2014 Controls/shader_cache/CanvasShaderGLES3/d6f43d7e0fbc440290f0c3a77cf0f40066898da0fbdcc46f8b51b2aedaf2b191/6bb7c9a2fd1c4a8fa77cb96555b9b4a720209981.cache",
+      "bytes": 35574,
+      "sha256": "655f8e97ae1d4fda0d63e6b9aae441e38047aabf9a3b8a20a4cedece63a71a67"
+    },
+    {
+      "path": "evidence/audio/n5s146-transport/userdata/godot/app_userdata/Breakwater \u2014 Controls/shader_cache/CopyShaderGLES3/9e43c80d5a04be55b43ab2338e8da8f5b0f20618a3e869928272b954afcff6fe/6bb7c9a2fd1c4a8fa77cb96555b9b4a720209981.cache",
+      "bytes": 72198,
+      "sha256": "001641141dd1c35eb9b3def10944131b55cacbd5e204a005ac5531133e9351ee"
+    },
+    {
+      "path": "evidence/audio/n5s146-transport/userdata/godot/app_userdata/Breakwater \u2014 Controls/shader_cache/FeedShaderGLES3/37a956d1fa2424db9cc4da95128f7750da7138107b45bfd8dc4c00b472c38603/6bb7c9a2fd1c4a8fa77cb96555b9b4a720209981.cache",
+      "bytes": 5105,
+      "sha256": "ec4be5d51aee6356e774044b5de7dc72d37c4a19db6f29744660152be9e6a207"
+    },
+    {
+      "path": "evidence/audio/n5s146-transport/userdata/godot/app_userdata/Breakwater \u2014 Controls/shader_cache/PostShaderGLES3/907f5f5388055d7fedef256127241995e5d797ba6b0616cba4cc6040697a9c1d/6bb7c9a2fd1c4a8fa77cb96555b9b4a720209981.cache",
+      "bytes": 10797,
+      "sha256": "cceb0311d601f95de63a68dc029ff386d12e4faee86a9fa38e0d87f38a4e588a"
+    },
+    {
+      "path": "evidence/audio/n5s146-transport/userdata/godot/app_userdata/Breakwater \u2014 Controls/shader_cache/SceneShaderGLES3/926d7ef5f331286ebab4e4c2e582064fbbc800752e71ebc08c6a8145043adbb2/4505b6017dc502b9cb1ea9be38a366bfd444849c.cache",
+      "bytes": 713108,
+      "sha256": "c4e0f234a172065e4a3dde33d0f61666ca5177588b4bc8d84e597174717e3bfd"
+    },
+    {
+      "path": "evidence/audio/n5s146-transport/userdata/godot/app_userdata/Breakwater \u2014 Controls/shader_cache/SceneShaderGLES3/926d7ef5f331286ebab4e4c2e582064fbbc800752e71ebc08c6a8145043adbb2/6bb7c9a2fd1c4a8fa77cb96555b9b4a720209981.cache",
+      "bytes": 579256,
+      "sha256": "d69a15fc6e35a674e9cc9ec2b94fe8bc5f1fddb361f403fb2989954aea527a6f"
+    },
+    {
+      "path": "evidence/audio/n5s146-transport/userdata/godot/app_userdata/Breakwater \u2014 Controls/shader_cache/SceneShaderGLES3/926d7ef5f331286ebab4e4c2e582064fbbc800752e71ebc08c6a8145043adbb2/77047cd41f429f33ceff24e890e174f5465e755e.cache",
+      "bytes": 599630,
+      "sha256": "245130ca437e7a066fb00ad235d716dada32fa381b9d760c2ac1f61c3e7a17c8"
+    },
+    {
+      "path": "evidence/audio/n5s146-transport/userdata/godot/app_userdata/Breakwater \u2014 Controls/shader_cache/SceneShaderGLES3/926d7ef5f331286ebab4e4c2e582064fbbc800752e71ebc08c6a8145043adbb2/a7066d9c826da62591c9a7200b95903130e922bd.cache",
+      "bytes": 590749,
+      "sha256": "c2f7996d89753f9e3fc01f38d3c6faabdb723bcc000531d15360d2095b555296"
+    },
+    {
+      "path": "evidence/audio/n5s146-transport/userdata/godot/app_userdata/Breakwater \u2014 Controls/shader_cache/SceneShaderGLES3/926d7ef5f331286ebab4e4c2e582064fbbc800752e71ebc08c6a8145043adbb2/c43acb7911e92e912490e79d283f5095108609fe.cache",
+      "bytes": 725210,
+      "sha256": "d8a869de68fbdc24c4e4285bf7754ae2eede73c93083fc10582b7556bef85b56"
+    },
+    {
+      "path": "evidence/audio/n5s146-transport/userdata/godot/app_userdata/Breakwater \u2014 Controls/shader_cache/SceneShaderGLES3/926d7ef5f331286ebab4e4c2e582064fbbc800752e71ebc08c6a8145043adbb2/f2e328ac8a780a17a0c65e242b0c8bc4fc063f03.cache",
+      "bytes": 705798,
+      "sha256": "ebc99475312486ea6c4526ed05ad6617f15edcd681237129c269f6e5145a8ece"
+    },
+    {
+      "path": "evidence/audio/n5s146-transport/userdata/godot/app_userdata/Breakwater \u2014 Controls/sound.cfg",
+      "bytes": 42,
+      "sha256": "24ae936a755e98bb4fd76ddc6bd2e2f78a92b662629eb1841ab72a9625d8cb55"
+    },
+    {
+      "path": "evidence/audio/n5s146-transport/xvfb.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/controls/n5s146/aim_cover.png",
+      "bytes": 62242,
+      "sha256": "486d9d02804d6a2b2d64b902b844226fcabfe79883b085a5bca73101e32ef6c0"
+    },
+    {
+      "path": "evidence/controls/n5s146/engine.log",
+      "bytes": 420,
+      "sha256": "0a616c056cec80435d60c1918afdd17f8052d2f44d71c2765a7c17d61e5455cd"
+    },
+    {
+      "path": "evidence/controls/n5s146/final_restart.png",
+      "bytes": 53888,
+      "sha256": "491ccc97ba128716332ae2b8a89bb6a2c04764c0034055d155a82e13ba58d0ad"
+    },
+    {
+      "path": "evidence/controls/n5s146/initial.png",
+      "bytes": 62950,
+      "sha256": "823be680a8fd7363058a14106989042f08ac7e550942e107cdc9cc384e7b6dbb"
+    },
+    {
+      "path": "evidence/controls/n5s146/launch.json",
+      "bytes": 9320,
+      "sha256": "21a6af34bdb2ae05f4335f6fce5d913af030362aae05e5a95580b76b8a75d7cf"
+    },
+    {
+      "path": "evidence/controls/n5s146/paused_controls.png",
+      "bytes": 83803,
+      "sha256": "44b6d86e89ec2a073dc302164661b054974d842627ddab8e41d130afc51c3cc6"
+    },
+    {
+      "path": "evidence/controls/n5s146/resized_target.png",
+      "bytes": 54339,
+      "sha256": "38db8eab98a7bca7d120de077be69c77e572ae4b4251ccbb5285bcb89358088b"
+    },
+    {
+      "path": "evidence/controls/n5s146/results.json",
+      "bytes": 11118,
+      "sha256": "461234698d96fa4f2fc9b2865e3ee6230a2c682d47ce960f0c9f5180e02f2660"
+    },
+    {
+      "path": "evidence/controls/n5s146/trace.json",
+      "bytes": 1426387,
+      "sha256": "66b7edc3b6c553d167d109d0a1cbdce7883129fd5bae310d72647ca05379cf22"
+    },
+    {
+      "path": "evidence/destruction/n5s146/engine.log",
+      "bytes": 509,
+      "sha256": "29cb0a1b8534a4c5617df7ea15685504b9f898f2d237ff04d6c27cc623004e50"
+    },
+    {
+      "path": "evidence/destruction/n5s146/frames.csv",
+      "bytes": 55021,
+      "sha256": "8297160693e4803a28b6e17514a7c6fa12bbe451425f38150ecb1278b496d71c"
+    },
+    {
+      "path": "evidence/destruction/n5s146/launch.json",
+      "bytes": 10848,
+      "sha256": "d49a0d566f7ffe4dda4158852a912353307722b8180ba8db303edd389f968cb5"
+    },
+    {
+      "path": "evidence/destruction/n5s146/physics.csv.gz",
+      "bytes": 11217546,
+      "sha256": "07c3e7f6be7efc195a8b1a1b2002285c87e27f975213794571fe05227cfe92ee"
+    },
+    {
+      "path": "evidence/destruction/n5s146/results.json",
+      "bytes": 282052,
+      "sha256": "ca37483dca73486a9328ecede862684723bce403e1a3ac042a7974f0451fed11"
+    },
+    {
+      "path": "evidence/destruction/n5s146-perf1/engine.log",
+      "bytes": 509,
+      "sha256": "29cb0a1b8534a4c5617df7ea15685504b9f898f2d237ff04d6c27cc623004e50"
+    },
+    {
+      "path": "evidence/destruction/n5s146-perf1/frames.csv",
+      "bytes": 58017,
+      "sha256": "6d4a5689bb26024b5bbc2b45fa6f923e36e3a910ecc46f75ae99fd66ae5e6b94"
+    },
+    {
+      "path": "evidence/destruction/n5s146-perf1/launch.json",
+      "bytes": 10914,
+      "sha256": "6d49b50090c60aff0f0366d71b43f2843f110b0dea0225cb7c1fd5241b9c07ec"
+    },
+    {
+      "path": "evidence/destruction/n5s146-perf1/physics.csv.gz",
+      "bytes": 104,
+      "sha256": "ebfff4119f1cccef60050a5486508a67617abbe6c3f2c7fa966c7388594ad4c9"
+    },
+    {
+      "path": "evidence/destruction/n5s146-perf1/results.json",
+      "bytes": 282041,
+      "sha256": "0a188714ce3c9ccacf5075f866e174a7adbacb0c68d70f39481bb30b808a3b8f"
+    },
+    {
+      "path": "evidence/destruction/n5s146-perf2/engine.log",
+      "bytes": 509,
+      "sha256": "29cb0a1b8534a4c5617df7ea15685504b9f898f2d237ff04d6c27cc623004e50"
+    },
+    {
+      "path": "evidence/destruction/n5s146-perf2/frames.csv",
+      "bytes": 56968,
+      "sha256": "0ef6c20792f4c5628b187f9ea7b31f80ba9de0480881c0bc43fe75e7702b1fd8"
+    },
+    {
+      "path": "evidence/destruction/n5s146-perf2/launch.json",
+      "bytes": 10953,
+      "sha256": "79c452fcce2bbeae8d97aa922b2655dce469c3f1f5b02c77e04a48ed330e6c2f"
+    },
+    {
+      "path": "evidence/destruction/n5s146-perf2/physics.csv.gz",
+      "bytes": 104,
+      "sha256": "4c895acfa35fba650785b706931c9d05ef8d9da90ede2fff13d3f2820f695831"
+    },
+    {
+      "path": "evidence/destruction/n5s146-perf2/results.json",
+      "bytes": 282041,
+      "sha256": "3dd16a4ff718af7ae10379f5f3d4757e85a9f2557dfa9891e1dc2b8fd0075b8f"
+    },
+    {
+      "path": "evidence/destruction/n5s146-perf3/engine.log",
+      "bytes": 509,
+      "sha256": "29cb0a1b8534a4c5617df7ea15685504b9f898f2d237ff04d6c27cc623004e50"
+    },
+    {
+      "path": "evidence/destruction/n5s146-perf3/frames.csv",
+      "bytes": 55948,
+      "sha256": "ebfe8310f41b46e510ef48624ba239dfb80851dec97dd3aebeea4a1893a51882"
+    },
+    {
+      "path": "evidence/destruction/n5s146-perf3/launch.json",
+      "bytes": 10992,
+      "sha256": "218005424ef16f70fc312ad27b9acc0b992f11719060e84765c7de1796f69b24"
+    },
+    {
+      "path": "evidence/destruction/n5s146-perf3/physics.csv.gz",
+      "bytes": 104,
+      "sha256": "28b98e44d51f973f8b26f6d4b0f1e2f644b2a48f46f58be8950a04afaf413279"
+    },
+    {
+      "path": "evidence/destruction/n5s146-perf3/results.json",
+      "bytes": 282040,
+      "sha256": "e40dac807d0a8afa454a3b2f440296897a8c15d40cc07a652ca8a77698a22dfc"
+    },
+    {
+      "path": "evidence/n5s146-report/active-check.log",
+      "bytes": 359,
+      "sha256": "00fb35aac613eede50c744d0707f9a857ceb8af7b9e0d398884a79b08abc90c6"
+    },
+    {
+      "path": "evidence/n5s146-report/active.log",
+      "bytes": 701,
+      "sha256": "49a157eb3d3e4fe4e72f42b54c991894223d27b0ff50c5d2e7e3e31cfdf94281"
+    },
+    {
+      "path": "evidence/n5s146-report/asset-regeneration.json",
+      "bytes": 1033,
+      "sha256": "a593deb237d2d0d42d07f347d61a545aa46b69e717e7760a418a638c1a266de5"
+    },
+    {
+      "path": "evidence/n5s146-report/audio-check.log",
+      "bytes": 2415,
+      "sha256": "68db055fbc23ee89208e58da526e5ef2e88e4c4d385bc8ab7d232aed5d6b91fe"
+    },
+    {
+      "path": "evidence/n5s146-report/audio.log",
+      "bytes": 1290,
+      "sha256": "e1117e91b987b2e38fbdcd8e6b5b195b788a2c1e1bc6f6f82eb95ffa58c95cb5"
+    },
+    {
+      "path": "evidence/n5s146-report/combat-audio-check.log",
+      "bytes": 257,
+      "sha256": "bc9b5a33791b30ad870859ff86f8d2b9a6176d72fdce78084d2e5cfa7d57bdb1"
+    },
+    {
+      "path": "evidence/n5s146-report/commands.json",
+      "bytes": 4254,
+      "sha256": "de10f0c1311e87d4a4b6729df17515b0a747f1ec95aeb528db49849bc25a404e"
+    },
+    {
+      "path": "evidence/n5s146-report/controls-check.log",
+      "bytes": 1751,
+      "sha256": "299a3a205af8dbda37a4c2aa6987942141f9f3eae1d5b67bf5fd879a59852cb5"
+    },
+    {
+      "path": "evidence/n5s146-report/controls.log",
+      "bytes": 9741,
+      "sha256": "591b957a8bf51e9ff48376b3bbc98c98f2ed53684e3ff61b834d353fe037dad3"
+    },
+    {
+      "path": "evidence/n5s146-report/destruction-check.log",
+      "bytes": 9012,
+      "sha256": "cfe7dc65b8ca66a99efa523d917670c6e973793a7209ccf106103b549dbb4287"
+    },
+    {
+      "path": "evidence/n5s146-report/destruction.log",
+      "bytes": 11358,
+      "sha256": "607dfe4bf8e5f7f38dfb85dc3f6ff89b160b04747c2376a43b90c59b7f87bf59"
+    },
+    {
+      "path": "evidence/n5s146-report/import.log",
+      "bytes": 5406,
+      "sha256": "d61b7617e8306ee8c76604f951620ec0d8309e36f2abdc1405304b76d3a74db4"
+    },
+    {
+      "path": "evidence/n5s146-report/opposition-check.log",
+      "bytes": 194,
+      "sha256": "caecc30dc68e58ed60e2b7761c838a719a5c351cdf7a848692328ec56f5483ff"
+    },
+    {
+      "path": "evidence/n5s146-report/opposition.log",
+      "bytes": 696,
+      "sha256": "e950e47593a28ad72e5aade065d1a91dbf5d1c0aeef43fcc96fc3ecbf4285cc1"
+    },
+    {
+      "path": "evidence/n5s146-report/perf1.log",
+      "bytes": 11424,
+      "sha256": "fe067a25afa62a00684fd714fa55366b73ac0eb93b7a243b92ca4e2e71fa714a"
+    },
+    {
+      "path": "evidence/n5s146-report/perf2.log",
+      "bytes": 11463,
+      "sha256": "ee5b38bd6c1b73d8ed51134773fe2a814a343b63c4570b88c9497008a560d772"
+    },
+    {
+      "path": "evidence/n5s146-report/perf3.log",
+      "bytes": 11502,
+      "sha256": "dba6a3b4ab62081b7f2a6f81b34b57d052681d69805098626fc3569d21f9c226"
+    },
+    {
+      "path": "evidence/n5s146-report/performance-check.log",
+      "bytes": 2743,
+      "sha256": "a493288044af4dc84c55deb4a5b6abd2523e12dd964695fee03bcda0c7aa394d"
+    },
+    {
+      "path": "evidence/n5s146-report/performance.json",
+      "bytes": 2743,
+      "sha256": "a493288044af4dc84c55deb4a5b6abd2523e12dd964695fee03bcda0c7aa394d"
+    },
+    {
+      "path": "evidence/n5s146-report/physics-comparison.json",
+      "bytes": 1962,
+      "sha256": "a5e5cbdf4727ece31056cb3b44bae06938d14cb4fcb2ce3240b552ef91c3a6df"
+    },
+    {
+      "path": "evidence/n5s146-report/regenerate.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/n5s146-report/spatial-check.log",
+      "bytes": 1146,
+      "sha256": "0aa0b9be8e8d48c4ca130d0a27c9878f215b2da0e2335b3ae74e506f1dff9e8e"
+    },
+    {
+      "path": "evidence/n5s146-report/spatial.log",
+      "bytes": 1210,
+      "sha256": "cb895d65d2aae3ac4e9752ead22b4e1bab3e8f1c2f05b5658fba30cf0db2f5c2"
+    },
+    {
+      "path": "evidence/n5s146-report/supplemental-commands.json",
+      "bytes": 1060,
+      "sha256": "1e95c1708d09985ddd1c17470cb2b1979a60897ddc79e89b92a9a8f68ee59443"
+    },
+    {
+      "path": "evidence/n5s146-report/transport-check.log",
+      "bytes": 3706,
+      "sha256": "f58cb0614f81577107b513defc327991813162ea91ca33889c54cd6a004245aa"
+    },
+    {
+      "path": "evidence/n5s146-report/transport.log",
+      "bytes": 773,
+      "sha256": "e1f441c4eea0d6652e1657fdff2cd4bfb2ed81217fc872eda9164f488e05ffc0"
+    },
+    {
+      "path": "evidence/n5s146-transport-daemon/lifecycle.json",
+      "bytes": 773,
+      "sha256": "e1f441c4eea0d6652e1657fdff2cd4bfb2ed81217fc872eda9164f488e05ffc0"
+    },
+    {
+      "path": "evidence/n5s146-transport-daemon/pulse.log",
+      "bytes": 416,
+      "sha256": "c10de5b8797a99f772d00399fad3abb56a2173a2c07e8de89342b01fc6b2cc4d"
+    },
+    {
+      "path": "evidence/n5s146-transport-daemon/ready.txt",
+      "bytes": 65,
+      "sha256": "e1f6c6405ae8b2855813e1c8af7da15db798055a715c9b2126bdcc5515239602"
+    },
+    {
+      "path": "evidence/n5s146-transport-daemon/verify.log",
+      "bytes": 7892,
+      "sha256": "ca8203dfe3562c57ba21dcf5540aea39d195cadeb3b62e25ae5b6e8c74c30421"
+    },
+    {
+      "path": "evidence/opposition/n5s146/cue-render.json",
+      "bytes": 802,
+      "sha256": "841c2cea39df831db24092bfa82a9fff79533ea3bc4cb6621255542b55c552f3"
+    },
+    {
+      "path": "evidence/opposition/n5s146/cue_off.png",
+      "bytes": 76488,
+      "sha256": "887ba9995cd49b9108534f235699cc037eb92b246d89839203c023976d659b65"
+    },
+    {
+      "path": "evidence/opposition/n5s146/cue_on.png",
+      "bytes": 77523,
+      "sha256": "39dc2561ed45b909417553f3418c062d225541769fe6a7092180e4ef6ab69968"
+    },
+    {
+      "path": "evidence/opposition/n5s146/cue_restored.png",
+      "bytes": 77523,
+      "sha256": "39dc2561ed45b909417553f3418c062d225541769fe6a7092180e4ef6ab69968"
+    },
+    {
+      "path": "evidence/opposition/n5s146/engine.log",
+      "bytes": 536,
+      "sha256": "1a3a02de3a21e76edc9f63724d02f81747eaa6460a39aca035ca5a9dd24e166a"
+    },
+    {
+      "path": "evidence/opposition/n5s146/launch.json",
+      "bytes": 9462,
+      "sha256": "52d5ecd706ef61441835906b19334d843b01a4cf963eada7605721c2444e70ef"
+    },
+    {
+      "path": "evidence/opposition/n5s146/results.json",
+      "bytes": 42432,
+      "sha256": "fe83851e6ae6e5b2364aef092dadbab9fe3f0c49b9c4441f2de18270fe702554"
+    },
+    {
+      "path": "evidence/opposition/n5s146/trace.json",
+      "bytes": 190116,
+      "sha256": "94a6c1068dcdbdc5bd1ba202032f7923d3b5666aa5960f1f144ae9bb91c1be4e"
+    },
+    {
+      "path": "evidence/opposition/n5s146-active/engine.log",
+      "bytes": 534,
+      "sha256": "45206ef840b3fcc5915c98931086ba366d01cae7c935b3c7aafb8c2e4ee57f6a"
+    },
+    {
+      "path": "evidence/opposition/n5s146-active/launch.json",
+      "bytes": 9500,
+      "sha256": "f65138fc83934b10781477bf90ab2c37df631aab76d10d7ef43cabc63af3025b"
+    },
+    {
+      "path": "evidence/opposition/n5s146-active/results.json",
+      "bytes": 50550,
+      "sha256": "cf5558ad721119c3bade23be56c9486b71229b885269fed878e936d8141835f8"
+    },
+    {
+      "path": "evidence/opposition/n5s146-active/trace.json",
+      "bytes": 370669,
+      "sha256": "4337eaa69c4dc93c538d0325a8d7a8618615dc964ac354b0deb2d1491c9cd3cd"
+    }
+  ],
+  "every_member_verified": true,
+  "extract": "tar -xzf evidence/audio-node5-s146/runtime-evidence.tar.gz",
+  "incidental_exclusions": "Engine, virtualenv, import caches, git metadata, extracted baseline copy and intermediate AVI. Original AVI hashes retained in launch.json."
+}

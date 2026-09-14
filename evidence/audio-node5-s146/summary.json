@@ -1,0 +1,699 @@
+{
+  "source_revision": "79f709f89dcfc8607dd49674d8ba47bfb5c22a1b",
+  "production_sources_unchanged_and_committed": true,
+  "contract": "docs/audio-contract.json",
+  "audio": {
+    "routing": {
+      "assertions": 738,
+      "source_breaks": 45,
+      "source_impacts": 222,
+      "runtime_voice_requests": 267,
+      "same_tick_matched": 267,
+      "max_active_slots": 8,
+      "burst_sample_variants": 4,
+      "impact_sample_variants": 6,
+      "steals": 6
+    },
+    "signal": {
+      "sample_rate": 48000,
+      "channels": 2,
+      "duration_s": 26.25,
+      "sample_peak": 0.7943325042724609,
+      "sample_peak_dbfs": -1.99995331309778,
+      "true_peak_4x": 0.803419144116967,
+      "clipped_samples": 0,
+      "rms": 0.029750162075208263,
+      "isolated_break_onsets": [
+        {
+          "phase": "single_default",
+          "frame": 74,
+          "onset_delay_ms": 28.958333333333336,
+          "peak_first_800ms": 0.2745227813720703
+        },
+        {
+          "phase": "crowded_default",
+          "frame": 314,
+          "onset_delay_ms": 29.16666666666666,
+          "peak_first_800ms": 0.5739030838012695
+        },
+        {
+          "phase": "low_sfx",
+          "frame": 854,
+          "onset_delay_ms": 21.187499999999996,
+          "peak_first_800ms": 0.0704965591430664
+        },
+        {
+          "phase": "max_single",
+          "frame": 1094,
+          "onset_delay_ms": 20.916666666666668,
+          "peak_first_800ms": 0.3465232849121094
+        },
+        {
+          "phase": "max_overload",
+          "frame": 1334,
+          "onset_delay_ms": 20.791666666666668,
+          "peak_first_800ms": 0.7943325042724609
+        }
+      ],
+      "first_emitted_contact_event_frame": 133,
+      "first_emitted_impact_onset_delay_ms": 27.041666666666657,
+      "silence_after_80ms": {
+        "muted": 0.0,
+        "zero_master": 0.0
+      },
+      "low_to_max_single_peak_ratio": 0.2034396019330904,
+      "attack_35_200hz_energy_fraction": 0.9826267661376977
+    },
+    "rendering": {
+      "frames": 1575,
+      "marker_frames": [
+        74,
+        314,
+        374,
+        434,
+        614,
+        734,
+        854,
+        1094,
+        1334
+      ],
+      "changed_downsampled_arena_pixels_launch_to_flight": 222,
+      "visual_judgment": "UNASSESSED: numeric rendering/timestamp checks only"
+    },
+    "aac_preview": {
+      "decoded_peak": 0.7931037545204163,
+      "clipped_samples": 0
+    },
+    "transport": {
+      "playback-monitor.wav": {
+        "duration_s": 27.962145833333334,
+        "peak": 0.794342041015625,
+        "clipped_samples": 0
+      },
+      "live.wav": {
+        "duration_s": 28.519666666666666,
+        "peak": 0.809844970703125,
+        "clipped_samples": 0
+      },
+      "delivered_wav_to_monitor": {
+        "offset_samples": 8344,
+        "normalized_correlation": 0.10302207710044554,
+        "lossless_fidelity_gate_passed": false,
+        "limitation": "Full-recording fixed-offset fidelity failed on this virtual transport; do not use its clock for synchronization or listening claims"
+      },
+      "live_routing": {
+        "assertions": 738,
+        "source_breaks": 45,
+        "source_impacts": 222,
+        "runtime_voice_requests": 267,
+        "same_tick_matched": 267,
+        "max_active_slots": 8,
+        "burst_sample_variants": 4,
+        "impact_sample_variants": 6,
+        "steals": 6
+      },
+      "listening": "NONE. paplay -> PulseAudio null sink -> monitor is verified sample transport, not audible speakers or human listening. ALSA hw:0 failed.",
+      "live_video_frames": 51,
+      "live_video_limitation": "External capture is supplemental, not used for precise sync; inspect live-encode.log for dropped frames. Primary MovieWriter video/PCM supplies the verified common clock."
+    },
+    "rejected_mutations": [
+      "clip",
+      "silence",
+      "delay_250ms",
+      "mute_leak",
+      "route_wrong_tick",
+      "no_contact",
+      "no_variation",
+      "voices_9"
+    ],
+    "audible_quality": "UNVERIFIED: no subjective listening. Strong attack/weight is the synthesis/tuning intent, not an observed perception."
+  },
+  "spatial": {
+    "measurements": {
+      "near": {
+        "distance": 27.0461654663086,
+        "rms": 0.05873257056900625,
+        "peak": 0.3545846939086914,
+        "channels": [
+          0.05873257056900625,
+          0.05873257056900625
+        ]
+      },
+      "far": {
+        "distance": 40.0941390991211,
+        "rms": 0.03911438503397904,
+        "peak": 0.2330913543701172,
+        "channels": [
+          0.03911438503397904,
+          0.03911438503397904
+        ]
+      },
+      "left": {
+        "distance": 34.1982116699219,
+        "rms": 0.04607225664822535,
+        "peak": 0.2965126037597656,
+        "channels": [
+          0.049579904491468665,
+          0.04227456369895182
+        ]
+      },
+      "right": {
+        "distance": 34.1982116699219,
+        "rms": 0.04607227773201945,
+        "peak": 0.2965126037597656,
+        "channels": [
+          0.04227458304213292,
+          0.04957992718274683
+        ]
+      }
+    },
+    "checks": {
+      "far_to_near_rms": 0.6659743419202578,
+      "expected_inverse_distance": 0.6745665594526128
+    },
+    "listening": "NONE: actual stereo mixer measurements, not subjective quality",
+    "rejected_mutations": [
+      "no_distance",
+      "no_pan",
+      "reversed_pan"
+    ]
+  },
+  "combat": {
+    "engine_assertions": 47,
+    "breaks": 3,
+    "impacts": 9,
+    "peak_slots": 5,
+    "same_tick": true,
+    "rejected_mutations": [
+      "wrong_tick",
+      "duplicate_break",
+      "missing_contact",
+      "nine_voices"
+    ],
+    "listening": "NONE; event routing only"
+  },
+  "active_combat": {
+    "runs": [
+      {
+        "directory": "evidence/opposition/n5s146-active",
+        "engine_assertions": 12,
+        "scenario": "active",
+        "ticks": 1800,
+        "seconds": 30.0,
+        "health": 70,
+        "attacks": 2,
+        "damage_hits": 2,
+        "destroyed": 3
+      }
+    ],
+    "visual_assessment": "UNASSESSED; decoding is not perception",
+    "passed": true
+  },
+  "physics": {
+    "baseline": {
+      "directory": ".tools/n5s146-physics-baseline",
+      "samples_before_tick_1390": 156704,
+      "physics_sha256_without_wall_time": "ea0f0c88c5b0ea62ff3833464b6ee5d16ca42ebd80e5202c59ccb950bf55692a",
+      "stress_bursts": {
+        "510": {
+          "bodies": 192,
+          "up": 192,
+          "down": 192,
+          "contact": 192,
+          "bounce": 188,
+          "spin": 192,
+          "tumble": 192,
+          "sleep": 96
+        },
+        "630": {
+          "bodies": 96,
+          "up": 96,
+          "down": 96,
+          "contact": 96,
+          "bounce": 96,
+          "spin": 96,
+          "tumble": 96,
+          "sleep": 95
+        },
+        "900": {
+          "bodies": 96,
+          "up": 96,
+          "down": 96,
+          "contact": 96,
+          "bounce": 95,
+          "spin": 96,
+          "tumble": 96,
+          "sleep": 96
+        }
+      },
+      "limitation": "Cap retires some active bodies early; natural sleep not required of those retired at age 2s."
+    },
+    "corrected": {
+      "directory": "evidence/destruction/n5s146",
+      "samples_before_tick_1390": 156704,
+      "physics_sha256_without_wall_time": "ea0f0c88c5b0ea62ff3833464b6ee5d16ca42ebd80e5202c59ccb950bf55692a",
+      "stress_bursts": {
+        "510": {
+          "bodies": 192,
+          "up": 192,
+          "down": 192,
+          "contact": 192,
+          "bounce": 188,
+          "spin": 192,
+          "tumble": 192,
+          "sleep": 96
+        },
+        "630": {
+          "bodies": 96,
+          "up": 96,
+          "down": 96,
+          "contact": 96,
+          "bounce": 96,
+          "spin": 96,
+          "tumble": 96,
+          "sleep": 95
+        },
+        "900": {
+          "bodies": 96,
+          "up": 96,
+          "down": 96,
+          "contact": 96,
+          "bounce": 95,
+          "spin": 96,
+          "tumble": 96,
+          "sleep": 96
+        }
+      },
+      "limitation": "Cap retires some active bodies early; natural sleep not required of those retired at age 2s."
+    },
+    "identical_fixed_step_physics": true,
+    "visual_assessment": "UNASSESSED"
+  },
+  "performance": {
+    "passed": true,
+    "runs": [
+      {
+        "directory": "evidence/destruction/n5s146-perf1",
+        "passed": true,
+        "result": {
+          "directory": "evidence/destruction/n5s146-perf1",
+          "seed": 1201,
+          "assertions": 34,
+          "performance": {
+            "frame_samples": 387,
+            "window_ticks": [
+              510,
+              1109
+            ],
+            "frame_ms": {
+              "median": 25.633,
+              "p95": 30.127,
+              "max": 33.884
+            },
+            "physics_process_ms": {
+              "median": 1.607,
+              "p95": 5.412,
+              "max": 5.412
+            },
+            "p95_target_ms": 33.3,
+            "meets_p95_target": true,
+            "capture_overlap_frames": 0,
+            "limit": "Offscreen CPU llvmpipe reference VM; not laptop or subjective smoothness acceptance."
+          },
+          "images": [],
+          "visual_assessment": "UNASSESSED"
+        }
+      },
+      {
+        "directory": "evidence/destruction/n5s146-perf2",
+        "passed": true,
+        "result": {
+          "directory": "evidence/destruction/n5s146-perf2",
+          "seed": 1201,
+          "assertions": 34,
+          "performance": {
+            "frame_samples": 399,
+            "window_ticks": [
+              510,
+              1109
+            ],
+            "frame_ms": {
+              "median": 24.956,
+              "p95": 30.048,
+              "max": 31.959
+            },
+            "physics_process_ms": {
+              "median": 1.731,
+              "p95": 5.471,
+              "max": 5.471
+            },
+            "p95_target_ms": 33.3,
+            "meets_p95_target": true,
+            "capture_overlap_frames": 0,
+            "limit": "Offscreen CPU llvmpipe reference VM; not laptop or subjective smoothness acceptance."
+          },
+          "images": [],
+          "visual_assessment": "UNASSESSED"
+        }
+      },
+      {
+        "directory": "evidence/destruction/n5s146-perf3",
+        "passed": true,
+        "result": {
+          "directory": "evidence/destruction/n5s146-perf3",
+          "seed": 1201,
+          "assertions": 34,
+          "performance": {
+            "frame_samples": 372,
+            "window_ticks": [
+              510,
+              1109
+            ],
+            "frame_ms": {
+              "median": 26.637,
+              "p95": 30.651,
+              "max": 37.204
+            },
+            "physics_process_ms": {
+              "median": 1.804,
+              "p95": 6.0,
+              "max": 6.0
+            },
+            "p95_target_ms": 33.3,
+            "meets_p95_target": true,
+            "capture_overlap_frames": 0,
+            "limit": "Offscreen CPU llvmpipe reference VM; not laptop or subjective smoothness acceptance."
+          },
+          "images": [],
+          "visual_assessment": "UNASSESSED"
+        }
+      }
+    ],
+    "visual_assessment": "UNASSESSED"
+  },
+  "instrumented_regression_performance": {
+    "frame_samples": 353,
+    "window_ticks": [
+      510,
+      1109
+    ],
+    "frame_ms": {
+      "median": 28.344,
+      "p95": 33.405,
+      "max": 47.893
+    },
+    "physics_process_ms": {
+      "median": 3.79,
+      "p95": 6.066,
+      "max": 6.066
+    },
+    "p95_target_ms": 33.3,
+    "meets_p95_target": false,
+    "capture_overlap_frames": 0,
+    "limit": "Offscreen CPU llvmpipe reference VM; not laptop or subjective smoothness acceptance."
+  },
+  "controls_assertions": 99,
+  "asset_regeneration": {
+    "byte_identical": true,
+    "assets": {
+      "game/audio/impact_2.wav": "4c26c5728f77c3c177a596d8992353d3849060d0e50d2a0f6758e883605af2a0",
+      "game/audio/break_2.wav": "652381586d18d15c401296acf91925b7dfba18c7741d41e9bef3b7756d603572",
+      "game/audio/impact_3.wav": "ddfe13478e22b842dc84447e35773e837ba432925a9d9a7ffb6dc69cddd05ba9",
+      "game/audio/impact_4.wav": "542420e3989db201a45df0c72308683697c3e247a1aa0b3a06db39523310148a",
+      "game/audio/impact_0.wav": "e521e32886ec10c4edcbcf8ab42f756199beb99465b78d84cd3d4186aad26437",
+      "game/audio/break_1.wav": "56e31b021c97efbf1a1e436601acb90a96003c9ac40917c367222f9ed161a6fa",
+      "game/audio/impact_1.wav": "bf6934fd66a0be85569f0273ad7fd5d242eb0bf94e2c337606cc0829828135f9",
+      "game/audio/break_3.wav": "c8d0cb9c1904ad73ce16cd53fae234a5a19faacb8dc04cd39eec3e8305d028bf",
+      "game/audio/impact_5.wav": "ff313a848534c15aedb86e71d7fcafe526f2f58bac1800d9414dd4d3e4cbb5ee",
+      "game/audio/break_0.wav": "740cfb53222894eee784d2a6f7d3cbf0a9f1345539daeefaa9d582c6f95f1e3b"
+    }
+  },
+  "asset_provenance": "game/audio/provenance.json",
+  "commands": [
+    {
+      "name": "regenerate",
+      "command": [
+        "/usr/bin/python3",
+        "scripts/generate_sound_assets.py"
+      ],
+      "utc": "2026-09-14T02:05:04.479084+00:00",
+      "returncode": 0
+    },
+    {
+      "name": "import",
+      "command": [
+        "/opt/g-harness/workspace/G12/node_5_step_146/repo/.tools/Godot_v4.5.1-stable_linux.x86_64",
+        "--headless",
+        "--path",
+        "game",
+        "--editor",
+        "--import",
+        "--quit"
+      ],
+      "utc": "2026-09-14T02:05:04.795493+00:00",
+      "returncode": 0
+    },
+    {
+      "name": "audio",
+      "command": [
+        "/usr/bin/python3",
+        "scripts/run_audio.py",
+        "n5s146"
+      ],
+      "utc": "2026-09-14T02:05:08.421438+00:00",
+      "returncode": 0
+    },
+    {
+      "name": "audio-check",
+      "command": [
+        "/opt/g-harness/workspace/G12/node_5_step_146/repo/.tools/audio-venv/bin/python",
+        "scripts/check_audio.py",
+        "evidence/audio/n5s146",
+        "--self-test"
+      ],
+      "utc": "2026-09-14T02:06:20.358191+00:00",
+      "returncode": 0
+    },
+    {
+      "name": "destruction",
+      "command": [
+        "/usr/bin/python3",
+        "scripts/run_destruction.py",
+        "n5s146",
+        "--no-captures"
+      ],
+      "utc": "2026-09-14T02:06:25.740611+00:00",
+      "returncode": 0
+    },
+    {
+      "name": "destruction-check",
+      "command": [
+        "/usr/bin/python3",
+        "scripts/check_destruction.py",
+        "evidence/destruction/n5s146",
+        "--self-test"
+      ],
+      "utc": "2026-09-14T02:07:01.646759+00:00",
+      "returncode": 0
+    },
+    {
+      "name": "perf1",
+      "command": [
+        "/usr/bin/python3",
+        "scripts/run_destruction.py",
+        "n5s146-perf1",
+        "--performance"
+      ],
+      "utc": "2026-09-14T02:07:06.977875+00:00",
+      "returncode": 0
+    },
+    {
+      "name": "perf2",
+      "command": [
+        "/usr/bin/python3",
+        "scripts/run_destruction.py",
+        "n5s146-perf2",
+        "--performance"
+      ],
+      "utc": "2026-09-14T02:07:37.516899+00:00",
+      "returncode": 0
+    },
+    {
+      "name": "perf3",
+      "command": [
+        "/usr/bin/python3",
+        "scripts/run_destruction.py",
+        "n5s146-perf3",
+        "--performance"
+      ],
+      "utc": "2026-09-14T02:08:08.098470+00:00",
+      "returncode": 0
+    },
+    {
+      "name": "performance-check",
+      "command": [
+        "/usr/bin/python3",
+        "scripts/check_frame_target.py",
+        "evidence/destruction/n5s146-perf1",
+        "evidence/destruction/n5s146-perf2",
+        "evidence/destruction/n5s146-perf3",
+        "--output",
+        "/opt/g-harness/workspace/G12/node_5_step_146/repo/evidence/n5s146-report/performance.json"
+      ],
+      "utc": "2026-09-14T02:08:38.697066+00:00",
+      "returncode": 0
+    },
+    {
+      "name": "controls",
+      "command": [
+        "/usr/bin/python3",
+        "scripts/run_controls.py",
+        "n5s146"
+      ],
+      "utc": "2026-09-14T02:08:38.811808+00:00",
+      "returncode": 0
+    },
+    {
+      "name": "controls-check",
+      "command": [
+        "/usr/bin/python3",
+        "scripts/check_controls.py",
+        "evidence/controls/n5s146",
+        "--self-test"
+      ],
+      "utc": "2026-09-14T02:09:15.408378+00:00",
+      "returncode": 0
+    },
+    {
+      "name": "opposition",
+      "command": [
+        "/usr/bin/python3",
+        "scripts/run_opposition.py",
+        "n5s146",
+        "--scenario",
+        "focused"
+      ],
+      "utc": "2026-09-14T02:09:16.175033+00:00",
+      "returncode": 0
+    },
+    {
+      "name": "combat-audio-check",
+      "command": [
+        "/usr/bin/python3",
+        "scripts/check_combat_audio.py",
+        "evidence/opposition/n5s146",
+        "--self-test"
+      ],
+      "utc": "2026-09-14T02:09:39.054781+00:00",
+      "returncode": 0
+    },
+    {
+      "name": "opposition-check",
+      "command": [
+        "/usr/bin/python3",
+        "scripts/check_opposition.py",
+        "evidence/opposition/n5s146"
+      ],
+      "utc": "2026-09-14T02:09:39.119710+00:00",
+      "returncode": 0
+    },
+    {
+      "name": "active",
+      "command": [
+        "/usr/bin/python3",
+        "scripts/run_opposition.py",
+        "n5s146-active",
+        "--scenario",
+        "active"
+      ],
+      "utc": "2026-09-14T02:09:39.184532+00:00",
+      "returncode": 0
+    },
+    {
+      "name": "active-check",
+      "command": [
+        "/usr/bin/python3",
+        "scripts/check_opposition.py",
+        "evidence/opposition/n5s146-active"
+      ],
+      "utc": "2026-09-14T02:10:10.768362+00:00",
+      "returncode": 0
+    },
+    {
+      "name": "spatial",
+      "command": [
+        "python3",
+        "scripts/run_audio.py",
+        "n5s146-spatial",
+        "--spatial"
+      ],
+      "utc": "2026-09-14T02:10:17.771569+00:00",
+      "returncode": 0
+    },
+    {
+      "name": "spatial-check",
+      "command": [
+        ".tools/audio-venv/bin/python",
+        "scripts/check_audio_spatial.py",
+        "evidence/audio/n5s146-spatial",
+        "--self-test"
+      ],
+      "utc": "2026-09-14T02:10:49.210595+00:00",
+      "returncode": 0
+    },
+    {
+      "name": "transport",
+      "command": [
+        "python3",
+        "scripts/run_audio_transport.py",
+        "n5s146-transport",
+        "--wav",
+        "evidence/audio/n5s146/runtime.wav"
+      ],
+      "utc": "2026-09-14T02:10:49.475855+00:00",
+      "returncode": 0
+    },
+    {
+      "name": "transport-check",
+      "command": [
+        ".tools/audio-venv/bin/python",
+        "scripts/check_audio.py",
+        "evidence/audio/n5s146",
+        "--transport",
+        "evidence/audio/n5s146-transport",
+        "--self-test"
+      ],
+      "utc": "2026-09-14T02:11:49.792678+00:00",
+      "returncode": 0
+    }
+  ],
+  "daemon": {
+    "command": [
+      "pulseaudio",
+      "-n",
+      "--daemonize=no",
+      "--use-pid-file=no",
+      "--exit-idle-time=-1",
+      "--disable-shm=yes",
+      "--log-target=stderr",
+      "--load=module-native-protocol-unix socket=/tmp/g12-audio-vl7_oi4i/pulse.sock auth-anonymous=1",
+      "--load=module-null-sink sink_name=g12_audio_validation rate=48000 channels=2"
+    ],
+    "private_socket_directory_mode": "0o700",
+    "listening": "NONE: virtual null sink only; no auditory perception",
+    "verification_command": [
+      "python3",
+      "scripts/verify_audio_playback.py",
+      "n5s146-transport",
+      "--wav",
+      "/opt/g-harness/workspace/G12/node_5_step_146/repo/evidence/audio/n5s146/runtime.wav"
+    ],
+    "verification_returncode": 0,
+    "daemon_exitcode": 0,
+    "daemon_stopped": true
+  },
+  "python": "3.14.4",
+  "listening": "NOT PERFORMED: no auditory perception or physical soundcard. Virtual playback is not listening. Force, weight, clarity and subjective synchronization need final human listening.",
+  "worker_execution_only": true,
+  "durable_node_completion_claim": false
+}
