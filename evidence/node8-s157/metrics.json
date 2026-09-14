@@ -1,0 +1,70 @@
+{
+  "artifact_sha256": "1fc3c4121aed811406a1e34475f5d8abf99850c0b7cc9cde41c91f1f1373e6cf",
+  "required_commands_passed": 12,
+  "native_audio_diagnostic_exit": 0,
+  "native_audio_result": "PulseAudio context failed; ALSA no card; automatic Dummy fallback. No speakers verified.",
+  "natural_rules": {
+    "terminals": [
+      {
+        "generation": 1,
+        "state": 2,
+        "reason": "",
+        "active_seconds": 21.7833333333333,
+        "health": 100,
+        "shots": 19
+      },
+      {
+        "generation": 2,
+        "state": 3,
+        "reason": "death",
+        "active_seconds": 16.1,
+        "health": 0,
+        "shots": 6
+      }
+    ],
+    "resets": 2,
+    "destructions": 5,
+    "hits": 39,
+    "threat_attacks": 8,
+    "input_events": 2657,
+    "samples": 2779
+  },
+  "physics": {
+    "pylon_arcs": 96,
+    "body_samples": 100896,
+    "sleeping_final": 96
+  },
+  "rendering": {
+    "decoded_movie_frames": 2780,
+    "png_captures": 64,
+    "max_png_movie_mae": 1.2668460648148148,
+    "fragment_pixel_matches": 3180
+  },
+  "audio": {
+    "rate": 48000,
+    "channels": 2,
+    "peak": 0.3066263198852539,
+    "clipped_samples": 0,
+    "matched_sources": 301,
+    "pylon_asset_matches": 5,
+    "ground_impact_matches": 6
+  },
+  "natural_negative_controls": 14,
+  "realtime": {
+    "fixed_fps": false,
+    "wall_seconds": 48.53408383500209,
+    "frame_interval_ms": {
+      "p50": 27.954,
+      "p95": 33.7066,
+      "p99": 36.355880000000006
+    },
+    "mean_observed_fps": 35.314090976744346,
+    "max_frame_ms": 78.153,
+    "note": "Offline fixed-FPS evidence is NOT real-time performance. Unfixed run measures this software-rendered host including observation overhead; not Rick hardware."
+  },
+  "offline_recording": {
+    "encoded_fps": 60,
+    "encoded_seconds": 46.333333333333336,
+    "wall_seconds": 121.31304852199537
+  }
+}

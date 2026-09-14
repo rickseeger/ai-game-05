@@ -1,0 +1,25 @@
+{
+  "engine_sha256": "db07cae7de644278a1884d4552bdf2bca3f5d30131b18faf3a0c4d730080b199",
+  "glibc_symbol_versions": [
+    "GLIBC_2.2.5",
+    "GLIBC_2.3",
+    "GLIBC_2.3.2",
+    "GLIBC_2.3.4",
+    "GLIBC_2.4",
+    "GLIBC_2.6",
+    "GLIBC_2.7",
+    "GLIBC_2.9",
+    "GLIBC_2.12",
+    "GLIBC_2.14",
+    "GLIBC_2.15",
+    "GLIBC_2.16",
+    "GLIBC_2.17",
+    "GLIBC_2.18",
+    "GLIBC_2.24",
+    "GLIBC_2.25",
+    "GLIBC_2.27",
+    "GLIBC_2.28"
+  ],
+  "highest_imported_symbol_version": "GLIBC_2.28",
+  "note": "GLIBC_2.28 is the imported-symbol floor, not verification on glibc 2.28 or all system libraries/drivers. Only glibc 2.43 tested."
+}

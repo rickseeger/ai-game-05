@@ -1,0 +1,763 @@
+{
+  "archive": "clean-release-validation.tar.gz",
+  "archive_sha256": "8b5f5753ff17ae7e721ad92de888540d0966c4aa1d546534aca3cc53696d664e",
+  "archive_bytes": 38545748,
+  "artifact_sha256": "1fc3c4121aed811406a1e34475f5d8abf99850c0b7cc9cde41c91f1f1373e6cf",
+  "verified_members": 188,
+  "all_members_read_back": true,
+  "files": {
+    "validation/clean-launch.log": {
+      "sha256": "1a146be157ac2dd8d74df826ce577c18e7e70e7dd15ce9bb3571c005b3c9e35b",
+      "bytes": 10672
+    },
+    "validation/integration/death-fixture.png": {
+      "sha256": "b010428328bb6d66562e2cb8206107cf0143180b135b6f7ab3a3da5f1f2b5327",
+      "bytes": 100813
+    },
+    "validation/integration/default-playing.png": {
+      "sha256": "e92ae043f790b450de80bb3b1f1a78eaee5e2321ad69752eced8feb0873f4980",
+      "bytes": 80345
+    },
+    "validation/integration/engine.log": {
+      "sha256": "a02fd3efb3e393c8e90fea7c9f886868f7e0a278e8d3ab07f5c27e926ddf6e67",
+      "bytes": 10871
+    },
+    "validation/integration/extraction-locked.png": {
+      "sha256": "45744d9aac07c592614433549be2c69a4a9ed72c51d8767bc547a32ee0d3d35b",
+      "bytes": 85328
+    },
+    "validation/integration/extraction-open-fixture.png": {
+      "sha256": "df6ad8bba63d5d0f734b1afda64c911d2a7bd82c9dd65520836d671052556bfe",
+      "bytes": 98404
+    },
+    "validation/integration/final-retry-paused.png": {
+      "sha256": "dc323846f4cbd0e43b1e5773ca25f5c48caceabcf780581b9927b74b2b9211ad",
+      "bytes": 103853
+    },
+    "validation/integration/launch.json": {
+      "sha256": "d9cea7be4014a7047708ba43a0fafb0e7814ba5e3cb1618f5463bd78af4f535c",
+      "bytes": 10053
+    },
+    "validation/integration/locked-marker-hidden.png": {
+      "sha256": "4c580c5be011a7286e97c602ca373c149a1cd709e27cb7ebe86e86fb21c70099",
+      "bytes": 82323
+    },
+    "validation/integration/locked-marker-restored.png": {
+      "sha256": "45744d9aac07c592614433549be2c69a4a9ed72c51d8767bc547a32ee0d3d35b",
+      "bytes": 85328
+    },
+    "validation/integration/paused-4x3.png": {
+      "sha256": "0a4e073f8f49988221791125b31d545e63ac27a422ea69e8d6b9ba23af17170d",
+      "bytes": 95703
+    },
+    "validation/integration/paused-hud-hidden.png": {
+      "sha256": "e73f002380d1ce2c42bbe98a11e9c5a05692206a08a5b3f7045ca4fc4f38b81b",
+      "bytes": 76943
+    },
+    "validation/integration/paused-panel-hidden.png": {
+      "sha256": "45744d9aac07c592614433549be2c69a4a9ed72c51d8767bc547a32ee0d3d35b",
+      "bytes": 85328
+    },
+    "validation/integration/paused-restored.png": {
+      "sha256": "879caeaef80e3eeb3def0daa66036deba61cb6b25ffbab20ae3373bac8d09bda",
+      "bytes": 106017
+    },
+    "validation/integration/paused-visible.png": {
+      "sha256": "879caeaef80e3eeb3def0daa66036deba61cb6b25ffbab20ae3373bac8d09bda",
+      "bytes": 106017
+    },
+    "validation/integration/results.json": {
+      "sha256": "71c29c7ba61fa903e46e8bd5d95978826bf265242fabc6e3f02f62a8ed30f530",
+      "bytes": 136349
+    },
+    "validation/integration/timeout-fixture.png": {
+      "sha256": "c4d030f0cd44e65c569fa0677d2560305fc3ee72da13f0bbb334dba209936165",
+      "bytes": 100972
+    },
+    "validation/integration/userdata/godot/app_userdata/Breakwater/logs/godot.log": {
+      "sha256": "116ec313288df4124f77bc442653aabd06e12ae65562f464a1c236e1266642ad",
+      "bytes": 10869
+    },
+    "validation/integration/userdata/godot/app_userdata/Breakwater/shader_cache/CanvasShaderGLES3/d6f43d7e0fbc440290f0c3a77cf0f40066898da0fbdcc46f8b51b2aedaf2b191/6bb7c9a2fd1c4a8fa77cb96555b9b4a720209981.cache": {
+      "sha256": "588368477c42c3000febac8128c263ea4a98abb1efb1294d127db78d74c59412",
+      "bytes": 35574
+    },
+    "validation/integration/userdata/godot/app_userdata/Breakwater/shader_cache/CopyShaderGLES3/9e43c80d5a04be55b43ab2338e8da8f5b0f20618a3e869928272b954afcff6fe/6bb7c9a2fd1c4a8fa77cb96555b9b4a720209981.cache": {
+      "sha256": "001641141dd1c35eb9b3def10944131b55cacbd5e204a005ac5531133e9351ee",
+      "bytes": 72198
+    },
+    "validation/integration/userdata/godot/app_userdata/Breakwater/shader_cache/FeedShaderGLES3/37a956d1fa2424db9cc4da95128f7750da7138107b45bfd8dc4c00b472c38603/6bb7c9a2fd1c4a8fa77cb96555b9b4a720209981.cache": {
+      "sha256": "ec4be5d51aee6356e774044b5de7dc72d37c4a19db6f29744660152be9e6a207",
+      "bytes": 5105
+    },
+    "validation/integration/userdata/godot/app_userdata/Breakwater/shader_cache/PostShaderGLES3/907f5f5388055d7fedef256127241995e5d797ba6b0616cba4cc6040697a9c1d/6bb7c9a2fd1c4a8fa77cb96555b9b4a720209981.cache": {
+      "sha256": "cceb0311d601f95de63a68dc029ff386d12e4faee86a9fa38e0d87f38a4e588a",
+      "bytes": 10797
+    },
+    "validation/integration/userdata/godot/app_userdata/Breakwater/shader_cache/SceneShaderGLES3/926d7ef5f331286ebab4e4c2e582064fbbc800752e71ebc08c6a8145043adbb2/4505b6017dc502b9cb1ea9be38a366bfd444849c.cache": {
+      "sha256": "c4e0f234a172065e4a3dde33d0f61666ca5177588b4bc8d84e597174717e3bfd",
+      "bytes": 713108
+    },
+    "validation/integration/userdata/godot/app_userdata/Breakwater/shader_cache/SceneShaderGLES3/926d7ef5f331286ebab4e4c2e582064fbbc800752e71ebc08c6a8145043adbb2/6bb7c9a2fd1c4a8fa77cb96555b9b4a720209981.cache": {
+      "sha256": "d69a15fc6e35a674e9cc9ec2b94fe8bc5f1fddb361f403fb2989954aea527a6f",
+      "bytes": 579256
+    },
+    "validation/integration/userdata/godot/app_userdata/Breakwater/shader_cache/SceneShaderGLES3/926d7ef5f331286ebab4e4c2e582064fbbc800752e71ebc08c6a8145043adbb2/77047cd41f429f33ceff24e890e174f5465e755e.cache": {
+      "sha256": "49f89a84a2cf377668d285944d43c68576e1f0c09f53bc771e66cb48ce2b050a",
+      "bytes": 599630
+    },
+    "validation/integration/userdata/godot/app_userdata/Breakwater/shader_cache/SceneShaderGLES3/926d7ef5f331286ebab4e4c2e582064fbbc800752e71ebc08c6a8145043adbb2/a7066d9c826da62591c9a7200b95903130e922bd.cache": {
+      "sha256": "c2f7996d89753f9e3fc01f38d3c6faabdb723bcc000531d15360d2095b555296",
+      "bytes": 590749
+    },
+    "validation/integration/userdata/godot/app_userdata/Breakwater/shader_cache/SceneShaderGLES3/926d7ef5f331286ebab4e4c2e582064fbbc800752e71ebc08c6a8145043adbb2/c43acb7911e92e912490e79d283f5095108609fe.cache": {
+      "sha256": "d8a869de68fbdc24c4e4285bf7754ae2eede73c93083fc10582b7556bef85b56",
+      "bytes": 725210
+    },
+    "validation/integration/userdata/godot/app_userdata/Breakwater/shader_cache/SceneShaderGLES3/926d7ef5f331286ebab4e4c2e582064fbbc800752e71ebc08c6a8145043adbb2/f2e328ac8a780a17a0c65e242b0c8bc4fc063f03.cache": {
+      "sha256": "ebc99475312486ea6c4526ed05ad6617f15edcd681237129c269f6e5145a8ece",
+      "bytes": 705798
+    },
+    "validation/integration/victory-fixture.png": {
+      "sha256": "be0c36d73a994d215e5a24a1f5d358122cef861cead5849d4dafb2f61c5409aa",
+      "bytes": 121564
+    },
+    "validation/integration/victory-marker-hidden.png": {
+      "sha256": "ab4726c91d34b1d5138922e7b7be8058d6113e2c49a8e7867a568a3bb6c0ec64",
+      "bytes": 95770
+    },
+    "validation/integration/victory-marker-restored.png": {
+      "sha256": "df6ad8bba63d5d0f734b1afda64c911d2a7bd82c9dd65520836d671052556bfe",
+      "bytes": 98404
+    },
+    "validation/integration-checks.log": {
+      "sha256": "ec4ef2a45c1ed695e597d9ff3de6861d491aaa437ae95b0939b5f1e71b1d370f",
+      "bytes": 1660
+    },
+    "validation/integration.log": {
+      "sha256": "ab522338aace97dcc335dfe272578d907a0f27608171640b4d197789a7d467a8",
+      "bytes": 10986
+    },
+    "validation/native-audio-diagnostic.log": {
+      "sha256": "a8b79094730d1363fe8d60b3df05ef20ba5632324f5da600d8c0348d7fc87d5b",
+      "bytes": 7414
+    },
+    "validation/natural-checks.log": {
+      "sha256": "77de811e01512596cf0402b29f65c5a7aadf95e48cd736f94e0b1172d86a5e66",
+      "bytes": 5953
+    },
+    "validation/natural-movie/analysis.json": {
+      "sha256": "dbd5296412db869b4d2be5d93646f42e2a044d766af54ecbed3bf9b98f5d49c0",
+      "bytes": 44419
+    },
+    "validation/natural-movie/audio.wav": {
+      "sha256": "d074d586793faaea844f8a4696cbc843dffab2db3438c6f3f37323e23b679813",
+      "bytes": 17792102
+    },
+    "validation/natural-movie/encode.log": {
+      "sha256": "aba0b21a28c9e751e70ffaed707185005889f994dd88b69bb35c6f76a4748d97",
+      "bytes": 8758
+    },
+    "validation/natural-movie/engine.log": {
+      "sha256": "b902fe2a61c90007af4ea4dffc9b5e4d77b4e66b8360b197fe2685b8f9699c72",
+      "bytes": 6030
+    },
+    "validation/natural-movie/events.jsonl.gz": {
+      "sha256": "b02a36c175ff929b112b408cfadbe56ec70a32073ad2285fcd0e091a29077780",
+      "bytes": 300770
+    },
+    "validation/natural-movie/frame_00030.png": {
+      "sha256": "9618fed19b224533430e7567b657a84547a0032add5bb1c2caf441b98418e81c",
+      "bytes": 103567
+    },
+    "validation/natural-movie/frame_00090.png": {
+      "sha256": "d7cbf8d2b40a5e69993c0a29f8d03e36e9f4de90e3091f9f9d1aa3ec2ce5eb0c",
+      "bytes": 81267
+    },
+    "validation/natural-movie/frame_00161.png": {
+      "sha256": "c0c4c29247fa1a79ae1bcd00fcbefc47805c7fe34c6dff9079d6d8365920747d",
+      "bytes": 75771
+    },
+    "validation/natural-movie/frame_00191.png": {
+      "sha256": "0e59ae9a039fee0e43055f5191793f360d6c99148c4529f011d67401343c9e9f",
+      "bytes": 87591
+    },
+    "validation/natural-movie/frame_00202.png": {
+      "sha256": "8c91105c30a926dfe638b58efe173a25f143e01683642499656e937260b3dc80",
+      "bytes": 89190
+    },
+    "validation/natural-movie/frame_00221.png": {
+      "sha256": "c9b465d548e793c024a23209e73be56375f1f54d75e962d141c81a6dbd0a6d7f",
+      "bytes": 94915
+    },
+    "validation/natural-movie/frame_00232.png": {
+      "sha256": "e72c2208caa4297d5bbccfedd0f308bbe272bc5df936f4ae22b0633f2b9c3a9d",
+      "bytes": 94732
+    },
+    "validation/natural-movie/frame_00251.png": {
+      "sha256": "7f5f82c77fcb06613910a213422df9a2f1f9d09407abcef95870dfcc0024c9ab",
+      "bytes": 95797
+    },
+    "validation/natural-movie/frame_00262.png": {
+      "sha256": "5a80c367c46d08c4e2b20b1edea6866e5f85d3e6ddbb32a33120e8fb43f8f5ad",
+      "bytes": 95113
+    },
+    "validation/natural-movie/frame_00292.png": {
+      "sha256": "4508f3052bce20bb84397f41c267d5a2e3c090b1c05ad49383985df393cf59f5",
+      "bytes": 93040
+    },
+    "validation/natural-movie/frame_00341.png": {
+      "sha256": "195c2a67116087277ec1a615e294909cecb756f81bc98f2ca448912a95005444",
+      "bytes": 94539
+    },
+    "validation/natural-movie/frame_00382.png": {
+      "sha256": "dcd3d1b08078259850bcfa97651c9124fbce5c563e6a888f3e656aab11b5b986",
+      "bytes": 93603
+    },
+    "validation/natural-movie/frame_00414.png": {
+      "sha256": "9a827ac31fc43b29bd404b6cabee7d00bc5f88c4db0b88be73c35297ee04fa5b",
+      "bytes": 94878
+    },
+    "validation/natural-movie/frame_00444.png": {
+      "sha256": "a16a55609e5eccc191ec3f92b210347d238b1421daada10b5c9aadbf0f33b787",
+      "bytes": 102130
+    },
+    "validation/natural-movie/frame_00474.png": {
+      "sha256": "4bb4e3828ea4684f95364a1e9726fdd633bc4ec5b6eeadcdca6d696bbfb06ffb",
+      "bytes": 104526
+    },
+    "validation/natural-movie/frame_00499.png": {
+      "sha256": "1a70dc2413500ba30bdbafa322b9f80e87074c24492f67e2d2c5828d79043f57",
+      "bytes": 107404
+    },
+    "validation/natural-movie/frame_00504.png": {
+      "sha256": "95292123c9c84b6ab3e203c086485c1322d5d27e5b21204e22c67a8c84ec7554",
+      "bytes": 108599
+    },
+    "validation/natural-movie/frame_00521.png": {
+      "sha256": "1cbeeb09c6b1d3ed1c4625b24815af0207f2259c37a63941196fa5df04753aee",
+      "bytes": 112109
+    },
+    "validation/natural-movie/frame_00529.png": {
+      "sha256": "37446087fb6ea0e55365eb8fb189650753245efc75c630b5ef445c77617ae39d",
+      "bytes": 113005
+    },
+    "validation/natural-movie/frame_00559.png": {
+      "sha256": "f110c4a46c0a5479898b45dc2546bca191dd1ec1263164b6d37f276ec37a73dc",
+      "bytes": 112569
+    },
+    "validation/natural-movie/frame_00562.png": {
+      "sha256": "c2732d977513c8530bbab48b0b67e6e726e4b9204e77bf79fab1f8b8fe5d3c96",
+      "bytes": 112459
+    },
+    "validation/natural-movie/frame_00589.png": {
+      "sha256": "17cb71d48315b1614a15f2d1a9dc7852c20c49a2ca73be9dde56d1e5a4d6d387",
+      "bytes": 109471
+    },
+    "validation/natural-movie/frame_00594.png": {
+      "sha256": "9ef7c635143134eca02631cad1939d03b12da0d549f88bf75f414985184e7791",
+      "bytes": 109320
+    },
+    "validation/natural-movie/frame_00679.png": {
+      "sha256": "7447125a0aeda24123f75e0bbaa98ecb46224feb457705c87797b772dfd37cf6",
+      "bytes": 94806
+    },
+    "validation/natural-movie/frame_00703.png": {
+      "sha256": "f63074b06d03f20f3726c7729ec61ed80ad6fa8b9e1ce40c6672829428034e04",
+      "bytes": 96990
+    },
+    "validation/natural-movie/frame_00733.png": {
+      "sha256": "714c3c2b600a22fcbf37c686a00c8226b266d6cbcd532ae87ebf60655fd5dcc9",
+      "bytes": 109292
+    },
+    "validation/natural-movie/frame_00763.png": {
+      "sha256": "2eaa1a89c656b6e04329e563ae8c10dc3f0e14b96f90706018af5af361958cd5",
+      "bytes": 115642
+    },
+    "validation/natural-movie/frame_00774.png": {
+      "sha256": "234806a29e971cac95959802ae580e2b54b7a090e486fa2d607c4b30a0656a42",
+      "bytes": 113603
+    },
+    "validation/natural-movie/frame_00793.png": {
+      "sha256": "3f1dd7650ef352287b2283dcabf9301141d2653f0dcf478058b14b54f948d5fe",
+      "bytes": 114451
+    },
+    "validation/natural-movie/frame_00859.png": {
+      "sha256": "e791c7ed301340836196214751f424a78b8ec8063f7e3e8f360a0fb2b63a34a8",
+      "bytes": 108349
+    },
+    "validation/natural-movie/frame_00883.png": {
+      "sha256": "fcae88a69cc451cfb86b6d5e1c8e019749051787310603ba99db2cf13df68d4b",
+      "bytes": 105205
+    },
+    "validation/natural-movie/frame_01063.png": {
+      "sha256": "53661da60d968d53caa5b642fe71b5af91eb65e511a59bc4e5165623c33bb2e5",
+      "bytes": 93530
+    },
+    "validation/natural-movie/frame_01068.png": {
+      "sha256": "53f77aa551146e90268719ad0e0082d241f59df99452b255810eceb7f51fab4e",
+      "bytes": 96206
+    },
+    "validation/natural-movie/frame_01098.png": {
+      "sha256": "11e2a4e1f56781bf5023e7c880c1c368fb5df3d9572ce53ae90d903daff7f688",
+      "bytes": 104636
+    },
+    "validation/natural-movie/frame_01128.png": {
+      "sha256": "ca80bb4b5a5eea1e4aecaa3fc86f5f4c7e5f4cc092084d901a91f897482de3b8",
+      "bytes": 104517
+    },
+    "validation/natural-movie/frame_01158.png": {
+      "sha256": "47861bbc0d73644a4f5e2b2d5171a3aa63f7f7304053c13cfc6aa70f9cba7552",
+      "bytes": 93845
+    },
+    "validation/natural-movie/frame_01248.png": {
+      "sha256": "604d63da059212b0a471b69bcc6f2760d0cf37b7367ffc4b6994330a16f35e13",
+      "bytes": 84221
+    },
+    "validation/natural-movie/frame_01366.png": {
+      "sha256": "3aefcb66db027b9f77c873d5641ec65eb7231f0234e60c74148d790cab74e986",
+      "bytes": 109343
+    },
+    "validation/natural-movie/frame_01427.png": {
+      "sha256": "69ea5e61eac29881901af35d00e421611422eaf6a762649d7dfcd2605e7ae46d",
+      "bytes": 80931
+    },
+    "validation/natural-movie/frame_01428.png": {
+      "sha256": "b846eda31a886e347146e4e5a5d9788c33db9b7a69f07a29b27221e868842a2e",
+      "bytes": 80874
+    },
+    "validation/natural-movie/frame_01525.png": {
+      "sha256": "37c6206138e7cc8c52848fba8c960b749fa06ba76673c14c740e0ab7cb74d525",
+      "bytes": 82031
+    },
+    "validation/natural-movie/frame_01539.png": {
+      "sha256": "af245b3fd19713d3a7e94582c35e858da8a892bc4df1b9e07072fc3b34e31e29",
+      "bytes": 86787
+    },
+    "validation/natural-movie/frame_01555.png": {
+      "sha256": "252e10f435bd1e38ab220eacdbc34f10f2d668a1a70a0bf58a4a3b4fdc990018",
+      "bytes": 97353
+    },
+    "validation/natural-movie/frame_01569.png": {
+      "sha256": "1a17f5c091dc3aa7bb92370582c61b9165ebf5dc85f190a072a9739acc76659f",
+      "bytes": 105698
+    },
+    "validation/natural-movie/frame_01585.png": {
+      "sha256": "0b7ceb82c252de6f2b12f835ed5a6376e2ade66df31f44dcad554c15a8ee7ebe",
+      "bytes": 109190
+    },
+    "validation/natural-movie/frame_01599.png": {
+      "sha256": "d96f6a72a516cb586e21382b7b89196d66bbf67afa689143f760322ee38376d5",
+      "bytes": 110785
+    },
+    "validation/natural-movie/frame_01615.png": {
+      "sha256": "2389fe749ae8250254c7d7a81c0db4ee4cf0e44014bbea7ed0c2ffb97c6659bb",
+      "bytes": 107415
+    },
+    "validation/natural-movie/frame_01629.png": {
+      "sha256": "5dedb31f243aaa9f34d504f1b4285d888db0c534592748c6eaa1cf505488395d",
+      "bytes": 105655
+    },
+    "validation/natural-movie/frame_01705.png": {
+      "sha256": "0cb86efc1e6ed0f7869de6b0b35f4d618bf2d2274335b56fc66a3da2d6677d9f",
+      "bytes": 101921
+    },
+    "validation/natural-movie/frame_01719.png": {
+      "sha256": "8364cc52e9108ea2a0ec857469e7c083b2fab08e8f5abc247e27b1dfa1827cac",
+      "bytes": 102596
+    },
+    "validation/natural-movie/frame_01885.png": {
+      "sha256": "0c007a03976e3a2245ffbc789085f429aefa8c9a0cbaa69b9ce178e680d443ed",
+      "bytes": 102830
+    },
+    "validation/natural-movie/frame_01899.png": {
+      "sha256": "0c007a03976e3a2245ffbc789085f429aefa8c9a0cbaa69b9ce178e680d443ed",
+      "bytes": 102830
+    },
+    "validation/natural-movie/frame_02392.png": {
+      "sha256": "4f3634b7f5df4ad7820e9da3a4c2f9294f91223fe84872b0e6f18bb276f2a691",
+      "bytes": 102734
+    },
+    "validation/natural-movie/frame_02453.png": {
+      "sha256": "69ea5e61eac29881901af35d00e421611422eaf6a762649d7dfcd2605e7ae46d",
+      "bytes": 80931
+    },
+    "validation/natural-movie/frame_02551.png": {
+      "sha256": "37c6206138e7cc8c52848fba8c960b749fa06ba76673c14c740e0ab7cb74d525",
+      "bytes": 82031
+    },
+    "validation/natural-movie/frame_02565.png": {
+      "sha256": "af245b3fd19713d3a7e94582c35e858da8a892bc4df1b9e07072fc3b34e31e29",
+      "bytes": 86787
+    },
+    "validation/natural-movie/frame_02581.png": {
+      "sha256": "252e10f435bd1e38ab220eacdbc34f10f2d668a1a70a0bf58a4a3b4fdc990018",
+      "bytes": 97353
+    },
+    "validation/natural-movie/frame_02595.png": {
+      "sha256": "1a17f5c091dc3aa7bb92370582c61b9165ebf5dc85f190a072a9739acc76659f",
+      "bytes": 105698
+    },
+    "validation/natural-movie/frame_02611.png": {
+      "sha256": "973c695a38f84d5a15d78a915fe8147809c7e9af830bcaf5ab81b657686248ac",
+      "bytes": 109191
+    },
+    "validation/natural-movie/frame_02625.png": {
+      "sha256": "99a0c3c5430f134ae621ecbd620dd9ceb58fea9cb1c2492a121f713afc1d879c",
+      "bytes": 110787
+    },
+    "validation/natural-movie/frame_02641.png": {
+      "sha256": "9f3987d895fc722ef40a41197b797bc4513ca08722f197190ff275ba442a0c08",
+      "bytes": 107412
+    },
+    "validation/natural-movie/frame_02655.png": {
+      "sha256": "5868785952ba1c1c7980327489d2a9f49a3021c70a100e2d6caba9f7d8ff1863",
+      "bytes": 105655
+    },
+    "validation/natural-movie/frame_02731.png": {
+      "sha256": "48729c4b963f2e15a6d2e029a483addcc8cf0d6eda72100c331fb025b6fd6015",
+      "bytes": 101924
+    },
+    "validation/natural-movie/frame_02745.png": {
+      "sha256": "6a9f819f7604cc0fff7c098398668db662e79a7695ec17e889faeba70933c163",
+      "bytes": 102597
+    },
+    "validation/natural-movie/frames.jsonl.gz": {
+      "sha256": "cb161bfc463bfc5c93ca3ed10420f6f8197fa556d70be29d2e758d00033b5a05",
+      "bytes": 41493
+    },
+    "validation/natural-movie/game.mp4": {
+      "sha256": "713cd16faaa7e4b99b92b045501f4d89dd10b084f447f477e36134419c51027a",
+      "bytes": 5441404
+    },
+    "validation/natural-movie/launch.json": {
+      "sha256": "6327da2a3e1e6681994d1bcba67696210c130b54431752b1a5f188f272de0535",
+      "bytes": 10249
+    },
+    "validation/natural-movie/physics.jsonl.gz": {
+      "sha256": "ca808b83780b7d289cb030a1b9ab68546d9c84d7d78084139ed90843353171ad",
+      "bytes": 7983711
+    },
+    "validation/natural-movie/userdata/godot/app_userdata/Breakwater/logs/godot.log": {
+      "sha256": "bcd5642d865983c849df23fdb1f24c6dae491685cdf2dc502e04ca6a1f150bf0",
+      "bytes": 5979
+    },
+    "validation/natural-movie/userdata/godot/app_userdata/Breakwater/shader_cache/CanvasShaderGLES3/d6f43d7e0fbc440290f0c3a77cf0f40066898da0fbdcc46f8b51b2aedaf2b191/6bb7c9a2fd1c4a8fa77cb96555b9b4a720209981.cache": {
+      "sha256": "588368477c42c3000febac8128c263ea4a98abb1efb1294d127db78d74c59412",
+      "bytes": 35574
+    },
+    "validation/natural-movie/userdata/godot/app_userdata/Breakwater/shader_cache/CopyShaderGLES3/9e43c80d5a04be55b43ab2338e8da8f5b0f20618a3e869928272b954afcff6fe/6bb7c9a2fd1c4a8fa77cb96555b9b4a720209981.cache": {
+      "sha256": "001641141dd1c35eb9b3def10944131b55cacbd5e204a005ac5531133e9351ee",
+      "bytes": 72198
+    },
+    "validation/natural-movie/userdata/godot/app_userdata/Breakwater/shader_cache/FeedShaderGLES3/37a956d1fa2424db9cc4da95128f7750da7138107b45bfd8dc4c00b472c38603/6bb7c9a2fd1c4a8fa77cb96555b9b4a720209981.cache": {
+      "sha256": "ec4be5d51aee6356e774044b5de7dc72d37c4a19db6f29744660152be9e6a207",
+      "bytes": 5105
+    },
+    "validation/natural-movie/userdata/godot/app_userdata/Breakwater/shader_cache/PostShaderGLES3/907f5f5388055d7fedef256127241995e5d797ba6b0616cba4cc6040697a9c1d/6bb7c9a2fd1c4a8fa77cb96555b9b4a720209981.cache": {
+      "sha256": "cceb0311d601f95de63a68dc029ff386d12e4faee86a9fa38e0d87f38a4e588a",
+      "bytes": 10797
+    },
+    "validation/natural-movie/userdata/godot/app_userdata/Breakwater/shader_cache/SceneShaderGLES3/926d7ef5f331286ebab4e4c2e582064fbbc800752e71ebc08c6a8145043adbb2/4505b6017dc502b9cb1ea9be38a366bfd444849c.cache": {
+      "sha256": "c4e0f234a172065e4a3dde33d0f61666ca5177588b4bc8d84e597174717e3bfd",
+      "bytes": 713108
+    },
+    "validation/natural-movie/userdata/godot/app_userdata/Breakwater/shader_cache/SceneShaderGLES3/926d7ef5f331286ebab4e4c2e582064fbbc800752e71ebc08c6a8145043adbb2/6bb7c9a2fd1c4a8fa77cb96555b9b4a720209981.cache": {
+      "sha256": "d69a15fc6e35a674e9cc9ec2b94fe8bc5f1fddb361f403fb2989954aea527a6f",
+      "bytes": 579256
+    },
+    "validation/natural-movie/userdata/godot/app_userdata/Breakwater/shader_cache/SceneShaderGLES3/926d7ef5f331286ebab4e4c2e582064fbbc800752e71ebc08c6a8145043adbb2/77047cd41f429f33ceff24e890e174f5465e755e.cache": {
+      "sha256": "13ac352c3cb350e315d6a71efb715e82196e485be16e96cf335be54a9f657e89",
+      "bytes": 599630
+    },
+    "validation/natural-movie/userdata/godot/app_userdata/Breakwater/shader_cache/SceneShaderGLES3/926d7ef5f331286ebab4e4c2e582064fbbc800752e71ebc08c6a8145043adbb2/a7066d9c826da62591c9a7200b95903130e922bd.cache": {
+      "sha256": "c2f7996d89753f9e3fc01f38d3c6faabdb723bcc000531d15360d2095b555296",
+      "bytes": 590749
+    },
+    "validation/natural-movie/userdata/godot/app_userdata/Breakwater/shader_cache/SceneShaderGLES3/926d7ef5f331286ebab4e4c2e582064fbbc800752e71ebc08c6a8145043adbb2/c43acb7911e92e912490e79d283f5095108609fe.cache": {
+      "sha256": "d8a869de68fbdc24c4e4285bf7754ae2eede73c93083fc10582b7556bef85b56",
+      "bytes": 725210
+    },
+    "validation/natural-movie/userdata/godot/app_userdata/Breakwater/shader_cache/SceneShaderGLES3/926d7ef5f331286ebab4e4c2e582064fbbc800752e71ebc08c6a8145043adbb2/f2e328ac8a780a17a0c65e242b0c8bc4fc063f03.cache": {
+      "sha256": "ebc99475312486ea6c4526ed05ad6617f15edcd681237129c269f6e5145a8ece",
+      "bytes": 705798
+    },
+    "validation/natural-movie/video.json": {
+      "sha256": "f886b84f6b556ff0e254f9a3f81ad71bb52119c6254b49529db97f30ef33d6a1",
+      "bytes": 4493
+    },
+    "validation/natural-movie.log": {
+      "sha256": "a9b9dd488ff747a3c89c5bc9568e28f5b414099f8d1d8d440617f41677bee20a",
+      "bytes": 6168
+    },
+    "validation/natural-realtime/analysis.json": {
+      "sha256": "dd16783162f765bc7e136ac24d23fdb2fb551c45824cfc8ece78124ddc9f794e",
+      "bytes": 30741
+    },
+    "validation/natural-realtime/engine.log": {
+      "sha256": "ba5bc0f1b88b14e781613083da536a76f91bca0a062a47457a760d9febf0672f",
+      "bytes": 5437
+    },
+    "validation/natural-realtime/events.jsonl.gz": {
+      "sha256": "8642fd6383cdd1585d547683d0347d923acbc0b430b399a108a82499103585a4",
+      "bytes": 226046
+    },
+    "validation/natural-realtime/frames.jsonl.gz": {
+      "sha256": "270c8104877fe1cd50b1b65e7cfd925b8d8580954c60df77e6cc58554e145f69",
+      "bytes": 24517
+    },
+    "validation/natural-realtime/launch.json": {
+      "sha256": "015bf46d109c86fdcb028f52631917d354a26ea14d6c53937e58b9b5776d16ab",
+      "bytes": 10054
+    },
+    "validation/natural-realtime/physics.jsonl.gz": {
+      "sha256": "a393809015a8322a74c5e2d589bf02cc1838c524376747a683865b3126f0005e",
+      "bytes": 8026212
+    },
+    "validation/natural-realtime/userdata/godot/app_userdata/Breakwater/logs/godot.log": {
+      "sha256": "c84af6f15dc6f9ebe01e45288644949ce6cf4577ca066f22a765be938cba3170",
+      "bytes": 5386
+    },
+    "validation/natural-realtime/userdata/godot/app_userdata/Breakwater/shader_cache/CanvasShaderGLES3/d6f43d7e0fbc440290f0c3a77cf0f40066898da0fbdcc46f8b51b2aedaf2b191/6bb7c9a2fd1c4a8fa77cb96555b9b4a720209981.cache": {
+      "sha256": "588368477c42c3000febac8128c263ea4a98abb1efb1294d127db78d74c59412",
+      "bytes": 35574
+    },
+    "validation/natural-realtime/userdata/godot/app_userdata/Breakwater/shader_cache/CopyShaderGLES3/9e43c80d5a04be55b43ab2338e8da8f5b0f20618a3e869928272b954afcff6fe/6bb7c9a2fd1c4a8fa77cb96555b9b4a720209981.cache": {
+      "sha256": "001641141dd1c35eb9b3def10944131b55cacbd5e204a005ac5531133e9351ee",
+      "bytes": 72198
+    },
+    "validation/natural-realtime/userdata/godot/app_userdata/Breakwater/shader_cache/FeedShaderGLES3/37a956d1fa2424db9cc4da95128f7750da7138107b45bfd8dc4c00b472c38603/6bb7c9a2fd1c4a8fa77cb96555b9b4a720209981.cache": {
+      "sha256": "ec4be5d51aee6356e774044b5de7dc72d37c4a19db6f29744660152be9e6a207",
+      "bytes": 5105
+    },
+    "validation/natural-realtime/userdata/godot/app_userdata/Breakwater/shader_cache/PostShaderGLES3/907f5f5388055d7fedef256127241995e5d797ba6b0616cba4cc6040697a9c1d/6bb7c9a2fd1c4a8fa77cb96555b9b4a720209981.cache": {
+      "sha256": "cceb0311d601f95de63a68dc029ff386d12e4faee86a9fa38e0d87f38a4e588a",
+      "bytes": 10797
+    },
+    "validation/natural-realtime/userdata/godot/app_userdata/Breakwater/shader_cache/SceneShaderGLES3/926d7ef5f331286ebab4e4c2e582064fbbc800752e71ebc08c6a8145043adbb2/4505b6017dc502b9cb1ea9be38a366bfd444849c.cache": {
+      "sha256": "43be43a6bd65be70e3c51fcf5eab261ac946d771dc679e48b4874bd34552cdb3",
+      "bytes": 713108
+    },
+    "validation/natural-realtime/userdata/godot/app_userdata/Breakwater/shader_cache/SceneShaderGLES3/926d7ef5f331286ebab4e4c2e582064fbbc800752e71ebc08c6a8145043adbb2/6bb7c9a2fd1c4a8fa77cb96555b9b4a720209981.cache": {
+      "sha256": "d69a15fc6e35a674e9cc9ec2b94fe8bc5f1fddb361f403fb2989954aea527a6f",
+      "bytes": 579256
+    },
+    "validation/natural-realtime/userdata/godot/app_userdata/Breakwater/shader_cache/SceneShaderGLES3/926d7ef5f331286ebab4e4c2e582064fbbc800752e71ebc08c6a8145043adbb2/77047cd41f429f33ceff24e890e174f5465e755e.cache": {
+      "sha256": "13ac352c3cb350e315d6a71efb715e82196e485be16e96cf335be54a9f657e89",
+      "bytes": 599630
+    },
+    "validation/natural-realtime/userdata/godot/app_userdata/Breakwater/shader_cache/SceneShaderGLES3/926d7ef5f331286ebab4e4c2e582064fbbc800752e71ebc08c6a8145043adbb2/a7066d9c826da62591c9a7200b95903130e922bd.cache": {
+      "sha256": "c2f7996d89753f9e3fc01f38d3c6faabdb723bcc000531d15360d2095b555296",
+      "bytes": 590749
+    },
+    "validation/natural-realtime/userdata/godot/app_userdata/Breakwater/shader_cache/SceneShaderGLES3/926d7ef5f331286ebab4e4c2e582064fbbc800752e71ebc08c6a8145043adbb2/c43acb7911e92e912490e79d283f5095108609fe.cache": {
+      "sha256": "d8a869de68fbdc24c4e4285bf7754ae2eede73c93083fc10582b7556bef85b56",
+      "bytes": 725210
+    },
+    "validation/natural-realtime/userdata/godot/app_userdata/Breakwater/shader_cache/SceneShaderGLES3/926d7ef5f331286ebab4e4c2e582064fbbc800752e71ebc08c6a8145043adbb2/f2e328ac8a780a17a0c65e242b0c8bc4fc063f03.cache": {
+      "sha256": "ebc99475312486ea6c4526ed05ad6617f15edcd681237129c269f6e5145a8ece",
+      "bytes": 705798
+    },
+    "validation/natural-realtime.log": {
+      "sha256": "8b00cfd876c41214205ac85c2ae8bd178e4754ad9c56efd94e31c62164d5b6c6",
+      "bytes": 5577
+    },
+    "validation/natural-supplement.json": {
+      "sha256": "f552d509e1408297617cbd72432b5f660f301c867e352c1fc055b9a4ee89fb21",
+      "bytes": 2995
+    },
+    "validation/natural-supplement.log": {
+      "sha256": "f552d509e1408297617cbd72432b5f660f301c867e352c1fc055b9a4ee89fb21",
+      "bytes": 2995
+    },
+    "validation/realtime-checks.log": {
+      "sha256": "78b3804a4a2f34aa5a98d973a51664539b88234c5447cc1f30fb7f808a18ba51",
+      "bytes": 3241
+    },
+    "validation/rules-1/combat-victory-fixture.png": {
+      "sha256": "795f0678f09283b5d3e5d459e407fd5db6427b08ae2fd71069c1d0ec78155a73",
+      "bytes": 118969
+    },
+    "validation/rules-1/engine.log": {
+      "sha256": "2128adf0950286ab1e0de541a0fd10be01dfbc40f75fa7b14fa3f5c9b4edb58e",
+      "bytes": 3067
+    },
+    "validation/rules-1/launch.json": {
+      "sha256": "d78e5cbac60d8c8986621dcebbae6e7801afb1c528f07bb8f3d41da90038a3c9",
+      "bytes": 10021
+    },
+    "validation/rules-1/results.json": {
+      "sha256": "dd7911dcff45dac094a52663ef52202dd2cbeb9e90dbdf0fee33ee49ba55ad65",
+      "bytes": 83273
+    },
+    "validation/rules-1/userdata/godot/app_userdata/Breakwater/logs/godot.log": {
+      "sha256": "7b6ca46e373f22e5c86adaecf0875b1e312ab46c0eb03e7fbca15241e60aa3db",
+      "bytes": 3065
+    },
+    "validation/rules-1/userdata/godot/app_userdata/Breakwater/shader_cache/CanvasShaderGLES3/d6f43d7e0fbc440290f0c3a77cf0f40066898da0fbdcc46f8b51b2aedaf2b191/6bb7c9a2fd1c4a8fa77cb96555b9b4a720209981.cache": {
+      "sha256": "588368477c42c3000febac8128c263ea4a98abb1efb1294d127db78d74c59412",
+      "bytes": 35574
+    },
+    "validation/rules-1/userdata/godot/app_userdata/Breakwater/shader_cache/CopyShaderGLES3/9e43c80d5a04be55b43ab2338e8da8f5b0f20618a3e869928272b954afcff6fe/6bb7c9a2fd1c4a8fa77cb96555b9b4a720209981.cache": {
+      "sha256": "001641141dd1c35eb9b3def10944131b55cacbd5e204a005ac5531133e9351ee",
+      "bytes": 72198
+    },
+    "validation/rules-1/userdata/godot/app_userdata/Breakwater/shader_cache/FeedShaderGLES3/37a956d1fa2424db9cc4da95128f7750da7138107b45bfd8dc4c00b472c38603/6bb7c9a2fd1c4a8fa77cb96555b9b4a720209981.cache": {
+      "sha256": "ec4be5d51aee6356e774044b5de7dc72d37c4a19db6f29744660152be9e6a207",
+      "bytes": 5105
+    },
+    "validation/rules-1/userdata/godot/app_userdata/Breakwater/shader_cache/PostShaderGLES3/907f5f5388055d7fedef256127241995e5d797ba6b0616cba4cc6040697a9c1d/6bb7c9a2fd1c4a8fa77cb96555b9b4a720209981.cache": {
+      "sha256": "cceb0311d601f95de63a68dc029ff386d12e4faee86a9fa38e0d87f38a4e588a",
+      "bytes": 10797
+    },
+    "validation/rules-1/userdata/godot/app_userdata/Breakwater/shader_cache/SceneShaderGLES3/926d7ef5f331286ebab4e4c2e582064fbbc800752e71ebc08c6a8145043adbb2/4505b6017dc502b9cb1ea9be38a366bfd444849c.cache": {
+      "sha256": "c4e0f234a172065e4a3dde33d0f61666ca5177588b4bc8d84e597174717e3bfd",
+      "bytes": 713108
+    },
+    "validation/rules-1/userdata/godot/app_userdata/Breakwater/shader_cache/SceneShaderGLES3/926d7ef5f331286ebab4e4c2e582064fbbc800752e71ebc08c6a8145043adbb2/6bb7c9a2fd1c4a8fa77cb96555b9b4a720209981.cache": {
+      "sha256": "d69a15fc6e35a674e9cc9ec2b94fe8bc5f1fddb361f403fb2989954aea527a6f",
+      "bytes": 579256
+    },
+    "validation/rules-1/userdata/godot/app_userdata/Breakwater/shader_cache/SceneShaderGLES3/926d7ef5f331286ebab4e4c2e582064fbbc800752e71ebc08c6a8145043adbb2/77047cd41f429f33ceff24e890e174f5465e755e.cache": {
+      "sha256": "1d5e722aab9f6c91094eac8ad2e7dd1edd4c5be25b0c9354ac59a035aed7681b",
+      "bytes": 599630
+    },
+    "validation/rules-1/userdata/godot/app_userdata/Breakwater/shader_cache/SceneShaderGLES3/926d7ef5f331286ebab4e4c2e582064fbbc800752e71ebc08c6a8145043adbb2/a7066d9c826da62591c9a7200b95903130e922bd.cache": {
+      "sha256": "c2f7996d89753f9e3fc01f38d3c6faabdb723bcc000531d15360d2095b555296",
+      "bytes": 590749
+    },
+    "validation/rules-1/userdata/godot/app_userdata/Breakwater/shader_cache/SceneShaderGLES3/926d7ef5f331286ebab4e4c2e582064fbbc800752e71ebc08c6a8145043adbb2/c43acb7911e92e912490e79d283f5095108609fe.cache": {
+      "sha256": "d8a869de68fbdc24c4e4285bf7754ae2eede73c93083fc10582b7556bef85b56",
+      "bytes": 725210
+    },
+    "validation/rules-1/userdata/godot/app_userdata/Breakwater/shader_cache/SceneShaderGLES3/926d7ef5f331286ebab4e4c2e582064fbbc800752e71ebc08c6a8145043adbb2/f2e328ac8a780a17a0c65e242b0c8bc4fc063f03.cache": {
+      "sha256": "ebc99475312486ea6c4526ed05ad6617f15edcd681237129c269f6e5145a8ece",
+      "bytes": 705798
+    },
+    "validation/rules-1.log": {
+      "sha256": "9e25d7fc85185aff5c2f1084d93b4f8548de589a2498b08bdd941f13930320cd",
+      "bytes": 3178
+    },
+    "validation/rules-2/combat-victory-fixture.png": {
+      "sha256": "795f0678f09283b5d3e5d459e407fd5db6427b08ae2fd71069c1d0ec78155a73",
+      "bytes": 118969
+    },
+    "validation/rules-2/engine.log": {
+      "sha256": "2128adf0950286ab1e0de541a0fd10be01dfbc40f75fa7b14fa3f5c9b4edb58e",
+      "bytes": 3067
+    },
+    "validation/rules-2/launch.json": {
+      "sha256": "4a89df719a88cb64c98f38c726c9849cefd5ac7e9d62ef0d97aa2a9d72fcf0f4",
+      "bytes": 10018
+    },
+    "validation/rules-2/results.json": {
+      "sha256": "566235029182575a982c1d1f7a6a184bc49faf8eecdcc194e740e58aca86e91e",
+      "bytes": 83273
+    },
+    "validation/rules-2/userdata/godot/app_userdata/Breakwater/logs/godot.log": {
+      "sha256": "7b6ca46e373f22e5c86adaecf0875b1e312ab46c0eb03e7fbca15241e60aa3db",
+      "bytes": 3065
+    },
+    "validation/rules-2/userdata/godot/app_userdata/Breakwater/shader_cache/CanvasShaderGLES3/d6f43d7e0fbc440290f0c3a77cf0f40066898da0fbdcc46f8b51b2aedaf2b191/6bb7c9a2fd1c4a8fa77cb96555b9b4a720209981.cache": {
+      "sha256": "588368477c42c3000febac8128c263ea4a98abb1efb1294d127db78d74c59412",
+      "bytes": 35574
+    },
+    "validation/rules-2/userdata/godot/app_userdata/Breakwater/shader_cache/CopyShaderGLES3/9e43c80d5a04be55b43ab2338e8da8f5b0f20618a3e869928272b954afcff6fe/6bb7c9a2fd1c4a8fa77cb96555b9b4a720209981.cache": {
+      "sha256": "001641141dd1c35eb9b3def10944131b55cacbd5e204a005ac5531133e9351ee",
+      "bytes": 72198
+    },
+    "validation/rules-2/userdata/godot/app_userdata/Breakwater/shader_cache/FeedShaderGLES3/37a956d1fa2424db9cc4da95128f7750da7138107b45bfd8dc4c00b472c38603/6bb7c9a2fd1c4a8fa77cb96555b9b4a720209981.cache": {
+      "sha256": "ec4be5d51aee6356e774044b5de7dc72d37c4a19db6f29744660152be9e6a207",
+      "bytes": 5105
+    },
+    "validation/rules-2/userdata/godot/app_userdata/Breakwater/shader_cache/PostShaderGLES3/907f5f5388055d7fedef256127241995e5d797ba6b0616cba4cc6040697a9c1d/6bb7c9a2fd1c4a8fa77cb96555b9b4a720209981.cache": {
+      "sha256": "cceb0311d601f95de63a68dc029ff386d12e4faee86a9fa38e0d87f38a4e588a",
+      "bytes": 10797
+    },
+    "validation/rules-2/userdata/godot/app_userdata/Breakwater/shader_cache/SceneShaderGLES3/926d7ef5f331286ebab4e4c2e582064fbbc800752e71ebc08c6a8145043adbb2/4505b6017dc502b9cb1ea9be38a366bfd444849c.cache": {
+      "sha256": "c4e0f234a172065e4a3dde33d0f61666ca5177588b4bc8d84e597174717e3bfd",
+      "bytes": 713108
+    },
+    "validation/rules-2/userdata/godot/app_userdata/Breakwater/shader_cache/SceneShaderGLES3/926d7ef5f331286ebab4e4c2e582064fbbc800752e71ebc08c6a8145043adbb2/6bb7c9a2fd1c4a8fa77cb96555b9b4a720209981.cache": {
+      "sha256": "d69a15fc6e35a674e9cc9ec2b94fe8bc5f1fddb361f403fb2989954aea527a6f",
+      "bytes": 579256
+    },
+    "validation/rules-2/userdata/godot/app_userdata/Breakwater/shader_cache/SceneShaderGLES3/926d7ef5f331286ebab4e4c2e582064fbbc800752e71ebc08c6a8145043adbb2/77047cd41f429f33ceff24e890e174f5465e755e.cache": {
+      "sha256": "1d5e722aab9f6c91094eac8ad2e7dd1edd4c5be25b0c9354ac59a035aed7681b",
+      "bytes": 599630
+    },
+    "validation/rules-2/userdata/godot/app_userdata/Breakwater/shader_cache/SceneShaderGLES3/926d7ef5f331286ebab4e4c2e582064fbbc800752e71ebc08c6a8145043adbb2/a7066d9c826da62591c9a7200b95903130e922bd.cache": {
+      "sha256": "c2f7996d89753f9e3fc01f38d3c6faabdb723bcc000531d15360d2095b555296",
+      "bytes": 590749
+    },
+    "validation/rules-2/userdata/godot/app_userdata/Breakwater/shader_cache/SceneShaderGLES3/926d7ef5f331286ebab4e4c2e582064fbbc800752e71ebc08c6a8145043adbb2/c43acb7911e92e912490e79d283f5095108609fe.cache": {
+      "sha256": "d8a869de68fbdc24c4e4285bf7754ae2eede73c93083fc10582b7556bef85b56",
+      "bytes": 725210
+    },
+    "validation/rules-2/userdata/godot/app_userdata/Breakwater/shader_cache/SceneShaderGLES3/926d7ef5f331286ebab4e4c2e582064fbbc800752e71ebc08c6a8145043adbb2/f2e328ac8a780a17a0c65e242b0c8bc4fc063f03.cache": {
+      "sha256": "ebc99475312486ea6c4526ed05ad6617f15edcd681237129c269f6e5145a8ece",
+      "bytes": 705798
+    },
+    "validation/rules-2.log": {
+      "sha256": "e8b877d1c02e7fa8f97fa12c93323fd4b0cab10949ff4ff806d49931a30f3f7d",
+      "bytes": 3178
+    },
+    "validation/rules-checks.log": {
+      "sha256": "9f53554f28fd9969ea43361c435a5a5152df223387e053dab16ff29f9e7c4637",
+      "bytes": 1051
+    },
+    "validation/runtime-ldd.log": {
+      "sha256": "d010e3cfa1a5ac42c883fff4e0115025beb571dfd9910118c8c129cb82b92311",
+      "bytes": 459
+    },
+    "validation/smoke-userdata/godot/app_userdata/Breakwater/logs/godot.log": {
+      "sha256": "510bde2bc46f73431f466a51d152cdf656affdfa9af2aa85936347dbcb129cb1",
+      "bytes": 5643
+    },
+    "validation/smoke-userdata/godot/app_userdata/Breakwater/logs/godot2026-09-14T05.01.30.log": {
+      "sha256": "5104c2ef49e319940dbe1680808307e86c26a7af212a2d1b9c51a6427b643154",
+      "bytes": 5290
+    },
+    "validation/smoke-userdata/godot/app_userdata/Breakwater/shader_cache/CanvasShaderGLES3/d6f43d7e0fbc440290f0c3a77cf0f40066898da0fbdcc46f8b51b2aedaf2b191/6bb7c9a2fd1c4a8fa77cb96555b9b4a720209981.cache": {
+      "sha256": "588368477c42c3000febac8128c263ea4a98abb1efb1294d127db78d74c59412",
+      "bytes": 35574
+    },
+    "validation/smoke-userdata/godot/app_userdata/Breakwater/shader_cache/CopyShaderGLES3/9e43c80d5a04be55b43ab2338e8da8f5b0f20618a3e869928272b954afcff6fe/6bb7c9a2fd1c4a8fa77cb96555b9b4a720209981.cache": {
+      "sha256": "001641141dd1c35eb9b3def10944131b55cacbd5e204a005ac5531133e9351ee",
+      "bytes": 72198
+    },
+    "validation/smoke-userdata/godot/app_userdata/Breakwater/shader_cache/FeedShaderGLES3/37a956d1fa2424db9cc4da95128f7750da7138107b45bfd8dc4c00b472c38603/6bb7c9a2fd1c4a8fa77cb96555b9b4a720209981.cache": {
+      "sha256": "ec4be5d51aee6356e774044b5de7dc72d37c4a19db6f29744660152be9e6a207",
+      "bytes": 5105
+    },
+    "validation/smoke-userdata/godot/app_userdata/Breakwater/shader_cache/PostShaderGLES3/907f5f5388055d7fedef256127241995e5d797ba6b0616cba4cc6040697a9c1d/6bb7c9a2fd1c4a8fa77cb96555b9b4a720209981.cache": {
+      "sha256": "cceb0311d601f95de63a68dc029ff386d12e4faee86a9fa38e0d87f38a4e588a",
+      "bytes": 10797
+    },
+    "validation/smoke-userdata/godot/app_userdata/Breakwater/shader_cache/SceneShaderGLES3/926d7ef5f331286ebab4e4c2e582064fbbc800752e71ebc08c6a8145043adbb2/4505b6017dc502b9cb1ea9be38a366bfd444849c.cache": {
+      "sha256": "c4e0f234a172065e4a3dde33d0f61666ca5177588b4bc8d84e597174717e3bfd",
+      "bytes": 713108
+    },
+    "validation/smoke-userdata/godot/app_userdata/Breakwater/shader_cache/SceneShaderGLES3/926d7ef5f331286ebab4e4c2e582064fbbc800752e71ebc08c6a8145043adbb2/6bb7c9a2fd1c4a8fa77cb96555b9b4a720209981.cache": {
+      "sha256": "d69a15fc6e35a674e9cc9ec2b94fe8bc5f1fddb361f403fb2989954aea527a6f",
+      "bytes": 579256
+    },
+    "validation/smoke-userdata/godot/app_userdata/Breakwater/shader_cache/SceneShaderGLES3/926d7ef5f331286ebab4e4c2e582064fbbc800752e71ebc08c6a8145043adbb2/77047cd41f429f33ceff24e890e174f5465e755e.cache": {
+      "sha256": "e08b694401d5548c4ba9a6ade83137fc1a82c76993e03bf1111562f99b611455",
+      "bytes": 567377
+    },
+    "validation/smoke-userdata/godot/app_userdata/Breakwater/shader_cache/SceneShaderGLES3/926d7ef5f331286ebab4e4c2e582064fbbc800752e71ebc08c6a8145043adbb2/a7066d9c826da62591c9a7200b95903130e922bd.cache": {
+      "sha256": "c2f7996d89753f9e3fc01f38d3c6faabdb723bcc000531d15360d2095b555296",
+      "bytes": 590749
+    },
+    "validation/smoke-userdata/godot/app_userdata/Breakwater/shader_cache/SceneShaderGLES3/926d7ef5f331286ebab4e4c2e582064fbbc800752e71ebc08c6a8145043adbb2/f2e328ac8a780a17a0c65e242b0c8bc4fc063f03.cache": {
+      "sha256": "ebc99475312486ea6c4526ed05ad6617f15edcd681237129c269f6e5145a8ece",
+      "bytes": 705798
+    },
+    "validation/verification.json": {
+      "sha256": "98b535331798e0ea8d620daa64b760fa44a88ad3debbdc7b3b36c1cecea4fc35",
+      "bytes": 9326
+    }
+  },
+  "excluded": "Extracted release files/import caches are reproduced from the playable artifact; no duplicated runtime in evidence. Original uncompressed AVI removed by accepted capture runner after encoding, hash retained in natural-movie/launch.json. No prior captures reused."
+}

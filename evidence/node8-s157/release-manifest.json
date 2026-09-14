@@ -1,0 +1,1057 @@
+{
+  "accepted_game_revision": "7ec9261cae21cd63d68e93c1fceb1c1090e3f091",
+  "engine_sha256": "db07cae7de644278a1884d4552bdf2bca3f5d30131b18faf3a0c4d730080b199",
+  "engine_zip_sha256": "02ec53d1cc7dbb9cc6355393c61b9ab43d1244751a124f10248a4802830788cd",
+  "files": {
+    "LICENSE": {
+      "bytes": 1288,
+      "mode": 420,
+      "sha256": "8374412b6ccbbd461f2a394abbc278b390752cf7890c4616b3c2fbe0ecd3e989"
+    },
+    "README.txt": {
+      "bytes": 8318,
+      "mode": 420,
+      "sha256": "212486752be0852c4f6fc3ec71b738441701ae5b25e05249ae0aa12d825b5e81"
+    },
+    "docs/acceptance.md": {
+      "bytes": 8549,
+      "mode": 420,
+      "sha256": "7cfac44277c0bd4bfe61dcfb6fe69dba6ea566162c46a40d708afd2ea87f13d7"
+    },
+    "docs/arena-validation.md": {
+      "bytes": 9784,
+      "mode": 420,
+      "sha256": "bd3accb4d617c622044670fd1dcc850d3de2567ec32114621aab9ead6d7ee6a9"
+    },
+    "docs/audio-artifact-manifest.json": {
+      "bytes": 16409,
+      "mode": 420,
+      "sha256": "834878cd5ba2a890b40fb503e9fc1fa9293aa9f64ca133d49eed646caac0b730"
+    },
+    "docs/audio-contract.json": {
+      "bytes": 1233,
+      "mode": 420,
+      "sha256": "b4e6cc6e8ce9d06e2e889388229cbe72817d8b28b811cbd4e11a4f7575f33af5"
+    },
+    "docs/audio-node5-s143.md": {
+      "bytes": 7893,
+      "mode": 420,
+      "sha256": "ab44305e7ccc5dbfdfb99eef150fbc5a83fced1ecb758ca3c99c4abcf6017521"
+    },
+    "docs/audio-node5-s144.md": {
+      "bytes": 8937,
+      "mode": 420,
+      "sha256": "c5aa94eee42917e42835c69ed138224a7b384fff7a80dad916ca3d0efbc01455"
+    },
+    "docs/audio-node5-s146.md": {
+      "bytes": 9622,
+      "mode": 420,
+      "sha256": "588ec8f5db1cc3ce9a18012c565cf1992adccd2b75e02c364cb56ce5b3126417"
+    },
+    "docs/audio-node5-s147.md": {
+      "bytes": 6190,
+      "mode": 420,
+      "sha256": "fc621b6e87606d93060e5fee618298477c60ca6e6c8e62e02f769a6139df5fce"
+    },
+    "docs/audio-source-provenance.json": {
+      "bytes": 2044,
+      "mode": 420,
+      "sha256": "f826072013168b03a0eff601a0317b912eb34be4c7efedf8de0cc3da986be7bb"
+    },
+    "docs/audio-validation.md": {
+      "bytes": 11337,
+      "mode": 420,
+      "sha256": "67b07c19ba3f44de5aac5bda63437c7e961d5a9f5a34915aedf950b69864912c"
+    },
+    "docs/controls-validation.md": {
+      "bytes": 10348,
+      "mode": 420,
+      "sha256": "812a90d04037751674db720109de0d1fe2687a9c3937d19d50376152362f45c4"
+    },
+    "docs/design.md": {
+      "bytes": 9761,
+      "mode": 420,
+      "sha256": "a8ef8211d9062bf0211ef632c21fdcf0359a8c0334b8162922a1fdd08013472d"
+    },
+    "docs/destruction-node4-rerun.md": {
+      "bytes": 10546,
+      "mode": 420,
+      "sha256": "8cf53c8100f6a04d67c5884f9f4c4e5ddbd6f14ac8705f906552e5db62dfa899"
+    },
+    "docs/destruction-node4-s140.md": {
+      "bytes": 12322,
+      "mode": 420,
+      "sha256": "ac8b09a3d17ad187b4cb664931aaef7ea45674be14ff36fb7bdad416e79122a0"
+    },
+    "docs/destruction-performance-remediation.md": {
+      "bytes": 14997,
+      "mode": 420,
+      "sha256": "ce194bf45e6e27898a5590e2840d71afb19bf0e799ed4a33a1823cb52ced3375"
+    },
+    "docs/destruction-validation.md": {
+      "bytes": 13599,
+      "mode": 420,
+      "sha256": "6314163be1390a7decc9598fa06acf9554c527ec6bdecd07696b71f51a1a73ba"
+    },
+    "docs/linux-release.txt": {
+      "bytes": 8318,
+      "mode": 420,
+      "sha256": "212486752be0852c4f6fc3ec71b738441701ae5b25e05249ae0aa12d825b5e81"
+    },
+    "docs/natural-session-validation.md": {
+      "bytes": 10429,
+      "mode": 420,
+      "sha256": "e3ad0c9a9eb6e8b12916509f8025e5d9ea07edf49e6bc053b699c1751f68f46f"
+    },
+    "docs/node2-s132/artifact-manifest.json": {
+      "bytes": 11255,
+      "mode": 420,
+      "sha256": "df85998bfe8862f34527ca7435699419e2f645c352242e34370d272d969382b7"
+    },
+    "docs/node2-s132/capability.json": {
+      "bytes": 249,
+      "mode": 420,
+      "sha256": "5e47968a733c7c6afd40f1b084c864c682546193e8655f26432fb0827c2968f3"
+    },
+    "docs/node2-s132/n2-s132-4x3-airborne-vision.json": {
+      "bytes": 3263,
+      "mode": 420,
+      "sha256": "0085376864a73bc8ed66370ba5f48d53419c3e86dbc1b8e4480e4a667462e090"
+    },
+    "docs/node2-s132/n2-s132-4x3-northeast-vision.json": {
+      "bytes": 3126,
+      "mode": 420,
+      "sha256": "b989312a09f1a37e161e07b73563be7c59bc395e9f62a688c84d025509f775aa"
+    },
+    "docs/node2-s132/n2-s132-4x3-northwest-vision.json": {
+      "bytes": 3262,
+      "mode": 420,
+      "sha256": "0a00c1d139cbd90a9b2b7eabb6adae0c370ec63796074ea3f42717668765c84c"
+    },
+    "docs/node2-s132/n2-s132-4x3-overview-vision.json": {
+      "bytes": 3283,
+      "mode": 420,
+      "sha256": "2de40e7093e4a11507d2ce2c229978f71e902445940369b58d8991faa97bb82c"
+    },
+    "docs/node2-s132/n2-s132-4x3-resized-vision.json": {
+      "bytes": 3129,
+      "mode": 420,
+      "sha256": "c17ff7e08f620ab0321ecf7a686859fb17a25c9b600dd2021fadf6111e4eb1c5"
+    },
+    "docs/node2-s132/n2-s132-4x3-southeast-vision.json": {
+      "bytes": 3166,
+      "mode": 420,
+      "sha256": "8c9a4159548010dbda25b9001f3ee7d0b9e9241220ebd7b1d8ecedb02629c552"
+    },
+    "docs/node2-s132/n2-s132-4x3-southwest-vision.json": {
+      "bytes": 3276,
+      "mode": 420,
+      "sha256": "9226f8f8321e806fc5ece6a879e30fa469d64a3ac1fe02c95d79ca9a2f6bf58e"
+    },
+    "docs/node2-s132/n2-s132-720p-airborne-vision.json": {
+      "bytes": 3202,
+      "mode": 420,
+      "sha256": "64962421e7e44a376e080b16b2df5ab1f22d11b7b4bb97a10e5f2c3f652829ef"
+    },
+    "docs/node2-s132/n2-s132-720p-northeast-vision.json": {
+      "bytes": 3460,
+      "mode": 420,
+      "sha256": "ccf3ee0a1decf6b9cdd23ba3cfd7bc20dd8bb878200c73cfbbad0be1839c5049"
+    },
+    "docs/node2-s132/n2-s132-720p-northwest-vision.json": {
+      "bytes": 3483,
+      "mode": 420,
+      "sha256": "0dfee90147ec698e52916d917152b812a18418da51b60991c1a1a8d8b45edd27"
+    },
+    "docs/node2-s132/n2-s132-720p-overview-vision.json": {
+      "bytes": 3257,
+      "mode": 420,
+      "sha256": "c9d16e7b670025d1c3ae07ce6d19d766b76435d6d61b557f775d5fa6955599bb"
+    },
+    "docs/node2-s132/n2-s132-720p-resized-vision.json": {
+      "bytes": 3419,
+      "mode": 420,
+      "sha256": "d52579d35a435f4240c5342b63cdc6783010a03ed1a37df370d07f1846e4d3b9"
+    },
+    "docs/node2-s132/n2-s132-720p-southeast-vision.json": {
+      "bytes": 3214,
+      "mode": 420,
+      "sha256": "54ad297c8f81ed120855fa71a641ab3876cff6322f9e2e2c2d57e39caf809b47"
+    },
+    "docs/node2-s132/n2-s132-720p-southwest-vision.json": {
+      "bytes": 3164,
+      "mode": 420,
+      "sha256": "de0d40112271c6e5538d0088a9444f30aec5068e92637c4225e84b6af7e23663"
+    },
+    "docs/node2-s132/n2-s132-tour-tour_0001-vision.json": {
+      "bytes": 3460,
+      "mode": 420,
+      "sha256": "980e5f22132f5e7f797c812d743c39095942e94813d70f3336ecd0a476719083"
+    },
+    "docs/node2-s132/n2-s132-tour-tour_0120-vision.json": {
+      "bytes": 3443,
+      "mode": 420,
+      "sha256": "59232d85c4be8d9211f38fbe03c4bc515e9c7dae7edbf2680fbc93e6ae5da00b"
+    },
+    "docs/node2-s132/n2-s132-tour-tour_0240-vision.json": {
+      "bytes": 3234,
+      "mode": 420,
+      "sha256": "7628306d202f7794107e662b69afe1ebe57b612bfe826dffd4d97ee6cb22d682"
+    },
+    "docs/node2-s132/n2-s132-tour-tour_0360-vision.json": {
+      "bytes": 3325,
+      "mode": 420,
+      "sha256": "2d6444300691485f54b30aeb0625014a4a2b264e146b53902693b9bf2bd6d4d7"
+    },
+    "docs/node2-s132/n2-s132-tour-tour_0480-vision.json": {
+      "bytes": 3182,
+      "mode": 420,
+      "sha256": "906abf740640d6db42f98120cf47a8a2fae304c2f7e8a18fa16b7985566378e6"
+    },
+    "docs/node2-s132/n2-s132-tour-tour_0600-vision.json": {
+      "bytes": 3399,
+      "mode": 420,
+      "sha256": "7a5af1edf004abea6ccd782482ad6d55975a6d6b9adba3df86f622d7f71af70f"
+    },
+    "docs/node2-s132/provenance.json": {
+      "bytes": 4816,
+      "mode": 420,
+      "sha256": "c0874d6f0fd79dd345af999419ae757145e02fbd521ab3bf3ecbad03f7588436"
+    },
+    "docs/node2-s132/review.md": {
+      "bytes": 10979,
+      "mode": 420,
+      "sha256": "66fa0e9e7809b5a442658c6478435e0a6b0dce5cc2e13d533a733657304daed3"
+    },
+    "docs/node2-s132/review_frames.py": {
+      "bytes": 2304,
+      "mode": 420,
+      "sha256": "0d15c921ab7d2fe54bfdf0e0fc707c9f55fc14fd1aacdd46d3166723541875da"
+    },
+    "docs/node2-s132/vision-all-console.txt": {
+      "bytes": 63565,
+      "mode": 420,
+      "sha256": "21e627f57c621b04f9afde635815c4e2b896517a66cff5f83bbfb7da973fe5e2"
+    },
+    "docs/node2-s132/vision-console.txt": {
+      "bytes": 4332,
+      "mode": 420,
+      "sha256": "e56486d58029b4d099d86ece317629ba9c51130dcdbd88e6100752f36b5d1dc7"
+    },
+    "docs/node2-s132/vision-initial-syntax-error.txt": {
+      "bytes": 332,
+      "mode": 420,
+      "sha256": "dcf6d91abe8694e12aeb54d007c570daa43584f528053e5ac16ad5cad8b0c715"
+    },
+    "docs/node2-s133/artifact-manifest.json": {
+      "bytes": 104997,
+      "mode": 420,
+      "sha256": "f28ad1920a94c5aeb882ef50b21eed9df4fa5beb99887f5541bf757802b0d86d"
+    },
+    "docs/node2-s133/cases.json": {
+      "bytes": 2290,
+      "mode": 420,
+      "sha256": "934e3913dc4482e01e8a6988febfd6ce0347114b22aa10e938a780dedb15356f"
+    },
+    "docs/node2-s133/provenance.json": {
+      "bytes": 7109,
+      "mode": 420,
+      "sha256": "2e145008f0597b5b570216b9eb99d0aaecf3122afa9a29813dccfc862104678f"
+    },
+    "docs/node2-s133/review.md": {
+      "bytes": 16470,
+      "mode": 420,
+      "sha256": "6a68560fe5ce2fbee36312a50c12afc2fdc87efbc75b3291f3d21880f91007bb"
+    },
+    "docs/node2-s133/review_frames.py": {
+      "bytes": 2801,
+      "mode": 420,
+      "sha256": "23ea2440de1c660de3d34b6504232c1d1bbdbdc16980fee20cdd2f0a67acbac0"
+    },
+    "docs/node2-s135/arena-checks.json": {
+      "bytes": 8512,
+      "mode": 420,
+      "sha256": "e38cd95469e70bd9a4f0a77bfc8144ddeb1e3d74160dce3707998a5f80d5b0b8"
+    },
+    "docs/node2-s135/artifact-manifest.json": {
+      "bytes": 967793,
+      "mode": 420,
+      "sha256": "1a7f735766b3eff35f8223babc037780265caa755217a5cb46cde695acc4597f"
+    },
+    "docs/node2-s135/collect_evidence.py": {
+      "bytes": 4239,
+      "mode": 420,
+      "sha256": "f1cd17e4107a968d173b74606f1e55e11974a053e523dbef58bf7f52d21afb14"
+    },
+    "docs/node2-s135/controls-checks.json": {
+      "bytes": 1579,
+      "mode": 420,
+      "sha256": "1b6126c48163881510e3ac265e3ed9d2bbb23a39b7a78a448cd5679bcc926f71"
+    },
+    "docs/node2-s135/dense-before-4x3.json": {
+      "bytes": 19210,
+      "mode": 420,
+      "sha256": "b528db0eb6fb8975accb2412edc10b8e08d13bbbec1f96c5dab7b172f366c539"
+    },
+    "docs/node2-s135/dense-before-720p.json": {
+      "bytes": 19304,
+      "mode": 420,
+      "sha256": "542f46002f60c88f2b889837d589e4130e0018f925a166d3995e41b5c76d93fb"
+    },
+    "docs/node2-s135/dense-before-v2.json": {
+      "bytes": 43923,
+      "mode": 420,
+      "sha256": "c6b759157e6af6fe95b164240624114c3bb5ddbd5265b03c8795ea3962df847e"
+    },
+    "docs/node2-s135/metric-summary.txt": {
+      "bytes": 804,
+      "mode": 420,
+      "sha256": "65dea9c5b84ec0fedfdc0395314523ca67eb5d8d83565371759a914e5e2688aa"
+    },
+    "docs/node2-s135/performance-checks.json": {
+      "bytes": 1892,
+      "mode": 420,
+      "sha256": "5d7ca4b52296eef3b67919a8caebfe21d8640a95cc91a0b144cf59368dcb26f9"
+    },
+    "docs/node2-s135/pixel-checks-v2.json": {
+      "bytes": 164873,
+      "mode": 420,
+      "sha256": "591eb13cbfd7a8304d4383b4e6abdf7089ae90851f72e3441ca82b01494c0835"
+    },
+    "docs/node2-s135/pixel-checks.json": {
+      "bytes": 164820,
+      "mode": 420,
+      "sha256": "5ef61174141d0e3970f7db60b6d3438e59fa1dc19997d40d4ce35678524c8d85"
+    },
+    "docs/node2-s135/provenance.json": {
+      "bytes": 8666,
+      "mode": 420,
+      "sha256": "1b3672102f938f29ffc78190624d21de7f0dd3f0c9e318848427a58eafae4fbb"
+    },
+    "docs/node2-s135/review.md": {
+      "bytes": 14590,
+      "mode": 420,
+      "sha256": "1855ccaca82d466df5344d2002f56897623ba9cf7ab23feafc2cbb29f3b2d05a"
+    },
+    "docs/node2-s137/arena-checks.json": {
+      "bytes": 8489,
+      "mode": 420,
+      "sha256": "9574b549fcebba7f13d9c0af65a8732bc8cdcd33a82249ff05bbb04b51d4641d"
+    },
+    "docs/node2-s137/artifact-manifest.json": {
+      "bytes": 177149,
+      "mode": 420,
+      "sha256": "eb3cb495c90142fff111cc965be15f96ad249dbe514db62a2df99bae523f841e"
+    },
+    "docs/node2-s137/commands.json": {
+      "bytes": 4247,
+      "mode": 420,
+      "sha256": "7e0125e070167e012bfce97539a37b1dea67e643221a88e091c53d067e0d29dd"
+    },
+    "docs/node2-s137/node9-handoff.json": {
+      "bytes": 3923,
+      "mode": 420,
+      "sha256": "a2ef532bc476bd81fe40e36a9767c7db6e200b855b9ab4301efb482ca7462c4d"
+    },
+    "docs/node2-s137/package.py": {
+      "bytes": 1551,
+      "mode": 420,
+      "sha256": "83fe5f35104aaf5e55c9044f5cdd40f63e7d1d32363616f1ce30c565068c5128"
+    },
+    "docs/node2-s137/pixel-checks.json": {
+      "bytes": 162906,
+      "mode": 420,
+      "sha256": "ea87916673d86eb8269e7666e7dd58fec3f23ebe814390ae5ebd304b4d3c125e"
+    },
+    "docs/node2-s137/provenance.json": {
+      "bytes": 9804,
+      "mode": 420,
+      "sha256": "82e520d5dd8574550b94f3715761cd6c8c5766573ba682ba39263bbde4cf926c"
+    },
+    "docs/node2-s137/rerun.py": {
+      "bytes": 4283,
+      "mode": 420,
+      "sha256": "b4ad5c3677650a492ebd159fd81ca7546ba88ccb4e0803804b6f15bff39f7848"
+    },
+    "docs/node2-s137/review.md": {
+      "bytes": 8061,
+      "mode": 420,
+      "sha256": "e07f55cd9510061a096c3f981216577025eb3f9fb86fac26802eabb115dd0074"
+    },
+    "docs/node2-s137/summary.json": {
+      "bytes": 1704,
+      "mode": 420,
+      "sha256": "41d1b7805a46ceb0f4b039e4997e078950b3c7f65377d3da7458e0e20f16cea8"
+    },
+    "docs/node2-s137/task-contract.json": {
+      "bytes": 942,
+      "mode": 420,
+      "sha256": "b8cc5a68390ff0b62171bb46884e6943c3d1a6377102bbc1c854edc75f480cfb"
+    },
+    "docs/node2-s137/verification.json": {
+      "bytes": 1523,
+      "mode": 420,
+      "sha256": "1b0e10ade56d4374c4c1998c9a413a4eacc5657f54807b0b407dc2930d6b0a5f"
+    },
+    "docs/node2-s138/arena-checks.json": {
+      "bytes": 8487,
+      "mode": 420,
+      "sha256": "31d1abfc6073a6aa0eda868f4344641fd7b5435cce9e0b3056853a4e8ecdfedb"
+    },
+    "docs/node2-s138/artifact-manifest.json": {
+      "bytes": 215870,
+      "mode": 420,
+      "sha256": "bf02a308abee85789bca15914e393b96247937e03a0a8dfe3063dddf124c90b3"
+    },
+    "docs/node2-s138/commands.json": {
+      "bytes": 4247,
+      "mode": 420,
+      "sha256": "342302284aceb97355d83ba2d0a99f9fcdf4fdf6afc91732948cbcc85d20ff2e"
+    },
+    "docs/node2-s138/concerns.json": {
+      "bytes": 210302,
+      "mode": 420,
+      "sha256": "95b1803a7b3c27ba9652233238e0744f0fe7ead1dca06955b1811a3e734f6ab1"
+    },
+    "docs/node2-s138/concerns.py": {
+      "bytes": 4824,
+      "mode": 420,
+      "sha256": "8d635053548b38d46cfd16792b4382d6621b4094b2c1a1ae5f615264686de126"
+    },
+    "docs/node2-s138/node9-handoff.json": {
+      "bytes": 2282,
+      "mode": 420,
+      "sha256": "6ec487cd67ed25b03ebf76741e482d108563d7c171f9396c13bf65b3e63edffc"
+    },
+    "docs/node2-s138/package.py": {
+      "bytes": 1438,
+      "mode": 420,
+      "sha256": "7e925e255d76697650d0c344fc89436bbbafcbcfde3b0831e3786695d9c3aae8"
+    },
+    "docs/node2-s138/pixel-checks.json": {
+      "bytes": 162906,
+      "mode": 420,
+      "sha256": "0a373548a69a42111164cdce27692ef56557cf1cddc852bd8f52aae5129f189e"
+    },
+    "docs/node2-s138/provenance.json": {
+      "bytes": 9804,
+      "mode": 420,
+      "sha256": "e68d67ac6b2913ae8e53f331090a43365d26eac4c1d7ab2a0202021dcc43eb1b"
+    },
+    "docs/node2-s138/review.md": {
+      "bytes": 7497,
+      "mode": 420,
+      "sha256": "344b98d99755b3c9f39a8b6cb225fbad3e748ba8f4dc526426f5bbec26800d57"
+    },
+    "docs/node2-s138/summary.json": {
+      "bytes": 1704,
+      "mode": 420,
+      "sha256": "43918dc35c42d3177a42b3c77fd5c5a48c41f800a436ea7ec0b651cccebf12f5"
+    },
+    "docs/node2-s138/task-contract.json": {
+      "bytes": 1294,
+      "mode": 420,
+      "sha256": "6df328f60d558810e63199ffcc3f33bc1ed9bc078edf25b7427328b0eca8d12f"
+    },
+    "docs/node2-s138/verification.json": {
+      "bytes": 895,
+      "mode": 420,
+      "sha256": "b3e5d373359a9cdd30265e7e2deb4f9968a0cdf41f20d35d541433e4478dee0f"
+    },
+    "docs/node2-s148/arena-checks.json": {
+      "bytes": 6319,
+      "mode": 420,
+      "sha256": "b92270747cbdd6efa584a85d9b17793f2e2cd5434cb84a187ff9727869be5398"
+    },
+    "docs/node2-s148/artifact-manifest.json": {
+      "bytes": 9792,
+      "mode": 420,
+      "sha256": "d5b80e1e5215ecf5de843ebda343f7f7f709dab8a9ab3d0730e9e5c070e1786c"
+    },
+    "docs/node2-s148/commands.json": {
+      "bytes": 2256,
+      "mode": 420,
+      "sha256": "ef6624b65e9e28b57700b8909ac71f1078f70233ef90cba60f9973f33b7b42be"
+    },
+    "docs/node2-s148/node9-handoff.json": {
+      "bytes": 4989,
+      "mode": 420,
+      "sha256": "b8eaddd600611d4243fb321c78809bfa36806f4ce37a7373393a69c42951a14a"
+    },
+    "docs/node2-s148/package.py": {
+      "bytes": 7790,
+      "mode": 420,
+      "sha256": "f4f872cc6ccf5f345f59bbac11b5c5fb4e24370d23ca9a4158ed133b3dfd58ec"
+    },
+    "docs/node2-s148/provenance.json": {
+      "bytes": 19684,
+      "mode": 420,
+      "sha256": "9ac559ab1c6addbe03a91ea9ae23801a597e2d471e0281ac014ece4710665afd"
+    },
+    "docs/node2-s148/rerun.py": {
+      "bytes": 3631,
+      "mode": 420,
+      "sha256": "f45d78be14f6ffc7987bf851d94a1ac616b04879dcbd8f8d10bf00e50b571e9a"
+    },
+    "docs/node2-s148/review.md": {
+      "bytes": 7647,
+      "mode": 420,
+      "sha256": "fcb7cb3389d78b0fa8b4efb8c0847d13e2224fda28df4b32cd7aa2fb42cef490"
+    },
+    "docs/node2-s148/verification.json": {
+      "bytes": 1067,
+      "mode": 420,
+      "sha256": "e9f22dd064373d5c652d3e3c7d668b771b1a64d25d6ba32701509755881818e2"
+    },
+    "docs/node2-visual-followup/capability-output.txt": {
+      "bytes": 1043,
+      "mode": 420,
+      "sha256": "fe2364fff0289ca7b9700b49cc4de91a555d35875df001120f7294cce2d9899b"
+    },
+    "docs/node2-visual-followup/capability_probe.py": {
+      "bytes": 605,
+      "mode": 420,
+      "sha256": "451459f7c5e9f5302604f05d80b404b914b7d1af97044a5dfadefb9b77590a16"
+    },
+    "docs/node2-visual-followup/captures-requiring-review.json": {
+      "bytes": 5198,
+      "mode": 420,
+      "sha256": "f1b3a0eea94971f25137a96e0411fde139ef98afa13aa1515f189c72c002e26f"
+    },
+    "docs/node2-visual-followup/review.md": {
+      "bytes": 6636,
+      "mode": 420,
+      "sha256": "5b77817744def1ac1e3a9e151dd7ca27b4b38a2e3129a80d2963ec22af86b32c"
+    },
+    "docs/opposition-validation.md": {
+      "bytes": 5974,
+      "mode": 420,
+      "sha256": "40ed49e80e1941790aef6964eecceffc9a23e08b58eac71b5d75c43c0790504a"
+    },
+    "docs/session-integration.md": {
+      "bytes": 5661,
+      "mode": 420,
+      "sha256": "782e0c49e68f83e6f310d580a0b5f05daac12a10ca705830f820e453aa85c3a5"
+    },
+    "docs/validation.md": {
+      "bytes": 8897,
+      "mode": 420,
+      "sha256": "2f8326d12fe660af4bba68b912940ca3aefb5d786ceb1fa04881e1a15ce489e2"
+    },
+    "game/arena.gd": {
+      "bytes": 6694,
+      "mode": 420,
+      "sha256": "418782e4363c993ad14809a5477ded14643cf287c01f652a264aeb0721e1dddc"
+    },
+    "game/arena.gd.uid": {
+      "bytes": 20,
+      "mode": 420,
+      "sha256": "ea847fb0a4e00b2b5152e37279b5d293d61ec064d8e122fd23b6537a099a7ac5"
+    },
+    "game/arena_camera.gd": {
+      "bytes": 2331,
+      "mode": 420,
+      "sha256": "d75ecf5d6ed4d8308f07472d0c3640baa0dcbda877178ebd1fbb0c62d2493636"
+    },
+    "game/arena_camera.gd.uid": {
+      "bytes": 20,
+      "mode": 420,
+      "sha256": "40173aa09508f5a72bba61a4f6faf70b1726d0e953900b754f2968bfd2a42798"
+    },
+    "game/arena_preview.gd": {
+      "bytes": 5489,
+      "mode": 420,
+      "sha256": "1a11c0585464ec6a6ca3206dc10765bcc62fbad8a9b7b5f65a6a301746368052"
+    },
+    "game/arena_preview.gd.uid": {
+      "bytes": 20,
+      "mode": 420,
+      "sha256": "6bdbf59a3e1a43998ba3693774244f7788204a40a95600eacdbde977b6f04a42"
+    },
+    "game/arena_preview.tscn": {
+      "bytes": 166,
+      "mode": 420,
+      "sha256": "ab8b68a873e2328c55872ba0a5cfb16ad8a4c3cb2b2e644d3ebaba6e3b24c6f2"
+    },
+    "game/audio/break_0.wav": {
+      "bytes": 59564,
+      "mode": 420,
+      "sha256": "740cfb53222894eee784d2a6f7d3cbf0a9f1345539daeefaa9d582c6f95f1e3b"
+    },
+    "game/audio/break_0.wav.import": {
+      "bytes": 485,
+      "mode": 420,
+      "sha256": "8a044e991bc5ece3e1259c7e3f894af1f6702f0b40b07220589bdcf063a2a133"
+    },
+    "game/audio/break_1.wav": {
+      "bytes": 59564,
+      "mode": 420,
+      "sha256": "56e31b021c97efbf1a1e436601acb90a96003c9ac40917c367222f9ed161a6fa"
+    },
+    "game/audio/break_1.wav.import": {
+      "bytes": 485,
+      "mode": 420,
+      "sha256": "77fbad26d7ab8083d7143407a63260e507dd0e331de235c44d23a953e6cb76ab"
+    },
+    "game/audio/break_2.wav": {
+      "bytes": 59564,
+      "mode": 420,
+      "sha256": "652381586d18d15c401296acf91925b7dfba18c7741d41e9bef3b7756d603572"
+    },
+    "game/audio/break_2.wav.import": {
+      "bytes": 485,
+      "mode": 420,
+      "sha256": "5d94681040c4d01d09e9975dec3219c87cb57c64edb684032b788bab5f063609"
+    },
+    "game/audio/break_3.wav": {
+      "bytes": 59564,
+      "mode": 420,
+      "sha256": "c8d0cb9c1904ad73ce16cd53fae234a5a19faacb8dc04cd39eec3e8305d028bf"
+    },
+    "game/audio/break_3.wav.import": {
+      "bytes": 484,
+      "mode": 420,
+      "sha256": "4640820edbc9838feed4d99213dc4b0077bb0f09fa7f657e74219d124341b784"
+    },
+    "game/audio/impact_0.wav": {
+      "bytes": 18284,
+      "mode": 420,
+      "sha256": "e521e32886ec10c4edcbcf8ab42f756199beb99465b78d84cd3d4186aad26437"
+    },
+    "game/audio/impact_0.wav.import": {
+      "bytes": 487,
+      "mode": 420,
+      "sha256": "67f5941adac1a60d583f173da6dd1def644b70c2e9fb95e528ab2d08525336e6"
+    },
+    "game/audio/impact_1.wav": {
+      "bytes": 18284,
+      "mode": 420,
+      "sha256": "bf6934fd66a0be85569f0273ad7fd5d242eb0bf94e2c337606cc0829828135f9"
+    },
+    "game/audio/impact_1.wav.import": {
+      "bytes": 488,
+      "mode": 420,
+      "sha256": "5ad09357a63f99b4c35a3a6898f59eb8f2421e5b824370d276b273131fb17040"
+    },
+    "game/audio/impact_2.wav": {
+      "bytes": 18284,
+      "mode": 420,
+      "sha256": "4c26c5728f77c3c177a596d8992353d3849060d0e50d2a0f6758e883605af2a0"
+    },
+    "game/audio/impact_2.wav.import": {
+      "bytes": 488,
+      "mode": 420,
+      "sha256": "3426e34191b87e7a8ec044db3ed9f7b502a520c5afdbdb22c0488edde9ef7d03"
+    },
+    "game/audio/impact_3.wav": {
+      "bytes": 18284,
+      "mode": 420,
+      "sha256": "ddfe13478e22b842dc84447e35773e837ba432925a9d9a7ffb6dc69cddd05ba9"
+    },
+    "game/audio/impact_3.wav.import": {
+      "bytes": 487,
+      "mode": 420,
+      "sha256": "1fc40c664ef768037c2051c705cc1f566ce5a3be72d1b424d4de83c57ba34881"
+    },
+    "game/audio/impact_4.wav": {
+      "bytes": 18284,
+      "mode": 420,
+      "sha256": "542420e3989db201a45df0c72308683697c3e247a1aa0b3a06db39523310148a"
+    },
+    "game/audio/impact_4.wav.import": {
+      "bytes": 487,
+      "mode": 420,
+      "sha256": "17367bd7a4ea3309c9559199112f3200690a046fff77d42a3456e1bbcabd1517"
+    },
+    "game/audio/impact_5.wav": {
+      "bytes": 18284,
+      "mode": 420,
+      "sha256": "ff313a848534c15aedb86e71d7fcafe526f2f58bac1800d9414dd4d3e4cbb5ee"
+    },
+    "game/audio/impact_5.wav.import": {
+      "bytes": 487,
+      "mode": 420,
+      "sha256": "7ed756c5d557ef5b80f00fe63adee099187cb2d3e9362edf76c59b7aa4f6e2c5"
+    },
+    "game/audio/provenance.json": {
+      "bytes": 2071,
+      "mode": 420,
+      "sha256": "dbfe10eda0c1237b0ffd8f1013770d95233f339047b2a9e77a09be3120d6eea8"
+    },
+    "game/combat.gd": {
+      "bytes": 3394,
+      "mode": 420,
+      "sha256": "5daf4b1f4be47b595478972788e8343728265184b4d99a7bb54c5ef748a5a68d"
+    },
+    "game/combat.gd.uid": {
+      "bytes": 20,
+      "mode": 420,
+      "sha256": "a91d305b0ec47981cf3d63a97816a8ff88efb2b841d21fb60af252bc2383feac"
+    },
+    "game/controls.tscn": {
+      "bytes": 172,
+      "mode": 420,
+      "sha256": "2fbdf146211eb7a353d40ea5b57679f4e8e0bdb44a1205bf8c1bd330a80973e2"
+    },
+    "game/controls_session.gd": {
+      "bytes": 5480,
+      "mode": 420,
+      "sha256": "106c5e0c61a65eb7629e8d8a6136e070db2a8b242f850d9450f69b43bd599872"
+    },
+    "game/controls_session.gd.uid": {
+      "bytes": 19,
+      "mode": 420,
+      "sha256": "1186d1323a1c6837cacf34b070b44a24e74d4d124a37e5119661eb37f7075416"
+    },
+    "game/debris_block.gd": {
+      "bytes": 1145,
+      "mode": 420,
+      "sha256": "eed370e566148d7f8c532d6b70e92ffc06889a21dfabd52a3824d3b7a8c2965a"
+    },
+    "game/debris_block.gd.uid": {
+      "bytes": 20,
+      "mode": 420,
+      "sha256": "8df5b798b4c4fd6ae85c424e77d3db412d314376bac42ee650d48286ef5f79aa"
+    },
+    "game/debris_surface.gdshader": {
+      "bytes": 739,
+      "mode": 420,
+      "sha256": "5493cce601e6e6b48d9909b360b32881688e691fc60967d2b6f7dab160d60912"
+    },
+    "game/debris_surface.gdshader.uid": {
+      "bytes": 18,
+      "mode": 420,
+      "sha256": "49dd28825fa5b8988241c63af9136ce0e1df3d9599cb84b6fc8eaf0b0e000bb0"
+    },
+    "game/destructible_target.gd": {
+      "bytes": 1412,
+      "mode": 420,
+      "sha256": "60cd8225c794e1310ff8b273981270ca3e4831e1b5b7a02557b71775059b52d3"
+    },
+    "game/destructible_target.gd.uid": {
+      "bytes": 20,
+      "mode": 420,
+      "sha256": "f6954d0719705eb82cdc7d1ff18d422a883147eebba0ad3be5c9b3e08ee7c69c"
+    },
+    "game/destruction.gd": {
+      "bytes": 5663,
+      "mode": 420,
+      "sha256": "4e380e6170a885c1c17e98359339631cb1f03c6f07486ece377a577a15fe4964"
+    },
+    "game/destruction.gd.uid": {
+      "bytes": 20,
+      "mode": 420,
+      "sha256": "654884c9af8e9762f7f7d8396941dd7934dd064230d5a62de4a20346ccb36249"
+    },
+    "game/destruction_demo.gd": {
+      "bytes": 2588,
+      "mode": 420,
+      "sha256": "184d04f9f3d7ca48f9c29ca530d130d944de841fcc80a540d80583621a4ffea1"
+    },
+    "game/destruction_demo.gd.uid": {
+      "bytes": 20,
+      "mode": 420,
+      "sha256": "9e4e3d0e916f28b9fccb492d81e6a4b590304167a6421f161ffb687444c077c9"
+    },
+    "game/destruction_demo.tscn": {
+      "bytes": 175,
+      "mode": 420,
+      "sha256": "a34bc6ae8e50e1f4559771495e07bcc37dfe2131a3d0f3fedd3d77d02fa7238e"
+    },
+    "game/opposition.gd": {
+      "bytes": 3888,
+      "mode": 420,
+      "sha256": "40b914e795d48375a198ce154a841aa7bc4744c5aa839316cc7ffc9a8e2508b8"
+    },
+    "game/opposition.gd.uid": {
+      "bytes": 20,
+      "mode": 420,
+      "sha256": "c2ceed7f4000710ba77230342b7385a8d43e8781675c3e301eaeeecc52df9860"
+    },
+    "game/opposition.tscn": {
+      "bytes": 176,
+      "mode": 420,
+      "sha256": "573a008b5cfba0184e5bebce10f27ba515b84a037236480e569c49152ab93054"
+    },
+    "game/opposition_session.gd": {
+      "bytes": 7937,
+      "mode": 420,
+      "sha256": "0f1ed61940c2a209057f2c4eb14a11afa44151062afc2de23598dde4a8f71279"
+    },
+    "game/opposition_session.gd.uid": {
+      "bytes": 19,
+      "mode": 420,
+      "sha256": "05c3ce32648b27ca4c4d6f9439ca93e7ffd8a4adbe3aedf018b907450b6065bf"
+    },
+    "game/player.gd": {
+      "bytes": 4510,
+      "mode": 420,
+      "sha256": "2a1d08a55ed31803437216b6178759c249d0899d02c9ca40d1c5d0daf767bd90"
+    },
+    "game/player.gd.uid": {
+      "bytes": 19,
+      "mode": 420,
+      "sha256": "52adae8130584dd1eaa21890ecad0d3297f1bdfa835eea9045675056ba8d029f"
+    },
+    "game/player_input.gd": {
+      "bytes": 2590,
+      "mode": 420,
+      "sha256": "0942be81f55a8d17c8871d2887ce93556ad24e15067ea494500967fbd001c86b"
+    },
+    "game/player_input.gd.uid": {
+      "bytes": 20,
+      "mode": 420,
+      "sha256": "0dd78c1f1c2b3e1fb2b72f59372af62d228775ec04080c6c8966afa992b6401c"
+    },
+    "game/project.godot": {
+      "bytes": 451,
+      "mode": 420,
+      "sha256": "647ace047e85d13c6ff7abb7b012cc645d867e72340ac62b84c5a738abf04ae2"
+    },
+    "game/sentry.gd": {
+      "bytes": 4514,
+      "mode": 420,
+      "sha256": "666b66971991122479434529cdd644d072e806311537b8335a9130e33d9e4226"
+    },
+    "game/sentry.gd.uid": {
+      "bytes": 20,
+      "mode": 420,
+      "sha256": "4cc2ec9009ea0e731eb14e5e654ce62561cc1cfc12efaf946d76bb05af23ecc5"
+    },
+    "game/sound.gd": {
+      "bytes": 9070,
+      "mode": 420,
+      "sha256": "d2455b28090fa86a3201586e34586aad37d6061b6f222803d138efeb61e55990"
+    },
+    "game/sound.gd.uid": {
+      "bytes": 18,
+      "mode": 420,
+      "sha256": "307d62ccb545520e416a49163bea75358526a1bc56ba9d4d7aa5b200fc8b6f92"
+    },
+    "game/tests/arena_tests.gd": {
+      "bytes": 10817,
+      "mode": 420,
+      "sha256": "659b7e5f2741a867c38f564be12a65380f8aef75ea1a41bbea38f0080a2ddbd9"
+    },
+    "game/tests/arena_tests.gd.uid": {
+      "bytes": 20,
+      "mode": 420,
+      "sha256": "712029829e70ab871792b5dd24585f2d060e81b0a8163fd4863317ca6367a7de"
+    },
+    "game/tests/audio_spatial_tests.gd": {
+      "bytes": 2627,
+      "mode": 420,
+      "sha256": "b58e96a00e9f7f727be5f530b778a49a494d12b2c739af2f4da58d71aeb599e6"
+    },
+    "game/tests/audio_spatial_tests.gd.uid": {
+      "bytes": 20,
+      "mode": 420,
+      "sha256": "4ad2cd7dd2158424ba49c4abe6126c5439f344c92a7997cbe548261fe34863d0"
+    },
+    "game/tests/audio_tests.gd": {
+      "bytes": 12173,
+      "mode": 420,
+      "sha256": "d256f0bdc2ac9149f8a380949fa3cd677311f548a2fe6e01d45a754f52d528e5"
+    },
+    "game/tests/audio_tests.gd.uid": {
+      "bytes": 19,
+      "mode": 420,
+      "sha256": "c838467cc8275622a31fc3fde7d6952941ed9b4518b8a892567c3ccaa8048918"
+    },
+    "game/tests/controls_tests.gd": {
+      "bytes": 18593,
+      "mode": 420,
+      "sha256": "e0e1ccc03104a921bc25d7d157536e17b781e588e75e1da938f2b5919d1cd4a7"
+    },
+    "game/tests/controls_tests.gd.uid": {
+      "bytes": 20,
+      "mode": 420,
+      "sha256": "c2c7d6f1c92f274a0f929b53d1a005e532d4f13bf6aa18a035ab89137bb7a4eb"
+    },
+    "game/tests/crowding_replay.gd": {
+      "bytes": 4518,
+      "mode": 420,
+      "sha256": "7cd63d9c4d8fb22fc8f9f01e606896fe3ed7e70c0b9ee98f51daf71351507ef8"
+    },
+    "game/tests/crowding_replay.gd.uid": {
+      "bytes": 19,
+      "mode": 420,
+      "sha256": "c54b7393ffbb592e1b016e68c1e73cae1662afa65527577dfb984033798a5550"
+    },
+    "game/tests/dense_visibility_tests.gd": {
+      "bytes": 5150,
+      "mode": 420,
+      "sha256": "f7bc4545ed3cf482ba7fb56bf1dd780d88eefc61763a62dc8873859321e9dc47"
+    },
+    "game/tests/dense_visibility_tests.gd.uid": {
+      "bytes": 20,
+      "mode": 420,
+      "sha256": "3ae2f13f2585d048ce4c43b03b507ccc72c44427c1c0fdcf7b67c2cfa6f108e3"
+    },
+    "game/tests/destruction_tests.gd": {
+      "bytes": 13555,
+      "mode": 420,
+      "sha256": "a4c2797a7091a61f358530d6ca6beceef427e01b9e8843fcabaff7566103d62d"
+    },
+    "game/tests/destruction_tests.gd.uid": {
+      "bytes": 20,
+      "mode": 420,
+      "sha256": "1739c04c1186d293f2116ddef5f0a69e1db2267639e1f97fb272eb40b2ce2bfc"
+    },
+    "game/tests/integration_tests.gd": {
+      "bytes": 17107,
+      "mode": 420,
+      "sha256": "d34f84e9ab957ddd61932b9d420bc88780be8e9bce2440a71179de816c0169ca"
+    },
+    "game/tests/integration_tests.gd.uid": {
+      "bytes": 20,
+      "mode": 420,
+      "sha256": "b5d7afe8ad2e54407f11f5ee88ec1103e76f781b4fb8fb0e629ce2c77123804a"
+    },
+    "game/tests/natural_play.gd": {
+      "bytes": 14383,
+      "mode": 420,
+      "sha256": "03d2be570fc92b34b7e424a3ad311672b7f2d186fb4e85c9c81be937095a99d4"
+    },
+    "game/tests/natural_play.gd.uid": {
+      "bytes": 20,
+      "mode": 420,
+      "sha256": "e31db5b927b3ae73209a9043c0e14c4892d588f231633d25184a917894fba361"
+    },
+    "game/tests/opposition_tests.gd": {
+      "bytes": 21805,
+      "mode": 420,
+      "sha256": "ad5b218129eca61b4ceb6ec54b88356c7639494ae7d21c8bea4cec5baa52deb0"
+    },
+    "game/tests/opposition_tests.gd.uid": {
+      "bytes": 20,
+      "mode": 420,
+      "sha256": "e0e6695f647ff0890ec5e3203408deff7813c3272b786b597d81e366a5815133"
+    },
+    "game/tests/ring_batch_tests.gd": {
+      "bytes": 4483,
+      "mode": 420,
+      "sha256": "b824db60b9ab14d34c07d287fdda807a3775eb0d058d014e1570e3b4a86ecb73"
+    },
+    "game/tests/ring_batch_tests.gd.uid": {
+      "bytes": 20,
+      "mode": 420,
+      "sha256": "322a6e81889b729ea2969befbb31c54d5b4e28a6adf19e5ac9838306ae0f8dae"
+    },
+    "game/tests/session_tests.gd": {
+      "bytes": 13673,
+      "mode": 420,
+      "sha256": "b1efc71b6af9775804d2d8d573b0f3d2f1eef3c9f4cef50c93ed8e5f92c20d32"
+    },
+    "game/tests/session_tests.gd.uid": {
+      "bytes": 20,
+      "mode": 420,
+      "sha256": "c793dccc9f12d3a7adc5676a62894cefe9a15a877b745cdcc96015cbf93852d5"
+    },
+    "game/tests/visibility_tests.gd": {
+      "bytes": 3973,
+      "mode": 420,
+      "sha256": "ac1e86a086f41f4f1d53b19d85ddda68f7f5b6e71c4a67391d36ccdf6f50b1bf"
+    },
+    "game/tests/visibility_tests.gd.uid": {
+      "bytes": 19,
+      "mode": 420,
+      "sha256": "dc68163ae70223e068f5f6382f4ef9c7c5666430dea8f57de416e94ada137480"
+    },
+    "launch.sh": {
+      "bytes": 758,
+      "mode": 493,
+      "sha256": "4e873de7dca8814a1b010ff64a168ec3ba499f838c353a89ec0ec6a726578ba8"
+    },
+    "release/accepted-production.json": {
+      "bytes": 2094,
+      "mode": 420,
+      "sha256": "229753c22a4a697e4a24107c50a5b9e0015eed173b0b71247f5f0511e41dc1f5"
+    },
+    "release/licenses/Godot-COPYRIGHT.txt": {
+      "bytes": 97253,
+      "mode": 420,
+      "sha256": "2039020f520ebd55592070ede2ef38dfbc28a6550140008da004143872789e5d"
+    },
+    "release/licenses/Godot-LICENSE.txt": {
+      "bytes": 1149,
+      "mode": 420,
+      "sha256": "b0435e3b3e4e55238f05f4b306f30524a1b2e20147810d436eaa554fa6855c80"
+    },
+    "release/requirements-test.txt": {
+      "bytes": 42,
+      "mode": 420,
+      "sha256": "5bab90ec34cb8f8ac6b2de52591be7e64bcb96195078a451e0a4a862de44d2cf"
+    },
+    "runtime/Godot_v4.5.1-stable_linux.x86_64": {
+      "bytes": 136347792,
+      "mode": 493,
+      "sha256": "db07cae7de644278a1884d4552bdf2bca3f5d30131b18faf3a0c4d730080b199"
+    },
+    "scripts/build_linux_release.py": {
+      "bytes": 3367,
+      "mode": 493,
+      "sha256": "e691177e97cf4c4a9dd5ea791d5b92aa7bc06ffeec2af6b9d97c4649b4e1fe01"
+    },
+    "scripts/check_integration.py": {
+      "bytes": 7793,
+      "mode": 420,
+      "sha256": "52011fca6f638ce650d07e51e19109d0edf3f09ae2facc6494d8d3586e9f58a6"
+    },
+    "scripts/check_natural.py": {
+      "bytes": 18340,
+      "mode": 420,
+      "sha256": "2a1d8982821bce2ad1466d6aacd16b4a2cb5b4558bd54c8c21eb0fe1b1ea8cee"
+    },
+    "scripts/check_natural_resume.py": {
+      "bytes": 6928,
+      "mode": 420,
+      "sha256": "8e074bea295244784a6a2a913e8c4125e35b7b7b6ea68f838330cd7ce70ee003"
+    },
+    "scripts/check_session.py": {
+      "bytes": 6303,
+      "mode": 420,
+      "sha256": "5dd1f30e73f911940203e59ef3c3d01f11b90d139c9ab2dad8d35698820b5997"
+    },
+    "scripts/generate_sound_assets.py": {
+      "bytes": 2441,
+      "mode": 420,
+      "sha256": "8a0ead9ae38bbff0fff9b9571eea4275cb904cec58d54c0e9485670cb0c46f00"
+    },
+    "scripts/release_context.py": {
+      "bytes": 1070,
+      "mode": 420,
+      "sha256": "8a562bcf2c367e1e4f211e3fb9b2b3702f0bbe94d52eb7c2196664ac4af1af71"
+    },
+    "scripts/run_integration.py": {
+      "bytes": 2483,
+      "mode": 420,
+      "sha256": "e20be231d6b9462dc3460720d9e03cd85b25dcb5cb346aa93a0edf960cff5293"
+    },
+    "scripts/run_natural.py": {
+      "bytes": 4003,
+      "mode": 420,
+      "sha256": "2c23f5a9f0b20b2b2b3de6b2d2a50fe47f640967cef55702f6f684f201abde00"
+    },
+    "scripts/run_session.py": {
+      "bytes": 2327,
+      "mode": 420,
+      "sha256": "ddb12acadfb66a517bcd5e9a24789ed57edb2a2f500ac4485a2c80903b1c9cbb"
+    },
+    "scripts/setup.sh": {
+      "bytes": 435,
+      "mode": 493,
+      "sha256": "45ce4b8e71f1ba8415037223c282d459652c6d4e56a55eb408c63ae8af4b0647"
+    },
+    "scripts/verify_linux_release.py": {
+      "bytes": 4701,
+      "mode": 493,
+      "sha256": "bd9b608cb53836fecc671f82c7dd1aefa6aa89ac1a1522ca2ff990f31e4c6b3e"
+    }
+  },
+  "format": 1,
+  "name": "Breakwater",
+  "platform": "Linux x86_64, glibc; Godot 4.5.1; X11/OpenGL 3.3 compatibility renderer",
+  "source_repository": "git@github.com:rickseeger/ai-game-05.git",
+  "source_revision": "42e3bd348b22590ba504ef5ebcb55dbd8443e652"
+}

@@ -1,0 +1,64 @@
+Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org
+WARNING: Could not set V-Sync mode, as changing V-Sync mode is not supported by the graphics driver.
+     at: set_use_vsync (platform/linuxbsd/x11/gl_manager_x11.cpp:364)
+OpenGL API 4.5 (Core Profile) Mesa 26.0.8-1ubuntu0.3 - Compatibility - Using Device: Mesa - llvmpipe (LLVM 21.1.8, 256 bits)
+
+SOUND_OUTPUT driver=Dummy device=Default (routing diagnostic, NOT proof of listening)
+SESSION_ASSERT rendered_X11 PASS
+SESSION_ASSERT production_priority_after_player_and_combat PASS
+SESSION_ASSERT exact_three_registered_pylons PASS
+SESSION_ASSERT locked_exit_rejects_entry PASS
+SESSION_ASSERT alive_and_unknown_events_ignored PASS
+SESSION_ASSERT target_itself_emits_once PASS
+SESSION_ASSERT duplicate_delivery_counts_once PASS
+SESSION_ASSERT enemy_deaths_do_not_count PASS
+SESSION_ASSERT two_pylons_still_locked PASS
+SESSION_ASSERT third_unlocks_not_remote_victory PASS
+SESSION_ASSERT progress_notifications_3_2_1_0 PASS
+SESSION_ASSERT radius_boundary_wins PASS
+SESSION_ASSERT won_terminal_idempotent PASS
+SESSION_ASSERT death_does_not_finish_inside_damage PASS
+SESSION_ASSERT death_loses_after_damage PASS
+SESSION_ASSERT lost_terminal_ignores_late_progress_and_win PASS
+SESSION_ASSERT 8999_ticks_still_playing PASS
+SESSION_ASSERT 9000_ticks_timeout_exactly PASS
+SESSION_ASSERT no_early_epsilon_loss PASS
+SESSION_ASSERT exact_deadline_loses PASS
+SESSION_ASSERT deadline_crossing_loses PASS
+SESSION_ASSERT timeout_beats_extraction PASS
+SESSION_ASSERT just_before_deadline_can_win PASS
+SESSION_ASSERT pause_freezes_clock_and_threats PASS
+SESSION_ASSERT resume_advances_active_clock PASS
+SESSION_ASSERT pylon_0_shot_0_health PASS
+SESSION_ASSERT pylon_0_shot_1_health PASS
+SESSION_ASSERT pylon_0_shot_2_health PASS
+SESSION_ASSERT pylon_0_shot_3_health PASS
+SESSION_ASSERT pylon_0_cover_removed PASS
+SESSION_ASSERT pylon_0_real_fragments PASS
+SESSION_ASSERT pylon_1_shot_0_health PASS
+SESSION_ASSERT pylon_1_shot_1_health PASS
+SESSION_ASSERT pylon_1_shot_2_health PASS
+SESSION_ASSERT pylon_1_shot_3_health PASS
+SESSION_ASSERT pylon_1_cover_removed PASS
+SESSION_ASSERT pylon_1_real_fragments PASS
+SESSION_ASSERT pylon_2_shot_0_health PASS
+SESSION_ASSERT pylon_2_shot_1_health PASS
+SESSION_ASSERT pylon_2_shot_2_health PASS
+SESSION_ASSERT pylon_2_shot_3_health PASS
+SESSION_ASSERT pylon_2_cover_removed PASS
+SESSION_ASSERT pylon_2_real_fragments PASS
+SESSION_ASSERT combat_three_distinct_unlock PASS
+SESSION_ASSERT combat_bursts_sound_same_tick PASS
+SESSION_ASSERT solver_impacts_reach_sound PASS
+SESSION_ASSERT combat_progress_then_entry_wins PASS
+SESSION_ASSERT render_capture_saved PASS
+SESSION_ASSERT same_tick_all_damage_processed_false PASS
+SESSION_ASSERT same_tick_loss_beats_victory_false PASS
+SESSION_ASSERT same_engine_tick_order_false PASS
+SESSION_ASSERT same_tick_all_damage_processed_true PASS
+SESSION_ASSERT same_tick_loss_beats_victory_true PASS
+SESSION_ASSERT same_engine_tick_order_true PASS
+SESSION_ASSERT deadline_tick_damage_before_timeout PASS
+SESSION_TEST_DONE checks=55 failures=0
+
+{"valid": true, "output": "/opt/g-harness/workspace/G12/node_8_step_157/validation/rules-1", "returncode": 0}

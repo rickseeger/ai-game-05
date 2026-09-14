@@ -1,0 +1,137 @@
+Node 8 Linux release worker handoff
+
+This reports completed worker execution, not durable node/root acceptance.
+No harness/tree state was changed; no human playtest was solicited.
+
+PLAYABLE ARTIFACT
+
+    /opt/g-harness/workspace/G12/node_8_step_157/dist/breakwater-linux-x86_64.tar.gz
+    SHA-256: 1fc3c4121aed811406a1e34475f5d8abf99850c0b7cc9cde41c91f1f1373e6cf
+    Bytes: 70613010
+    Source: 42e3bd348b22590ba504ef5ebcb55dbd8443e652
+    Repository: git@github.com:rickseeger/ai-game-05.git
+
+The artifact is retained at this absolute server path; NOT uploaded to a release
+hosting service. Git contains tooling, docs and verification evidence, not the
+runtime/archive. An independent rebuild is byte-identical (assembly.json).
+The evidence-only follow-on commit does not change the artifact source revision.
+
+    mkdir -p /tmp/breakwater-play
+    tar -xzf /opt/g-harness/workspace/G12/node_8_step_157/dist/breakwater-linux-x86_64.tar.gz -C /tmp/breakwater-play
+    /tmp/breakwater-play/breakwater-linux-x86_64/launch.sh
+
+Use a graphical Linux desktop for actual play. No setup/download is needed after
+extraction; the bundled Godot runtime imports the included originals. All 210
+members/modes were verified in a fresh directory with spaces, with no Git or prior
+Godot import cache. The launcher ran first import plus the real default main scene.
+A separate launch from outside its directory also succeeded. 209 payload files
+plus RELEASE.json; 140088880 payload bytes before generated import caches.
+Source+runtime assembly, not a stripped exported PCK. No Windows work.
+
+SUPPORTED TARGET, DEPENDENCIES AND LICENSE
+
+Linux x86_64/glibc, X11 or XWayland, OpenGL 3.3 compatibility. Godot
+4.5.1.stable.official.f62fdbde1, engine SHA-256
+ db07cae7de644278a1884d4552bdf2bca3f5d30131b18faf3a0c4d730080b199
+Explicitly tested Linux 7.0.0-31-generic, glibc 2.43, Mesa 26.0.8/llvmpipe
+LLVM 21.1.8 via Xvfb. GLIBC_2.28 is the maximum imported symbol requirement, NOT
+proof of operation on that older glibc/distro. Other GPUs/distros and Rick hardware
+unverified. No ARM, musl, native Wayland or Windows support is claimed.
+
+Runtime requires glibc/libm/libdl/libpthread/librt plus system X11/GL libraries,
+and PulseAudio-compatible service or ALSA for speaker output. Exact package names,
+controls, troubleshooting and instructions are in the artifact README.txt and
+source docs/linux-release.txt. Writable executable extraction is required.
+Original game/code/procedural assets MIT; generated WAVs retain provenance.json.
+Exact Godot MIT and full third-party COPYRIGHT notices are bundled. Test packages
+and system libraries are not bundled. No unlicensed external media was added.
+
+SCOPE AND ACCEPTED SOURCE PRESERVATION
+
+Read data/artifacts/G12/node13/handoff.json and evidence/node13-s155/handoff.md
+before implementation. Accepted main was 7ec9261cae21cd63d68e93c1fceb1c1090e3f091.
+All 84 game/asset/driver/test files in the release hash-match that accepted tree.
+No production code, tuning, rules, sound or destruction changed. Packaging-only
+changes: launch.sh, deterministic Git-blob allowlist assembler, clean-artifact test
+orchestrator, documentation/licenses, and source provenance adapters for three
+existing runners plus check_natural.py. The latter uses committed SHA-256 hashes
+instead of requiring unavailable Git history; all 21 baseline hashes were checked
+against real 04832df0af77769a10db15272ed901bac1dfd669 blobs (assembly.json).
+All independent behavioral assertions and corrupted-evidence controls are retained.
+No new normal-play state mutations; unchanged driver injects ordinary InputEvents.
+
+FRESH ARTIFACT EXECUTION RESULTS
+
+verification.json ties every command to artifact SHA/source/binary and exact
+extraction path. All 12 required commands passed; the separate native-audio
+diagnostic exited zero but recorded failed PulseAudio/ALSA and Dummy fallback.
+That native device result is a disclosed server limit, not a speaker success.
+
+The exact extracted artifact ran active normal-input combat with real threats,
+physical destruction and sound through natural victory (21.783333 active seconds,
+health 100), ordinary R, real-threat death (16.1 seconds), ordinary R, and fresh
+movement/fire/pylon destruction after BOTH retries. Five actual pylon kills,
+39 swept hits, eight threat attacks, 2657 InputEvents and 2779 physics snapshots.
+Remote unlock remains playable outside extraction for 11.05 active seconds before
+entry wins. Actual Esc pause freezes the observed production domains.
+
+Physics: 96 original pylon fragment arcs and 100896 body samples; randomized launch
+and spin, gravity descent, real Ground contacts, bounce, rolling and all 96 settled
+asleep. Rendering: all 2780 video frames and 64 synchronized PNGs decoded; projected
+fragment pixel presence and temporal changes asserted (metrics.json).
+Actual MovieWriter stereo 48kHz PCM: peak 0.3066263, no clipping, 301 same-tick
+physical source requests, all five fracture assets and six sparse Ground-impact
+assets matched to real mixer output. Natural checkers reject 14 corrupted inputs,
+trace/audio cases. No replacement waveform or generated fake capture used.
+
+Fresh rule regression runs each passed 55 engine assertions and independent event,
+pixel and six-negative checks. Fresh integrated default-entry fixtures passed
+127 engine assertions, six dirty resets, HUD/settings/marker pixels and eight
+negative controls. Fixture terminal state mutations are explicitly test-only and
+are not presented as natural-play evidence. Natural timeout was already accepted
+at node 13; not rerun here. Exact deadline/tie precedence is freshly regressed in
+rule fixtures. Applicable packaging checks all passed on the first build.
+
+Unfixed runtime (not MovieWriter): mean 35.3141 observed FPS, p95 33.7066 ms,
+p99 36.35588 ms, worst 78.153 ms; 48.5341 wall seconds with observer overhead.
+This software-rendered server result is not a 60-FPS guarantee or laptop benchmark.
+Offline 60-FPS recording is 46.3333 seconds encoded, took 121.3130 engine wall
+seconds (encoding/check time additional). Fun, subjective visual readability,
+keyboard feel, speaker output and sound satisfaction remain unassessed for Rick
+at node 9. No request for that playtest is made here.
+
+EVIDENCE AND INDEPENDENT REPRODUCTION
+
+clean-release-validation.tar.gz contains 188 fresh raw/log/capture members under
+validation/: natural-movie/{game.mp4,audio.wav,events/physics/frames.jsonl.gz,
+frame_*.png,launch.json,analysis.json}, unfixed runtime, both rules fixtures,
+integration fixtures, launcher/native-audio logs and verification.json. Every
+member was read back and SHA-256 verified in archive-manifest.json. No historical
+recordings were reused. The original uncompressed AVI was removed only after
+encoding by the accepted runner; its hash remains in launch.json. Playable archive
+contains no recordings, evidence, Git data, engine ZIP, virtualenv or import caches.
+Build prerequisites were checked with 139G free before clone; 137G after execution.
+
+From the source checkout (replace output paths with NEW paths):
+    git checkout 42e3bd348b22590ba504ef5ebcb55dbd8443e652
+    ./scripts/setup.sh
+    python3 scripts/build_linux_release.py --source HEAD --engine-zip .tools/godot.zip --output /tmp/breakwater-rebuilt.tar.gz
+    sha256sum /tmp/breakwater-rebuilt.tar.gz
+Assembly used Python 3.14.4/zlib 1.3.1; same inputs reproduced the exact SHA above.
+Cross-version gzip byte identity is not guaranteed; file payload hashes are stable.
+
+Full fresh verification (12GB temporary free; Python 3.12.14 used here):
+    uv venv --python 3.12 /tmp/breakwater-test-venv
+    uv pip install --python /tmp/breakwater-test-venv/bin/python -r release/requirements-test.txt
+    /tmp/breakwater-test-venv/bin/python scripts/verify_linux_release.py /tmp/breakwater-rebuilt.tar.gz /tmp/new-breakwater-verify
+Needs Xvfb/xauth, ffmpeg/ffprobe with libx264, ldd and GL/X11 libraries.
+
+Fast independent recheck of committed captures from the final evidence checkout:
+    mkdir -p /tmp/breakwater-evidence
+    tar -xzf evidence/node8-s157/clean-release-validation.tar.gz -C /tmp/breakwater-evidence
+    /tmp/breakwater-test-venv/bin/python scripts/check_natural.py /tmp/breakwater-evidence/validation/natural-movie --self-test
+    /tmp/breakwater-test-venv/bin/python scripts/check_natural_resume.py /tmp/breakwater-evidence/validation/natural-movie --output /tmp/impact-recheck.json
+    /tmp/breakwater-test-venv/bin/python scripts/check_natural.py /tmp/breakwater-evidence/validation/natural-realtime --self-test
+    /tmp/breakwater-test-venv/bin/python scripts/check_session.py /tmp/breakwater-evidence/validation/rules-1 /tmp/breakwater-evidence/validation/rules-2
+    /tmp/breakwater-test-venv/bin/python scripts/check_integration.py /tmp/breakwater-evidence/validation/integration
+No need to repeat old node13 suites merely to assess this release.

@@ -1,0 +1,7 @@
+{
+  "artifact": "/opt/g-harness/workspace/G12/node_8_step_157/dist/breakwater-linux-x86_64.tar.gz",
+  "sha256": "1fc3c4121aed811406a1e34475f5d8abf99850c0b7cc9cde41c91f1f1373e6cf",
+  "bytes": 70613010,
+  "source_revision": "42e3bd348b22590ba504ef5ebcb55dbd8443e652",
+  "members": 210
+}

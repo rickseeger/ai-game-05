@@ -1,0 +1,68 @@
+{
+  "passed": true,
+  "runs": [
+    {
+      "engine_assertions": 127,
+      "forced_reset_cycles": 6,
+      "ordinary_input_pylon_hits": 4,
+      "pixels": {
+        "hud": {
+          "changed_pixels": 12494,
+          "bounds": [
+            22,
+            26,
+            683,
+            119
+          ],
+          "restored_identical": true
+        },
+        "panel": {
+          "changed_pixels": 138370,
+          "bounds": [
+            310,
+            236,
+            969,
+            484
+          ],
+          "restored_identical": true
+        },
+        "locked_marker": {
+          "changed_pixels": 1090,
+          "bounds": [
+            512,
+            256,
+            667,
+            286
+          ],
+          "restored_identical": true,
+          "amber_or_green_pixels": 658
+        },
+        "open_marker": {
+          "changed_pixels": 948,
+          "bounds": [
+            520,
+            256,
+            667,
+            286
+          ],
+          "restored_identical": true,
+          "amber_or_green_pixels": 643
+        },
+        "captures": 16
+      },
+      "rejected_trace_mutations": [
+        "health",
+        "remaining",
+        "voices",
+        "bodies",
+        "player_callbacks",
+        "pointer_known",
+        "elapsed",
+        "hud"
+      ],
+      "source_commit": "42e3bd348b22590ba504ef5ebcb55dbd8443e652",
+      "run": "/opt/g-harness/workspace/G12/node_8_step_157/validation/integration"
+    }
+  ],
+  "limits": "Decoded pixels prove drawing and bindings, not subjective readability. Forced terminal fixtures are not natural victories; Dummy audio is not listening; fixed FPS is not performance."
+}

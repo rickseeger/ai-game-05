@@ -1,0 +1,21 @@
+{
+  "artifact_sha256": "1fc3c4121aed811406a1e34475f5d8abf99850c0b7cc9cde41c91f1f1373e6cf",
+  "cwd": "/opt/g-harness/workspace/G12/node_8_step_157",
+  "command": [
+    "xvfb-run",
+    "-a",
+    "/opt/g-harness/workspace/G12/node_8_step_157/validation/fresh directory with spaces/breakwater-linux-x86_64/launch.sh",
+    "--audio-driver",
+    "Dummy",
+    "--quit-after",
+    "30",
+    "--max-fps",
+    "60"
+  ],
+  "environment": {
+    "LIBGL_ALWAYS_SOFTWARE": "1",
+    "GODOT_SILENCE_ROOT_WARNING": "1"
+  },
+  "returncode": 0,
+  "engine_errors": false
+}
