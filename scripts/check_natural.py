@@ -7,6 +7,7 @@ from pathlib import Path
 import numpy as np
 from PIL import Image
 from scipy.io import wavfile
+from scipy.signal import correlate
 ROOT=Path(__file__).resolve().parents[1]
 def rows(p):
     with gzip.open(p,'rt') as f:return [json.loads(l) for l in f]
@@ -133,7 +134,23 @@ def check_audio(r,sr,x):
     assert sum(e['kind']=='break' for e in onsets)>=3 and sum(e['kind']=='impact' for e in onsets)>=3, 'sparse break/impact onsets'
     first=only(r,'burst')[0]['frame']/60
     assert abs(x[:round(first*sr)]).max()<.000001, 'silence before first physical source'
-    return {'sample_rate':sr,'channels':2,'seconds':len(x)/sr,'peak':float(abs(x).max()),'rms':float(np.sqrt(np.mean(x*x))),'clipped_samples':int(np.sum(abs(x)>=.9999)),'matched_sources':len(audio),'onsets':onsets}
+    # Identify every pylon fracture in the actual PCM, even with overlapping
+    # earlier impacts: correlate its recorded variant/pitch against the mix.
+    # This analyzes the real asset; it does not generate replacement evidence.
+    correlations=[]
+    for d in only(r,'target_destroyed'):
+        burst=next(b for b in only(r,'burst') if b['engine_tick']==d['engine_tick'] and b['p']==d['p'])
+        e=next(a for a in audio if a['audio']['kind']=='break' and a['audio']['id']==burst['id']);a=e['audio']
+        rate,asset=wavfile.read(ROOT/('game/audio/break_%d.wav'%a['variant']))
+        idx=np.arange(round(.18*sr))*a['pitch']*rate/sr
+        template=np.interp(idx,np.arange(len(asset)),asset.astype(float));template-=template.mean()
+        start=round(e['frame']/60*sr);win=x[start:start+round(.3*sr)].mean(axis=1)
+        corr=correlate(win,template,mode='valid',method='fft')
+        energy=np.convolve(win**2,np.ones(len(template)),mode='valid')
+        score=corr/np.sqrt(energy*np.sum(template**2)+1e-30);offset=int(score.argmax())
+        assert score[offset]>.8 and 0<=offset/sr<.05, 'pylon PCM asset/time correlation'
+        correlations.append({'generation':d['generation'],'pylon':d['id'],'frame':e['frame'],'normalized_correlation':float(score[offset]),'delay_ms':offset/sr*1000})
+    return {'pylon_asset_correlations':correlations,'sample_rate':sr,'channels':2,'seconds':len(x)/sr,'peak':float(abs(x).max()),'rms':float(np.sqrt(np.mean(x*x))),'clipped_samples':int(np.sum(abs(x)>=.9999)),'matched_sources':len(audio),'onsets':onsets}
 
 def check_pixels(out,r):
     # Decode every video frame; compare sparse original PNG readbacks against
@@ -168,11 +185,34 @@ def main():
     meta=json.loads((out/'launch.json').read_text());assert meta['returncode']==0
     assert '--natural-test' in meta['command'] and '--script' not in meta['command'] and not any(v.endswith('.tscn') for v in meta['command']), 'default entry'
     for name,h in meta['source_sha256'].items():assert hashlib.sha256((ROOT/name).read_bytes()).hexdigest()==h, 'source '+name
+    driver=(ROOT/'game/tests/natural_play.gd').read_text()
+    assert not re.search(r'\bs(?:\.[A-Za-z_]+)+\s*=(?!=)',driver), 'production state assignment'
+    for forbidden in ['s.start(', 's.finish(', 's.pause(', '.apply_damage(', '.spawn_bolt(', '.fixed_step(', '.set_physics_process(', '.burst(', 'get_tree().paused =']:
+        assert forbidden not in driver, 'input-only audit '+forbidden
+    assert 'Input.parse_input_event' in driver
+    production={}
+    for f in (ROOT/'game').iterdir():
+        if not f.is_file() or f.suffix=='.uid':continue
+        name=str(f.relative_to(ROOT))
+        old=subprocess.check_output(['git','show','04832df0af77769a10db15272ed901bac1dfd669:'+name],cwd=ROOT)
+        if f.name=='opposition_session.gd':
+            hook='    if "--natural-test" in OS.get_cmdline_user_args():\n        var driver = load("res://tests/natural_play.gd").new()\n        add_child(driver)\n        driver.call_deferred("run", self)\n'
+            assert f.read_text().replace(hook,'').encode()==old, 'production hook only'
+        else:assert f.read_bytes()==old, 'production unchanged '+name
+        production[name]=hashlib.sha256(old).hexdigest()
     r=rows(out/'events.jsonl.gz');result={'source_commit':meta['source_commit'],'rules':check_rules(r,meta['mode'])}
+    result['production_unchanged_except_opt_in_hook']=production
     if meta['mode']=='victory':result['physics']=check_physics(r,rows(out/'physics.jsonl.gz'))
     if meta['movie']:
         sr,x=wavfile.read(out/'audio.wav');x=x.astype(np.float64)/2**(8*x.dtype.itemsize-1)
         result['audio']=check_audio(r,sr,x);result['pixels']=check_pixels(out,r)
+    if meta.get('frames') and not meta['movie']:
+        captures=only(r,'capture');assert len(captures)>10
+        for e in captures:
+            im=np.asarray(Image.open(out/e['file']).convert('RGB'))
+            assert im.shape==(720,1280,3) and im.std()>15 and e['error']==0
+        assert any(e['snapshot']['state']==3 and e['snapshot']['reason']=='timeout' for e in captures), 'rendered timeout snapshot'
+        result['frame_sequence']={'decoded_pngs':len(captures),'distinct_hashes':len({hashlib.sha256((out/e['file']).read_bytes()).hexdigest() for e in captures})}
     fr=rows(out/'frames.jsonl.gz');interval=np.array([x['interval_usec']/1000 for x in fr[10:]])
     result['performance']={'fixed_fps':meta['fixed'],'wall_seconds':meta['wall_seconds'],'frame_interval_ms':dict(zip(['p50','p95','p99'],map(float,np.percentile(interval,[50,95,99])))),'mean_observed_fps':1000/float(interval.mean()),'max_frame_ms':float(interval.max()),'note':'Offline fixed-FPS evidence is NOT real-time performance. Unfixed run measures this software-rendered host including observation overhead; not Rick hardware.'}
     if a.self_test:
